@@ -1,14 +1,29 @@
-site_name: "Exploring Software Development Tools"
+site_name: "Exploring Electronics"
+site_url: https://electronics.bradpenney.io
+site_description: "Electronics for software developers — from your first resistor to building connected devices."
+site_author: Brad Penney
+
+extra:
+  analytics:
+    provider: google
+    property: REPLACE_WITH_GA_TRACKING_ID
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/bradpenney
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/bradpenney
+
 extra_css:
   - stylesheets/extra.css
+
 theme:
   name: material
   palette:
     scheme: slate
     primary: black
     accent: amber
-  logo: images/exploring_software_development_tools.png
-  favicon: images/exploring_software_development_tools.png
+  # logo: images/exploring_electronics.png      # add when logo is ready
+  # favicon: images/exploring_electronics.png   # add when logo is ready
   icon:
     admonition:
       note: octicons/tag-16
@@ -25,10 +40,31 @@ theme:
       quote: octicons/quote-16
   features:
     - content.code.annotate
+    - content.code.copy
     - content.tabs.link
     - content.code.highlight
     - content.tooltips
     - content.code.mermaid
+
+plugins:
+  - search
+  - meta
+  - exclude:
+      glob:
+        - "essential/*"
+        - "efficient/*"
+        - "mastery/*"
+  - social:
+      cards: true
+      cards_layout_options:
+        background_color: "#1a202c"
+        color: "#cbd5e0"
+  - htmlproofer:
+      enabled: true
+      validate_rendered_template: true
+      validate_external_urls: false
+      raise_error: true
+      raise_error_after_finish: true
 
 markdown_extensions:
   - admonition
@@ -44,16 +80,26 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.highlight
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
+  - md_in_html
 
 nav:
   - Home: index.md
-  - Git:
-    - Core Functionality:
-      - Introducing Git: git/core_functionality/intro_to_git.md
-#    - Next-Level Git:
-#    - Remotes and Collaboration:
-#    - Advanced Git:
-#  - JQ:
+
+# 📦 Essential — uncomment as articles are published
+#  - 📦 Essential:
+#      - Overview: essential/overview.md
+
+# ⚡ Efficient — uncomment as articles are published
+#  - ⚡ Efficient:
+#      - Overview: efficient/overview.md
+
+# 🎯 Mastery — uncomment as articles are published
+#  - 🎯 Mastery:
+#      - Overview: mastery/overview.md

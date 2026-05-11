@@ -1,20 +1,21 @@
-<img src="images/exploring_software_development_tools.png" alt="Exploring Software Development Tools" class="img-responsive-right" width="300">
+# Exploring Electronics
 
-# Welcome to Exploring Software Development Tools
+A guide to electronics for software developers and engineers — from your first resistor to building connected devices.
 
-A subsection of [BradPenney.io](https://bradpenney.io), this is a friendly guide through the world of command-line magic and automation awesomeness! 🧰🚀
+If you write code for a living and want to understand the hardware it runs on, this is the site for you. Every concept is taught starting from what you already know as an engineer, then bridged into electronics theory.
 
-This site is dedicated to documenting the best practices, quirks, and superpowers of tools like `git`, `jq`, `yq`, `make`, `gh` and other must-haves for developers who want to do more with less typing (and fewer headaches).
+## Learning Tiers
 
-Whether you’re just getting started or you’ve been piping output into `/dev/null` for years, I hope you’ll find something here that’s helpful, insightful, or at least good for a smirk. 😄
+**Essential** — Start here if you're new to electronics. Covers the fundamentals you need to get your first circuits working and your first microcontroller running code. Safety-first, software analogies throughout.
 
-## Topics to Explore 🔍
+**Efficient** — For makers and developers who can follow a tutorial but want to go off-script. Circuit design, datasheets, communication protocols, and real project building.
 
-- Version control with `git` and helpful branching workflows 🌳
-- Slicing and dicing JSON and YAML with `jq` and `yq` 🪓
-- Automating builds and scripts with `make` ⚙️
-- Tips, tricks, and tiny CLI power moves ⚡
-- Real-world examples and shell-fu 🧠
+**Mastery** — Production-grade electronics: component selection, PCB design, power supply engineering, and the considerations that matter when hardware ships to customers.
 
-Stick around — I’ll keep adding more tools, tutorials, and tangents.
-Thanks for visiting, and happy hacking! 👋
+## Part of the BradPenney.io Network
+
+This site is part of a family of progressive technical learning resources:
+
+- [Exploring Linux](https://linux.bradpenney.io) — Linux for developers and platform engineers
+- [Exploring Computer Science](https://cs.bradpenney.io) — CS theory for working engineers
+- [Exploring GitOps](https://gitops.bradpenney.io) — GitOps and FluxCD for platform engineers
