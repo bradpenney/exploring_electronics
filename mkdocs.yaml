@@ -1,12 +1,12 @@
 site_name: "Exploring Electronics"
-site_url: https://electronics.bradpenney.io
+site_url: https://bradpenney.github.io/exploring_electronics/
 site_description: "Electronics for software developers — from your first resistor to building connected devices."
 site_author: Brad Penney
 
 extra:
   analytics:
     provider: google
-    property: REPLACE_WITH_GA_TRACKING_ID
+    property: G-V01MJ4R3SQ
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/bradpenney
@@ -22,8 +22,8 @@ theme:
     scheme: slate
     primary: black
     accent: amber
-  # logo: images/exploring_electronics.png      # add when logo is ready
-  # favicon: images/exploring_electronics.png   # add when logo is ready
+  logo: images/exploring_electronics.png
+  favicon: images/exploring_electronics.png
   icon:
     admonition:
       note: octicons/tag-16
@@ -51,7 +51,6 @@ plugins:
   - meta
   - exclude:
       glob:
-        - "essential/*"
         - "efficient/*"
         - "mastery/*"
   - social:
@@ -91,10 +90,10 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - 📦 Essential:
+      - What Is Electricity?: essential/what_is_electricity.md
 
-# 📦 Essential — uncomment as articles are published
-#  - 📦 Essential:
-#      - Overview: essential/overview.md
+# 📦 Essential — add articles here as they are published
 
 # ⚡ Efficient — uncomment as articles are published
 #  - ⚡ Efficient:
