@@ -11,15 +11,39 @@ Electronics is everywhere. The question is whether you understand it or just wor
 
 This site teaches electronics from first principles — not just how to follow a wiring diagram, but why circuits are designed the way they are. Every concept is explained directly, grounded in real components and real numbers, so you can read a datasheet, design a circuit, and understand what's actually happening when you power something up.
 
-## Learning Tiers
+## Learning Path
 
-**Essential** — The foundations: voltage, current, resistance, and the components that put them to work. Start here if you're new to electronics.
+<div class="grid cards" markdown>
 
-- [What Is Electricity?](essential/what_is_electricity.md) — Voltage, current, and resistance from first principles
+-   **Essential**
 
-**Efficient** — Circuit design thinking: transistors, op-amps, communication protocols, and how to read datasheets. For makers and developers who can follow a tutorial but want to go off-script.
+    ---
 
-**Mastery** — Production-grade electronics: PCB design, power supply engineering, signal integrity, and the considerations that matter when hardware ships to customers.
+    The foundations: voltage, current, resistance, and the components that put them to work. Start here if you're new to electronics.
+
+    - [What Is Electricity?](essential/what_is_electricity.md) — Voltage, current, and resistance from first principles
+
+-   **Efficient**
+
+    ---
+
+    Circuit design thinking: transistors, op-amps, communication protocols, and how to read datasheets. For makers who can follow a tutorial but want to go off-script.
+
+-   **Mastery**
+
+    ---
+
+    Production-grade electronics: PCB design, power supply engineering, signal integrity, and the considerations that matter when hardware ships to customers.
+
+-   **Practical Tools**
+
+    ---
+
+    The physical tools used throughout the site — read these as you need them.
+
+    - [Breadboards](tools/breadboards.md) — How breadboards work internally, and the wiring mistakes that stop every beginner's first circuit
+
+</div>
 
 ## Part of the BradPenney.io Network
 

@@ -53,6 +53,10 @@ plugins:
       glob:
         - "efficient/*"
         - "mastery/*"
+        - "tools/multimeter.md"
+        - "tools/arduino_cli.md"
+        - "tools/soldering.md"
+        - "tools/bench_power_supply.md"
   - social:
       cards: true
       cards_layout_options:
@@ -94,6 +98,14 @@ nav:
       - What Is Electricity?: essential/what_is_electricity.md
 
 # 📦 Essential — add articles here as they are published
+
+  - 🔧 Practical Tools:
+      - Breadboards: tools/breadboards.md
+# 🔧 Practical Tools — uncomment as articles are published
+#      - Using a Multimeter: tools/multimeter.md
+#      - arduino-cli: tools/arduino_cli.md
+#      - Soldering: tools/soldering.md
+#      - Bench Power Supplies: tools/bench_power_supply.md
 
 # ⚡ Efficient — uncomment as articles are published
 #  - ⚡ Efficient:

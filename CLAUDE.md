@@ -156,7 +156,7 @@ description: Compelling description for search results (150-160 chars ideal)
 - Search indexing
 - Navigation (even if accidentally uncommented)
 
-**Current exclude configuration** (as of 2026-05-10 — site launch):
+**Current exclude configuration** (as of 2026-05-24):
 
 ```yaml
 plugins:
@@ -164,11 +164,18 @@ plugins:
   - meta
   - exclude:
       glob:
-        - "essential/*"
         - "efficient/*"
         - "mastery/*"
+        - "tools/multimeter.md"
+        - "tools/arduino_cli.md"
+        - "tools/soldering.md"
+        - "tools/bench_power_supply.md"
   # ... other plugins
 ```
+
+**Published articles (not in exclude list):**
+- `essential/what_is_electricity.md`
+- `tools/breadboards.md`
 
 **What this means:**
 - Draft articles can exist in these directories without appearing in search results

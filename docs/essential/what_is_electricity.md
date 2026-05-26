@@ -299,7 +299,7 @@ The working voltages in most prototyping electronics — 3.3V, 5V, occasionally 
 
 ## What's Next
 
-The next article puts everything here to work: **Resistors** — the components designed specifically to control current. With voltage, current, resistance, and Ohm's Law in your toolkit, resistors are where the theory becomes actual circuit design.
+**Coming soon.** The next article takes Ohm's Law into real circuit topology: **Series and Parallel Circuits** — why adding more LEDs in series dims them all equally, and why a parallel circuit behaves completely differently. The same three variables, two different arrangements, two completely different outcomes.
 
 ---
 
