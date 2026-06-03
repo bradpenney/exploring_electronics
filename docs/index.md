@@ -1,6 +1,6 @@
 ---
 title: "Exploring Electronics"
-description: "Electronics explained from first principles — voltage, current, components, protocols, and circuit design for engineers, developers, and makers who want to understand the why."
+description: "Electronics from first principles — voltage, current, resistance, and circuit design explained clearly. Real components, real numbers, no prior knowledge assumed."
 ---
 
 <img src="images/exploring_electronics.png" alt="Exploring Electronics" class="img-responsive-right" width="300">
@@ -13,15 +13,18 @@ This site teaches electronics from first principles — not just how to follow a
 
 ## Learning Path
 
+New to electronics? Work through the **Essential** articles in order. Pick up **Practical Tools** alongside them whenever you're ready to build.
+
 <div class="grid cards" markdown>
 
 -   **Essential**
 
     ---
 
-    The foundations: voltage, current, resistance, and the components that put them to work. Start here if you're new to electronics.
+    The foundations: voltage, current, resistance, and circuit topology. Start here — no prior knowledge needed.
 
     - [What Is Electricity?](essential/what_is_electricity.md) — Voltage, current, and resistance from first principles
+    - [Series and Parallel Circuits](essential/series_and_parallel.md) — How components connect changes everything about how a circuit behaves
 
 -   **Efficient**
 
@@ -29,11 +32,15 @@ This site teaches electronics from first principles — not just how to follow a
 
     Circuit design thinking: transistors, op-amps, communication protocols, and how to read datasheets. For makers who can follow a tutorial but want to go off-script.
 
+    *Coming soon.*
+
 -   **Mastery**
 
     ---
 
     Production-grade electronics: PCB design, power supply engineering, signal integrity, and the considerations that matter when hardware ships to customers.
+
+    *Coming soon.*
 
 -   **Practical Tools**
 

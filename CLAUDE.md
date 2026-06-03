@@ -26,22 +26,14 @@ This file provides guidance to Claude Code when working with this repository.
 
 ## Critical Persona Insight
 
-**IMPORTANT**: This site has a unique audience assumption that differs from typical electronics tutorials:
+**IMPORTANT**: The Essential tier is NOT software-developer-specific. It targets any serious adult beginner — no software background assumed, no software analogies.
 
-### Essential: The Software Developer Picking Up Hardware
+### Essential: The Serious Adult Beginner
 
 **Who they are:**
-- Software developer, platform engineer, or SRE
-- Has programmed professionally — comfortable with code, APIs, command lines
-- Just bought their first Arduino, Raspberry Pi, or ESP32 kit
-- Intimidated by hardware (fear of breaking things, "smoke means you've lost")
-- Has no formal electronics training
-
-**What they already know:**
-- How to write code (Python, JavaScript, C — at least one)
-- What variables, functions, loops, and conditionals are
-- Networking concepts (TCP/IP, APIs, protocols)
-- Version control and basic DevOps
+- Any adult who wants to learn electronics properly: hobbyist, career-changer, retiree, maker, curious professional from any field
+- No prior electronics knowledge required
+- No software or coding background assumed
 
 **What they don't know:**
 - Ohm's Law, voltage, current, resistance
@@ -50,11 +42,11 @@ This file provides guidance to Claude Code when working with this repository.
 - Why you can't just plug things in without checking the specs
 
 **Tone and approach for Essential:**
-- Mentorship voice — experienced guide, not authority lecturing
+- Mentor-to-learner voice — warm but serious, adult-to-adult
 - **Safety-first**: Electronics can injure or destroy equipment; explain consequences before risky steps
-- Use software analogies: GPIO pins as function I/O, voltage as "pressure", current as "flow rate"
-- Reassuring: "You won't break it by reading a datasheet"
-- Build confidence incrementally; never assume electronics familiarity
+- **No software analogies** — anchor explanations in physical reality (water pressure, pipe flow, household wiring)
+- Reassuring: mistakes are recoverable at these voltages; build confidence incrementally
+- Never assume electronics familiarity
 
 ---
 
@@ -336,10 +328,10 @@ Tone varies by tier. See **Critical Persona Insight** above. The key rule:
 
 **Essential tone specifically:**
 
-- Empathetic openings: "You just plugged in your first Arduino. Now what?"
+- Empathetic openings anchored in physical experience: "You've seen a fuse blow. Here's why."
 - Safety-first: explain what can go wrong and why, before any risky steps
 - Mentorship voice: "I'll show you..." not "You must..."
-- Software bridges: open with familiar code context, introduce hardware equivalent
+- Physical analogies: water pressure, pipe flow, household wiring — no software comparisons
 
 **Efficient tone specifically:**
 

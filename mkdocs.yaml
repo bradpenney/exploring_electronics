@@ -1,6 +1,6 @@
 site_name: "Exploring Electronics"
-site_url: https://bradpenney.github.io/exploring_electronics/
-site_description: "Electronics for software developers — from your first resistor to building connected devices."
+site_url: https://electronics.bradpenney.io
+site_description: "Electronics from first principles — voltage, current, resistance, and circuit design explained clearly. Real components, real numbers, no prior knowledge assumed."
 site_author: Brad Penney
 
 extra:
@@ -15,6 +15,10 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 theme:
   name: material
@@ -91,11 +95,14 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
   - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
 
 nav:
   - Home: index.md
   - 📦 Essential:
       - What Is Electricity?: essential/what_is_electricity.md
+      - Series and Parallel Circuits: essential/series_and_parallel.md
 
 # 📦 Essential — add articles here as they are published
 

@@ -16,7 +16,7 @@ A full-size 830-point breadboard costs $5–15 and will last years. It's the fir
 
 ![A full-size solderless breadboard in portrait orientation. Power rails run along each long edge. The center gap divides the component area into two halves, with columns a–e on the left and columns f–j on the right.](../images/breadboard_full.svg){ .breadboard-crop }
 
-<small>Partial image by Giacomo Alessandroni, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)</small>
+<p style="text-align: center; font-size: 0.75rem; color: var(--md-default-fg-color--light);">A full-size breadboard. Partial image: Giacomo Alessandroni, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
 
 ---
 
@@ -37,7 +37,7 @@ The internal connection pattern:
 
 Inside the board, each row of five holds a metal clip. Anything inserted into `a5`, `b5`, `c5`, `d5`, or `e5` is touching the same clip — the same electrical node. `f5` through `j5` are a separate clip on the other side of the gap.
 
-The center gap is designed for components that intentionally span it. DIP-package ICs like a `555` timer or shift register straddle the gap: one row of pins lands in columns `a–e`, the other in columns `f–j`, keeping both sides electrically separate. Tactile switches and some other components are designed to bridge the gap the same way. The rule isn't "never cross the gap" — it's "know whether your component is meant to span it."
+The center gap is designed for components that intentionally span it. Integrated circuits (ICs) — small chips with a row of pins on each side — are the most common example: one row lands in columns `a–e`, the other in columns `f–j`, keeping both sides electrically separate. Tactile switches are designed the same way. The rule isn't "never cross the gap" — it's "know whether your component is meant to span it."
 
 ---
 
@@ -59,9 +59,12 @@ Connect power once to the rails, then use short jumper wires to bring it into th
 
 ## A Circuit on a Breadboard
 
-Here's a real circuit on a breadboard — an Arduino powering components through the power rails, with jumper wires routing signals into the component area.
+Here's a real circuit on a breadboard — an Arduino powering components through the power rails, with jumper wires routing signals into the component area. This is the parallel switch circuit from [Series and Parallel Circuits](../essential/series_and_parallel.md).
 
-![An Arduino Uno connected to a half-size breadboard with two tactile buttons, a resistor, and an LED wired in parallel, showing power rails, jumper wires, and component placement.](../images/parallel_circuit.jpg){ style="width: 60%; display: block; margin: auto" }
+<figure markdown>
+  ![An Arduino Uno connected to a half-size breadboard with two tactile buttons, a resistor, and an LED wired in parallel, showing power rails, jumper wires, and component placement.](../images/parallel_circuit.jpg){ style="width: 60%;" }
+  <figcaption>A real breadboard circuit: jumper wires carry power and ground from the Arduino into the rails, and each component occupies its own rows.</figcaption>
+</figure>
 
 Notice the jumper wires carrying power and ground from the Arduino into the rails, and how each component occupies its own rows. Components sharing a row are electrically connected — no wires needed between them, just the metal clip inside the board.
 
@@ -169,9 +172,10 @@ Notice the jumper wires carrying power and ground from the Arduino into the rail
 **Related Articles**
 
 - [What Is Electricity?](../essential/what_is_electricity.md) — voltage, current, and resistance: the theory behind every circuit you'll build on a breadboard
+- [Series and Parallel Circuits](../essential/series_and_parallel.md) — the two wiring configurations demonstrated on the breadboard in this article
 
 ---
 
 ## What's Next
 
-**Coming soon.** The breadboard shows up in nearly every article on this site. The next step is putting it to work: building a real multi-component circuit, seeing two different wiring configurations, and understanding why the difference matters for every circuit you'll ever design.
+The breadboard appears in every circuit on this site. The next step is putting it to work: **[Series and Parallel Circuits](../essential/series_and_parallel.md)** — two different wiring configurations built on this exact board, and why the difference between them matters for every circuit you'll ever design.

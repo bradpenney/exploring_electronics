@@ -5,6 +5,9 @@ description: "The label on your USB charger says 5V ⎓ 2A. Two numbers that exp
 
 # What Is Electricity?
 
+!!! abstract "Essential"
+    This article is part of the **Essential** learning path — the foundations of electronics from first principles. No prior knowledge required.
+
 Pick up any USB charger near you. On the label you'll find two numbers: something like `5V ⎓ 2A`.
 
 Most people recognise the 5V without being able to explain it. Almost nobody can explain what the 2A means, or why both numbers exist, or why they're different things entirely.
@@ -21,15 +24,15 @@ That 5V on your charger is there whether anything is plugged in or not. It's pot
 
     **Voltage** is the electrical potential difference between two points. It is potential energy: it exists whether or not a circuit is connected, and whether or not any current is flowing.
 
-    Voltage is always measured between two points, never at a single point in isolation. Every circuit has a **ground** reference (0V); all other voltages are measured relative to it. When a GPIO pin is described as "3.3V," that means 3.3 volts relative to the ground pin.
+    Voltage is always measured between two points, never at a single point in isolation. Every circuit has a **ground** reference (0V); all other voltages are measured relative to it. When a power supply is labelled "12V," that means 12 volts between its positive terminal and its ground terminal.
 
     **Unit:** volts **(V)**
 
 Some reference voltages from hardware you'll work with:
 
 - **1.5V** — a AA battery
-- **3.3V** — logic level on most modern microcontrollers (`ESP32`, `Raspberry Pi`)
-- **5V** — USB power, Arduino Uno and other 5V microcontroller boards
+- **3.3V** — many hobby circuit boards and small electronics
+- **5V** — USB power, most hobby circuit boards
 - **12V** — hard drives, case fans, automotive systems
 - **120V / 240V AC** — your wall outlet
 
@@ -52,13 +55,13 @@ The 2A on your charger label is the maximum current it can supply. Your phone do
 Some reference currents from hardware you'll work with:
 
 - **10–20 mA** — a single LED
-- **40 mA** — maximum current from a single GPIO pin
+- **40 mA** — a small indicator lamp or a cluster of LEDs
 - **500 mA** — a USB 2.0 port's limit
 - **2–3 A** — a phone fast charger
 - **10+ A** — motors, heating elements, high-power loads
 
-!!! warning "GPIO Pins Are Not Power Rails"
-    The GPIO pins on microcontrollers like the `ESP32` can supply around 40 mA maximum. Exceed that and you'll permanently damage the pin. Motors, relays, and high-power LEDs need a separate driver between them and the GPIO pin.
+!!! warning "Every Component Has a Current Limit"
+    Components are rated for a maximum current. Exceed that rating and the component fails — often instantly and permanently. Before connecting anything to a power source, check its specification sheet for the maximum current it can safely handle.
 
 ---
 
@@ -87,9 +90,7 @@ Some reference resistances:
 
 Voltage, current, and resistance aren't independent — they're locked together by one equation:
 
-```
-V = I × R
-```
+\[ V = I \times R \]
 
 Change any one of the three values and at least one other must change too. The equation rearranges to solve for whichever quantity you need:
 
@@ -97,11 +98,7 @@ Change any one of the three values and at least one other must change too. The e
 
     **Scenario:** You want to light an LED from a 5V supply. The LED needs 20 mA. What resistor limits current to that value?
 
-    ```
-    R = V / I
-    R = 5V / 0.020A
-    R = 250 Ω
-    ```
+    \[ R = \frac{V}{I} = \frac{5\text{ V}}{0.020\text{ A}} = 250\ \Omega \]
 
     Pick the nearest standard value — 220 Ω or 270 Ω — and the LED lights up safely. That's a real circuit decision made with one equation.
 
@@ -109,11 +106,7 @@ Change any one of the three values and at least one other must change too. The e
 
     **Scenario:** You have a 9V battery connected through a 470 Ω resistor. How much current flows?
 
-    ```
-    I = V / R
-    I = 9V / 470Ω
-    I = 19.1 mA
-    ```
+    \[ I = \frac{V}{R} = \frac{9\text{ V}}{470\ \Omega} = 19.1\text{ mA} \]
 
     This is how you verify a circuit is within safe operating limits before you build it.
 
@@ -121,11 +114,7 @@ Change any one of the three values and at least one other must change too. The e
 
     **Scenario:** You need to know how much voltage a resistor is consuming in a circuit. 50 mA flows through a 100 Ω resistor — what voltage appears across it?
 
-    ```
-    V = I × R
-    V = 0.050A × 100Ω
-    V = 5V
-    ```
+    \[ V = I \times R = 0.050\text{ A} \times 100\ \Omega = 5\text{ V} \]
 
     Every component in a series circuit consumes some of the supply voltage. The resistor here consumes 5V — meaning if it's connected to a 9V supply with other components, the remaining 4V is available for everything else. In any circuit, the voltages consumed by all components always add up to the supply voltage.
 
@@ -143,9 +132,7 @@ Voltage, current, and resistance describe the state of a circuit — what's ther
 
     **Unit:** watts **(W)**
 
-    ```
-    P = V × I
-    ```
+    \[ P = V \times I \]
 
 Your charger: 5V × 2A = **10 W**. That's what "10W charger" means on the packaging.
 
@@ -165,7 +152,7 @@ graph LR
     classDef gnd fill:#1a202c,stroke:#cbd5e0,stroke-width:2px,color:#fff
 ```
 
-Every circuit follows this pattern: a voltage source drives current through resistance and loads, returning to ground. The quantities always obey V = I × R and P = V × I.
+Every circuit follows this pattern: a voltage source drives current through resistance and loads, returning to ground. The quantities always obey \( V = I \times R \) and \( P = V \times I \).
 
 ---
 
@@ -180,10 +167,9 @@ Many people have been shocked by house wiring and walked away, which creates a f
 
 Body resistance is the key variable. Dry skin can be 100 kΩ or more; wet skin drops to around 1 kΩ. Run both through Ohm's Law:
 
-```
-Dry skin:  I = 120V / 100,000Ω = 1.2 mA   — painful, not dangerous
-Wet skin:  I = 120V / 1,000Ω   = 120 mA   — potentially lethal
-```
+\[ I_{\text{dry}} = \frac{120\text{ V}}{100{,}000\ \Omega} = 1.2\text{ mA} \quad \text{— painful, not dangerous} \]
+
+\[ I_{\text{wet}} = \frac{120\text{ V}}{1{,}000\ \Omega} = 120\text{ mA} \quad \text{— potentially lethal} \]
 
 Same wire, same voltage, 100 times more current. The path through the body matters too — current crossing the chest is what stops a heart. Electricians work one-handed on live circuits specifically to avoid creating a hand-to-hand path across the chest.
 
@@ -200,24 +186,16 @@ The working voltages in most prototyping electronics — 3.3V, 5V, occasionally 
     A laptop charger is labeled `Output: 20V ⎓ 3.25A`. What is the maximum power it can deliver, and what does each number represent?
 
     ??? tip "Solution"
-        ```
-        P = V × I
-        P = 20V × 3.25A
-        P = 65 W
-        ```
+        \[ P = V \times I = 20\text{ V} \times 3.25\text{ A} = 65\text{ W} \]
 
         The 20V is the voltage — the electrical potential the charger supplies. The 3.25A is the maximum current it can provide. The laptop draws whatever it needs up to that limit. Together they give 65W, which is why this charger is marketed as a "65W charger."
 
-??? question "2. LED Resistor for a 3.3V Circuit"
+??? question "2. LED Resistor for a 3.3V Supply"
 
-    You want to connect an LED to a 3.3V microcontroller pin. The LED needs 20 mA. What resistor do you need?
+    You want to light an LED from a 3.3V power supply. The LED needs 20 mA. What resistor do you need?
 
     ??? tip "Solution"
-        ```
-        R = V / I
-        R = 3.3V / 0.020A
-        R = 165 Ω
-        ```
+        \[ R = \frac{V}{I} = \frac{3.3\text{ V}}{0.020\text{ A}} = 165\ \Omega \]
 
         Pick the nearest standard value: **150 Ω** (gives ~22 mA) or **180 Ω** (gives ~18 mA). Both are within normal operating range for an LED.
 
@@ -226,7 +204,7 @@ The working voltages in most prototyping electronics — 3.3V, 5V, occasionally 
     A circuit is drawing too much current and a component is overheating. You cannot change the voltage source. What can you do, and why does each option work?
 
     ??? tip "Solution"
-        The fundamental relationship is `I = V / R`. If voltage is fixed, current is determined entirely by resistance. To reduce current, you must increase resistance — there are two ways to do that:
+        The fundamental relationship is \( I = V / R \). If voltage is fixed, current is determined entirely by resistance. To reduce current, you must increase resistance — there are two ways to do that:
 
         **Add resistance in series.** Insert a resistor between the power source and the load. This increases total resistance and reduces current through the entire circuit. The Ohm's Law calculation tells you exactly how much resistor you need.
 
@@ -239,11 +217,7 @@ The working voltages in most prototyping electronics — 3.3V, 5V, occasionally 
     A single lithium cell (the kind inside a phone or power bank) is 3.7V. A short circuit through a wire with 0.05 Ω resistance — how much current flows? Why is this so much more dangerous than shorting a AA battery?
 
     ??? tip "Solution"
-        ```
-        I = V / R
-        I = 3.7V / 0.05Ω
-        I = 74 A
-        ```
+        \[ I = \frac{V}{R} = \frac{3.7\text{ V}}{0.05\ \Omega} = 74\text{ A} \]
 
         74 amperes. Unlike a AA battery — which has significant internal resistance and can't actually deliver high currents — lithium cells can source very large currents for a brief period. That energy has to go somewhere: it becomes heat, rapidly. The electrolyte inside the cell ignites, which is why shorted or punctured lithium batteries catch fire rather than just dying. It's also why airlines restrict lithium batteries in checked luggage.
 
@@ -261,7 +235,7 @@ The working voltages in most prototyping electronics — 3.3V, 5V, occasionally 
 
     The electrical force. Exists as potential energy before any current flows.
 
-    `V = I × R`
+    \( V = I \times R \)
 
 -   **I — Current**
 
@@ -271,7 +245,7 @@ The working voltages in most prototyping electronics — 3.3V, 5V, occasionally 
 
     The actual flow of electrons through a circuit.
 
-    `I = V / R`
+    \( I = \dfrac{V}{R} \)
 
 -   **R — Resistance**
 
@@ -281,7 +255,7 @@ The working voltages in most prototyping electronics — 3.3V, 5V, occasionally 
 
     Opposition to current flow. Determines how much current a given voltage produces.
 
-    `R = V / I`
+    \( R = \dfrac{V}{I} \)
 
 -   **P — Power**
 
@@ -291,7 +265,7 @@ The working voltages in most prototyping electronics — 3.3V, 5V, occasionally 
 
     Rate of energy delivery. Energy not doing useful work becomes heat.
 
-    `P = V × I`
+    \( P = V \times I \)
 
 </div>
 
@@ -299,7 +273,7 @@ The working voltages in most prototyping electronics — 3.3V, 5V, occasionally 
 
 ## What's Next
 
-**Coming soon.** The next article takes Ohm's Law into real circuit topology: **Series and Parallel Circuits** — why adding more LEDs in series dims them all equally, and why a parallel circuit behaves completely differently. The same three variables, two different arrangements, two completely different outcomes.
+The next article takes Ohm's Law into real circuit topology: **[Series and Parallel Circuits](series_and_parallel.md)** — why adding more LEDs in series dims them all equally, and why a parallel circuit behaves completely differently. The same three variables, two different arrangements, two completely different outcomes.
 
 ---
 
@@ -314,6 +288,10 @@ The working voltages in most prototyping electronics — 3.3V, 5V, occasionally 
 **Going Further**
 
 - [All About LEDs — Adafruit](https://learn.adafruit.com/all-about-leds) — the LED resistor calculation from this article applied to real components
+
+**Practical Tools**
+
+- [Breadboards](../tools/breadboards.md) — how to build the circuits from this article without soldering; essential reading before your first hands-on circuit
 
 **Safety**
 
