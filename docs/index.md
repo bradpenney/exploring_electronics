@@ -1,4 +1,5 @@
 ---
+date: "2026-05-10 21:41"
 title: "Exploring Electronics"
 description: "Electronics from first principles — voltage, current, resistance, and circuit design explained clearly. Real components, real numbers, no prior knowledge assumed."
 ---

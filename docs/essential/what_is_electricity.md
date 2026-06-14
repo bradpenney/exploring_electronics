@@ -1,4 +1,5 @@
 ---
+date: "2026-05-15 22:43"
 title: "What Is Electricity? Voltage, Current, and Resistance"
 description: "The label on your USB charger says 5V ⎓ 2A. Two numbers that explain how electricity works — voltage, current, resistance, and Ohm's Law explained clearly."
 ---

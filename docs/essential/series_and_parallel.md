@@ -1,4 +1,5 @@
 ---
+date: "2026-06-02 21:56"
 title: "Series and Parallel Circuits"
 description: "Two wiring patterns govern every circuit ever built. Learn how series and parallel circuits work — why voltage divides in one and stays constant in the other."
 ---

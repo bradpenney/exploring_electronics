@@ -1,4 +1,5 @@
 ---
+date: "2026-05-25 21:19"
 title: "Breadboards: Prototype Circuits Without Soldering"
 description: "How breadboard holes connect internally, how to use the power rails, and the wiring mistakes that kill every beginner's first circuit before it even starts."
 ---
