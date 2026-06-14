@@ -1,0 +1,1256 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Two wiring patterns govern every circuit ever built. Learn how series and parallel circuits work — why voltage divides in one and stays constant in the other.">
+      
+      
+        <meta name="author" content="Brad Penney">
+      
+      
+        <link rel="canonical" href="https://electronics.bradpenney.io/essential/series_and_parallel/">
+      
+      
+        <link rel="prev" href="../what_is_electricity/">
+      
+      
+        <link rel="next" href="../../tools/breadboards/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../images/exploring_electronics.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Series and Parallel Circuits - Exploring Electronics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M1%207.775V2.75C1%201.784%201.784%201%202.75%201h5.025c.464%200%20.91.184%201.238.513l6.25%206.25a1.75%201.75%200%200%201%200%202.474l-5.026%205.026a1.75%201.75%200%200%201-2.474%200l-6.25-6.25A1.75%201.75%200%200%201%201%207.775m1.5%200c0%20.066.026.13.073.177l6.25%206.25a.25.25%200%200%200%20.354%200l5.025-5.025a.25.25%200%200%200%200-.354l-6.25-6.25a.25.25%200%200%200-.177-.073H2.75a.25.25%200%200%200-.25.25ZM6%205a1%201%200%201%201%200%202%201%201%200%200%201%200-2%22/%3E%3C/svg%3E');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M2.5%201.75v11.5c0%20.138.112.25.25.25h3.17a.75.75%200%200%201%200%201.5H2.75A1.75%201.75%200%200%201%201%2013.25V1.75C1%20.784%201.784%200%202.75%200h8.5C12.216%200%2013%20.784%2013%201.75v7.736a.75.75%200%200%201-1.5%200V1.75a.25.25%200%200%200-.25-.25h-8.5a.25.25%200%200%200-.25.25m13.274%209.537zl-4.557%204.45a.75.75%200%200%201-1.055-.008l-1.943-1.95a.75.75%200%200%201%201.062-1.058l1.419%201.425%204.026-3.932a.75.75%200%201%201%201.048%201.074M4.75%204h4.5a.75.75%200%200%201%200%201.5h-4.5a.75.75%200%200%201%200-1.5M4%207.75A.75.75%200%200%201%204.75%207h2a.75.75%200%200%201%200%201.5h-2A.75.75%200%200%201%204%207.75%22/%3E%3C/svg%3E');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M0%208a8%208%200%201%201%2016%200A8%208%200%200%201%200%208m8-6.5a6.5%206.5%200%201%200%200%2013%206.5%206.5%200%200%200%200-13M6.5%207.75A.75.75%200%200%201%207.25%207h1a.75.75%200%200%201%20.75.75v2.75h.25a.75.75%200%200%201%200%201.5h-2a.75.75%200%200%201%200-1.5h.25v-2h-.25a.75.75%200%200%201-.75-.75M8%206a1%201%200%201%201%200-2%201%201%200%200%201%200%202%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M3.499.75a.75.75%200%200%201%201.5%200v.996C5.9%202.903%206.793%203.65%207.662%204.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873%2010.794-.045%2012.622.26%2014.408.558%2016%201.94%2016%204.25c0%201.278-.954%202.575-2.44%202.734l.146.508.065.22c.203.701.412%201.455.476%202.226.142%201.707-.4%203.03-1.487%203.898C11.714%2014.671%2010.27%2015%208.75%2015h-6a.75.75%200%200%201%200-1.5h1.376a4.5%204.5%200%200%201-.563-1.191%203.84%203.84%200%200%201-.05-2.063%204.65%204.65%200%200%201-2.025-.293.75.75%200%200%201%20.525-1.406c1.357.507%202.376-.006%202.698-.318l.009-.01a.747.747%200%200%201%201.06%200%20.75.75%200%200%201-.012%201.074c-.912.92-.992%201.835-.768%202.586.221.74.745%201.337%201.196%201.621H8.75c1.343%200%202.398-.296%203.074-.836.635-.507%201.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.4%202.4%200%200%201-.507-.441%203.1%203.1%200%200%201-.633-1.248.75.75%200%200%201%201.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738%200%201.25-.615%201.25-1.25%200-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706%201.345-.46.92-.27%201.774.019%203.062l.042.19.01.05c.348.443.666.949.94%201.553a.75.75%200%201%201-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7%205.527c-.814-.68-1.75-1.462-2.692-2.619a3.7%203.7%200%200%200-1.023.88c-.406.495-.663%201.036-.722%201.508.116.122.306.21.591.239.388.038.797-.06%201.032-.19a.75.75%200%200%201%20.728%201.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75%205.677V5.5c0-.984.48-1.94%201.077-2.664.46-.559%201.05-1.055%201.673-1.353z%22/%3E%3C/svg%3E');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M13.78%204.22a.75.75%200%200%201%200%201.06l-7.25%207.25a.75.75%200%200%201-1.06%200L2.22%209.28a.75.75%200%200%201%20.018-1.042.75.75%200%200%201%201.042-.018L6%2010.94l6.72-6.72a.75.75%200%200%201%201.06%200%22/%3E%3C/svg%3E');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M0%208a8%208%200%201%201%2016%200A8%208%200%200%201%200%208m8-6.5a6.5%206.5%200%201%200%200%2013%206.5%206.5%200%200%200%200-13M6.92%206.085h.001a.749.749%200%201%201-1.342-.67c.169-.339.436-.701.849-.977C6.845%204.16%207.369%204%208%204a2.76%202.76%200%200%201%201.637.525c.503.377.863.965.863%201.725%200%20.448-.115.83-.329%201.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6%206%200%200%200-.26.16%201%201%200%200%200-.276.245.75.75%200%200%201-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1%201%200%200%200%20.277-.245C8.96%206.514%209%206.427%209%206.25a.61.61%200%200%200-.262-.525A1.27%201.27%200%200%200%208%205.5c-.369%200-.595.09-.74.187a1%201%200%200%200-.34.398M9%2011a1%201%200%201%201-2%200%201%201%200%200%201%202%200%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M6.457%201.047c.659-1.234%202.427-1.234%203.086%200l6.082%2011.378A1.75%201.75%200%200%201%2014.082%2015H1.918a1.75%201.75%200%200%201-1.543-2.575Zm1.763.707a.25.25%200%200%200-.44%200L1.698%2013.132a.25.25%200%200%200%20.22.368h12.164a.25.25%200%200%200%20.22-.368Zm.53%203.996v2.5a.75.75%200%200%201-1.5%200v-2.5a.75.75%200%200%201%201.5%200M9%2011a1%201%200%201%201-2%200%201%201%200%200%201%202%200%22/%3E%3C/svg%3E');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M2.344%202.343za8%208%200%200%201%2011.314%2011.314A8.002%208.002%200%200%201%20.234%2010.089a8%208%200%200%201%202.11-7.746m1.06%2010.253a6.5%206.5%200%201%200%209.108-9.275%206.5%206.5%200%200%200-9.108%209.275M6.03%204.97%208%206.94l1.97-1.97a.749.749%200%200%201%201.275.326.75.75%200%200%201-.215.734L9.06%208l1.97%201.97a.749.749%200%200%201-.326%201.275.75.75%200%200%201-.734-.215L8%209.06l-1.97%201.97a.749.749%200%200%201-1.275-.326.75.75%200%200%201%20.215-.734L6.94%208%204.97%206.03a.75.75%200%200%201%20.018-1.042.75.75%200%200%201%201.042-.018%22/%3E%3C/svg%3E');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M9.504.43a1.516%201.516%200%200%201%202.437%201.713L10.415%205.5h2.123c1.57%200%202.346%201.909%201.22%203.004l-7.34%207.142a1.25%201.25%200%200%201-.871.354h-.302a1.25%201.25%200%200%201-1.157-1.723L5.633%2010.5H3.462c-1.57%200-2.346-1.909-1.22-3.004zm1.047%201.074L3.286%208.571A.25.25%200%200%200%203.462%209H6.75a.75.75%200%200%201%20.694%201.034l-1.713%204.188%206.982-6.793A.25.25%200%200%200%2012.538%207H9.25a.75.75%200%200%201-.683-1.06l2.008-4.418.003-.006-.004-.009-.006-.006-.008-.001q-.005%200-.009.004%22/%3E%3C/svg%3E');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M4.72.22a.75.75%200%200%201%201.06%200l1%20.999a3.5%203.5%200%200%201%202.441%200l.999-1a.748.748%200%200%201%201.265.332.75.75%200%200%201-.205.729l-.775.776c.616.63.995%201.493.995%202.444v.327q0%20.15-.025.292c.408.14.764.392%201.029.722l1.968-.787a.75.75%200%200%201%20.556%201.392L13%207.258V9h2.25a.75.75%200%200%201%200%201.5H13v.5q-.002.615-.141%201.186l2.17.868a.75.75%200%200%201-.557%201.392l-2.184-.873A5%205%200%200%201%208%2016a5%205%200%200%201-4.288-2.427l-2.183.873a.75.75%200%200%201-.558-1.392l2.17-.868A5%205%200%200%201%203%2011v-.5H.75a.75.75%200%200%201%200-1.5H3V7.258L.971%206.446a.75.75%200%200%201%20.558-1.392l1.967.787c.265-.33.62-.583%201.03-.722a1.7%201.7%200%200%201-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72%201.28a.75.75%200%200%201%200-1.06m.53%206.28a.75.75%200%200%200-.75.75V11a3.5%203.5%200%201%200%207%200V7.25a.75.75%200%200%200-.75-.75ZM6.173%205h3.654A.17.17%200%200%200%2010%204.827V4.5a2%202%200%201%200-4%200v.327c0%20.096.077.173.173.173%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M5%205.782V2.5h-.25a.75.75%200%200%201%200-1.5h6.5a.75.75%200%200%201%200%201.5H11v3.282l3.666%205.76C15.619%2013.04%2014.543%2015%2012.767%2015H3.233c-1.776%200-2.852-1.96-1.899-3.458Zm-2.4%206.565a.75.75%200%200%200%20.633%201.153h9.534a.75.75%200%200%200%20.633-1.153L12.225%2010.5h-8.45ZM9.5%202.5h-3V6c0%20.143-.04.283-.117.403L4.73%209h6.54L9.617%206.403A.75.75%200%200%201%209.5%206Z%22/%3E%3C/svg%3E');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M1.75%202.5h10.5a.75.75%200%200%201%200%201.5H1.75a.75.75%200%200%201%200-1.5m4%205h8.5a.75.75%200%200%201%200%201.5h-8.5a.75.75%200%200%201%200-1.5m0%205h8.5a.75.75%200%200%201%200%201.5h-8.5a.75.75%200%200%201%200-1.5M2.5%207.75v6a.75.75%200%200%201-1.5%200v-6a.75.75%200%200%201%201.5%200%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V01MJ4R3SQ"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V01MJ4R3SQ",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V01MJ4R3SQ",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Series and Parallel Circuits - Exploring Electronics" >
+      
+        <meta  property="og:description"  content="Two wiring patterns govern every circuit ever built. Learn how series and parallel circuits work — why voltage divides in one and stays constant in the other." >
+      
+        <meta  property="og:image"  content="https://electronics.bradpenney.io/assets/images/social/essential/series_and_parallel.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://electronics.bradpenney.io/essential/series_and_parallel/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Series and Parallel Circuits - Exploring Electronics" >
+      
+        <meta  name="twitter:description"  content="Two wiring patterns govern every circuit ever built. Learn how series and parallel circuits work — why voltage divides in one and stays constant in the other." >
+      
+        <meta  name="twitter:image"  content="https://electronics.bradpenney.io/assets/images/social/essential/series_and_parallel.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#series-and-parallel-circuits" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Exploring Electronics" class="md-header__button md-logo" aria-label="Exploring Electronics" data-md-component="logo">
+      
+  <img src="../../images/exploring_electronics.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Exploring Electronics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Series and Parallel Circuits
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Exploring Electronics" class="md-nav__button md-logo" aria-label="Exploring Electronics" data-md-component="logo">
+      
+  <img src="../../images/exploring_electronics.png" alt="logo">
+
+    </a>
+    Exploring Electronics
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📦 Essential
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📦 Essential
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../what_is_electricity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    What Is Electricity?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Series and Parallel Circuits
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Series and Parallel Circuits
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-fundamental-difference" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Fundamental Difference
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Fundamental Difference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#voltage-divides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voltage Divides
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-happens-when-one-component-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Happens When One Component Fails
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voltage-stays-the-same" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voltage Stays the Same
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-divides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Divides
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-happens-when-one-component-fails_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Happens When One Component Fails
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#series-vs-parallel-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Series vs. Parallel at a Glance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-circuits-use-both" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real Circuits Use Both
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      Safety
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Recap
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      What's Next
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    🔧 Practical Tools
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            🔧 Practical Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/breadboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Breadboards
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-fundamental-difference" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Fundamental Difference
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Fundamental Difference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#voltage-divides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voltage Divides
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-happens-when-one-component-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Happens When One Component Fails
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voltage-stays-the-same" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voltage Stays the Same
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-divides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Divides
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-happens-when-one-component-fails_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Happens When One Component Fails
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#series-vs-parallel-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Series vs. Parallel at a Glance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-circuits-use-both" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real Circuits Use Both
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      Safety
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Recap
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      What's Next
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="series-and-parallel-circuits">Series and Parallel Circuits</h1>
+<div class="admonition abstract">
+<p class="admonition-title">Essential</p>
+<p>This article is part of the <strong>Essential</strong> learning path. It builds on <a href="../what_is_electricity/">What Is Electricity?</a> — read that first if you're new to voltage, current, and resistance.</p>
+</div>
+<p>Pick up any string of Christmas lights. Old ones — the kind where one dead bulb kills the whole string. That's a series circuit. Modern ones, where a single bad bulb barely matters? Parallel.</p>
+<p>Two patterns. Every circuit ever built uses one, the other, or a combination of both.</p>
+<p>By the end of this article you'll understand what's actually different between them — not just the names, but the physics — and you'll be able to predict how voltage, current, and resistance behave in each arrangement.</p>
+<hr />
+<h2 id="the-fundamental-difference">The Fundamental Difference</h2>
+<p>In a <strong>series circuit</strong>, current has exactly one path to follow. In a <strong>parallel circuit</strong>, current has multiple paths available. That single difference changes how voltage, current, and resistance behave across the entire circuit.</p>
+<div class="grid">
+<div style="border: 1px solid #4a5568; border-radius: 6px; padding: 1rem;">
+<p><strong>Series — one path</strong></p>
+<pre class="mermaid"><code>graph TB
+    PWR["5V"]:::source --&gt; R["Resistor\n220 Ω"]:::resist
+    R --&gt; SW1["Switch 1"]:::switch
+    SW1 --&gt; SW2["Switch 2"]:::switch
+    SW2 --&gt; LED["LED"]:::load
+    LED --&gt; GND["0V"]:::gnd
+
+    classDef source fill:#d97706,stroke:#cbd5e0,stroke-width:2px,color:#fff
+    classDef resist fill:#2d3748,stroke:#cbd5e0,stroke-width:2px,color:#fff
+    classDef switch fill:#4a5568,stroke:#cbd5e0,stroke-width:2px,color:#fff
+    classDef load fill:#2f855a,stroke:#cbd5e0,stroke-width:2px,color:#fff
+    classDef gnd fill:#1a202c,stroke:#cbd5e0,stroke-width:2px,color:#fff</code></pre>
+<p>Both switches must be pressed to light the LED.</p>
+</div>
+<div style="border: 1px solid #4a5568; border-radius: 6px; padding: 1rem;">
+<p><strong>Parallel — multiple paths</strong></p>
+<pre class="mermaid"><code>graph TB
+    PWR["5V"]:::source
+    R["Resistor\n220 Ω"]:::resist
+    LED["LED"]:::load
+    GND["0V"]:::gnd
+
+    PWR --&gt; R
+    R --&gt; SW1["Switch 1"]:::switch
+    R --&gt; SW2["Switch 2"]:::switch
+    SW1 --&gt; LED
+    SW2 --&gt; LED
+    LED --&gt; GND
+
+    classDef source fill:#d97706,stroke:#cbd5e0,stroke-width:2px,color:#fff
+    classDef resist fill:#2d3748,stroke:#cbd5e0,stroke-width:2px,color:#fff
+    classDef switch fill:#4a5568,stroke:#cbd5e0,stroke-width:2px,color:#fff
+    classDef load fill:#2f855a,stroke:#cbd5e0,stroke-width:2px,color:#fff
+    classDef gnd fill:#1a202c,stroke:#cbd5e0,stroke-width:2px,color:#fff</code></pre>
+<p>Either switch pressed lights the LED.</p>
+</div>
+</div>
+<hr />
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Series</label><label for="__tabbed_1_2">Parallel</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>In a series circuit, every component is connected end-to-end in a single chain. Current must pass through each component in sequence — there is no alternative route.</p>
+<p>For current to flow and the LED to light, <strong>both switches must be pressed at the same time</strong>. Either switch open means the path is broken — no current anywhere. A single current-limiting resistor sits at the start of the chain — before both switches — and limits current through the entire circuit to protect the LED.</p>
+<p><figure markdown>
+  <img alt="Two pushbutton switches wired in series with an LED. Both must be pressed simultaneously to light the LED." src="../../images/series_circuit.jpg" width="500" />
+  <figcaption>Series circuit: both switches must be pressed to complete the path and light the LED. The resistor sits before both switches, limiting current through the entire chain.</figcaption>
+</figure></p>
+<p>This is the essential nature of a series circuit: every component is a gatekeeper. All of them must allow current through, or none of it flows.</p>
+<h3 id="voltage-divides">Voltage Divides</h3>
+<p>The supply voltage doesn't stay the same throughout the circuit. Each component has a voltage drop across it, and those drops always add up to the total supply:</p>
+<div class="arithmatex">\[ V_{\text{supply}} = V_1 + V_2 + V_3 + \cdots \]</div>
+<p>This is called <strong>voltage division</strong>. The voltage is shared across the components in proportion to their resistance.</p>
+<p>The reason follows directly from Ohm's Law. Because there is only one path, the same current flows through every component. Since <span class="arithmatex">\( V = I \times R \)</span>, a component with higher resistance produces a larger voltage drop for that same current — the bigger the resistance, the larger the share of the supply voltage it takes.</p>
+<details class="example">
+<summary>Worked example</summary>
+<p>A 9V supply driving R1 = 300 Ω and R2 = 600 Ω in series.</p>
+<p>Total resistance:</p>
+<div class="arithmatex">\[ R_{\text{total}} = 300 + 600 = 900\ \Omega \]</div>
+<p>Current (same through every component — there's only one path):</p>
+<div class="arithmatex">\[ I = \frac{V}{R} = \frac{9\text{ V}}{900\ \Omega} = 10\text{ mA} \]</div>
+<p>Voltage across each resistor:</p>
+<div class="arithmatex">\[ V_{R_1} = I \times R = 0.010\text{ A} \times 300\ \Omega = 3\text{ V} \]</div>
+<div class="arithmatex">\[ V_{R_2} = I \times R = 0.010\text{ A} \times 600\ \Omega = 6\text{ V} \]</div>
+<p>Check: <span class="arithmatex">\( 3 + 6 = 9\text{ V} \)</span> ✓</p>
+<p>The larger resistor takes the larger share of the voltage — the basis of the voltage divider, one of the most useful sub-circuits in electronics.</p>
+</details>
+<p><strong>The general rules for series:</strong></p>
+<div class="arithmatex">\[ R_{\text{total}} = R_1 + R_2 + R_3 + \cdots \]</div>
+<div class="arithmatex">\[ I = \frac{V_{\text{supply}}}{R_{\text{total}}} \quad \text{(same current through every component)} \]</div>
+<h3 id="what-happens-when-one-component-fails">What Happens When One Component Fails</h3>
+<p>If any component in a series circuit breaks open — a burned-out bulb, a broken wire, a switch left open — the path is severed. No current flows anywhere. Everything stops.</p>
+<p>That's the old Christmas lights. One bad bulb: whole string out. The break anywhere in the chain kills the circuit completely.</p>
+<div class="admonition tip">
+<p class="admonition-title">Try it yourself</p>
+<p>Build this circuit on a breadboard — it takes less than five minutes. You'll need two pushbutton switches, one LED, and a 220 Ω resistor. The LED has polarity — the longer leg (anode) connects toward positive; if it doesn't light, flip it around. See <a href="../../tools/breadboards/">Breadboards</a> if you haven't used one before.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>In a parallel circuit, two or more branches share the same connection points — both the supply and the return to ground. Current can flow through any branch independently of the others.</p>
+<p>In this circuit, the two switches are the parallel branches. A single current-limiting resistor sits before both switches — shared by both paths — and limits current through the LED. Press <strong>either</strong> switch and current flows through that branch. Press both and current flows through both branches simultaneously.</p>
+<p><figure markdown>
+  <img alt="Two pushbutton switches wired in parallel with an LED. Either switch pressed independently lights the LED." src="../../images/parallel_circuit.jpg" width="500" />
+  <figcaption>Parallel circuit: either switch independently completes its own path to the LED. A single resistor before both switches limits the current.</figcaption>
+</figure></p>
+<p>This is the essential nature of a parallel circuit: multiple paths mean multiple opportunities for current to flow. Any one path completing is enough.</p>
+<h3 id="voltage-stays-the-same">Voltage Stays the Same</h3>
+<p>Every branch in a parallel circuit sees the full supply voltage. Whether one switch is pressed or both, the LED receives the same voltage — the full supply, not a fraction of it.</p>
+<p>This is a fundamental rule: <strong>voltage is the same across every parallel branch</strong>.</p>
+<p>You might wonder: if both switches are pressed and current flows through two paths, does the resistor drop more voltage and leave less for the LED? In practice, no. Each switch has near-zero resistance when closed, so the parallel combination is near-zero whether one or two paths are active. The resistor and LED divide the supply voltage the same way regardless.</p>
+<h3 id="current-divides">Current Divides</h3>
+<p>When multiple parallel branches are active at once, the total current drawn from the supply is the sum of the current in each branch:</p>
+<div class="arithmatex">\[ I_{\text{total}} = I_1 + I_2 + \cdots \]</div>
+<p>Each branch independently responds to the voltage across it. A branch with resistance R draws <span class="arithmatex">\( I = V/R \)</span> regardless of what other branches are doing — it doesn't "know" whether they are open or closed. The supply simply delivers the sum of whatever each branch demands.</p>
+<p><strong>Total resistance in a parallel circuit decreases as you add branches:</strong></p>
+<div class="arithmatex">\[ \frac{1}{R_{\text{total}}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \cdots \]</div>
+<details class="example">
+<summary>Worked example</summary>
+<p>Two 220 Ω resistors in parallel across a 5V supply.</p>
+<p>Each resistor sees the full 5V:</p>
+<div class="arithmatex">\[ I = \frac{V}{R} = \frac{5\text{ V}}{220\ \Omega} = 22.7\text{ mA} \]</div>
+<p>Total current from the supply:</p>
+<div class="arithmatex">\[ I_{\text{total}} = 22.7 + 22.7 = 45.5\text{ mA} \]</div>
+<p>Applying the parallel resistance formula:</p>
+<div class="arithmatex">\[ \frac{1}{R_{\text{total}}} = \frac{1}{220} + \frac{1}{220} = \frac{2}{220} \implies R_{\text{total}} = 110\ \Omega \]</div>
+<p>Two 220 Ω resistors in parallel behave as a single 110 Ω resistor. Adding more paths makes it easier for current to flow, so total resistance falls.</p>
+</details>
+<h3 id="what-happens-when-one-component-fails_1">What Happens When One Component Fails</h3>
+<p>If one branch fails, current stops flowing in that branch only. Every other branch continues completely unaffected.</p>
+<p>That's modern Christmas lights — one dead bulb goes dark while the rest stay lit. It's also how your house is wired: one lamp failing doesn't affect the others on the same circuit.</p>
+<div class="admonition tip">
+<p class="admonition-title">Try it yourself</p>
+<p>Build the parallel version alongside the series circuit and compare them directly — the difference in behaviour is immediately obvious. Same components: two pushbutton switches, one LED, and a 220 Ω resistor. Remember LED polarity — longer leg toward positive. See <a href="../../tools/breadboards/">Breadboards</a> if you haven't used one before.</p>
+</div>
+</div>
+</div>
+</div>
+<hr />
+<h2 id="series-vs-parallel-at-a-glance">Series vs. Parallel at a Glance</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Series</th>
+<th>Parallel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Paths for current</strong></td>
+<td>One</td>
+<td>Multiple</td>
+</tr>
+<tr>
+<td><strong>To complete the circuit</strong></td>
+<td>All components must allow current</td>
+<td>Any one path completing is enough</td>
+</tr>
+<tr>
+<td><strong>Current</strong></td>
+<td>Same through every component</td>
+<td>Splits — each branch carries its own</td>
+</tr>
+<tr>
+<td><strong>Voltage</strong></td>
+<td>Divides across components</td>
+<td>Same across every branch</td>
+</tr>
+<tr>
+<td><strong>Total resistance</strong></td>
+<td>Increases with each component added</td>
+<td>Decreases with each component added</td>
+</tr>
+<tr>
+<td><strong>One component fails</strong></td>
+<td>Entire circuit stops</td>
+<td>Only that branch is affected</td>
+</tr>
+<tr>
+<td><strong>Common use</strong></td>
+<td>Voltage dividers, switch logic, current limiting</td>
+<td>House wiring, LED arrays, battery banks</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="real-circuits-use-both">Real Circuits Use Both</h2>
+<p>Most practical circuits combine the two topologies. Consider a row of indicator LEDs: each one needs its own current-limiting resistor (series), but they should all run independently at full brightness from the same supply (parallel). Any time you have multiple independent loads from the same supply, this pattern applies.</p>
+<pre class="mermaid"><code>graph TB
+    PWR["5V Supply"]:::source
+    GND["Ground\n0V"]:::gnd
+
+    PWR --&gt; R1["Resistor 1\n220 Ω"]:::resist
+    PWR --&gt; R2["Resistor 2\n220 Ω"]:::resist
+    R1 --&gt; LED1["LED 1"]:::load
+    R2 --&gt; LED2["LED 2"]:::load
+    LED1 --&gt; GND
+    LED2 --&gt; GND
+
+    classDef source fill:#d97706,stroke:#cbd5e0,stroke-width:2px,color:#fff
+    classDef resist fill:#2d3748,stroke:#cbd5e0,stroke-width:2px,color:#fff
+    classDef load fill:#2f855a,stroke:#cbd5e0,stroke-width:2px,color:#fff
+    classDef gnd fill:#1a202c,stroke:#cbd5e0,stroke-width:2px,color:#fff</code></pre>
+<p>Each resistor and its LED are in <strong>series</strong> with each other — the resistor limits current for that LED. The two pairs are in <strong>parallel</strong> with each other — each pair gets the full supply voltage, independently of the other.</p>
+<p>Recognising these nested patterns is what lets you look at a circuit and immediately understand what each part is doing.</p>
+<hr />
+<h2 id="safety">Safety</h2>
+<div class="admonition warning">
+<p class="admonition-title">More Parallel Branches = More Total Current</p>
+<p>Every additional parallel branch draws its own current from the supply. A single LED at 20 mA is well within the limits of a USB supply. But motors, heating elements, or high-power LEDs multiplied across many parallel branches add up quickly. Always calculate total current before adding parallel loads, and verify your power source can deliver it.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Short Circuits in Parallel</p>
+<p>A short circuit — a path with near-zero resistance — placed in parallel with your circuit gives current an almost-free route that bypasses everything else. All available current rushes through it. Wires heat rapidly, components are destroyed, and lithium batteries can ignite. Fuses and circuit breakers are deliberate weak points designed to fail safely before the wiring does.</p>
+</div>
+<hr />
+<h2 id="practice">Practice</h2>
+<details class="question">
+<summary>1. Two Switches, One LED</summary>
+<p>You wire two switches and an LED so that pressing either switch lights the LED, and pressing both also lights the LED. Is this series or parallel? What changes if you rewire it so that both switches must be pressed simultaneously?</p>
+<details class="tip">
+<summary>Solution</summary>
+<p><strong>Either switch lights the LED</strong> — this is <strong>parallel</strong>. Each switch provides its own independent path to the LED. Any complete path is enough.</p>
+<p><strong>Both switches required</strong> — this is <strong>series</strong>. There is one path, and both switches must be closed for current to flow through it. One switch open breaks the only path.</p>
+<p>This is the clearest demonstration of the difference between the two topologies.</p>
+</details>
+</details>
+<details class="question">
+<summary>2. Series Voltage Division</summary>
+<p>A 9V battery powers three resistors in series: R1 = 100 Ω, R2 = 200 Ω, R3 = 400 Ω. What current flows through the circuit? What voltage appears across each resistor?</p>
+<details class="tip">
+<summary>Solution</summary>
+<div class="arithmatex">\[ R_{\text{total}} = 100 + 200 + 400 = 700\ \Omega \]</div>
+<div class="arithmatex">\[ I = \frac{V}{R} = \frac{9\text{ V}}{700\ \Omega} = 12.9\text{ mA} \]</div>
+<div class="arithmatex">\[ V_{R_1} = I \times R = 0.0129\text{ A} \times 100\ \Omega = 1.29\text{ V} \]</div>
+<div class="arithmatex">\[ V_{R_2} = I \times R = 0.0129\text{ A} \times 200\ \Omega = 2.57\text{ V} \]</div>
+<div class="arithmatex">\[ V_{R_3} = I \times R = 0.0129\text{ A} \times 400\ \Omega = 5.14\text{ V} \]</div>
+<p>Check: <span class="arithmatex">\( 1.29 + 2.57 + 5.14 = 9\text{ V} \)</span> ✓</p>
+<p>The largest resistor takes the largest share of the voltage.</p>
+</details>
+</details>
+<details class="question">
+<summary>3. Parallel Current Draw</summary>
+<p>Three identical 470 Ω resistors are connected in parallel across a 5V supply. What current flows through each? What is the total current drawn from the supply?</p>
+<details class="tip">
+<summary>Solution</summary>
+<p>Each resistor sees the full 5V — voltage is the same across every parallel branch.</p>
+<div class="arithmatex">\[ I = \frac{V}{R} = \frac{5\text{ V}}{470\ \Omega} = 10.6\text{ mA} \]</div>
+<div class="arithmatex">\[ I_{\text{total}} = 10.6 + 10.6 + 10.6 = 31.9\text{ mA} \]</div>
+<p>Cross-check: <span class="arithmatex">\( R_{\text{total}} = 470 \div 3 = 156.7\ \Omega \)</span>, then <span class="arithmatex">\( I = 5\text{ V} \div 156.7\ \Omega = 31.9\text{ mA} \)</span> ✓</p>
+</details>
+</details>
+<details class="question">
+<summary>4. Household Wiring</summary>
+<p>Your house has multiple power outlets on the same circuit. Plugging in a lamp doesn't affect the other outlets. Plugging in too many high-draw appliances trips the circuit breaker. Which topology is this, and why does the breaker trip?</p>
+<details class="tip">
+<summary>Solution</summary>
+<p>This is a <strong>parallel</strong> circuit. Each outlet connects independently to the same supply voltage — which is why one appliance failing or switching off doesn't affect any other.</p>
+<p>The breaker trips because of the parallel current rule: each additional load draws its own current, and all those branch currents add up at the supply. Enough appliances running simultaneously and the total current exceeds the breaker's rating (typically 15A or 20A in residential wiring). The breaker opens the circuit safely before the wiring overheats.</p>
+</details>
+</details>
+<hr />
+<h2 id="quick-recap">Quick Recap</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>Series</strong></p>
+<hr />
+<p>One path. All components must allow current. Same current everywhere. Voltage divides. Total resistance adds up. One failure stops everything.</p>
+<p><span class="arithmatex">\( R_{\text{total}} = R_1 + R_2 + R_3 \)</span></p>
+</li>
+<li>
+<p><strong>Parallel</strong></p>
+<hr />
+<p>Multiple paths. Any one path completing is enough. Same voltage everywhere. Current divides. Total resistance decreases. One failure is isolated.</p>
+<p><span class="arithmatex">\( \dfrac{1}{R_{\text{total}}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \dfrac{1}{R_3} \)</span></p>
+</li>
+</ul>
+</div>
+<hr />
+<h2 id="whats-next">What's Next</h2>
+<p>With series and parallel understood, the next article puts them to practical use: <strong>the voltage divider</strong> — a specific series arrangement that produces a precise reference voltage from a higher supply. It appears in nearly every circuit that reads a sensor or interfaces two components running at different voltages.</p>
+<p>In the meantime, if you haven't already: build both circuits on a <a href="../../tools/breadboards/">breadboard</a>. The behavioural difference between series and parallel is immediately obvious the moment you press the switches.</p>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>Fundamentals</strong></p>
+<ul>
+<li><a href="https://learn.sparkfun.com/tutorials/series-and-parallel-circuits">Series and Parallel Circuits — SparkFun</a> — clear worked examples covering resistors, capacitors, and inductors</li>
+<li><a href="https://www.physicsclassroom.com/class/circuits/Lesson-4/Series-Circuits">Series Circuits — The Physics Classroom</a> — current, voltage, and resistance rules with practice problems</li>
+<li><a href="https://www.physicsclassroom.com/class/circuits/Lesson-4/Parallel-Circuits">Parallel Circuits — The Physics Classroom</a> — parallel rules in detail with mathematical analysis</li>
+</ul>
+<p><strong>Tools</strong></p>
+<ul>
+<li><a href="https://www.digikey.ca/en/resources/conversion-calculators/conversion-calculator-parallel-and-series-resistor">Parallel and Series Resistor Calculator — Digi-Key</a> — enter up to 10 resistor values and get combined resistance instantly</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; Brad Penney — <a href="#__consent">Change cookie settings</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/bradpenney" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/in/bradpenney" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://electronics.bradpenney.io/feed_rss_created.xml" target="_blank" rel="noopener" title="electronics.bradpenney.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 64c0-17.7 14.3-32 32-32 229.8 0 416 186.2 416 416 0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96 14.3 96 0 81.7 0 64m0 352a64 64 0 1 1 128 0 64 64 0 1 1-128 0m32-256c159.1 0 288 128.9 288 288 0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224-17.7 0-32-14.3-32-32s14.3-32 32-32"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to measure how effective our content is and whether you find what you're looking for. With your consent, you help make these learning sites better. You can change your choice at any time.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+    
+      
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="analytics" >
+      <span class="task-list-indicator"></span>
+      Google Analytics
+    </label>
+  </li>
+
+      
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+      <button type="reset" class="md-button md-button--primary">Reject</button>
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "content.code.highlight", "content.tooltips", "content.code.mermaid"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

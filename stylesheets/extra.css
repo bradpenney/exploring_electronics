@@ -1,0 +1,47 @@
+/* Increase logo size in the header */
+.md-header__button.md-logo img {
+  height: 100px !important; /* try 48px, 64px, or larger */
+  padding: 0;
+  margin: 0;
+}
+
+/* Breadboard-specific crop: rotate 90° clockwise and show only the central 40% of its length.
+   clip-path operates in local (pre-transform) space: inset(0 30% 0 30%) crops 30% from each
+   side of the landscape image, leaving 40% of the width. After rotating, that becomes the
+   full portrait width at 40% of the portrait height.
+   Breadboard SVG (585×189): cropped landscape = 234×189 → rotated portrait = 189×234.
+   Layout box stays 585×189; visual margin = (234 - 189) / 2 ≈ 23px, plus 20px padding each side. */
+img.breadboard-crop {
+    transform: rotate(90deg);
+    clip-path: inset(0 30% 0 30%);
+    transform-origin: center center;
+    display: block;
+    margin: 43px auto;
+    max-width: 100%;
+}
+
+/* Generic rotation without cropping */
+.rotate90 {
+  transform: rotate(90deg);
+}
+
+/* Center Mermaid diagrams */
+.mermaid {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive image alignment: right on large, center on small */
+.img-responsive-right {
+  display: block;
+  margin: 1em auto;
+  max-width: 100%;
+}
+
+/* On tablet and larger: float right */
+@media screen and (min-width: 768px) {
+  .img-responsive-right {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+}
