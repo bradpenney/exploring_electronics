@@ -45,3 +45,41 @@ img.breadboard-crop {
     margin: 0 0 1em 1em;
   }
 }
+
+/* Opt-in single-column card grid (add class "one-col" to a grid cards block) */
+.md-typeset .grid.one-col {
+  grid-template-columns: 1fr;
+}
+
+/* Center all tables */
+.md-typeset table {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+/* Restore full width for line-numbered code blocks (linenums renders as a
+   <table> internally and otherwise gets caught by the centering rule above) */
+.md-typeset .highlight table {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.md-typeset .md-typeset__scrollwrap,
+.md-typeset .md-typeset__table {
+  display: flex;
+  justify-content: center;
+}
+
+/* Center table headers, left-align content */
+.md-typeset table th {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.md-typeset table td {
+  text-align: left !important;
+  vertical-align: middle !important;
+}

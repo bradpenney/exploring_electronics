@@ -174,6 +174,7 @@ Notice the jumper wires carrying power and ground from the Arduino into the rail
 
 - [What Is Electricity?](../essential/what_is_electricity.md) — voltage, current, and resistance: the theory behind every circuit you'll build on a breadboard
 - [Series and Parallel Circuits](../essential/series_and_parallel.md) — the two wiring configurations demonstrated on the breadboard in this article
+- [How to Read a Schematic](../essential/reading_schematics.md) — read the circuit diagram first, then build it on the board
 
 ---
 

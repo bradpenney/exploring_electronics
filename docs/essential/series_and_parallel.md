@@ -19,63 +19,7 @@ By the end of this article you'll understand what's actually different between t
 
 ## The Fundamental Difference
 
-In a **series circuit**, current has exactly one path to follow. In a **parallel circuit**, current has multiple paths available. That single difference changes how voltage, current, and resistance behave across the entire circuit.
-
-<div class="grid" markdown>
-
-<div markdown style="border: 1px solid #4a5568; border-radius: 6px; padding: 1rem;">
-
-**Series — one path**
-
-```mermaid
-graph TB
-    PWR["5V"]:::source --> R["Resistor\n220 Ω"]:::resist
-    R --> SW1["Switch 1"]:::switch
-    SW1 --> SW2["Switch 2"]:::switch
-    SW2 --> LED["LED"]:::load
-    LED --> GND["0V"]:::gnd
-
-    classDef source fill:#d97706,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef resist fill:#2d3748,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef switch fill:#4a5568,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef load fill:#2f855a,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef gnd fill:#1a202c,stroke:#cbd5e0,stroke-width:2px,color:#fff
-```
-
-Both switches must be pressed to light the LED.
-
-</div>
-
-<div markdown style="border: 1px solid #4a5568; border-radius: 6px; padding: 1rem;">
-
-**Parallel — multiple paths**
-
-```mermaid
-graph TB
-    PWR["5V"]:::source
-    R["Resistor\n220 Ω"]:::resist
-    LED["LED"]:::load
-    GND["0V"]:::gnd
-
-    PWR --> R
-    R --> SW1["Switch 1"]:::switch
-    R --> SW2["Switch 2"]:::switch
-    SW1 --> LED
-    SW2 --> LED
-    LED --> GND
-
-    classDef source fill:#d97706,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef resist fill:#2d3748,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef switch fill:#4a5568,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef load fill:#2f855a,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef gnd fill:#1a202c,stroke:#cbd5e0,stroke-width:2px,color:#fff
-```
-
-Either switch pressed lights the LED.
-
-</div>
-
-</div>
+In a **series circuit**, current has exactly one path to follow. In a **parallel circuit**, current has multiple paths available. That single difference changes how voltage, current, and resistance behave across the entire circuit. The two tabs below show each arrangement as a schematic and as a real breadboard build — and if schematic symbols are new to you, [How to Read a Schematic](reading_schematics.md) explains each one.
 
 ---
 
@@ -88,6 +32,13 @@ Either switch pressed lights the LED.
     <figure markdown>
       ![Two pushbutton switches wired in series with an LED. Both must be pressed simultaneously to light the LED.](../images/series_circuit.jpg){ width="500" }
       <figcaption>Series circuit: both switches must be pressed to complete the path and light the LED. The resistor sits before both switches, limiting current through the entire chain.</figcaption>
+    </figure>
+
+    Here is that same circuit drawn as a **schematic** — the symbolic notation used in every datasheet, tutorial, and textbook. Trace the single loop: the supply pushes current through the resistor, through `SW1`, through `SW2`, through the LED, and back. One path, no branches.
+
+    <figure markdown>
+      ![Schematic of a series circuit: a 5V battery, a 220 ohm resistor, two pushbutton switches labelled SW1 and SW2, and an LED, all connected end-to-end in a single loop.](../images/schematics/series_circuit.svg){ width="500" }
+      <figcaption>The same series circuit as a schematic. The zig-zag is the resistor, the gapped symbols are the pushbuttons, and the triangle-and-bar with arrows is the LED. Everything sits on one unbroken loop.</figcaption>
     </figure>
 
     This is the essential nature of a series circuit: every component is a gatekeeper. All of them must allow current through, or none of it flows.
@@ -148,6 +99,13 @@ Either switch pressed lights the LED.
     <figure markdown>
       ![Two pushbutton switches wired in parallel with an LED. Either switch pressed independently lights the LED.](../images/parallel_circuit.jpg){ width="500" }
       <figcaption>Parallel circuit: either switch independently completes its own path to the LED. A single resistor before both switches limits the current.</figcaption>
+    </figure>
+
+    The schematic makes the two branches obvious. After the resistor, the wire splits: `SW1` rides the top branch and `SW2` rides the bottom, and both rejoin before the LED. Either branch on its own completes a path.
+
+    <figure markdown>
+      ![Schematic of a parallel circuit: a 5V battery and a shared 220 ohm resistor feed two pushbutton switches, SW1 and SW2, on separate parallel branches that rejoin at an LED.](../images/schematics/parallel_circuit.svg){ width="500" }
+      <figcaption>The same parallel circuit as a schematic. The wire splits into two branches after the resistor — one through SW1, one through SW2 — and the branches merge again at the LED.</figcaption>
     </figure>
 
     This is the essential nature of a parallel circuit: multiple paths mean multiple opportunities for current to flow. Any one path completing is enough.
@@ -219,23 +177,10 @@ Either switch pressed lights the LED.
 
 Most practical circuits combine the two topologies. Consider a row of indicator LEDs: each one needs its own current-limiting resistor (series), but they should all run independently at full brightness from the same supply (parallel). Any time you have multiple independent loads from the same supply, this pattern applies.
 
-```mermaid
-graph TB
-    PWR["5V Supply"]:::source
-    GND["Ground\n0V"]:::gnd
-
-    PWR --> R1["Resistor 1\n220 Ω"]:::resist
-    PWR --> R2["Resistor 2\n220 Ω"]:::resist
-    R1 --> LED1["LED 1"]:::load
-    R2 --> LED2["LED 2"]:::load
-    LED1 --> GND
-    LED2 --> GND
-
-    classDef source fill:#d97706,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef resist fill:#2d3748,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef load fill:#2f855a,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef gnd fill:#1a202c,stroke:#cbd5e0,stroke-width:2px,color:#fff
-```
+<figure markdown>
+  ![Schematic of a combined series-parallel circuit: a 5V supply feeds two parallel branches, each branch a 220 ohm resistor in series with its own LED, returning to ground.](../images/schematics/combined_circuit.svg){ width="500" }
+  <figcaption>Two LED branches in parallel, each with its own series resistor. Follow either branch top to bottom: resistor then LED, in series. The two branches hang in parallel off the same supply.</figcaption>
+</figure>
 
 Each resistor and its LED are in **series** with each other — the resistor limits current for that LED. The two pairs are in **parallel** with each other — each pair gets the full supply voltage, independently of the other.
 

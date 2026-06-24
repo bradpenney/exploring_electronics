@@ -148,7 +148,7 @@ description: Compelling description for search results (150-160 chars ideal)
 - Search indexing
 - Navigation (even if accidentally uncommented)
 
-**Current exclude configuration** (as of 2026-05-24):
+**Current exclude configuration** (as of 2026-06-23):
 
 ```yaml
 plugins:
@@ -167,6 +167,8 @@ plugins:
 
 **Published articles (not in exclude list):**
 - `essential/what_is_electricity.md`
+- `essential/series_and_parallel.md`
+- `essential/reading_schematics.md`
 - `tools/breadboards.md`
 
 **What this means:**
@@ -285,7 +287,9 @@ Before marking any article complete, use the Explore agent to search for repeate
   - `efficient/` - Going deeper (circuit design, protocols, real projects)
   - `mastery/` - Professional level (PCB design, power electronics, production)
   - `images/` - Diagrams and circuit photos
+    - `images/schematics/` - generated schematic SVGs (output of `schematics/`; committed and served)
   - `stylesheets/` - Custom CSS (`extra.css`)
+- `schematics/` - schemdraw source for circuit schematics (see `schematics/README.md`)
 - `mkdocs.yaml` - Site configuration and navigation
 - `pyproject.toml` - Poetry dependencies
 
@@ -302,9 +306,15 @@ poetry run mkdocs serve
 
 # Build static site (ALWAYS use --strict for link validation)
 poetry run mkdocs build --strict
+
+# Regenerate circuit schematics (only when a schematic source changes)
+poetry install --with schematics   # one-time, installs schemdraw
+poetry run python schematics/build.py
 ```
 
 **Link Validation:** The project uses `mkdocs-htmlproofer-plugin` to validate all internal links. Always build with `--strict` flag to catch broken links.
+
+**Schematics:** Real circuit schematics are generated from Python (schemdraw) into `docs/images/schematics/`. See the [Schematics Workflow](#schematics-workflow-schemdraw) section and `schematics/README.md`. The committed SVGs are served directly, so a normal `poetry install` / CI build needs nothing from the `schematics` group.
 
 ---
 
@@ -470,7 +480,18 @@ while True:
 
 #### Circuit Diagrams
 
-Use **Mermaid diagrams** for logical circuit flow and block diagrams. For actual schematic symbols, reference external tools or images.
+Three distinct visual types, each with a specific job — do not substitute one for another:
+
+- **Mermaid** — logical/block diagrams: power rails, signal paths, protocol flow, architecture. NOT real schematics (no component symbols).
+- **schemdraw schematics** — true schematic symbols (resistor zig-zag, LED triangle, battery, etc.). This is the standard symbolic notation. See the schematics workflow below.
+- **Photos** — real breadboard builds, oscilloscope screenshots, physical components.
+
+**When to use which:**
+- Mermaid: block diagrams, architecture, data flow, protocol timing concepts
+- schemdraw schematic: any time you'd otherwise draw or screenshot a real circuit schematic
+- Photo: actual breadboard layouts, the physical build, scope captures
+
+In Essential articles, pair a **photo first, then the schematic** (concrete board → symbolic notation), and have the caption decode the symbols — it teaches beginners to read schematics. See `essential/series_and_parallel.md` for the established pattern.
 
 **Mermaid block diagrams for electronics:**
 
@@ -484,9 +505,28 @@ graph LR
 ```
 ```
 
-**When to use images vs Mermaid:**
-- Mermaid: block diagrams, architecture, data flow, protocol timing concepts
-- Images: actual breadboard layouts, schematic fragments, oscilloscope screenshots
+#### Schematics Workflow (schemdraw)
+
+Real schematics are generated with [schemdraw](https://schemdraw.readthedocs.io/) — Python source in `schematics/`, rendered to committed SVGs under `docs/images/schematics/`. The committed SVGs (not the Python) are what the site serves, so articles reference them like any other image and never depend on the tooling. Full details in `schematics/README.md`.
+
+**Layout:**
+
+```
+schematics/
+  style.py            # shared dark-theme styling — the ONLY place colours live
+  build.py            # regenerates every SVG
+  circuits/<name>.py  # one circuit per file, exposes build(path)
+docs/images/schematics/<name>.svg   # generated output (committed, served)
+```
+
+**Add a schematic:**
+
+1. Create `circuits/<name>.py` with a `build(path)` function (copy an existing circuit as a template).
+2. Build EVERY drawing through `dark_drawing()` from `style.py` — never `schemdraw.Drawing` directly, or it renders black-on-white and looks broken on the slate theme.
+3. Regenerate: `poetry run python schematics/build.py`
+4. Reference it in an article inside a `<figure markdown>` block, e.g. `![alt](../images/schematics/<name>.svg){ width="500" }`.
+
+**Dependency:** schemdraw lives in the optional `schematics` Poetry group — build-time only, not installed by CI (which just serves the committed SVGs). Install locally with `poetry install --with schematics` only when regenerating diagrams.
 
 **Mermaid color scheme for this site (slate + amber accent):**
 

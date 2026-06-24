@@ -26,6 +26,7 @@ New to electronics? Work through the **Essential** articles in order. Pick up **
 
     - [What Is Electricity?](essential/what_is_electricity.md) — Voltage, current, and resistance from first principles
     - [Series and Parallel Circuits](essential/series_and_parallel.md) — How components connect changes everything about how a circuit behaves
+    - [How to Read a Schematic](essential/reading_schematics.md) — The symbols and rules for reading any circuit diagram
 
 -   **Efficient**
 

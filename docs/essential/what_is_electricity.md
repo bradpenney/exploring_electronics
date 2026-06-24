@@ -290,6 +290,10 @@ The next article takes Ohm's Law into real circuit topology: **[Series and Paral
 
 - [All About LEDs — Adafruit](https://learn.adafruit.com/all-about-leds) — the LED resistor calculation from this article applied to real components
 
+**Related Articles**
+
+- [How to Read a Schematic](reading_schematics.md) — the standard symbols for the components in this article, and how to follow current through a circuit diagram
+
 **Practical Tools**
 
 - [Breadboards](../tools/breadboards.md) — how to build the circuits from this article without soldering; essential reading before your first hands-on circuit
