@@ -16,7 +16,7 @@ This site teaches electronics from first principles — not just how to follow a
 
 New to electronics? Work through the **Essential** articles in order. Pick up **Practical Tools** alongside them whenever you're ready to build.
 
-<div class="grid cards" markdown>
+<div class="grid cards two-col" markdown>
 
 -   **Essential**
 

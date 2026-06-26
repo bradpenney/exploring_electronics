@@ -133,7 +133,7 @@ Notice the jumper wires carrying power and ground from the Arduino into the rail
 
 ## Quick Recap
 
-<div class="grid cards" markdown>
+<div class="grid cards two-col" markdown>
 
 -   **Component Rows**
 

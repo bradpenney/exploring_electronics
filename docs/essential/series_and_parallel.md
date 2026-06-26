@@ -258,7 +258,7 @@ Recognising these nested patterns is what lets you look at a circuit and immedia
 
 ## Quick Recap
 
-<div class="grid cards" markdown>
+<div class="grid cards two-col" markdown>
 
 -   **Series**
 

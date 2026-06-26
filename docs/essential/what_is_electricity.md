@@ -226,7 +226,7 @@ The working voltages in most prototyping electronics — 3.3V, 5V, occasionally 
 
 ## Quick Recap
 
-<div class="grid cards" markdown>
+<div class="grid cards two-col" markdown>
 
 -   **V — Voltage**
 

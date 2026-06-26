@@ -36,7 +36,7 @@ Electronics has hundreds of symbols, but you only need a dozen to read almost an
 
 It helps to group them by what they do.
 
-<div class="grid cards one-col" markdown>
+<div class="grid cards" markdown>
 
 -   :material-resistor: **Passive components**
 
