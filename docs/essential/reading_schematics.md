@@ -44,7 +44,7 @@ It helps to group them by what they do.
 
     Shape current and voltage without needing power of their own.
 
-    - **Resistor** — the zig-zag — limits current ([the physics](what_is_electricity.md))
+    - **Resistor** — the zig-zag — limits current ([the physics](what_is_electricity.md), [reading its real-world value](resistor_color_codes.md))
     - **Capacitor** — two parallel lines — stores charge; a curved line means it's *polarized*
     - **Potentiometer** — a resistor with an arrow — an adjustable resistor, the symbol behind every volume knob
     - **Inductor** — a coil — stores energy in a magnetic field
@@ -113,7 +113,7 @@ Read it the way current flows — start at the battery's **positive terminal** (
 
 That's the whole skill. Every circuit, no matter how dense, is read the same way: find the source, follow the connections, and name each symbol as you pass through it. A complicated schematic is just many small loops like this one sharing the same source and ground.
 
-Notice this is a **series** circuit — one single path, exactly as described in [Series and Parallel Circuits](series_and_parallel.md). The schematic makes that obvious at a glance: there's only one loop to follow.
+Notice this is a **series** circuit — one single path, exactly as described in [Series and Parallel Circuits](series_and_parallel.md). The schematic makes that obvious at a glance: there's only one loop to follow. You'll trace this very resistor-and-LED loop again when a microcontroller pin drives an LED in [Digital Pins](digital_io.md).
 
 ---
 
@@ -184,4 +184,7 @@ From here on, every new component you learn comes with a symbol. Keep the refere
 
 - [What Is Electricity?](what_is_electricity.md) — what the components in these symbols actually do to voltage and current
 - [Series and Parallel Circuits](series_and_parallel.md) — the two wiring patterns you'll trace in every schematic
+- [Resistor Color Codes](resistor_color_codes.md) — read a real resistor's value once the zig-zag symbol makes sense
+- [Digital Pins](digital_io.md) — read the real schematics of a microcontroller driving an LED and reading a button
+- [Pull-up and Pull-down Resistors](pull_resistors.md) — the pull-resistor schematics, traced symbol by symbol
 - [Breadboards](../tools/breadboards.md) — turning a schematic into a real, built circuit

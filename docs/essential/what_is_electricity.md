@@ -293,6 +293,7 @@ The next article takes Ohm's Law into real circuit topology: **[Series and Paral
 **Related Articles**
 
 - [How to Read a Schematic](reading_schematics.md) — the standard symbols for the components in this article, and how to follow current through a circuit diagram
+- [Resistor Color Codes](resistor_color_codes.md) — decode the exact resistor values this article's Ohm's Law examples calculate, straight off the component
 
 **Practical Tools**
 

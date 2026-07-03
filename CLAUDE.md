@@ -10,13 +10,27 @@ This file provides guidance to Claude Code when working with this repository.
 
 **Teaching Philosophy:** Every article starts with a software engineer's mental model (code, variables, functions, APIs) before introducing electronics theory. Hardware concepts are connected to things they already know: GPIO pins as function arguments, voltage dividers as analog data, serial protocols as network packets.
 
-## Current Status: Site Setup
+## Content Architecture: Topics × Tiers
 
-**CRITICAL**: This site is newly created. Content structure and article plans are not yet defined. The focus for now is establishing the editorial framework, AI instructions, and site configuration. Content will be developed separately.
+The site is organized as a **grid: topics × tiers**. Topics are orthogonal to tiers — a **topic** is the subject (a vertical column that deepens through Essential → Efficient → Mastery); the **tier** is how deep. The same topic recurs under each tier as it gains articles. (Same model the Linux/CS sister sites use.)
 
-- All navigation should be commented out in `mkdocs.yaml` until content is reviewed and ready
-- The site is in draft state — no published articles yet
-- Content will be developed in phases (Essential → Efficient → Mastery)
+**The six stable topics** (each grows across all three tiers):
+
+1. **Circuit Foundations** — voltage/current/resistance, series & parallel, dividers, capacitors
+2. **Reading Circuits** — schematics, symbols, datasheets
+3. **Components** — resistors, LEDs, transistors, diodes, ICs
+4. **Microcontrollers** — digital I/O, analog/PWM, sensors, serial, interrupts
+5. **Communication** — I²C, SPI, UART
+6. **Power** — supplies, regulators, batteries
+
+**Navigation rules:**
+
+- Nav is **tier-first**, with topics nested as sub-groups inside each tier (`📦 Essential → Circuit Foundations / Reading Circuits / Microcontrollers …`). Tier-first keeps the free/paid boundary clean (Mastery is the paywalled tier).
+- Add a topic group to a tier's nav **only once it has a published article** there — never show empty groups.
+- **Practical Tools** is a cross-cutting reference shelf (breadboards, arduino-cli, multimeter, soldering…), **not** a topic. Keep it as its own top-level section.
+- **Directories stay flat for now** (`essential/`, `tools/`). Defer splitting into topic subdirectories (e.g., `essential/microcontrollers/`) until a topic has ~3+ articles — grouping today is nav-label only.
+
+**Development phases:** Build Essential first across topics, then Efficient, then Mastery.
 
 ## Important Preferences
 
@@ -148,7 +162,7 @@ description: Compelling description for search results (150-160 chars ideal)
 - Search indexing
 - Navigation (even if accidentally uncommented)
 
-**Current exclude configuration** (as of 2026-06-23):
+**Current exclude configuration** (as of 2026-07-03):
 
 ```yaml
 plugins:
@@ -159,7 +173,6 @@ plugins:
         - "efficient/*"
         - "mastery/*"
         - "tools/multimeter.md"
-        - "tools/arduino_cli.md"
         - "tools/soldering.md"
         - "tools/bench_power_supply.md"
   # ... other plugins
@@ -169,7 +182,13 @@ plugins:
 - `essential/what_is_electricity.md`
 - `essential/series_and_parallel.md`
 - `essential/reading_schematics.md`
+- `essential/resistor_color_codes.md`
+- `essential/what_is_an_arduino.md`
+- `essential/digital_io.md`
+- `essential/blink_an_led.md`
+- `essential/pull_resistors.md`
 - `tools/breadboards.md`
+- `tools/arduino_cli.md`
 
 **What this means:**
 - Draft articles can exist in these directories without appearing in search results

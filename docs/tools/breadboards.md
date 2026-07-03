@@ -175,6 +175,10 @@ Notice the jumper wires carrying power and ground from the Arduino into the rail
 - [What Is Electricity?](../essential/what_is_electricity.md) — voltage, current, and resistance: the theory behind every circuit you'll build on a breadboard
 - [Series and Parallel Circuits](../essential/series_and_parallel.md) — the two wiring configurations demonstrated on the breadboard in this article
 - [How to Read a Schematic](../essential/reading_schematics.md) — read the circuit diagram first, then build it on the board
+- [Resistor Color Codes](../essential/resistor_color_codes.md) — identify the right resistor by its bands before it goes in the board
+- [What Is an Arduino?](../essential/what_is_an_arduino.md) — the board pictured throughout this article, and what's actually on it
+- [Digital Pins](../essential/digital_io.md) — the button-and-LED circuit this board is built for, and what a microcontroller does with it
+- [arduino-cli](arduino_cli.md) — once the circuit is built, compile and upload the code that brings it to life
 
 ---
 

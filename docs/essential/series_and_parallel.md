@@ -175,7 +175,7 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
 
 ## Real Circuits Use Both
 
-Most practical circuits combine the two topologies. Consider a row of indicator LEDs: each one needs its own current-limiting resistor (series), but they should all run independently at full brightness from the same supply (parallel). Any time you have multiple independent loads from the same supply, this pattern applies.
+Most practical circuits combine the two topologies. Consider a row of indicator LEDs: each one needs its own current-limiting resistor (series) — the same resistor every [LED driven by a microcontroller pin](digital_io.md) needs — but they should all run independently at full brightness from the same supply (parallel). Any time you have multiple independent loads from the same supply, this pattern applies.
 
 <figure markdown>
   ![Schematic of a combined series-parallel circuit: a 5V supply feeds two parallel branches, each branch a 220 ohm resistor in series with its own LED, returning to ground.](../images/schematics/combined_circuit.svg){ width="500" }
@@ -282,7 +282,7 @@ Recognising these nested patterns is what lets you look at a circuit and immedia
 
 ## What's Next
 
-With series and parallel understood, the next article puts them to practical use: **the voltage divider** — a specific series arrangement that produces a precise reference voltage from a higher supply. It appears in nearly every circuit that reads a sensor or interfaces two components running at different voltages.
+With series and parallel understood, the next skill is reading these circuits the way every datasheet and tutorial draws them: **[How to Read a Schematic](reading_schematics.md)** — the symbols behind the diagrams in this article, and the one rule about wire crossings that trips up every beginner.
 
 In the meantime, if you haven't already: build both circuits on a [breadboard](../tools/breadboards.md). The behavioural difference between series and parallel is immediately obvious the moment you press the switches.
 
@@ -299,3 +299,7 @@ In the meantime, if you haven't already: build both circuits on a [breadboard](.
 **Tools**
 
 - [Parallel and Series Resistor Calculator — Digi-Key](https://www.digikey.ca/en/resources/conversion-calculators/conversion-calculator-parallel-and-series-resistor) — enter up to 10 resistor values and get combined resistance instantly
+
+**Related Articles**
+
+- [Resistor Color Codes](resistor_color_codes.md) — decode the 220 Ω resistor used throughout this article's circuits by its painted bands
