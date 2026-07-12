@@ -7,7 +7,7 @@ description: "How breadboard holes connect internally, how to use the power rail
 # Breadboards
 
 !!! abstract "Practical Tools"
-    This article is part of the **Practical Tools** section — foundational reading before building your first circuit. If you're new to voltage, current, and resistance, start with [What Is Electricity?](../essential/what_is_electricity.md) first.
+    This article is part of the **Practical Tools** section — foundational reading before building your first circuit. If you're new to voltage, current, and resistance, start with [What Is Electricity?](../what_is_electricity.md) first.
 
 Every circuit you build starts as an idea that probably doesn't work on the first try. Without a breadboard, testing that idea means soldering components together — and soldering is permanent. Get a connection wrong, apply too much heat, or choose the wrong resistor, and you're desoldering everything to try again. It's slow, it damages components, and it discourages experimentation.
 
@@ -60,7 +60,7 @@ Connect power once to the rails, then use short jumper wires to bring it into th
 
 ## A Circuit on a Breadboard
 
-Here's a real circuit on a breadboard — an Arduino powering components through the power rails, with jumper wires routing signals into the component area. This is the parallel switch circuit from [Series and Parallel Circuits](../essential/series_and_parallel.md).
+Here's a real circuit on a breadboard — an Arduino powering components through the power rails, with jumper wires routing signals into the component area. This is the parallel switch circuit from [Series and Parallel Circuits](../series_and_parallel.md).
 
 <figure markdown>
   ![An Arduino Uno connected to a half-size breadboard with two tactile buttons, a resistor, and an LED wired in parallel, showing power rails, jumper wires, and component placement.](../images/parallel_circuit.jpg){ style="width: 60%;" }
@@ -161,6 +161,10 @@ Notice the jumper wires carrying power and ground from the Arduino into the rail
 
 </div>
 
+## What's Next
+
+The breadboard appears in every circuit on this site. The next step is putting it to work: **[Series and Parallel Circuits](../series_and_parallel.md)** — two different wiring configurations built on this exact board, and why the difference between them matters for every circuit you'll ever design.
+
 ---
 
 ## Further Reading
@@ -172,16 +176,11 @@ Notice the jumper wires carrying power and ground from the Arduino into the rail
 
 **Related Articles**
 
-- [What Is Electricity?](../essential/what_is_electricity.md) — voltage, current, and resistance: the theory behind every circuit you'll build on a breadboard
-- [Series and Parallel Circuits](../essential/series_and_parallel.md) — the two wiring configurations demonstrated on the breadboard in this article
-- [How to Read a Schematic](../essential/reading_schematics.md) — read the circuit diagram first, then build it on the board
-- [Resistor Color Codes](../essential/resistor_color_codes.md) — identify the right resistor by its bands before it goes in the board
-- [What Is an Arduino?](../essential/what_is_an_arduino.md) — the board pictured throughout this article, and what's actually on it
-- [Digital Pins](../essential/digital_io.md) — the button-and-LED circuit this board is built for, and what a microcontroller does with it
+- [What Is Electricity?](../what_is_electricity.md) — voltage, current, and resistance: the theory behind every circuit you'll build on a breadboard
+- [Series and Parallel Circuits](../series_and_parallel.md) — the two wiring configurations demonstrated on the breadboard in this article
+- [How to Read a Schematic](../reading_schematics.md) — read the circuit diagram first, then build it on the board
+- [Resistor Color Codes](../resistor_color_codes.md) — identify the right resistor by its bands before it goes in the board
+- [What Is an Arduino?](../what_is_an_arduino.md) — the board pictured throughout this article, and what's actually on it
+- [Digital Pins](../digital_io.md) — the button-and-LED circuit this board is built for, and what a microcontroller does with it
 - [arduino-cli](arduino_cli.md) — once the circuit is built, compile and upload the code that brings it to life
 
----
-
-## What's Next
-
-The breadboard appears in every circuit on this site. The next step is putting it to work: **[Series and Parallel Circuits](../essential/series_and_parallel.md)** — two different wiring configurations built on this exact board, and why the difference between them matters for every circuit you'll ever design.

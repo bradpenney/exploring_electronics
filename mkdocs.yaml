@@ -80,8 +80,6 @@ plugins:
   - meta
   - exclude:
       glob:
-        - "efficient/*"
-        - "mastery/*"
         - "tools/multimeter.md"
         - "tools/soldering.md"
         - "tools/bench_power_supply.md"
@@ -142,37 +140,33 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - 📦 Essential:
-      - Circuit Foundations:
-          - What Is Electricity?: essential/what_is_electricity.md
-          - Series and Parallel Circuits: essential/series_and_parallel.md
-      - Reading Circuits:
-          - How to Read a Schematic: essential/reading_schematics.md
-      - Components:
-          - Resistor Color Codes: essential/resistor_color_codes.md
-      - Microcontrollers:
-          - What Is an Arduino?: essential/what_is_an_arduino.md
-          - Digital Pins: essential/digital_io.md
-          - Blink an LED: essential/blink_an_led.md
-          - Pull-up and Pull-down Resistors: essential/pull_resistors.md
 
-# Topics (grow across tiers — file new articles under their topic group):
-#   Circuit Foundations · Reading Circuits · Components · Microcontrollers ·
-#   Communication · Power. Add a topic group to a tier only once it has content.
-#   Practical Tools (below) is a cross-cutting reference shelf, not a topic.
+# Nav is topic-first — see CLAUDE.md for the full architecture. Add a topic
+# block below once its first article exists; keep empty topics commented out.
+# Practical Tools (below) is a cross-cutting reference shelf, not a topic.
 
-  - 🔧 Practical Tools:
+  - Circuit Foundations:
+      - What Is Electricity?: what_is_electricity.md
+      - Series and Parallel Circuits: series_and_parallel.md
+  - Reading Circuits:
+      - How to Read a Schematic: reading_schematics.md
+  - Components:
+      - Resistor Color Codes: resistor_color_codes.md
+  - Microcontrollers:
+      - What Is an Arduino?: what_is_an_arduino.md
+      - Digital Pins: digital_io.md
+      - Blink an LED: blink_an_led.md
+      - Pull-up and Pull-down Resistors: pull_resistors.md
+
+# - Communication:
+#     - Overview: communication_overview.md
+# - Power:
+#     - Overview: power_overview.md
+
+  - Practical Tools:
       - Breadboards: tools/breadboards.md
       - arduino-cli: tools/arduino_cli.md
-# 🔧 Practical Tools — uncomment as articles are published
+# Practical Tools — uncomment as articles are published
 #      - Using a Multimeter: tools/multimeter.md
 #      - Soldering: tools/soldering.md
 #      - Bench Power Supplies: tools/bench_power_supply.md
-
-# ⚡ Efficient — uncomment as articles are published
-#  - ⚡ Efficient:
-#      - Overview: efficient/overview.md
-
-# 🎯 Mastery — uncomment as articles are published
-#  - 🎯 Mastery:
-#      - Overview: mastery/overview.md

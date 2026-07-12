@@ -7,7 +7,7 @@ description: "Compile and upload Arduino sketches from the terminal with arduino
 # arduino-cli
 
 !!! abstract "Practical Tools"
-    This article is part of the **Practical Tools** section. It assumes you have an Arduino-compatible board and a circuit to run code on — if you're still wiring that up, start with [Breadboards](breadboards.md). New to Arduino entirely? [What Is an Arduino?](../essential/what_is_an_arduino.md) covers the board itself first.
+    This article is part of the **Practical Tools** section. It assumes you have an Arduino-compatible board and a circuit to run code on — if you're still wiring that up, start with [Breadboards](breadboards.md). New to Arduino entirely? [What Is an Arduino?](../what_is_an_arduino.md) covers the board itself first.
 
 The Arduino IDE is how most people meet a microcontroller: install it, pick your board from a menu, click the arrow, watch the LED blink. It's a smooth on-ramp — and it's also a curtain. Behind that one button, two real things happen: your code is **compiled from C++ into a binary**, and that binary is **uploaded to the chip**. The IDE is designed so you never have to think about either one.
 
@@ -34,13 +34,23 @@ The usual advice is to start in the IDE and "graduate" to the command line later
 
 ## Installing arduino-cli
 
-The official install script drops a single binary wherever you point it:
+On macOS or Linux with Homebrew, the cleanest path is the package manager — it handles updates and your `PATH` for you:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
+brew install arduino-cli
 ```
 
-By default the binary lands in `./bin` — move it onto your `PATH` (for example, `~/.local/bin` or `/usr/local/bin`) so you can run `arduino-cli` from anywhere. On macOS or Linux with Homebrew, `brew install arduino-cli` does the same and handles the `PATH` for you.
+Everywhere else, use the official install script — but **download it and look at it before you run it**:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh -o install-arduino-cli.sh
+less install-arduino-cli.sh   # read what you're about to execute
+sh install-arduino-cli.sh
+```
+
+You'll see one-liners online that pipe that URL straight into `sh`. It works, but it's a habit worth never forming: piping the internet into your shell executes whatever the server sends, sight unseen. Downloading first costs ten seconds and lets you check.
+
+By default the binary lands in `./bin` — move it onto your `PATH` (for example, `~/.local/bin` or `/usr/local/bin`) so you can run `arduino-cli` from anywhere.
 
 Confirm it's working:
 
@@ -160,7 +170,7 @@ Match the baud rate your sketch sets in `Serial.begin()` with `-c baudrate=9600`
 
 ## What Language Is This, Really?
 
-It's tempting to call Arduino code "C" — it looks like C, and a simple sketch is nearly indistinguishable from it. But the toolchain compiles your sketch as **C++**. ([What Is an Arduino?](../essential/what_is_an_arduino.md) covers what a sketch's `setup()`/`loop()` skeleton means if you haven't seen it before.)
+It's tempting to call Arduino code "C" — it looks like C, and a simple sketch is nearly indistinguishable from it. But the toolchain compiles your sketch as **C++**. ([What Is an Arduino?](../what_is_an_arduino.md) covers what a sketch's `setup()`/`loop()` skeleton means if you haven't seen it before.)
 
 Behind the scenes, `arduino-cli` takes your `.ino` file, adds `#include <Arduino.h>`, generates function prototypes, and hands the result to [a C++ compiler](https://cs.bradpenney.io/efficiency/compilers_vs_interpreters/) (`avr-g++` for AVR boards) that translates it into the binary the chip runs. That's why features that aren't part of C — the `String` object, `Serial.println()`, libraries built around classes — work without complaint, and it's why `setup()` and `loop()` are the two functions the core calls for you rather than ordinary functions like `pinMode()` or `digitalWrite()` that you call yourself. Knowing it's C++ matters the moment you reach for a class, a library, or an error message that mentions C++ types.
 
@@ -264,6 +274,10 @@ Behind the scenes, `arduino-cli` takes your `.ino` file, adds `#include <Arduino
 
 </div>
 
+## What's Next
+
+You have a board, a toolchain, and a one-line way to push code to it. The next step is making that code *do* something physical: **[Digital Pins](../digital_io.md)** — how a microcontroller reads a button and drives an LED, and why a pin is either fully on or fully off with nothing in between.
+
 ---
 
 ## Further Reading
@@ -276,11 +290,6 @@ Behind the scenes, `arduino-cli` takes your `.ino` file, adds `#include <Arduino
 
 **Related Articles**
 
-- [What Is an Arduino?](../essential/what_is_an_arduino.md) — the board itself, and what `setup()`/`loop()` actually mean
+- [What Is an Arduino?](../what_is_an_arduino.md) — the board itself, and what `setup()`/`loop()` actually mean
 - [Breadboards](breadboards.md) — build the circuit your code runs on before you flash anything to it
 
----
-
-## What's Next
-
-You have a board, a toolchain, and a one-line way to push code to it. The next step is making that code *do* something physical: **[Digital Pins](../essential/digital_io.md)** — how a microcontroller reads a button and drives an LED, and why a pin is either fully on or fully off with nothing in between.

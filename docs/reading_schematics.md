@@ -6,8 +6,8 @@ description: "Learn to read electronics schematics: the standard symbols for res
 
 # How to Read a Schematic
 
-!!! abstract "Essential"
-    This article is part of the **Essential** learning path. It builds on [What Is Electricity?](what_is_electricity.md) and [Series and Parallel Circuits](series_and_parallel.md) — read those first if voltage, current, and resistance are new to you.
+!!! abstract "Beginner"
+    This article builds on [What Is Electricity?](what_is_electricity.md) and [Series and Parallel Circuits](series_and_parallel.md) — read those first if voltage, current, and resistance are new to you.
 
 The first time you open a datasheet or a project tutorial and see a schematic, it looks like hieroglyphics: a tangle of zig-zags, lines, triangles, and arrows. It's tempting to skip past it and just copy the photo of someone's breadboard instead.
 
@@ -30,7 +30,7 @@ A schematic removes all of that. It uses a fixed symbol for each component and c
 Electronics has hundreds of symbols, but you only need a dozen to read almost any beginner circuit. Here are the ones worth memorising:
 
 <figure markdown>
-  ![A reference chart of common schematic symbols: resistor, capacitor, polarized capacitor, LED, diode, battery, switch, pushbutton, potentiometer, inductor, NPN transistor, and ground, each shown with its standard symbol and name.](../images/schematics/symbol_reference.svg){ width="640" }
+  ![A reference chart of common schematic symbols: resistor, capacitor, polarized capacitor, LED, diode, battery, switch, pushbutton, potentiometer, inductor, NPN transistor, and ground, each shown with its standard symbol and name.](images/schematics/symbol_reference.svg){ width="640" }
   <figcaption>The dozen symbols that cover most beginner circuits. Learn to recognise these and you can read the majority of schematics you'll meet.</figcaption>
 </figure>
 
@@ -84,7 +84,7 @@ This is that rule. Learn it now and you'll be ahead of most.
 On a busy schematic, lines have to cross each other. Two crossing lines might be joined into one connection, or they might be two separate wires passing over each other like a highway overpass. How do you tell them apart? **A dot.**
 
 <figure markdown>
-  ![Two wire crossings side by side. On the left, a filled dot sits where the wires meet, labelled "Connected." On the right, the same crossing has no dot, labelled "Just crossing."](../images/schematics/junction_vs_crossover.svg){ width="520" }
+  ![Two wire crossings side by side. On the left, a filled dot sits where the wires meet, labelled "Connected." On the right, the same crossing has no dot, labelled "Just crossing."](images/schematics/junction_vs_crossover.svg){ width="520" }
   <figcaption>A dot at a crossing means the wires are joined into one electrical connection. No dot means they simply cross — no connection.</figcaption>
 </figure>
 
@@ -100,7 +100,7 @@ A **filled dot** at a junction means the wires are electrically joined — curre
 Put the symbols and the wire rule together and you can read a whole circuit. Here's one of the simplest there is — a single LED lit from a battery:
 
 <figure markdown>
-  ![A schematic of a complete circuit: a 5V battery on the left, a 330 ohm resistor along the top wire, and an LED on the right, all joined in a single loop.](../images/schematics/led_circuit_read.svg){ width="500" }
+  ![A schematic of a complete circuit: a 5V battery on the left, a 330 ohm resistor along the top wire, and an LED on the right, all joined in a single loop.](images/schematics/led_circuit_read.svg){ width="500" }
   <figcaption>A complete loop: 5V battery, a 330 Ω current-limiting resistor, and an LED. Trace it from the battery's positive terminal all the way back to its negative one.</figcaption>
 </figure>
 
@@ -121,7 +121,7 @@ Notice this is a **series** circuit — one single path, exactly as described in
 
 One more thing to keep straight. A schematic tells you the **electrical connections** — what joins to what. It does *not* tell you where to physically place components on a breadboard. The resistor drawn along the top of the diagram above doesn't belong at the "top" of anything; it just has to sit electrically between the battery and the LED.
 
-Turning a schematic into a real, built circuit is a separate skill: deciding which holes and rails each leg goes into. That's what a breadboard is for, and it's covered in [Breadboards](../tools/breadboards.md). Read the schematic to understand the circuit; use the breadboard to build it.
+Turning a schematic into a real, built circuit is a separate skill: deciding which holes and rails each leg goes into. That's what a breadboard is for, and it's covered in [Breadboards](tools/breadboards.md). Read the schematic to understand the circuit; use the breadboard to build it.
 
 ---
 
@@ -167,7 +167,7 @@ Test your reading before you move on.
 
 ## What's Next
 
-You can now read the language every circuit is documented in. The natural next step is to make one real: take the simple LED circuit above, and build it on a breadboard. [Breadboards](../tools/breadboards.md) walks through turning a schematic into a working circuit without soldering — translating the loop on the page into rows, rails, and jumper wires on the board.
+You can now read the language every circuit is documented in. The natural next step is to make one real: take the simple LED circuit above, and build it on a breadboard. [Breadboards](tools/breadboards.md) walks through turning a schematic into a working circuit without soldering — translating the loop on the page into rows, rails, and jumper wires on the board.
 
 From here on, every new component you learn comes with a symbol. Keep the reference chart above handy, and each new schematic will read a little faster than the last.
 
@@ -187,4 +187,4 @@ From here on, every new component you learn comes with a symbol. Keep the refere
 - [Resistor Color Codes](resistor_color_codes.md) — read a real resistor's value once the zig-zag symbol makes sense
 - [Digital Pins](digital_io.md) — read the real schematics of a microcontroller driving an LED and reading a button
 - [Pull-up and Pull-down Resistors](pull_resistors.md) — the pull-resistor schematics, traced symbol by symbol
-- [Breadboards](../tools/breadboards.md) — turning a schematic into a real, built circuit
+- [Breadboards](tools/breadboards.md) — turning a schematic into a real, built circuit

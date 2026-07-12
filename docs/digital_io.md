@@ -6,8 +6,8 @@ description: "A digital pin is either on or off — nothing in between. Learn ho
 
 # Digital Pins
 
-!!! abstract "Essential"
-    This article is part of the **Essential** learning path, in the **Microcontrollers** topic. It builds on [What Is Electricity?](what_is_electricity.md) and [Series and Parallel Circuits](series_and_parallel.md) — read those first if voltage, current, and the job of a resistor are new to you. If you've never seen an Arduino before, [What Is an Arduino?](what_is_an_arduino.md) covers the board and how to read its code first.
+!!! abstract "Beginner"
+    This article is in the **Microcontrollers** topic. It builds on [What Is Electricity?](what_is_electricity.md) and [Series and Parallel Circuits](series_and_parallel.md) — read those first if voltage, current, and the job of a resistor are new to you. If you've never seen an Arduino before, [What Is an Arduino?](what_is_an_arduino.md) covers the board and how to read its code first.
 
 Look at the light switch on your wall. It's up or it's down. The light is on or it's off. There's no "half-on" — the switch commits to one of two states and stays there until you move it.
 
@@ -40,7 +40,7 @@ Before a pin can do anything, you have to tell the microcontroller which of two 
 
 You set this once, when the program starts, with `pinMode()`. A pin set to OUTPUT pushes electricity out; a pin set to INPUT listens for it. Get this backwards and nothing works — an output pin can't hear a button, and an input pin can't light an LED.
 
-The code in this article is **Arduino C/C++**, the language an Arduino runs. If `void`, the curly braces, or `setup()`/`loop()` are unfamiliar, [What Is an Arduino?](what_is_an_arduino.md) walks through what each piece means before you hit it below. Once you're ready to actually run this code, [arduino-cli](../tools/arduino_cli.md) covers compiling and uploading it.
+The code in this article is **Arduino C/C++**, the language an Arduino runs. If `void`, the curly braces, or `setup()`/`loop()` are unfamiliar, [What Is an Arduino?](what_is_an_arduino.md) walks through what each piece means before you hit it below. Once you're ready to actually run this code, [arduino-cli](tools/arduino_cli.md) covers compiling and uploading it.
 
 ---
 
@@ -49,14 +49,14 @@ The code in this article is **Arduino C/C++**, the language an Arduino runs. If 
 The simplest useful thing a pin can do is turn a light on. Here's the circuit built on a breadboard — an Arduino Uno on the left, three LEDs and a button on the right:
 
 <figure markdown>
-  ![An Arduino Uno on a yellow base wired to a breadboard holding three LEDs (two red, one green), four resistors, and a pushbutton, connected by coloured jumper wires.](../images/digital_io_circuit.jpg){ width="600" }
+  ![An Arduino Uno on a yellow base wired to a breadboard holding three LEDs (two red, one green), four resistors, and a pushbutton, connected by coloured jumper wires.](images/digital_io_circuit.jpg){ width="600" }
   <figcaption>A digital-I/O circuit: each LED connects to a pin through its own resistor, and a pushbutton feeds another pin. Nothing is powered yet.</figcaption>
 </figure>
 
 Follow just one LED. The pin connects to a resistor, the resistor to the LED, and the LED back to ground. Drawn as a **schematic** — the symbolic shorthand used in every tutorial and datasheet — that single path looks like this. (New to these symbols? [How to Read a Schematic](reading_schematics.md) decodes each one.)
 
 <figure markdown>
-  ![Schematic: an output pin labelled D3 connects down through a 220 ohm resistor, then an LED, then to ground.](../images/schematics/led_on_pin.svg){ width="280" }
+  ![Schematic: an output pin labelled D3 connects down through a 220 ohm resistor, then an LED, then to ground.](images/schematics/led_on_pin.svg){ width="280" }
   <figcaption>One output pin driving one LED. The zig-zag is the 220 Ω resistor; the triangle-and-bar with arrows is the LED; the lines at the bottom are ground (0V).</figcaption>
 </figure>
 
@@ -120,7 +120,7 @@ The photo at the top had three LEDs *and* a button, and now both halves make sen
 Power the same circuit up and the program's idle state shows: the green LED is lit, the reds are dark, waiting for the button.
 
 <figure markdown>
-  ![The same Arduino circuit, now powered over USB. The board's ON light glows and the green LED on the breadboard is lit.](../images/digital_io_running.jpg){ width="600" }
+  ![The same Arduino circuit, now powered over USB. The board's ON light glows and the green LED on the breadboard is lit.](images/digital_io_running.jpg){ width="600" }
   <figcaption>Powered over USB. The program reads the button on its input pin and drives the LEDs on its output pins — here, the idle state holds the green LED on until the button is pressed.</figcaption>
 </figure>
 
@@ -222,7 +222,7 @@ Learn it once here, and every new board is just a new set of numbers on a patter
 
 You've seen what the pins do — the fastest way to make it stick is to build it. **[Blink an LED](blink_an_led.md)** walks through wiring a single LED and flashing your first sketch, end to end, on real hardware.
 
-From there, **[Pull-up and Pull-down Resistors](pull_resistors.md)** adds an input you can read reliably — the other half of this article's circuit — and **[arduino-cli](../tools/arduino_cli.md)** covers the upload toolchain in depth.
+From there, **[Pull-up and Pull-down Resistors](pull_resistors.md)** adds an input you can read reliably — the other half of this article's circuit — and **[arduino-cli](tools/arduino_cli.md)** covers the upload toolchain in depth.
 
 ---
 

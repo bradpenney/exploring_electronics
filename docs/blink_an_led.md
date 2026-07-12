@@ -6,8 +6,8 @@ description: "Wire a single-LED circuit on a breadboard and flash the Blink sket
 
 # Blink an LED
 
-!!! abstract "Essential"
-    This article is part of the **Essential** learning path, in the **Microcontrollers** topic. It puts [Digital Pins](digital_io.md) into practice and uses [arduino-cli](../tools/arduino_cli.md) to load the code. If you've never wired a breadboard, read [Breadboards](../tools/breadboards.md) first, and if you've never seen an Arduino before, [What Is an Arduino?](what_is_an_arduino.md) covers the board itself.
+!!! abstract "Beginner"
+    This article is in the **Microcontrollers** topic. It puts [Digital Pins](digital_io.md) into practice and uses [arduino-cli](tools/arduino_cli.md) to load the code. If you've never wired a breadboard, read [Breadboards](tools/breadboards.md) first, and if you've never seen an Arduino before, [What Is an Arduino?](what_is_an_arduino.md) covers the board itself.
 
 There's a particular moment the first time a piece of code you wrote makes something in the physical world move — a light that turns on and off because *you* told it to. Blinking an LED is that moment, and it's the first thing nearly everyone builds. Not because it's flashy, but because it proves the entire chain works end to end: your circuit is wired correctly, your board is talking to your computer, and the code you compiled is running on the chip.
 
@@ -20,12 +20,12 @@ You'll do it in two stages. First you'll blink a light that's already on the boa
 A short parts list — everything here comes in any starter kit:
 
 - An [Arduino](what_is_an_arduino.md) Uno (or compatible board) and its USB cable
-- A [breadboard](../tools/breadboards.md)
+- A [breadboard](tools/breadboards.md)
 - One LED (any colour)
 - One 220 Ω resistor — see [Resistor Color Codes](resistor_color_codes.md) to confirm you've got the right one by its bands (Red-Red-Brown-Gold)
 - Two jumper wires
 
-You'll also need `arduino-cli` installed and the AVR core added, with your board's **port** and **FQBN** known — both terms, and the one-time setup, are covered in [arduino-cli](../tools/arduino_cli.md). This article assumes you can already compile and upload.
+You'll also need `arduino-cli` installed and the AVR core added, with your board's **port** and **FQBN** known — both terms, and the one-time setup, are covered in [arduino-cli](tools/arduino_cli.md). This article assumes you can already compile and upload.
 
 ---
 
@@ -65,7 +65,7 @@ Within a few seconds the `L` LED on the board should start blinking: one second 
 Now make it real with an LED you place yourself. The circuit is one output pin, a current-limiting resistor, and an LED to ground:
 
 <figure markdown>
-  ![Schematic: an output pin labelled D3 connects down through a 220 ohm resistor, then an LED, then to ground.](../images/schematics/led_on_pin.svg){ width="280" }
+  ![Schematic: an output pin labelled D3 connects down through a 220 ohm resistor, then an LED, then to ground.](images/schematics/led_on_pin.svg){ width="280" }
   <figcaption>One output pin driving one LED through a 220 Ω resistor to ground — the same output circuit from Digital Pins, now built for real.</figcaption>
 </figure>
 
@@ -114,7 +114,7 @@ Upload it the same way, and your own LED blinks in time. You're now running a ci
 
 ??? warning "The upload fails before the LED ever blinks"
 
-    This is a toolchain problem, not a wiring one. Check the **port** (`arduino-cli board list`), and on Linux make sure you have permission to use the serial device. [arduino-cli](../tools/arduino_cli.md) covers both, including the `dialout` group fix.
+    This is a toolchain problem, not a wiring one. Check the **port** (`arduino-cli board list`), and on Linux make sure you have permission to use the serial device. [arduino-cli](tools/arduino_cli.md) covers both, including the `dialout` group fix.
 
 ??? warning "The LED flares brightly, then dies"
 
@@ -212,5 +212,5 @@ You can drive an output and watch it run. The other half of a microcontroller is
 - [What Is an Arduino?](what_is_an_arduino.md) — the board itself, and how to read a sketch's `setup()`/`loop()` structure
 - [Digital Pins](digital_io.md) — what `pinMode` and `digitalWrite` actually do to a pin
 - [Resistor Color Codes](resistor_color_codes.md) — confirm the 220 Ω resistor in this circuit by its bands
-- [arduino-cli](../tools/arduino_cli.md) — installing the toolchain and uploading sketches from the terminal
-- [Breadboards](../tools/breadboards.md) — how the rows and rails you wired this circuit into connect
+- [arduino-cli](tools/arduino_cli.md) — installing the toolchain and uploading sketches from the terminal
+- [Breadboards](tools/breadboards.md) — how the rows and rails you wired this circuit into connect

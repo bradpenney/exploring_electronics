@@ -10,11 +10,11 @@ This file provides guidance to Claude Code when working with this repository.
 
 **Teaching Philosophy:** Every article starts with a software engineer's mental model (code, variables, functions, APIs) before introducing electronics theory. Hardware concepts are connected to things they already know: GPIO pins as function arguments, voltage dividers as analog data, serial protocols as network packets.
 
-## Content Architecture: Topics × Tiers
+## Content Architecture: Topics
 
-The site is organized as a **grid: topics × tiers**. Topics are orthogonal to tiers — a **topic** is the subject (a vertical column that deepens through Essential → Efficient → Mastery); the **tier** is how deep. The same topic recurs under each tier as it gains articles. (Same model the Linux/CS sister sites use.)
+This site has no tiers and no paywall — it's organized purely by **topic**: the subject of the article (circuit foundations, microcontrollers, etc.). Depth within a topic progresses naturally as articles accumulate, but that progression is signaled with a lightweight per-article difficulty tag, not a tier structure.
 
-**The six stable topics** (each grows across all three tiers):
+**The six stable topics** (each grows over time as articles are added):
 
 1. **Circuit Foundations** — voltage/current/resistance, series & parallel, dividers, capacitors
 2. **Reading Circuits** — schematics, symbols, datasheets
@@ -25,12 +25,14 @@ The site is organized as a **grid: topics × tiers**. Topics are orthogonal to t
 
 **Navigation rules:**
 
-- Nav is **tier-first**, with topics nested as sub-groups inside each tier (`📦 Essential → Circuit Foundations / Reading Circuits / Microcontrollers …`). Tier-first keeps the free/paid boundary clean (Mastery is the paywalled tier).
-- Add a topic group to a tier's nav **only once it has a published article** there — never show empty groups.
+- Nav is **topic-first**: each topic is its own top-level nav group (`Circuit Foundations`, `Reading Circuits`, `Microcontrollers` …). No tier wrapper above them.
+- Add a topic to the nav **only once it has a published article** — never show empty groups.
 - **Practical Tools** is a cross-cutting reference shelf (breadboards, arduino-cli, multimeter, soldering…), **not** a topic. Keep it as its own top-level section.
-- **Directories stay flat for now** (`essential/`, `tools/`). Defer splitting into topic subdirectories (e.g., `essential/microcontrollers/`) until a topic has ~3+ articles — grouping today is nav-label only.
+- **Directory stays flat for now** (`docs/*.md`, plus `tools/`). Defer splitting into topic subdirectories (e.g., `microcontrollers/`) until a topic has ~3+ articles — grouping today is nav-label only.
 
-**Development phases:** Build Essential first across topics, then Efficient, then Mastery.
+**Difficulty tags:** Each article carries a small `!!! abstract "Beginner"` / `"Intermediate"` / `"Advanced"` admonition right under the H1, with a line or two of framing (prerequisites, what topic it's in). This replaces tier badges — it's a per-article depth signal, not a site section or funnel stage.
+
+**Development phases:** No fixed phase order — build out topics as interest allows. Start each topic with a Beginner article before going deeper into it.
 
 ## Important Preferences
 
@@ -38,82 +40,21 @@ The site is organized as a **grid: topics × tiers**. Topics are orthogonal to t
 
 **MkDocs Operations**: The user handles running `mkdocs serve` and `mkdocs build` themselves. Do not run these commands.
 
-## Critical Persona Insight
+## Audience and Difficulty Tags
 
-**IMPORTANT**: The Essential tier is NOT software-developer-specific. It targets any serious adult beginner — no software background assumed, no software analogies.
+**IMPORTANT**: A Beginner-tagged article is NOT software-developer-specific. It targets any serious adult beginner — no software background assumed, no software analogies. Software analogies only enter once the article assumes some electronics literacy (Intermediate and up) — see below.
 
-### Essential: The Serious Adult Beginner
+**Who reads this site:**
+- Anyone who wants to learn electronics properly: hobbyist, career-changer, retiree, maker, curious professional from any field, or a software developer/platform engineer wanting the hardware side of computing (Arduino, Raspberry Pi, ESP32, IoT, embedded systems)
+- Some readers stop at wiring a breadboard and blinking an LED; others go on to design their own circuits, read datasheets, or ship production hardware — the site should serve all of them as they grow, without gatekeeping any of it behind a tier
 
-**Who they are:**
-- Any adult who wants to learn electronics properly: hobbyist, career-changer, retiree, maker, curious professional from any field
-- No prior electronics knowledge required
-- No software or coding background assumed
+Every article carries a **difficulty tag** — `Beginner`, `Intermediate`, or `Advanced` — as a one-line admonition under the H1. Pick the tag by what the article assumes the reader already knows, not by some predetermined publishing phase:
 
-**What they don't know:**
-- Ohm's Law, voltage, current, resistance
-- What a resistor, capacitor, or transistor actually does
-- How to read a schematic or datasheet
-- Why you can't just plug things in without checking the specs
+- **Beginner** — no prior electronics knowledge required, no software or coding background assumed. Mentor-to-learner voice, warm but serious, adult-to-adult. Safety-first: explain consequences before risky steps. **No software analogies** — anchor explanations in physical reality (water pressure, pipe flow, household wiring). Reassuring: mistakes are recoverable at these voltages.
+- **Intermediate** — assumes basic circuit concepts (voltage, current, resistance), wiring a breadboard, using a multimeter, and microcontroller basics (GPIO, PWM, serial) on at least one platform. Peer-to-peer, no hand-holding, treat them as engineers. Connect electronics to their software engineering context. Safety warnings still apply, framed professionally rather than reassuringly. **Required section: "Where You've Seen This"** — bridges their software experience to the electronics concept (e.g., I2C handshake → TCP connection setup).
+- **Advanced** — assumes circuit design, component selection, power electronics, and communication protocols (I2C, SPI, UART, USB) at the register level are second nature. Colleague-to-colleague, skip the basics, focus on professional concerns: cost, reliability, regulatory compliance (CE, FCC, RoHS), production reliability. Deep technical depth, no apologies for complexity.
 
-**Tone and approach for Essential:**
-- Mentor-to-learner voice — warm but serious, adult-to-adult
-- **Safety-first**: Electronics can injure or destroy equipment; explain consequences before risky steps
-- **No software analogies** — anchor explanations in physical reality (water pressure, pipe flow, household wiring)
-- Reassuring: mistakes are recoverable at these voltages; build confidence incrementally
-- Never assume electronics familiarity
-
----
-
-### Efficient: The Maker Who Wants to Go Off-Script
-
-**Who they are:**
-- Developer or hobbyist who can follow an Arduino tutorial
-- Building real projects (IoT sensors, home automation, custom hardware)
-- Wants to understand WHY things work, not just copy paste code
-- Ready to read datasheets and design their own circuits
-
-**What they already know:**
-- Basic circuit concepts (voltage, current, resistance)
-- How to wire a breadboard and use a multimeter
-- Microcontroller basics (GPIO, PWM, serial communication)
-- One microcontroller platform (Arduino, MicroPython, etc.)
-
-**What they don't know:**
-- Component selection and substitution
-- Circuit analysis and design principles
-- Communication protocols at the register level
-- Power supply design and efficiency
-
-**Tone and approach for Efficient:**
-- **Peer-to-peer** — no hand-holding, treat them as engineers
-- Connect electronics to their software engineering context
-- Safety warnings still apply but are framed professionally, not reassuringly
-- Required section: **"Where You've Seen This"** — bridges their software experience to electronics
-
----
-
-### Mastery: The IoT Developer or Electronics Professional
-
-**Who they are:**
-- IoT developer, embedded systems engineer, or electronics-adjacent professional
-- Designs and ships hardware products or infrastructure
-- Responsible for production reliability of hardware-software systems
-- Understands electronics at a professional level
-
-**What they already know:**
-- Circuit design, component selection, power electronics
-- Communication protocols (I2C, SPI, UART, USB) at the register level
-- PCB layout fundamentals
-- Production concerns (EMI, thermal management, manufacturing tolerances)
-
-**Tone and approach for Mastery:**
-- Colleague-to-colleague — skip the basics, focus on professional concerns
-- Production context: cost, reliability, regulatory compliance (CE, FCC, RoHS)
-- Deep technical depth — no apologies for complexity
-
----
-
-**The rule:** Read the section you're working on. Essential = developer persona, safety-first. Efficient = peer-to-peer, off-script maker. Mastery = professional, production-grade.
+**Safety is never optional at any tag** — only the framing (reassuring vs. professional vs. regulatory/standards) changes.
 
 ---
 
@@ -162,7 +103,7 @@ description: Compelling description for search results (150-160 chars ideal)
 - Search indexing
 - Navigation (even if accidentally uncommented)
 
-**Current exclude configuration** (as of 2026-07-03):
+**Current exclude configuration** (as of 2026-07-12):
 
 ```yaml
 plugins:
@@ -170,8 +111,6 @@ plugins:
   - meta
   - exclude:
       glob:
-        - "efficient/*"
-        - "mastery/*"
         - "tools/multimeter.md"
         - "tools/soldering.md"
         - "tools/bench_power_supply.md"
@@ -179,19 +118,19 @@ plugins:
 ```
 
 **Published articles (not in exclude list):**
-- `essential/what_is_electricity.md`
-- `essential/series_and_parallel.md`
-- `essential/reading_schematics.md`
-- `essential/resistor_color_codes.md`
-- `essential/what_is_an_arduino.md`
-- `essential/digital_io.md`
-- `essential/blink_an_led.md`
-- `essential/pull_resistors.md`
+- `what_is_electricity.md`
+- `series_and_parallel.md`
+- `reading_schematics.md`
+- `resistor_color_codes.md`
+- `what_is_an_arduino.md`
+- `digital_io.md`
+- `blink_an_led.md`
+- `pull_resistors.md`
 - `tools/breadboards.md`
 - `tools/arduino_cli.md`
 
 **What this means:**
-- Draft articles can exist in these directories without appearing in search results
+- Draft articles can exist in `docs/` without appearing in search results
 - Articles can be worked on incrementally without affecting SEO
 - Only vetted, published content appears in sitemap and builds
 
@@ -211,23 +150,19 @@ Edit `mkdocs.yaml` and remove the directory from the exclude plugin:
 ```yaml
 - exclude:
     glob:
-      - "essential/*"  # Article is excluded
+      - "intro_to_circuits.md"  # Article is excluded
 ```
 
 **After (published):**
 ```yaml
 - exclude:
     glob:
-      # essential/* is now published
+      # intro_to_circuits.md is now published
 ```
 
 **IMPORTANT**:
 - Remove the ENTIRE line, don't just comment it
-- If publishing individual files (not whole directories), use specific paths:
-  ```yaml
-  - "essential/intro_to_circuits.md"  # Still draft
-  # essential/what_is_electronics.md is published (not in exclude list)
-  ```
+- Since articles are flat in `docs/`, exclude entries are always individual file paths, not directory globs
 
 #### 3. Add to Navigation
 
@@ -240,7 +175,7 @@ Uncomment the article in the `nav:` section of `mkdocs.yaml`.
 poetry run mkdocs build --strict
 
 # Check sitemap includes the new article
-grep -o '<loc>[^<]*</loc>' site/sitemap.xml | grep essential
+grep -o '<loc>[^<]*</loc>' site/sitemap.xml | grep the-article-slug
 ```
 
 #### 5. Update CLAUDE.md Exclude List
@@ -288,23 +223,21 @@ Avoid duplication and repetition at all costs. Every time we repeat information,
 
 ### Before Explaining Any Concept, Ask:
 
-1. Have we explained this elsewhere in this section (Essential, Efficient, Mastery)?
+1. Have we explained this elsewhere in the same topic?
 2. If yes, is my perspective SIGNIFICANTLY different?
 3. If no, add a cross-link: "Remember X from [Article]? Now let's see how..."
 4. If yes, explicitly state the new angle: "Earlier we covered voltage conceptually — now let's measure it"
 
 ### Required: Pre-Publication Repetition Audit
 
-Before marking any article complete, use the Explore agent to search for repeated concepts across published articles in the same section. If found, consolidate and cross-link.
+Before marking any article complete, use the Explore agent to search for repeated concepts across published articles in the same topic. If found, consolidate and cross-link.
 
 ---
 
 ## Project Structure
 
-- `docs/` - Markdown content organized by learning tier
-  - `essential/` - Getting started (complete beginner, first circuit, first microcontroller)
-  - `efficient/` - Going deeper (circuit design, protocols, real projects)
-  - `mastery/` - Professional level (PCB design, power electronics, production)
+- `docs/` - Markdown content, flat (grouped by topic in nav, not in directories — see Content Architecture above)
+  - `tools/` - Practical Tools cross-cutting reference shelf (not a topic)
   - `images/` - Diagrams and circuit photos
     - `images/schematics/` - generated schematic SVGs (output of `schematics/`; committed and served)
   - `stylesheets/` - Custom CSS (`extra.css`)
@@ -312,7 +245,7 @@ Before marking any article complete, use the Explore agent to search for repeate
 - `mkdocs.yaml` - Site configuration and navigation
 - `pyproject.toml` - Poetry dependencies
 
-**Important:** Directory structure mirrors site navigation. Articles reference each other using relative paths (e.g., `../essential/filename.md`).
+**Important:** Topic articles live flat in `docs/`; topic grouping is nav-label only (see Content Architecture above). `tools/` remains its own subdirectory. Articles reference each other using relative paths (e.g., `filename.md`, `tools/filename.md`).
 
 ## Common Commands
 
@@ -341,37 +274,37 @@ poetry run python schematics/build.py
 
 ### Tone and Style
 
-Tone varies by tier. See **Critical Persona Insight** above. The key rule:
+Tone varies by each article's difficulty tag. See **Audience and Difficulty Tags** above. The key rule:
 
-- **Essential** → mentorship voice, safety-first, software analogies, reassuring
-- **Efficient** → peer-to-peer, no hand-holding, expects electronics literacy
-- **Mastery** → colleague-to-colleague, production focus, full technical depth
+- **Beginner** → mentorship voice, safety-first, physical (not software) analogies, reassuring
+- **Intermediate** → peer-to-peer, no hand-holding, expects electronics literacy, software analogies bridge in
+- **Advanced** → colleague-to-colleague, production focus, full technical depth
 
-**Core Principles (all tiers):**
+**Core Principles (every article):**
 
 - **Safety-first**: Electronics can injure (mains voltage), start fires (lithium batteries), destroy components. Never omit safety context.
-- **Software analogies**: This audience codes for a living — use that. GPIO = function parameter. Voltage = pressure. Pull-up resistor = default parameter value.
+- **Software analogies for Intermediate/Advanced**: this audience codes for a living — use that once the article isn't Beginner-tagged. GPIO = function parameter. Voltage = pressure. Pull-up resistor = default parameter value.
 - **Purpose-driven**: Always explain the "why" before the "how"
 - **Practical focus**: Real components, real values, real circuits — not vague theory
 - **No emoji spam**: limit to 1-3 per article, used strategically
 
-**Essential tone specifically:**
+**Beginner tone specifically:**
 
 - Empathetic openings anchored in physical experience: "You've seen a fuse blow. Here's why."
 - Safety-first: explain what can go wrong and why, before any risky steps
 - Mentorship voice: "I'll show you..." not "You must..."
 - Physical analogies: water pressure, pipe flow, household wiring — no software comparisons
 
-**Efficient tone specifically:**
+**Intermediate tone specifically:**
 
 - Peer-to-peer: assume they've wired a breadboard and can use a multimeter
 - Required: **"Where You've Seen This"** section — connects electronics concept to software engineering experience (e.g., I2C handshake → TCP connection setup)
 - Safety warnings still apply, but framed professionally — not reassuringly
 
-**Required Sections (all tiers):**
+**Required Sections (every article):**
 
-1. Opening hook with real-world context (Essential: empathetic; Efficient/Mastery: scenario-based)
-2. **"Where You've Seen This"** — **(Efficient+ required)** bridges software knowledge to electronics concept
+1. Opening hook with real-world context (Beginner: empathetic; Intermediate/Advanced: scenario-based)
+2. **"Where You've Seen This"** — **(Intermediate/Advanced required)** bridges software knowledge to electronics concept
 3. Core content with circuit examples, component values, and code snippets
 4. Safety warnings where appropriate
 5. Practice exercises with expandable solutions (`??? question`)
@@ -402,11 +335,11 @@ Use `!!! warning` for equipment-destroying risks:
     before powering a circuit. Electrolytic capacitors and diodes are polarized components.
 ```
 
-**Safety escalation by context:**
+**Safety escalation by difficulty tag:**
 
-- Essential: Full explanation with WHY it's dangerous, not just "be careful"
-- Efficient: Professional callout — brief, assumes competence
-- Mastery: Regulatory/standards context (IEC 60950, UL listing, etc.)
+- Beginner: Full explanation with WHY it's dangerous, not just "be careful"
+- Intermediate: Professional callout — brief, assumes competence
+- Advanced: Regulatory/standards context (IEC 60950, UL listing, etc.)
 
 #### Component Values and Units
 
@@ -510,7 +443,7 @@ Three distinct visual types, each with a specific job — do not substitute one 
 - schemdraw schematic: any time you'd otherwise draw or screenshot a real circuit schematic
 - Photo: actual breadboard layouts, the physical build, scope captures
 
-In Essential articles, pair a **photo first, then the schematic** (concrete board → symbolic notation), and have the caption decode the symbols — it teaches beginners to read schematics. See `essential/series_and_parallel.md` for the established pattern.
+In Beginner-tagged articles, pair a **photo first, then the schematic** (concrete board → symbolic notation), and have the caption decode the symbols — it teaches beginners to read schematics. See `series_and_parallel.md` for the established pattern.
 
 **Mermaid block diagrams for electronics:**
 
@@ -557,7 +490,7 @@ docs/images/schematics/<name>.svg   # generated output (committed, served)
 
 #### Read-Only vs Risky Operations
 
-Label every operation clearly for Essential-tier readers:
+Label every operation clearly for Beginner-tagged readers:
 
 ```markdown
 - ✅ **Safe (Non-Destructive):** Reading voltages with a multimeter, measuring continuity, reading datasheets
@@ -629,8 +562,8 @@ Validate all datasheet URLs with WebFetch before publishing — TI, Microchip, a
 7. Safety warnings
 8. Practice Exercises
 9. Quick Recap
-10. Further Reading
-11. What's Next
+10. What's Next
+11. Further Reading
 
 **Hands-On Project Articles (like "Blink an LED", "Read a Sensor"):**
 
@@ -641,8 +574,8 @@ Validate all datasheet URLs with WebFetch before publishing — TI, Microchip, a
 5. Verification — how to know it's working
 6. Troubleshooting (collapsible)
 7. Practice Exercises
-8. Further Reading
-9. What's Next
+8. What's Next
+9. Further Reading
 
 **Protocol/Communication Articles (like I2C, SPI, UART):**
 
@@ -653,8 +586,8 @@ Validate all datasheet URLs with WebFetch before publishing — TI, Microchip, a
 5. Code Example — sending and receiving data
 6. Common Issues and debugging
 7. Practice Exercises
-8. Further Reading
-9. What's Next
+8. What's Next
+9. Further Reading
 
 #### Context Before Code
 
@@ -686,12 +619,12 @@ Before uncommenting an article in `mkdocs.yaml`:
 
 **✅ Content Quality:**
 
-- [ ] **NO REPETITION AUDIT** - Searched for repeated concepts across published articles in this section (CRITICAL!)
-- [ ] Opening hook with real-world relevance (Essential: empathetic dev persona; Efficient/Mastery: scenario-based)
+- [ ] **NO REPETITION AUDIT** - Searched for repeated concepts across published articles in the same topic (CRITICAL!)
+- [ ] Opening hook with real-world relevance (Beginner: empathetic dev persona; Intermediate/Advanced: scenario-based)
 - [ ] Clear learning objectives
 - [ ] Circuit values and component specs are correct (verify against datasheets)
 - [ ] Code examples tested (or clearly marked as illustrative)
-- [ ] Safety considerations addressed (NEVER skip for Essential)
+- [ ] Safety considerations addressed (NEVER skip, regardless of difficulty tag)
 - [ ] Practice exercises with nested solutions (`??? tip "Solution"` inside question)
 - [ ] Key takeaways or quick recap
 - [ ] What's Next progression
@@ -707,9 +640,9 @@ Before uncommenting an article in `mkdocs.yaml`:
 
 **✅ Tone and Style:**
 
-- [ ] Correct persona for the tier (Essential vs Efficient vs Mastery)
-- [ ] "Where You've Seen This" section present (Efficient+ only, required)
-- [ ] Software analogies used for unfamiliar hardware concepts (Essential)
+- [ ] Correct tone for the article's difficulty tag (Beginner vs Intermediate vs Advanced)
+- [ ] "Where You've Seen This" section present (Intermediate/Advanced only, required)
+- [ ] Software analogies used for unfamiliar hardware concepts (Intermediate/Advanced) / avoided in favor of physical analogies (Beginner)
 - [ ] Safety-conscious throughout
 - [ ] Emoji usage limited (1-3 max, strategic)
 - [ ] No over-the-top marketing language
@@ -737,8 +670,7 @@ Before uncommenting an article in `mkdocs.yaml`:
 
 - [ ] Pre-publication link audit completed
 - [ ] **NEVER link to unpublished articles** - only link to articles uncommented in mkdocs.yaml
-- [ ] Cross-links added between published articles in the same tier
-- [ ] "Part of [Tier]" callout with link to tier overview
+- [ ] Cross-links added between published articles in the same topic
 - [ ] Referenced in "What's Next" from previous article
 - [ ] Datasheet links included for every component introduced
 - [ ] Cross-links to cs.bradpenney.io and other exploring_* sites where relevant
@@ -747,22 +679,22 @@ Before uncommenting an article in `mkdocs.yaml`:
 
 ## Final Notes
 
-This site teaches **electronics to software engineers**. Every concept must be grounded in something they already know from software, then expanded into hardware reality.
+This site teaches **electronics to software engineers and any serious adult beginner alike**. Once an article assumes some electronics literacy (Intermediate and up), ground concepts in something the reader already knows from software; below that (Beginner), ground them in physical experience instead.
 
-**Essential** — err on the side of:
+**Beginner**-tagged articles — err on the side of:
 - More safety context rather than less
-- More software analogies rather than hardware-first explanations
+- More physical, hardware-first analogies rather than software ones
 - Simpler circuits before complex ones
 - Reassurance that mistakes are recoverable (components are cheap; mains is not)
 
-**Efficient** — err on the side of:
+**Intermediate**-tagged articles — err on the side of:
 - Peer-to-peer directness
 - Connecting hardware behavior to software engineering principles
 - Datasheets and primary sources over simplified summaries
 
-**Mastery** — err on the side of:
+**Advanced**-tagged articles — err on the side of:
 - Production realities (cost, tolerances, regulatory)
 - Deep technical depth
 - Referencing standards and specifications
 
-The goal: software engineers who can **confidently design, build, and debug real electronic circuits** — and understand the hardware underneath the software they ship.
+The goal: readers who can **confidently design, build, and debug real electronic circuits** — and understand the hardware underneath the software they ship.

@@ -6,8 +6,8 @@ description: "Two wiring patterns govern every circuit ever built. Learn how ser
 
 # Series and Parallel Circuits
 
-!!! abstract "Essential"
-    This article is part of the **Essential** learning path. It builds on [What Is Electricity?](what_is_electricity.md) — read that first if you're new to voltage, current, and resistance.
+!!! abstract "Beginner"
+    This article builds on [What Is Electricity?](what_is_electricity.md) — read that first if you're new to voltage, current, and resistance.
 
 Pick up any string of Christmas lights. Old ones — the kind where one dead bulb kills the whole string. That's a series circuit. Modern ones, where a single bad bulb barely matters? Parallel.
 
@@ -30,14 +30,14 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
     For current to flow and the LED to light, **both switches must be pressed at the same time**. Either switch open means the path is broken — no current anywhere. A single current-limiting resistor sits at the start of the chain — before both switches — and limits current through the entire circuit to protect the LED.
 
     <figure markdown>
-      ![Two pushbutton switches wired in series with an LED. Both must be pressed simultaneously to light the LED.](../images/series_circuit.jpg){ width="500" }
+      ![Two pushbutton switches wired in series with an LED. Both must be pressed simultaneously to light the LED.](images/series_circuit.jpg){ width="500" }
       <figcaption>Series circuit: both switches must be pressed to complete the path and light the LED. The resistor sits before both switches, limiting current through the entire chain.</figcaption>
     </figure>
 
     Here is that same circuit drawn as a **schematic** — the symbolic notation used in every datasheet, tutorial, and textbook. Trace the single loop: the supply pushes current through the resistor, through `SW1`, through `SW2`, through the LED, and back. One path, no branches.
 
     <figure markdown>
-      ![Schematic of a series circuit: a 5V battery, a 220 ohm resistor, two pushbutton switches labelled SW1 and SW2, and an LED, all connected end-to-end in a single loop.](../images/schematics/series_circuit.svg){ width="500" }
+      ![Schematic of a series circuit: a 5V battery, a 220 ohm resistor, two pushbutton switches labelled SW1 and SW2, and an LED, all connected end-to-end in a single loop.](images/schematics/series_circuit.svg){ width="500" }
       <figcaption>The same series circuit as a schematic. The zig-zag is the resistor, the gapped symbols are the pushbuttons, and the triangle-and-bar with arrows is the LED. Everything sits on one unbroken loop.</figcaption>
     </figure>
 
@@ -88,7 +88,7 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
     That's the old Christmas lights. One bad bulb: whole string out. The break anywhere in the chain kills the circuit completely.
 
     !!! tip "Try it yourself"
-        Build this circuit on a breadboard — it takes less than five minutes. You'll need two pushbutton switches, one LED, and a 220 Ω resistor. The LED has polarity — the longer leg (anode) connects toward positive; if it doesn't light, flip it around. See [Breadboards](../tools/breadboards.md) if you haven't used one before.
+        Build this circuit on a breadboard — it takes less than five minutes. You'll need two pushbutton switches, one LED, and a 220 Ω resistor. The LED has polarity — the longer leg (anode) connects toward positive; if it doesn't light, flip it around. See [Breadboards](tools/breadboards.md) if you haven't used one before.
 
 === "Parallel"
 
@@ -97,14 +97,14 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
     In this circuit, the two switches are the parallel branches. A single current-limiting resistor sits before both switches — shared by both paths — and limits current through the LED. Press **either** switch and current flows through that branch. Press both and current flows through both branches simultaneously.
 
     <figure markdown>
-      ![Two pushbutton switches wired in parallel with an LED. Either switch pressed independently lights the LED.](../images/parallel_circuit.jpg){ width="500" }
+      ![Two pushbutton switches wired in parallel with an LED. Either switch pressed independently lights the LED.](images/parallel_circuit.jpg){ width="500" }
       <figcaption>Parallel circuit: either switch independently completes its own path to the LED. A single resistor before both switches limits the current.</figcaption>
     </figure>
 
     The schematic makes the two branches obvious. After the resistor, the wire splits: `SW1` rides the top branch and `SW2` rides the bottom, and both rejoin before the LED. Either branch on its own completes a path.
 
     <figure markdown>
-      ![Schematic of a parallel circuit: a 5V battery and a shared 220 ohm resistor feed two pushbutton switches, SW1 and SW2, on separate parallel branches that rejoin at an LED.](../images/schematics/parallel_circuit.svg){ width="500" }
+      ![Schematic of a parallel circuit: a 5V battery and a shared 220 ohm resistor feed two pushbutton switches, SW1 and SW2, on separate parallel branches that rejoin at an LED.](images/schematics/parallel_circuit.svg){ width="500" }
       <figcaption>The same parallel circuit as a schematic. The wire splits into two branches after the resistor — one through SW1, one through SW2 — and the branches merge again at the LED.</figcaption>
     </figure>
 
@@ -155,7 +155,7 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
     That's modern Christmas lights — one dead bulb goes dark while the rest stay lit. It's also how your house is wired: one lamp failing doesn't affect the others on the same circuit.
 
     !!! tip "Try it yourself"
-        Build the parallel version alongside the series circuit and compare them directly — the difference in behaviour is immediately obvious. Same components: two pushbutton switches, one LED, and a 220 Ω resistor. Remember LED polarity — longer leg toward positive. See [Breadboards](../tools/breadboards.md) if you haven't used one before.
+        Build the parallel version alongside the series circuit and compare them directly — the difference in behaviour is immediately obvious. Same components: two pushbutton switches, one LED, and a 220 Ω resistor. Remember LED polarity — longer leg toward positive. See [Breadboards](tools/breadboards.md) if you haven't used one before.
 
 ---
 
@@ -178,7 +178,7 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
 Most practical circuits combine the two topologies. Consider a row of indicator LEDs: each one needs its own current-limiting resistor (series) — the same resistor every [LED driven by a microcontroller pin](digital_io.md) needs — but they should all run independently at full brightness from the same supply (parallel). Any time you have multiple independent loads from the same supply, this pattern applies.
 
 <figure markdown>
-  ![Schematic of a combined series-parallel circuit: a 5V supply feeds two parallel branches, each branch a 220 ohm resistor in series with its own LED, returning to ground.](../images/schematics/combined_circuit.svg){ width="500" }
+  ![Schematic of a combined series-parallel circuit: a 5V supply feeds two parallel branches, each branch a 220 ohm resistor in series with its own LED, returning to ground.](images/schematics/combined_circuit.svg){ width="500" }
   <figcaption>Two LED branches in parallel, each with its own series resistor. Follow either branch top to bottom: resistor then LED, in series. The two branches hang in parallel off the same supply.</figcaption>
 </figure>
 
@@ -284,7 +284,7 @@ Recognising these nested patterns is what lets you look at a circuit and immedia
 
 With series and parallel understood, the next skill is reading these circuits the way every datasheet and tutorial draws them: **[How to Read a Schematic](reading_schematics.md)** — the symbols behind the diagrams in this article, and the one rule about wire crossings that trips up every beginner.
 
-In the meantime, if you haven't already: build both circuits on a [breadboard](../tools/breadboards.md). The behavioural difference between series and parallel is immediately obvious the moment you press the switches.
+In the meantime, if you haven't already: build both circuits on a [breadboard](tools/breadboards.md). The behavioural difference between series and parallel is immediately obvious the moment you press the switches.
 
 ---
 

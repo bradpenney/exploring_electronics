@@ -6,8 +6,8 @@ description: "An unconnected input pin floats and reads noise. How pull-up and p
 
 # Pull-up and Pull-down Resistors
 
-!!! abstract "Essential"
-    This article is part of the **Essential** learning path. It follows [Digital Pins](digital_io.md), where the floating-input problem first appears, and it leans on [What Is Electricity?](what_is_electricity.md) for Ohm's Law.
+!!! abstract "Beginner"
+    This article follows [Digital Pins](digital_io.md), where the floating-input problem first appears, and it leans on [What Is Electricity?](what_is_electricity.md) for Ohm's Law.
 
 A switch on your wall has a spring in it. Let go and it snaps back to a known position — off. Without that spring, the switch would sit wherever you last nudged it, and a draft could flip it either way.
 
@@ -36,7 +36,7 @@ There are two arrangements, and they are mirror images of each other.
     A **pull-down resistor** connects the pin to ground. Whenever nothing else is driving the pin, the resistor gently "pulls it down" to 0V, so it reads a steady LOW. Press the button — which connects the pin to 5V — and the pin reads HIGH.
 
     <figure markdown>
-      ![Schematic: 5V connects through a pushbutton to a node; that node branches to an input pin labelled D2, and also goes down through a 10 kilohm pull-down resistor to ground.](../images/schematics/button_pulldown.svg){ width="360" }
+      ![Schematic: 5V connects through a pushbutton to a node; that node branches to an input pin labelled D2, and also goes down through a 10 kilohm pull-down resistor to ground.](images/schematics/button_pulldown.svg){ width="360" }
       <figcaption>Pull-down: the resistor ties the pin to ground. Button open → pin reads LOW. Button pressed → pin connects to 5V and reads HIGH.</figcaption>
     </figure>
 
@@ -50,7 +50,7 @@ There are two arrangements, and they are mirror images of each other.
     A **pull-up resistor** connects the pin to the supply voltage instead. Whenever nothing else is driving the pin, the resistor "pulls it up" to 5V, so it reads a steady HIGH. Press the button — wired to connect the pin to ground — and the pin reads LOW.
 
     <figure markdown>
-      ![Schematic: 5V connects through a 10 kilohm pull-up resistor to a node; that node branches to an input pin labelled D2, and also goes down through a pushbutton to ground.](../images/schematics/button_pullup.svg){ width="360" }
+      ![Schematic: 5V connects through a 10 kilohm pull-up resistor to a node; that node branches to an input pin labelled D2, and also goes down through a pushbutton to ground.](images/schematics/button_pullup.svg){ width="360" }
       <figcaption>Pull-up: the resistor ties the pin to 5V. Button open → pin reads HIGH. Button pressed → pin connects to ground and reads LOW.</figcaption>
     </figure>
 
@@ -176,7 +176,7 @@ Learn the pattern on a button and you'll recognise it the next time a datasheet 
 
 You can now read an input as reliably as you can drive an output. Back in [Digital Pins](digital_io.md), the button circuit used a pull-down for exactly this reason — reread that build and it should now read like second nature.
 
-To actually run any of this, [arduino-cli](../tools/arduino_cli.md) compiles and uploads the sketches to your board.
+To actually run any of this, [arduino-cli](tools/arduino_cli.md) compiles and uploads the sketches to your board.
 
 ---
 

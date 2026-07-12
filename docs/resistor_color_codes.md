@@ -6,15 +6,15 @@ description: "A resistor has no printed numbers — just colored stripes. Learn 
 
 # Resistor Color Codes
 
-!!! abstract "Essential"
-    This article is part of the **Essential** learning path, in the **Components** topic. It uses the Ohm's Law from [What Is Electricity?](what_is_electricity.md) and the exact resistors already wired in [Series and Parallel Circuits](series_and_parallel.md), [Digital Pins](digital_io.md), and [Pull-up and Pull-down Resistors](pull_resistors.md).
+!!! abstract "Beginner"
+    This article is in the **Components** topic. It uses the Ohm's Law from [What Is Electricity?](what_is_electricity.md) and the exact resistors already wired in [Series and Parallel Circuits](series_and_parallel.md), [Digital Pins](digital_io.md), and [Pull-up and Pull-down Resistors](pull_resistors.md).
 
 Every resistor you've wired so far had a value — 220 Ω, 10 kΩ — and you took that value on faith. Look at the actual component and there's no "220" printed on it anywhere. No digits at all. Just four colored stripes painted around a small tan cylinder.
 
 That's not decoration. It's the resistor's value, written in a code that's been standard since the 1920s. By the end of this article you'll be able to pick up any resistor, read its bands, and know its value and tolerance without looking anything up.
 
 <figure markdown>
-  ![A large pile of through-hole resistors of many values scattered across a green cutting mat, each showing its own sequence of colored bands.](../images/resistors_pile.jpg){ width="600" }
+  ![A large pile of through-hole resistors of many values scattered across a green cutting mat, each showing its own sequence of colored bands.](images/resistors_pile.jpg){ width="600" }
   <figcaption>A typical parts bin: hundreds of resistors, no two values labelled the same way twice — just bands.</figcaption>
 </figure>
 
@@ -33,7 +33,7 @@ So instead of text, resistors carry their value as a sequence of colored bands, 
 The common resistor has four bands, and each one answers a specific question, always in the same order: two digits, then a multiplier, then a tolerance.
 
 <figure markdown>
-  ![A resistor with four color bands — red, red, brown, gold — each labelled with the value it represents: 2, 2, times 10, plus or minus 5 percent. An arrow above shows the reading direction, left to right. Below the resistor: 22 times 10 equals 220 ohms, plus or minus 5 percent.](../images/resistor_color_bands.svg){ width="560" }
+  ![A resistor with four color bands — red, red, brown, gold — each labelled with the value it represents: 2, 2, times 10, plus or minus 5 percent. An arrow above shows the reading direction, left to right. Below the resistor: 22 times 10 equals 220 ohms, plus or minus 5 percent.](images/resistor_color_bands.svg){ width="560" }
   <figcaption>Red-Red-Brown-Gold — the exact 220 Ω resistor from Digital Pins and Blink an LED. Two digits, a multiplier, and a tolerance.</figcaption>
 </figure>
 

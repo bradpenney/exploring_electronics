@@ -6,8 +6,8 @@ description: "An Arduino is a tiny dedicated computer on a board. Learn what's a
 
 # What Is an Arduino?
 
-!!! abstract "Essential"
-    This article is part of the **Essential** learning path, opening the **Microcontrollers** topic. No prior electronics or coding knowledge is assumed — this is where both begin.
+!!! abstract "Beginner"
+    This article opens the **Microcontrollers** topic. No prior electronics or coding knowledge is assumed — this is where both begin.
 
 You've likely heard the name before — Arduino comes up constantly around blinking LEDs, robots, and home automation projects. But "Arduino" gets used loosely, for a board, a piece of software, and a whole ecosystem all at once, and no one stops to untangle which is which.
 
@@ -18,14 +18,14 @@ This article does exactly that: what's physically on the board, what a "microcon
 ## The Board Itself
 
 <figure markdown>
-  ![An Arduino Uno on a yellow base wired to a breadboard holding three LEDs, four resistors, and a pushbutton, connected by coloured jumper wires.](../images/digital_io_circuit.jpg){ width="600" }
+  ![An Arduino Uno on a yellow base wired to a breadboard holding three LEDs, four resistors, and a pushbutton, connected by coloured jumper wires.](images/digital_io_circuit.jpg){ width="600" }
   <figcaption>An Arduino Uno — the rectangular board on the left, connected to a breadboard circuit. Everything in this article is about the board itself, before anything is wired to it.</figcaption>
 </figure>
 
 Take the breadboard and wiring away, and what's left is the board on its own: a small rectangular circuit board, a bit bigger than a credit card, with a USB port along one edge and two rows of metal pin sockets along the front and back. That board is an **Arduino Uno** — one specific, widely-used model in the Arduino family, and the one every article on this site uses.
 
 <figure markdown>
-  ![Simplified top-down diagram of an Arduino Uno, labelling the USB port, power jack, reset button, the ATmega328P microcontroller chip, the onboard LED, and the digital and power/analog pin headers.](../images/arduino_board_anatomy.svg){ width="600" }
+  ![Simplified top-down diagram of an Arduino Uno, labelling the USB port, power jack, reset button, the ATmega328P microcontroller chip, the onboard LED, and the digital and power/analog pin headers.](images/arduino_board_anatomy.svg){ width="600" }
   <figcaption>A simplified, not-to-scale diagram of what's on the board — the real layout is denser, but every part shown here is really there.</figcaption>
 </figure>
 
@@ -170,7 +170,7 @@ void loop() {
 
     ---
 
-    An Arduino program, written in **C++**. Its code is text; the tools that build it are covered in [arduino-cli](../tools/arduino_cli.md).
+    An Arduino program, written in **C++**. Its code is text; the tools that build it are covered in [arduino-cli](tools/arduino_cli.md).
 
 -   **The Skeleton**
 
@@ -198,4 +198,4 @@ You know what's on the board and what a sketch's bare structure means. **[Digita
 **Related Articles**
 
 - [Digital Pins](digital_io.md) — putting the board's pin headers to work, driving an LED and reading a button
-- [arduino-cli](../tools/arduino_cli.md) — how a sketch actually gets from a text file on your computer onto the chip
+- [arduino-cli](tools/arduino_cli.md) — how a sketch actually gets from a text file on your computer onto the chip

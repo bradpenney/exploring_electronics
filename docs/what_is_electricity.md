@@ -6,8 +6,8 @@ description: "The label on your USB charger says 5V ⎓ 2A. Two numbers that exp
 
 # What Is Electricity?
 
-!!! abstract "Essential"
-    This article is part of the **Essential** learning path — the foundations of electronics from first principles. No prior knowledge required.
+!!! abstract "Beginner"
+    The foundations of electronics from first principles. No prior knowledge required.
 
 Pick up any USB charger near you. On the label you'll find two numbers: something like `5V ⎓ 2A`.
 
@@ -297,7 +297,7 @@ The next article takes Ohm's Law into real circuit topology: **[Series and Paral
 
 **Practical Tools**
 
-- [Breadboards](../tools/breadboards.md) — how to build the circuits from this article without soldering; essential reading before your first hands-on circuit
+- [Breadboards](tools/breadboards.md) — how to build the circuits from this article without soldering; essential reading before your first hands-on circuit
 
 **Safety**
 
