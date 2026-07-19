@@ -152,11 +152,15 @@ nav:
       - How to Read a Schematic: reading_schematics.md
   - Components:
       - Resistor Color Codes: resistor_color_codes.md
+      - Temperature Sensors: temperature_sensors.md
+      - Package Types: package_types.md
   - Microcontrollers:
       - What Is an Arduino?: what_is_an_arduino.md
       - Digital Pins: digital_io.md
       - Blink an LED: blink_an_led.md
       - Pull-up and Pull-down Resistors: pull_resistors.md
+      - Reading an Analog Sensor: analog_input.md
+      - Building a Threshold Ladder: threshold_output.md
 
 # - Communication:
 #     - Overview: communication_overview.md

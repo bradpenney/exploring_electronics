@@ -4,11 +4,11 @@ This file provides guidance to Claude Code when working with this repository.
 
 ## Repository Overview
 
-**Exploring Electronics** teaches electronics and physical computing to software developers and engineers through a progressive learning journey—from understanding a resistor to designing and building real circuits. It follows the same editorial standards and progressive structure as the other exploring_* sites.
+**Exploring Electronics** teaches electronics and physical computing to any curious adult through a progressive learning journey—from understanding a resistor to designing and building real circuits. It follows the same editorial standards and progressive structure as the other exploring_* sites.
 
-**Target Audience:** Software developers, platform engineers, and DevOps professionals who want to understand the hardware side of computing—Arduino, Raspberry Pi, ESP32, sensors, circuits, and the electronics underlying IoT and embedded systems.
+**Target Audience:** Hobbyists, career-changers, makers, and curious professionals from any field who want to learn electronics properly — including software developers and platform engineers drawn in by Arduino, Raspberry Pi, ESP32, and IoT, but professional coding experience is never assumed or required. Readers write just enough Arduino code to run their circuits; some may go on to software-adjacent work, most won't, and the site never treats that as the default path.
 
-**Teaching Philosophy:** Every article starts with a software engineer's mental model (code, variables, functions, APIs) before introducing electronics theory. Hardware concepts are connected to things they already know: GPIO pins as function arguments, voltage dividers as analog data, serial protocols as network packets.
+**Teaching Philosophy:** Every article grounds hardware concepts in something a reasonable adult already understands — not a professional software background. At Beginner, that's physical, everyday experience (water pressure, household wiring). At Intermediate and up, it can lean on familiar consumer technology (a phone's battery icon, a car's dashboard, a video game's health bar) or on the light Arduino coding the reader has already done in this site's own articles — never on professional software engineering jargon or workflows.
 
 ## Content Architecture: Topics
 
@@ -51,7 +51,7 @@ This site has no tiers and no paywall — it's organized purely by **topic**: th
 Every article carries a **difficulty tag** — `Beginner`, `Intermediate`, or `Advanced` — as a one-line admonition under the H1. Pick the tag by what the article assumes the reader already knows, not by some predetermined publishing phase:
 
 - **Beginner** — no prior electronics knowledge required, no software or coding background assumed. Mentor-to-learner voice, warm but serious, adult-to-adult. Safety-first: explain consequences before risky steps. **No software analogies** — anchor explanations in physical reality (water pressure, pipe flow, household wiring). Reassuring: mistakes are recoverable at these voltages.
-- **Intermediate** — assumes basic circuit concepts (voltage, current, resistance), wiring a breadboard, using a multimeter, and microcontroller basics (GPIO, PWM, serial) on at least one platform. Peer-to-peer, no hand-holding, treat them as engineers. Connect electronics to their software engineering context. Safety warnings still apply, framed professionally rather than reassuringly. **Required section: "Where You've Seen This"** — bridges their software experience to the electronics concept (e.g., I2C handshake → TCP connection setup).
+- **Intermediate** — assumes basic circuit concepts (voltage, current, resistance), wiring a breadboard, using a multimeter, and microcontroller basics (GPIO, PWM, serial) on at least one platform. Peer-to-peer, no hand-holding — treat them as someone already comfortable with circuits, not necessarily someone who codes professionally. Safety warnings still apply, framed professionally rather than reassuringly. **Required section: "Where You've Seen This"** — bridges the electronics concept to something familiar from everyday technology or the reader's own hands-on Arduino experience (e.g., a phone's staged battery icon → staged LED output), never to professional software engineering concepts a non-programmer wouldn't have encountered.
 - **Advanced** — assumes circuit design, component selection, power electronics, and communication protocols (I2C, SPI, UART, USB) at the register level are second nature. Colleague-to-colleague, skip the basics, focus on professional concerns: cost, reliability, regulatory compliance (CE, FCC, RoHS), production reliability. Deep technical depth, no apologies for complexity.
 
 **Safety is never optional at any tag** — only the framing (reassuring vs. professional vs. regulatory/standards) changes.
@@ -126,6 +126,10 @@ plugins:
 - `digital_io.md`
 - `blink_an_led.md`
 - `pull_resistors.md`
+- `temperature_sensors.md`
+- `package_types.md`
+- `analog_input.md`
+- `threshold_output.md`
 - `tools/breadboards.md`
 - `tools/arduino_cli.md`
 
@@ -277,13 +281,13 @@ poetry run python schematics/build.py
 Tone varies by each article's difficulty tag. See **Audience and Difficulty Tags** above. The key rule:
 
 - **Beginner** → mentorship voice, safety-first, physical (not software) analogies, reassuring
-- **Intermediate** → peer-to-peer, no hand-holding, expects electronics literacy, software analogies bridge in
+- **Intermediate** → peer-to-peer, no hand-holding, expects electronics literacy, familiar-technology analogies bridge in (not professional software engineering ones)
 - **Advanced** → colleague-to-colleague, production focus, full technical depth
 
 **Core Principles (every article):**
 
 - **Safety-first**: Electronics can injure (mains voltage), start fires (lithium batteries), destroy components. Never omit safety context.
-- **Software analogies for Intermediate/Advanced**: this audience codes for a living — use that once the article isn't Beginner-tagged. GPIO = function parameter. Voltage = pressure. Pull-up resistor = default parameter value.
+- **Familiar-technology analogies for Intermediate/Advanced**: lean on everyday tech experience once the article isn't Beginner-tagged — a phone's battery icon, a car's dashboard gauges, a video game's health bar — plus the Arduino coding the reader has already done in this site's own articles. Never assume professional software engineering background (design patterns, cloud infrastructure, production systems) — most readers have played with code, not shipped it for a living.
 - **Purpose-driven**: Always explain the "why" before the "how"
 - **Practical focus**: Real components, real values, real circuits — not vague theory
 - **No emoji spam**: limit to 1-3 per article, used strategically
@@ -298,13 +302,13 @@ Tone varies by each article's difficulty tag. See **Audience and Difficulty Tags
 **Intermediate tone specifically:**
 
 - Peer-to-peer: assume they've wired a breadboard and can use a multimeter
-- Required: **"Where You've Seen This"** section — connects electronics concept to software engineering experience (e.g., I2C handshake → TCP connection setup)
+- Required: **"Where You've Seen This"** section — connects the electronics concept to everyday technology experience (a phone's battery icon, a car's gauges, a game's health bar) or to Arduino code the reader has already written here — not to professional software engineering
 - Safety warnings still apply, but framed professionally — not reassuringly
 
 **Required Sections (every article):**
 
 1. Opening hook with real-world context (Beginner: empathetic; Intermediate/Advanced: scenario-based)
-2. **"Where You've Seen This"** — **(Intermediate/Advanced required)** bridges software knowledge to electronics concept
+2. **"Where You've Seen This"** — **(Intermediate/Advanced required)** bridges everyday technology experience (or the reader's own Arduino code) to the electronics concept — not professional software engineering knowledge
 3. Core content with circuit examples, component values, and code snippets
 4. Safety warnings where appropriate
 5. Practice exercises with expandable solutions (`??? question`)
@@ -553,7 +557,7 @@ Validate all datasheet URLs with WebFetch before publishing — TI, Microchip, a
 
 **Component Introduction Articles (like Resistors, Capacitors, LEDs):**
 
-1. Opening — Software engineer's analogy hook
+1. Opening — Familiar-technology analogy hook
 2. "Where You've Seen This" — connect to something they know
 3. Mermaid Diagram — block diagram showing where this component fits
 4. Card Grid — component types or common use cases
@@ -579,7 +583,7 @@ Validate all datasheet URLs with WebFetch before publishing — TI, Microchip, a
 
 **Protocol/Communication Articles (like I2C, SPI, UART):**
 
-1. Opening — Software bridge (protocols they already know: HTTP, TCP, serial)
+1. Opening — Familiar-technology bridge (things they've used as a computer/phone owner: Wi-Fi, Bluetooth, USB — not protocols assumed from professional networking or software work)
 2. "Where You've Seen This" — required
 3. Mermaid Diagram — protocol timing or bus architecture
 4. Technical details — addresses, timing, registers
@@ -642,7 +646,7 @@ Before uncommenting an article in `mkdocs.yaml`:
 
 - [ ] Correct tone for the article's difficulty tag (Beginner vs Intermediate vs Advanced)
 - [ ] "Where You've Seen This" section present (Intermediate/Advanced only, required)
-- [ ] Software analogies used for unfamiliar hardware concepts (Intermediate/Advanced) / avoided in favor of physical analogies (Beginner)
+- [ ] Familiar-technology analogies used for unfamiliar hardware concepts (Intermediate/Advanced), not professional software engineering ones / avoided entirely in favor of physical analogies (Beginner)
 - [ ] Safety-conscious throughout
 - [ ] Emoji usage limited (1-3 max, strategic)
 - [ ] No over-the-top marketing language
@@ -679,17 +683,17 @@ Before uncommenting an article in `mkdocs.yaml`:
 
 ## Final Notes
 
-This site teaches **electronics to software engineers and any serious adult beginner alike**. Once an article assumes some electronics literacy (Intermediate and up), ground concepts in something the reader already knows from software; below that (Beginner), ground them in physical experience instead.
+This site teaches **electronics to any serious adult beginner — hobbyists and career-changers as much as engineers**. Once an article assumes some electronics literacy (Intermediate and up), ground concepts in familiar everyday technology (or the reader's own prior Arduino code from this site) rather than physical analogies; below that (Beginner), ground them in physical experience instead. At no tier should an analogy require professional software engineering experience to land — readers may have written a little code to run their Arduino, and some may go on to become professionals, but that's never assumed as the baseline.
 
 **Beginner**-tagged articles — err on the side of:
 - More safety context rather than less
-- More physical, hardware-first analogies rather than software ones
+- More physical, hardware-first analogies rather than technology ones
 - Simpler circuits before complex ones
 - Reassurance that mistakes are recoverable (components are cheap; mains is not)
 
 **Intermediate**-tagged articles — err on the side of:
 - Peer-to-peer directness
-- Connecting hardware behavior to software engineering principles
+- Connecting hardware behavior to familiar consumer technology or the reader's own Arduino code — not professional software engineering principles
 - Datasheets and primary sources over simplified summaries
 
 **Advanced**-tagged articles — err on the side of:
@@ -697,4 +701,4 @@ This site teaches **electronics to software engineers and any serious adult begi
 - Deep technical depth
 - Referencing standards and specifications
 
-The goal: readers who can **confidently design, build, and debug real electronic circuits** — and understand the hardware underneath the software they ship.
+The goal: readers who can **confidently design, build, and debug real electronic circuits** — whether that's a lifelong hobby or a step toward a career.

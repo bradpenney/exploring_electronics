@@ -52,6 +52,8 @@ Articles are grouped into **topics** — the subjects of electronics, like circu
 **Components**
 
 - [Resistor Color Codes](resistor_color_codes.md) — Decode any resistor's value and tolerance from its painted bands
+- [Temperature Sensors](temperature_sensors.md) — How thermistors, analog ICs, and digital sensors each turn heat into a voltage
+- [Package Types](package_types.md) — Through-hole vs. surface-mount, and why every part on this site plugs into a breadboard
 
 **Microcontrollers**
 
@@ -59,6 +61,8 @@ Articles are grouped into **topics** — the subjects of electronics, like circu
 - [Digital Pins](digital_io.md) — How a microcontroller drives an LED and reads a button, and why every pin needs a resistor
 - [Blink an LED](blink_an_led.md) — Build a single-LED circuit and flash your first sketch, end to end
 - [Pull-up and Pull-down Resistors](pull_resistors.md) — Why an unconnected input floats, and how a resistor gives it a reliable HIGH or LOW
+- [Reading an Analog Sensor](analog_input.md) — Wire a temperature sensor to an Arduino and read a continuous value with the ADC
+- [Building a Threshold Ladder](threshold_output.md) — Turn one sensor reading into staged, at-a-glance LED output
 
 **Communication, Power** *(coming soon)*
 
