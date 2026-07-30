@@ -38,7 +38,7 @@ This site has no tiers and no paywall — it's organized purely by **topic**: th
 
 **Git Operations**: The user handles all git operations (commits, pushes, etc.) themselves. Do not commit or push changes.
 
-**MkDocs Operations**: The user handles running `mkdocs serve` and `mkdocs build` themselves. Do not run these commands.
+**MkDocs Operations (updated 2026-07-30):** `poetry run mkdocs build --strict` is allowed for testing/verification — use it to confirm changes actually build cleanly before handing off. `mkdocs serve` is allowed too if a live preview is genuinely needed, but only on a non-default port (3000 is almost always occupied by something else) and only as a short-lived test — never left running. The user still handles real preview sessions and all deploys.
 
 ## Audience and Difficulty Tags
 
@@ -51,7 +51,7 @@ This site has no tiers and no paywall — it's organized purely by **topic**: th
 Every article carries a **difficulty tag** — `Beginner`, `Intermediate`, or `Advanced` — as a one-line admonition under the H1. Pick the tag by what the article assumes the reader already knows, not by some predetermined publishing phase:
 
 - **Beginner** — no prior electronics knowledge required, no software or coding background assumed. Mentor-to-learner voice, warm but serious, adult-to-adult. Safety-first: explain consequences before risky steps. **No software analogies** — anchor explanations in physical reality (water pressure, pipe flow, household wiring). Reassuring: mistakes are recoverable at these voltages.
-- **Intermediate** — assumes basic circuit concepts (voltage, current, resistance), wiring a breadboard, using a multimeter, and microcontroller basics (GPIO, PWM, serial) on at least one platform. Peer-to-peer, no hand-holding — treat them as someone already comfortable with circuits, not necessarily someone who codes professionally. Safety warnings still apply, framed professionally rather than reassuringly. **Required section: "Where You've Seen This"** — bridges the electronics concept to something familiar from everyday technology or the reader's own hands-on Arduino experience (e.g., a phone's staged battery icon → staged LED output), never to professional software engineering concepts a non-programmer wouldn't have encountered.
+- **Intermediate** — assumes basic circuit concepts (voltage, current, resistance), wiring a breadboard, using a multimeter, and microcontroller basics (GPIO, PWM, serial) on at least one platform. Peer-to-peer, no hand-holding — treat them as someone already comfortable with circuits, not necessarily someone who codes professionally. Safety warnings still apply, framed professionally rather than reassuringly. **Required section: "Where You Might Have Seen This"** — bridges the electronics concept to something familiar from everyday technology or the reader's own hands-on Arduino experience (e.g., a phone's staged battery icon → staged LED output), never to professional software engineering concepts a non-programmer wouldn't have encountered.
 - **Advanced** — assumes circuit design, component selection, power electronics, and communication protocols (I2C, SPI, UART, USB) at the register level are second nature. Colleague-to-colleague, skip the basics, focus on professional concerns: cost, reliability, regulatory compliance (CE, FCC, RoHS), production reliability. Deep technical depth, no apologies for complexity.
 
 **Safety is never optional at any tag** — only the framing (reassuring vs. professional vs. regulatory/standards) changes.
@@ -292,9 +292,11 @@ Tone varies by each article's difficulty tag. See **Audience and Difficulty Tags
 - **Practical focus**: Real components, real values, real circuits — not vague theory
 - **No emoji spam**: limit to 1-3 per article, used strategically
 
+**⚠️ Watch the formula, not just the topic (2026-07-28):** "You've seen X" asserts the reader's own history — a bet that fails whenever someone in the audience didn't do that exact thing, and it reads as alienating when it misses. Ground the hook in the practice/experience itself instead: "A blown fuse is something almost everyone's dealt with. Here's why it happens." Still physical, still concrete — just not a claim about this specific reader's past.
+
 **Beginner tone specifically:**
 
-- Empathetic openings anchored in physical experience: "You've seen a fuse blow. Here's why."
+- Empathetic openings anchored in physical experience, stated as a common experience rather than the reader's own: "A blown fuse is something almost everyone's dealt with. Here's why."
 - Safety-first: explain what can go wrong and why, before any risky steps
 - Mentorship voice: "I'll show you..." not "You must..."
 - Physical analogies: water pressure, pipe flow, household wiring — no software comparisons
@@ -302,13 +304,13 @@ Tone varies by each article's difficulty tag. See **Audience and Difficulty Tags
 **Intermediate tone specifically:**
 
 - Peer-to-peer: assume they've wired a breadboard and can use a multimeter
-- Required: **"Where You've Seen This"** section — connects the electronics concept to everyday technology experience (a phone's battery icon, a car's gauges, a game's health bar) or to Arduino code the reader has already written here — not to professional software engineering
+- Required: **"Where You Might Have Seen This"** section — connects the electronics concept to everyday technology experience (a phone's battery icon, a car's gauges, a game's health bar) or to Arduino code the reader has already written here — not to professional software engineering
 - Safety warnings still apply, but framed professionally — not reassuringly
 
 **Required Sections (every article):**
 
 1. Opening hook with real-world context (Beginner: empathetic; Intermediate/Advanced: scenario-based)
-2. **"Where You've Seen This"** — **(Intermediate/Advanced required)** bridges everyday technology experience (or the reader's own Arduino code) to the electronics concept — not professional software engineering knowledge
+2. **"Where You Might Have Seen This"** — **(Intermediate/Advanced required)** bridges everyday technology experience (or the reader's own Arduino code) to the electronics concept — not professional software engineering knowledge
 3. Core content with circuit examples, component values, and code snippets
 4. Safety warnings where appropriate
 5. Practice exercises with expandable solutions (`??? question`)
@@ -558,7 +560,7 @@ Validate all datasheet URLs with WebFetch before publishing — TI, Microchip, a
 **Component Introduction Articles (like Resistors, Capacitors, LEDs):**
 
 1. Opening — Familiar-technology analogy hook
-2. "Where You've Seen This" — connect to something they know
+2. "Where You Might Have Seen This" — connect to something they know
 3. Mermaid Diagram — block diagram showing where this component fits
 4. Card Grid — component types or common use cases
 5. Core explanation with values and formulas
@@ -584,7 +586,7 @@ Validate all datasheet URLs with WebFetch before publishing — TI, Microchip, a
 **Protocol/Communication Articles (like I2C, SPI, UART):**
 
 1. Opening — Familiar-technology bridge (things they've used as a computer/phone owner: Wi-Fi, Bluetooth, USB — not protocols assumed from professional networking or software work)
-2. "Where You've Seen This" — required
+2. "Where You Might Have Seen This" — required
 3. Mermaid Diagram — protocol timing or bus architecture
 4. Technical details — addresses, timing, registers
 5. Code Example — sending and receiving data
@@ -645,7 +647,7 @@ Before uncommenting an article in `mkdocs.yaml`:
 **✅ Tone and Style:**
 
 - [ ] Correct tone for the article's difficulty tag (Beginner vs Intermediate vs Advanced)
-- [ ] "Where You've Seen This" section present (Intermediate/Advanced only, required)
+- [ ] "Where You Might Have Seen This" section present (Intermediate/Advanced only, required)
 - [ ] Familiar-technology analogies used for unfamiliar hardware concepts (Intermediate/Advanced), not professional software engineering ones / avoided entirely in favor of physical analogies (Beginner)
 - [ ] Safety-conscious throughout
 - [ ] Emoji usage limited (1-3 max, strategic)
