@@ -85,6 +85,7 @@ plugins:
         - "tools/bench_power_supply.md"
   - rss:
       match_path: ".*"
+      pretty_print: true
       image: https://electronics.bradpenney.io/images/exploring_electronics.png
       abstract_chars_count: 160
       length: 20
