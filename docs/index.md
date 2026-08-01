@@ -83,3 +83,9 @@ This site is part of a family of progressive technical learning resources:
 - [Exploring Kubernetes](https://k8s.bradpenney.io) — Kubernetes from first deployment to production clusters
 - [Exploring Python](https://python.bradpenney.io) — Python automation for platform engineers
 - [Exploring Computer Science](https://cs.bradpenney.io) — CS theory for working engineers
+
+## Subscribe by RSS
+
+New articles publish straight to the [RSS feed](https://electronics.bradpenney.io/feed_rss_created.xml) — no algorithm, no email required.
+
+<a href="https://iheartrss.com/"><img src="https://iheartrss.com/iheartrss-dark.svg" alt="I ♥ RSS" width="88" height="31"></a>
