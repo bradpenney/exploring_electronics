@@ -1,0 +1,181 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": "Exploring Electronics",
+    "home_page_url": "https://electronics.bradpenney.io/",
+    "feed_url": "https://electronics.bradpenney.io/feed_json_created.json",
+    "description": "Electronics from first principles \u2014 voltage, current, resistance, and circuit design explained clearly. Real components, real numbers, no prior knowledge assumed.",
+    "icon": "https://electronics.bradpenney.io/images/exploring_electronics.png",
+    "authors": [
+        {
+            "name": "Brad Penney"
+        }
+    ],
+    "language": "en",
+    "items": [
+        {
+            "id": "https://electronics.bradpenney.io/package_types/",
+            "url": "https://electronics.bradpenney.io/package_types/",
+            "title": "Package Types",
+            "content_html": "Every component has a physical shape called a package. Learn the common through-hole and surface-mount families, and why this site's parts are all one kind.",
+            "image": null,
+            "date_modified": "2026-08-05T23:44:51-03:00",
+            "date_published": "2026-07-19T12:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/threshold_output/",
+            "url": "https://electronics.bradpenney.io/threshold_output/",
+            "title": "Building a Threshold Ladder",
+            "content_html": "Turn one sensor reading into staged, at-a-glance output. Wire three LEDs to an Arduino and light one, two, or three based on distance from baseline.",
+            "image": null,
+            "date_modified": "2026-08-05T23:44:51-03:00",
+            "date_published": "2026-07-19T11:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/analog_input/",
+            "url": "https://electronics.bradpenney.io/analog_input/",
+            "title": "Reading an Analog Sensor",
+            "content_html": "Digital pins only know HIGH and LOW. Wire an MCP9700A temperature sensor to an Arduino and use analogRead() to measure a continuous voltage instead.",
+            "image": null,
+            "date_modified": "2026-08-05T23:44:51-03:00",
+            "date_published": "2026-07-19T10:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/temperature_sensors/",
+            "url": "https://electronics.bradpenney.io/temperature_sensors/",
+            "title": "Temperature Sensors",
+            "content_html": "A microcontroller can only measure voltage. Learn how thermistors, analog ICs, and digital sensors each turn heat into something a circuit can read.",
+            "image": null,
+            "date_modified": "2026-08-05T23:44:51-03:00",
+            "date_published": "2026-07-19T09:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/what_is_an_arduino/",
+            "url": "https://electronics.bradpenney.io/what_is_an_arduino/",
+            "title": "What Is an Arduino?",
+            "content_html": "An Arduino is a tiny dedicated computer on a board. Learn what's actually on it, and how to read your first lines of Arduino code line by line.",
+            "image": null,
+            "date_modified": "2026-08-05T23:44:51-03:00",
+            "date_published": "2026-07-03T09:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/resistor_color_codes/",
+            "url": "https://electronics.bradpenney.io/resistor_color_codes/",
+            "title": "Resistor Color Codes",
+            "content_html": "A resistor has no printed numbers \u2014 just colored stripes. Learn what each band means and how to decode any resistor's value and tolerance on sight.",
+            "image": null,
+            "date_modified": "2026-08-05T23:44:51-03:00",
+            "date_published": "2026-07-03T09:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/blink_an_led/",
+            "url": "https://electronics.bradpenney.io/blink_an_led/",
+            "title": "Blink an LED",
+            "content_html": "Wire a single-LED circuit on a breadboard and flash the Blink sketch to an Arduino \u2014 your first complete loop from wiring to running code on real hardware.",
+            "image": null,
+            "date_modified": "2026-08-05T23:44:51-03:00",
+            "date_published": "2026-06-28T17:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/pull_resistors/",
+            "url": "https://electronics.bradpenney.io/pull_resistors/",
+            "title": "Pull-up and Pull-down Resistors",
+            "content_html": "An unconnected input pin floats and reads noise. How pull-up and pull-down resistors give it a steady HIGH or LOW, which to choose, and how to size one.",
+            "image": null,
+            "date_modified": "2026-08-05T23:44:51-03:00",
+            "date_published": "2026-06-28T16:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/digital_io/",
+            "url": "https://electronics.bradpenney.io/digital_io/",
+            "title": "Digital Pins",
+            "content_html": "A digital pin is either on or off \u2014 nothing in between. Learn how a microcontroller drives an LED and reads a button, and why each pin needs a resistor.",
+            "image": null,
+            "date_modified": "2026-08-05T23:44:51-03:00",
+            "date_published": "2026-06-28T15:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/tools/arduino_cli/",
+            "url": "https://electronics.bradpenney.io/tools/arduino_cli/",
+            "title": "arduino-cli",
+            "content_html": "Compile and upload Arduino sketches from the terminal with arduino-cli \u2014 one command, no IDE. Install it, find your board, and flash code from your own editor.",
+            "image": null,
+            "date_modified": "2026-08-05T23:44:51-03:00",
+            "date_published": "2026-06-28T14:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/reading_schematics/",
+            "url": "https://electronics.bradpenney.io/reading_schematics/",
+            "title": "How to Read a Schematic",
+            "content_html": "Learn to read electronics schematics: the standard symbols for resistors, capacitors, LEDs, and transistors, and how to trace current through any circuit.",
+            "image": null,
+            "date_modified": "2026-08-05T23:44:51-03:00",
+            "date_published": "2026-06-23T10:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/series_and_parallel/",
+            "url": "https://electronics.bradpenney.io/series_and_parallel/",
+            "title": "Series and Parallel Circuits",
+            "content_html": "Two wiring patterns govern every circuit ever built. Learn how series and parallel circuits work \u2014 why voltage divides in one and stays constant in the other.",
+            "image": null,
+            "date_modified": "2026-08-05T23:44:51-03:00",
+            "date_published": "2026-06-02T21:56:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/tools/breadboards/",
+            "url": "https://electronics.bradpenney.io/tools/breadboards/",
+            "title": "Breadboards",
+            "content_html": "How breadboard holes connect internally, how to use the power rails, and the wiring mistakes that kill every beginner's first circuit before it even starts.",
+            "image": null,
+            "date_modified": "2026-08-05T23:44:51-03:00",
+            "date_published": "2026-05-25T21:19:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/what_is_electricity/",
+            "url": "https://electronics.bradpenney.io/what_is_electricity/",
+            "title": "What Is Electricity?",
+            "content_html": "The label on your USB charger says 5V \u2393 2A. Two numbers that explain how electricity works \u2014 voltage, current, resistance, and Ohm's Law explained clearly.",
+            "image": null,
+            "date_modified": "2026-08-05T23:44:51-03:00",
+            "date_published": "2026-05-15T22:43:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/",
+            "url": "https://electronics.bradpenney.io/",
+            "title": "Home",
+            "content_html": "Electronics from first principles \u2014 voltage, current, resistance, and circuit design explained clearly. Real components, real numbers, no prior knowledge assumed.",
+            "image": null,
+            "date_modified": "2026-08-05T23:44:51-03:00",
+            "date_published": "2026-05-10T21:41:00-03:00",
+            "authors": [],
+            "tags": []
+        }
+    ]
+}

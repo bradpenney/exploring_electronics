@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" font-family="sans">
+  <title>A resistor with four color bands: red, red, brown, gold — decoding to 220 ohms, 5 percent tolerance</title>
+
+  <!-- Read-direction arrow -->
+  <line x1="204" y1="45" x2="460" y2="45" stroke="#ffb300" stroke-width="2" />
+  <polygon points="474,45 458,39 458,51" fill="#ffb300" />
+  <text x="339" y="28" text-anchor="middle" font-size="14" fill="#ffb300">Read left &#8594; right</text>
+
+  <!-- Leads -->
+  <line x1="20" y1="130" x2="130" y2="130" stroke="#e6e6e6" stroke-width="6" stroke-linecap="round" />
+  <line x1="550" y1="130" x2="630" y2="130" stroke="#e6e6e6" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Resistor body -->
+  <rect x="130" y="85" width="420" height="90" rx="45" fill="#d9b878" stroke="#8a6a3a" stroke-width="3" />
+
+  <!-- Bands -->
+  <rect x="190" y="85" width="28" height="90" fill="#cc3333" />
+  <rect x="260" y="85" width="28" height="90" fill="#cc3333" />
+  <rect x="330" y="85" width="28" height="90" fill="#7a4a2a" />
+  <rect x="460" y="85" width="28" height="90" fill="#d4af37" />
+
+  <!-- Decoded values above each band -->
+  <text x="204" y="72" text-anchor="middle" font-size="14" fill="#e6e6e6">2</text>
+  <text x="274" y="72" text-anchor="middle" font-size="14" fill="#e6e6e6">2</text>
+  <text x="344" y="72" text-anchor="middle" font-size="14" fill="#e6e6e6">&#215;10</text>
+  <text x="474" y="72" text-anchor="middle" font-size="14" fill="#e6e6e6">&#177;5%</text>
+
+  <!-- Leader lines -->
+  <line x1="204" y1="175" x2="204" y2="200" stroke="#e6e6e6" stroke-width="1.5" stroke-dasharray="3,3" />
+  <line x1="274" y1="175" x2="274" y2="200" stroke="#e6e6e6" stroke-width="1.5" stroke-dasharray="3,3" />
+  <line x1="344" y1="175" x2="344" y2="200" stroke="#e6e6e6" stroke-width="1.5" stroke-dasharray="3,3" />
+  <line x1="474" y1="175" x2="474" y2="200" stroke="#e6e6e6" stroke-width="1.5" stroke-dasharray="3,3" />
+
+  <!-- Band role labels -->
+  <text x="204" y="222" text-anchor="middle" font-size="13" fill="#e6e6e6">1st digit</text>
+  <text x="274" y="222" text-anchor="middle" font-size="13" fill="#e6e6e6">2nd digit</text>
+  <text x="344" y="222" text-anchor="middle" font-size="13" fill="#e6e6e6">Multiplier</text>
+  <text x="474" y="222" text-anchor="middle" font-size="13" fill="#e6e6e6">Tolerance</text>
+
+  <!-- Result -->
+  <text x="339" y="248" text-anchor="middle" font-size="14" fill="#e6e6e6">22 &#215; 10 = 220 &#937; &#177;5%</text>
+</svg>

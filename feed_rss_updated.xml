@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="rss.xsl"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    
+    <title>Exploring Electronics</title>
+    <description>Electronics from first principles — voltage, current, resistance, and circuit design explained clearly. Real components, real numbers, no prior knowledge assumed.</description>
+    <link>https://electronics.bradpenney.io/</link>
+    <atom:link href="https://electronics.bradpenney.io/feed_rss_updated.xml" rel="self" type="application/rss+xml" />
+
+    
+    <managingEditor>Brad Penney</managingEditor>
+    
+    <language>en</language>
+
+    
+    <pubDate>Wed, 05 Aug 2026 23:46:02 -0000</pubDate>
+    <lastBuildDate>Wed, 05 Aug 2026 23:46:02 -0000</lastBuildDate>
+    <ttl>1440</ttl>
+
+    
+    <generator>MkDocs RSS plugin - v1.19.0</generator>
+
+    
+    
+    <image>
+      <url>https://electronics.bradpenney.io/images/exploring_electronics.png</url>
+      <title>Exploring Electronics</title>
+      <link>https://electronics.bradpenney.io/</link>
+    </image>
+    
+
+    
+    
+    <item>
+      <title>Home</title>
+      
+      
+      
+      
+        
+      
+      <description>Electronics from first principles — voltage, current, resistance, and circuit design explained clearly. Real components, real numbers, no prior knowledge assumed.</description>
+      <link>https://electronics.bradpenney.io/</link>
+      <pubDate>Wed, 05 Aug 2026 23:44:51 -0300</pubDate>
+      <source url="https://electronics.bradpenney.io/feed_rss_updated.xml">Exploring Electronics</source>
+      
+      <guid isPermaLink="true">https://electronics.bradpenney.io/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Reading an Analog Sensor</title>
+      
+      
+      
+      
+        
+      
+      <description>Digital pins only know HIGH and LOW. Wire an MCP9700A temperature sensor to an Arduino and use analogRead() to measure a continuous voltage instead.</description>
+      <link>https://electronics.bradpenney.io/analog_input/</link>
+      <pubDate>Wed, 05 Aug 2026 23:44:51 -0300</pubDate>
+      <source url="https://electronics.bradpenney.io/feed_rss_updated.xml">Exploring Electronics</source>
+      
+      <guid isPermaLink="true">https://electronics.bradpenney.io/analog_input/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Blink an LED</title>
+      
+      
+      
+      
+        
+      
+      <description>Wire a single-LED circuit on a breadboard and flash the Blink sketch to an Arduino — your first complete loop from wiring to running code on real hardware.</description>
+      <link>https://electronics.bradpenney.io/blink_an_led/</link>
+      <pubDate>Wed, 05 Aug 2026 23:44:51 -0300</pubDate>
+      <source url="https://electronics.bradpenney.io/feed_rss_updated.xml">Exploring Electronics</source>
+      
+      <guid isPermaLink="true">https://electronics.bradpenney.io/blink_an_led/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Digital Pins</title>
+      
+      
+      
+      
+        
+      
+      <description>A digital pin is either on or off — nothing in between. Learn how a microcontroller drives an LED and reads a button, and why each pin needs a resistor.</description>
+      <link>https://electronics.bradpenney.io/digital_io/</link>
+      <pubDate>Wed, 05 Aug 2026 23:44:51 -0300</pubDate>
+      <source url="https://electronics.bradpenney.io/feed_rss_updated.xml">Exploring Electronics</source>
+      
+      <guid isPermaLink="true">https://electronics.bradpenney.io/digital_io/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Package Types</title>
+      
+      
+      
+      
+        
+      
+      <description>Every component has a physical shape called a package. Learn the common through-hole and surface-mount families, and why this site&#39;s parts are all one kind.</description>
+      <link>https://electronics.bradpenney.io/package_types/</link>
+      <pubDate>Wed, 05 Aug 2026 23:44:51 -0300</pubDate>
+      <source url="https://electronics.bradpenney.io/feed_rss_updated.xml">Exploring Electronics</source>
+      
+      <guid isPermaLink="true">https://electronics.bradpenney.io/package_types/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Pull-up and Pull-down Resistors</title>
+      
+      
+      
+      
+        
+      
+      <description>An unconnected input pin floats and reads noise. How pull-up and pull-down resistors give it a steady HIGH or LOW, which to choose, and how to size one.</description>
+      <link>https://electronics.bradpenney.io/pull_resistors/</link>
+      <pubDate>Wed, 05 Aug 2026 23:44:51 -0300</pubDate>
+      <source url="https://electronics.bradpenney.io/feed_rss_updated.xml">Exploring Electronics</source>
+      
+      <guid isPermaLink="true">https://electronics.bradpenney.io/pull_resistors/</guid>
+      
+    </item>
+    
+    <item>
+      <title>How to Read a Schematic</title>
+      
+      
+      
+      
+        
+      
+      <description>Learn to read electronics schematics: the standard symbols for resistors, capacitors, LEDs, and transistors, and how to trace current through any circuit.</description>
+      <link>https://electronics.bradpenney.io/reading_schematics/</link>
+      <pubDate>Wed, 05 Aug 2026 23:44:51 -0300</pubDate>
+      <source url="https://electronics.bradpenney.io/feed_rss_updated.xml">Exploring Electronics</source>
+      
+      <guid isPermaLink="true">https://electronics.bradpenney.io/reading_schematics/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Resistor Color Codes</title>
+      
+      
+      
+      
+        
+      
+      <description>A resistor has no printed numbers — just colored stripes. Learn what each band means and how to decode any resistor&#39;s value and tolerance on sight.</description>
+      <link>https://electronics.bradpenney.io/resistor_color_codes/</link>
+      <pubDate>Wed, 05 Aug 2026 23:44:51 -0300</pubDate>
+      <source url="https://electronics.bradpenney.io/feed_rss_updated.xml">Exploring Electronics</source>
+      
+      <guid isPermaLink="true">https://electronics.bradpenney.io/resistor_color_codes/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Series and Parallel Circuits</title>
+      
+      
+      
+      
+        
+      
+      <description>Two wiring patterns govern every circuit ever built. Learn how series and parallel circuits work — why voltage divides in one and stays constant in the other.</description>
+      <link>https://electronics.bradpenney.io/series_and_parallel/</link>
+      <pubDate>Wed, 05 Aug 2026 23:44:51 -0300</pubDate>
+      <source url="https://electronics.bradpenney.io/feed_rss_updated.xml">Exploring Electronics</source>
+      
+      <guid isPermaLink="true">https://electronics.bradpenney.io/series_and_parallel/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Temperature Sensors</title>
+      
+      
+      
+      
+        
+      
+      <description>A microcontroller can only measure voltage. Learn how thermistors, analog ICs, and digital sensors each turn heat into something a circuit can read.</description>
+      <link>https://electronics.bradpenney.io/temperature_sensors/</link>
+      <pubDate>Wed, 05 Aug 2026 23:44:51 -0300</pubDate>
+      <source url="https://electronics.bradpenney.io/feed_rss_updated.xml">Exploring Electronics</source>
+      
+      <guid isPermaLink="true">https://electronics.bradpenney.io/temperature_sensors/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Building a Threshold Ladder</title>
+      
+      
+      
+      
+        
+      
+      <description>Turn one sensor reading into staged, at-a-glance output. Wire three LEDs to an Arduino and light one, two, or three based on distance from baseline.</description>
+      <link>https://electronics.bradpenney.io/threshold_output/</link>
+      <pubDate>Wed, 05 Aug 2026 23:44:51 -0300</pubDate>
+      <source url="https://electronics.bradpenney.io/feed_rss_updated.xml">Exploring Electronics</source>
+      
+      <guid isPermaLink="true">https://electronics.bradpenney.io/threshold_output/</guid>
+      
+    </item>
+    
+    <item>
+      <title>What Is an Arduino?</title>
+      
+      
+      
+      
+        
+      
+      <description>An Arduino is a tiny dedicated computer on a board. Learn what&#39;s actually on it, and how to read your first lines of Arduino code line by line.</description>
+      <link>https://electronics.bradpenney.io/what_is_an_arduino/</link>
+      <pubDate>Wed, 05 Aug 2026 23:44:51 -0300</pubDate>
+      <source url="https://electronics.bradpenney.io/feed_rss_updated.xml">Exploring Electronics</source>
+      
+      <guid isPermaLink="true">https://electronics.bradpenney.io/what_is_an_arduino/</guid>
+      
+    </item>
+    
+    <item>
+      <title>What Is Electricity?</title>
+      
+      
+      
+      
+        
+      
+      <description>The label on your USB charger says 5V ⎓ 2A. Two numbers that explain how electricity works — voltage, current, resistance, and Ohm&#39;s Law explained clearly.</description>
+      <link>https://electronics.bradpenney.io/what_is_electricity/</link>
+      <pubDate>Wed, 05 Aug 2026 23:44:51 -0300</pubDate>
+      <source url="https://electronics.bradpenney.io/feed_rss_updated.xml">Exploring Electronics</source>
+      
+      <guid isPermaLink="true">https://electronics.bradpenney.io/what_is_electricity/</guid>
+      
+    </item>
+    
+    <item>
+      <title>arduino-cli</title>
+      
+      
+      
+      
+        
+      
+      <description>Compile and upload Arduino sketches from the terminal with arduino-cli — one command, no IDE. Install it, find your board, and flash code from your own editor.</description>
+      <link>https://electronics.bradpenney.io/tools/arduino_cli/</link>
+      <pubDate>Wed, 05 Aug 2026 23:44:51 -0300</pubDate>
+      <source url="https://electronics.bradpenney.io/feed_rss_updated.xml">Exploring Electronics</source>
+      
+      <guid isPermaLink="true">https://electronics.bradpenney.io/tools/arduino_cli/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Breadboards</title>
+      
+      
+      
+      
+        
+      
+      <description>How breadboard holes connect internally, how to use the power rails, and the wiring mistakes that kill every beginner&#39;s first circuit before it even starts.</description>
+      <link>https://electronics.bradpenney.io/tools/breadboards/</link>
+      <pubDate>Wed, 05 Aug 2026 23:44:51 -0300</pubDate>
+      <source url="https://electronics.bradpenney.io/feed_rss_updated.xml">Exploring Electronics</source>
+      
+      <guid isPermaLink="true">https://electronics.bradpenney.io/tools/breadboards/</guid>
+      
+    </item>
+    
+  </channel>
+</rss>
