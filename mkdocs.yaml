@@ -74,6 +74,7 @@ theme:
     - content.code.highlight
     - content.tooltips
     - content.code.mermaid
+    - navigation.path
 
 plugins:
   - search
@@ -147,12 +148,22 @@ nav:
 # Practical Tools (below) is a cross-cutting reference shelf, not a topic.
 
   - Circuit Foundations:
+      - Conductors, Insulators, and Semiconductors: conductors_and_insulators.md
       - What Is Electricity?: what_is_electricity.md
+      - Metric Prefixes and Units: metric_prefixes.md
+      - Voltage: voltage.md
+      - Current: current.md
+      - Resistance and Conductance: resistance.md
+      - Ohm's Law and Power: ohms_law.md
+      - Open Circuits, Short Circuits, and Fuses: open_short_fuses.md
+      - AC vs DC: ac_dc.md
+      - Magnetism and Electromagnetism: magnetism.md
       - Series and Parallel Circuits: series_and_parallel.md
   - Reading Circuits:
       - How to Read a Schematic: reading_schematics.md
   - Components:
       - Resistor Color Codes: resistor_color_codes.md
+      - Resistor Types: resistor_types.md
       - Temperature Sensors: temperature_sensors.md
       - Package Types: package_types.md
   - Microcontrollers:
@@ -165,8 +176,8 @@ nav:
 
 # - Communication:
 #     - Overview: communication_overview.md
-# - Power:
-#     - Overview: power_overview.md
+  - Power:
+      - Cells and Batteries: batteries.md
 
   - Practical Tools:
       - Breadboards: tools/breadboards.md

@@ -1,5 +1,5 @@
 ---
-date: "2026-05-10 21:41"
+date: "2026-10-01 14:00"
 title: "Circuits from First Principles"
 description: "Electronics from first principles — voltage, current, resistance, and circuit design explained clearly. Real components, real numbers, no prior knowledge assumed."
 ---
@@ -8,84 +8,170 @@ description: "Electronics from first principles — voltage, current, resistance
 
 # Exploring Electronics
 
-Electronics is everywhere. The question is whether you understand it or just work around it.
+**Every circuit is a push, a flow, and something in the way.**
 
-This site teaches electronics from first principles — not just how to follow a wiring diagram, but why circuits are designed the way they are. Every concept is explained directly, grounded in real components and real numbers, so you can read a datasheet, design a circuit, and understand what's actually happening when you power something up.
+Learn those three properly and the rest of electronics stops being magic: why a bird can sit on a power line, why a cold light bulb reads 10 Ω on a meter, why every LED needs a resistor.
 
-## Where Do You Start?
+This site teaches electronics from the atom up, with numbers from real datasheets and measurements, circuits drawn as real schematics, and nothing that assumes you've done this before.
 
-Articles are grouped into **topics** — the subjects of electronics, like circuit foundations and microcontrollers. Each article carries a difficulty tag (Beginner, Intermediate, Advanced) so you can gauge depth at a glance, but there's no paywall or tier to unlock — just start wherever your project and your questions are.
+---
+
+## Pick Your Starting Point
 
 <div class="grid cards two-col" markdown>
 
--   :material-flag-checkered: **New to electronics?**
+-   :material-atom: **Brand new to electronics**
 
     ---
 
-    Start at the very beginning — no prior knowledge assumed.
+    Start at the atom and climb one step at a time. No background needed.
 
-    [:octicons-arrow-right-24: Start with What Is Electricity?](what_is_electricity.md)
+    [:octicons-arrow-right-24: Conductors, Insulators, and Semiconductors](conductors_and_insulators.md)
 
--   :material-tools: **Ready to build?**
+-   :material-led-on: **Want to build something today**
 
     ---
 
-    Pick up the physical tools alongside the Beginner articles whenever you're ready to wire something.
+    Wire a real circuit and make an LED blink, then come back for the why.
 
-    [:octicons-arrow-right-24: Start with Breadboards](tools/breadboards.md)
+    [:octicons-arrow-right-24: Blink an LED](blink_an_led.md)
+
+-   :material-vector-polyline: **Staring at a schematic**
+
+    ---
+
+    Learn the symbols and follow the current through any circuit diagram.
+
+    [:octicons-arrow-right-24: How to Read a Schematic](reading_schematics.md)
+
+-   :material-radio-tower: **Studying for amateur radio**
+
+    ---
+
+    The exam's electronics sections, taught for understanding, not memorization.
+
+    [:octicons-arrow-right-24: Start with Voltage](voltage.md)
 
 </div>
 
 ---
 
-## Topics
+## The Foundations Path
 
-**Circuit Foundations**
+Eleven articles take you from why copper conducts to real circuits. Each one builds on the last, and each one stands on its own.
 
-- [What Is Electricity?](what_is_electricity.md) — Voltage, current, and resistance from first principles
-- [Series and Parallel Circuits](series_and_parallel.md) — How components connect changes everything about how a circuit behaves
+<figure markdown>
+  [![A 3D staircase of eleven numbered steps: 1 Conductors, 2 What Is Electricity, 3 Metric Prefixes, 4 Voltage, 5 Current, 6 Resistance, 7 Ohm's Law and power, 8 Shorts and Fuses, 9 AC vs DC, 10 Magnetism, 11 Series and Parallel circuits. The first step is lit amber and marked start here.](images/index/foundations_path.svg){ width="760" }](conductors_and_insulators.md)
+</figure>
 
-**Reading Circuits**
-
-- [How to Read a Schematic](reading_schematics.md) — The symbols and rules for reading any circuit diagram
-
-**Components**
-
-- [Resistor Color Codes](resistor_color_codes.md) — Decode any resistor's value and tolerance from its painted bands
-- [Temperature Sensors](temperature_sensors.md) — How thermistors, analog ICs, and digital sensors each turn heat into a voltage
-- [Package Types](package_types.md) — Through-hole vs. surface-mount, and why every part on this site plugs into a breadboard
-
-**Microcontrollers**
-
-- [What Is an Arduino?](what_is_an_arduino.md) — The board itself, and how to read a sketch's `setup()`/`loop()` structure
-- [Digital Pins](digital_io.md) — How a microcontroller drives an LED and reads a button, and why every pin needs a resistor
-- [Blink an LED](blink_an_led.md) — Build a single-LED circuit and flash your first sketch, end to end
-- [Pull-up and Pull-down Resistors](pull_resistors.md) — Why an unconnected input floats, and how a resistor gives it a reliable HIGH or LOW
-- [Reading an Analog Sensor](analog_input.md) — Wire a temperature sensor to an Arduino and read a continuous value with the ADC
-- [Building a Threshold Ladder](threshold_output.md) — Turn one sensor reading into staged, at-a-glance LED output
-
-**Communication, Power** *(coming soon)*
+[1. Conductors](conductors_and_insulators.md) · [2. What Is Electricity?](what_is_electricity.md) · [3. Metric Prefixes](metric_prefixes.md) · [4. Voltage](voltage.md) · [5. Current](current.md) · [6. Resistance](resistance.md) · [7. Ohm's Law](ohms_law.md) · [8. Shorts and Fuses](open_short_fuses.md) · [9. AC vs DC](ac_dc.md) · [10. Magnetism](magnetism.md) · [11. Series & Parallel](series_and_parallel.md)
 
 ---
 
-## Practical Tools
+## Explore by Topic
 
-The physical tools used throughout the site — read these as you need them.
+<div class="grid cards two-col" markdown>
 
-- [Breadboards](tools/breadboards.md) — How breadboards work internally, and the wiring mistakes that stop every beginner's first circuit
-- [arduino-cli](tools/arduino_cli.md) — Compile and upload Arduino sketches from the terminal, no IDE required
+-   :material-lightning-bolt: **Circuit Foundations**
+
+    ---
+
+    What electricity actually is, with real numbers.
+
+    [Conductors](conductors_and_insulators.md) · [What Is Electricity?](what_is_electricity.md) · [Metric Prefixes](metric_prefixes.md) · [Voltage](voltage.md) · [Current](current.md) · [Resistance](resistance.md) · [Ohm's Law](ohms_law.md) · [Shorts and Fuses](open_short_fuses.md) · [AC vs DC](ac_dc.md) · [Magnetism](magnetism.md) · [Series & Parallel](series_and_parallel.md)
+
+-   :material-chip: **Microcontrollers**
+
+    ---
+
+    Make an Arduino sense the world and react to it.
+
+    [What Is an Arduino?](what_is_an_arduino.md) · [Digital Pins](digital_io.md) · [Blink an LED](blink_an_led.md) · [Pull Resistors](pull_resistors.md) · [Analog Sensors](analog_input.md) · [Threshold Ladder](threshold_output.md)
+
+-   :material-resistor: **Components**
+
+    ---
+
+    The parts on the bench: what they are and how to read them.
+
+    [Resistor Color Codes](resistor_color_codes.md) · [Resistor Types and Potentiometers](resistor_types.md) · [Temperature Sensors](temperature_sensors.md) · [Package Types](package_types.md)
+
+-   :material-vector-polyline: **Reading Circuits**
+
+    ---
+
+    The visual language every circuit is written in.
+
+    [How to Read a Schematic](reading_schematics.md)
+
+-   :material-battery-charging: **Power**
+
+    ---
+
+    Where a circuit's energy comes from, and how to handle it safely.
+
+    [Cells and Batteries](batteries.md)
+
+-   :material-tools: **Practical Tools**
+
+    ---
+
+    The bench equipment, read as you need it.
+
+    [Breadboards](tools/breadboards.md) · [arduino-cli](tools/arduino_cli.md)
+
+-   :material-wrench-clock: **Still to come**
+
+    ---
+
+    Capacitors and inductors, diodes and transistors, communication between chips, and power supplies and regulators.
+
+</div>
+
+---
+
+## How This Site Teaches
+
+<div class="grid cards two-col" markdown>
+
+-   :material-numeric: **Real numbers**
+
+    ---
+
+    Values come from manufacturer datasheets, standards, and published measurements, and every calculation is worked through.
+
+-   :material-cube-outline: **Pictures that explain**
+
+    ---
+
+    3D figures show the mechanism; real schematics teach the notation you'll meet everywhere.
+
+-   :material-shield-alert: **Safety first**
+
+    ---
+
+    Articles spell out what's safe, what can damage a part, and what can hurt you.
+
+-   :material-pencil-box-multiple: **Practice built in**
+
+    ---
+
+    Articles end with practice problems and full solutions you can check.
+
+</div>
+
+---
 
 ## Part of the BradPenney.io Network
 
-This site is part of a family of progressive technical learning resources:
-
+- [Exploring CNC](https://cnc.bradpenney.io) — hobby CNC machining with an open-source workflow
 - [Exploring Linux](https://linux.bradpenney.io) — Linux for developers and platform engineers
-- [Exploring Kubernetes](https://k8s.bradpenney.io) — Kubernetes from first deployment to production clusters
 - [Exploring Python](https://python.bradpenney.io) — Python automation for platform engineers
 - [Exploring Computer Science](https://cs.bradpenney.io) — CS theory for working engineers
+- [Exploring Kubernetes](https://k8s.bradpenney.io) — Kubernetes from first deployment to production clusters
 
 ## Subscribe by RSS
 
-New articles publish straight to the [RSS feed](https://electronics.bradpenney.io/feed_rss_created.xml) — no algorithm, no email required.
+New articles go straight to the [RSS feed](https://electronics.bradpenney.io/feed_rss_created.xml): no algorithm, no email required.
 
 <a href="https://iheartrss.com/"><img src="https://iheartrss.com/iheartrss-dark.svg" alt="I ♥ RSS" width="88" height="31"></a>

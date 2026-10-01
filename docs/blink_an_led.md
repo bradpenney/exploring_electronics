@@ -9,29 +9,29 @@ description: "Wire a single-LED circuit on a breadboard and flash the Blink sket
 !!! abstract "Beginner"
     This article is in the **Microcontrollers** topic. It puts [Digital Pins](digital_io.md) into practice and uses [arduino-cli](tools/arduino_cli.md) to load the code. If you've never wired a breadboard, read [Breadboards](tools/breadboards.md) first, and if you've never seen an Arduino before, [What Is an Arduino?](what_is_an_arduino.md) covers the board itself.
 
-There's a particular moment the first time a piece of code you wrote makes something in the physical world move — a light that turns on and off because *you* told it to. Blinking an LED is that moment, and it's the first thing nearly everyone builds. Not because it's flashy, but because it proves the entire chain works end to end: your circuit is wired correctly, your board is talking to your computer, and the code you compiled is running on the chip.
+Blinking an LED is the first thing nearly everyone builds on a microcontroller, and for a practical reason: one blinking light proves the entire chain works. The circuit is wired correctly, the board is talking to the computer, and the code you compiled is running on the chip. It's also the first time code you wrote makes something happen in the physical world.
 
-You'll do it in two stages. First you'll blink a light that's already on the board — no wiring at all — just to confirm the toolchain works. Then you'll wire your own LED on a breadboard and blink that. By the end you'll have gone from an empty board to a circuit running code you put there.
+It happens in two stages. First you blink a light that's already on the board, with no wiring at all, to confirm the toolchain works. Then you wire your own LED on a breadboard and blink that.
 
 ---
 
 ## What You'll Need
 
-A short parts list — everything here comes in any starter kit:
+Everything here comes in any starter kit:
 
 - An [Arduino](what_is_an_arduino.md) Uno (or compatible board) and its USB cable
 - A [breadboard](tools/breadboards.md)
 - One LED (any colour)
-- One 220 Ω resistor — see [Resistor Color Codes](resistor_color_codes.md) to confirm you've got the right one by its bands (Red-Red-Brown-Gold)
+- One 220 Ω resistor: its bands read red-red-brown-gold ([Resistor Color Codes](resistor_color_codes.md) explains how to read them)
 - Two jumper wires
 
-You'll also need `arduino-cli` installed and the AVR core added, with your board's **port** and **FQBN** known — both terms, and the one-time setup, are covered in [arduino-cli](tools/arduino_cli.md). This article assumes you can already compile and upload.
+You'll also need `arduino-cli` installed with the AVR core added, and your board's **port** and **FQBN** (fully qualified board name) to hand. [arduino-cli](tools/arduino_cli.md) covers both terms and the one-time setup. This article assumes you can already compile and upload.
 
 ---
 
 ## Stage 1: Blink Without Wiring Anything
 
-Every Arduino Uno has a small LED already wired to pin 13, labelled `L` on the board. The code can reach it by the name `LED_BUILTIN`. Blinking it needs no breadboard, no resistor, nothing — which makes it the perfect first test: if it blinks, your board and your toolchain are working, and any problem later is in *your* wiring, not your setup.
+Every Arduino Uno has a small LED already wired to pin 13, labelled `L` on the board. The code can reach it by the name `LED_BUILTIN`. Blinking it needs no breadboard and no resistor, which makes it the perfect first test: if it blinks, the board and toolchain work, and any later problem is in the wiring.
 
 Create a sketch folder called `BlinkTest` with a file `BlinkTest.ino`:
 
@@ -48,15 +48,15 @@ void loop() {
 }
 ```
 
-If `pinMode`, `digitalWrite`, and the HIGH/LOW states are unfamiliar, [Digital Pins](digital_io.md) explains exactly what they do. The one new piece is `delay(1000)`: it pauses the program for 1000 milliseconds — one second — so the LED stays on, then off, long enough to see. Without the pauses the LED would switch far too fast to notice.
+If `pinMode`, `digitalWrite`, and the HIGH/LOW states are unfamiliar, [Digital Pins](digital_io.md) explains exactly what they do. The one new piece is `delay(1000)`, which pauses the program for 1000 milliseconds (one second) so each state lasts long enough to see. Without the pauses the LED would switch far too fast to notice.
 
 From inside the `BlinkTest` folder, compile and upload:
 
-```bash
+``` bash title="Compile and upload from the sketch folder" linenums="1"
 arduino-cli compile --upload -p /dev/ttyACM0 --fqbn arduino:avr:uno .
 ```
 
-Within a few seconds the `L` LED on the board should start blinking: one second on, one second off. That's the whole toolchain proven. If it doesn't, see [Troubleshooting](#troubleshooting) before going further — fix it here, where there's no wiring to blame.
+Within a few seconds the `L` LED on the board should start blinking: one second on, one second off. That's the whole toolchain proven. If it doesn't, see [Troubleshooting](#troubleshooting) and fix it here, where there's no wiring to blame.
 
 ---
 
@@ -66,20 +66,20 @@ Now make it real with an LED you place yourself. The circuit is one output pin, 
 
 <figure markdown>
   ![Schematic: an output pin labelled D3 connects down through a 220 ohm resistor, then an LED, then to ground.](images/schematics/led_on_pin.svg){ width="280" }
-  <figcaption>One output pin driving one LED through a 220 Ω resistor to ground — the same output circuit from Digital Pins, now built for real.</figcaption>
+  <figcaption>One output pin driving one LED through a 220 Ω resistor to ground: the output circuit from Digital Pins, now built for real.</figcaption>
 </figure>
 
 Wire it on the breadboard:
 
-1. Put the **LED** across the centre gap. Note its legs: the **longer leg is the anode** (positive side) — it goes toward the pin; the shorter leg (cathode) goes toward ground.
-2. Connect the **220 Ω resistor** from the LED's anode row to a separate row. The resistor can go on either side of the LED — its job is to limit current no matter where in the loop it sits.
+1. Put the **LED** across the centre gap. The **longer leg is the anode** (positive side) and goes toward the pin; the shorter leg (cathode) goes toward ground. If the legs have been trimmed to the same length, look at the rim around the base of the LED: it has a **flat edge on the cathode side**.
+2. Connect the **220 Ω resistor** from the LED's anode row to a separate row. It could go on either side of the LED: in a single loop the same current flows everywhere, so the resistor limits it wherever it sits.
 3. Run a jumper from the Arduino's **pin 3** to the resistor.
 4. Run a jumper from the LED's cathode to a **GND** pin on the Arduino.
 
 !!! warning "An LED always needs its resistor"
-    Never wire the LED straight from the pin to ground with no resistor. Without it the LED draws far too much current — it can burn out in an instant, and damage the pin driving it. One 220 Ω resistor in the loop keeps both safe. This is the current-limiting resistor from [Series and Parallel Circuits](series_and_parallel.md).
+    Never wire the LED straight from the pin to ground with no resistor. Without it the LED draws far too much current: it can burn out in an instant and damage the pin driving it. One 220 Ω resistor in the loop keeps both safe; the practice problems in [Ohm's Law and Power](ohms_law.md#practice) work out where the value comes from.
 
-The code is the same as before, with one change — drive **pin 3** instead of the built-in LED:
+The code is the same as before, except that it drives **pin 3** instead of the built-in LED:
 
 ``` cpp title="Blink.ino — blink the external LED on pin 3" linenums="1"
 void setup() {
@@ -100,9 +100,11 @@ Upload it the same way, and your own LED blinks in time. You're now running a ci
 
 ## How to Know It's Working
 
-- **The LED blinks evenly** — one second lit, one second dark. That's `delay(1000)` doing its job.
-- **It's a clear, steady brightness** — not painfully bright, not flickering. The 220 Ω resistor is holding the current where it belongs.
-- **Both LEDs blink together in Stage 2** if you left the built-in pin in the code — useful confirmation, since the on-board `L` LED mirrors pin 13 regardless.
+Three things confirm it:
+
+- **The LED blinks evenly**, one second lit and one second dark. That's `delay(1000)` doing its job.
+- **The brightness is clear and steady**, neither painfully bright nor flickering. The 220 Ω resistor is holding the current at about 14 mA.
+- **The on-board `L` LED has stopped blinking.** It's wired to pin 13, and the new sketch only drives pin 3, so a dark `L` confirms the new code replaced the old.
 
 ---
 
@@ -110,7 +112,7 @@ Upload it the same way, and your own LED blinks in time. You're now running a ci
 
 ??? warning "The LED doesn't light at all"
 
-    Most often the LED is in **backwards**. An LED only conducts one way: the **longer leg (anode)** must face the pin, the shorter leg (cathode) must face ground. Pull it out, flip it, and try again — you can't damage it by having it backwards, it simply won't light.
+    Most often the LED is in **backwards**. An LED only conducts one way: the **longer leg (anode)** must face the pin, the shorter leg (cathode) must face ground. Pull it out, flip it, and try again. At 5V with its resistor in place, a backwards LED simply doesn't light; it isn't damaged.
 
 ??? warning "The upload fails before the LED ever blinks"
 
@@ -159,7 +161,7 @@ Upload it the same way, and your own LED blinks in time. You're now running a ci
 
     ??? tip "Solution"
 
-        Yes. Pin 13 is an ordinary output pin that *also* happens to be wired to the on-board `L` LED. You can drive an external LED from it just like pin 3 — both LEDs would simply blink together. Pin 3 was used only to keep the external circuit separate and clear.
+        Yes. Pin 13 is an ordinary output pin that *also* happens to be wired to the on-board `L` LED. You can drive an external LED from it just like pin 3, and both LEDs would blink together. Pin 3 was used only to keep the external circuit separate and clear.
 
 ---
 
@@ -171,7 +173,7 @@ Upload it the same way, and your own LED blinks in time. You're now running a ci
 
     ---
 
-    Blink `LED_BUILTIN` with no wiring. If the on-board `L` LED blinks, your board and `arduino-cli` work — so any later problem is in your circuit.
+    Blink `LED_BUILTIN` with no wiring. If the on-board `L` LED blinks, your board and `arduino-cli` work, so any later problem is in your circuit.
 
 -   **The Output Circuit**
 
@@ -197,7 +199,7 @@ Upload it the same way, and your own LED blinks in time. You're now running a ci
 
 ## What's Next
 
-You can drive an output and watch it run. The other half of a microcontroller is *reading* the world — and reading reliably needs one more idea: **[Pull-up and Pull-down Resistors](pull_resistors.md)**, which lets you add a button to this circuit and have the board respond to it. From there, the [Digital Pins](digital_io.md) circuit — a button controlling several LEDs — is well within reach.
+You can drive an output and watch it run. The other half of a microcontroller is *reading* the world, and reading reliably needs one more idea: **[Pull-up and Pull-down Resistors](pull_resistors.md)** adds a button to this circuit and has the board respond to it. With that, the full circuit from the top of [Digital Pins](digital_io.md), a button controlling three LEDs, is within reach.
 
 ---
 

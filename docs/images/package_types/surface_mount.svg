@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 440" width="780" height="440" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Four surface-mount packages to scale on a circuit board, sitting on gold pads, each with a magnifying lens above it: a SOT-23, an 8-lead SOIC, a leadless QFN, and a tiny 0805 chip resistor</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="750" height="410" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="390.0" y="46.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Surface-mount: parts sit on pads on top of the board</text>
+<text x="390.0" y="66.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">board drawn at the same scale as the through-hole figure (9 px per mm); lenses magnify each part</text>
+<ellipse cx="398.4" cy="305.0" rx="334.4" ry="14.6" fill="#000" fill-opacity="0.4"/>
+<polygon points="70.0,285.6 670.0,285.6 726.7,249.2 126.7,249.2" fill="#6d9a83"/>
+<rect x="70.0" y="285.6" width="600.0" height="14.4" fill="#2f6f4e"/>
+<rect x="70.0" y="285.6" width="600.0" height="14.4" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="670.0,300.0 670.0,285.6 726.7,249.2 726.7,263.6" fill="#193d2a"/>
+<polygon points="145.9,277.9 151.3,277.9 156.9,274.3 151.5,274.3" fill="#d4af37"/>
+<polygon points="163.0,277.9 168.4,277.9 174.0,274.3 168.6,274.3" fill="#d4af37"/>
+<polygon points="168.3,269.0 173.7,269.0 179.3,265.4 173.9,265.4" fill="#d4af37"/>
+<polygon points="150.6,265.3 176.7,265.3 184.9,260.0 158.8,260.0" fill="#64676c"/>
+<rect x="150.6" y="265.3" width="26.1" height="9.0" fill="#22262e"/>
+<rect x="150.6" y="265.3" width="26.1" height="9.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="176.7,274.3 176.7,265.3 184.9,260.0 184.9,269.0" fill="#121419"/>
+<line x1="167.8" y1="267.1" x2="150" y2="227" stroke="#a0aec0" stroke-dasharray="3 4"/>
+<clipPath id="lens150"><circle cx="150" cy="165" r="59"/></clipPath>
+<circle cx="150" cy="165" r="62" fill="#2f6f4e" stroke="#cbd5e0" stroke-opacity="0.6" stroke-width="3"/>
+<g clip-path="url(#lens150)"><g transform="translate(150,165) scale(3.6) translate(-167.8,-267.1)"><polygon points="145.9,277.9 151.3,277.9 156.9,274.3 151.5,274.3" fill="#d4af37"/><polygon points="163.0,277.9 168.4,277.9 174.0,274.3 168.6,274.3" fill="#d4af37"/><polygon points="168.3,269.0 173.7,269.0 179.3,265.4 173.9,265.4" fill="#d4af37"/><polygon points="150.6,265.3 176.7,265.3 184.9,260.0 158.8,260.0" fill="#64676c"/><rect x="150.6" y="265.3" width="26.1" height="9.0" fill="#22262e"/><rect x="150.6" y="265.3" width="26.1" height="9.0" fill="url(#gloss)" opacity="0.6"/><polygon points="176.7,274.3 176.7,265.3 184.9,260.0 184.9,269.0" fill="#121419"/></g></g>
+<circle cx="150" cy="165" r="59" fill="url(#gloss)" opacity="0.5"/>
+<text x="206.0" y="111.0" font-size="11" fill="#fbbf24" text-anchor="start" font-weight="bold">3.6×</text>
+<text x="150.0" y="372.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">SOT-23</text>
+<text x="150.0" y="392.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">small transistors</text>
+<polygon points="286.9,281.6 292.3,281.6 298.6,277.5 293.2,277.5" fill="#d4af37"/>
+<polygon points="298.3,281.6 303.7,281.6 310.0,277.5 304.6,277.5" fill="#d4af37"/>
+<polygon points="309.8,281.6 315.2,281.6 321.5,277.5 316.1,277.5" fill="#d4af37"/>
+<polygon points="321.2,281.6 326.6,281.6 332.9,277.5 327.5,277.5" fill="#d4af37"/>
+<polygon points="317.8,261.7 323.2,261.7 329.5,257.7 324.1,257.7" fill="#d4af37"/>
+<polygon points="329.2,261.7 334.6,261.7 340.9,257.7 335.5,257.7" fill="#d4af37"/>
+<polygon points="340.6,261.7 346.0,261.7 352.3,257.7 346.9,257.7" fill="#d4af37"/>
+<polygon points="352.1,261.7 357.5,261.7 363.8,257.7 358.4,257.7" fill="#d4af37"/>
+<polygon points="289.6,264.0 333.7,264.0 358.3,248.2 314.2,248.2" fill="#64676c"/>
+<rect x="289.6" y="264.0" width="44.1" height="13.5" fill="#22262e"/>
+<rect x="289.6" y="264.0" width="44.1" height="13.5" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="333.7,277.5 333.7,264.0 358.3,248.2 358.3,261.7" fill="#121419"/>
+<ellipse cx="297.7" cy="257.7" rx="3" ry="2" fill="#0d1117"/>
+<line x1="323.9" y1="262.9" x2="310" y2="227" stroke="#a0aec0" stroke-dasharray="3 4"/>
+<clipPath id="lens310"><circle cx="310" cy="165" r="59"/></clipPath>
+<circle cx="310" cy="165" r="62" fill="#2f6f4e" stroke="#cbd5e0" stroke-opacity="0.6" stroke-width="3"/>
+<g clip-path="url(#lens310)"><g transform="translate(310,165) scale(2.0) translate(-323.9,-262.9)"><polygon points="286.9,281.6 292.3,281.6 298.6,277.5 293.2,277.5" fill="#d4af37"/><polygon points="298.3,281.6 303.7,281.6 310.0,277.5 304.6,277.5" fill="#d4af37"/><polygon points="309.8,281.6 315.2,281.6 321.5,277.5 316.1,277.5" fill="#d4af37"/><polygon points="321.2,281.6 326.6,281.6 332.9,277.5 327.5,277.5" fill="#d4af37"/><polygon points="317.8,261.7 323.2,261.7 329.5,257.7 324.1,257.7" fill="#d4af37"/><polygon points="329.2,261.7 334.6,261.7 340.9,257.7 335.5,257.7" fill="#d4af37"/><polygon points="340.6,261.7 346.0,261.7 352.3,257.7 346.9,257.7" fill="#d4af37"/><polygon points="352.1,261.7 357.5,261.7 363.8,257.7 358.4,257.7" fill="#d4af37"/><polygon points="289.6,264.0 333.7,264.0 358.3,248.2 314.2,248.2" fill="#64676c"/><rect x="289.6" y="264.0" width="44.1" height="13.5" fill="#22262e"/><rect x="289.6" y="264.0" width="44.1" height="13.5" fill="url(#gloss)" opacity="0.6"/><polygon points="333.7,277.5 333.7,264.0 358.3,248.2 358.3,261.7" fill="#121419"/><ellipse cx="297.7" cy="257.7" rx="3" ry="2" fill="#0d1117"/></g></g>
+<circle cx="310" cy="165" r="59" fill="url(#gloss)" opacity="0.5"/>
+<text x="366.0" y="111.0" font-size="11" fill="#fbbf24" text-anchor="start" font-weight="bold">2×</text>
+<text x="310.0" y="372.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">SOIC</text>
+<text x="310.0" y="392.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">most modern ICs</text>
+<polygon points="434.9,268.6 470.9,268.6 496.1,252.4 460.1,252.4" fill="#64676c"/>
+<rect x="434.9" y="268.6" width="36.0" height="8.1" fill="#22262e"/>
+<rect x="434.9" y="268.6" width="36.0" height="8.1" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="470.9,276.7 470.9,268.6 496.1,252.4 496.1,260.5" fill="#121419"/>
+<rect x="440.3" y="274.7" width="3.1" height="2.5" fill="#d4af37"/>
+<rect x="447.9" y="274.7" width="3.1" height="2.5" fill="#d4af37"/>
+<rect x="455.6" y="274.7" width="3.1" height="2.5" fill="#d4af37"/>
+<rect x="463.2" y="274.7" width="3.1" height="2.5" fill="#d4af37"/>
+<line x1="465.5" y1="264.5" x2="470" y2="227" stroke="#a0aec0" stroke-dasharray="3 4"/>
+<clipPath id="lens470"><circle cx="470" cy="165" r="59"/></clipPath>
+<circle cx="470" cy="165" r="62" fill="#2f6f4e" stroke="#cbd5e0" stroke-opacity="0.6" stroke-width="3"/>
+<g clip-path="url(#lens470)"><g transform="translate(470,165) scale(2.3) translate(-465.5,-264.5)"><polygon points="434.9,268.6 470.9,268.6 496.1,252.4 460.1,252.4" fill="#64676c"/><rect x="434.9" y="268.6" width="36.0" height="8.1" fill="#22262e"/><rect x="434.9" y="268.6" width="36.0" height="8.1" fill="url(#gloss)" opacity="0.6"/><polygon points="470.9,276.7 470.9,268.6 496.1,252.4 496.1,260.5" fill="#121419"/><rect x="440.3" y="274.7" width="3.1" height="2.5" fill="#d4af37"/><rect x="447.9" y="274.7" width="3.1" height="2.5" fill="#d4af37"/><rect x="455.6" y="274.7" width="3.1" height="2.5" fill="#d4af37"/><rect x="463.2" y="274.7" width="3.1" height="2.5" fill="#d4af37"/></g></g>
+<circle cx="470" cy="165" r="59" fill="url(#gloss)" opacity="0.5"/>
+<text x="526.0" y="111.0" font-size="11" fill="#fbbf24" text-anchor="start" font-weight="bold">2.3×</text>
+<text x="470.0" y="372.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">QFN</text>
+<text x="470.0" y="392.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">no legs: pads underneath</text>
+<polygon points="583.7,267.3 601.7,267.3 609.6,262.3 591.6,262.3" fill="#64676c"/>
+<rect x="583.7" y="267.3" width="18.0" height="4.5" fill="#22262e"/>
+<rect x="583.7" y="267.3" width="18.0" height="4.5" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="601.7,271.8 601.7,267.3 609.6,262.3 609.6,266.8" fill="#121419"/>
+<polygon points="583.7,267.3 587.3,267.3 595.2,262.3 591.6,262.3" fill="#dae1e9"/>
+<rect x="583.7" y="267.3" width="3.6" height="4.5" fill="#cbd5e0"/>
+<rect x="583.7" y="267.3" width="3.6" height="4.5" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="587.3,271.8 587.3,267.3 595.2,262.3 595.2,266.8" fill="#6f757b"/>
+<polygon points="598.1,267.3 601.7,267.3 609.6,262.3 606.0,262.3" fill="#dae1e9"/>
+<rect x="598.1" y="267.3" width="3.6" height="4.5" fill="#cbd5e0"/>
+<rect x="598.1" y="267.3" width="3.6" height="4.5" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="601.7,271.8 601.7,267.3 609.6,262.3 609.6,266.8" fill="#6f757b"/>
+<line x1="596.7" y1="267.0" x2="630" y2="227" stroke="#a0aec0" stroke-dasharray="3 4"/>
+<clipPath id="lens630"><circle cx="630" cy="165" r="59"/></clipPath>
+<circle cx="630" cy="165" r="62" fill="#2f6f4e" stroke="#cbd5e0" stroke-opacity="0.6" stroke-width="3"/>
+<g clip-path="url(#lens630)"><g transform="translate(630,165) scale(4.5) translate(-596.7,-267.0)"><polygon points="583.7,267.3 601.7,267.3 609.6,262.3 591.6,262.3" fill="#64676c"/><rect x="583.7" y="267.3" width="18.0" height="4.5" fill="#22262e"/><rect x="583.7" y="267.3" width="18.0" height="4.5" fill="url(#gloss)" opacity="0.6"/><polygon points="601.7,271.8 601.7,267.3 609.6,262.3 609.6,266.8" fill="#121419"/><polygon points="583.7,267.3 587.3,267.3 595.2,262.3 591.6,262.3" fill="#dae1e9"/><rect x="583.7" y="267.3" width="3.6" height="4.5" fill="#cbd5e0"/><rect x="583.7" y="267.3" width="3.6" height="4.5" fill="url(#gloss)" opacity="0.6"/><polygon points="587.3,271.8 587.3,267.3 595.2,262.3 595.2,266.8" fill="#6f757b"/><polygon points="598.1,267.3 601.7,267.3 609.6,262.3 606.0,262.3" fill="#dae1e9"/><rect x="598.1" y="267.3" width="3.6" height="4.5" fill="#cbd5e0"/><rect x="598.1" y="267.3" width="3.6" height="4.5" fill="url(#gloss)" opacity="0.6"/><polygon points="601.7,271.8 601.7,267.3 609.6,262.3 609.6,266.8" fill="#6f757b"/></g></g>
+<circle cx="630" cy="165" r="59" fill="url(#gloss)" opacity="0.5"/>
+<text x="686.0" y="111.0" font-size="11" fill="#fbbf24" text-anchor="start" font-weight="bold">4.5×</text>
+<text x="630.0" y="372.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">0805</text>
+<text x="630.0" y="392.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">resistors, capacitors</text>
+<text x="390.0" y="418.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">nothing goes through the board: each part is soldered to copper pads on the surface</text>
+</svg>

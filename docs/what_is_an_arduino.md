@@ -7,11 +7,11 @@ description: "An Arduino is a tiny dedicated computer on a board. Learn what's a
 # What Is an Arduino?
 
 !!! abstract "Beginner"
-    This article opens the **Microcontrollers** topic. No prior electronics or coding knowledge is assumed — this is where both begin.
+    This article opens the **Microcontrollers** topic. No prior electronics or coding knowledge is assumed: this is where both begin.
 
-You've likely heard the name before — Arduino comes up constantly around blinking LEDs, robots, and home automation projects. But "Arduino" gets used loosely, for a board, a piece of software, and a whole ecosystem all at once, and no one stops to untangle which is which.
+The name comes up constantly around blinking LEDs, robots, and home automation projects, and it gets used loosely: for a board, a piece of software, and a whole ecosystem, often in the same sentence.
 
-This article does exactly that: what's physically on the board, what a "microcontroller" actually is, and — because every article from here on shows you real code — how to read the handful of lines every Arduino program starts with, piece by piece.
+This article untangles them: what's physically on the board, what a microcontroller actually is, and, because every article from here on shows real code, how to read the few lines every Arduino program starts with.
 
 ---
 
@@ -19,49 +19,49 @@ This article does exactly that: what's physically on the board, what a "microcon
 
 <figure markdown>
   ![An Arduino Uno on a yellow base wired to a breadboard holding three LEDs, four resistors, and a pushbutton, connected by coloured jumper wires.](images/digital_io_circuit.jpg){ width="600" }
-  <figcaption>An Arduino Uno — the rectangular board on the left, connected to a breadboard circuit. Everything in this article is about the board itself, before anything is wired to it.</figcaption>
+  <figcaption>An Arduino Uno: the rectangular board on the left, connected to a breadboard circuit. This article is about the board itself, before anything is wired to it.</figcaption>
 </figure>
 
-Take the breadboard and wiring away, and what's left is the board on its own: a small rectangular circuit board, a bit bigger than a credit card, with a USB port along one edge and two rows of metal pin sockets along the front and back. That board is an **Arduino Uno** — one specific, widely-used model in the Arduino family, and the one every article on this site uses.
+Take the breadboard and wiring away, and what's left is the board on its own: a small rectangular circuit board, a bit bigger than a credit card, with a USB port along one edge and two rows of metal pin sockets along the front and back. That board is an **Arduino Uno**, the most widely used model in the Arduino family and the one every article on this site uses.
 
 <figure markdown>
-  ![Simplified top-down diagram of an Arduino Uno, labelling the USB port, power jack, reset button, the ATmega328P microcontroller chip, the onboard LED, and the digital and power/analog pin headers.](images/arduino_board_anatomy.svg){ width="600" }
-  <figcaption>A simplified, not-to-scale diagram of what's on the board — the real layout is denser, but every part shown here is really there.</figcaption>
+  ![A simplified 3D Arduino Uno seen from above with the USB port on the left: the digital pin header runs along the far edge, the power and analog pin header along the near edge, with the reset button beside the USB port, the power jack below it, the onboard L LED near pin 13, and the ATmega328P chip at the lower right.](images/what_is_an_arduino/arduino_uno.svg){ width="600" }
+  <figcaption>A simplified diagram of the board: the real layout is denser, but every part shown is really there, in the place it really sits.</figcaption>
 </figure>
 
-- **The USB port** — plugs into your computer for two jobs at once: it powers the board, and it's the path your code travels down to get onto the chip.
-- **The power jack** — an alternative to USB when the board needs to run away from a computer, powered by a wall adapter or battery instead.
-- **The reset button** — restarts whatever program is currently on the board, from the very beginning.
-- **The onboard LED**, labelled `L` — a small light built into the board itself, wired to one specific pin. It's useful precisely because it needs no wiring: [Blink an LED](blink_an_led.md) uses it as the very first test that a program has made it onto the board at all.
-- **The pin headers** — the rows of small sockets along the edges. These are what a wire from a breadboard plugs into, and they're the subject of the next article, [Digital Pins](digital_io.md).
-- **The chip in the middle** — the small black rectangle mounted near the center of the board. This is the part that actually matters, and everything else on the board exists to support it.
+- **The USB port** does two jobs at once: it powers the board, and it's the path your code travels to reach the chip.
+- **The power jack** runs the board away from a computer, from a wall adapter or a battery.
+- **The reset button** restarts the program on the board from the beginning.
+- **The onboard LED**, labelled `L`, is a small light wired to pin 13. Because it needs no wiring, [Blink an LED](blink_an_led.md) uses it as the first test that a program has reached the board at all.
+- **The pin headers** are the rows of sockets along the edges, where breadboard wires plug in. They're the subject of the next article, [Digital Pins](digital_io.md).
+- **The chip** near the corner is the part that actually matters. Everything else on the board exists to support it.
 
 !!! tip "Finding a specific pin on the real board"
-    Every pin socket has its number or label printed right on the board next to it — tiny white text in the plastic silkscreen layer, easy to miss until you know to look. When an article says "pin 3," don't count sockets from the end: look for the little `3` printed beside one of them. The digital pins are numbered `0` through `13` along one edge; the analog pins are labelled `A0` through `A5` on another; `GND` appears more than once, since any ground pin works the same as any other.
+    Every pin socket has its number or label printed beside it in tiny white text (the silkscreen), easy to miss until you know to look. When an article says "pin 3," don't count sockets from the end: look for the little `3`. The digital pins are numbered `0` through `13` along one edge; the analog pins are labelled `A0` through `A5` on another; `GND` appears more than once, since any ground pin works the same as any other.
 
 ---
 
 ## What That Chip Actually Is
 
-The chip in the middle is a **microcontroller** — on the Uno, a specific chip called the `ATmega328P`. The word sounds intimidating; what it does is not. A microcontroller is a genuinely tiny, self-contained computer: it has a processor, a small amount of memory, and nothing else — no screen, no operating system, no way to run more than one thing at a time.
+That chip is a **microcontroller**, on the Uno a part called the `ATmega328P`. The word sounds intimidating; the idea isn't. A microcontroller is a tiny, self-contained computer on one chip: a processor, a little memory (32 KB for programs, 2 KB for working data), and the pins that connect it to the outside world. It has no screen, no operating system, and runs exactly one program.
 
-Think of a wind-up music box. Wind it, and it plays exactly one tune, start to finish, the same way every time — there's no menu, no other song it could play instead, just the one thing it's built to do. A microcontroller works the same way: you load exactly one program onto it, and from the moment it powers on, that's the only thing it does, forever, until you load something different.
+Think of a wind-up music box. Wind it, and it plays one tune, the same way every time, with no menu and no other song to choose. A microcontroller works the same way: you load one program onto it, and from the moment it powers on that's all it does, until you load something different.
 
-That single-mindedness is a feature, not a limitation. A traffic light, a microwave's keypad, the thermostat on your wall — none of them need to multitask or run a dozen apps. They need to do one job, reliably, for years. A microcontroller is built for exactly that job, and an Arduino Uno is a microcontroller with just enough surrounding hardware — the USB port, the power jack, the pin headers — to make it easy to work with while you're learning.
+That single-mindedness is the point. A traffic light, a microwave's keypad, and a wall thermostat don't need to run a dozen apps; they need to do one job reliably for years. An Arduino Uno is a microcontroller with just enough hardware around it (the USB port, the power jack, the pin headers) to make it easy to learn on.
 
 ---
 
 ## The Program Has a Name: A Sketch
 
-The program you load onto an Arduino has its own name: a **sketch**. It's an ordinary text file full of code — nothing mysterious about the word, it's simply what Arduino's own tools call a program written for the board.
+Arduino calls the program you load onto the board a **sketch**. It's an ordinary text file of code.
 
-That code is written in a real, general-purpose programming language: **C++**. Arduino didn't invent its own language — it uses C++ with a small set of ready-made functions layered on top (`pinMode`, `digitalWrite`, and the others you'll meet in [Digital Pins](digital_io.md)), so you get a real language's full power without needing to know all of it on day one.
+That code is **C++**, a real, general-purpose programming language. Arduino didn't invent a language of its own: it adds a small set of ready-made functions on top of C++ (`pinMode`, `digitalWrite`, and the others you'll meet in [Digital Pins](digital_io.md)), so you get a real language's full power without needing to know all of it on day one.
 
 ---
 
 ## Reading Your First Sketch
 
-Here is the smallest complete sketch you can write — it does nothing yet, but every sketch you'll ever see, no matter how complex, has this exact shape:
+Here is the smallest complete sketch. It does nothing yet, but every sketch, however complex, has this shape:
 
 ``` cpp title="The smallest possible sketch" linenums="1"
 void setup() {
@@ -75,23 +75,23 @@ void loop() {
 
 It looks like almost nothing, which makes it the perfect place to learn what every piece of punctuation is doing before any actual instructions get added.
 
-- **`setup` and `loop` are functions** — a function is simply a named, self-contained block of instructions. `setup` is the name of one; `loop` is the name of the other. You'll write more functions of your own later, but every sketch starts with exactly these two, and their names are fixed — the tools that build your sketch look for them by these exact names.
-- **The parentheses `()`** — every function has a pair of parentheses right after its name. This is where you'd list any information the function needs to do its job. `setup` and `loop` don't need any, so theirs are empty — but the parentheses are still required, empty or not.
-- **The curly braces `{ }`** — everything a function does goes between its opening `{` and closing `}`. Right now both are empty, which is exactly why this sketch does nothing: there's nothing between the braces yet.
-- **`void`** — some functions hand back an answer when they finish (a calculation's result, for instance); others just *do* something and hand nothing back. `void` in front of a function's name means "this one just does something — don't expect an answer from it." `setup` and `loop` are both `void` for exactly that reason.
+- **`setup` and `loop` are functions**: named, self-contained blocks of instructions. Every sketch has exactly these two, and the names are fixed, because the tools that build the sketch look for them by name.
+- **The parentheses `()`** follow every function name and hold any information the function needs. `setup` and `loop` need none, so theirs are empty, but the parentheses are still required.
+- **The curly braces `{ }`** hold everything the function does. Both are empty here, which is why this sketch does nothing.
+- **`void`** means the function does something but hands back no answer. Some functions return a result (a calculation, for instance); `setup` and `loop` only act, so both are `void`.
 
 That's the entire punctuation vocabulary of a sketch's skeleton. Everything else you'll learn is about what goes *inside* the braces.
 
 ### Why Two Functions, and Why These Two
 
-`setup` and `loop` aren't just two functions among many — they're the two the Arduino core always runs, automatically, in a fixed pattern:
+The Arduino core runs these two functions automatically, in a fixed pattern:
 
-- **`setup()` runs exactly once** — the instant the board powers on, or the moment you press reset. Anything that only needs to happen one time — like telling a pin whether it's an input or an output — goes here.
-- **`loop()` runs immediately after `setup()` finishes — and then keeps running, over and over, without stopping**, for as long as the board has power. Anything the program needs to keep doing — checking a button, blinking a light — goes here.
+- **`setup()` runs exactly once**, when the board powers on or you press reset. One-time jobs, like telling a pin whether it's an input or an output, go here.
+- **`loop()` runs as soon as `setup()` finishes, then again and again** for as long as the board has power. Anything the program keeps doing, like checking a button or blinking a light, goes here.
 
-You never call `setup()` or `loop()` yourself anywhere in your code. The board calls them for you, in that order, automatically — which is exactly why they have to be named precisely `setup` and `loop`, with nothing spelled differently.
+You never call `setup()` or `loop()` yourself; the board calls them for you, which is why the names must be spelled exactly.
 
-Add one real instruction and the pattern still holds. Here's `digital_io.md`'s LED example again, now that every symbol in it has a name:
+Add one real instruction and the pattern holds. This is the LED example from [Digital Pins](digital_io.md):
 
 ``` cpp title="Light an LED on pin 3" linenums="1"
 void setup() {
@@ -103,10 +103,10 @@ void loop() {
 }
 ```
 
-`pinMode(3, OUTPUT)` and `digitalWrite(3, HIGH)` are function calls too — this time, functions Arduino already wrote for you, each doing one specific job, each taking the information inside its parentheses (which pin, and what to set it to) to know exactly what to do. Notice each instruction line ends with a semicolon `;` — the same job a period does at the end of a sentence, marking "this instruction is complete." Leave it off and the sketch won't build at all.
+`pinMode(3, OUTPUT)` and `digitalWrite(3, HIGH)` are function calls too: functions Arduino has already written, each told by the values in its parentheses which pin to act on and what to do. Each instruction ends with a semicolon `;`, which does the job of a full stop: "this instruction is complete." Leave one off and the sketch won't build.
 
-!!! info "You'll see `// comments` in every code example"
-    Text after `//` on a line is a **comment** — a note left for a human reader, completely ignored by the board. `pinMode(3, OUTPUT);      // pin 3 will drive the LED` runs exactly the same with or without that comment; it's there purely to explain the line to you.
+!!! tip "You'll see `// comments` in every code example"
+    Text after `//` on a line is a **comment**: a note for a human reader that the board ignores completely. `pinMode(3, OUTPUT);      // pin 3 will drive the LED` runs exactly the same with or without that comment; it's there purely to explain the line to you.
 
 ---
 

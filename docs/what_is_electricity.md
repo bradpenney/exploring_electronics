@@ -7,176 +7,99 @@ description: "The label on your USB charger says 5V ⎓ 2A. Two numbers that exp
 # What Is Electricity?
 
 !!! abstract "Beginner"
-    The foundations of electronics from first principles. No prior knowledge required.
+    The big picture of **Circuit Foundations** on one page. No prior knowledge required. Each section is a short summary that links to a full article when you want the whole story.
 
-Pick up any USB charger near you. On the label you'll find two numbers: something like `5V ⎓ 2A`.
+Pick up any USB charger and read the label. It says something like `5V ⎓ 2A`. Two numbers, and between them they describe almost everything electricity does: the **5V** is how hard the charger pushes, and the **2A** is how much charge it can deliver. Add the third idea, **resistance**, what stands in the way, and you have the whole foundation of electronics.
 
-Most people recognise the 5V without being able to explain it. Almost nobody can explain what the 2A means, or why both numbers exist, or why they're different things entirely.
-
-By the end of this article you'll be able to read that label and understand exactly what's happening inside the cable — and why both numbers matter every time you design a circuit.
+<figure markdown>
+  ![A 3D circuit loop: a 5 volt battery drives current through a 220 ohm resistor and a lit green LED, and the current returns to ground at 0 volts.](images/what_is_electricity/circuit_loop.svg){ width="720" }
+  <figcaption>Every circuit is a loop: a source pushes, resistance limits, the load does the work, and the current returns.</figcaption>
+</figure>
 
 ---
 
 ## Voltage: The Force
 
-That 5V on your charger is there whether anything is plugged in or not. It's potential energy — the force available to push current through a circuit once one is connected. The moment you complete a circuit, that potential drives current through it.
+The 5V on the charger is there whether anything is plugged in or not: it's the push waiting to drive charge around a circuit.
 
 ???+ info "Definition: Voltage"
 
-    **Voltage** is the electrical potential difference between two points. It is potential energy: it exists whether or not a circuit is connected, and whether or not any current is flowing.
+    **Voltage** is the energy given to each unit of charge, measured between two points. One volt is one joule of energy per coulomb of charge. **Unit:** volts (V).
 
-    Voltage is always measured between two points, never at a single point in isolation. Every circuit has a **ground** reference (0V); all other voltages are measured relative to it. When a power supply is labelled "12V," that means 12 volts between its positive terminal and its ground terminal.
+Voltage also goes by **potential difference**, by **electromotive force** (EMF) for the voltage a source produces, and, informally, by **electrical pressure**. Two ideas matter most. Voltage is *energy per charge*, so a 1.5 V cell gives each bit of charge the same push whether it's a tiny AAA or a big D cell. And voltage only exists *between two points*: every circuit picks a reference called ground (0 V) and measures everything else from it. A AA cell is 1.5 V, USB is 5 V, a car battery about 12.6 V, and a Canadian wall outlet 120 V.
 
-    **Unit:** volts **(V)**
-
-Some reference voltages from hardware you'll work with:
-
-- **1.5V** — a AA battery
-- **3.3V** — many hobby circuit boards and small electronics
-- **5V** — USB power, most hobby circuit boards
-- **12V** — hard drives, case fans, automotive systems
-- **120V / 240V AC** — your wall outlet
+**Go deeper:** [Voltage](voltage.md) explains why a bird on a power line is safe, what's inside a battery's voltage, and how to measure it.
 
 ---
 
 ## Current: What Actually Flows
 
-Now plug something into that charger. Current flows.
-
-The 2A on your charger label is the maximum current it can supply. Your phone doesn't necessarily draw 2A — it draws what it needs. A nearly-full phone might draw 300 mA. A flat battery might pull 1.5A. The charger makes 2A available; the device takes what it needs based on its own internal resistance.
+Plug something into the charger and current flows. The 2A on the label is the *most* the charger can supply; a phone takes only what it needs, perhaps 1.5A when flat and a few hundred milliamps when nearly full.
 
 ???+ info "Definition: Current"
 
-    **Current** is the movement of electrons through a conductor — the actual flow of charge through a circuit. Voltage is the force; current is what that force produces when it has a path to follow.
+    **Current** is the rate at which charge flows past a point: one ampere is one coulomb per second. **Unit:** amperes (A), or milliamperes (mA) for small currents. An LED typically draws about 20 mA.
 
-    **Unit:** amperes **(A)**
+Current is never used up: the same current flows all the way around a loop. What the components take from it is energy, which is the job voltage describes.
 
-    Because an ampere is a large unit, most electronics work with **milliamperes (mA)** — one thousandth of an ampere (0.001 A). An LED drawing 20 mA is drawing 0.020 A.
-
-Some reference currents from hardware you'll work with:
-
-- **10–20 mA** — a single LED
-- **40 mA** — a small indicator lamp or a cluster of LEDs
-- **500 mA** — a USB 2.0 port's limit
-- **2–3 A** — a phone fast charger
-- **10+ A** — motors, heating elements, high-power loads
-
-!!! warning "Every Component Has a Current Limit"
-    Components are rated for a maximum current. Exceed that rating and the component fails — often instantly and permanently. Before connecting anything to a power source, check its specification sheet for the maximum current it can safely handle.
+**Go deeper:** [Current](current.md) shows why two meters on either side of an LED read the same, which way current really flows, and why current is what hurts.
 
 ---
 
 ## Resistance: What Limits the Flow
 
-So what determines how much current actually flows? The resistance of whatever is connected.
+So what decides how much current actually flows? The resistance of whatever is connected.
 
 ???+ info "Definition: Resistance"
 
-    **Resistance** is the opposition to current flow. Every material resists the movement of electrons to some degree. For a given voltage, higher resistance means less current flows; lower resistance means more current flows.
+    **Resistance** is how strongly something opposes current. One ohm lets one volt push one amp. **Unit:** ohms (Ω).
 
-    **Unit:** ohms, written using the Greek letter omega — **Ω** (pronounced "om")
+Resistance comes from electrons colliding with the atoms in a material, and it depends on the material, its length, its thickness, and its temperature. A copper wire is close to 0 Ω, hobby resistors run from about 100 Ω to 10 kΩ, and an open circuit (a break in the path) is effectively infinite. The flip side, **conductance**, measures how easily current flows instead.
 
-This relationship has a dangerous edge case: the short circuit. Connect the positive and negative terminals of a battery directly with a wire and you've created a path with almost zero resistance. The resulting current is enormous — the battery or wire can't handle it, heat builds fast, and things melt or catch fire.
-
-Some reference resistances:
-
-- **~0 Ω** — a copper wire
-- **100 Ω – 10 kΩ** — typical resistors in hobby circuits
-- **1 kΩ – 100 kΩ** — human skin (dry skin at the high end, wet skin at the low end)
-- **∞** — an open circuit (no connection)
+**Go deeper:** [Conductors, Insulators, and Semiconductors](conductors_and_insulators.md) explains why copper conducts at all, and [Resistance and Conductance](resistance.md) covers wire gauges, tolerance, and why a long extension cord gets warm.
 
 ---
 
 ## Ohm's Law: How They Connect
 
-Voltage, current, and resistance aren't independent — they're locked together by one equation:
+Voltage, current, and resistance are locked together by one equation, written with **V** for voltage, **I** for current (from the French *intensité du courant*), and **R** for resistance:
 
 \[ V = I \times R \]
 
-Change any one of the three values and at least one other must change too. The equation rearranges to solve for whichever quantity you need:
+Know any two and the third follows. A 9 V battery across a 470 Ω resistor drives 9 ÷ 470 ≈ 19 mA. It also explains the charger label: the 2A is a ceiling, and the device's own resistance decides how much of it actually flows.
 
-=== "Find Resistance (R = V ÷ I)"
-
-    **Scenario:** You want to light an LED from a 5V supply. The LED needs 20 mA. What resistor limits current to that value?
-
-    \[ R = \frac{V}{I} = \frac{5\text{ V}}{0.020\text{ A}} = 250\ \Omega \]
-
-    Pick the nearest standard value — 220 Ω or 270 Ω — and the LED lights up safely. That's a real circuit decision made with one equation.
-
-=== "Find Current (I = V ÷ R)"
-
-    **Scenario:** You have a 9V battery connected through a 470 Ω resistor. How much current flows?
-
-    \[ I = \frac{V}{R} = \frac{9\text{ V}}{470\ \Omega} = 19.1\text{ mA} \]
-
-    This is how you verify a circuit is within safe operating limits before you build it.
-
-=== "Find Voltage (V = I × R)"
-
-    **Scenario:** You need to know how much voltage a resistor is consuming in a circuit. 50 mA flows through a 100 Ω resistor — what voltage appears across it?
-
-    \[ V = I \times R = 0.050\text{ A} \times 100\ \Omega = 5\text{ V} \]
-
-    Every component in a series circuit consumes some of the supply voltage. The resistor here consumes 5V — meaning if it's connected to a 9V supply with other components, the remaining 4V is available for everything else. In any circuit, the voltages consumed by all components always add up to the supply voltage.
-
-Ohm's Law also explains the charger label. The 2A rating doesn't mean 2A always flows — it means the charger can supply up to 2A. The actual current drawn depends on the resistance of the connected device at that moment.
+**Go deeper:** [Ohm's Law and Power](ohms_law.md) works through all three forms, sizes an LED resistor properly, and shows where the law stops holding (a cold light bulb reads 10 Ω on a meter but 144 Ω when lit).
 
 ---
 
 ## Power: The Rate of Energy Delivery
 
-Voltage, current, and resistance describe the state of a circuit — what's there and how it's flowing. Power describes what the circuit is actually *doing* with that energy.
+Voltage, current, and resistance describe the state of a circuit. Power describes what it's *doing*: how fast it turns electrical energy into heat, light, or motion.
 
 ???+ info "Definition: Power"
 
-    **Power** is the rate at which electrical energy is converted into something else — heat, light, motion, or radio waves.
+    **Power** is the rate of energy delivery: one watt is one joule per second. For any part, \( P = V \times I \). **Unit:** watts (W).
 
-    **Unit:** watts **(W)**
+The charger: 5 V × 2 A = **10 W**, which is what "10 W charger" means on the box. Energy that isn't doing useful work becomes heat, which is why every component carries a power rating, and why exceeding it burns parts.
 
-    \[ P = V \times I \]
-
-Your charger: 5V × 2A = **10 W**. That's what "10W charger" means on the packaging.
-
-Power matters because electrical energy that isn't doing useful work becomes heat. That's why chargers get warm — the conversion process isn't perfectly efficient. It's also why every component has a power rating.
-
-A resistor rated at 0.25 W dissipating 1 W will overheat. First it fails, then it burns. Staying within power ratings isn't optional.
-
-```mermaid
-graph LR
-    PWR["Voltage Source\ne.g. 5V charger"]:::source --> R["Resistance\ne.g. 250 Ω"]:::resist
-    R --> LOAD["Load\ne.g. LED"]:::load
-    LOAD --> GND["Ground\n0V"]:::gnd
-
-    classDef source fill:#d97706,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef resist fill:#2d3748,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef load fill:#2f855a,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef gnd fill:#1a202c,stroke:#cbd5e0,stroke-width:2px,color:#fff
-```
-
-Every circuit follows this pattern: a voltage source drives current through resistance and loads, returning to ground. The quantities always obey \( V = I \times R \) and \( P = V \times I \).
+**Go deeper:** [Ohm's Law and Power](ohms_law.md#idea-two-power) covers power ratings, why power lines run at 735,000 V, and the kilowatt-hour.
 
 ---
 
 ## Safety: Where the Numbers Matter
 
+The same three quantities explain how electricity injures people. Voltage pushes, but current is what does the damage, and how much current a given voltage can push through someone depends on the resistance of their skin.
+
 !!! danger "Mains Voltage Is Lethal"
-    Your wall outlet — 120V AC in North America, 240V AC in Europe — can kill you. Lethal current through the body starts around 50 mA. Circuit breakers protect wiring, not people — they won't trip until far more current flows than needed to stop a heart.
+    A Canadian wall outlet supplies 120 V AC, and some appliances use 240 V. The US National Institute for Occupational Safety and Health (NIOSH) notes that 20 mA through the body can be fatal. Circuit breakers protect the wiring, not people: they don't trip until far more current flows than it takes to stop a heart. Never connect mains voltage to a breadboard; use batteries or USB for all prototyping.
 
-    Never connect mains voltage to a breadboard or open circuit. Use a USB power source or bench power supply for all prototyping work.
+Body resistance is the key variable. NIOSH puts dry skin around 100,000 Ω and wet skin as low as 1,000 Ω. Run both through Ohm's Law at 120 V:
 
-Many people have been shocked by house wiring and walked away, which creates a false sense of safety. The outcome depends on factors that vary every time: how dry your skin is, whether you're well grounded, and the path current takes through your body.
+\[ I_{\text{dry}} = \frac{120\text{ V}}{100{,}000\ \Omega} = 1.2\text{ mA} \quad \text{(barely perceptible)} \]
 
-Body resistance is the key variable. Dry skin can be 100 kΩ or more; wet skin drops to around 1 kΩ. Run both through Ohm's Law:
+\[ I_{\text{wet}} = \frac{120\text{ V}}{1{,}000\ \Omega} = 120\text{ mA} \quad \text{(above the 100 mA threshold for heart fibrillation)} \]
 
-\[ I_{\text{dry}} = \frac{120\text{ V}}{100{,}000\ \Omega} = 1.2\text{ mA} \quad \text{— painful, not dangerous} \]
-
-\[ I_{\text{wet}} = \frac{120\text{ V}}{1{,}000\ \Omega} = 120\text{ mA} \quad \text{— potentially lethal} \]
-
-Same wire, same voltage, 100 times more current. The path through the body matters too — current crossing the chest is what stops a heart. Electricians work one-handed on live circuits specifically to avoid creating a hand-to-hand path across the chest.
-
-Short circuits follow the same logic. Connecting a power source directly to ground with no resistance causes a massive current surge that can destroy the source, melt wires, and in the case of lithium batteries, cause fires. Check your wiring before applying power — every time.
-
-The working voltages in most prototyping electronics — 3.3V, 5V, occasionally 12V — won't produce dangerous current through a human body. The habits that matter are checking wiring before powering up, and leaving anything connected to mains strictly alone.
+Same wire, same voltage, a hundred times the current. The path matters too: current across the chest is what stops a heart, which is why electricians keep one hand away from live work. The 3.3 V, 5 V, and 9 V used throughout this site can't push a dangerous current through skin; the habits that matter are checking wiring before powering up, and leaving mains strictly alone. [Current](current.md#safety-current-is-what-hurts) lists the full set of NIOSH thresholds.
 
 ---
 
@@ -184,43 +107,25 @@ The working voltages in most prototyping electronics — 3.3V, 5V, occasionally 
 
 ??? question "1. Reading a Charger Label"
 
-    A laptop charger is labeled `Output: 20V ⎓ 3.25A`. What is the maximum power it can deliver, and what does each number represent?
+    A laptop charger is labelled `Output: 20V ⎓ 3.25A`. What's the most power it can deliver, and what does each number mean?
 
     ??? tip "Solution"
         \[ P = V \times I = 20\text{ V} \times 3.25\text{ A} = 65\text{ W} \]
 
-        The 20V is the voltage — the electrical potential the charger supplies. The 3.25A is the maximum current it can provide. The laptop draws whatever it needs up to that limit. Together they give 65W, which is why this charger is marketed as a "65W charger."
+        The 20 V is the push the charger supplies; the 3.25 A is the most current it can deliver. The laptop draws what it needs up to that limit, and together they give the "65 W" printed on the box.
 
-??? question "2. LED Resistor for a 3.3V Supply"
+??? question "2. Why Do Lithium Batteries Catch Fire When Shorted?"
 
-    You want to light an LED from a 3.3V power supply. The LED needs 20 mA. What resistor do you need?
-
-    ??? tip "Solution"
-        \[ R = \frac{V}{I} = \frac{3.3\text{ V}}{0.020\text{ A}} = 165\ \Omega \]
-
-        Pick the nearest standard value: **150 Ω** (gives ~22 mA) or **180 Ω** (gives ~18 mA). Both are within normal operating range for an LED.
-
-??? question "3. Too Much Current — What Are Your Options?"
-
-    A circuit is drawing too much current and a component is overheating. You cannot change the voltage source. What can you do, and why does each option work?
+    A lithium cell (the kind in a phone or power bank) is 3.7 V. Shorted through a wire of 0.05 Ω, roughly how much current flows? Why is that so much more dangerous than shorting an alkaline AA cell?
 
     ??? tip "Solution"
-        The fundamental relationship is \( I = V / R \). If voltage is fixed, current is determined entirely by resistance. To reduce current, you must increase resistance — there are two ways to do that:
+        Ignoring the cell's own internal resistance, which in a lithium cell is very small:
 
-        **Add resistance in series.** Insert a resistor between the power source and the load. This increases total resistance and reduces current through the entire circuit. The Ohm's Law calculation tells you exactly how much resistor you need.
-
-        **Reduce the load.** A smaller motor, fewer LEDs in parallel, or a lower-power component draws less current because it presents higher resistance to the circuit. Halve the load and you roughly halve the current.
-
-        Both options work for the same reason: with voltage fixed, resistance is the only lever you have. Understanding this is the difference between guessing at a fix and knowing why it works.
-
-??? question "4. Why Do Lithium Batteries Catch Fire When Shorted?"
-
-    A single lithium cell (the kind inside a phone or power bank) is 3.7V. A short circuit through a wire with 0.05 Ω resistance — how much current flows? Why is this so much more dangerous than shorting a AA battery?
-
-    ??? tip "Solution"
         \[ I = \frac{V}{R} = \frac{3.7\text{ V}}{0.05\ \Omega} = 74\text{ A} \]
 
-        74 amperes. Unlike a AA battery — which has significant internal resistance and can't actually deliver high currents — lithium cells can source very large currents for a brief period. That energy has to go somewhere: it becomes heat, rapidly. The electrolyte inside the cell ignites, which is why shorted or punctured lithium batteries catch fire rather than just dying. It's also why airlines restrict lithium batteries in checked luggage.
+        An alkaline AA's own internal resistance (150 to 300 mΩ, from Energizer's datasheet) limits its short to roughly 5 to 10 A ([Open Circuits, Short Circuits, and Fuses](open_short_fuses.md#what-a-short-circuit-really-is)). A lithium cell can deliver many times that, and all of that energy becomes heat inside the cell in seconds, enough to start the reaction that makes lithium cells vent flame. That's why shorted or punctured lithium batteries catch fire, and why [Cells and Batteries](batteries.md#safety-lithium-ion-needs-respect) treats them with extra care.
+
+Each of the full articles linked above ends with its own set of practice problems.
 
 ---
 
@@ -228,45 +133,29 @@ The working voltages in most prototyping electronics — 3.3V, 5V, occasionally 
 
 <div class="grid cards two-col" markdown>
 
--   **V — Voltage**
+-   **V: Voltage**
 
     ---
 
-    Measured in **volts (V)**
+    The push: energy per coulomb, in **volts**. Always measured between two points.
 
-    The electrical force. Exists as potential energy before any current flows.
-
-    \( V = I \times R \)
-
--   **I — Current**
+-   **I: Current**
 
     ---
 
-    Measured in **amperes (A)** or **milliamperes (mA)**
+    The flow: coulombs per second, in **amperes**. Never used up around a loop.
 
-    The actual flow of electrons through a circuit.
-
-    \( I = \dfrac{V}{R} \)
-
--   **R — Resistance**
+-   **R: Resistance**
 
     ---
 
-    Measured in **ohms (Ω)**
+    What limits the flow, in **ohms**. Set by material, length, thickness, and temperature.
 
-    Opposition to current flow. Determines how much current a given voltage produces.
-
-    \( R = \dfrac{V}{I} \)
-
--   **P — Power**
+-   **P: Power**
 
     ---
 
-    Measured in **watts (W)**
-
-    Rate of energy delivery. Energy not doing useful work becomes heat.
-
-    \( P = V \times I \)
+    The rate of energy delivery, in **watts**. \( P = V \times I \), and \( V = I \times R \) ties the rest together.
 
 </div>
 
@@ -274,31 +163,24 @@ The working voltages in most prototyping electronics — 3.3V, 5V, occasionally 
 
 ## What's Next
 
-The next article takes Ohm's Law into real circuit topology: **[Series and Parallel Circuits](series_and_parallel.md)** — why adding more LEDs in series dims them all equally, and why a parallel circuit behaves completely differently. The same three variables, two different arrangements, two completely different outcomes.
+The deep dives start with the units themselves: **[Metric Prefixes and Units](metric_prefixes.md)** makes milliamps, kilohms, and megahertz second nature, then [Voltage](voltage.md) begins the full Circuit Foundations path.
 
 ---
 
 ## Further Reading
 
-**Fundamentals**
+**The Full Articles**
 
-- [Voltage, Current, Resistance, and Ohm's Law — SparkFun](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law) — worked examples and diagrams covering the same ground from a different angle
-- [Electric Potential Difference — The Physics Classroom](https://www.physicsclassroom.com/class/circuits/Lesson-1/Electric-Potential-Difference) — deeper treatment of voltage as potential energy, with practice problems
-- [Ohm's Law — The Physics Classroom](https://www.physicsclassroom.com/class/circuits/Lesson-3/Ohm-s-Law) — conceptual depth and worked examples on the V = IR relationship
+- [Conductors, Insulators, and Semiconductors](conductors_and_insulators.md) — why some materials conduct and others don't
+- [Voltage](voltage.md), [Current](current.md), and [Resistance and Conductance](resistance.md) — each idea from this page in depth
+- [Ohm's Law and Power](ohms_law.md) — the equation that ties them together, and the heat that follows
+- [Open Circuits, Short Circuits, and Fuses](open_short_fuses.md) — what happens when a circuit goes wrong
 
-**Going Further**
+**Fundamentals Elsewhere**
 
-- [All About LEDs — Adafruit](https://learn.adafruit.com/all-about-leds) — the LED resistor calculation from this article applied to real components
-
-**Related Articles**
-
-- [How to Read a Schematic](reading_schematics.md) — the standard symbols for the components in this article, and how to follow current through a circuit diagram
-- [Resistor Color Codes](resistor_color_codes.md) — decode the exact resistor values this article's Ohm's Law examples calculate, straight off the component
-
-**Practical Tools**
-
-- [Breadboards](tools/breadboards.md) — how to build the circuits from this article without soldering; essential reading before your first hands-on circuit
+- [Voltage, Current, Resistance, and Ohm's Law — SparkFun](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law) — the same ground from a different angle
+- [Ohm's Law — The Physics Classroom](https://www.physicsclassroom.com/class/circuits/Lesson-3/Ohm-s-Law) — worked examples on V = IR
 
 **Safety**
 
-- [Electrical Safety in the Workplace — CDC/NIOSH](https://www.cdc.gov/niosh/electrical-safety/) — the current thresholds and injury mechanisms behind the numbers in this article
+- [Worker Deaths by Electrocution (NIOSH Publication 98-131)](https://stacks.cdc.gov/view/cdc/6385/cdc_6385_DS1.pdf) — the body resistance and current thresholds used on this page

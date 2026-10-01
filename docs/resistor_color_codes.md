@@ -7,24 +7,24 @@ description: "A resistor has no printed numbers — just colored stripes. Learn 
 # Resistor Color Codes
 
 !!! abstract "Beginner"
-    This article is in the **Components** topic. It uses the Ohm's Law from [What Is Electricity?](what_is_electricity.md) and the exact resistors already wired in [Series and Parallel Circuits](series_and_parallel.md), [Digital Pins](digital_io.md), and [Pull-up and Pull-down Resistors](pull_resistors.md).
+    This article is in the **Components** topic. It builds on [Resistance and Conductance](resistance.md) and decodes the exact resistors wired in [Series and Parallel Circuits](series_and_parallel.md), [Digital Pins](digital_io.md), and [Pull-up and Pull-down Resistors](pull_resistors.md).
 
-Every resistor you've wired so far had a value — 220 Ω, 10 kΩ — and you took that value on faith. Look at the actual component and there's no "220" printed on it anywhere. No digits at all. Just four colored stripes painted around a small tan cylinder.
+Every circuit on this site names its resistors' values (220 Ω, 10 kΩ), but pick up the actual component and there's no "220" printed anywhere. No digits at all: just four coloured stripes around a small tan cylinder.
 
-That's not decoration. It's the resistor's value, written in a code that's been standard since the 1920s. By the end of this article you'll be able to pick up any resistor, read its bands, and know its value and tolerance without looking anything up.
+Those stripes are the value, written in a code that has been standard since the 1920s. This article teaches you to pick up any resistor, read its bands, and know its value and tolerance without looking anything up.
 
 <figure markdown>
   ![A large pile of through-hole resistors of many values scattered across a green cutting mat, each showing its own sequence of colored bands.](images/resistors_pile.jpg){ width="600" }
-  <figcaption>A typical parts bin: hundreds of resistors, no two values labelled the same way twice — just bands.</figcaption>
+  <figcaption>A typical parts bin: hundreds of resistors, every value marked only in bands.</figcaption>
 </figure>
 
 ---
 
 ## Why Colors Instead of Print
 
-A resistor is often only a few millimetres long. Printing "220" legibly at that size, in ink that survives handling and doesn't fade, is harder than it sounds — and it doesn't work at all once you're picking through a parts bin under dim light. A painted band, by contrast, is visible from any angle and never wears off the way ink on a tiny surface would.
+A resistor is often only a few millimetres long. Digits printed at that size are hard to read, and a number printed on one side of a cylinder disappears when the part rolls over. A band wrapped all the way round is readable from any angle.
 
-So instead of text, resistors carry their value as a sequence of colored bands, wrapped around the body like rings on a finger. The scheme is standardized internationally (IEC 60062), which is why a resistor bought today reads exactly the same way as one manufactured decades ago.
+So resistors carry their value as a sequence of coloured bands, wrapped around the body like rings on a finger. The scheme is standardized internationally (IEC 60062), which is why a resistor bought today reads exactly the same way as one manufactured decades ago.
 
 ---
 
@@ -33,16 +33,16 @@ So instead of text, resistors carry their value as a sequence of colored bands, 
 The common resistor has four bands, and each one answers a specific question, always in the same order: two digits, then a multiplier, then a tolerance.
 
 <figure markdown>
-  ![A resistor with four color bands — red, red, brown, gold — each labelled with the value it represents: 2, 2, times 10, plus or minus 5 percent. An arrow above shows the reading direction, left to right. Below the resistor: 22 times 10 equals 220 ohms, plus or minus 5 percent.](images/resistor_color_bands.svg){ width="560" }
-  <figcaption>Red-Red-Brown-Gold — the exact 220 Ω resistor from Digital Pins and Blink an LED. Two digits, a multiplier, and a tolerance.</figcaption>
+  ![A resistor with four color bands — red, red, brown, gold — each labelled with the value it represents: 2, 2, times 10, plus or minus 5 percent. An arrow above shows the reading direction, left to right. Below the resistor: 22 times 10 equals 220 ohms, plus or minus 5 percent.](images/resistor_color_codes/resistor_bands.svg){ width="560" }
+  <figcaption>Red-red-brown-gold: the 220 Ω resistor from Digital Pins and Blink an LED. Two digits, a multiplier, and a tolerance.</figcaption>
 </figure>
 
-- **Band 1 — first significant digit**
-- **Band 2 — second significant digit**
-- **Band 3 — multiplier** (how many zeros to add — or, formally, ×10 to that power)
-- **Band 4 — tolerance** (how far the actual value can legally stray from the printed one)
+- **Band 1:** first significant digit
+- **Band 2:** second significant digit
+- **Band 3:** multiplier (how many zeros to add, or formally, ×10 to that power)
+- **Band 4:** tolerance (how far the actual value may stray from the marked one)
 
-Put the first two digits together, apply the multiplier, and you have the resistance. `22` with a `×10` multiplier is `220` — the resistor reads **220 Ω**. The tolerance band separately tells you how much to trust that number: **gold** means the true value is guaranteed to be within **±5%** of 220 Ω, so anywhere from 209 Ω to 231 Ω.
+Put the first two digits together, apply the multiplier, and you have the resistance. `22` with a `×10` multiplier is `220`: the resistor reads **220 Ω**. The tolerance band separately tells you how much to trust that number: **gold** means the true value is guaranteed to be within **±5%** of 220 Ω, so anywhere from 209 Ω to 231 Ω.
 
 ---
 
@@ -59,9 +59,13 @@ Ten colors stand for the ten digits, 0 through 9. The same colors, in the third 
 | Yellow | 4 | ×10,000 |
 | Green | 5 | ×100,000 |
 | Blue | 6 | ×1,000,000 |
-| Violet | 7 | — |
-| Gray | 8 | — |
-| White | 9 | — |
+| Violet | 7 | ×10,000,000 (rare) |
+| Gray | 8 | ×100,000,000 (rare) |
+| White | 9 | ×1,000,000,000 (rare) |
+| Gold | (none) | ×0.1 |
+| Silver | (none) | ×0.01 |
+
+The order of the ten digit colors is the part worth memorizing. A common mnemonic takes the first letter of each word: **B**etter **B**e **R**ight **O**r **Y**our **G**reat **B**ig **V**enture **G**oes **W**est, for **B**lack, **B**rown, **R**ed, **O**range, **Y**ellow, **G**reen, **B**lue, **V**iolet, **G**ray, **W**hite. The two B-words come in the same order as the colors: black (darkest) before brown.
 
 The **tolerance band** uses a separate, shorter set of colors:
 
@@ -73,10 +77,7 @@ The **tolerance band** uses a separate, shorter set of colors:
 | Silver | ±10% |
 | *(no band)* | ±20% |
 
-**Gold and silver never appear in the first three bands.** That's not a coincidence — it's the clue that tells you which end of the resistor to start reading from, covered in [Which End Do You Start From?](#which-end-do-you-start-from) below.
-
-!!! tip "A memory aid for the order"
-    Generations of technicians have used some variation of "**B**lack **B**eetles **R**unning **O**ver **Y**our **G**arden **B**ring **V**ery **G**reat **W**oe" — one word per color, in order: Black, Brown, Red, Orange, Yellow, Green, Blue, Violet, Gray, White. Use whichever version sticks; the colors and their order are what matter.
+**Gold and silver are never digits.** In the multiplier band they mean ×0.1 and ×0.01, for resistors under 10 Ω: yellow-violet-gold-gold is 47 × 0.1 = 4.7 Ω ±5%. Everywhere else they mark the tolerance band, and that's the clue to which end to start reading from, covered in [Which End Do You Start From?](#which-end-do-you-start-from) below.
 
 ---
 
@@ -84,43 +85,45 @@ The **tolerance band** uses a separate, shorter set of colors:
 
 Take the resistor from the diagram above: **Red, Red, Brown, Gold.**
 
-1. **Band 1 (Red) = 2** — first digit.
-2. **Band 2 (Red) = 2** — second digit. Together so far: `22`.
-3. **Band 3 (Brown) = ×10** — multiply: \( 22 \times 10 = 220 \).
-4. **Band 4 (Gold) = ±5%** — the true value is guaranteed within 5% of 220 Ω.
+1. **Band 1 (Red) = 2**, the first digit.
+2. **Band 2 (Red) = 2**, the second digit. Together so far: `22`.
+3. **Band 3 (Brown) = ×10**, so \( 22 \times 10 = 220 \).
+4. **Band 4 (Gold) = ±5%**: the true value is within 5% of 220 Ω.
 
-Result: **220 Ω ±5%** — precisely the current-limiting resistor you've already wired in front of every LED on this site.
+Result: **220 Ω ±5%**, the current-limiting resistor in front of every LED on this site.
 
-Try a second one: **Brown, Black, Orange, Gold** — the pull resistor from [Pull-up and Pull-down Resistors](pull_resistors.md).
+Try a second one: **Brown, Black, Orange, Gold**, the pull resistor from [Pull-up and Pull-down Resistors](pull_resistors.md).
 
 1. **Brown = 1**, **Black = 0** → digits `10`.
 2. **Orange = ×1,000** → \( 10 \times 1{,}000 = 10{,}000 \).
 3. **Gold = ±5%**.
 
-Result: **10,000 Ω, or 10 kΩ, ±5%** — the exact pull-down value used to hold that input pin at a steady LOW.
+Result: **10,000 Ω, or 10 kΩ, ±5%**, the pull-down that holds that input pin at a steady LOW.
 
 ---
 
 ## Which End Do You Start From?
 
-A resistor's bands aren't perfectly centered — they're clustered toward one end, with the tolerance band set apart near the other. That gap is the reading direction: **start from the end where the bands are bunched together**, and the lone band, usually gold or silver, is the last one, the tolerance.
+A resistor's bands aren't centred: they're clustered toward one end, with the tolerance band set apart near the other. That gap gives the reading direction. **Start from the end where the bands are bunched together**; the lone band, usually gold or silver, is the last one, the tolerance.
 
-If a resistor is rotated and you're not sure which end is "first," look for gold or silver — since those colors never appear as a digit, the end nearest one of them is always the tolerance band, which means you read *away* from it, not toward it.
+If the gap is hard to see, look for gold or silver at one end. Neither can be a first digit, so a gold or silver band at the end is the tolerance band, and you read *away* from it.
+
+### Five Bands: Precision Resistors
+
+Precision resistors (±1% and ±2%) need a third digit, so they carry five bands: three digits, a multiplier, and a tolerance. Brown-black-black-brown-brown is 100 × 10 = 1,000 Ω ±1%. Their bodies are often blue rather than tan, and the tolerance band is brown or red, so on these the gap between bands matters more than looking for gold.
 
 ---
 
 ## Why Only Certain Values Exist
 
-You'll notice real resistors come in values like 220 Ω, 330 Ω, and 470 Ω — never 250 Ω or 300 Ω. That's deliberate. Manufacturers produce resistors in standardized steps per decade, called the **E-series**, spaced so that each value's tolerance band overlaps the next value's — no gaps in coverage, no wasted production of values nobody needs.
-
-The common **E12 series** has 12 steps per decade: 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, 82 — then repeats ×10 for the next decade (100, 120, 150…). That's why the LED resistor throughout this site is 220 Ω rather than a rounder-sounding 200 or 250 — 220 is one of the values that actually gets manufactured.
+Real resistors come in values like 220 Ω, 330 Ω, and 470 Ω, and never 250 Ω. Manufacturers make standard steps per decade, the **E-series**, spaced so each value's tolerance band reaches roughly to the next. The common **E12 series** has 12 steps: 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, 82, then the same again ×10. That's why the LED resistor on this site is 220 Ω rather than a rounder 250: 220 is a value you can buy. [Resistance and Conductance](resistance.md#why-only-certain-values-exist) explains the spacing and the finer E24 and E96 series.
 
 ---
 
 ## Safety
 
 !!! warning "Color bands tell you the resistance, not the power rating"
-    Two resistors can have identical bands — same value, same tolerance — and still be rated for very different power. A resistor's power rating (¼ W, ½ W, 1 W…) is almost never color-coded; it's usually implied by physical size, or printed in the datasheet. Before reusing a salvaged or unlabeled resistor in a new circuit, confirm its power rating rather than assuming it matches the one you meant to use — an undersized resistor can overheat even at the "correct" resistance.
+    Two resistors can have identical bands and still be rated for very different power. A resistor's power rating (¼ W, ½ W, 1 W…) is almost never colour-coded; it's implied by physical size or given in the datasheet. Before reusing a salvaged resistor, confirm its power rating: an undersized resistor overheats even at the "correct" resistance ([Ohm's Law and Power](ohms_law.md#power-ratings) shows how to check).
 
 ---
 
@@ -162,7 +165,7 @@ The common **E12 series** has 12 steps per decade: 10, 12, 15, 18, 22, 27, 33, 3
 
     ??? tip "Solution"
 
-        No — you read it backwards. Gold never appears as a digit, only as tolerance, so gold marks the *end* of the sequence, not the start. Flip your reading direction: **Red, Black, Brown, Gold** → digits `20`, ×10 multiplier → \( 20 \times 10 = 200 \). **200 Ω ±5%.**
+        No, it's backwards. Gold can't be a first digit, so a gold band at the end marks the tolerance. Flip your reading direction: **Red, Black, Brown, Gold** → digits `20`, ×10 multiplier → \( 20 \times 10 = 200 \). **200 Ω ±5%.**
 
 ---
 
@@ -174,13 +177,13 @@ The common **E12 series** has 12 steps per decade: 10, 12, 15, 18, 22, 27, 33, 3
 
     ---
 
-    1st digit → 2nd digit → multiplier → tolerance. Always read in that order, never the reverse.
+    1st digit → 2nd digit → multiplier → tolerance. Precision parts add a third digit for five bands.
 
 -   **The Color Key**
 
     ---
 
-    Black through white map to digits 0–9 (and the same colors, in band 3, mean "×10 to that power"). Gold and silver are tolerance-only — they never appear as a digit.
+    Black through white map to digits 0–9, and the same colours in the multiplier band mean "×10 to that power." Gold and silver are never digits: they're tolerance, or ×0.1 and ×0.01 as multipliers.
 
 -   **Find the Start**
 
@@ -192,7 +195,7 @@ The common **E12 series** has 12 steps per decade: 10, 12, 15, 18, 22, 27, 33, 3
 
     ---
 
-    Resistors are manufactured in standardized **E-series** steps (10, 12, 15, 18, 22…). That's why circuits use 220 Ω or 4.7 kΩ rather than round numbers like 200 or 250.
+    Resistors are manufactured in standardized **E-series** steps (10, 12, 15, 18, 22…). That's why circuits use 220 Ω or 4.7 kΩ rather than round numbers like 250.
 
 </div>
 
@@ -200,7 +203,9 @@ The common **E12 series** has 12 steps per decade: 10, 12, 15, 18, 22, 27, 33, 3
 
 ## What's Next
 
-Every resistor already wired on this site — the 220 Ω in [Digital Pins](digital_io.md) and [Blink an LED](blink_an_led.md), the 10 kΩ in [Pull-up and Pull-down Resistors](pull_resistors.md) — now has bands you can read yourself, without taking the value on faith. Next time you're sorting a mixed parts bin, this is the only tool you need.
+Every resistor on this site, from the 220 Ω in [Digital Pins](digital_io.md) and [Blink an LED](blink_an_led.md) to the 10 kΩ in [Pull-up and Pull-down Resistors](pull_resistors.md), now has bands you can read yourself.
+
+The bands tell you the value. **[Resistor Types](resistor_types.md)** covers what they don't: what's inside each kind of resistor, what a temperature coefficient means, and how potentiometers and trimmers make a resistance adjustable.
 
 ---
 
@@ -212,6 +217,5 @@ Every resistor already wired on this site — the 220 Ω in [Digital Pins](digit
 
 **Related Articles**
 
-- [What Is Electricity?](what_is_electricity.md) — Ohm's Law and the resistance values these bands decode into
-- [Series and Parallel Circuits](series_and_parallel.md) — the current-limiting resistor this article's worked example comes from
+- [Resistance and Conductance](resistance.md) — what the value means, and why tolerance and the E-series exist
 - [Pull-up and Pull-down Resistors](pull_resistors.md) — sizing a resistor for a job, the companion skill to reading one you already have

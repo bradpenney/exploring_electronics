@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A log scale of current from 0.1 milliamps to 100 kiloamps. Devices above it: an LED at 20 milliamps, an Arduino pin's 40 milliamp maximum, a 500 milliamp USB port, a 15 amp household breaker, and 30,000 amp lightning. Below it in red, the body's thresholds: 1 milliamp barely felt, 16 can't let go, 20 breathing stops, 100 the heart fibrillates, 2 amps the heart stops.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="770" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="400.0" y="46.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Currents you'll meet, log scale (each tick is 10×), with what each does to a body</text>
+<rect x="50" y="170" width="700" height="28" rx="14" fill="#4a5568" fill-opacity="0.5"/>
+<rect x="127.8" y="170" width="622.2" height="28" rx="14" fill="#fc8181" fill-opacity="0.35"/>
+<rect x="50" y="170" width="700" height="28" rx="14" fill="url(#gloss)" stroke="#e2e8f0" stroke-opacity="0.35"/>
+<line x1="50.0" y1="198" x2="50.0" y2="204" stroke="#a0aec0"/>
+<text x="50.0" y="218.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">0.1 mA</text>
+<line x1="127.8" y1="198" x2="127.8" y2="204" stroke="#a0aec0"/>
+<text x="127.8" y="218.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">1 mA</text>
+<line x1="205.6" y1="198" x2="205.6" y2="204" stroke="#a0aec0"/>
+<text x="205.6" y="218.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">10 mA</text>
+<line x1="283.3" y1="198" x2="283.3" y2="204" stroke="#a0aec0"/>
+<text x="283.3" y="218.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">100 mA</text>
+<line x1="361.1" y1="198" x2="361.1" y2="204" stroke="#a0aec0"/>
+<text x="361.1" y="218.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">1 A</text>
+<line x1="438.9" y1="198" x2="438.9" y2="204" stroke="#a0aec0"/>
+<text x="438.9" y="218.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">10 A</text>
+<line x1="516.7" y1="198" x2="516.7" y2="204" stroke="#a0aec0"/>
+<text x="516.7" y="218.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">100 A</text>
+<line x1="594.4" y1="198" x2="594.4" y2="204" stroke="#a0aec0"/>
+<text x="594.4" y="218.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">1 kA</text>
+<line x1="672.2" y1="198" x2="672.2" y2="204" stroke="#a0aec0"/>
+<text x="672.2" y="218.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">10 kA</text>
+<line x1="750.0" y1="198" x2="750.0" y2="204" stroke="#a0aec0"/>
+<text x="750.0" y="218.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">100 kA</text>
+<circle cx="229.0" cy="184.0" r="8" fill="url(#eball)"/>
+<line x1="229.0" y1="168" x2="229.0" y2="146" stroke="#a0aec0"/>
+<text x="229.0" y="140.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">LED</text>
+<circle cx="252.4" cy="184.0" r="8" fill="url(#eball)"/>
+<line x1="252.4" y1="168" x2="252.4" y2="112" stroke="#a0aec0"/>
+<text x="252.4" y="106.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Uno pin max</text>
+<circle cx="337.7" cy="184.0" r="8" fill="url(#eball)"/>
+<line x1="337.7" y1="168" x2="337.7" y2="146" stroke="#a0aec0"/>
+<text x="337.7" y="140.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">USB 2.0 port</text>
+<circle cx="452.6" cy="184.0" r="8" fill="url(#eball)"/>
+<line x1="452.6" y1="168" x2="452.6" y2="112" stroke="#a0aec0"/>
+<text x="452.6" y="106.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">household breaker</text>
+<circle cx="709.3" cy="184.0" r="8" fill="url(#eball)"/>
+<line x1="709.3" y1="168" x2="709.3" y2="146" stroke="#a0aec0"/>
+<text x="709.3" y="140.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">lightning</text>
+<line x1="127.8" y1="224" x2="127.8" y2="236" stroke="#fc8181" stroke-opacity="0.7"/>
+<text x="127.8" y="250.0" font-size="12" fill="#fc8181" text-anchor="middle" font-weight="bold">1 mA</text>
+<text x="127.8" y="265.0" font-size="11" fill="#fc8181" text-anchor="middle" font-weight="normal">barely felt</text>
+<line x1="225.4" y1="224" x2="225.4" y2="278" stroke="#fc8181" stroke-opacity="0.7"/>
+<text x="225.4" y="292.0" font-size="12" fill="#fc8181" text-anchor="middle" font-weight="bold">16–20 mA</text>
+<text x="225.4" y="307.0" font-size="11" fill="#fc8181" text-anchor="middle" font-weight="normal">can't let go; breathing stops</text>
+<line x1="283.3" y1="224" x2="283.3" y2="236" stroke="#fc8181" stroke-opacity="0.7"/>
+<text x="283.3" y="250.0" font-size="12" fill="#fc8181" text-anchor="middle" font-weight="bold">100 mA</text>
+<text x="283.3" y="265.0" font-size="11" fill="#fc8181" text-anchor="middle" font-weight="normal">heart fibrillates</text>
+<line x1="384.5" y1="224" x2="384.5" y2="278" stroke="#fc8181" stroke-opacity="0.7"/>
+<text x="384.5" y="292.0" font-size="12" fill="#fc8181" text-anchor="middle" font-weight="bold">2 A</text>
+<text x="384.5" y="307.0" font-size="11" fill="#fc8181" text-anchor="middle" font-weight="normal">heart stops</text>
+<text x="400.0" y="372.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">red zone: effects of 60 Hz current through the body (NIOSH 98-131, Table 1)</text>
+</svg>

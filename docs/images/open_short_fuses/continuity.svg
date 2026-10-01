@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Two continuity tests. Left: probes on the ends of an intact wire, the meter reads 0.3 ohms and beeps. Right: the same test on a wire broken inside, the meter reads OL, meaning over limit, an open circuit.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="375" height="390" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="410" y="15" width="375" height="390" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="202.0" y="48.0" font-size="16" fill="#48bb78" text-anchor="middle" font-weight="bold">Continuity: a closed path</text>
+<polyline points="55,120 350,120" fill="none" stroke="#3a1d0c" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="55,120 350,120" fill="none" stroke="#b8673a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="55,120 350,120" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<ellipse cx="202.0" cy="376" rx="68.0" ry="8" fill="#000" fill-opacity="0.4"/>
+<rect x="142" y="220" width="120" height="150" rx="14" fill="#d69e2e"/>
+<rect x="150" y="228" width="104" height="134" rx="10" fill="#1a1d23"/>
+<rect x="142" y="220" width="120" height="150" rx="14" fill="url(#gloss)" opacity="0.5"/>
+<rect x="158" y="238" width="88" height="42" rx="4" fill="#9ae6b4"/>
+<rect x="158" y="238" width="88" height="14" rx="4" fill="#ffffff" fill-opacity="0.25"/>
+<text x="202.0" y="268.0" font-size="22" fill="#1a202c" text-anchor="middle" font-weight="bold">0.3 Ω</text>
+<circle cx="202.0" cy="320" r="22" fill="url(#core)"/>
+<line x1="202.0" y1="320" x2="190.0" y2="304" stroke="#f7fafc" stroke-width="3"/>
+<text x="236.0" y="312.0" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="bold">·))</text>
+<circle cx="176" cy="356" r="6" fill="#e53e3e"/>
+<circle cx="228" cy="356" r="7.5" fill="#cbd5e0" fill-opacity="0.55"/>
+<circle cx="228" cy="356" r="6" fill="#111"/>
+<path d="M176,356 Q125.5,416 75,142" fill="none" stroke="#cbd5e0" stroke-opacity="0.55" stroke-width="7.5"/>
+<path d="M176,356 Q125.5,416 75,142" fill="none" stroke="#e53e3e" stroke-width="4.5"/>
+<path d="M176,356 Q125.5,416 75,142" fill="none" stroke="#f3a8a8" stroke-opacity="0.8" stroke-width="1.4" transform="translate(-1,-1)"/>
+<rect x="68.5" y="120.5" width="13" height="29" rx="5" fill="#cbd5e0" fill-opacity="0.55"/>
+<rect x="70" y="122" width="10" height="26" rx="4" fill="#e53e3e"/>
+<rect x="72" y="124" width="2.5" height="22" rx="1" fill="#f3a8a8" fill-opacity="0.7"/>
+<line x1="75" y1="122" x2="75" y2="114" stroke="#e2e8f0" stroke-width="2.5"/>
+<path d="M228,356 Q279.0,416 330,142" fill="none" stroke="#cbd5e0" stroke-opacity="0.55" stroke-width="7.5"/>
+<path d="M228,356 Q279.0,416 330,142" fill="none" stroke="#111" stroke-width="4.5"/>
+<path d="M228,356 Q279.0,416 330,142" fill="none" stroke="#718096" stroke-opacity="0.8" stroke-width="1.4" transform="translate(-1,-1)"/>
+<rect x="323.5" y="120.5" width="13" height="29" rx="5" fill="#cbd5e0" fill-opacity="0.55"/>
+<rect x="325" y="122" width="10" height="26" rx="4" fill="#111"/>
+<rect x="327" y="124" width="2.5" height="22" rx="1" fill="#718096" fill-opacity="0.7"/>
+<line x1="330" y1="122" x2="330" y2="114" stroke="#e2e8f0" stroke-width="2.5"/>
+<path d="M272,246 q8,14 0,28" fill="none" stroke="#fbbf24" stroke-width="2.5" opacity="1.0"/>
+<path d="M282,242 q8,14 0,28" fill="none" stroke="#fbbf24" stroke-width="2.5" opacity="0.75"/>
+<path d="M292,238 q8,14 0,28" fill="none" stroke="#fbbf24" stroke-width="2.5" opacity="0.5"/>
+<text x="302.0" y="236.0" font-size="12" fill="#fbbf24" text-anchor="start" font-weight="bold">beep</text>
+<text x="202.0" y="398.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">a few tenths of an ohm: the meter beeps</text>
+<text x="597.0" y="48.0" font-size="16" fill="#fc8181" text-anchor="middle" font-weight="bold">No continuity: open</text>
+<polyline points="450,120 587,120" fill="none" stroke="#3a1d0c" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="450,120 587,120" fill="none" stroke="#b8673a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="450,120 587,120" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<polyline points="611,120 745,120" fill="none" stroke="#3a1d0c" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="611,120 745,120" fill="none" stroke="#b8673a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="611,120 745,120" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<text x="599.0" y="100.0" font-size="11" fill="#fc8181" text-anchor="middle" font-weight="normal" font-style="italic">broken inside</text>
+<ellipse cx="597.0" cy="376" rx="68.0" ry="8" fill="#000" fill-opacity="0.4"/>
+<rect x="537" y="220" width="120" height="150" rx="14" fill="#d69e2e"/>
+<rect x="545" y="228" width="104" height="134" rx="10" fill="#1a1d23"/>
+<rect x="537" y="220" width="120" height="150" rx="14" fill="url(#gloss)" opacity="0.5"/>
+<rect x="553" y="238" width="88" height="42" rx="4" fill="#9ae6b4"/>
+<rect x="553" y="238" width="88" height="14" rx="4" fill="#ffffff" fill-opacity="0.25"/>
+<text x="597.0" y="268.0" font-size="22" fill="#1a202c" text-anchor="middle" font-weight="bold">OL</text>
+<circle cx="597.0" cy="320" r="22" fill="url(#core)"/>
+<line x1="597.0" y1="320" x2="585.0" y2="304" stroke="#f7fafc" stroke-width="3"/>
+<text x="631.0" y="312.0" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="bold">·))</text>
+<circle cx="571" cy="356" r="6" fill="#e53e3e"/>
+<circle cx="623" cy="356" r="7.5" fill="#cbd5e0" fill-opacity="0.55"/>
+<circle cx="623" cy="356" r="6" fill="#111"/>
+<path d="M571,356 Q520.5,416 470,142" fill="none" stroke="#cbd5e0" stroke-opacity="0.55" stroke-width="7.5"/>
+<path d="M571,356 Q520.5,416 470,142" fill="none" stroke="#e53e3e" stroke-width="4.5"/>
+<path d="M571,356 Q520.5,416 470,142" fill="none" stroke="#f3a8a8" stroke-opacity="0.8" stroke-width="1.4" transform="translate(-1,-1)"/>
+<rect x="463.5" y="120.5" width="13" height="29" rx="5" fill="#cbd5e0" fill-opacity="0.55"/>
+<rect x="465" y="122" width="10" height="26" rx="4" fill="#e53e3e"/>
+<rect x="467" y="124" width="2.5" height="22" rx="1" fill="#f3a8a8" fill-opacity="0.7"/>
+<line x1="470" y1="122" x2="470" y2="114" stroke="#e2e8f0" stroke-width="2.5"/>
+<path d="M623,356 Q674.0,416 725,142" fill="none" stroke="#cbd5e0" stroke-opacity="0.55" stroke-width="7.5"/>
+<path d="M623,356 Q674.0,416 725,142" fill="none" stroke="#111" stroke-width="4.5"/>
+<path d="M623,356 Q674.0,416 725,142" fill="none" stroke="#718096" stroke-opacity="0.8" stroke-width="1.4" transform="translate(-1,-1)"/>
+<rect x="718.5" y="120.5" width="13" height="29" rx="5" fill="#cbd5e0" fill-opacity="0.55"/>
+<rect x="720" y="122" width="10" height="26" rx="4" fill="#111"/>
+<rect x="722" y="124" width="2.5" height="22" rx="1" fill="#718096" fill-opacity="0.7"/>
+<line x1="725" y1="122" x2="725" y2="114" stroke="#e2e8f0" stroke-width="2.5"/>
+<text x="597.0" y="398.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">OL: over limit, an open circuit</text>
+</svg>

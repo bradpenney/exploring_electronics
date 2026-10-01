@@ -7,34 +7,32 @@ description: "Two wiring patterns govern every circuit ever built. Learn how ser
 # Series and Parallel Circuits
 
 !!! abstract "Beginner"
-    This article builds on [What Is Electricity?](what_is_electricity.md) — read that first if you're new to voltage, current, and resistance.
+    This article builds on [Voltage](voltage.md), [Current](current.md), and [Ohm's Law and Power](ohms_law.md); read those first if voltage, current, and resistance are new to you.
 
-Pick up any string of Christmas lights. Old ones — the kind where one dead bulb kills the whole string. That's a series circuit. Modern ones, where a single bad bulb barely matters? Parallel.
+An old string of Christmas lights goes completely dark when one bulb dies. The lamps in a house don't: one burns out and every other one stays lit. The first is a series circuit, the second a parallel one.
 
-Two patterns. Every circuit ever built uses one, the other, or a combination of both.
-
-By the end of this article you'll understand what's actually different between them — not just the names, but the physics — and you'll be able to predict how voltage, current, and resistance behave in each arrangement.
+Two patterns, and every circuit ever built uses one, the other, or a combination of both. This article covers what's physically different between them, and how to predict what voltage, current, and resistance do in each.
 
 ---
 
 ## The Fundamental Difference
 
-In a **series circuit**, current has exactly one path to follow. In a **parallel circuit**, current has multiple paths available. That single difference changes how voltage, current, and resistance behave across the entire circuit. The two tabs below show each arrangement as a schematic and as a real breadboard build — and if schematic symbols are new to you, [How to Read a Schematic](reading_schematics.md) explains each one.
+In a **series circuit**, current has exactly one path to follow. In a **parallel circuit**, current has multiple paths available. That single difference changes how voltage, current, and resistance behave across the entire circuit. The two tabs below show each arrangement as a real breadboard build and as a schematic; if schematic symbols are new to you, [How to Read a Schematic](reading_schematics.md) explains each one.
 
 ---
 
 === "Series"
 
-    In a series circuit, every component is connected end-to-end in a single chain. Current must pass through each component in sequence — there is no alternative route.
+    In a series circuit, every component is connected end-to-end in a single chain. Current must pass through each component in turn, with no alternative route.
 
-    For current to flow and the LED to light, **both switches must be pressed at the same time**. Either switch open means the path is broken — no current anywhere. A single current-limiting resistor sits at the start of the chain — before both switches — and limits current through the entire circuit to protect the LED.
+    For the LED to light, **both switches must be pressed at the same time**. Either switch open breaks the path, and no current flows anywhere. A single current-limiting resistor at the start of the chain limits the current through the whole circuit to protect the LED.
 
     <figure markdown>
       ![Two pushbutton switches wired in series with an LED. Both must be pressed simultaneously to light the LED.](images/series_circuit.jpg){ width="500" }
       <figcaption>Series circuit: both switches must be pressed to complete the path and light the LED. The resistor sits before both switches, limiting current through the entire chain.</figcaption>
     </figure>
 
-    Here is that same circuit drawn as a **schematic** — the symbolic notation used in every datasheet, tutorial, and textbook. Trace the single loop: the supply pushes current through the resistor, through `SW1`, through `SW2`, through the LED, and back. One path, no branches.
+    Here is the same circuit drawn as a **schematic**. Trace the single loop: the supply pushes current through the resistor, through `SW1`, through `SW2`, through the LED, and back. One path, no branches.
 
     <figure markdown>
       ![Schematic of a series circuit: a 5V battery, a 220 ohm resistor, two pushbutton switches labelled SW1 and SW2, and an LED, all connected end-to-end in a single loop.](images/schematics/series_circuit.svg){ width="500" }
@@ -51,7 +49,7 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
 
     This is called **voltage division**. The voltage is shared across the components in proportion to their resistance.
 
-    The reason follows directly from Ohm's Law. Because there is only one path, the same current flows through every component. Since \( V = I \times R \), a component with higher resistance produces a larger voltage drop for that same current — the bigger the resistance, the larger the share of the supply voltage it takes.
+    The reason follows directly from Ohm's Law. Because there is only one path, the same current flows through every component. Since \( V = I \times R \), a component with higher resistance drops more voltage for the same current: the bigger the resistance, the larger its share of the supply.
 
     ??? example "Worked example"
 
@@ -61,7 +59,7 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
 
         \[ R_{\text{total}} = 300 + 600 = 900\ \Omega \]
 
-        Current (same through every component — there's only one path):
+        Current (the same through every component, since there's only one path):
 
         \[ I = \frac{V}{R} = \frac{9\text{ V}}{900\ \Omega} = 10\text{ mA} \]
 
@@ -73,7 +71,7 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
 
         Check: \( 3 + 6 = 9\text{ V} \) ✓
 
-        The larger resistor takes the larger share of the voltage — the basis of the voltage divider, one of the most useful sub-circuits in electronics.
+        The larger resistor takes the larger share of the voltage. Tapping the point between the two resistors gives a fixed fraction of the supply, here 6V from 9V: the **voltage divider**, one of the most useful sub-circuits in electronics.
 
     **The general rules for series:**
 
@@ -83,18 +81,18 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
 
     ### What Happens When One Component Fails
 
-    If any component in a series circuit breaks open — a burned-out bulb, a broken wire, a switch left open — the path is severed. No current flows anywhere. Everything stops.
+    If any component in a series circuit breaks open (a burned-out bulb, a broken wire, a switch left open), the path is severed and no current flows anywhere.
 
-    That's the old Christmas lights. One bad bulb: whole string out. The break anywhere in the chain kills the circuit completely.
+    That's the old Christmas lights: one bad bulb, whole string out. Modern mini-light strings are still wired in series, but each bulb has a tiny **shunt** wire that closes when its filament burns out, so current bypasses the dead bulb and the rest stay lit. [Open Circuits, Short Circuits, and Fuses](open_short_fuses.md) covers what a break does to every voltage in the loop.
 
     !!! tip "Try it yourself"
-        Build this circuit on a breadboard — it takes less than five minutes. You'll need two pushbutton switches, one LED, and a 220 Ω resistor. The LED has polarity — the longer leg (anode) connects toward positive; if it doesn't light, flip it around. See [Breadboards](tools/breadboards.md) if you haven't used one before.
+        Build this circuit on a breadboard; it takes less than five minutes. You'll need two pushbutton switches, one LED, and a 220 Ω resistor. The LED has polarity: the longer leg (anode) goes toward positive, and if it doesn't light, flip it around. See [Breadboards](tools/breadboards.md) if you haven't used one before.
 
 === "Parallel"
 
-    In a parallel circuit, two or more branches share the same connection points — both the supply and the return to ground. Current can flow through any branch independently of the others.
+    In a parallel circuit, two or more branches share the same two connection points: the supply and the return to ground. Current can flow through any branch independently of the others.
 
-    In this circuit, the two switches are the parallel branches. A single current-limiting resistor sits before both switches — shared by both paths — and limits current through the LED. Press **either** switch and current flows through that branch. Press both and current flows through both branches simultaneously.
+    In this circuit, the two switches are the parallel branches. A single current-limiting resistor before both switches, shared by both paths, limits the current through the LED. Press **either** switch and current flows through that branch. Press both and current flows through both branches simultaneously.
 
     <figure markdown>
       ![Two pushbutton switches wired in parallel with an LED. Either switch pressed independently lights the LED.](images/parallel_circuit.jpg){ width="500" }
@@ -105,14 +103,14 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
 
     <figure markdown>
       ![Schematic of a parallel circuit: a 5V battery and a shared 220 ohm resistor feed two pushbutton switches, SW1 and SW2, on separate parallel branches that rejoin at an LED.](images/schematics/parallel_circuit.svg){ width="500" }
-      <figcaption>The same parallel circuit as a schematic. The wire splits into two branches after the resistor — one through SW1, one through SW2 — and the branches merge again at the LED.</figcaption>
+      <figcaption>The same parallel circuit as a schematic. The wire splits into two branches after the resistor, one through SW1 and one through SW2, and they merge again at the LED.</figcaption>
     </figure>
 
     This is the essential nature of a parallel circuit: multiple paths mean multiple opportunities for current to flow. Any one path completing is enough.
 
     ### Voltage Stays the Same
 
-    Every branch in a parallel circuit sees the full supply voltage. Whether one switch is pressed or both, the LED receives the same voltage — the full supply, not a fraction of it.
+    Every branch in a parallel circuit sees the full supply voltage. Whether one switch is pressed or both, the LED sees the same voltage.
 
     This is a fundamental rule: **voltage is the same across every parallel branch**.
 
@@ -124,7 +122,7 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
 
     \[ I_{\text{total}} = I_1 + I_2 + \cdots \]
 
-    Each branch independently responds to the voltage across it. A branch with resistance R draws \( I = V/R \) regardless of what other branches are doing — it doesn't "know" whether they are open or closed. The supply simply delivers the sum of whatever each branch demands.
+    Each branch responds only to the voltage across it. A branch with resistance R draws \( I = V/R \) whatever the other branches are doing, so the lowest-resistance branch carries the most current, and the supply delivers the sum.
 
     **Total resistance in a parallel circuit decreases as you add branches:**
 
@@ -146,16 +144,22 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
 
         \[ \frac{1}{R_{\text{total}}} = \frac{1}{220} + \frac{1}{220} = \frac{2}{220} \implies R_{\text{total}} = 110\ \Omega \]
 
-        Two 220 Ω resistors in parallel behave as a single 110 Ω resistor. Adding more paths makes it easier for current to flow, so total resistance falls.
+        Two 220 Ω resistors in parallel behave as a single 110 Ω resistor. Adding more paths makes it easier for current to flow, so total resistance falls, always below the smallest branch.
+
+    Two shortcuts save the reciprocal arithmetic. **Identical resistors:** n equal resistors in parallel give R ÷ n, so four 100 Ω resistors make 25 Ω. **Exactly two resistors:** the total is their product over their sum,
+
+    \[ R_{\text{total}} = \frac{R_1 \times R_2}{R_1 + R_2} \]
+
+    so 300 Ω and 600 Ω in parallel give 180,000 ÷ 900 = 200 Ω. Thinking in [conductance](resistance.md#idea-two-conductance-the-same-property-flipped) makes the rule obvious: in parallel, conductances simply add.
 
     ### What Happens When One Component Fails
 
     If one branch fails, current stops flowing in that branch only. Every other branch continues completely unaffected.
 
-    That's modern Christmas lights — one dead bulb goes dark while the rest stay lit. It's also how your house is wired: one lamp failing doesn't affect the others on the same circuit.
+    That's how a house is wired: one lamp failing doesn't affect the others on the same circuit.
 
     !!! tip "Try it yourself"
-        Build the parallel version alongside the series circuit and compare them directly — the difference in behaviour is immediately obvious. Same components: two pushbutton switches, one LED, and a 220 Ω resistor. Remember LED polarity — longer leg toward positive. See [Breadboards](tools/breadboards.md) if you haven't used one before.
+        Build the parallel version alongside the series circuit and compare them directly; the difference is immediately obvious. Same components: two pushbutton switches, one LED, and a 220 Ω resistor, with the LED's longer leg toward positive. See [Breadboards](tools/breadboards.md) if you haven't used one before.
 
 ---
 
@@ -165,7 +169,7 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
 |---|---|---|
 | **Paths for current** | One | Multiple |
 | **To complete the circuit** | All components must allow current | Any one path completing is enough |
-| **Current** | Same through every component | Splits — each branch carries its own |
+| **Current** | Same through every component | Splits; each branch carries its own |
 | **Voltage** | Divides across components | Same across every branch |
 | **Total resistance** | Increases with each component added | Decreases with each component added |
 | **One component fails** | Entire circuit stops | Only that branch is affected |
@@ -175,14 +179,14 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
 
 ## Real Circuits Use Both
 
-Most practical circuits combine the two topologies. Consider a row of indicator LEDs: each one needs its own current-limiting resistor (series) — the same resistor every [LED driven by a microcontroller pin](digital_io.md) needs — but they should all run independently at full brightness from the same supply (parallel). Any time you have multiple independent loads from the same supply, this pattern applies.
+Most practical circuits combine the two topologies. Consider a row of indicator LEDs: each needs its own current-limiting resistor in series (the same resistor every [LED driven by a microcontroller pin](digital_io.md) needs), but they should all run independently at full brightness from the same supply, in parallel. Any time you have multiple independent loads from the same supply, this pattern applies.
 
 <figure markdown>
   ![Schematic of a combined series-parallel circuit: a 5V supply feeds two parallel branches, each branch a 220 ohm resistor in series with its own LED, returning to ground.](images/schematics/combined_circuit.svg){ width="500" }
   <figcaption>Two LED branches in parallel, each with its own series resistor. Follow either branch top to bottom: resistor then LED, in series. The two branches hang in parallel off the same supply.</figcaption>
 </figure>
 
-Each resistor and its LED are in **series** with each other — the resistor limits current for that LED. The two pairs are in **parallel** with each other — each pair gets the full supply voltage, independently of the other.
+Each resistor is in **series** with its LED and limits that LED's current. The two pairs are in **parallel** with each other, so each gets the full supply voltage independently.
 
 Recognising these nested patterns is what lets you look at a circuit and immediately understand what each part is doing.
 
@@ -190,11 +194,15 @@ Recognising these nested patterns is what lets you look at a circuit and immedia
 
 ## Safety
 
+Parallel wiring is where currents quietly add up, and where the most dangerous wiring mistake hides.
+
 !!! warning "More Parallel Branches = More Total Current"
     Every additional parallel branch draws its own current from the supply. A single LED at 20 mA is well within the limits of a USB supply. But motors, heating elements, or high-power LEDs multiplied across many parallel branches add up quickly. Always calculate total current before adding parallel loads, and verify your power source can deliver it.
 
+Any wire that lands across the supply by mistake is itself a parallel branch, and the worst kind:
+
 !!! danger "Short Circuits in Parallel"
-    A short circuit — a path with near-zero resistance — placed in parallel with your circuit gives current an almost-free route that bypasses everything else. All available current rushes through it. Wires heat rapidly, components are destroyed, and lithium batteries can ignite. Fuses and circuit breakers are deliberate weak points designed to fail safely before the wiring does.
+    A short circuit, a path with near-zero resistance placed in parallel with your circuit, gives current an almost-free route around everything else. All the current the source can deliver rushes through it: wires heat rapidly, components are destroyed, and lithium batteries can ignite. Fuses and circuit breakers are deliberate weak points that fail safely before the wiring does; [Open Circuits, Short Circuits, and Fuses](open_short_fuses.md) explains how.
 
 ---
 
@@ -205,9 +213,9 @@ Recognising these nested patterns is what lets you look at a circuit and immedia
     You wire two switches and an LED so that pressing either switch lights the LED, and pressing both also lights the LED. Is this series or parallel? What changes if you rewire it so that both switches must be pressed simultaneously?
 
     ??? tip "Solution"
-        **Either switch lights the LED** — this is **parallel**. Each switch provides its own independent path to the LED. Any complete path is enough.
+        **Either switch lights the LED:** this is **parallel**. Each switch provides its own path to the LED, and any complete path is enough.
 
-        **Both switches required** — this is **series**. There is one path, and both switches must be closed for current to flow through it. One switch open breaks the only path.
+        **Both switches required:** this is **series**. There is one path, and both switches must be closed for current to flow through it. One switch open breaks the only path.
 
         This is the clearest demonstration of the difference between the two topologies.
 
@@ -237,7 +245,7 @@ Recognising these nested patterns is what lets you look at a circuit and immedia
 
     ??? tip "Solution"
 
-        Each resistor sees the full 5V — voltage is the same across every parallel branch.
+        Each resistor sees the full 5V, since voltage is the same across every parallel branch.
 
         \[ I = \frac{V}{R} = \frac{5\text{ V}}{470\ \Omega} = 10.6\text{ mA} \]
 
@@ -247,10 +255,10 @@ Recognising these nested patterns is what lets you look at a circuit and immedia
 
 ??? question "4. Household Wiring"
 
-    Your house has multiple power outlets on the same circuit. Plugging in a lamp doesn't affect the other outlets. Plugging in too many high-draw appliances trips the circuit breaker. Which topology is this, and why does the breaker trip?
+    A house has several power outlets on the same circuit. Plugging in a lamp doesn't affect the other outlets. Plugging in too many high-draw appliances trips the circuit breaker. Which topology is this, and why does the breaker trip?
 
     ??? tip "Solution"
-        This is a **parallel** circuit. Each outlet connects independently to the same supply voltage — which is why one appliance failing or switching off doesn't affect any other.
+        This is a **parallel** circuit. Each outlet connects independently to the same supply voltage, which is why one appliance failing or switching off doesn't affect any other.
 
         The breaker trips because of the parallel current rule: each additional load draws its own current, and all those branch currents add up at the supply. Enough appliances running simultaneously and the total current exceeds the breaker's rating (typically 15A or 20A in residential wiring). The breaker opens the circuit safely before the wiring overheats.
 
@@ -282,9 +290,9 @@ Recognising these nested patterns is what lets you look at a circuit and immedia
 
 ## What's Next
 
-With series and parallel understood, the next skill is reading these circuits the way every datasheet and tutorial draws them: **[How to Read a Schematic](reading_schematics.md)** — the symbols behind the diagrams in this article, and the one rule about wire crossings that trips up every beginner.
+With series and parallel understood, the next skill is reading circuits the way every datasheet and tutorial draws them: **[How to Read a Schematic](reading_schematics.md)** covers the symbols behind the diagrams in this article, and the one rule about wire crossings that trips up every beginner.
 
-In the meantime, if you haven't already: build both circuits on a [breadboard](tools/breadboards.md). The behavioural difference between series and parallel is immediately obvious the moment you press the switches.
+Meanwhile, build both circuits on a [breadboard](tools/breadboards.md). The behavioural difference between series and parallel is immediately obvious the moment you press the switches.
 
 ---
 
@@ -303,3 +311,4 @@ In the meantime, if you haven't already: build both circuits on a [breadboard](t
 **Related Articles**
 
 - [Resistor Color Codes](resistor_color_codes.md) — decode the 220 Ω resistor used throughout this article's circuits by its painted bands
+- [Cells and Batteries](batteries.md) — series and parallel applied to cells: more voltage, or more capacity

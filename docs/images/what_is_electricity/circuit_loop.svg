@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" width="780" height="420" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A 3D circuit loop: a 5 volt battery drives current through a 220 ohm resistor and a lit LED, returning to ground at 0 volts</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="battx" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9f6607"/><stop offset="0.22" stop-color="#f9c978"/><stop offset="0.5" stop-color="#f59e0b"/><stop offset="1" stop-color="#623f04"/></linearGradient><linearGradient id="resbody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8d7454"/><stop offset="0.22" stop-color="#ead5ba"/><stop offset="0.5" stop-color="#d9b382"/><stop offset="1" stop-color="#564734"/></linearGradient></defs>
+<rect x="15" y="15" width="750" height="390" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<polyline points="150,170 150,110 640,110 640,300 150,300 150,240" fill="none" stroke="#3a1d0c" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="150,170 150,110 640,110 640,300 150,300 150,240" fill="none" stroke="#b8673a" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="150,170 150,110 640,110 640,300 150,300 150,240" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<circle cx="210.0" cy="110.0" r="10" fill="url(#glow)"/><circle cx="210.0" cy="110.0" r="4" fill="url(#vball)"/>
+<circle cx="256.0" cy="110.0" r="10" fill="url(#glow)"/><circle cx="256.0" cy="110.0" r="4" fill="url(#vball)"/>
+<circle cx="302.0" cy="110.0" r="10" fill="url(#glow)"/><circle cx="302.0" cy="110.0" r="4" fill="url(#vball)"/>
+<circle cx="348.0" cy="110.0" r="10" fill="url(#glow)"/><circle cx="348.0" cy="110.0" r="4" fill="url(#vball)"/>
+<circle cx="394.0" cy="110.0" r="10" fill="url(#glow)"/><circle cx="394.0" cy="110.0" r="4" fill="url(#vball)"/>
+<circle cx="440.0" cy="110.0" r="10" fill="url(#glow)"/><circle cx="440.0" cy="110.0" r="4" fill="url(#vball)"/>
+<circle cx="486.0" cy="110.0" r="10" fill="url(#glow)"/><circle cx="486.0" cy="110.0" r="4" fill="url(#vball)"/>
+<circle cx="532.0" cy="110.0" r="10" fill="url(#glow)"/><circle cx="532.0" cy="110.0" r="4" fill="url(#vball)"/>
+<circle cx="578.0" cy="110.0" r="10" fill="url(#glow)"/><circle cx="578.0" cy="110.0" r="4" fill="url(#vball)"/>
+<circle cx="624.0" cy="110.0" r="10" fill="url(#glow)"/><circle cx="624.0" cy="110.0" r="4" fill="url(#vball)"/>
+<circle cx="640.0" cy="140.0" r="10" fill="url(#glow)"/><circle cx="640.0" cy="140.0" r="4" fill="url(#vball)"/>
+<circle cx="640.0" cy="278.0" r="10" fill="url(#glow)"/><circle cx="640.0" cy="278.0" r="4" fill="url(#vball)"/>
+<circle cx="616.0" cy="300.0" r="10" fill="url(#glow)"/><circle cx="616.0" cy="300.0" r="4" fill="url(#vball)"/>
+<circle cx="570.0" cy="300.0" r="10" fill="url(#glow)"/><circle cx="570.0" cy="300.0" r="4" fill="url(#vball)"/>
+<circle cx="524.0" cy="300.0" r="10" fill="url(#glow)"/><circle cx="524.0" cy="300.0" r="4" fill="url(#vball)"/>
+<circle cx="478.0" cy="300.0" r="10" fill="url(#glow)"/><circle cx="478.0" cy="300.0" r="4" fill="url(#vball)"/>
+<circle cx="432.0" cy="300.0" r="10" fill="url(#glow)"/><circle cx="432.0" cy="300.0" r="4" fill="url(#vball)"/>
+<circle cx="386.0" cy="300.0" r="10" fill="url(#glow)"/><circle cx="386.0" cy="300.0" r="4" fill="url(#vball)"/>
+<circle cx="340.0" cy="300.0" r="10" fill="url(#glow)"/><circle cx="340.0" cy="300.0" r="4" fill="url(#vball)"/>
+<circle cx="294.0" cy="300.0" r="10" fill="url(#glow)"/><circle cx="294.0" cy="300.0" r="4" fill="url(#vball)"/>
+<circle cx="248.0" cy="300.0" r="10" fill="url(#glow)"/><circle cx="248.0" cy="300.0" r="4" fill="url(#vball)"/>
+<circle cx="202.0" cy="300.0" r="10" fill="url(#glow)"/><circle cx="202.0" cy="300.0" r="4" fill="url(#vball)"/>
+<circle cx="156.0" cy="300.0" r="10" fill="url(#glow)"/><circle cx="156.0" cy="300.0" r="4" fill="url(#vball)"/>
+<path d="M-8,-9 L6,0 L-8,9" fill="none" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(300,110) rotate(0)"/>
+<path d="M-8,-9 L6,0 L-8,9" fill="none" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(640,270) rotate(90)"/>
+<path d="M-8,-9 L6,0 L-8,9" fill="none" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(420,300) rotate(180)"/>
+<ellipse cx="150" cy="249" rx="34" ry="8" fill="#000" fill-opacity="0.4"/>
+<rect x="122" y="165" width="56" height="80" fill="url(#battx)"/>
+<ellipse cx="150" cy="245" rx="28.0" ry="8" fill="#7a4f05"/>
+<ellipse cx="150" cy="165" rx="28.0" ry="8" fill="#f8bf60"/>
+<rect x="141" y="153" width="18" height="10" rx="3" fill="#cbd5e0"/>
+<ellipse cx="150" cy="153" rx="9" ry="3" fill="#ffffff"/>
+<text x="150.0" y="199.0" font-size="22" fill="#1a1a1a" text-anchor="middle" font-weight="bold">+</text>
+<text x="150.0" y="227.0" font-size="15" fill="#1a1a1a" text-anchor="middle" font-weight="bold">5 V</text>
+<rect x="330" y="93" width="130" height="34" rx="17" fill="url(#resbody)"/>
+<rect x="356" y="94" width="9" height="32" fill="#e53e3e"/>
+<rect x="356" y="94" width="9" height="32" fill="url(#gloss)"/>
+<rect x="374" y="94" width="9" height="32" fill="#e53e3e"/>
+<rect x="374" y="94" width="9" height="32" fill="url(#gloss)"/>
+<rect x="392" y="94" width="9" height="32" fill="#8b4513"/>
+<rect x="392" y="94" width="9" height="32" fill="url(#gloss)"/>
+<rect x="430" y="94" width="9" height="32" fill="#d4af37"/>
+<rect x="430" y="94" width="9" height="32" fill="url(#gloss)"/>
+<radialGradient id="led63354326" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#68d391"/><stop offset="1" stop-color="#2e5e41"/></radialGradient>
+<circle cx="640" cy="205" r="51.2" fill="#68d391" fill-opacity="0.18"/>
+<circle cx="640" cy="205" r="32.0" fill="#68d391" fill-opacity="0.22"/>
+<line x1="634.4" y1="221" x2="634.4" y2="246.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="645.6" y1="221" x2="645.6" y2="241.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="621.6" y="213.8" width="36.8" height="8.0" rx="2" fill="url(#led63354326)"/>
+<path d="M624.0,214.6 L624.0,205.0 A16,16 0 0 1 656.0,205.0 L656.0,214.6 Z" fill="url(#led63354326)"/>
+<line x1="210" y1="300" x2="210" y2="322" stroke="#a0aec0" stroke-width="3"/>
+<line x1="192" y1="324" x2="228" y2="324" stroke="#a0aec0" stroke-width="3"/>
+<line x1="198" y1="331" x2="222" y2="331" stroke="#a0aec0" stroke-width="3"/>
+<line x1="204" y1="338" x2="216" y2="338" stroke="#a0aec0" stroke-width="3"/>
+<rect x="43.5" y="45.0" width="193" height="34" rx="17.0" fill="#d97706"/>
+<rect x="43.5" y="45.0" width="193" height="34" rx="17.0" fill="url(#gloss)"/>
+<text x="140.0" y="66.7" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="bold">Voltage source · 5 V</text>
+<rect x="306.5" y="45.0" width="177" height="34" rx="17.0" fill="#2d3748"/>
+<rect x="306.5" y="45.0" width="177" height="34" rx="17.0" fill="url(#gloss)"/>
+<text x="395.0" y="66.7" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">Resistance · 220 Ω</text>
+<rect x="594.0" y="45.0" width="112" height="34" rx="17.0" fill="#2f855a"/>
+<rect x="594.0" y="45.0" width="112" height="34" rx="17.0" fill="url(#gloss)"/>
+<text x="650.0" y="66.7" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">Load · LED</text>
+<rect x="238.5" y="315.0" width="193" height="30" rx="15.0" fill="#1a202c"/>
+<rect x="238.5" y="315.0" width="193" height="30" rx="15.0" fill="url(#gloss)"/>
+<text x="335.0" y="334.7" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">back to ground · 0 V</text>
+<text x="390.0" y="384.0" font-size="13" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">a voltage source drives current through resistance and a load, then back to ground</text>
+<text x="300.0" y="138.0" font-size="13" fill="#fbbf24" text-anchor="middle" font-weight="normal" font-style="italic">current</text>
+</svg>

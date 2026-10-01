@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 300" width="780" height="300" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Marbles packed in a glass tube: pushing one in pushes one out the far end immediately</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="tube" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2e8f0" stop-opacity="0.35"/><stop offset="0.25" stop-color="#e2e8f0" stop-opacity="0.06"/><stop offset="0.8" stop-color="#1a202c" stop-opacity="0.2"/><stop offset="1" stop-color="#e2e8f0" stop-opacity="0.25"/></linearGradient><linearGradient id="pulse" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f59e0b" stop-opacity="0"/><stop offset="0.85" stop-color="#f59e0b" stop-opacity="0.9"/><stop offset="1" stop-color="#fde68a" stop-opacity="1"/></linearGradient><linearGradient id="trail" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f59e0b" stop-opacity="0"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0.6"/></linearGradient></defs>
+<rect x="15" y="15" width="750" height="270" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="130" y="80" width="520" height="8" rx="4" fill="url(#pulse)" filter="url(#softglow)"/>
+<text x="390.0" y="70.0" font-size="14" fill="#fbbf24" text-anchor="middle" font-weight="bold">the push: a large fraction of the speed of light</text>
+<ellipse cx="390.0" cy="168" rx="260.0" ry="7" fill="#000" fill-opacity="0.35"/>
+<circle cx="154" cy="134.0" r="18" fill="url(#eball)"/>
+<circle cx="194" cy="134.0" r="18" fill="url(#eball)"/>
+<circle cx="234" cy="134.0" r="18" fill="url(#eball)"/>
+<circle cx="274" cy="134.0" r="18" fill="url(#eball)"/>
+<circle cx="314" cy="134.0" r="18" fill="url(#eball)"/>
+<circle cx="354" cy="134.0" r="18" fill="url(#eball)"/>
+<circle cx="394" cy="134.0" r="18" fill="url(#eball)"/>
+<circle cx="434" cy="134.0" r="18" fill="url(#eball)"/>
+<circle cx="474" cy="134.0" r="18" fill="url(#eball)"/>
+<circle cx="514" cy="134.0" r="18" fill="url(#eball)"/>
+<circle cx="554" cy="134.0" r="18" fill="url(#eball)"/>
+<circle cx="594" cy="134.0" r="18" fill="url(#eball)"/>
+<rect x="130" y="110" width="520" height="48" rx="24.0" fill="url(#tube)" stroke="#e2e8f0" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="144" y="115" width="492" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.35"/>
+<rect x="25" y="126.0" width="60" height="16" rx="8" fill="url(#trail)"/>
+<circle cx="92" cy="134.0" r="43.199999999999996" fill="url(#glow)"/>
+<circle cx="92" cy="134.0" r="18" fill="url(#vball)"/>
+<text x="92.0" y="190.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">one in</text>
+<rect x="692" y="126.0" width="60" height="16" rx="8" fill="url(#trail)" transform="rotate(180 722 134.0)"/>
+<circle cx="688" cy="134.0" r="43.199999999999996" fill="url(#glow)"/>
+<circle cx="688" cy="134.0" r="18" fill="url(#vball)"/>
+<text x="688.0" y="190.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">one out, at once</text>
+<text x="390.0" y="190.0" font-size="13" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">a wire already full of electrons</text>
+<text x="390.0" y="236.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="normal">Each electron drifts about 0.07 mm per second (1 A in a 1 mm² copper wire):</text>
+<text x="390.0" y="258.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="normal">almost four hours to travel one metre.</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 440" width="780" height="440" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Three through-hole packages to scale on a circuit board, legs passing through it: a TO-92, a TO-220 with its metal tab, and an 8-pin DIP</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="750" height="410" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="390.0" y="46.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Through-hole: legs go through the board</text>
+<text x="390.0" y="66.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">drawn to scale with the surface-mount figure (9 px per mm)</text>
+<ellipse cx="398.4" cy="305.0" rx="334.4" ry="14.6" fill="#000" fill-opacity="0.4"/>
+<polygon points="70.0,285.6 670.0,285.6 726.7,249.2 126.7,249.2" fill="#6d9a83"/>
+<rect x="70.0" y="285.6" width="600.0" height="14.4" fill="#2f6f4e"/>
+<rect x="70.0" y="285.6" width="600.0" height="14.4" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="670.0,300.0 670.0,285.6 726.7,249.2 726.7,263.6" fill="#193d2a"/>
+<rect x="163.1" y="300" width="3" height="34" fill="#cbd5e0"/>
+<ellipse cx="164.6" cy="334.0" rx="5" ry="2.5" fill="#a0aec0"/>
+<rect x="179.1" y="300" width="3" height="34" fill="#cbd5e0"/>
+<ellipse cx="180.6" cy="334.0" rx="5" ry="2.5" fill="#a0aec0"/>
+<rect x="195.1" y="300" width="3" height="34" fill="#cbd5e0"/>
+<ellipse cx="196.6" cy="334.0" rx="5" ry="2.5" fill="#a0aec0"/>
+<rect x="163.1" y="265.5" width="3" height="10" fill="#cbd5e0"/>
+<rect x="179.1" y="265.5" width="3" height="10" fill="#cbd5e0"/>
+<rect x="195.1" y="265.5" width="3" height="10" fill="#cbd5e0"/>
+<polygon points="157.8,222.3 200.9,222.3 224.9,206.9 181.7,206.9" fill="#64676c"/>
+<rect x="157.8" y="222.3" width="43.2" height="43.2" fill="#22262e"/>
+<rect x="157.8" y="222.3" width="43.2" height="43.2" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="200.9,265.5 200.9,222.3 224.9,206.9 224.9,250.1" fill="#121419"/>
+<text x="181.8" y="245.5" font-size="9" fill="#a0aec0" text-anchor="middle" font-weight="normal">TO-92</text>
+<rect x="323.0" y="300" width="3" height="34" fill="#cbd5e0"/>
+<ellipse cx="324.5" cy="334.0" rx="5" ry="2.5" fill="#a0aec0"/>
+<rect x="345.8" y="300" width="3" height="34" fill="#cbd5e0"/>
+<ellipse cx="347.3" cy="334.0" rx="5" ry="2.5" fill="#a0aec0"/>
+<rect x="368.7" y="300" width="3" height="34" fill="#cbd5e0"/>
+<ellipse cx="370.2" cy="334.0" rx="5" ry="2.5" fill="#a0aec0"/>
+<rect x="322.5" y="245.5" width="4" height="30" fill="#cbd5e0"/>
+<rect x="345.3" y="245.5" width="4" height="30" fill="#cbd5e0"/>
+<rect x="368.2" y="245.5" width="4" height="30" fill="#cbd5e0"/>
+<polygon points="310.8,110.5 400.8,110.5 408.9,105.2 318.9,105.2" fill="#bcc6d2"/>
+<rect x="310.8" y="110.5" width="90.0" height="54.0" fill="#a0aec0"/>
+<rect x="310.8" y="110.5" width="90.0" height="54.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="400.8,164.5 400.8,110.5 408.9,105.2 408.9,159.2" fill="#585f69"/>
+<circle cx="355.8" cy="134.8" r="16.2" fill="#1a202c"/>
+<polygon points="310.8,164.5 400.8,164.5 429.1,146.3 339.1,146.3" fill="#64676c"/>
+<rect x="310.8" y="164.5" width="90.0" height="81.0" fill="#22262e"/>
+<rect x="310.8" y="164.5" width="90.0" height="81.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="400.8,245.5 400.8,164.5 429.1,146.3 429.1,227.3" fill="#121419"/>
+<text x="355.8" y="209.5" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">TO-220</text>
+<rect x="496.6" y="275.2" width="4" height="8" fill="#cbd5e0"/>
+<rect x="519.4" y="275.2" width="4" height="8" fill="#cbd5e0"/>
+<rect x="542.3" y="275.2" width="4" height="8" fill="#cbd5e0"/>
+<rect x="565.2" y="275.2" width="4" height="8" fill="#cbd5e0"/>
+<rect x="497.1" y="300" width="3" height="34" fill="#cbd5e0"/>
+<ellipse cx="498.6" cy="334.0" rx="5" ry="2.5" fill="#a0aec0"/>
+<rect x="519.9" y="300" width="3" height="34" fill="#cbd5e0"/>
+<ellipse cx="521.4" cy="334.0" rx="5" ry="2.5" fill="#a0aec0"/>
+<rect x="542.8" y="300" width="3" height="34" fill="#cbd5e0"/>
+<ellipse cx="544.3" cy="334.0" rx="5" ry="2.5" fill="#a0aec0"/>
+<rect x="565.7" y="300" width="3" height="34" fill="#cbd5e0"/>
+<ellipse cx="567.2" cy="334.0" rx="5" ry="2.5" fill="#a0aec0"/>
+<polygon points="491.6,243.0 579.8,243.0 620.1,217.1 531.9,217.1" fill="#64676c"/>
+<rect x="491.6" y="243.0" width="88.2" height="29.7" fill="#22262e"/>
+<rect x="491.6" y="243.0" width="88.2" height="29.7" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="579.8,272.7 579.8,243.0 620.1,217.1 620.1,246.8" fill="#121419"/>
+<ellipse cx="505.1" cy="232.2" rx="5" ry="3" fill="#0d1117"/>
+<text x="536.6" y="258.7" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">DIP-8</text>
+<text x="187.8" y="372.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">TO-92</text>
+<text x="187.8" y="392.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">sensors, small transistors</text>
+<text x="365.8" y="372.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">TO-220</text>
+<text x="365.8" y="392.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">regulators, power transistors</text>
+<text x="546.6" y="372.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">DIP</text>
+<text x="546.6" y="392.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">classic hobby ICs, the Uno's chip</text>
+<text x="390.0" y="418.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">every leg passes through a hole and is soldered on the far side</text>
+</svg>

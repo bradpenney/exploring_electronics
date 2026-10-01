@@ -10,6 +10,18 @@ This file provides guidance to Claude Code when working with this repository.
 
 **Teaching Philosophy:** Every article grounds hardware concepts in something a reasonable adult already understands — not a professional software background. At Beginner, that's physical, everyday experience (water pressure, household wiring). At Intermediate and up, it can lean on familiar consumer technology (a phone's battery icon, a car's dashboard, a video game's health bar) or on the light Arduino coding the reader has already done in this site's own articles — never on professional software engineering jargon or workflows.
 
+## Diagrams: 3D Figures, Not Mermaid (estate-wide, 2026-09-30)
+
+**This overrides every mermaid instruction elsewhere in this file.** Brad, 2026-09-30: mermaid "loses its value as declarative diagrams once you're available to improve/tweak", and it looks poor next to hand-built figures. He also asked for "AS MANY DIAGRAMS as possible".
+
+- **No new mermaid.** Every diagram is a hand-built, 3D-lit SVG emitted by a standard-library Python generator in this repo's `illustrations/<article>.py` (one script per article, output under `docs/images/<article>/`). Mermaid already in published articles is legacy debt: replace it when the article is touched.
+- **House style** (copy `illustrations/style3d.py` from exploring_electronics or exploring_radio): radial-gradient lit spheres, glassy translucent shells and panels, gloss overlays, drop-shadow ellipses, depth-sorted perspective, glow via radial gradients, the shared amber/slate palette, transparent background. The reference figures are `exploring_electronics/illustrations/conductors_and_insulators.py`.
+- **Numbers come from sources.** Anything plotted cites its source in the generator's docstring, and the generator computes it rather than hard-coding a drawn shape.
+- **Look before shipping.** Render every figure to PNG (`magick -background '#1e1e1e' -density 96 fig.svg -flatten fig.png`) and read it: fix overlaps, clipped labels, and anything that teaches something false.
+- **Gotchas:** escape text for XML (`&` vanishes otherwise); an SVG blur filter on a perfectly horizontal or vertical line has a zero-height box and disappears, so fake that glow with a soft rect.
+- **Never replace schematics.** Real circuit schematics in standard notation (schemdraw) stay exactly as they are: Brad, 2026-09-30, "readers need to be comfortable with these." They are a 2D language the reader is learning to read, so they are never converted to 3D, and articles that show a circuit should keep (or add) its schematic alongside any 3D figure. Photos stay too. The 3D rule replaces mermaid and decorative flat illustrations only.
+- Reference each figure with `<figure markdown>` + `![alt](...){ width="..." }` + `<figcaption>`, with alt text that describes what the figure shows.
+
 ## Content Architecture: Topics
 
 This site has no tiers and no paywall — it's organized purely by **topic**: the subject of the article (circuit foundations, microcontrollers, etc.). Depth within a topic progresses naturally as articles accumulate, but that progression is signaled with a lightweight per-article difficulty tag, not a tier structure.
@@ -118,7 +130,19 @@ plugins:
 ```
 
 **Published articles (not in exclude list):**
+- `conductors_and_insulators.md` (in nav for Brad's review 2026-09-30; first in Circuit Foundations; index.md + what_is_electricity backlink still to add at publish)
 - `what_is_electricity.md`
+- `voltage.md` (in nav for Brad's review 2026-09-30; Brad: "just fantastic" — the template for the deep pages)
+- `current.md` (in nav for review 2026-10-01)
+- `resistance.md` (in nav for review 2026-10-01)
+- `ohms_law.md` (in nav for review 2026-10-01; What's Next → AC vs DC once it exists)
+- `metric_prefixes.md` (in nav for review 2026-10-01; after What Is Electricity?)
+- `open_short_fuses.md` (in nav for review 2026-10-01; after Ohm's Law and Power)
+- `batteries.md` (in nav for review 2026-10-01; first article of the Power topic)
+- `ac_dc.md` (in nav for review 2026-10-01; after Open Circuits, Short Circuits, and Fuses)
+- `magnetism.md` (in nav for review 2026-10-02; after AC vs DC)
+- `resistor_types.md` (in nav for review 2026-10-02; Components, after Resistor Color Codes)
+- Coverage checklist for the AVARC Basic course chapter 2: `coverage/avarc_basic_ch2.md` (not served). Mark rows ✅ as articles land.
 - `series_and_parallel.md`
 - `reading_schematics.md`
 - `resistor_color_codes.md`
@@ -246,6 +270,7 @@ Before marking any article complete, use the Explore agent to search for repeate
     - `images/schematics/` - generated schematic SVGs (output of `schematics/`; committed and served)
   - `stylesheets/` - Custom CSS (`extra.css`)
 - `schematics/` - schemdraw source for circuit schematics (see `schematics/README.md`)
+- `illustrations/` - Python generators for hand-built SVG figures, one script per article (e.g. `conductors_and_insulators.py` writes `docs/images/conductors/`). Standard library only; re-run after changing any plotted number.
 - `mkdocs.yaml` - Site configuration and navigation
 - `pyproject.toml` - Poetry dependencies
 
@@ -438,6 +463,8 @@ while True:
 
 #### Circuit Diagrams
 
+**UPDATED 2026-09-30 — no new mermaid.** Brad: mermaid "loses its value as declarative diagrams" once Claude can tune figures, and it looked poor beside the 3D figures. New articles use **hand-built 3D-lit SVG figures** generated by a Python script in `illustrations/<article>.py` (standard library only; reuse `common_defs()`, `panel()`, `_project()` and the gradient balls from `illustrations/conductors_and_insulators.py`). Use as many figures as the article can carry; render each to PNG and look at it before shipping. Mermaid guidance below is legacy, kept for older articles until they are touched.
+
 Three distinct visual types, each with a specific job — do not substitute one for another:
 
 - **Mermaid** — logical/block diagrams: power rails, signal paths, protocol flow, architecture. NOT real schematics (no component symbols).
@@ -616,6 +643,7 @@ Validate all datasheet URLs with WebFetch before publishing — TI, Microchip, a
 - Linux articles for Raspberry Pi GPIO via the command line
 - Kubernetes articles when deploying IoT data pipelines
 - Software Dev Tools articles for git workflows on embedded projects
+- **Exploring Radio** (radio.bradpenney.io, amateur radio) — this site owns DC circuit theory and components; radio owns everything RF (resonance, impedance matching, antennas, modulation). Radio links here instead of re-teaching, so a gap radio needs (e.g. capacitors, inductors) is a gap to fill HERE. Don't link to radio until it has published articles.
 
 ---
 

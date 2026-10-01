@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 330" width="860" height="330" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A log scale of frequency from 10 hertz to 10 gigahertz: Niagara's original 25 hertz power, Canadian mains at 60 hertz, a 1 kilohertz tone, AM radio near 1 megahertz, the 40 metre amateur band at 7 megahertz, the 2 metre band at 146 megahertz, and Wi-Fi at 2.4 gigahertz.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="830" height="300" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="430.0" y="46.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Alternating current at every speed: from mains to Wi-Fi (log scale)</text>
+<rect x="50" y="160" width="760" height="28" rx="14" fill="#3182ce" fill-opacity="0.4"/>
+<rect x="50" y="160" width="760" height="28" rx="14" fill="url(#gloss)" stroke="#e2e8f0" stroke-opacity="0.35"/>
+<line x1="50.0" y1="188" x2="50.0" y2="194" stroke="#a0aec0"/>
+<text x="50.0" y="208.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">10 Hz</text>
+<line x1="134.4" y1="188" x2="134.4" y2="194" stroke="#a0aec0"/>
+<text x="134.4" y="208.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">100 Hz</text>
+<line x1="218.9" y1="188" x2="218.9" y2="194" stroke="#a0aec0"/>
+<text x="218.9" y="208.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">1 kHz</text>
+<line x1="303.3" y1="188" x2="303.3" y2="194" stroke="#a0aec0"/>
+<text x="303.3" y="208.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">10 kHz</text>
+<line x1="387.8" y1="188" x2="387.8" y2="194" stroke="#a0aec0"/>
+<text x="387.8" y="208.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">100 kHz</text>
+<line x1="472.2" y1="188" x2="472.2" y2="194" stroke="#a0aec0"/>
+<text x="472.2" y="208.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">1 MHz</text>
+<line x1="556.7" y1="188" x2="556.7" y2="194" stroke="#a0aec0"/>
+<text x="556.7" y="208.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">10 MHz</text>
+<line x1="641.1" y1="188" x2="641.1" y2="194" stroke="#a0aec0"/>
+<text x="641.1" y="208.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">100 MHz</text>
+<line x1="725.6" y1="188" x2="725.6" y2="194" stroke="#a0aec0"/>
+<text x="725.6" y="208.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">1 GHz</text>
+<line x1="810.0" y1="188" x2="810.0" y2="194" stroke="#a0aec0"/>
+<text x="810.0" y="208.0" font-size="10" fill="#a0aec0" text-anchor="middle" font-weight="normal">10 GHz</text>
+<circle cx="83.6" cy="174.0" r="8" fill="url(#eball)"/>
+<line x1="83.6" y1="158" x2="83.6" y2="136" stroke="#a0aec0"/>
+<text x="83.6" y="114.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Niagara, 1895</text>
+<text x="83.6" y="130.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">25 Hz</text>
+<circle cx="115.7" cy="174.0" r="8" fill="url(#eball)"/>
+<line x1="115.7" y1="216" x2="115.7" y2="236" stroke="#a0aec0"/>
+<text x="115.7" y="250.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Canadian mains</text>
+<text x="115.7" y="266.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">60 Hz</text>
+<circle cx="218.9" cy="174.0" r="8" fill="url(#eball)"/>
+<line x1="218.9" y1="158" x2="218.9" y2="136" stroke="#a0aec0"/>
+<text x="218.9" y="114.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">a 1 kHz tone</text>
+<text x="218.9" y="130.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">1 kHz</text>
+<circle cx="472.2" cy="174.0" r="8" fill="url(#eball)"/>
+<line x1="472.2" y1="216" x2="472.2" y2="236" stroke="#a0aec0"/>
+<text x="472.2" y="250.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">AM radio</text>
+<text x="472.2" y="266.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">~1 MHz</text>
+<circle cx="543.6" cy="174.0" r="8" fill="url(#eball)"/>
+<line x1="543.6" y1="158" x2="543.6" y2="136" stroke="#a0aec0"/>
+<text x="543.6" y="114.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">40 m amateur band</text>
+<text x="543.6" y="130.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">7 MHz</text>
+<circle cx="655.0" cy="174.0" r="8" fill="url(#eball)"/>
+<line x1="655.0" y1="216" x2="655.0" y2="236" stroke="#a0aec0"/>
+<text x="655.0" y="250.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">2 m amateur band</text>
+<text x="655.0" y="266.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">146 MHz</text>
+<circle cx="757.7" cy="174.0" r="8" fill="url(#eball)"/>
+<line x1="757.7" y1="158" x2="757.7" y2="136" stroke="#a0aec0"/>
+<text x="757.7" y="114.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Wi-Fi</text>
+<text x="757.7" y="130.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">2.4 GHz</text>
+</svg>

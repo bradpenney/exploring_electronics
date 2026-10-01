@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 430" width="860" height="430" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Two pairs of 12 volt, 20 amp-hour batteries. Wired in series, positive of one to negative of the next, they make 24 volts at 20 amp-hours. Wired in parallel, positive to positive and negative to negative, they make 12 volts at 40 amp-hours.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="405" height="400" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="440" y="15" width="405" height="400" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="217.0" y="48.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">In series: voltages add</text>
+<text x="217.0" y="68.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">+ of one to − of the next</text>
+<ellipse cx="132.5" cy="265.0" rx="98.5" ry="9.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="40.0,170.0 190.0,170.0 225.0,147.5 75.0,147.5" fill="#6c737e"/>
+<rect x="40.0" y="170.0" width="150.0" height="90.0" fill="#2d3748"/>
+<rect x="40.0" y="170.0" width="150.0" height="90.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="190.0,260.0 190.0,170.0 225.0,147.5 225.0,237.5" fill="#181e27"/>
+<rect x="58" y="156" width="22" height="14" rx="3" fill="#e53e3e"/>
+<rect x="148" y="156" width="22" height="14" rx="3" fill="#1a1a1a" stroke="#cbd5e0" stroke-opacity="0.6"/>
+<text x="69.0" y="152.0" font-size="14" fill="#fc8181" text-anchor="middle" font-weight="bold">+</text>
+<text x="159.0" y="152.0" font-size="14" fill="#90cdf4" text-anchor="middle" font-weight="bold">−</text>
+<text x="115.0" y="214.0" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">12 V</text>
+<text x="115.0" y="234.0" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="normal">20 Ah</text>
+<ellipse cx="322.5" cy="265.0" rx="98.5" ry="9.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="230.0,170.0 380.0,170.0 415.0,147.5 265.0,147.5" fill="#6c737e"/>
+<rect x="230.0" y="170.0" width="150.0" height="90.0" fill="#2d3748"/>
+<rect x="230.0" y="170.0" width="150.0" height="90.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="380.0,260.0 380.0,170.0 415.0,147.5 415.0,237.5" fill="#181e27"/>
+<rect x="248" y="156" width="22" height="14" rx="3" fill="#e53e3e"/>
+<rect x="338" y="156" width="22" height="14" rx="3" fill="#1a1a1a" stroke="#cbd5e0" stroke-opacity="0.6"/>
+<text x="259.0" y="152.0" font-size="14" fill="#fc8181" text-anchor="middle" font-weight="bold">+</text>
+<text x="349.0" y="152.0" font-size="14" fill="#90cdf4" text-anchor="middle" font-weight="bold">−</text>
+<text x="305.0" y="214.0" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">12 V</text>
+<text x="305.0" y="234.0" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="normal">20 Ah</text>
+<polyline points="158,157 158,130 269,130 269,157" fill="none" stroke="#3a1d0c" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="158,157 158,130 269,130 269,157" fill="none" stroke="#b8673a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="158,157 158,130 269,130 269,157" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<rect x="117.0" y="318.0" width="200" height="44" rx="22.0" fill="#d97706"/>
+<rect x="117.0" y="318.0" width="200" height="44" rx="22.0" fill="url(#gloss)"/>
+<text x="217.0" y="346.5" font-size="18" fill="#1a1a1a" text-anchor="middle" font-weight="bold">24 V, 20 Ah</text>
+<text x="217.0" y="384.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">twice the push, same charge to deliver</text>
+<text x="642.0" y="48.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">In parallel: capacities add</text>
+<text x="642.0" y="68.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">+ to +, − to −</text>
+<ellipse cx="557.5" cy="265.0" rx="98.5" ry="9.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="465.0,170.0 615.0,170.0 650.0,147.5 500.0,147.5" fill="#6c737e"/>
+<rect x="465.0" y="170.0" width="150.0" height="90.0" fill="#2d3748"/>
+<rect x="465.0" y="170.0" width="150.0" height="90.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="615.0,260.0 615.0,170.0 650.0,147.5 650.0,237.5" fill="#181e27"/>
+<rect x="483" y="156" width="22" height="14" rx="3" fill="#e53e3e"/>
+<rect x="573" y="156" width="22" height="14" rx="3" fill="#1a1a1a" stroke="#cbd5e0" stroke-opacity="0.6"/>
+<text x="494.0" y="152.0" font-size="14" fill="#fc8181" text-anchor="middle" font-weight="bold">+</text>
+<text x="584.0" y="152.0" font-size="14" fill="#90cdf4" text-anchor="middle" font-weight="bold">−</text>
+<text x="540.0" y="214.0" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">12 V</text>
+<text x="540.0" y="234.0" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="normal">20 Ah</text>
+<ellipse cx="747.5" cy="265.0" rx="98.5" ry="9.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="655.0,170.0 805.0,170.0 840.0,147.5 690.0,147.5" fill="#6c737e"/>
+<rect x="655.0" y="170.0" width="150.0" height="90.0" fill="#2d3748"/>
+<rect x="655.0" y="170.0" width="150.0" height="90.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="805.0,260.0 805.0,170.0 840.0,147.5 840.0,237.5" fill="#181e27"/>
+<rect x="673" y="156" width="22" height="14" rx="3" fill="#e53e3e"/>
+<rect x="763" y="156" width="22" height="14" rx="3" fill="#1a1a1a" stroke="#cbd5e0" stroke-opacity="0.6"/>
+<text x="684.0" y="152.0" font-size="14" fill="#fc8181" text-anchor="middle" font-weight="bold">+</text>
+<text x="774.0" y="152.0" font-size="14" fill="#90cdf4" text-anchor="middle" font-weight="bold">−</text>
+<text x="730.0" y="214.0" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">12 V</text>
+<text x="730.0" y="234.0" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="normal">20 Ah</text>
+<polyline points="494,157 494,118 684,118 684,157" fill="none" stroke="#3a1d0c" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="494,157 494,118 684,118 684,157" fill="none" stroke="#b8673a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="494,157 494,118 684,118 684,157" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<polyline points="584,157 584,136 774,136 774,157" fill="none" stroke="#3a1d0c" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="584,157 584,136 774,136 774,157" fill="none" stroke="#b8673a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="584,157 584,136 774,136 774,157" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<rect x="542.0" y="318.0" width="200" height="44" rx="22.0" fill="#2f855a"/>
+<rect x="542.0" y="318.0" width="200" height="44" rx="22.0" fill="url(#gloss)"/>
+<text x="642.0" y="346.5" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">12 V, 40 Ah</text>
+<text x="642.0" y="384.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">same push, twice the charge (and current available)</text>
+</svg>

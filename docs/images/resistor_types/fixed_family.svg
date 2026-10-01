@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" width="880" height="520" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Five kinds of fixed resistor, each with a window cut into its body: carbon composition, a solid slug of carbon and binder; carbon film, a spiral-cut carbon film on a ceramic rod; metal film, a finer spiral in a metal film; wire-wound, resistance wire wound on a ceramic core; and a surface-mount chip marked 472, meaning 4.7 kilohms.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="comp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4f3a25"/><stop offset="0.22" stop-color="#b6a492"/><stop offset="0.5" stop-color="#7b5a3a"/><stop offset="1" stop-color="#312417"/></linearGradient><linearGradient id="cfilm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8d7454"/><stop offset="0.22" stop-color="#ead5ba"/><stop offset="0.5" stop-color="#d9b382"/><stop offset="1" stop-color="#564734"/></linearGradient><linearGradient id="mfilm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#264876"/><stop offset="0.22" stop-color="#93afd6"/><stop offset="0.5" stop-color="#3b6fb6"/><stop offset="1" stop-color="#172c48"/></linearGradient><linearGradient id="ceramic" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#92969c"/><stop offset="0.22" stop-color="#eff2f6"/><stop offset="0.5" stop-color="#e2e8f0"/><stop offset="1" stop-color="#5a5c60"/></linearGradient><linearGradient id="cutcore" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a0a2a3"/><stop offset="0.22" stop-color="#fafcfd"/><stop offset="0.5" stop-color="#f7fafc"/><stop offset="1" stop-color="#626464"/></linearGradient></defs>
+<rect x="15" y="15" width="850" height="490" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="440.0" y="46.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Fixed resistors: what's inside each kind</text>
+<rect x="50" y="108" width="40" height="4" fill="#cbd5e0"/>
+<rect x="290" y="108" width="40" height="4" fill="#cbd5e0"/>
+<rect x="90" y="90" width="200" height="40" rx="20" fill="url(#comp)"/>
+<rect x="160" y="94" width="80" height="32" fill="#4a3424"/>
+<circle cx="164" cy="100" r="1.6" fill="#1a1a1a"/>
+<circle cx="201" cy="113" r="1.6" fill="#1a1a1a"/>
+<circle cx="238" cy="106" r="1.6" fill="#1a1a1a"/>
+<circle cx="195" cy="119" r="1.6" fill="#1a1a1a"/>
+<circle cx="232" cy="112" r="1.6" fill="#1a1a1a"/>
+<circle cx="189" cy="105" r="1.6" fill="#1a1a1a"/>
+<circle cx="226" cy="118" r="1.6" fill="#1a1a1a"/>
+<circle cx="183" cy="111" r="1.6" fill="#1a1a1a"/>
+<circle cx="220" cy="104" r="1.6" fill="#1a1a1a"/>
+<circle cx="177" cy="117" r="1.6" fill="#1a1a1a"/>
+<circle cx="214" cy="110" r="1.6" fill="#1a1a1a"/>
+<circle cx="171" cy="103" r="1.6" fill="#1a1a1a"/>
+<circle cx="208" cy="116" r="1.6" fill="#1a1a1a"/>
+<circle cx="165" cy="109" r="1.6" fill="#1a1a1a"/>
+<circle cx="202" cy="102" r="1.6" fill="#1a1a1a"/>
+<circle cx="239" cy="115" r="1.6" fill="#1a1a1a"/>
+<circle cx="196" cy="108" r="1.6" fill="#1a1a1a"/>
+<circle cx="233" cy="101" r="1.6" fill="#1a1a1a"/>
+<circle cx="190" cy="114" r="1.6" fill="#1a1a1a"/>
+<circle cx="227" cy="107" r="1.6" fill="#1a1a1a"/>
+<rect x="160" y="94" width="80" height="32" fill="none" stroke="#f59e0b" stroke-dasharray="3 3"/>
+<text x="380.0" y="106.0" font-size="15" fill="#fbbf24" text-anchor="start" font-weight="bold">Carbon composition</text>
+<text x="380.0" y="126.0" font-size="12" fill="#e6e6e6" text-anchor="start" font-weight="normal">a solid slug of carbon powder and binder</text>
+<rect x="50" y="190" width="40" height="4" fill="#cbd5e0"/>
+<rect x="290" y="190" width="40" height="4" fill="#cbd5e0"/>
+<rect x="90" y="172" width="200" height="40" rx="20" fill="url(#cfilm)"/>
+<rect x="160" y="176" width="80" height="32" fill="url(#cutcore)"/>
+<line x1="160" y1="177" x2="166.0" y2="207" stroke="#3a2a12" stroke-width="5.5"/>
+<line x1="170" y1="177" x2="176.0" y2="207" stroke="#3a2a12" stroke-width="5.5"/>
+<line x1="180" y1="177" x2="186.0" y2="207" stroke="#3a2a12" stroke-width="5.5"/>
+<line x1="190" y1="177" x2="196.0" y2="207" stroke="#3a2a12" stroke-width="5.5"/>
+<line x1="200" y1="177" x2="206.0" y2="207" stroke="#3a2a12" stroke-width="5.5"/>
+<line x1="210" y1="177" x2="216.0" y2="207" stroke="#3a2a12" stroke-width="5.5"/>
+<line x1="220" y1="177" x2="226.0" y2="207" stroke="#3a2a12" stroke-width="5.5"/>
+<line x1="230" y1="177" x2="236.0" y2="207" stroke="#3a2a12" stroke-width="5.5"/>
+<rect x="160" y="176" width="80" height="32" fill="none" stroke="#f59e0b" stroke-dasharray="3 3"/>
+<text x="380.0" y="188.0" font-size="15" fill="#fbbf24" text-anchor="start" font-weight="bold">Carbon film</text>
+<text x="380.0" y="208.0" font-size="12" fill="#e6e6e6" text-anchor="start" font-weight="normal">a thin carbon film, spiral-cut to set the value</text>
+<rect x="50" y="272" width="40" height="4" fill="#cbd5e0"/>
+<rect x="290" y="272" width="40" height="4" fill="#cbd5e0"/>
+<rect x="90" y="254" width="200" height="40" rx="20" fill="url(#mfilm)"/>
+<rect x="160" y="258" width="80" height="32" fill="url(#cutcore)"/>
+<line x1="160" y1="259" x2="163.6" y2="289" stroke="#0d2340" stroke-width="3.3"/>
+<line x1="166" y1="259" x2="169.6" y2="289" stroke="#0d2340" stroke-width="3.3"/>
+<line x1="172" y1="259" x2="175.6" y2="289" stroke="#0d2340" stroke-width="3.3"/>
+<line x1="178" y1="259" x2="181.6" y2="289" stroke="#0d2340" stroke-width="3.3"/>
+<line x1="184" y1="259" x2="187.6" y2="289" stroke="#0d2340" stroke-width="3.3"/>
+<line x1="190" y1="259" x2="193.6" y2="289" stroke="#0d2340" stroke-width="3.3"/>
+<line x1="196" y1="259" x2="199.6" y2="289" stroke="#0d2340" stroke-width="3.3"/>
+<line x1="202" y1="259" x2="205.6" y2="289" stroke="#0d2340" stroke-width="3.3"/>
+<line x1="208" y1="259" x2="211.6" y2="289" stroke="#0d2340" stroke-width="3.3"/>
+<line x1="214" y1="259" x2="217.6" y2="289" stroke="#0d2340" stroke-width="3.3"/>
+<line x1="220" y1="259" x2="223.6" y2="289" stroke="#0d2340" stroke-width="3.3"/>
+<line x1="226" y1="259" x2="229.6" y2="289" stroke="#0d2340" stroke-width="3.3"/>
+<line x1="232" y1="259" x2="235.6" y2="289" stroke="#0d2340" stroke-width="3.3"/>
+<rect x="160" y="258" width="80" height="32" fill="none" stroke="#f59e0b" stroke-dasharray="3 3"/>
+<text x="380.0" y="270.0" font-size="15" fill="#fbbf24" text-anchor="start" font-weight="bold">Metal film</text>
+<text x="380.0" y="290.0" font-size="12" fill="#e6e6e6" text-anchor="start" font-weight="normal">a thin metal film, finer spiral, tighter tolerance</text>
+<rect x="50" y="354" width="40" height="4" fill="#cbd5e0"/>
+<rect x="290" y="354" width="40" height="4" fill="#cbd5e0"/>
+<rect x="90" y="336" width="200" height="40" rx="20" fill="url(#ceramic)"/>
+<rect x="160" y="340" width="80" height="32" fill="url(#cutcore)"/>
+<line x1="164" y1="341" x2="168" y2="371" stroke="#b8673a" stroke-width="2.5"/>
+<line x1="171" y1="341" x2="175" y2="371" stroke="#b8673a" stroke-width="2.5"/>
+<line x1="178" y1="341" x2="182" y2="371" stroke="#b8673a" stroke-width="2.5"/>
+<line x1="185" y1="341" x2="189" y2="371" stroke="#b8673a" stroke-width="2.5"/>
+<line x1="192" y1="341" x2="196" y2="371" stroke="#b8673a" stroke-width="2.5"/>
+<line x1="199" y1="341" x2="203" y2="371" stroke="#b8673a" stroke-width="2.5"/>
+<line x1="206" y1="341" x2="210" y2="371" stroke="#b8673a" stroke-width="2.5"/>
+<line x1="213" y1="341" x2="217" y2="371" stroke="#b8673a" stroke-width="2.5"/>
+<line x1="220" y1="341" x2="224" y2="371" stroke="#b8673a" stroke-width="2.5"/>
+<line x1="227" y1="341" x2="231" y2="371" stroke="#b8673a" stroke-width="2.5"/>
+<line x1="234" y1="341" x2="238" y2="371" stroke="#b8673a" stroke-width="2.5"/>
+<rect x="160" y="340" width="80" height="32" fill="none" stroke="#f59e0b" stroke-dasharray="3 3"/>
+<text x="380.0" y="352.0" font-size="15" fill="#fbbf24" text-anchor="start" font-weight="bold">Wire-wound</text>
+<text x="380.0" y="372.0" font-size="12" fill="#e6e6e6" text-anchor="start" font-weight="normal">resistance wire wound on a ceramic core</text>
+<polygon points="140.0,426.0 230.0,426.0 251.0,412.5 161.0,412.5" fill="#64676c"/>
+<rect x="140.0" y="426.0" width="90.0" height="18.0" fill="#22262e"/>
+<rect x="140.0" y="426.0" width="90.0" height="18.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="230.0,444.0 230.0,426.0 251.0,412.5 251.0,430.5" fill="#121419"/>
+<polygon points="140.0,426.0 156.0,426.0 177.0,412.5 161.0,412.5" fill="#dae1e9"/>
+<rect x="140.0" y="426.0" width="16.0" height="18.0" fill="#cbd5e0"/>
+<rect x="140.0" y="426.0" width="16.0" height="18.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="156.0,444.0 156.0,426.0 177.0,412.5 177.0,430.5" fill="#6f757b"/>
+<polygon points="214.0,426.0 230.0,426.0 251.0,412.5 235.0,412.5" fill="#dae1e9"/>
+<rect x="214.0" y="426.0" width="16.0" height="18.0" fill="#cbd5e0"/>
+<rect x="214.0" y="426.0" width="16.0" height="18.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="230.0,444.0 230.0,426.0 251.0,412.5 251.0,430.5" fill="#6f757b"/>
+<text x="185.0" y="432.0" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="bold">472</text>
+<text x="380.0" y="426.0" font-size="15" fill="#fbbf24" text-anchor="start" font-weight="bold">Surface-mount chip (thick or thin film)</text>
+<text x="380.0" y="446.0" font-size="12" fill="#e6e6e6" text-anchor="start" font-weight="normal">a film printed on a ceramic chip; marked with a short code (472 = 4.7 kΩ)</text>
+<text x="440.0" y="490.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">dashed windows: the body cut open</text>
+</svg>

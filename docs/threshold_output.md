@@ -7,53 +7,38 @@ description: "Turn one sensor reading into staged, at-a-glance output. Wire thre
 # Building a Threshold Ladder
 
 !!! abstract "Intermediate"
-    This article is in the **Microcontrollers** topic and follows [Reading an Analog Sensor](analog_input.md) directly — same circuit, same sensor, same formula. It assumes you're comfortable wiring a breadboard, reading a schematic, and the `analogRead()`/ADC material from the previous article.
+    This article is in the **Microcontrollers** topic and follows [Reading an Analog Sensor](analog_input.md) directly: same circuit, same sensor, same formula. It assumes you're comfortable wiring a breadboard, reading a schematic, and the `analogRead()`/ADC material from the previous article.
 
-[Reading an Analog Sensor](analog_input.md) got you a live temperature in the Serial Monitor. That's fine while you're sitting at a laptop watching it — useless the moment you close the lid and walk away. Nobody tails a serial console all day waiting for a closet to overheat. What you actually want is the circuit itself telling you, at a glance, whether things are fine, getting warm, or a problem.
+[Reading an Analog Sensor](analog_input.md) produced a live temperature in the Serial Monitor. That works while someone sits at a laptop watching it, and stops working the moment the lid closes. What a closet monitor needs is the circuit itself saying, at a glance, whether things are fine, getting warm, or a problem.
 
-This article extends the exact same circuit with three LEDs and turns one continuous number into staged, physical output: nothing lit means normal, one LED means it's drifting, three means go check on it now.
+This article adds three LEDs to the same circuit and turns one continuous number into staged, physical output: nothing lit means normal, one LED means it's drifting, three means go and check now.
 
 ---
 
-## Where You've Seen This
+## Where You Might Have Seen This
 
-You already think in staged severity — you just haven't wired it to an LED before.
+Staged severity is everywhere in everyday technology:
 
-- **A phone's battery icon** — full, then yellow, then red as charge drops — is the same idea as this article's zero-to-three LEDs: more visual signal as things get more serious, not a single on/off flag.
-- **A car's temperature or fuel gauge** — a needle moving through colored zones (blue/normal/red, or normal/reserve) — bands a continuous reading the same way this circuit bands a temperature range into "stage 0" through "stage 3."
-- **A video game health bar** — segments that empty in visible chunks, not a smooth fade — the same staged-not-continuous instinct behind lighting one, two, or three LEDs instead of dimming a single one.
+- **A phone's battery icon** steps from full to yellow to red as the charge drops: more signal as things get more serious, rather than a single on/off flag.
+- **A car's temperature gauge** sweeps a needle through coloured zones, banding a continuous reading exactly as this circuit bands a temperature into stages 0 to 3.
+- **A video game health bar** empties in visible chunks rather than a smooth fade, the same instinct behind lighting one, two, or three LEDs instead of dimming one.
 
-The electronics is new; the pattern of turning a continuous signal into discrete, actionable bands is not — you've been reading bands like this off a screen for years.
+The electronics is new; turning a continuous signal into discrete, actionable bands is a pattern most people already read without thinking.
 
 ---
 
 ## Why Relative, Not Absolute
 
-A tempting first design: pick a fixed temperature — say 26°C — and light an LED above it. Don't. A fixed threshold assumes you know the "normal" temperature of every room you'll ever put this in, and a closet in July isn't the same baseline as one in January.
+A tempting first design is to pick a fixed temperature, say 26°C, and light an LED above it. The trouble is that "normal" differs from one space to the next: a closet with a charger running in it may sit at 26°C all day and be perfectly fine.
 
-The sketch below instead measures a **baseline** once — the normal reading from [Reading an Analog Sensor](analog_input.md) with nothing wrong — and stages its output relative to *that*, not to an assumed constant. It's the same reasoning behind how a fever gets judged: 98.6°F (37°C) is an average, not a hard cutoff — someone whose normal resting temperature runs a degree warm isn't sick at that same number. "Above your own baseline" is the meaningful threshold, not a fixed constant that ignores where you started.
+The sketch below starts from a **baseline** instead: the normal reading you measured in [Reading an Analog Sensor](analog_input.md), with nothing wrong. It stages its output by how far the temperature has climbed above *that*. A fever is judged the same way: 37°C is an average, and someone whose normal runs a little warm isn't ill at the same number. (A baseline typed into the code still won't follow the seasons; practice problem 4 has the sketch measure its own baseline at power-up.)
 
-``` mermaid
-graph TD
-    R["Current reading"]
-    R --> Q1{"≥ baseline + 8?"}
-    Q1 -->|yes| S3["Stage 3\nall 3 LEDs"]
-    Q1 -->|no| Q2{"≥ baseline + 6?"}
-    Q2 -->|yes| S2["Stage 2\n2 LEDs"]
-    Q2 -->|no| Q3{"≥ baseline + 4?"}
-    Q3 -->|yes| S1["Stage 1\n1 LED"]
-    Q3 -->|no| S0["Stage 0\nall off"]
+<figure markdown>
+  ![A 3D staircase of four stages above a 20 degree baseline: below 24 degrees all three LEDs are off, 24 to 26 lights one, 26 to 28 lights two, 28 and up lights all three. An arrow shows the sketch testing the lowest band first.](images/threshold_output/threshold_ladder.svg){ width="720" }
+  <figcaption>The sketch checks from the bottom up, and the first band that matches decides how many LEDs light.</figcaption>
+</figure>
 
-    classDef std fill:#2d3748,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef hl fill:#d97706,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    classDef danger fill:#c53030,stroke:#cbd5e0,stroke-width:2px,color:#fff
-    class R hl
-    class Q1,Q2,Q3 std
-    class S0,S1,S2 std
-    class S3 danger
-```
-
-Each `else if` only runs when every band above it has already failed — that's what keeps the ladder from ever lighting the wrong stage. Get the order backwards and every reading trips the lowest band it matches first, which is *not* the one you want.
+Each `else if` runs only when every test before it has failed, which is what keeps the ladder from lighting the wrong stage. Because each test is "less than", the order matters: check the widest band first and every cool reading matches it immediately.
 
 ---
 
@@ -61,7 +46,7 @@ Each `else if` only runs when every band above it has already failed — that's 
 
 <figure markdown>
   ![The same Arduino and MCP9700A breadboard from the previous article, with three red LEDs wired to pins 4, 5, and 6 through their own resistors.](images/temp_sensor_circuit.jpg){ width="600" }
-  <figcaption>The same board from [Reading an Analog Sensor](analog_input.md) — the three LEDs on pins D4, D5, and D6 that were sitting unused are what this article's code drives.</figcaption>
+  <figcaption>The same board from [Reading an Analog Sensor](analog_input.md): the three LEDs on pins D4, D5, and D6 that sat unused there are what this article's code drives.</figcaption>
 </figure>
 
 <figure markdown>
@@ -69,7 +54,7 @@ Each `else if` only runs when every band above it has already failed — that's 
   <figcaption>Three independent LED branches, each a familiar pin → resistor → LED → ground path from Digital Pins, sharing the breadboard with the unchanged MCP9700A wiring.</figcaption>
 </figure>
 
-Each LED branch is exactly the output circuit from [Digital Pins](digital_io.md) — nothing new there. What's new is that three of them exist side by side, addressed individually in code.
+Each LED branch is the output circuit from [Digital Pins](digital_io.md). What's new is three of them side by side, each controlled separately in code.
 
 ---
 
@@ -118,24 +103,24 @@ void loop() {
 }
 ```
 
-1. Set this to whatever your sensor reported as "normal" in [Reading an Analog Sensor](analog_input.md) — measure your own room, don't reuse this number blind.
-2. The three LED pins are consecutive (4, 5, 6), so a loop configures all of them in three lines instead of one `pinMode()`/`digitalWrite()` pair repeated three times. This is the same instinct as replacing three near-identical function calls with a loop over a list — same job, less to get wrong when you change it later.
+1. Set this to what your sensor reported as "normal" in [Reading an Analog Sensor](analog_input.md). Measure your own space rather than reusing this number.
+2. The three LED pins are consecutive (4, 5, 6), so a `for` loop configures all of them instead of three repeated `pinMode()`/`digitalWrite()` pairs. Same job, and less to get wrong when you change it later.
 3. Each `else if` only evaluates once every band above it has failed, so a reading of `baseline + 9` correctly falls into the final `else`, not the first band it happens to satisfy.
-4. Notice this only tests an upper bound (`< baselineTemp + 6`) and not a lower one — the fact that it's an `else if` already guarantees the reading is at least `baselineTemp + 4`, from the branch above failing. Testing that again would be redundant.
+4. This tests only an upper bound (`< baselineTemp + 6`). Being an `else if` already guarantees the reading is at least `baselineTemp + 4`, because the branch above failed.
 
 ---
 
 ## Verifying It Works
 
-Power the circuit and let it settle for a few seconds — all three LEDs should be off if the room is near the baseline you measured. Warm the sensor gradually (cup a hand loosely around it, don't touch it directly) and watch the LEDs light in order: one, then two, then all three, as the reading climbs through each band. Let go and they should drop back down the same way, in reverse.
+Power the circuit and let it settle for a few seconds: all three LEDs should be off if the room is near the baseline you measured. Warm the sensor gradually by cupping a hand loosely around it, and watch the LEDs light in order (one, two, then three) as the reading climbs through each band. Take your hand away and they go out in reverse.
 
-??? note "Troubleshooting"
+??? warning "Troubleshooting"
 
-    **All three LEDs light immediately, even at rest** — `baselineTemp` is probably set too low for your actual room. Rerun [Reading an Analog Sensor](analog_input.md)'s sketch, note the resting value, and update the constant.
+    **All three LEDs light immediately, even at rest:** `baselineTemp` is probably set too low for your room. Rerun [Reading an Analog Sensor](analog_input.md)'s sketch, note the resting value, and update the constant.
 
-    **LEDs light out of order (e.g. only the third one)** — check the `else if` chain is intact and hasn't been rewritten as three separate `if` statements. Separate `if`s each evaluate independently, so a hot reading would satisfy all four conditions and every `digitalWrite()` after the first would just override the last — the wiring is fine, the logic isn't.
+    **The wrong number of LEDs lights:** check that the `else if` chain is intact and hasn't been rewritten as separate `if` statements. Separate `if`s each run independently, so a cool reading satisfies every `<` test and the last block to run decides what lights. The wiring is fine; the logic isn't.
 
-    **One LED never lights** — isolate it: move it to a pin you know works (say, swap it with LED 1's wiring) and retest. A dead LED or a bad resistor connection is more common than a code bug at this stage.
+    **One LED never lights:** isolate it. Swap its wiring with LED 1's and retest. A dead LED or a bad resistor connection is more common than a code bug at this stage.
 
 ---
 
@@ -147,7 +132,7 @@ Power the circuit and let it settle for a few seconds — all three LEDs should 
 
     ??? tip "Solution"
 
-        Stage 2's LEDs (pins 4 and 5) light, which is wrong. `baselineTemp + 2` satisfies `< baselineTemp + 8` — that condition was only ever meant to mean "below +8 *and* everything above +6 already failed," but moved to the front of the chain, it just means "below +8," full stop, and a merely-normal reading matches it immediately. Each `<` condition was written assuming the bands above it get checked first; reordering breaks that assumption without changing a single number.
+        Stage 2's LEDs (pins 4 and 5) light, which is wrong. `baselineTemp + 2` satisfies `< baselineTemp + 8`. That condition was written to mean "below +8 *and* the earlier tests failed"; moved to the front of the chain it just means "below +8," and a normal reading matches it immediately. Each `<` condition was written assuming the bands above it get checked first; reordering breaks that assumption without changing a single number.
 
 ??? question "2. The bug in separate ifs"
 
@@ -155,15 +140,40 @@ Power the circuit and let it settle for a few seconds — all three LEDs should 
 
     ??? tip "Solution"
 
-        All three conditions are true simultaneously, so all three blocks run in sequence — the last one (`digitalWrite` for stage 3) executes last and wins, since each block unconditionally sets every pin. In this specific case the *end result* happens to be correct, but the circuit briefly commands overlapping states and does extra comparisons every loop for no benefit. It becomes a real correctness trap the moment a block doesn't set every pin — if a later block only changed one pin instead of all three, you'd see a stale state bleed through from an earlier block that already ran.
+        All three conditions are true at once, so all three blocks run in sequence, and the stage 3 block runs last and wins, because each block sets every pin. Here the *end result* happens to be correct, but only because of the order the blocks are written in. It becomes a real bug the moment a block doesn't set every pin: a stale state from an earlier block bleeds through.
 
 ??? question "3. Extending the ladder"
 
-    You want a fourth stage — an additional LED that lights only when the temperature is 12°C or more above baseline. What has to change, both in wiring and code?
+    You want a fourth stage: an extra LED that lights only when the temperature is 12°C or more above baseline. What has to change, both in wiring and code?
 
     ??? tip "Solution"
 
         Wiring: a fourth LED-and-resistor branch on a new digital pin (e.g. D7), following the same pin → resistor → LED → ground pattern. Code: extend the `for` loop's range to include the new pin, add a fourth `digitalWrite()` to every existing branch (LOW everywhere except its own band), and insert one more `else if (temperature < baselineTemp + 12)` before the final `else`.
+
+??? question "4. A baseline that measures itself"
+
+    The sketch's `baselineTemp` is a number you typed in, so it won't follow a closet that runs warmer in July than in January. How could the sketch set its own baseline each time it powers up?
+
+    ??? tip "Solution"
+
+        Read the sensor in `setup()`, which runs once at power-up, and use that as the baseline. Averaging several readings smooths out the ADC's half-degree steps:
+
+        ``` cpp title="Measure the baseline at power-up" linenums="1"
+        float baselineTemp;   // no longer a fixed constant
+
+        void setup() {
+          float total = 0;
+          for (int i = 0; i < 20; i++) {
+            float voltage = (analogRead(A0) / 1024.0) * 5.0;
+            total += (voltage - 0.5) * 100;
+            delay(50);
+          }
+          baselineTemp = total / 20;   // average of 20 readings over one second
+          // ...then the pinMode() loop as before
+        }
+        ```
+
+        The catch: the sketch now assumes everything is normal at the moment it powers up. Reset it while the closet is already overheating and it adopts that as normal.
 
 ---
 
@@ -181,7 +191,7 @@ Power the circuit and let it settle for a few seconds — all three LEDs should 
 
     ---
 
-    Measure "normal" for your specific location and stage output relative to it — the same reasoning behind judging a fever against your own baseline temperature, not a fixed number.
+    Measure "normal" for your location and stage output relative to it, the way a fever is judged against a person's own normal temperature.
 
 -   **Order Matters in a Ladder**
 
@@ -193,7 +203,7 @@ Power the circuit and let it settle for a few seconds — all three LEDs should 
 
     ---
 
-    A single continuous reading becomes discrete, at-a-glance severity — the same instinct behind a battery icon, a fuel gauge, or a game's health bar.
+    A single continuous reading becomes discrete, at-a-glance severity, like a battery icon or a game's health bar.
 
 </div>
 
@@ -201,7 +211,9 @@ Power the circuit and let it settle for a few seconds — all three LEDs should 
 
 ## What's Next
 
-A continuous sensor reading, converted, and staged into physical output — this pattern (read something analog, band it, act on the band) shows up constantly in embedded work, well beyond LEDs and temperature. The two building blocks underneath it, `analogRead()`'s ADC and multi-pin `OUTPUT` control, are now both in your toolkit.
+Read something analog, band it, act on the band: the pattern turns up constantly in embedded work, well beyond LEDs and temperature, and both of its building blocks (`analogRead()` and multi-pin output) are now in your toolkit.
+
+This is the last Microcontrollers article so far. A monitor in a closet eventually needs to run without a USB cable, and **[Cells and Batteries](batteries.md)** covers what it takes to power a project on its own.
 
 ---
 

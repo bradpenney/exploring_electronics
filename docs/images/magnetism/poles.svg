@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 380" width="820" height="380" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Two pairs of bar magnets. Left: a north pole facing a south pole, with field lines running straight across the gap, pulling them together. Right: a south pole facing a south pole, with field lines bending away from each other, pushing them apart.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="385" height="350" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="420" y="15" width="385" height="350" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="207.0" y="48.0" font-size="16" fill="#48bb78" text-anchor="middle" font-weight="bold">Unlike poles attract</text>
+<ellipse cx="85.5" cy="225.0" rx="51.5" ry="5.4" fill="#000" fill-opacity="0.4"/>
+<polygon points="40.0,174.0 110.0,174.0 131.0,160.5 61.0,160.5" fill="#ec7777"/>
+<rect x="40.0" y="174.0" width="70.0" height="46.0" fill="#e53e3e"/>
+<rect x="40.0" y="174.0" width="70.0" height="46.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="110.0,220.0 110.0,174.0 131.0,160.5 131.0,206.5" fill="#7d2222"/>
+<polygon points="110.0,174.0 180.0,174.0 201.0,160.5 131.0,160.5" fill="#6ea7dc"/>
+<rect x="110.0" y="174.0" width="70.0" height="46.0" fill="#3182ce"/>
+<rect x="110.0" y="174.0" width="70.0" height="46.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="180.0,220.0 180.0,174.0 201.0,160.5 201.0,206.5" fill="#1a4771"/>
+<text x="75.0" y="204.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">N</text>
+<text x="145.0" y="204.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">S</text>
+<ellipse cx="277.5" cy="225.0" rx="51.5" ry="5.4" fill="#000" fill-opacity="0.4"/>
+<polygon points="232.0,174.0 302.0,174.0 323.0,160.5 253.0,160.5" fill="#ec7777"/>
+<rect x="232.0" y="174.0" width="70.0" height="46.0" fill="#e53e3e"/>
+<rect x="232.0" y="174.0" width="70.0" height="46.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="302.0,220.0 302.0,174.0 323.0,160.5 323.0,206.5" fill="#7d2222"/>
+<polygon points="302.0,174.0 372.0,174.0 393.0,160.5 323.0,160.5" fill="#6ea7dc"/>
+<rect x="302.0" y="174.0" width="70.0" height="46.0" fill="#3182ce"/>
+<rect x="302.0" y="174.0" width="70.0" height="46.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="372.0,220.0 372.0,174.0 393.0,160.5 393.0,206.5" fill="#1a4771"/>
+<text x="267.0" y="204.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">N</text>
+<text x="337.0" y="204.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">S</text>
+<line x1="180" y1="167" x2="232" y2="167" stroke="#90cdf4" stroke-width="2"/>
+<line x1="180" y1="182" x2="232" y2="182" stroke="#90cdf4" stroke-width="2"/>
+<line x1="180" y1="197" x2="232" y2="197" stroke="#90cdf4" stroke-width="2"/>
+<line x1="180" y1="212" x2="232" y2="212" stroke="#90cdf4" stroke-width="2"/>
+<line x1="180" y1="227" x2="232" y2="227" stroke="#90cdf4" stroke-width="2"/>
+<text x="207.0" y="290.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">N faces S: lines run straight across</text>
+<text x="207.0" y="310.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">and pull the magnets together</text>
+<text x="612.0" y="48.0" font-size="16" fill="#fc8181" text-anchor="middle" font-weight="bold">Like poles repel</text>
+<ellipse cx="485.5" cy="225.0" rx="51.5" ry="5.4" fill="#000" fill-opacity="0.4"/>
+<polygon points="440.0,174.0 510.0,174.0 531.0,160.5 461.0,160.5" fill="#ec7777"/>
+<rect x="440.0" y="174.0" width="70.0" height="46.0" fill="#e53e3e"/>
+<rect x="440.0" y="174.0" width="70.0" height="46.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="510.0,220.0 510.0,174.0 531.0,160.5 531.0,206.5" fill="#7d2222"/>
+<polygon points="510.0,174.0 580.0,174.0 601.0,160.5 531.0,160.5" fill="#6ea7dc"/>
+<rect x="510.0" y="174.0" width="70.0" height="46.0" fill="#3182ce"/>
+<rect x="510.0" y="174.0" width="70.0" height="46.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="580.0,220.0 580.0,174.0 601.0,160.5 601.0,206.5" fill="#1a4771"/>
+<text x="475.0" y="204.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">N</text>
+<text x="545.0" y="204.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">S</text>
+<ellipse cx="682.5" cy="225.0" rx="51.5" ry="5.4" fill="#000" fill-opacity="0.4"/>
+<polygon points="637.0,174.0 707.0,174.0 728.0,160.5 658.0,160.5" fill="#6ea7dc"/>
+<rect x="637.0" y="174.0" width="70.0" height="46.0" fill="#3182ce"/>
+<rect x="637.0" y="174.0" width="70.0" height="46.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="707.0,220.0 707.0,174.0 728.0,160.5 728.0,206.5" fill="#1a4771"/>
+<polygon points="707.0,174.0 777.0,174.0 798.0,160.5 728.0,160.5" fill="#ec7777"/>
+<rect x="707.0" y="174.0" width="70.0" height="46.0" fill="#e53e3e"/>
+<rect x="707.0" y="174.0" width="70.0" height="46.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="777.0,220.0 777.0,174.0 798.0,160.5 798.0,206.5" fill="#7d2222"/>
+<text x="672.0" y="204.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">S</text>
+<text x="742.0" y="204.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">N</text>
+<path d="M580,191 C600,167 600,137 590,117" fill="none" stroke="#90cdf4" stroke-width="2"/>
+<path d="M637,191 C617,167 617,137 627,117" fill="none" stroke="#90cdf4" stroke-width="2"/>
+<path d="M580,191 C600,153 600,123 590,103" fill="none" stroke="#90cdf4" stroke-width="2"/>
+<path d="M637,191 C617,153 617,123 627,103" fill="none" stroke="#90cdf4" stroke-width="2"/>
+<path d="M580,191 C600,139 600,109 590,89" fill="none" stroke="#90cdf4" stroke-width="2"/>
+<path d="M637,191 C617,139 617,109 627,89" fill="none" stroke="#90cdf4" stroke-width="2"/>
+<path d="M580,203 C600,227 600,257 590,277" fill="none" stroke="#90cdf4" stroke-width="2"/>
+<path d="M637,203 C617,227 617,257 627,277" fill="none" stroke="#90cdf4" stroke-width="2"/>
+<path d="M580,203 C600,241 600,271 590,291" fill="none" stroke="#90cdf4" stroke-width="2"/>
+<path d="M637,203 C617,241 617,271 627,291" fill="none" stroke="#90cdf4" stroke-width="2"/>
+<path d="M580,203 C600,255 600,285 590,305" fill="none" stroke="#90cdf4" stroke-width="2"/>
+<path d="M637,203 C617,255 617,285 627,305" fill="none" stroke="#90cdf4" stroke-width="2"/>
+<text x="612.0" y="310.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">S faces S: lines bend away and push them apart</text>
+</svg>

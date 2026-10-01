@@ -7,9 +7,9 @@ description: "An unconnected input pin floats and reads noise. How pull-up and p
 # Pull-up and Pull-down Resistors
 
 !!! abstract "Beginner"
-    This article follows [Digital Pins](digital_io.md), where the floating-input problem first appears, and it leans on [What Is Electricity?](what_is_electricity.md) for Ohm's Law.
+    This article follows [Digital Pins](digital_io.md), where the floating-input problem first appears, and it uses [Ohm's Law](ohms_law.md) to size the resistor.
 
-A switch on your wall has a spring in it. Let go and it snaps back to a known position — off. Without that spring, the switch would sit wherever you last nudged it, and a draft could flip it either way.
+A doorbell button has a spring in it. Let go and it snaps back to a known position: off. Without that spring the button would sit wherever it was last nudged, and the bell would ring or stay silent more or less at random.
 
 A microcontroller's input pin has no spring. Left to itself, it sits at no particular voltage and drifts on the slightest electrical disturbance. A **pull-up** or **pull-down resistor** is the spring you add yourself: it gives the pin a definite state to rest at, so the only thing that ever changes its reading is the button or sensor you actually wired up.
 
@@ -19,11 +19,11 @@ This article explains why a bare input misbehaves, the two ways to fix it, how t
 
 ## Why a Bare Input Floats
 
-A pin set to INPUT does one thing: it measures the voltage on it and reports HIGH or LOW. It draws almost no current of its own — it just *listens*. That sensitivity is the problem.
+A pin set to INPUT does one thing: it measures the voltage on it and reports HIGH or LOW. It draws almost no current of its own: it just *listens*. That sensitivity is the problem.
 
-A wire connected to nothing still behaves like a tiny antenna. It picks up stray electrical fields from the mains wiring in your walls, from nearby jumper wires, even from your hand moving near it. With nothing holding the pin at a real voltage, those faint signals are all it has to report. Read it and you'll get HIGH, then LOW, then HIGH again — a pin that "reads a button" but changes its mind when no one is touching anything. This drifting, undefined state is called **floating**.
+A wire connected to nothing still behaves like a tiny antenna. It picks up stray electrical fields from the mains wiring in your walls, from nearby jumper wires, even from your hand moving near it. With nothing holding the pin at a real voltage, those faint signals are all it has to report. Read it and you'll get HIGH, then LOW, then HIGH again: a pin that "reads a button" but changes its mind when no one is touching anything. This drifting, undefined state is called **floating**.
 
-A button by itself doesn't fix this. A button only connects two points *while it's pressed*. The rest of the time, the pin on the other side of it is connected to nothing — and floats. To read a button reliably, you need something that holds the pin at a known voltage whenever the button isn't doing it. That something is a resistor.
+A button by itself doesn't fix this. A button only connects two points *while it's pressed*. The rest of the time, the pin on the other side of it is connected to nothing, and floats. To read a button reliably, you need something that holds the pin at a known voltage whenever the button isn't doing it. That something is a resistor.
 
 ---
 
@@ -33,31 +33,31 @@ There are two arrangements, and they are mirror images of each other.
 
 === "Pull-down (rests LOW)"
 
-    A **pull-down resistor** connects the pin to ground. Whenever nothing else is driving the pin, the resistor gently "pulls it down" to 0V, so it reads a steady LOW. Press the button — which connects the pin to 5V — and the pin reads HIGH.
+    A **pull-down resistor** connects the pin to ground. Whenever nothing else is driving the pin, the resistor gently "pulls it down" to 0V, so it reads a steady LOW. Press the button, which connects the pin to 5V, and the pin reads HIGH.
 
     <figure markdown>
       ![Schematic: 5V connects through a pushbutton to a node; that node branches to an input pin labelled D2, and also goes down through a 10 kilohm pull-down resistor to ground.](images/schematics/button_pulldown.svg){ width="360" }
       <figcaption>Pull-down: the resistor ties the pin to ground. Button open → pin reads LOW. Button pressed → pin connects to 5V and reads HIGH.</figcaption>
     </figure>
 
-    - **Button open:** only the pull-down connects the pin to anything — it rests at **LOW**.
-    - **Button pressed:** the button connects the pin to 5V — it reads **HIGH**.
+    - **Button open:** only the pull-down connects the pin to anything, so it rests at **LOW**.
+    - **Button pressed:** the button connects the pin to 5V, so it reads **HIGH**.
 
     The logic reads naturally: pressed means HIGH.
 
 === "Pull-up (rests HIGH)"
 
-    A **pull-up resistor** connects the pin to the supply voltage instead. Whenever nothing else is driving the pin, the resistor "pulls it up" to 5V, so it reads a steady HIGH. Press the button — wired to connect the pin to ground — and the pin reads LOW.
+    A **pull-up resistor** connects the pin to the supply voltage instead. Whenever nothing else is driving the pin, the resistor "pulls it up" to 5V, so it reads a steady HIGH. Press the button, wired to connect the pin to ground, and the pin reads LOW.
 
     <figure markdown>
       ![Schematic: 5V connects through a 10 kilohm pull-up resistor to a node; that node branches to an input pin labelled D2, and also goes down through a pushbutton to ground.](images/schematics/button_pullup.svg){ width="360" }
       <figcaption>Pull-up: the resistor ties the pin to 5V. Button open → pin reads HIGH. Button pressed → pin connects to ground and reads LOW.</figcaption>
     </figure>
 
-    - **Button open:** only the pull-up connects the pin to anything — it rests at **HIGH**.
-    - **Button pressed:** the button connects the pin to ground — it reads **LOW**.
+    - **Button open:** only the pull-up connects the pin to anything, so it rests at **HIGH**.
+    - **Button pressed:** the button connects the pin to ground, so it reads **LOW**.
 
-    The logic is inverted: pressed means LOW. That feels backwards at first, but it's the more common arrangement — and the next section explains why.
+    The logic is inverted: pressed means LOW. That feels backwards at first, but it's the more common arrangement, and the next section explains why.
 
 Either way, the pin now has a definite answer at all times. The resistor decides the *resting* state; the button decides the *other* state.
 
@@ -65,7 +65,7 @@ Either way, the pin now has a definite answer at all times. The resistor decides
 
 ## Built-In Pull-ups: Often No Resistor Needed
 
-Here's why pull-ups are more common in practice: most microcontrollers have pull-up resistors **built into the chip**, one per pin, that you switch on in software. No external resistor, no extra wiring.
+Pull-ups win in practice because microcontrollers have them **built into the chip**, one per pin, switched on in software. No external resistor, no extra wiring.
 
 On an Arduino you enable it by setting the pin mode to `INPUT_PULLUP` instead of `INPUT`:
 
@@ -79,21 +79,21 @@ void loop() {
 }
 ```
 
-That single word wires the pull-up arrangement above entirely inside the chip. The button just connects the pin to ground. It's the simplest reliable way to read a button, which is why you'll see it everywhere.
+That single word connects a resistor of 20 to 50 kΩ between the pin and 5V inside the chip (the range the `ATmega328P` datasheet gives). The button just connects the pin to ground. It's the simplest reliable way to read a button, which is why it's everywhere.
 
-!!! info "Pull-ups are built in; pull-downs usually aren't"
-    Most microcontrollers offer internal pull-**ups** but not internal pull-**downs**. That's a big reason the pull-up arrangement dominates: it's free and already there. Reach for an external pull-down only when you specifically want "pressed means HIGH" logic, or when a part you're connecting requires it.
+!!! tip "The Uno has pull-ups only"
+    The Uno's `ATmega328P` has internal pull-**ups** but no internal pull-**downs**, so on an Uno a pull-down is always an external resistor. Newer chips such as the `ESP32` and the Raspberry Pi Pico's `RP2040` offer both, selected with `INPUT_PULLDOWN`. The pull-up habit dates from chips like the Uno's, and it stuck because it works everywhere.
 
 ---
 
 ## Sizing the Resistor
 
-A pull resistor's value is a balance, and the Ohm's Law you met in [What Is Electricity?](what_is_electricity.md) sets both ends of it.
+A pull resistor's value is a balance, and [Ohm's Law](ohms_law.md) sets both ends of it.
 
 When the button is pressed, the resistor has the full supply voltage across it, so it passes a small current straight from 5V to ground for as long as you hold the button. From \( I = V / R \):
 
-- **Too small** (say 100 Ω): \( 5\text{V} / 100\ \Omega = 50\text{ mA} \) wasted continuously while pressed — that's more than an LED draws, turned into heat for nothing.
-- **Too large** (say 10 MΩ): the pull is so weak that ambient noise can overpower it, and the pin starts to float again — the very problem you were solving.
+- **Too small** (say 100 Ω): \( 5\text{V} / 100\ \Omega = 50\text{ mA} \) wasted continuously while pressed. That's more than an LED draws, and at 0.25 W it's the full rating of a typical ¼ W resistor, all turned into heat for nothing.
+- **Too large** (say 10 MΩ): the pull is so weak that noise can overpower it, and the pin starts to float again, the very problem you were solving.
 - **Just right** (10 kΩ): \( 5\text{V} / 10\,000\ \Omega = 0.5\text{ mA} \), negligible waste, yet a firm enough grip to hold the pin steady.
 
 That's why **10 kΩ is the everyday default** for a pull-up or pull-down on a button. It's strong enough to win against noise and weak enough that the current it wastes doesn't matter.
@@ -102,13 +102,13 @@ That's why **10 kΩ is the everyday default** for a pull-up or pull-down on a bu
 
 ## Where You'll Meet Them Again
 
-Pull resistors are not just a button trick. The same idea — give a line a defined resting voltage — shows up all over electronics:
+The same idea, giving a line a defined resting voltage, shows up all over electronics:
 
-- **Buttons and switches** — the case in this article.
-- **Communication lines** — protocols like I²C *require* pull-up resistors on their shared wires so every device sees a clean HIGH when no one is talking.
-- **Reset and enable pins** — many chips need a pull-up or pull-down to sit in a known state at power-on instead of doing something random.
+- **Buttons and switches**: the case in this article.
+- **Communication lines**: protocols like I²C *require* pull-up resistors on their shared wires, so every device sees a clean HIGH when no one is talking.
+- **Reset and enable pins**: many chips need a pull-up or pull-down to sit in a known state at power-on instead of doing something random.
 
-Learn the pattern on a button and you'll recognise it the next time a datasheet tells you to "add a 4.7 kΩ pull-up" — you'll know exactly what it's asking for and why.
+Learn the pattern on a button and a datasheet's "add a 4.7 kΩ pull-up" stops being mysterious.
 
 ---
 
@@ -128,7 +128,7 @@ Learn the pattern on a button and you'll recognise it the next time a datasheet 
 
     ??? tip "Solution"
 
-        While the button is held, the 220 Ω resistor carries the full supply across it: \( 5\text{V} / 220\ \Omega \approx 23\text{ mA} \), dissipated as heat for as long as the button is down. It works, but it wastes current and warms the part. A **10 kΩ** resistor does the same job while passing only about 0.5 mA — strong enough to hold the pin, gentle enough to stay cool.
+        While the button is held, the 220 Ω resistor carries the full supply across it: \( 5\text{V} / 220\ \Omega \approx 23\text{ mA} \), dissipated as heat for as long as the button is down. It works, but it wastes current and warms the part. A **10 kΩ** resistor does the same job while passing only about 0.5 mA: strong enough to hold the pin, gentle enough to stay cool.
 
 ??? question "3. No resistor at all"
 
@@ -136,7 +136,7 @@ Learn the pattern on a button and you'll recognise it the next time a datasheet 
 
     ??? tip "Solution"
 
-        `INPUT_PULLUP` switches on a pull-up resistor **built into the microcontroller**, connected internally between the pin and the supply. It does the same job as an external pull-up, so the pin rests HIGH and reads LOW when the button connects it to ground — no external part required.
+        `INPUT_PULLUP` switches on a pull-up resistor **built into the microcontroller**, connected internally between the pin and the supply. It does the same job as an external pull-up, so the pin rests HIGH and reads LOW when the button connects it to ground, with no external part.
 
 ---
 
@@ -148,7 +148,7 @@ Learn the pattern on a button and you'll recognise it the next time a datasheet 
 
     ---
 
-    A bare input pin **floats** — it drifts on electrical noise and reads unpredictably. A button alone doesn't help, because it only connects the pin while pressed.
+    A bare input pin **floats**: it drifts on electrical noise and reads unpredictably. A button alone doesn't help, because it only connects the pin while pressed.
 
 -   **The Fix**
 
@@ -160,7 +160,7 @@ Learn the pattern on a button and you'll recognise it the next time a datasheet 
 
     ---
 
-    Most chips have **built-in pull-ups** — `pinMode(pin, INPUT_PULLUP)` — so a button to ground often needs no external resistor at all.
+    Microcontrollers have **built-in pull-ups**, enabled with `pinMode(pin, INPUT_PULLUP)`, so a button to ground needs no external resistor.
 
 -   **The Value**
 
@@ -174,9 +174,9 @@ Learn the pattern on a button and you'll recognise it the next time a datasheet 
 
 ## What's Next
 
-You can now read an input as reliably as you can drive an output. Back in [Digital Pins](digital_io.md), the button circuit used a pull-down for exactly this reason — reread that build and it should now read like second nature.
+You can now read an input as reliably as you can drive an output. Digital pins only answer HIGH or LOW, though, and plenty of the world isn't on or off. **[Reading an Analog Sensor](analog_input.md)** measures the voltage in between, using a temperature sensor whose output rises steadily with the heat.
 
-To actually run any of this, [arduino-cli](tools/arduino_cli.md) compiles and uploads the sketches to your board.
+To run any of this, [arduino-cli](tools/arduino_cli.md) compiles and uploads the sketches to your board.
 
 ---
 
@@ -189,6 +189,6 @@ To actually run any of this, [arduino-cli](tools/arduino_cli.md) compiles and up
 **Related Articles**
 
 - [Digital Pins](digital_io.md) — INPUT and OUTPUT, and where the floating problem first appears
-- [What Is Electricity?](what_is_electricity.md) — the Ohm's Law behind choosing a resistor value
+- [Ohm's Law and Power](ohms_law.md) — the law behind choosing a resistor value
 - [Resistor Color Codes](resistor_color_codes.md) — decode the 10 kΩ pull resistor from this article by its bands
 - [Series and Parallel Circuits](series_and_parallel.md) — current-limiting resistors, the other everyday job a resistor does

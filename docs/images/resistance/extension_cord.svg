@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>An outlet at 120 volts feeds a 1,500 watt heater through a long, coiled 16-gauge extension cord. The cord measures 0.77 ohms, glows warm, and turns 120 watts into heat along its length, leaving 110.4 volts at the heater.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="cord" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9f7037"/><stop offset="0.22" stop-color="#fad1a1"/><stop offset="0.5" stop-color="#f6ad55"/><stop offset="1" stop-color="#624522"/></linearGradient><radialGradient id="coilglow" r="50%"><stop offset="0" stop-color="#fc8181" stop-opacity="0.8"/><stop offset="1" stop-color="#fc8181" stop-opacity="0"/></radialGradient></defs>
+<rect x="15" y="15" width="770" height="430" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="400.0" y="46.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">A long, thin cord is a resistor too</text>
+<ellipse cx="100.5" cy="305.0" rx="56.5" ry="5.4" fill="#000" fill-opacity="0.4"/>
+<polygon points="50.0,180.0 130.0,180.0 151.0,166.5 71.0,166.5" fill="#eaeef4"/>
+<rect x="50.0" y="180.0" width="80.0" height="120.0" fill="#e2e8f0"/>
+<rect x="50.0" y="180.0" width="80.0" height="120.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="130.0,300.0 130.0,180.0 151.0,166.5 151.0,286.5" fill="#7c7f84"/>
+<rect x="78" y="210" width="6" height="16" rx="2" fill="#2d3748"/><rect x="96" y="210" width="6" height="16" rx="2" fill="#2d3748"/>
+<rect x="78" y="245" width="6" height="16" rx="2" fill="#2d3748"/><rect x="96" y="245" width="6" height="16" rx="2" fill="#2d3748"/>
+<rect x="50.0" y="324.0" width="80" height="32" rx="16.0" fill="#d97706"/>
+<rect x="50.0" y="324.0" width="80" height="32" rx="16.0" fill="url(#gloss)"/>
+<text x="90.0" y="345.0" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold">120 V</text>
+<path d="M130,240 C210,240 200,120 290,120 S380,320 460,300 S540,110 600,170" fill="none" stroke="#fc8181" stroke-opacity="0.22" stroke-width="30" stroke-linecap="round"/>
+<path d="M130,240 C210,240 200,120 290,120 S380,320 460,300 S540,110 600,170" fill="none" stroke="#9c4221" stroke-width="15" stroke-linecap="round"/>
+<path d="M130,240 C210,240 200,120 290,120 S380,320 460,300 S540,110 600,170" fill="none" stroke="#f6ad55" stroke-width="10" stroke-linecap="round"/>
+<path d="M130,240 C210,240 200,120 290,120 S380,320 460,300 S540,110 600,170" fill="none" stroke="#fefcbf" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round" transform="translate(-1,-3)"/>
+<text x="400.0" y="382.0" font-size="14" fill="#fbbf24" text-anchor="middle" font-weight="bold">30 m of 16-gauge cord: 0.77 Ω</text>
+<text x="400.0" y="402.0" font-size="13" fill="#fc8181" text-anchor="middle" font-weight="normal">it warms by 120 W along its whole length</text>
+<ellipse cx="684.0" cy="305.0" rx="90.0" ry="7.2" fill="#000" fill-opacity="0.4"/>
+<polygon points="600.0,150.0 740.0,150.0 768.0,132.0 628.0,132.0" fill="#808895"/>
+<rect x="600.0" y="150.0" width="140.0" height="150.0" fill="#4a5568"/>
+<rect x="600.0" y="150.0" width="140.0" height="150.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="740.0,300.0 740.0,150.0 768.0,132.0 768.0,282.0" fill="#282e39"/>
+<rect x="612" y="165" width="116" height="20" fill="url(#coilglow)"/>
+<line x1="616" y1="175" x2="724" y2="175" stroke="#fc8181" stroke-width="4" stroke-linecap="round"/>
+<rect x="612" y="191" width="116" height="20" fill="url(#coilglow)"/>
+<line x1="616" y1="201" x2="724" y2="201" stroke="#fc8181" stroke-width="4" stroke-linecap="round"/>
+<rect x="612" y="217" width="116" height="20" fill="url(#coilglow)"/>
+<line x1="616" y1="227" x2="724" y2="227" stroke="#fc8181" stroke-width="4" stroke-linecap="round"/>
+<rect x="612" y="243" width="116" height="20" fill="url(#coilglow)"/>
+<line x1="616" y1="253" x2="724" y2="253" stroke="#fc8181" stroke-width="4" stroke-linecap="round"/>
+<rect x="575.0" y="324.0" width="190" height="32" rx="16.0" fill="#2d3748"/>
+<rect x="575.0" y="324.0" width="190" height="32" rx="16.0" fill="url(#gloss)"/>
+<text x="670.0" y="344.7" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">110.4 V at the heater</text>
+<text x="400.0" y="430.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">1,500 W heater draws 12.5 A; the cord takes 9.6 V of the 120 V before the heater gets any</text>
+</svg>

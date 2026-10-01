@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="960" height="440" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A 3D staircase of eleven numbered steps: 1 Conductors, 2 What Is Electricity, 3 Metric Prefixes, 4 Voltage, 5 Current, 6 Resistance, 7 Ohm's Law and power, 8 Shorts and Fuses, 9 AC vs DC, 10 Magnetism, 11 Series and Parallel circuits. The first step is lit amber and marked start here.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="930" height="410" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="480.0" y="48.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Circuit Foundations: eleven steps from the atom to real circuits</text>
+<ellipse cx="87.9" cy="385.0" rx="53.9" ry="6.1" fill="#000" fill-opacity="0.4"/>
+<polygon points="40.0,284.0 112.0,284.0 135.8,268.7 63.8,268.7" fill="#f8bb54"/>
+<rect x="40.0" y="284.0" width="72.0" height="96.0" fill="#f59e0b"/>
+<rect x="40.0" y="284.0" width="72.0" height="96.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="112.0,380.0 112.0,284.0 135.8,268.7 135.8,364.7" fill="#865606"/>
+<circle cx="88.0" cy="252" r="15" fill="url(#vball)"/>
+<text x="88.0" y="257.0" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold">1</text>
+<text x="76.0" y="308.0" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="bold">Conductors</text>
+<text x="76.0" y="325.0" font-size="9" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="italic">the atom</text>
+<polygon points="122.0,264.0 194.0,264.0 217.8,248.7 145.8,248.7" fill="#808895"/>
+<rect x="122.0" y="264.0" width="72.0" height="116.0" fill="#4a5568"/>
+<rect x="122.0" y="264.0" width="72.0" height="116.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="194.0,380.0 194.0,264.0 217.8,248.7 217.8,364.7" fill="#282e39"/>
+<circle cx="170.0" cy="232" r="15" fill="url(#eball)"/>
+<text x="170.0" y="237.0" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold">2</text>
+<text x="158.0" y="288.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">What Is</text>
+<text x="158.0" y="303.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Electricity?</text>
+<text x="158.0" y="320.0" font-size="9" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">big picture</text>
+<polygon points="204.0,244.0 276.0,244.0 299.8,228.7 227.8,228.7" fill="#767d8a"/>
+<rect x="204.0" y="244.0" width="72.0" height="136.0" fill="#3c4658"/>
+<rect x="204.0" y="244.0" width="72.0" height="136.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="276.0,380.0 276.0,244.0 299.8,228.7 299.8,364.7" fill="#212630"/>
+<circle cx="252.0" cy="212" r="15" fill="url(#eball)"/>
+<text x="252.0" y="217.0" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold">3</text>
+<text x="240.0" y="268.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Metric</text>
+<text x="240.0" y="283.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Prefixes</text>
+<text x="240.0" y="300.0" font-size="9" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">milli to mega</text>
+<polygon points="286.0,224.0 358.0,224.0 381.8,208.7 309.8,208.7" fill="#808895"/>
+<rect x="286.0" y="224.0" width="72.0" height="156.0" fill="#4a5568"/>
+<rect x="286.0" y="224.0" width="72.0" height="156.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="358.0,380.0 358.0,224.0 381.8,208.7 381.8,364.7" fill="#282e39"/>
+<circle cx="334.0" cy="192" r="15" fill="url(#eball)"/>
+<text x="334.0" y="197.0" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold">4</text>
+<text x="322.0" y="248.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Voltage</text>
+<text x="322.0" y="265.0" font-size="9" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">the push</text>
+<polygon points="368.0,204.0 440.0,204.0 463.8,188.7 391.8,188.7" fill="#767d8a"/>
+<rect x="368.0" y="204.0" width="72.0" height="176.0" fill="#3c4658"/>
+<rect x="368.0" y="204.0" width="72.0" height="176.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="440.0,380.0 440.0,204.0 463.8,188.7 463.8,364.7" fill="#212630"/>
+<circle cx="416.0" cy="172" r="15" fill="url(#eball)"/>
+<text x="416.0" y="177.0" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold">5</text>
+<text x="404.0" y="228.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Current</text>
+<text x="404.0" y="245.0" font-size="9" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">the flow</text>
+<polygon points="450.0,184.0 522.0,184.0 545.8,168.7 473.8,168.7" fill="#808895"/>
+<rect x="450.0" y="184.0" width="72.0" height="196.0" fill="#4a5568"/>
+<rect x="450.0" y="184.0" width="72.0" height="196.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="522.0,380.0 522.0,184.0 545.8,168.7 545.8,364.7" fill="#282e39"/>
+<circle cx="498.0" cy="152" r="15" fill="url(#eball)"/>
+<text x="498.0" y="157.0" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold">6</text>
+<text x="486.0" y="208.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Resistance</text>
+<text x="486.0" y="225.0" font-size="9" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">the limit</text>
+<polygon points="532.0,164.0 604.0,164.0 627.8,148.7 555.8,148.7" fill="#767d8a"/>
+<rect x="532.0" y="164.0" width="72.0" height="216.0" fill="#3c4658"/>
+<rect x="532.0" y="164.0" width="72.0" height="216.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="604.0,380.0 604.0,164.0 627.8,148.7 627.8,364.7" fill="#212630"/>
+<circle cx="580.0" cy="132" r="15" fill="url(#eball)"/>
+<text x="580.0" y="137.0" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold">7</text>
+<text x="568.0" y="188.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Ohm's Law</text>
+<text x="568.0" y="205.0" font-size="9" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">and power</text>
+<polygon points="614.0,144.0 686.0,144.0 709.8,128.7 637.8,128.7" fill="#808895"/>
+<rect x="614.0" y="144.0" width="72.0" height="236.0" fill="#4a5568"/>
+<rect x="614.0" y="144.0" width="72.0" height="236.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="686.0,380.0 686.0,144.0 709.8,128.7 709.8,364.7" fill="#282e39"/>
+<circle cx="662.0" cy="112" r="15" fill="url(#eball)"/>
+<text x="662.0" y="117.0" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold">8</text>
+<text x="650.0" y="168.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Shorts and</text>
+<text x="650.0" y="183.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Fuses</text>
+<text x="650.0" y="200.0" font-size="9" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">when it fails</text>
+<polygon points="696.0,124.0 768.0,124.0 791.8,108.7 719.8,108.7" fill="#767d8a"/>
+<rect x="696.0" y="124.0" width="72.0" height="256.0" fill="#3c4658"/>
+<rect x="696.0" y="124.0" width="72.0" height="256.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="768.0,380.0 768.0,124.0 791.8,108.7 791.8,364.7" fill="#212630"/>
+<circle cx="744.0" cy="92" r="15" fill="url(#eball)"/>
+<text x="744.0" y="97.0" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold">9</text>
+<text x="732.0" y="148.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">AC vs DC</text>
+<text x="732.0" y="165.0" font-size="9" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">and RMS</text>
+<polygon points="778.0,104.0 850.0,104.0 873.8,88.7 801.8,88.7" fill="#808895"/>
+<rect x="778.0" y="104.0" width="72.0" height="276.0" fill="#4a5568"/>
+<rect x="778.0" y="104.0" width="72.0" height="276.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="850.0,380.0 850.0,104.0 873.8,88.7 873.8,364.7" fill="#282e39"/>
+<circle cx="826.0" cy="72" r="15" fill="url(#eball)"/>
+<text x="826.0" y="77.0" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold">10</text>
+<text x="814.0" y="128.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Magnetism</text>
+<text x="814.0" y="145.0" font-size="9" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">and coils</text>
+<polygon points="860.0,84.0 932.0,84.0 955.8,68.7 883.8,68.7" fill="#767d8a"/>
+<rect x="860.0" y="84.0" width="72.0" height="296.0" fill="#3c4658"/>
+<rect x="860.0" y="84.0" width="72.0" height="296.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="932.0,380.0 932.0,84.0 955.8,68.7 955.8,364.7" fill="#212630"/>
+<circle cx="908.0" cy="52" r="15" fill="url(#eball)"/>
+<text x="908.0" y="57.0" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold">11</text>
+<text x="896.0" y="108.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Series &amp;</text>
+<text x="896.0" y="123.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Parallel</text>
+<text x="896.0" y="140.0" font-size="9" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">real circuits</text>
+<text x="76.0" y="410.0" font-size="13" fill="#fbbf24" text-anchor="middle" font-weight="bold">start here</text>
+</svg>

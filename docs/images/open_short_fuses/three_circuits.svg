@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" width="860" height="400" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Three battery-and-lamp circuits. Closed: a complete loop and the lamp is lit. Open: a break in the top wire and the lamp is dark. Short: a wire connects across the lamp, so current bypasses it; the lamp is dark while the short wire glows hot.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="battx" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9f6607"/><stop offset="0.22" stop-color="#f9c978"/><stop offset="0.5" stop-color="#f59e0b"/><stop offset="1" stop-color="#623f04"/></linearGradient></defs>
+<rect x="25" y="15" width="260" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="155.0" y="48.0" font-size="16" fill="#48bb78" text-anchor="middle" font-weight="bold">Closed circuit</text>
+<text x="155.0" y="68.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">a complete loop: current flows</text>
+<polyline points="70,175 70,110 240,110 240,300 70,300 70,240" fill="none" stroke="#3a1d0c" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="70,175 70,110 240,110 240,300 70,300 70,240" fill="none" stroke="#b8673a" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="70,175 70,110 240,110 240,300 70,300 70,240" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<rect x="50" y="176.0" width="40" height="64" rx="5" fill="url(#battx)"/>
+<rect x="63" y="168.0" width="14" height="8" rx="2" fill="#cbd5e0"/>
+<text x="70.0" y="214.0" font-size="18" fill="#1a1a1a" text-anchor="middle" font-weight="bold">+</text>
+<circle cx="240" cy="205" r="44" fill="#fefcbf" fill-opacity="0.18"/>
+<circle cx="240" cy="205" r="28" fill="#fefcbf" fill-opacity="0.3"/>
+<circle cx="240" cy="205" r="18" fill="#fefcbf" fill-opacity="0.9" stroke="#e2e8f0" stroke-opacity="0.6"/>
+<path d="M232,207 q4,-8 8,0 t8,0" fill="none" stroke="#d69e2e" stroke-width="2"/>
+<text x="155.0" y="345.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">lamp lit</text>
+<rect x="305" y="15" width="260" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="435.0" y="48.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Open circuit</text>
+<text x="435.0" y="68.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">a break anywhere: nothing flows</text>
+<polyline points="350,175 350,110 415,110" fill="none" stroke="#3a1d0c" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="350,175 350,110 415,110" fill="none" stroke="#b8673a" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="350,175 350,110 415,110" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<polyline points="455,110 520,110 520,300 350,300 350,240" fill="none" stroke="#3a1d0c" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="455,110 520,110 520,300 350,300 350,240" fill="none" stroke="#b8673a" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="455,110 520,110 520,300 350,300 350,240" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<path d="M415,110 l14,-18" stroke="#b8673a" stroke-width="7" stroke-linecap="round"/>
+<text x="435.0" y="84.0" font-size="12" fill="#fc8181" text-anchor="middle" font-weight="normal" font-style="italic">break</text>
+<rect x="330" y="176.0" width="40" height="64" rx="5" fill="url(#battx)"/>
+<rect x="343" y="168.0" width="14" height="8" rx="2" fill="#cbd5e0"/>
+<text x="350.0" y="214.0" font-size="18" fill="#1a1a1a" text-anchor="middle" font-weight="bold">+</text>
+<circle cx="520" cy="205" r="18" fill="#4a5568" fill-opacity="0.6" stroke="#e2e8f0" stroke-opacity="0.6"/>
+<path d="M512,207 q4,-8 8,0 t8,0" fill="none" stroke="#a0aec0" stroke-width="2"/>
+<text x="435.0" y="345.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">lamp dark</text>
+<rect x="585" y="15" width="260" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="715.0" y="48.0" font-size="16" fill="#fc8181" text-anchor="middle" font-weight="bold">Short circuit</text>
+<text x="715.0" y="68.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">a path that skips the load</text>
+<polyline points="630,175 630,110 800,110 800,300 630,300 630,240" fill="none" stroke="#3a1d0c" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="630,175 630,110 800,110 800,300 630,300 630,240" fill="none" stroke="#b8673a" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="630,175 630,110 800,110 800,300 630,300 630,240" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<rect x="610" y="176.0" width="40" height="64" rx="5" fill="url(#battx)"/>
+<rect x="623" y="168.0" width="14" height="8" rx="2" fill="#cbd5e0"/>
+<text x="630.0" y="214.0" font-size="18" fill="#1a1a1a" text-anchor="middle" font-weight="bold">+</text>
+<circle cx="800" cy="205" r="18" fill="#4a5568" fill-opacity="0.6" stroke="#e2e8f0" stroke-opacity="0.6"/>
+<path d="M792,207 q4,-8 8,0 t8,0" fill="none" stroke="#a0aec0" stroke-width="2"/>
+<path d="M800,140 C730,170 730,240 800,270" fill="none" stroke="#fc8181" stroke-opacity="0.35" stroke-width="16"/>
+<polyline points="800,140 750,155 750,255 800,270" fill="none" stroke="#3a1d0c" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="800,140 750,155 750,255 800,270" fill="none" stroke="#b8673a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="800,140 750,155 750,255 800,270" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<path d="M800,140 L750,155 L750,255 L800,270" fill="none" stroke="#fc8181" stroke-width="3" stroke-opacity="0.7"/>
+<text x="740.0" y="205.0" font-size="12" fill="#fc8181" text-anchor="end" font-weight="bold">short</text>
+<circle cx="630" cy="208" r="36" fill="#fc8181" fill-opacity="0.18"/>
+<text x="715.0" y="345.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">lamp dark, wire and battery heat up</text>
+</svg>
