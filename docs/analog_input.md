@@ -77,10 +77,15 @@ void loop() {
 }
 ```
 
-1. Opens a serial connection to your computer at 9600 baud, which is what the Serial Monitor listens to.
+1. Opens a serial connection to your computer at 9600 baud, which is what the Serial Monitor listens to. [Serial Communication](serial_communication.md) explains what that number means and what's on the wire.
 2. Reads the raw ADC value on A0: an integer from `0` to `1023`.
 3. Scales the raw value against the 1,024-step range and the 5V supply to recover the actual voltage.
 4. Applies the `MCP9700A`'s formula from [Temperature Sensors](temperature_sensors.md): subtract the 500 mV offset, then divide by 10 mV/°C, done here as `× 100` because the voltage is in volts, not millivolts.
+
+<figure markdown>
+  ![Five 3D blocks in a row: a temperature of 22.4 degrees becomes a sensor output of 0.724 volts (500 millivolts plus 10 millivolts per degree), which analogRead reports as 148; the sketch converts that back to 0.723 volts and 22.3 degrees. The tenth of a degree lost is the size of one ADC step.](images/analog_input/conversion_chain.svg){ width="760" }
+  <figcaption>Two conversions in the sensor and the ADC, two in the sketch to undo them.</figcaption>
+</figure>
 
 `sensorVal` is an `int` because `analogRead()` always returns a whole number: there's no fractional ADC step. `voltage` and `temperature` are `float` (decimal numbers), because once the arithmetic starts, a fraction of a degree is a real answer.
 

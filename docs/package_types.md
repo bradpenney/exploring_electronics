@@ -71,7 +71,7 @@ The `ATmega328P` at the top of this article happens to be DIP, but the same chip
 
     **Common uses:** voltage regulators and power transistors: anything handling enough current to generate real heat.
 
-    **Not yet used on this site**, but you'll recognize it the moment you meet a voltage regulator.
+    **On this site:** the `7805` and `LM317` in [Voltage Regulators](voltage_regulators.md), whose heat is the reason for the tab.
 
 -   :material-shape-outline: **DIP** (Dual In-line Package)
 

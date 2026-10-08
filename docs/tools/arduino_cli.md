@@ -160,7 +160,7 @@ When your sketch prints with `Serial.println()`, you need something on the other
 arduino-cli monitor -p /dev/ttyACM0
 ```
 
-The default speed is 9600 baud; if your sketch's `Serial.begin()` uses another, add `-c baudrate=115200` (or whatever it sets). This is the most useful debugging tool on a microcontroller: the board has no screen, so a serial line is how it tells you what it's doing.
+The default speed is 9600 baud; if your sketch's `Serial.begin()` uses another, add `-c baudrate=115200` (or whatever it sets). This is the most useful debugging tool on a microcontroller: the board has no screen, so a serial line is how it tells you what it's doing. A screen of strange symbols almost always means the two speeds don't match; [Serial Communication](../serial_communication.md) shows why.
 
 ---
 

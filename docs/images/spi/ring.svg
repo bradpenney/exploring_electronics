@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" width="900" height="470" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Two 8-bit shift registers, the controller's and the peripheral's, joined in a ring: the controller's bits leave on COPI into the peripheral while the peripheral's bits leave on CIPO back to the controller, one bit each way per clock. Before: the controller holds 10110010 and the peripheral 01101100. After eight clocks they have swapped. To read a byte, the controller must send one.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="440" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="48.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">Every SPI transfer is a swap: eight clocks, eight bits each way</text>
+<text x="70.0" y="133.0" font-size="13" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">before</text>
+<text x="330.0" y="100.0" font-size="13" fill="#f6ad55" text-anchor="middle" font-weight="bold">controller (Arduino)</text>
+<rect x="195" y="110" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="195" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="210.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="229" y="110" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="229" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="244.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="263" y="110" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="263" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="278.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="297" y="110" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="297" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="312.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="331" y="110" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="331" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="346.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="365" y="110" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="365" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="380.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="399" y="110" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="399" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="414.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="433" y="110" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="433" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="448.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<text x="640.0" y="100.0" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">peripheral</text>
+<rect x="505" y="110" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="505" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="520.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="539" y="110" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="539" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="554.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="573" y="110" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="573" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="588.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="607" y="110" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="607" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="622.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="641" y="110" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="641" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="656.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="675" y="110" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="675" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="690.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="709" y="110" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="709" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="724.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="743" y="110" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="743" y="110" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="758.0" y="133.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<path d="M467,120 L500,120" stroke="#fbbf24" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="484.0" y="108.0" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="bold">COPI</text>
+<path d="M780,127 C840,127 840,190 740,190 L230,190 C150,190 150,127 190,127" stroke="#90cdf4" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<text x="480.0" y="208.0" font-size="12" fill="#90cdf4" text-anchor="middle" font-weight="bold">CIPO: the peripheral's bits come back round, one per clock</text>
+<text x="70.0" y="303.0" font-size="13" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">after 8 clocks</text>
+<text x="330.0" y="270.0" font-size="13" fill="#f6ad55" text-anchor="middle" font-weight="bold">controller (Arduino)</text>
+<rect x="195" y="280" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="195" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="210.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="229" y="280" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="229" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="244.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="263" y="280" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="263" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="278.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="297" y="280" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="297" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="312.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="331" y="280" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="331" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="346.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="365" y="280" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="365" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="380.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="399" y="280" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="399" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="414.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="433" y="280" width="30" height="34" rx="5" fill="#c05621"/>
+<rect x="433" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="448.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<text x="640.0" y="270.0" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">peripheral</text>
+<rect x="505" y="280" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="505" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="520.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="539" y="280" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="539" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="554.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="573" y="280" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="573" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="588.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="607" y="280" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="607" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="622.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="641" y="280" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="641" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="656.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="675" y="280" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="675" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="690.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="709" y="280" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="709" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="724.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="743" y="280" width="30" height="34" rx="5" fill="#2f855a"/>
+<rect x="743" y="280" width="30" height="34" rx="5" fill="url(#gloss)" opacity="0.4"/>
+<text x="758.0" y="303.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<text x="450.0" y="432.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">To read a byte, the controller must send one, even if it's only zeros.</text>
+</svg>

@@ -66,7 +66,7 @@ It helps to group them by what they do.
 
     Steer current in ways the passives can't.
 
-    - **Diode** (a triangle pointing into a bar): current flows one way only, in the triangle-to-bar direction
+    - **Diode** (a triangle pointing into a bar): current flows one way only, in the triangle-to-bar direction ([how diodes work](diodes_and_leds.md))
     - **LED**: a diode that emits light, shown by the two arrows
     - **Transistor** (the symbol with three legs): an electronic switch or amplifier; just recognise it for now
 

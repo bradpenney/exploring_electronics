@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Five 3D blocks in a row: a temperature of 22.4 degrees becomes a sensor output of 0.724 volts (500 millivolts plus 10 millivolts per degree), which analogRead reports as 148; the sketch converts that back to 0.723 volts and 22.3 degrees. The tenth of a degree lost is the size of one ADC step.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="48.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">From heat to a number and back</text>
+<ellipse cx="137.6" cy="225.0" rx="73.6" ry="6.5" fill="#000" fill-opacity="0.4"/>
+<polygon points="70.0,140.0 180.0,140.0 205.2,123.8 95.2,123.8" fill="#d28863"/>
+<rect x="70.0" y="140.0" width="110.0" height="80.0" fill="#c05621"/>
+<rect x="70.0" y="140.0" width="110.0" height="80.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="180.0,220.0 180.0,140.0 205.2,123.8 205.2,203.8" fill="#692f12"/>
+<text x="125.0" y="175.0" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">22.4 °C</text>
+<text x="125.0" y="250.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">temperature</text>
+<path d="M204,180 l20,0" stroke="#fbbf24" stroke-width="3" marker-end="url(#arrow)"/>
+<ellipse cx="297.6" cy="225.0" rx="73.6" ry="6.5" fill="#000" fill-opacity="0.4"/>
+<polygon points="230.0,140.0 340.0,140.0 365.2,123.8 255.2,123.8" fill="#6a98c7"/>
+<rect x="230.0" y="140.0" width="110.0" height="80.0" fill="#2b6cb0"/>
+<rect x="230.0" y="140.0" width="110.0" height="80.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="340.0,220.0 340.0,140.0 365.2,123.8 365.2,203.8" fill="#173b60"/>
+<text x="285.0" y="175.0" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">0.724 V</text>
+<text x="285.0" y="250.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">sensor output</text>
+<path d="M364,180 l20,0" stroke="#fbbf24" stroke-width="3" marker-end="url(#arrow)"/>
+<ellipse cx="457.6" cy="225.0" rx="73.6" ry="6.5" fill="#000" fill-opacity="0.4"/>
+<polygon points="390.0,140.0 500.0,140.0 525.2,123.8 415.2,123.8" fill="#6da98b"/>
+<rect x="390.0" y="140.0" width="110.0" height="80.0" fill="#2f855a"/>
+<rect x="390.0" y="140.0" width="110.0" height="80.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="500.0,220.0 500.0,140.0 525.2,123.8 525.2,203.8" fill="#194931"/>
+<text x="445.0" y="175.0" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">148</text>
+<text x="445.0" y="250.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">analogRead()</text>
+<path d="M524,180 l20,0" stroke="#fbbf24" stroke-width="3" marker-end="url(#arrow)"/>
+<ellipse cx="617.6" cy="225.0" rx="73.6" ry="6.5" fill="#000" fill-opacity="0.4"/>
+<polygon points="550.0,140.0 660.0,140.0 685.2,123.8 575.2,123.8" fill="#6a98c7"/>
+<rect x="550.0" y="140.0" width="110.0" height="80.0" fill="#2b6cb0"/>
+<rect x="550.0" y="140.0" width="110.0" height="80.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="660.0,220.0 660.0,140.0 685.2,123.8 685.2,203.8" fill="#173b60"/>
+<text x="605.0" y="175.0" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">0.723 V</text>
+<text x="605.0" y="250.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">the sketch's volts</text>
+<path d="M684,180 l20,0" stroke="#fbbf24" stroke-width="3" marker-end="url(#arrow)"/>
+<ellipse cx="777.6" cy="225.0" rx="73.6" ry="6.5" fill="#000" fill-opacity="0.4"/>
+<polygon points="710.0,140.0 820.0,140.0 845.2,123.8 735.2,123.8" fill="#d28863"/>
+<rect x="710.0" y="140.0" width="110.0" height="80.0" fill="#c05621"/>
+<rect x="710.0" y="140.0" width="110.0" height="80.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="820.0,220.0 820.0,140.0 845.2,123.8 845.2,203.8" fill="#692f12"/>
+<text x="765.0" y="175.0" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">22.3 °C</text>
+<text x="765.0" y="250.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">the sketch's °C</text>
+<text x="205.0" y="290.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">500 mV + 10 mV per °C</text>
+<text x="365.0" y="308.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">÷ 5 V × 1024, rounded down</text>
+<text x="525.0" y="290.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">÷ 1024 × 5 V</text>
+<text x="685.0" y="308.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">(V − 0.5) × 100</text>
+</svg>

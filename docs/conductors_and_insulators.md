@@ -165,7 +165,7 @@ That gives semiconductors a behaviour that is the opposite of metals. In a metal
 
 That property is exactly how many [thermistors](temperature_sensors.md#three-ways-to-sense-heat) work: their resistance falls sharply and predictably as they warm, which turns temperature into something a circuit can measure.
 
-Semiconductors become far more useful when engineers add a pinch of a different element on purpose, a process called **doping**. A few atoms with five valence electrons (like phosphorus) add spare free electrons. A few atoms with three (like boron) leave gaps where an electron is missing. Joining the two kinds of silicon is how diodes and transistors are made, the subject of later articles in the Components topic.
+Semiconductors become far more useful when engineers add a pinch of a different element on purpose, a process called **doping**. A few atoms with five valence electrons (like phosphorus) add spare free electrons. A few atoms with three (like boron) leave gaps where an electron is missing. Joining the two kinds of silicon is how diodes and transistors are made; [Diodes and LEDs](diodes_and_leds.md) picks up the story at that junction.
 
 <figure markdown>
   ![Three small silicon lattices. Pure silicon has every bond holding an electron pair. N-type silicon has a blue phosphorus atom in the centre with one spare free electron glowing above it. P-type silicon has a red boron atom with a dashed ring marking a missing electron, a hole. Arrows join the N-type and P-type pieces into a 3D block labelled N and P, with the junction between them.](images/conductors/doping.svg){ width="740" }

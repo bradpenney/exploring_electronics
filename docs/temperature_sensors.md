@@ -44,7 +44,7 @@ Every temperature sensor is built around a material property that shifts predict
 
     **What changes:** its resistance, sharply and nonlinearly, as temperature rises. Every material's resistance moves with temperature ([Resistance and Conductance](resistance.md) explains why); a thermistor is made to move a lot.
 
-    **What you get:** nothing directly readable. You pair it with a known resistor as a voltage divider, measure the divider's output voltage, convert that back to a resistance, and finally to a temperature with a formula specific to that thermistor.
+    **What you get:** nothing directly readable. You pair it with a known resistor as a [voltage divider](voltage_divider.md), measure the divider's output voltage, convert that back to a resistance, and finally to a temperature with a formula specific to that thermistor.
 
     **Trade-off:** cheap and physically tiny, but all the conversion math is on you, and the relationship isn't a straight line.
 
@@ -62,7 +62,7 @@ Every temperature sensor is built around a material property that shifts predict
 
     ---
 
-    **What changes:** internally, much the same as the analog IC, but the chip also does the voltage-to-temperature conversion itself and reports a ready-made number over a digital protocol (often 1-Wire or I²C).
+    **What changes:** internally, much the same as the analog IC, but the chip also does the voltage-to-temperature conversion itself and reports a ready-made number over a digital protocol (often 1-Wire or [I²C](i2c.md), which reads an `MCP9808` sensor step by step).
 
     **Trade-off:** the most convenient and often the most accurate (the `DS18B20` is rated ±0.5°C), at the cost of a slightly more involved wiring and code setup than a single analog pin.
 

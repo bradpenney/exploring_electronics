@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 510" width="1000" height="510" style="max-width:100%;height:auto" role="group" aria-labelledby="cf-title cf-desc" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title id="cf-title">Circuit Foundations reading order, as a transit map</title>
+<desc id="cf-desc">One line snaking through fourteen stops in five stages. What electricity is made of: Conductors, What Is Electricity?, Prefixes; The three quantities: Voltage, Current, Resistance; Putting them to work: Ohm's Law and Power, Opens, Shorts, and Fuses; Beyond steady DC: AC vs DC, Magnetism; Combining and storing: Series and Parallel, Voltage Dividers, Capacitors, Inductors. Every stop is a link to its article.</desc>
+<style>.tm-stop .tm-ring{stroke:#1a202c;stroke-width:3;transition:stroke .15s}.tm-stop:hover .tm-ring,.tm-stop:focus-visible .tm-ring{stroke:#ffffff;stroke-width:4}.tm-stop:hover .tm-lbl,.tm-stop:focus-visible .tm-lbl{fill:#ffffff;text-decoration:underline}.tm-stop:focus{outline:none}</style>
+<defs>
+<linearGradient id="cf-panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient>
+<radialGradient id="cf-ball-38b2ac" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#afe0dd"/><stop offset="0.45" stop-color="#38b2ac"/><stop offset="1" stop-color="#19504d"/></radialGradient>
+<radialGradient id="cf-ball-4299e1" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#b3d6f3"/><stop offset="0.45" stop-color="#4299e1"/><stop offset="1" stop-color="#1d4465"/></radialGradient>
+<radialGradient id="cf-ball-48bb78" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#b5e3c9"/><stop offset="0.45" stop-color="#48bb78"/><stop offset="1" stop-color="#205435"/></radialGradient>
+<radialGradient id="cf-ball-9f7aea" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#d8c9f6"/><stop offset="0.45" stop-color="#9f7aea"/><stop offset="1" stop-color="#473669"/></radialGradient>
+<radialGradient id="cf-ball-f59e0b" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fbd89d"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#6e4704"/></radialGradient>
+</defs>
+<rect x="15" y="15" width="970" height="480" rx="14" fill="url(#cf-panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="500.0" y="46.0" font-size="13" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">Click any stop to open its article</text>
+<path d="M112.0,120 L267.2,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M112.0,120 L267.2,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#f59e0b" stroke-width="10"/>
+<path d="M112.0,120 L267.2,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#face85" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M267.2,120 L422.4,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M267.2,120 L422.4,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#f59e0b" stroke-width="10"/>
+<path d="M267.2,120 L422.4,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#face85" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M422.4,120 L577.6,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M422.4,120 L577.6,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#f59e0b" stroke-width="10"/>
+<path d="M422.4,120 L577.6,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#face85" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M577.6,120 L732.8,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M577.6,120 L732.8,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#38b2ac" stroke-width="10"/>
+<path d="M577.6,120 L732.8,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#9bd8d5" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M732.8,120 L888.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M732.8,120 L888.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#38b2ac" stroke-width="10"/>
+<path d="M732.8,120 L888.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#9bd8d5" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M888.0,120 L888,120 A75.0,75.0 0 0 1 888,270 L888.0,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M888.0,120 L888,120 A75.0,75.0 0 0 1 888,270 L888.0,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#38b2ac" stroke-width="10"/>
+<path d="M888.0,120 L888,120 A75.0,75.0 0 0 1 888,270 L888.0,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#9bd8d5" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M888.0,270 L629.3,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M888.0,270 L629.3,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#9f7aea" stroke-width="10"/>
+<path d="M888.0,270 L629.3,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#cfbcf4" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M629.3,270 L370.7,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M629.3,270 L370.7,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#9f7aea" stroke-width="10"/>
+<path d="M629.3,270 L370.7,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#cfbcf4" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M370.7,270 L112.0,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M370.7,270 L112.0,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#4299e1" stroke-width="10"/>
+<path d="M370.7,270 L112.0,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#a0ccf0" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M112.0,270 L112,270 A75.0,75.0 0 0 0 112,420 L112.0,420" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M112.0,270 L112,270 A75.0,75.0 0 0 0 112,420 L112.0,420" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#4299e1" stroke-width="10"/>
+<path d="M112.0,270 L112,270 A75.0,75.0 0 0 0 112,420 L112.0,420" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#a0ccf0" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M112.0,420 L272.0,420" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M112.0,420 L272.0,420" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#48bb78" stroke-width="10"/>
+<path d="M112.0,420 L272.0,420" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#a3ddbb" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M272.0,420 L432.0,420" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M272.0,420 L432.0,420" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#48bb78" stroke-width="10"/>
+<path d="M272.0,420 L432.0,420" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#a3ddbb" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M432.0,420 L592.0,420" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M432.0,420 L592.0,420" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#48bb78" stroke-width="10"/>
+<path d="M432.0,420 L592.0,420" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#a3ddbb" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<text x="267.2" y="88.0" font-size="13" fill="#f7b648" text-anchor="middle" font-weight="bold">What electricity is made of</text>
+<text x="732.8" y="88.0" font-size="13" fill="#69c5c0" text-anchor="middle" font-weight="bold">The three quantities</text>
+<text x="758.7" y="238.0" font-size="13" fill="#b79bef" text-anchor="middle" font-weight="bold">Putting them to work</text>
+<text x="241.3" y="238.0" font-size="13" fill="#71b2e8" text-anchor="middle" font-weight="bold">Beyond steady DC</text>
+<text x="352.0" y="388.0" font-size="13" fill="#75cc99" text-anchor="middle" font-weight="bold">Combining and storing</text>
+<a class="tm-stop" href="../conductors_and_insulators/" aria-label="1. Conductors">
+<title>1. Conductors</title>
+<circle cx="114.0" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="112.0" cy="120" r="15" fill="url(#cf-ball-f59e0b)"/>
+<text x="112.0" y="125" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="bold">1</text>
+<text class="tm-lbl" x="112.0" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Conductors</text>
+</a>
+<a class="tm-stop" href="../what_is_electricity/" aria-label="2. What Is Electricity?">
+<title>2. What Is Electricity?</title>
+<circle cx="269.2" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="267.2" cy="120" r="15" fill="url(#cf-ball-f59e0b)"/>
+<text x="267.2" y="125" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="bold">2</text>
+<text class="tm-lbl" x="267.2" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">What Is</text>
+<text class="tm-lbl" x="267.2" y="176" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Electricity?</text>
+</a>
+<a class="tm-stop" href="../metric_prefixes/" aria-label="3. Prefixes">
+<title>3. Prefixes</title>
+<circle cx="424.4" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="422.4" cy="120" r="15" fill="url(#cf-ball-f59e0b)"/>
+<text x="422.4" y="125" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="bold">3</text>
+<text class="tm-lbl" x="422.4" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Prefixes</text>
+</a>
+<a class="tm-stop" href="../voltage/" aria-label="4. Voltage">
+<title>4. Voltage</title>
+<circle cx="579.6" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="577.6" cy="120" r="15" fill="url(#cf-ball-38b2ac)"/>
+<text x="577.6" y="125" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">4</text>
+<text class="tm-lbl" x="577.6" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Voltage</text>
+</a>
+<a class="tm-stop" href="../current/" aria-label="5. Current">
+<title>5. Current</title>
+<circle cx="734.8" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="732.8" cy="120" r="15" fill="url(#cf-ball-38b2ac)"/>
+<text x="732.8" y="125" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">5</text>
+<text class="tm-lbl" x="732.8" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Current</text>
+</a>
+<a class="tm-stop" href="../resistance/" aria-label="6. Resistance">
+<title>6. Resistance</title>
+<circle cx="890.0" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="888.0" cy="120" r="15" fill="url(#cf-ball-38b2ac)"/>
+<text x="888.0" y="125" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">6</text>
+<text class="tm-lbl" x="888.0" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Resistance</text>
+</a>
+<a class="tm-stop" href="../ohms_law/" aria-label="7. Ohm's Law and Power">
+<title>7. Ohm's Law and Power</title>
+<circle cx="890.0" cy="274" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="888.0" cy="270" r="15" fill="url(#cf-ball-9f7aea)"/>
+<text x="888.0" y="275" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">7</text>
+<text class="tm-lbl" x="888.0" y="308" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Ohm's Law</text>
+<text class="tm-lbl" x="888.0" y="326" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">and Power</text>
+</a>
+<a class="tm-stop" href="../open_short_fuses/" aria-label="8. Opens, Shorts, and Fuses">
+<title>8. Opens, Shorts, and Fuses</title>
+<circle cx="631.3" cy="274" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="629.3" cy="270" r="15" fill="url(#cf-ball-9f7aea)"/>
+<text x="629.3" y="275" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">8</text>
+<text class="tm-lbl" x="629.3" y="308" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Opens, Shorts,</text>
+<text class="tm-lbl" x="629.3" y="326" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">and Fuses</text>
+</a>
+<a class="tm-stop" href="../ac_dc/" aria-label="9. AC vs DC">
+<title>9. AC vs DC</title>
+<circle cx="372.7" cy="274" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="370.7" cy="270" r="15" fill="url(#cf-ball-4299e1)"/>
+<text x="370.7" y="275" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">9</text>
+<text class="tm-lbl" x="370.7" y="308" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">AC vs DC</text>
+</a>
+<a class="tm-stop" href="../magnetism/" aria-label="10. Magnetism">
+<title>10. Magnetism</title>
+<circle cx="114.0" cy="274" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="112.0" cy="270" r="15" fill="url(#cf-ball-4299e1)"/>
+<text x="112.0" y="275" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">10</text>
+<text class="tm-lbl" x="112.0" y="308" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Magnetism</text>
+</a>
+<a class="tm-stop" href="../series_and_parallel/" aria-label="11. Series and Parallel">
+<title>11. Series and Parallel</title>
+<circle cx="114.0" cy="424" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="112.0" cy="420" r="15" fill="url(#cf-ball-48bb78)"/>
+<text x="112.0" y="425" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">11</text>
+<text class="tm-lbl" x="112.0" y="458" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Series and</text>
+<text class="tm-lbl" x="112.0" y="476" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Parallel</text>
+</a>
+<a class="tm-stop" href="../voltage_divider/" aria-label="12. Voltage Dividers">
+<title>12. Voltage Dividers</title>
+<circle cx="274.0" cy="424" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="272.0" cy="420" r="15" fill="url(#cf-ball-48bb78)"/>
+<text x="272.0" y="425" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">12</text>
+<text class="tm-lbl" x="272.0" y="458" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Voltage</text>
+<text class="tm-lbl" x="272.0" y="476" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Dividers</text>
+</a>
+<a class="tm-stop" href="../capacitors/" aria-label="13. Capacitors">
+<title>13. Capacitors</title>
+<circle cx="434.0" cy="424" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="432.0" cy="420" r="15" fill="url(#cf-ball-48bb78)"/>
+<text x="432.0" y="425" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">13</text>
+<text class="tm-lbl" x="432.0" y="458" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Capacitors</text>
+</a>
+<a class="tm-stop" href="../inductors/" aria-label="14. Inductors">
+<title>14. Inductors</title>
+<circle cx="594.0" cy="424" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="592.0" cy="420" r="15" fill="url(#cf-ball-48bb78)"/>
+<text x="592.0" y="425" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">14</text>
+<text class="tm-lbl" x="592.0" y="458" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Inductors</text>
+</a>
+</svg>

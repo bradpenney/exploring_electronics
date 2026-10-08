@@ -58,7 +58,31 @@ def analog_read():
     return svg(w, h, "\n".join(parts), f"A 3D staircase of ADC steps from 0 to 5 volts. A reading of {VOUT:.3f} volts lands on step {STEP}, which is printed raw or converted back to {V_BACK:.3f} volts and {T_BACK:.1f} degrees Celsius")
 
 
-FIGURES = {"analog_read.svg": analog_read}
+from style3d import GREEN  # noqa: E402
+
+
+# 2. The conversion chain, both ways -----------------------------------------------------------------
+def conversion_chain():
+    w, h = 900, 360
+    parts = [common_defs(), panel(15, 15, w - 30, h - 30)]
+    parts.append(text(w / 2, 48, "From heat to a number and back", 17, AMBER_LIGHT, weight="bold"))
+    stages = [("temperature", f"{TEMP:g} °C", "#c05621"), ("sensor output", f"{VOUT:.3f} V", "#2b6cb0"),
+              ("analogRead()", f"{STEP}", "#2f855a"), ("the sketch's volts", f"{V_BACK:.3f} V", "#2b6cb0"),
+              ("the sketch's °C", f"{T_BACK:.1f} °C", "#c05621")]
+    for k, (name, val, col) in enumerate(stages):
+        x = 70 + k * 160
+        parts += box3d(x, 220, 110, 36, 80, col)
+        parts.append(text(x + 55, 175, val, 18, "#ffffff", weight="bold"))
+        parts.append(text(x + 55, 250, name, 12, TEXT, weight="bold"))
+        if k < 4:
+            parts.append(f'<path d="M{x + 134},180 l20,0" stroke="{AMBER_LIGHT}" stroke-width="3" marker-end="url(#arrow)"/>')
+    notes = ["500 mV + 10 mV per °C", "÷ 5 V × 1024, rounded down", "÷ 1024 × 5 V", "(V − 0.5) × 100"]
+    for k, note in enumerate(notes):
+        parts.append(text(70 + k * 160 + 135, 290 + (k % 2) * 18, note, 11, MUTED, italic=True))
+    return svg(w, h, "\n".join(parts), f"Five 3D blocks in a row: a temperature of {TEMP:g} degrees becomes a sensor output of {VOUT:.3f} volts (500 millivolts plus 10 millivolts per degree), which analogRead reports as {STEP}; the sketch converts that back to {V_BACK:.3f} volts and {T_BACK:.1f} degrees. The tenth of a degree lost is the size of one ADC step.")
+
+
+FIGURES = {"analog_read.svg": analog_read, "conversion_chain.svg": conversion_chain}
 
 if __name__ == "__main__":
     print(f"{TEMP} C -> {VOUT:.4f} V -> step {STEP} -> {V_BACK:.4f} V -> {T_BACK:.2f} C")

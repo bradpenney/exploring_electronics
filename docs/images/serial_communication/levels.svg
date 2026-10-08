@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Three 3D bars of serial signal voltages. 5 volt logic on an Arduino Uno swings from 0 to 5 volts. 3.3 volt logic on many sensors and the ESP32 swings from 0 to 3.3 volts. RS-232 on old PC serial ports swings to plus and minus 12 volts, and must never be wired straight to an Arduino pin.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="410" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="48.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">Same idea, different voltages: check before connecting</text>
+<line x1="70" y1="220" x2="830" y2="220" stroke="#a0aec0" stroke-width="1.5"/>
+<text x="62.0" y="224.0" font-size="11" fill="#a0aec0" text-anchor="end" font-weight="normal">0 V</text>
+<ellipse cx="177.6" cy="225.0" rx="53.6" ry="6.5" fill="#000" fill-opacity="0.4"/>
+<polygon points="130.0,175.0 200.0,175.0 225.2,158.8 155.2,158.8" fill="#7ecfa0"/>
+<rect x="130.0" y="175.0" width="70.0" height="45.0" fill="#48bb78"/>
+<rect x="130.0" y="175.0" width="70.0" height="45.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="200.0,220.0 200.0,175.0 225.2,158.8 225.2,203.8" fill="#276642"/>
+<text x="165.0" y="147.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">5 V</text>
+<text x="165.0" y="398.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">5 V logic</text>
+<text x="165.0" y="416.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">Arduino Uno</text>
+<ellipse cx="427.6" cy="225.0" rx="53.6" ry="6.5" fill="#000" fill-opacity="0.4"/>
+<polygon points="380.0,190.3 450.0,190.3 475.2,174.1 405.2,174.1" fill="#7ab7ea"/>
+<rect x="380.0" y="190.3" width="70.0" height="29.7" fill="#4299e1"/>
+<rect x="380.0" y="190.3" width="70.0" height="29.7" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="450.0,220.0 450.0,190.3 475.2,174.1 475.2,203.8" fill="#24547b"/>
+<text x="415.0" y="162.3" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">3.3 V</text>
+<text x="415.0" y="398.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">3.3 V logic</text>
+<text x="415.0" y="416.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">many sensors, ESP32</text>
+<ellipse cx="677.6" cy="225.0" rx="53.6" ry="6.5" fill="#000" fill-opacity="0.4"/>
+<polygon points="630.0,112.0 700.0,112.0 725.2,95.8 655.2,95.8" fill="#fca6a6"/>
+<rect x="630.0" y="112.0" width="70.0" height="108.0" fill="#fc8181"/>
+<rect x="630.0" y="112.0" width="70.0" height="108.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="700.0,220.0 700.0,112.0 725.2,95.8 725.2,203.8" fill="#8a4646"/>
+<text x="665.0" y="84.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">12 V</text>
+<rect x="630" y="220" width="70" height="108" fill="#b05a5a"/>
+<text x="665.0" y="348.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">-12 V</text>
+<text x="665.0" y="398.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">RS-232</text>
+<text x="665.0" y="416.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">old PC serial ports</text>
+<text x="450.0" y="76.0" font-size="13" fill="#fc8181" text-anchor="middle" font-weight="bold">RS-232 must never be wired straight to an Arduino pin</text>
+</svg>

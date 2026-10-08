@@ -39,6 +39,7 @@ This site has no tiers and no paywall — it's organized purely by **topic**: th
 
 - Nav is **topic-first**: each topic is its own top-level nav group (`Circuit Foundations`, `Reading Circuits`, `Microcontrollers` …). No tier wrapper above them.
 - Add a topic to the nav **only once it has a published article** — never show empty groups.
+- **Every topic with two or more articles gets a landing page** (Brad, 2026-10-02: "There is no way to have everything on the front page. The sections need landing pages too so it's not overwhelming"). It's a flat `docs/<topic>.md` (e.g. `circuit_foundations.md`), first in its nav group as `Overview`, listing the articles in reading order grouped into short stages with a one-line hook each, then a "Where to Start". The homepage links each topic's card to its landing page and never lists every article. A one-article topic's card links straight to the article until the second arrives. Update the landing page whenever an article is added to the topic. Each landing page opens with a clickable transit map (`illustrations/landing_pages.py` on the shared `illustrations/transit.py`), inlined with a snippets `--8<--` line inside a raw `<figure>` so its links work (an `<img>` kills links); add the new stop there too and re-run the generator.
 - **Practical Tools** is a cross-cutting reference shelf (breadboards, arduino-cli, multimeter, soldering…), **not** a topic. Keep it as its own top-level section.
 - **Directory stays flat for now** (`docs/*.md`, plus `tools/`). Defer splitting into topic subdirectories (e.g., `microcontrollers/`) until a topic has ~3+ articles — grouping today is nav-label only.
 
@@ -115,7 +116,7 @@ description: Compelling description for search results (150-160 chars ideal)
 - Search indexing
 - Navigation (even if accidentally uncommented)
 
-**Current exclude configuration** (as of 2026-07-12):
+**Current exclude configuration** (as of 2026-10-05): **none.** Every draft is published, so the `exclude` plugin is commented out in `mkdocs.yaml`. When a new draft lands, uncomment it and list the draft's path:
 
 ```yaml
 plugins:
@@ -123,9 +124,7 @@ plugins:
   - meta
   - exclude:
       glob:
-        - "tools/multimeter.md"
-        - "tools/soldering.md"
-        - "tools/bench_power_supply.md"
+        - "new_draft.md"
   # ... other plugins
 ```
 
@@ -142,7 +141,7 @@ plugins:
 - `ac_dc.md` (in nav for review 2026-10-01; after Open Circuits, Short Circuits, and Fuses)
 - `magnetism.md` (in nav for review 2026-10-02; after AC vs DC)
 - `resistor_types.md` (in nav for review 2026-10-02; Components, after Resistor Color Codes)
-- Coverage checklist for the AVARC Basic course chapter 2: `coverage/avarc_basic_ch2.md` (not served). Mark rows ✅ as articles land.
+- Coverage checklists for the AVARC Basic course: `coverage/avarc_basic_ch2.md`, `coverage/avarc_basic_ch3.md`, and `coverage/avarc_basic_ch4a.md` (not served). Mark rows ✅ as articles land; rows marked "radio" belong on exploring_radio.
 - `series_and_parallel.md`
 - `reading_schematics.md`
 - `resistor_color_codes.md`
@@ -156,6 +155,12 @@ plugins:
 - `threshold_output.md`
 - `tools/breadboards.md`
 - `tools/arduino_cli.md`
+- `serial_communication.md`, `i2c.md`, and `spi.md` (in nav for review 2026-10-04; Communication, landing page `communication.md`)
+- `voltage_regulators.md` (in nav for review 2026-10-04; Power, after Batteries; covers radio B-003-008, B-003-017-004/006) and `power.md` (Power landing page)
+- `vacuum_tubes.md` (in nav for review 2026-10-04; Components, after Transistors; covers radio B-004-005)
+- `tools/soldering.md` (in nav for review 2026-10-05; wetting, heat, joint inspection, HSE fume + CCOHS lead safety)
+- `tools/bench_power_supply.md` (in nav for review 2026-10-05; CV/CC, crossover, first power-up, Rigol DP832 spec walk-through)
+- `tools/multimeter.md` (in nav for review 2026-10-04; the meter itself: jacks, burden, fuses, CAT, ranging, habits; each measurement stays in its quantity's article)
 
 **What this means:**
 - Draft articles can exist in `docs/` without appearing in search results

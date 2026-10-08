@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 310" width="900" height="310" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Five cross-sections of a component lead soldered to a copper pad on a green board. Good: a shiny concave fillet that meets the pad at a low angle. Cold: a dull, cracked ball sitting on the pad with a gap under it, never bonded. Too much: a bulging blob, which can hide a cold joint. Too little: solder covering only part of the pad. Bridge: solder running across from one pad to the next.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="sd-solder" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7fafc"/><stop offset="0.5" stop-color="#a0aec0"/><stop offset="1" stop-color="#4a5568"/></linearGradient><linearGradient id="sd-dull" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a0aec0"/><stop offset="1" stop-color="#4a5568"/></linearGradient><linearGradient id="sd-lead" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5568"/><stop offset="0.4" stop-color="#e2e8f0"/><stop offset="1" stop-color="#4a5568"/></linearGradient></defs>
+<rect x="15" y="15" width="168" height="280" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="99.0" y="44.0" font-size="15" fill="#6cc893" text-anchor="middle" font-weight="bold">Good</text>
+<rect x="29" y="190" width="140" height="22" fill="#2f855a"/>
+<rect x="29" y="190" width="140" height="22" fill="url(#gloss)" opacity="0.3"/>
+<rect x="61" y="185" width="76" height="6" fill="#c8733c"/>
+<rect x="93" y="120" width="12" height="105" rx="3" fill="url(#sd-lead)"/>
+<path d="M61,185 Q89,180 93,148 L105,148 Q109,180 137,185 Z" fill="url(#sd-solder)"/>
+<text x="99.0" y="258.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">concave fillet, low angle</text>
+<rect x="191" y="15" width="168" height="280" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="275.0" y="44.0" font-size="15" fill="#fc9a9a" text-anchor="middle" font-weight="bold">Cold</text>
+<rect x="205" y="190" width="140" height="22" fill="#2f855a"/>
+<rect x="205" y="190" width="140" height="22" fill="url(#gloss)" opacity="0.3"/>
+<rect x="237" y="185" width="76" height="6" fill="#c8733c"/>
+<rect x="269" y="120" width="12" height="105" rx="3" fill="url(#sd-lead)"/>
+<ellipse cx="275" cy="160" rx="24" ry="18" fill="url(#sd-dull)"/>
+<path d="M265,150 l8,10 l-4,6" stroke="#2d3748" stroke-width="2" fill="none"/>
+<line x1="245" y1="182" x2="305" y2="182" stroke="#1a202c" stroke-width="3" stroke-dasharray="3 3"/>
+<text x="275.0" y="258.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">a ball that never bonded</text>
+<rect x="367" y="15" width="168" height="280" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="451.0" y="44.0" font-size="15" fill="#f7b13b" text-anchor="middle" font-weight="bold">Too much</text>
+<rect x="381" y="190" width="140" height="22" fill="#2f855a"/>
+<rect x="381" y="190" width="140" height="22" fill="url(#gloss)" opacity="0.3"/>
+<rect x="413" y="185" width="76" height="6" fill="#c8733c"/>
+<rect x="445" y="120" width="12" height="105" rx="3" fill="url(#sd-lead)"/>
+<path d="M413,185 C391,140 431,115 451,118 C471,115 511,140 489,185 Z" fill="url(#sd-solder)"/>
+<text x="451.0" y="258.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">bulging</text>
+<text x="451.0" y="273.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">can hide a cold joint</text>
+<rect x="543" y="15" width="168" height="280" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="627.0" y="44.0" font-size="15" fill="#f7b13b" text-anchor="middle" font-weight="bold">Too little</text>
+<rect x="557" y="190" width="140" height="22" fill="#2f855a"/>
+<rect x="557" y="190" width="140" height="22" fill="url(#gloss)" opacity="0.3"/>
+<rect x="589" y="185" width="76" height="6" fill="#c8733c"/>
+<rect x="621" y="120" width="12" height="105" rx="3" fill="url(#sd-lead)"/>
+<path d="M613,185 Q619,182 621,172 L633,172 Q635,182 641,185 Z" fill="url(#sd-solder)"/>
+<text x="627.0" y="258.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">pad not covered</text>
+<rect x="719" y="15" width="168" height="280" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="803.0" y="44.0" font-size="15" fill="#fc9a9a" text-anchor="middle" font-weight="bold">Bridge</text>
+<rect x="741" y="185" width="44" height="6" fill="#c8733c"/>
+<rect x="758" y="130" width="10" height="95" rx="3" fill="url(#sd-lead)"/>
+<rect x="821" y="185" width="44" height="6" fill="#c8733c"/>
+<rect x="838" y="130" width="10" height="95" rx="3" fill="url(#sd-lead)"/>
+<rect x="733" y="190" width="140" height="22" fill="#2f855a"/>
+<path d="M741,186 Q763,150 783,172 Q803,184 823,172 Q843,150 865,186 Z" fill="url(#sd-solder)"/>
+<text x="803.0" y="258.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">solder joins two pads</text>
+</svg>

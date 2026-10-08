@@ -99,7 +99,54 @@ def arduino_uno():
     return svg(w, h, "\n".join(parts), "A simplified 3D Arduino Uno seen from above with the USB port on the left: digital pins along the far edge, power and analog pins along the near edge, reset button by the USB port, the onboard L LED by pin 13, and the ATmega328P chip at the lower right")
 
 
-FIGURES = {"arduino_uno.svg": arduino_uno}
+from style3d import AMBER_LIGHT, GREEN, TEXT, box3d  # noqa: E402
+import math  # noqa: E402
+
+
+# 2. Inside the microcontroller (ATmega328P datasheet: 32 KB flash, 2 KB SRAM) ------------------------
+def inside_chip():
+    w, h = 900, 430
+    parts = [common_defs(), panel(15, 15, w - 30, h - 30)]
+    parts.append(text(w / 2, 48, "A whole computer on one chip: the ATmega328P", 17, AMBER_LIGHT, weight="bold"))
+    parts += box3d(170, 360, 560, 90, 250, "#1a202c")
+    for k in range(14):
+        x = 186 + k * 39
+        parts.append(f'<rect x="{x}" y="360" width="10" height="26" fill="#a0aec0"/>')
+    blocks = [(190, "Processor", "runs the sketch, one", "instruction at a time", "#c05621"),
+              (370, "Flash: 32 KB", "the program; kept", "when power is off", "#2b6cb0"),
+              (550, "SRAM: 2 KB", "working data; lost", "when power is off", "#2f855a")]
+    for x, name, l1, l2, col in blocks:
+        parts += box3d(x, 300, 150, 34, 140, col, shadow=False)
+        parts.append(text(x + 75, 215, name, 14, "#ffffff", weight="bold"))
+        parts.append(text(x + 75, 245, l1, 11, "#ffffff"))
+        parts.append(text(x + 75, 261, l2, 11, "#ffffff"))
+    parts.append(text(w / 2, 404, "pins: the chip's only connection to the outside world", 12, MUTED, italic=True))
+    return svg(w, h, "\n".join(parts), "A 3D microcontroller chip opened to show three blocks inside: a processor that runs the sketch one instruction at a time; 32 kilobytes of flash memory that holds the program and keeps it with the power off; and 2 kilobytes of SRAM for working data, lost when the power goes off. Pins along the bottom edge are its only connection to the outside world.")
+
+
+# 3. setup() once, loop() forever ------------------------------------------------------------------------
+def setup_loop():
+    w, h = 900, 420
+    parts = [common_defs(), panel(15, 15, w - 30, h - 30)]
+    parts.append(text(w / 2, 48, "What the board does with a sketch", 17, AMBER_LIGHT, weight="bold"))
+    parts += pill(140, 230, "power on / reset", "#4a5568", size=13, h=40, wpx=170)
+    parts.append(f'<path d="M228,230 L300,230" stroke="{AMBER_LIGHT}" stroke-width="4" marker-end="url(#arrow)"/>')
+    parts += pill(380, 230, "setup()", "#c05621", size=16, h=56, wpx=140)
+    parts.append(text(380, 285, "runs once", 12, MUTED, italic=True))
+    parts.append(f'<path d="M452,230 L540,230" stroke="{AMBER_LIGHT}" stroke-width="4" marker-end="url(#arrow)"/>')
+    cx, cy, r = 650, 230, 95
+    parts.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{GREEN}" stroke-width="12"/>')
+    parts.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="url(#gloss)" stroke-width="12" opacity="0.4"/>')
+    a = math.radians(-40)
+    ax, ay = cx + r * math.cos(a), cy + r * math.sin(a)
+    parts.append(f'<path d="M{ax - 6:.1f},{ay - 12:.1f} l14,6 l-12,10 z" fill="{GREEN}"/>')
+    parts.append(text(cx, cy + 2, "loop()", 18, TEXT, weight="bold"))
+    parts.append(text(cx, cy + 24, "again and again", 12, MUTED, italic=True))
+    parts.append(text(cx, cy + r + 34, "until the power goes off", 12, MUTED, italic=True))
+    return svg(w, h, "\n".join(parts), "Power on or reset leads to setup(), which runs once, and then to loop(), drawn as a ring that runs again and again until the power goes off.")
+
+
+FIGURES = {"arduino_uno.svg": arduino_uno, "inside_chip.svg": inside_chip, "setup_loop.svg": setup_loop}
 
 if __name__ == "__main__":
     render_all(FIGURES, OUT)

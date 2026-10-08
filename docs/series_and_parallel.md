@@ -71,7 +71,7 @@ In a **series circuit**, current has exactly one path to follow. In a **parallel
 
         Check: \( 3 + 6 = 9\text{ V} \) ✓
 
-        The larger resistor takes the larger share of the voltage. Tapping the point between the two resistors gives a fixed fraction of the supply, here 6V from 9V: the **voltage divider**, one of the most useful sub-circuits in electronics.
+        The larger resistor takes the larger share of the voltage. Tapping the point between the two resistors gives a fixed fraction of the supply, here 6V from 9V: the **[voltage divider](voltage_divider.md)**, one of the most useful sub-circuits in electronics.
 
     **The general rules for series:**
 
@@ -190,6 +190,61 @@ Each resistor is in **series** with its LED and limits that LED's current. The t
 
 Recognising these nested patterns is what lets you look at a circuit and immediately understand what each part is doing.
 
+### Reducing a Network Step by Step
+
+When every part is a resistor, nested series and parallel groups can be collapsed into a single equivalent resistance, one group at a time, working from the inside out. Here a 100 Ω resistor feeds a 300 Ω and a 600 Ω resistor in parallel:
+
+<figure markdown>
+  ![Schematic of a 9 volt battery feeding R1, 100 ohms, in series with R2, 300 ohms, and R3, 600 ohms, which are in parallel with each other.](images/schematics/series_parallel_reduction.svg){ width="420" }
+  <figcaption>R1 carries all the current. R2 and R3 split it.</figcaption>
+</figure>
+
+<figure markdown>
+  ![Three panels reducing a resistor network. First, a 100 ohm resistor in series with a 300 ohm and a 600 ohm resistor in parallel. Second, the parallel pair replaced by its equivalent, 200 ohms, from product over sum. Third, 100 plus 200 gives one 300 ohm resistor, and 9 volts across it drives 30 milliamps.](images/series_and_parallel/reduction.svg){ width="760" }
+  <figcaption>Collapse the innermost group first, then whatever it's in series or parallel with.</figcaption>
+</figure>
+
+1. **The parallel pair:** 300 × 600 ÷ (300 + 600) = 200 Ω.
+2. **Add the series part:** 100 + 200 = 300 Ω in total, so the battery supplies 9 V ÷ 300 Ω = **30 mA**.
+3. **Work back out:** all 30 mA flows through R1, which takes 0.030 A × 100 Ω = 3 V. That leaves 6 V across the parallel pair, so R2 carries 6 V ÷ 300 Ω = 20 mA and R3 carries 6 V ÷ 600 Ω = 10 mA.
+
+The check closes the loop: 3 V + 6 V = 9 V around the circuit, and 20 mA + 10 mA = 30 mA into the junction. When a hand calculation passes both checks, it's right.
+
+---
+
+## Sharing the Heat: Power Ratings in Combination
+
+Combining resistors changes more than the resistance. Each one in a group dissipates its own power, and each has its own [power rating](ohms_law.md#power-ratings), so a combination can handle more heat than any single part in it, or fail at a fraction of what you'd expect.
+
+### Identical Resistors Share Equally
+
+When the resistors are identical, each takes an equal share of the heat, in series or in parallel. Two 500 Ω, 1 W resistors in series make 1 kΩ that can dissipate **2 W**. The same two in parallel make 250 Ω that can also dissipate **2 W**. Either way, n identical resistors can handle n times the power of one.
+
+That gives a useful trick: to get a resistance in a higher power rating than you have in stock, build it from several. Two 100 Ω resistors in parallel are 50 Ω, the same as one 50 Ω resistor, with twice the power rating. Radio transmitters are tested into a 50 Ω load that has to absorb the full output power, and four 200 Ω, 2 W resistors in parallel make one that can take 8 W:
+
+<figure markdown>
+  ![Four 200 ohm, 2 watt resistors in parallel between two bus bars, each glowing. Together they make 50 ohms rated for 8 watts. With 5 watts in total, about 15.8 volts across them, each carries 1.25 watts, 62 percent of its rating.](images/series_and_parallel/test_load.svg){ width="760" }
+  <figcaption>Four parts, one resistance, four times the heat capacity.</figcaption>
+</figure>
+
+### Unequal Resistors: Check Each One
+
+When the values differ, the heat doesn't split evenly, and which resistor runs hottest depends on how they're connected:
+
+- **In series**, every resistor carries the same current, so by P = I² × R the **largest** resistance dissipates the most.
+- **In parallel**, every resistor sees the same voltage, so by P = V² ÷ R the **smallest** resistance dissipates the most.
+
+<figure markdown>
+  ![Two panels of 3D bars against a quarter-watt rating line. A 100 ohm and a 1 kilohm quarter-watt resistor in series across 12 volts dissipate 12 milliwatts and 119 milliwatts: the bigger resistor runs hotter, both are safe. The same pair in parallel across 12 volts dissipate 1.44 watts and 144 milliwatts: the 100 ohm resistor is at 576 percent of its rating and burns.](images/series_and_parallel/heat_sharing.svg){ width="760" }
+  <figcaption>The same two ¼ W resistors on the same 12 V. In series both are safe; in parallel one burns.</figcaption>
+</figure>
+
+The rule is to calculate each resistor's power on its own and compare it with that resistor's rating. The first one to reach its limit sets the limit for the whole group, however much headroom the others have.
+
+### Bigger Bodies, Bigger Ratings
+
+A resistor's power rating is set by how much heat it can shed without damage, and that depends mostly on its surface area. That's why resistors of the same value come in different sizes: a ¼ W through-hole resistor is a few millimetres long, and a 10 W one is a ceramic block several centimetres long. When a circuit needs to dissipate more heat at the same resistance, the answer is a physically larger resistor (or several smaller ones sharing the load), and the half-rating rule of thumb from [Ohm's Law and Power](ohms_law.md#power-ratings) still applies to each part.
+
 ---
 
 ## Safety
@@ -262,6 +317,27 @@ Any wire that lands across the supply by mistake is itself a parallel branch, an
 
         The breaker trips because of the parallel current rule: each additional load draws its own current, and all those branch currents add up at the supply. Enough appliances running simultaneously and the total current exceeds the breaker's rating (typically 15A or 20A in residential wiring). The breaker opens the circuit safely before the wiring overheats.
 
+??? question "5. Reduce the Network"
+
+    A 12 V battery feeds a 1 kΩ resistor in series with a 1 kΩ and a 1.5 kΩ resistor in parallel. What's the total resistance, and how much current flows?
+
+    ??? tip "Solution"
+        The parallel pair first: 1 × 1.5 ÷ (1 + 1.5) = 0.6 kΩ, or 600 Ω. Then add the series resistor: 1,000 + 600 = **1.6 kΩ**. The current is 12 V ÷ 1,600 Ω = **7.5 mA**.
+
+??? question "6. Two 1 W Resistors"
+
+    Two 500 Ω, 1 W resistors are connected first in series, then in parallel. What's the most power each combination can safely dissipate?
+
+    ??? tip "Solution"
+        **2 W in both cases.** The resistors are identical, so they always share the heat equally, and two 1 W parts can take 2 W between them. Only the resistance changes: 1 kΩ in series, 250 Ω in parallel.
+
+??? question "7. Building a Load"
+
+    You need a 50 Ω resistor that can dissipate 5 W, and you have 200 Ω, 2 W resistors. How many do you need, and how should they be connected?
+
+    ??? tip "Solution"
+        **Four in parallel.** Four equal resistors in parallel give 200 ÷ 4 = 50 Ω, and four 2 W parts can share 8 W. At 5 W each one carries 1.25 W, about 62% of its rating, so the combination is comfortably within limits.
+
 ---
 
 ## Quick Recap
@@ -284,13 +360,25 @@ Any wire that lands across the supply by mistake is itself a parallel branch, an
 
     \( \dfrac{1}{R_{\text{total}}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \dfrac{1}{R_3} \)
 
+-   **Reduce from the inside out**
+
+    ---
+
+    Collapse each nested series or parallel group into one resistance, then work back out to find each part's voltage and current.
+
+-   **Every resistor has its own rating**
+
+    ---
+
+    Identical resistors share heat equally. Unequal ones don't: in series the largest runs hottest, in parallel the smallest. Check each against its rating.
+
 </div>
 
 ---
 
 ## What's Next
 
-With series and parallel understood, the next skill is reading circuits the way every datasheet and tutorial draws them: **[How to Read a Schematic](reading_schematics.md)** covers the symbols behind the diagrams in this article, and the one rule about wire crossings that trips up every beginner.
+Two resistors in series, with a wire from the point between them, make the most useful sub-circuit in electronics: **[Voltage Dividers](voltage_divider.md)** shows how they set any voltage you need, and why the output sags the moment something draws current from it.
 
 Meanwhile, build both circuits on a [breadboard](tools/breadboards.md). The behavioural difference between series and parallel is immediately obvious the moment you press the switches.
 

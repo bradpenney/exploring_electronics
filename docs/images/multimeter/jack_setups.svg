@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="900" height="330" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Three panels of a four-jack meter: A, mA, COM and V-ohms. For volts, ohms, continuity and diode tests, the black lead goes in COM and the red in V-ohms. For small currents the red lead moves to mA, which has a small fuse. For currents up to 10 amps it moves to A, which has a large fuse. The black lead stays in COM every time.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="280" height="300" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="155.0" y="50.0" font-size="14" fill="#fbbf24" text-anchor="middle" font-weight="bold">Volts, ohms, continuity, diode</text>
+<rect x="39" y="110" width="232" height="110" rx="16" fill="#2d3748" stroke="#4a5568" stroke-width="2"/>
+<circle cx="71" cy="150" r="17" fill="#111"/>
+<circle cx="71" cy="150" r="17" fill="none" stroke="#808895" stroke-width="3"/>
+<circle cx="71" cy="150" r="6" fill="#555"/>
+<text x="71.0" y="184.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">A</text>
+<circle cx="127" cy="150" r="17" fill="#111"/>
+<circle cx="127" cy="150" r="17" fill="none" stroke="#808895" stroke-width="3"/>
+<circle cx="127" cy="150" r="6" fill="#555"/>
+<text x="127.0" y="184.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">mA</text>
+<circle cx="183" cy="150" r="17" fill="#111"/>
+<circle cx="183" cy="150" r="17" fill="none" stroke="#808895" stroke-width="3"/>
+<circle cx="183" cy="150" r="6" fill="#555"/>
+<circle cx="183" cy="150" r="13" fill="#1a1a1a"/>
+<circle cx="179" cy="146" r="4" fill="#ffffff" fill-opacity="0.45"/>
+<text x="183.0" y="184.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">COM</text>
+<circle cx="239" cy="150" r="17" fill="#111"/>
+<circle cx="239" cy="150" r="17" fill="none" stroke="#808895" stroke-width="3"/>
+<circle cx="239" cy="150" r="6" fill="#555"/>
+<circle cx="239" cy="150" r="13" fill="#fc8181"/>
+<circle cx="235" cy="146" r="4" fill="#ffffff" fill-opacity="0.45"/>
+<text x="239.0" y="184.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">VΩ</text>
+<rect x="66.5" y="247.0" width="177" height="30" rx="15.0" fill="#48bb78"/>
+<rect x="66.5" y="247.0" width="177" height="30" rx="15.0" fill="url(#gloss)"/>
+<text x="155.0" y="266.7" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">the everyday setup</text>
+<rect x="310" y="15" width="280" height="300" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="50.0" font-size="14" fill="#fbbf24" text-anchor="middle" font-weight="bold">Small currents (mA, µA)</text>
+<rect x="334" y="110" width="232" height="110" rx="16" fill="#2d3748" stroke="#4a5568" stroke-width="2"/>
+<circle cx="366" cy="150" r="17" fill="#111"/>
+<circle cx="366" cy="150" r="17" fill="none" stroke="#808895" stroke-width="3"/>
+<circle cx="366" cy="150" r="6" fill="#555"/>
+<text x="366.0" y="184.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">A</text>
+<circle cx="422" cy="150" r="17" fill="#111"/>
+<circle cx="422" cy="150" r="17" fill="none" stroke="#808895" stroke-width="3"/>
+<circle cx="422" cy="150" r="6" fill="#555"/>
+<circle cx="422" cy="150" r="13" fill="#fc8181"/>
+<circle cx="418" cy="146" r="4" fill="#ffffff" fill-opacity="0.45"/>
+<text x="422.0" y="184.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">mA</text>
+<circle cx="478" cy="150" r="17" fill="#111"/>
+<circle cx="478" cy="150" r="17" fill="none" stroke="#808895" stroke-width="3"/>
+<circle cx="478" cy="150" r="6" fill="#555"/>
+<circle cx="478" cy="150" r="13" fill="#1a1a1a"/>
+<circle cx="474" cy="146" r="4" fill="#ffffff" fill-opacity="0.45"/>
+<text x="478.0" y="184.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">COM</text>
+<circle cx="534" cy="150" r="17" fill="#111"/>
+<circle cx="534" cy="150" r="17" fill="none" stroke="#808895" stroke-width="3"/>
+<circle cx="534" cy="150" r="6" fill="#555"/>
+<text x="534.0" y="184.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">VΩ</text>
+<rect x="349.5" y="247.0" width="201" height="30" rx="15.0" fill="#f59e0b"/>
+<rect x="349.5" y="247.0" width="201" height="30" rx="15.0" fill="url(#gloss)"/>
+<text x="450.0" y="266.7" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">in series, small fuse</text>
+<rect x="605" y="15" width="280" height="300" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="745.0" y="50.0" font-size="14" fill="#fbbf24" text-anchor="middle" font-weight="bold">Large currents (up to 10 A)</text>
+<rect x="629" y="110" width="232" height="110" rx="16" fill="#2d3748" stroke="#4a5568" stroke-width="2"/>
+<circle cx="661" cy="150" r="17" fill="#111"/>
+<circle cx="661" cy="150" r="17" fill="none" stroke="#808895" stroke-width="3"/>
+<circle cx="661" cy="150" r="6" fill="#555"/>
+<circle cx="661" cy="150" r="13" fill="#fc8181"/>
+<circle cx="657" cy="146" r="4" fill="#ffffff" fill-opacity="0.45"/>
+<text x="661.0" y="184.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">A</text>
+<circle cx="717" cy="150" r="17" fill="#111"/>
+<circle cx="717" cy="150" r="17" fill="none" stroke="#808895" stroke-width="3"/>
+<circle cx="717" cy="150" r="6" fill="#555"/>
+<text x="717.0" y="184.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">mA</text>
+<circle cx="773" cy="150" r="17" fill="#111"/>
+<circle cx="773" cy="150" r="17" fill="none" stroke="#808895" stroke-width="3"/>
+<circle cx="773" cy="150" r="6" fill="#555"/>
+<circle cx="773" cy="150" r="13" fill="#1a1a1a"/>
+<circle cx="769" cy="146" r="4" fill="#ffffff" fill-opacity="0.45"/>
+<text x="773.0" y="184.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">COM</text>
+<circle cx="829" cy="150" r="17" fill="#111"/>
+<circle cx="829" cy="150" r="17" fill="none" stroke="#808895" stroke-width="3"/>
+<circle cx="829" cy="150" r="6" fill="#555"/>
+<text x="829.0" y="184.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">VΩ</text>
+<rect x="644.5" y="247.0" width="201" height="30" rx="15.0" fill="#fc8181"/>
+<rect x="644.5" y="247.0" width="201" height="30" rx="15.0" fill="url(#gloss)"/>
+<text x="745.0" y="266.7" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">in series, large fuse</text>
+<text x="450.0" y="328.0" font-size="1" fill="#a0aec0" text-anchor="middle" font-weight="normal"></text>
+</svg>

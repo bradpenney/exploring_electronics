@@ -51,7 +51,47 @@ def threshold_ladder():
     return svg(w, h, "\n".join(parts), "A 3D staircase of four stages above a 20 degree baseline: below 24 degrees all LEDs off, 24 to 26 one LED, 26 to 28 two LEDs, 28 and up all three, tested from the lowest band up")
 
 
-FIGURES = {"threshold_ladder.svg": threshold_ladder}
+import math  # noqa: E402
+from style3d import AMBER, panel as _panel  # noqa: E402
+from ac_dc import axes, glow_line  # noqa: E402
+
+
+def _lit(t):
+    off = t - BASELINE
+    for lo, hi, n in BANDS:
+        if hi is None or off < hi:
+            return n
+    return 3
+
+
+# 2. A warming and cooling trace, with the LEDs it lights ------------------------------------------------
+def warm_trace():
+    w, h = 900, 480
+    parts = [common_defs(), _panel(15, 15, w - 30, h - 30)]
+    parts.append(text(w / 2, 48, "A hand warming the sensor, and the LEDs the sketch lights", 17, AMBER_LIGHT, weight="bold"))
+    L, R, T, B = 110, 840, 90, 330
+    yt = lambda t: B - (t - 18) / (32 - 18) * (B - T)
+    xs = lambda s: L + s / 60 * (R - L)
+    for lo, hi, n in BANDS:
+        y0 = yt(BASELINE + lo)
+        y1 = yt(BASELINE + (hi if hi is not None else 12))
+        parts.append(f'<rect x="{L}" y="{y1:.1f}" width="{R - L}" height="{y0 - y1:.1f}" fill="{COLORS[n]}" fill-opacity="0.18"/>')
+        parts.append(text(R + 6, (y0 + y1) / 2 + 4, f"{n} lit", 11, MUTED, "start"))
+    axes(parts, L, R, T, B, B, "", [(yt(t), f"{t} °C") for t in (20, 24, 26, 28, 30)])
+    temp = lambda s: BASELINE + 10 * (1 - math.exp(-s / 8)) if s < 30 else BASELINE + 10 * (1 - math.exp(-30 / 8)) * math.exp(-(s - 30) / 10)
+    pts = [(xs(s / 4), yt(temp(s / 4))) for s in range(241)]
+    parts.append(glow_line(pts, "#f6ad55", 3))
+    for s in range(0, 61, 6):
+        n = _lit(temp(s))
+        for j in range(3):
+            parts += led(xs(s) - 14 + j * 14, 372, ["#ecc94b", "#ed8936", "#e53e3e"][j], lit=j < n, r=6, glow=0.6)
+    for s in (0, 15, 30, 45, 60):
+        parts.append(text(xs(s), 405, f"{s} s", 11, MUTED))
+    parts.append(text(w / 2, 440, "baseline 20 °C as in the sketch; the warming curve is illustrative", 11, MUTED, italic=True))
+    return svg(w, h, "\n".join(parts), "A temperature trace over 60 seconds that climbs from the 20 degree baseline toward 30 degrees while a hand holds the sensor, then falls back. Shaded bands mark the sketch's stages: below 24 degrees no LEDs, 24 to 26 one, 26 to 28 two, above 28 all three. A row of three LEDs under the trace every six seconds shows the stage lighting up and going out again.")
+
+
+FIGURES = {"threshold_ladder.svg": threshold_ladder, "warm_trace.svg": warm_trace}
 
 if __name__ == "__main__":
     render_all(FIGURES, OUT)

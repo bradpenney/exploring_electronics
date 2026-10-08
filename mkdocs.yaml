@@ -79,11 +79,10 @@ theme:
 plugins:
   - search
   - meta
-  - exclude:
-      glob:
-        - "tools/multimeter.md"
-        - "tools/soldering.md"
-        - "tools/bench_power_supply.md"
+  # - exclude:
+  #     glob:
+  # No drafts right now: re-enable the exclude plugin and list each draft path
+  # here when one exists (see CLAUDE.md).
   - rss:
       match_path: ".*"
       pretty_print: true
@@ -148,6 +147,7 @@ nav:
 # Practical Tools (below) is a cross-cutting reference shelf, not a topic.
 
   - Circuit Foundations:
+      - Overview: circuit_foundations.md
       - Conductors, Insulators, and Semiconductors: conductors_and_insulators.md
       - What Is Electricity?: what_is_electricity.md
       - Metric Prefixes and Units: metric_prefixes.md
@@ -159,14 +159,22 @@ nav:
       - AC vs DC: ac_dc.md
       - Magnetism and Electromagnetism: magnetism.md
       - Series and Parallel Circuits: series_and_parallel.md
+      - Voltage Dividers: voltage_divider.md
+      - Capacitors: capacitors.md
+      - Inductors: inductors.md
   - Reading Circuits:
       - How to Read a Schematic: reading_schematics.md
   - Components:
+      - Overview: components.md
       - Resistor Color Codes: resistor_color_codes.md
       - Resistor Types: resistor_types.md
+      - Diodes and LEDs: diodes_and_leds.md
+      - Transistors: transistors.md
+      - Vacuum Tubes: vacuum_tubes.md
       - Temperature Sensors: temperature_sensors.md
       - Package Types: package_types.md
   - Microcontrollers:
+      - Overview: microcontrollers.md
       - What Is an Arduino?: what_is_an_arduino.md
       - Digital Pins: digital_io.md
       - Blink an LED: blink_an_led.md
@@ -174,15 +182,21 @@ nav:
       - Reading an Analog Sensor: analog_input.md
       - Building a Threshold Ladder: threshold_output.md
 
-# - Communication:
-#     - Overview: communication_overview.md
+  - Communication:
+      - Overview: communication.md
+      - Serial Communication: serial_communication.md
+      - I²C: i2c.md
+      - SPI: spi.md
   - Power:
+      - Overview: power.md
       - Cells and Batteries: batteries.md
+      - Voltage Regulators: voltage_regulators.md
 
   - Practical Tools:
+      - Overview: practical_tools.md
       - Breadboards: tools/breadboards.md
       - arduino-cli: tools/arduino_cli.md
+      - Using a Multimeter: tools/multimeter.md
+      - Bench Power Supplies: tools/bench_power_supply.md
+      - Soldering: tools/soldering.md
 # Practical Tools — uncomment as articles are published
-#      - Using a Multimeter: tools/multimeter.md
-#      - Soldering: tools/soldering.md
-#      - Bench Power Supplies: tools/bench_power_supply.md

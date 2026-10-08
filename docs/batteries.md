@@ -70,6 +70,8 @@ Every real cell behaves like a perfect EMF with a small resistor hidden inside i
   <figcaption>At a camera-flash current, the alkaline cell's head start mostly disappears inside it.</figcaption>
 </figure>
 
+Internal resistance isn't fixed, either. Energizer's guide to [battery internal resistance](https://data.energizer.com/pdfs/batteryir.pdf) notes that it generally rises as a cell discharges and its active materials are used up, and rises again in the cold, as the chemistry slows. That's why a tired battery can still read close to its full voltage on a meter, which draws almost no current, then sag badly the moment a real load is connected: a meter reading with no load says little about how much a cell has left.
+
 ### Series and Parallel: Building Batteries
 
 A single cell is rarely the right voltage or capacity for the job, so cells are combined:
@@ -188,6 +190,7 @@ Rechargeable cells reward a little care, and punish the wrong charger:
 
 - **Match the charger to the chemistry.** A NiMH charger, a lead-acid charger, and a lithium-ion charger end the charge in different ways. The wrong one can overcharge a cell.
 - **Never mix cells.** Same chemistry, same capacity, same age, same state of charge, especially in series.
+- **Buy lithium packs from known sources.** Health Canada [warns](https://recalls-rappels.canada.ca/en/alert-recall/misuse-or-modification-lithium-ion-batteries-e-mobility-devices-can-be-extremely) that after-market batteries from unknown sources may not meet safety standards. A cheap no-name pack may also leave out the protection circuit that stops a lithium cell from overcharging or shorting, and its capacity label is only as trustworthy as its seller.
 - **Take cells out of stored equipment.** A cell left for years in a device in a drawer can leak corrosive electrolyte onto the contacts.
 - **Mind the cold.** Most chemistries deliver less in the cold; lithium primary cells are the exception, which makes them the choice for winter outdoor gear.
 - **Recycle them.** Batteries contain metals that don't belong in landfill. In Canada, Call2Recycle runs more than 15,000 free drop-off sites for household batteries. Taping the terminals of lithium cells before dropping them off keeps them from shorting against each other in the bin.
@@ -307,6 +310,8 @@ Lead-acid batteries carry their own hazards, separate from lithium's.
 
 Batteries supply steady direct current. **[AC vs DC](ac_dc.md)** covers the other kind: the alternating current from a wall outlet, and why a "120 V" outlet peaks near 170 V.
 
+A battery's voltage still sags as it runs down. **[Voltage Regulators](voltage_regulators.md)** shows how a circuit gets a voltage that doesn't, from a battery or from the wall.
+
 ---
 
 ## Further Reading
@@ -316,6 +321,7 @@ Batteries supply steady direct current. **[AC vs DC](ac_dc.md)** covers the othe
 - [Energizer E91 Alkaline AA](https://data.energizer.com/pdfs/e91.pdf) — capacity versus current, internal resistance, and shelf life
 - [Energizer L91 Ultimate Lithium AA](https://data.energizer.com/pdfs/l91.pdf) — the lithium iron disulfide cell's temperature range and 25-year shelf life
 - [Energizer NH15 NiMH AA](https://data.energizer.com/pdfs/nh15-2300.pdf) — 2,300 mAh and its low internal resistance
+- [Energizer: Battery Internal Resistance (PDF)](https://data.energizer.com/pdfs/batteryir.pdf) — what internal resistance is, and why it rises with discharge and cold
 
 **Safety and Recycling**
 

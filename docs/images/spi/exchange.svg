@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Two rows of three bytes. The controller sends 00000001, a start bit after seven zeros; then 1000 followed by don't-care bits, meaning single-ended channel 0; then a don't-care byte. At the same time the MCP3008 sends back a don't-care byte; then a null bit and result bits 9 and 8; then result bits 7 to 0. With 2.5 volts on a 5 volt reference the result is 512, binary 10 0000 0000.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="48.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">Reading channel 0 of an MCP3008: three bytes out, three bytes back</text>
+<text x="60.0" y="94.0" font-size="13" fill="#f6ad55" text-anchor="start" font-weight="bold">controller sends (COPI)</text>
+<rect x="60" y="130" width="19" height="30" rx="4" fill="#c05621"/>
+<text x="69.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="82" y="130" width="19" height="30" rx="4" fill="#c05621"/>
+<text x="91.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="104" y="130" width="19" height="30" rx="4" fill="#c05621"/>
+<text x="113.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="126" y="130" width="19" height="30" rx="4" fill="#c05621"/>
+<text x="135.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="148" y="130" width="19" height="30" rx="4" fill="#c05621"/>
+<text x="157.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="170" y="130" width="19" height="30" rx="4" fill="#c05621"/>
+<text x="179.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="192" y="130" width="19" height="30" rx="4" fill="#c05621"/>
+<text x="201.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="214" y="130" width="19" height="30" rx="4" fill="#c05621"/>
+<text x="223.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<text x="148.0" y="182.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">byte 1</text>
+<rect x="306" y="130" width="19" height="30" rx="4" fill="#c05621"/>
+<text x="315.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="328" y="130" width="19" height="30" rx="4" fill="#c05621"/>
+<text x="337.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="350" y="130" width="19" height="30" rx="4" fill="#c05621"/>
+<text x="359.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="372" y="130" width="19" height="30" rx="4" fill="#c05621"/>
+<text x="381.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="394" y="130" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="403.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="416" y="130" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="425.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="438" y="130" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="447.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="460" y="130" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="469.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<text x="394.0" y="182.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">byte 2</text>
+<rect x="552" y="130" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="561.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="574" y="130" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="583.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="596" y="130" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="605.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="618" y="130" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="627.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="640" y="130" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="649.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="662" y="130" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="671.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="684" y="130" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="693.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="706" y="130" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="715.5" y="151.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<text x="640.0" y="182.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">byte 3</text>
+<text x="60.0" y="204.0" font-size="13" fill="#9ae6b4" text-anchor="start" font-weight="bold">MCP3008 sends (CIPO)</text>
+<rect x="60" y="240" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="69.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="82" y="240" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="91.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="104" y="240" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="113.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="126" y="240" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="135.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="148" y="240" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="157.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="170" y="240" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="179.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="192" y="240" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="201.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="214" y="240" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="223.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<text x="148.0" y="292.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">byte 1</text>
+<rect x="306" y="240" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="315.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="328" y="240" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="337.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="350" y="240" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="359.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="372" y="240" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="381.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="394" y="240" width="19" height="30" rx="4" fill="#4a5568"/>
+<text x="403.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">x</text>
+<rect x="416" y="240" width="19" height="30" rx="4" fill="#2f855a"/>
+<text x="425.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="438" y="240" width="19" height="30" rx="4" fill="#2f855a"/>
+<text x="447.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<rect x="460" y="240" width="19" height="30" rx="4" fill="#2f855a"/>
+<text x="469.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<text x="394.0" y="292.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">byte 2</text>
+<rect x="552" y="240" width="19" height="30" rx="4" fill="#2f855a"/>
+<text x="561.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="574" y="240" width="19" height="30" rx="4" fill="#2f855a"/>
+<text x="583.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="596" y="240" width="19" height="30" rx="4" fill="#2f855a"/>
+<text x="605.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="618" y="240" width="19" height="30" rx="4" fill="#2f855a"/>
+<text x="627.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="640" y="240" width="19" height="30" rx="4" fill="#2f855a"/>
+<text x="649.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="662" y="240" width="19" height="30" rx="4" fill="#2f855a"/>
+<text x="671.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="684" y="240" width="19" height="30" rx="4" fill="#2f855a"/>
+<text x="693.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<rect x="706" y="240" width="19" height="30" rx="4" fill="#2f855a"/>
+<text x="715.5" y="261.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">0</text>
+<text x="640.0" y="292.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">byte 3</text>
+<text x="224.0" y="118.0" font-size="11" fill="#f6ad55" text-anchor="middle" font-weight="bold">start bit</text>
+<text x="316.0" y="118.0" font-size="11" fill="#f6ad55" text-anchor="middle" font-weight="bold">single-ended</text>
+<text x="360.0" y="104.0" font-size="11" fill="#f6ad55" text-anchor="middle" font-weight="bold">channel 000</text>
+<text x="426.0" y="308.0" font-size="11" fill="#9ae6b4" text-anchor="middle" font-weight="bold">null bit</text>
+<text x="470.0" y="324.0" font-size="11" fill="#9ae6b4" text-anchor="middle" font-weight="bold">result bits 9-8</text>
+<text x="650.0" y="308.0" font-size="11" fill="#9ae6b4" text-anchor="middle" font-weight="bold">result bits 7-0</text>
+<text x="450.0" y="360.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">x = don't care. With 2.50 V on a 5 V reference, code = 1024 × 2.5 ÷ 5 = 512: binary 10 0000 0000.</text>
+</svg>

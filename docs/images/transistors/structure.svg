@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Left: an NPN transistor as a 3D sandwich, N-type emitter, a thin P-type base, and N-type collector, with its symbol whose emitter arrow points out. Right: a PNP transistor, P, thin N, P, whose symbol's emitter arrow points in.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="20" y="20" width="410" height="400" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="225.0" y="52.0" font-size="18" fill="#fbbf24" text-anchor="middle" font-weight="bold">NPN</text>
+<ellipse cx="142.5" cy="205.0" rx="78.5" ry="9.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="70.0,110.0 180.0,110.0 215.0,87.5 105.0,87.5" fill="#6b85a7"/>
+<rect x="70.0" y="110.0" width="110.0" height="90.0" fill="#2c5282"/>
+<rect x="70.0" y="110.0" width="110.0" height="90.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="180.0,200.0 180.0,110.0 215.0,87.5 215.0,177.5" fill="#182d47"/>
+<text x="125.0" y="160.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">N</text>
+<polygon points="180.0,110.0 220.0,110.0 255.0,87.5 215.0,87.5" fill="#b96b6b"/>
+<rect x="180.0" y="110.0" width="40.0" height="90.0" fill="#9b2c2c"/>
+<rect x="180.0" y="110.0" width="40.0" height="90.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="220.0,200.0 220.0,110.0 255.0,87.5 255.0,177.5" fill="#551818"/>
+<text x="200.0" y="160.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">P</text>
+<polygon points="220.0,110.0 330.0,110.0 365.0,87.5 255.0,87.5" fill="#6b85a7"/>
+<rect x="220.0" y="110.0" width="110.0" height="90.0" fill="#2c5282"/>
+<rect x="220.0" y="110.0" width="110.0" height="90.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="330.0,200.0 330.0,110.0 365.0,87.5 365.0,177.5" fill="#182d47"/>
+<text x="275.0" y="160.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">N</text>
+<rect x="123" y="200" width="4" height="40" fill="#cbd5e0"/>
+<text x="125.0" y="258.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">emitter</text>
+<rect x="198" y="200" width="4" height="40" fill="#cbd5e0"/>
+<text x="200.0" y="258.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">base</text>
+<rect x="273" y="200" width="4" height="40" fill="#cbd5e0"/>
+<text x="275.0" y="258.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">collector</text>
+<line x1="165" y1="330" x2="207" y2="330" stroke="#e6e6e6" stroke-width="2.5"/>
+<line x1="207" y1="304" x2="207" y2="356" stroke="#e6e6e6" stroke-width="4"/>
+<line x1="207" y1="320" x2="247" y2="290" stroke="#e6e6e6" stroke-width="2.5"/>
+<line x1="207" y1="340" x2="247" y2="370" stroke="#e6e6e6" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="255.0" y="380.0" font-size="13" fill="#e6e6e6" text-anchor="start" font-weight="normal">E</text>
+<text x="255.0" y="290.0" font-size="13" fill="#e6e6e6" text-anchor="start" font-weight="normal">C</text>
+<text x="225.0" y="404.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">arrow points out: "Not Pointing iN"</text>
+<text x="157.0" y="335.0" font-size="13" fill="#e6e6e6" text-anchor="end" font-weight="normal">B</text>
+<rect x="450" y="20" width="410" height="400" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="655.0" y="52.0" font-size="18" fill="#fbbf24" text-anchor="middle" font-weight="bold">PNP</text>
+<ellipse cx="572.5" cy="205.0" rx="78.5" ry="9.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="500.0,110.0 610.0,110.0 645.0,87.5 535.0,87.5" fill="#b96b6b"/>
+<rect x="500.0" y="110.0" width="110.0" height="90.0" fill="#9b2c2c"/>
+<rect x="500.0" y="110.0" width="110.0" height="90.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="610.0,200.0 610.0,110.0 645.0,87.5 645.0,177.5" fill="#551818"/>
+<text x="555.0" y="160.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">P</text>
+<polygon points="610.0,110.0 650.0,110.0 685.0,87.5 645.0,87.5" fill="#6b85a7"/>
+<rect x="610.0" y="110.0" width="40.0" height="90.0" fill="#2c5282"/>
+<rect x="610.0" y="110.0" width="40.0" height="90.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="650.0,200.0 650.0,110.0 685.0,87.5 685.0,177.5" fill="#182d47"/>
+<text x="630.0" y="160.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">N</text>
+<polygon points="650.0,110.0 760.0,110.0 795.0,87.5 685.0,87.5" fill="#b96b6b"/>
+<rect x="650.0" y="110.0" width="110.0" height="90.0" fill="#9b2c2c"/>
+<rect x="650.0" y="110.0" width="110.0" height="90.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="760.0,200.0 760.0,110.0 795.0,87.5 795.0,177.5" fill="#551818"/>
+<text x="705.0" y="160.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">P</text>
+<rect x="553" y="200" width="4" height="40" fill="#cbd5e0"/>
+<text x="555.0" y="258.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">emitter</text>
+<rect x="628" y="200" width="4" height="40" fill="#cbd5e0"/>
+<text x="630.0" y="258.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">base</text>
+<rect x="703" y="200" width="4" height="40" fill="#cbd5e0"/>
+<text x="705.0" y="258.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">collector</text>
+<line x1="595" y1="330" x2="637" y2="330" stroke="#e6e6e6" stroke-width="2.5"/>
+<line x1="637" y1="304" x2="637" y2="356" stroke="#e6e6e6" stroke-width="4"/>
+<line x1="637" y1="320" x2="677" y2="290" stroke="#e6e6e6" stroke-width="2.5"/>
+<line x1="677" y1="370" x2="639" y2="342" stroke="#e6e6e6" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="685.0" y="380.0" font-size="13" fill="#e6e6e6" text-anchor="start" font-weight="normal">E</text>
+<text x="685.0" y="290.0" font-size="13" fill="#e6e6e6" text-anchor="start" font-weight="normal">C</text>
+<text x="655.0" y="404.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">arrow points in: every polarity reversed</text>
+<text x="587.0" y="335.0" font-size="13" fill="#e6e6e6" text-anchor="end" font-weight="normal">B</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A 3D bench power supply. Two displays read 5.000 volts and 0.045 amps. A lit lamp says CV, constant voltage; a dark one says CC. Two knobs set the voltage and the current limit. An output button switches the terminals on and off, and three terminals give plus, minus and a separate earth.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="470" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<ellipse cx="474.5" cy="395.0" rx="230.5" ry="12.6" fill="#000" fill-opacity="0.4"/>
+<polygon points="250.0,90.0 650.0,90.0 699.0,58.5 299.0,58.5" fill="#808895"/>
+<rect x="250.0" y="90.0" width="400.0" height="300.0" fill="#4a5568"/>
+<rect x="250.0" y="90.0" width="400.0" height="300.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="650.0,390.0 650.0,90.0 699.0,58.5 699.0,358.5" fill="#282e39"/>
+<rect x="264" y="104" width="372" height="272" rx="10" fill="#2d3748"/>
+<rect x="280" y="120" width="200" height="60" rx="6" fill="#0b1020"/>
+<text x="434" y="163.2" font-size="33" fill="#68d391" text-anchor="end" font-family="DejaVu Sans Mono, monospace" font-weight="bold">5.000</text>
+<text x="466.0" y="162.0" font-size="16" fill="#68d391" text-anchor="end" font-weight="bold">V</text>
+<rect x="280" y="190" width="200" height="60" rx="6" fill="#0b1020"/>
+<text x="434" y="233.2" font-size="33" fill="#fbd38d" text-anchor="end" font-family="DejaVu Sans Mono, monospace" font-weight="bold">0.045</text>
+<text x="466.0" y="232.0" font-size="16" fill="#fbd38d" text-anchor="end" font-weight="bold">A</text>
+<rect x="495" y="120" width="54" height="28" rx="5" fill="#48bb78"/>
+<text x="522.0" y="140.0" font-size="15" fill="#1a1a1a" text-anchor="middle" font-weight="bold">CV</text>
+<rect x="495" y="156" width="54" height="28" rx="5" fill="#4a5568"/>
+<text x="522.0" y="176.0" font-size="15" fill="#a0aec0" text-anchor="middle" font-weight="bold">CC</text>
+<circle cx="320" cy="305" r="26" fill="url(#core)"/>
+<line x1="320" y1="305" x2="332" y2="285" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+<text x="320.0" y="348.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">VOLTAGE</text>
+<circle cx="440" cy="305" r="26" fill="url(#core)"/>
+<line x1="440" y1="305" x2="452" y2="285" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+<text x="440.0" y="348.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="bold">CURRENT</text>
+<circle cx="520" cy="305" r="14" fill="#fc8181" stroke="#cbd5e0" stroke-width="2"/>
+<text x="520.0" y="338.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">+</text>
+<circle cx="560" cy="305" r="14" fill="#1a1a1a" stroke="#cbd5e0" stroke-width="2"/>
+<text x="560.0" y="338.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">−</text>
+<circle cx="600" cy="305" r="14" fill="#48bb78" stroke="#cbd5e0" stroke-width="2"/>
+<text x="600.0" y="338.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">⏚</text>
+<rect x="550" y="220" width="70" height="30" rx="6" fill="#c05621"/>
+<text x="585.0" y="241.0" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">OUTPUT</text>
+<line x1="280" y1="150" x2="200" y2="110" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="280" cy="150" r="4" fill="#fbbf24"/>
+<text x="192.0" y="106.0" font-size="14" fill="#fbbf24" text-anchor="end" font-weight="bold">Voltage readback</text>
+<text x="192.0" y="123.0" font-size="11" fill="#a0aec0" text-anchor="end" font-weight="normal" font-style="italic">what the output is</text>
+<line x1="280" y1="220" x2="200" y2="200" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="280" cy="220" r="4" fill="#fbbf24"/>
+<text x="192.0" y="196.0" font-size="14" fill="#fbbf24" text-anchor="end" font-weight="bold">Current readback</text>
+<text x="192.0" y="213.0" font-size="11" fill="#a0aec0" text-anchor="end" font-weight="normal" font-style="italic">what the circuit draws</text>
+<line x1="320" y1="305" x2="200" y2="300" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="320" cy="305" r="4" fill="#fbbf24"/>
+<text x="192.0" y="296.0" font-size="14" fill="#fbbf24" text-anchor="end" font-weight="bold">Two knobs</text>
+<text x="192.0" y="313.0" font-size="11" fill="#a0aec0" text-anchor="end" font-weight="normal" font-style="italic">set the voltage, set the limit</text>
+<line x1="549" y1="134" x2="710" y2="120" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="549" cy="134" r="4" fill="#fbbf24"/>
+<text x="718.0" y="116.0" font-size="14" fill="#fbbf24" text-anchor="start" font-weight="bold">CV / CC lamp</text>
+<text x="718.0" y="133.0" font-size="11" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">which limit is in charge</text>
+<line x1="620" y1="235" x2="710" y2="210" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="620" cy="235" r="4" fill="#fbbf24"/>
+<text x="718.0" y="206.0" font-size="14" fill="#fbbf24" text-anchor="start" font-weight="bold">Output button</text>
+<text x="718.0" y="223.0" font-size="11" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">off while you wire</text>
+<line x1="600" y1="305" x2="710" y2="300" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="600" cy="305" r="4" fill="#fbbf24"/>
+<text x="718.0" y="296.0" font-size="14" fill="#fbbf24" text-anchor="start" font-weight="bold">Terminals</text>
+<text x="718.0" y="313.0" font-size="11" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">+, −, and a separate earth</text>
+</svg>

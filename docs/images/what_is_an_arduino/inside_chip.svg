@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" width="900" height="430" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A 3D microcontroller chip opened to show three blocks inside: a processor that runs the sketch one instruction at a time; 32 kilobytes of flash memory that holds the program and keeps it with the power off; and 2 kilobytes of SRAM for working data, lost when the power goes off. Pins along the bottom edge are its only connection to the outside world.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="400" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="48.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">A whole computer on one chip: the ATmega328P</text>
+<ellipse cx="481.5" cy="365.0" rx="317.5" ry="16.2" fill="#000" fill-opacity="0.4"/>
+<polygon points="170.0,110.0 730.0,110.0 793.0,69.5 233.0,69.5" fill="#5e626b"/>
+<rect x="170.0" y="110.0" width="560.0" height="250.0" fill="#1a202c"/>
+<rect x="170.0" y="110.0" width="560.0" height="250.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="730.0,360.0 730.0,110.0 793.0,69.5 793.0,319.5" fill="#0e1118"/>
+<rect x="186" y="360" width="10" height="26" fill="#a0aec0"/>
+<rect x="225" y="360" width="10" height="26" fill="#a0aec0"/>
+<rect x="264" y="360" width="10" height="26" fill="#a0aec0"/>
+<rect x="303" y="360" width="10" height="26" fill="#a0aec0"/>
+<rect x="342" y="360" width="10" height="26" fill="#a0aec0"/>
+<rect x="381" y="360" width="10" height="26" fill="#a0aec0"/>
+<rect x="420" y="360" width="10" height="26" fill="#a0aec0"/>
+<rect x="459" y="360" width="10" height="26" fill="#a0aec0"/>
+<rect x="498" y="360" width="10" height="26" fill="#a0aec0"/>
+<rect x="537" y="360" width="10" height="26" fill="#a0aec0"/>
+<rect x="576" y="360" width="10" height="26" fill="#a0aec0"/>
+<rect x="615" y="360" width="10" height="26" fill="#a0aec0"/>
+<rect x="654" y="360" width="10" height="26" fill="#a0aec0"/>
+<rect x="693" y="360" width="10" height="26" fill="#a0aec0"/>
+<polygon points="190.0,160.0 340.0,160.0 363.8,144.7 213.8,144.7" fill="#d28863"/>
+<rect x="190.0" y="160.0" width="150.0" height="140.0" fill="#c05621"/>
+<rect x="190.0" y="160.0" width="150.0" height="140.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="340.0,300.0 340.0,160.0 363.8,144.7 363.8,284.7" fill="#692f12"/>
+<text x="265.0" y="215.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">Processor</text>
+<text x="265.0" y="245.0" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="normal">runs the sketch, one</text>
+<text x="265.0" y="261.0" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="normal">instruction at a time</text>
+<polygon points="370.0,160.0 520.0,160.0 543.8,144.7 393.8,144.7" fill="#6a98c7"/>
+<rect x="370.0" y="160.0" width="150.0" height="140.0" fill="#2b6cb0"/>
+<rect x="370.0" y="160.0" width="150.0" height="140.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="520.0,300.0 520.0,160.0 543.8,144.7 543.8,284.7" fill="#173b60"/>
+<text x="445.0" y="215.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">Flash: 32 KB</text>
+<text x="445.0" y="245.0" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="normal">the program; kept</text>
+<text x="445.0" y="261.0" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="normal">when power is off</text>
+<polygon points="550.0,160.0 700.0,160.0 723.8,144.7 573.8,144.7" fill="#6da98b"/>
+<rect x="550.0" y="160.0" width="150.0" height="140.0" fill="#2f855a"/>
+<rect x="550.0" y="160.0" width="150.0" height="140.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="700.0,300.0 700.0,160.0 723.8,144.7 723.8,284.7" fill="#194931"/>
+<text x="625.0" y="215.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">SRAM: 2 KB</text>
+<text x="625.0" y="245.0" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="normal">working data; lost</text>
+<text x="625.0" y="261.0" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="normal">when power is off</text>
+<text x="450.0" y="404.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">pins: the chip's only connection to the outside world</text>
+</svg>

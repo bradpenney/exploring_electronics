@@ -10,21 +10,21 @@
 <polygon points="218.0,380.0 218.0,330.0 246.0,312.0 246.0,362.0" fill="#282e39"/>
 <text x="144.0" y="356.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">Stage 0</text>
 <text x="144.0" y="376.0" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="normal">below 24 °C</text>
-<radialGradient id="led42478712" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#582d2d"/><stop offset="1" stop-color="#271414"/></radialGradient>
+<radialGradient id="led83126815" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#582d2d"/><stop offset="1" stop-color="#271414"/></radialGradient>
 <line x1="96.5" y1="282" x2="96.5" y2="298.0" stroke="#a0aec0" stroke-width="2.4"/>
 <line x1="103.5" y1="282" x2="103.5" y2="295.0" stroke="#a0aec0" stroke-width="2.4"/>
-<rect x="88.5" y="277.5" width="23.0" height="5.0" rx="2" fill="url(#led42478712)"/>
-<path d="M90.0,278.0 L90.0,272.0 A10,10 0 0 1 110.0,272.0 L110.0,278.0 Z" fill="url(#led42478712)"/>
-<radialGradient id="led87343882" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#582d2d"/><stop offset="1" stop-color="#271414"/></radialGradient>
+<rect x="88.5" y="277.5" width="23.0" height="5.0" rx="2" fill="url(#led83126815)"/>
+<path d="M90.0,278.0 L90.0,272.0 A10,10 0 0 1 110.0,272.0 L110.0,278.0 Z" fill="url(#led83126815)"/>
+<radialGradient id="led90415970" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#582d2d"/><stop offset="1" stop-color="#271414"/></radialGradient>
 <line x1="140.5" y1="282" x2="140.5" y2="298.0" stroke="#a0aec0" stroke-width="2.4"/>
 <line x1="147.5" y1="282" x2="147.5" y2="295.0" stroke="#a0aec0" stroke-width="2.4"/>
-<rect x="132.5" y="277.5" width="23.0" height="5.0" rx="2" fill="url(#led87343882)"/>
-<path d="M134.0,278.0 L134.0,272.0 A10,10 0 0 1 154.0,272.0 L154.0,278.0 Z" fill="url(#led87343882)"/>
-<radialGradient id="led40418725" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#582d2d"/><stop offset="1" stop-color="#271414"/></radialGradient>
+<rect x="132.5" y="277.5" width="23.0" height="5.0" rx="2" fill="url(#led90415970)"/>
+<path d="M134.0,278.0 L134.0,272.0 A10,10 0 0 1 154.0,272.0 L154.0,278.0 Z" fill="url(#led90415970)"/>
+<radialGradient id="led57612254" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#582d2d"/><stop offset="1" stop-color="#271414"/></radialGradient>
 <line x1="184.5" y1="282" x2="184.5" y2="298.0" stroke="#a0aec0" stroke-width="2.4"/>
 <line x1="191.5" y1="282" x2="191.5" y2="295.0" stroke="#a0aec0" stroke-width="2.4"/>
-<rect x="176.5" y="277.5" width="23.0" height="5.0" rx="2" fill="url(#led40418725)"/>
-<path d="M178.0,278.0 L178.0,272.0 A10,10 0 0 1 198.0,272.0 L198.0,278.0 Z" fill="url(#led40418725)"/>
+<rect x="176.5" y="277.5" width="23.0" height="5.0" rx="2" fill="url(#led57612254)"/>
+<path d="M178.0,278.0 L178.0,272.0 A10,10 0 0 1 198.0,272.0 L198.0,278.0 Z" fill="url(#led57612254)"/>
 <ellipse cx="318.0" cy="385.0" rx="94.0" ry="7.2" fill="#000" fill-opacity="0.4"/>
 <polygon points="230.0,278.0 378.0,278.0 406.0,260.0 258.0,260.0" fill="#e2bb6c"/>
 <rect x="230.0" y="278.0" width="148.0" height="102.0" fill="#d69e2e"/>
@@ -32,23 +32,23 @@
 <polygon points="378.0,380.0 378.0,278.0 406.0,260.0 406.0,362.0" fill="#755619"/>
 <text x="304.0" y="304.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">Stage 1</text>
 <text x="304.0" y="324.0" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="normal">24 to 26 °C</text>
-<radialGradient id="led62072187" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#fc8181"/><stop offset="1" stop-color="#713a3a"/></radialGradient>
+<radialGradient id="led79265716" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#fc8181"/><stop offset="1" stop-color="#713a3a"/></radialGradient>
 <circle cx="260" cy="220" r="19.8" fill="#fc8181" fill-opacity="0.18"/>
 <circle cx="260" cy="220" r="12.4" fill="#fc8181" fill-opacity="0.22"/>
 <line x1="256.5" y1="230" x2="256.5" y2="246.0" stroke="#a0aec0" stroke-width="2.4"/>
 <line x1="263.5" y1="230" x2="263.5" y2="243.0" stroke="#a0aec0" stroke-width="2.4"/>
-<rect x="248.5" y="225.5" width="23.0" height="5.0" rx="2" fill="url(#led62072187)"/>
-<path d="M250.0,226.0 L250.0,220.0 A10,10 0 0 1 270.0,220.0 L270.0,226.0 Z" fill="url(#led62072187)"/>
-<radialGradient id="led43927966" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#582d2d"/><stop offset="1" stop-color="#271414"/></radialGradient>
+<rect x="248.5" y="225.5" width="23.0" height="5.0" rx="2" fill="url(#led79265716)"/>
+<path d="M250.0,226.0 L250.0,220.0 A10,10 0 0 1 270.0,220.0 L270.0,226.0 Z" fill="url(#led79265716)"/>
+<radialGradient id="led84576069" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#582d2d"/><stop offset="1" stop-color="#271414"/></radialGradient>
 <line x1="300.5" y1="230" x2="300.5" y2="246.0" stroke="#a0aec0" stroke-width="2.4"/>
 <line x1="307.5" y1="230" x2="307.5" y2="243.0" stroke="#a0aec0" stroke-width="2.4"/>
-<rect x="292.5" y="225.5" width="23.0" height="5.0" rx="2" fill="url(#led43927966)"/>
-<path d="M294.0,226.0 L294.0,220.0 A10,10 0 0 1 314.0,220.0 L314.0,226.0 Z" fill="url(#led43927966)"/>
-<radialGradient id="led71303420" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#582d2d"/><stop offset="1" stop-color="#271414"/></radialGradient>
+<rect x="292.5" y="225.5" width="23.0" height="5.0" rx="2" fill="url(#led84576069)"/>
+<path d="M294.0,226.0 L294.0,220.0 A10,10 0 0 1 314.0,220.0 L314.0,226.0 Z" fill="url(#led84576069)"/>
+<radialGradient id="led38478019" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#582d2d"/><stop offset="1" stop-color="#271414"/></radialGradient>
 <line x1="344.5" y1="230" x2="344.5" y2="246.0" stroke="#a0aec0" stroke-width="2.4"/>
 <line x1="351.5" y1="230" x2="351.5" y2="243.0" stroke="#a0aec0" stroke-width="2.4"/>
-<rect x="336.5" y="225.5" width="23.0" height="5.0" rx="2" fill="url(#led71303420)"/>
-<path d="M338.0,226.0 L338.0,220.0 A10,10 0 0 1 358.0,220.0 L358.0,226.0 Z" fill="url(#led71303420)"/>
+<rect x="336.5" y="225.5" width="23.0" height="5.0" rx="2" fill="url(#led38478019)"/>
+<path d="M338.0,226.0 L338.0,220.0 A10,10 0 0 1 358.0,220.0 L358.0,226.0 Z" fill="url(#led38478019)"/>
 <ellipse cx="478.0" cy="385.0" rx="94.0" ry="7.2" fill="#000" fill-opacity="0.4"/>
 <polygon points="390.0,226.0 538.0,226.0 566.0,208.0 418.0,208.0" fill="#e79762"/>
 <rect x="390.0" y="226.0" width="148.0" height="154.0" fill="#dd6b20"/>
@@ -56,25 +56,25 @@
 <polygon points="538.0,380.0 538.0,226.0 566.0,208.0 566.0,362.0" fill="#793a11"/>
 <text x="464.0" y="252.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">Stage 2</text>
 <text x="464.0" y="272.0" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="normal">26 to 28 °C</text>
-<radialGradient id="led77717043" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#fc8181"/><stop offset="1" stop-color="#713a3a"/></radialGradient>
+<radialGradient id="led6818342" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#fc8181"/><stop offset="1" stop-color="#713a3a"/></radialGradient>
 <circle cx="420" cy="168" r="19.8" fill="#fc8181" fill-opacity="0.18"/>
 <circle cx="420" cy="168" r="12.4" fill="#fc8181" fill-opacity="0.22"/>
 <line x1="416.5" y1="178" x2="416.5" y2="194.0" stroke="#a0aec0" stroke-width="2.4"/>
 <line x1="423.5" y1="178" x2="423.5" y2="191.0" stroke="#a0aec0" stroke-width="2.4"/>
-<rect x="408.5" y="173.5" width="23.0" height="5.0" rx="2" fill="url(#led77717043)"/>
-<path d="M410.0,174.0 L410.0,168.0 A10,10 0 0 1 430.0,168.0 L430.0,174.0 Z" fill="url(#led77717043)"/>
-<radialGradient id="led33237727" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#fc8181"/><stop offset="1" stop-color="#713a3a"/></radialGradient>
+<rect x="408.5" y="173.5" width="23.0" height="5.0" rx="2" fill="url(#led6818342)"/>
+<path d="M410.0,174.0 L410.0,168.0 A10,10 0 0 1 430.0,168.0 L430.0,174.0 Z" fill="url(#led6818342)"/>
+<radialGradient id="led16044198" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#fc8181"/><stop offset="1" stop-color="#713a3a"/></radialGradient>
 <circle cx="464" cy="168" r="19.8" fill="#fc8181" fill-opacity="0.18"/>
 <circle cx="464" cy="168" r="12.4" fill="#fc8181" fill-opacity="0.22"/>
 <line x1="460.5" y1="178" x2="460.5" y2="194.0" stroke="#a0aec0" stroke-width="2.4"/>
 <line x1="467.5" y1="178" x2="467.5" y2="191.0" stroke="#a0aec0" stroke-width="2.4"/>
-<rect x="452.5" y="173.5" width="23.0" height="5.0" rx="2" fill="url(#led33237727)"/>
-<path d="M454.0,174.0 L454.0,168.0 A10,10 0 0 1 474.0,168.0 L474.0,174.0 Z" fill="url(#led33237727)"/>
-<radialGradient id="led38990908" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#582d2d"/><stop offset="1" stop-color="#271414"/></radialGradient>
+<rect x="452.5" y="173.5" width="23.0" height="5.0" rx="2" fill="url(#led16044198)"/>
+<path d="M454.0,174.0 L454.0,168.0 A10,10 0 0 1 474.0,168.0 L474.0,174.0 Z" fill="url(#led16044198)"/>
+<radialGradient id="led86025323" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#582d2d"/><stop offset="1" stop-color="#271414"/></radialGradient>
 <line x1="504.5" y1="178" x2="504.5" y2="194.0" stroke="#a0aec0" stroke-width="2.4"/>
 <line x1="511.5" y1="178" x2="511.5" y2="191.0" stroke="#a0aec0" stroke-width="2.4"/>
-<rect x="496.5" y="173.5" width="23.0" height="5.0" rx="2" fill="url(#led38990908)"/>
-<path d="M498.0,174.0 L498.0,168.0 A10,10 0 0 1 518.0,168.0 L518.0,174.0 Z" fill="url(#led38990908)"/>
+<rect x="496.5" y="173.5" width="23.0" height="5.0" rx="2" fill="url(#led86025323)"/>
+<path d="M498.0,174.0 L498.0,168.0 A10,10 0 0 1 518.0,168.0 L518.0,174.0 Z" fill="url(#led86025323)"/>
 <ellipse cx="638.0" cy="385.0" rx="94.0" ry="7.2" fill="#000" fill-opacity="0.4"/>
 <polygon points="550.0,174.0 698.0,174.0 726.0,156.0 578.0,156.0" fill="#d66e6e"/>
 <rect x="550.0" y="174.0" width="148.0" height="206.0" fill="#c53030"/>
@@ -82,27 +82,27 @@
 <polygon points="698.0,380.0 698.0,174.0 726.0,156.0 726.0,362.0" fill="#6c1a1a"/>
 <text x="624.0" y="200.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">Stage 3</text>
 <text x="624.0" y="220.0" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="normal">28 °C and up</text>
-<radialGradient id="led44966305" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#fc8181"/><stop offset="1" stop-color="#713a3a"/></radialGradient>
+<radialGradient id="led85614408" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#fc8181"/><stop offset="1" stop-color="#713a3a"/></radialGradient>
 <circle cx="580" cy="116" r="19.8" fill="#fc8181" fill-opacity="0.18"/>
 <circle cx="580" cy="116" r="12.4" fill="#fc8181" fill-opacity="0.22"/>
 <line x1="576.5" y1="126" x2="576.5" y2="142.0" stroke="#a0aec0" stroke-width="2.4"/>
 <line x1="583.5" y1="126" x2="583.5" y2="139.0" stroke="#a0aec0" stroke-width="2.4"/>
-<rect x="568.5" y="121.5" width="23.0" height="5.0" rx="2" fill="url(#led44966305)"/>
-<path d="M570.0,122.0 L570.0,116.0 A10,10 0 0 1 590.0,116.0 L590.0,122.0 Z" fill="url(#led44966305)"/>
-<radialGradient id="led79166297" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#fc8181"/><stop offset="1" stop-color="#713a3a"/></radialGradient>
+<rect x="568.5" y="121.5" width="23.0" height="5.0" rx="2" fill="url(#led85614408)"/>
+<path d="M570.0,122.0 L570.0,116.0 A10,10 0 0 1 590.0,116.0 L590.0,122.0 Z" fill="url(#led85614408)"/>
+<radialGradient id="led4182528" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#fc8181"/><stop offset="1" stop-color="#713a3a"/></radialGradient>
 <circle cx="624" cy="116" r="19.8" fill="#fc8181" fill-opacity="0.18"/>
 <circle cx="624" cy="116" r="12.4" fill="#fc8181" fill-opacity="0.22"/>
 <line x1="620.5" y1="126" x2="620.5" y2="142.0" stroke="#a0aec0" stroke-width="2.4"/>
 <line x1="627.5" y1="126" x2="627.5" y2="139.0" stroke="#a0aec0" stroke-width="2.4"/>
-<rect x="612.5" y="121.5" width="23.0" height="5.0" rx="2" fill="url(#led79166297)"/>
-<path d="M614.0,122.0 L614.0,116.0 A10,10 0 0 1 634.0,116.0 L634.0,122.0 Z" fill="url(#led79166297)"/>
-<radialGradient id="led70779005" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#fc8181"/><stop offset="1" stop-color="#713a3a"/></radialGradient>
+<rect x="612.5" y="121.5" width="23.0" height="5.0" rx="2" fill="url(#led4182528)"/>
+<path d="M614.0,122.0 L614.0,116.0 A10,10 0 0 1 634.0,116.0 L634.0,122.0 Z" fill="url(#led4182528)"/>
+<radialGradient id="led53585476" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#fc8181"/><stop offset="1" stop-color="#713a3a"/></radialGradient>
 <circle cx="668" cy="116" r="19.8" fill="#fc8181" fill-opacity="0.18"/>
 <circle cx="668" cy="116" r="12.4" fill="#fc8181" fill-opacity="0.22"/>
 <line x1="664.5" y1="126" x2="664.5" y2="142.0" stroke="#a0aec0" stroke-width="2.4"/>
 <line x1="671.5" y1="126" x2="671.5" y2="139.0" stroke="#a0aec0" stroke-width="2.4"/>
-<rect x="656.5" y="121.5" width="23.0" height="5.0" rx="2" fill="url(#led70779005)"/>
-<path d="M658.0,122.0 L658.0,116.0 A10,10 0 0 1 678.0,116.0 L678.0,122.0 Z" fill="url(#led70779005)"/>
+<rect x="656.5" y="121.5" width="23.0" height="5.0" rx="2" fill="url(#led53585476)"/>
+<path d="M658.0,122.0 L658.0,116.0 A10,10 0 0 1 678.0,116.0 L678.0,122.0 Z" fill="url(#led53585476)"/>
 <path d="M130,410 L610,410" fill="none" stroke="#fbbf24" stroke-width="3" marker-end="url(#arrow)"/>
 <text x="390.0" y="436.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">the sketch tests the lowest band first; the first test that passes wins</text>
 </svg>

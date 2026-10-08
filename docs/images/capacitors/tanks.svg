@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" width="820" height="440" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Two 3D tanks filled with water to the same height, marked 9 volts. The narrow tank is a 10 microfarad capacitor holding 90 microcoulombs; the tank ten times wider is a 100 microfarad capacitor holding 900 microcoulombs.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="790" height="410" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="410.0" y="48.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Same voltage, different capacitance: the wider tank holds more</text>
+<ellipse cx="271.0" cy="355.0" rx="62.0" ry="10.8" fill="#000" fill-opacity="0.4"/>
+<polygon points="215.0,175.0 285.0,175.0 327.0,148.0 257.0,148.0" fill="#6ea7dc"/>
+<rect x="215.0" y="175.0" width="70.0" height="175.0" fill="#3182ce"/>
+<rect x="215.0" y="175.0" width="70.0" height="175.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="285.0,350.0 285.0,175.0 327.0,148.0 327.0,323.0" fill="#1a4771"/>
+<rect x="215.0" y="120" width="70" height="230" fill="none" stroke="#cbd5e0" stroke-opacity="0.7" stroke-width="2"/>
+<line x1="215.0" y1="120" x2="257.0" y2="93" stroke="#cbd5e0" stroke-opacity="0.5"/>
+<line x1="285.0" y1="120" x2="327.0" y2="93" stroke="#cbd5e0" stroke-opacity="0.5"/>
+<text x="250.0" y="384.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">10 µF at 9 V</text>
+<text x="250.0" y="404.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">Q = C × V = 90 µC</text>
+<ellipse cx="581.0" cy="355.0" rx="157.0" ry="10.8" fill="#000" fill-opacity="0.4"/>
+<polygon points="430.0,175.0 690.0,175.0 732.0,148.0 472.0,148.0" fill="#6ea7dc"/>
+<rect x="430.0" y="175.0" width="260.0" height="175.0" fill="#3182ce"/>
+<rect x="430.0" y="175.0" width="260.0" height="175.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="690.0,350.0 690.0,175.0 732.0,148.0 732.0,323.0" fill="#1a4771"/>
+<rect x="430.0" y="120" width="260" height="230" fill="none" stroke="#cbd5e0" stroke-opacity="0.7" stroke-width="2"/>
+<line x1="430.0" y1="120" x2="472.0" y2="93" stroke="#cbd5e0" stroke-opacity="0.5"/>
+<line x1="690.0" y1="120" x2="732.0" y2="93" stroke="#cbd5e0" stroke-opacity="0.5"/>
+<text x="560.0" y="384.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">100 µF at 9 V</text>
+<text x="560.0" y="404.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">Q = C × V = 900 µC</text>
+<line x1="30" y1="175" x2="740" y2="175" stroke="#f59e0b" stroke-dasharray="6 5" stroke-width="2"/>
+<text x="35.0" y="167.0" font-size="12" fill="#fbbf24" text-anchor="start" font-weight="bold">height = voltage (9 V)</text>
+<text x="35.0" y="230.0" font-size="12" fill="#90cdf4" text-anchor="start" font-weight="bold">width = capacitance</text>
+<text x="35.0" y="248.0" font-size="12" fill="#90cdf4" text-anchor="start" font-weight="bold">water = charge</text>
+</svg>

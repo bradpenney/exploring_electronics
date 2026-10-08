@@ -126,7 +126,7 @@ A **potentiometer** (pot) has a resistive track between two end terminals and a 
   <figcaption>The wiper splits one track into two resistances that always add up to the full value.</figcaption>
 </figure>
 
-The resistance between the two ends never changes. What changes is how it's split: as the wiper moves toward one end, the resistance on that side shrinks and the other side grows by the same amount. Connected across a supply with the output taken from the wiper, a pot is an adjustable **voltage divider**: anywhere from 0 V to the full supply, set by the shaft. That's how a volume control or a brightness knob works, and wired to an Arduino's analog pin it becomes the simplest analog input there is ([Reading an Analog Sensor](analog_input.md) explains how that pin measures it).
+The resistance between the two ends never changes. What changes is how it's split: as the wiper moves toward one end, the resistance on that side shrinks and the other side grows by the same amount. Connected across a supply with the output taken from the wiper, a pot is an adjustable **[voltage divider](voltage_divider.md)**: anywhere from 0 V to the full supply, set by the shaft. That's how a volume control or a brightness knob works, and wired to an Arduino's analog pin it becomes the simplest analog input there is ([Reading an Analog Sensor](analog_input.md) explains how that pin measures it).
 
 ### Rheostats and Trimmers
 
@@ -294,7 +294,7 @@ An adjustable resistor can always be turned to an extreme, and a circuit has to 
 
 ## What's Next
 
-With the resistor family complete, **[Temperature Sensors](temperature_sensors.md)** puts a resistor's temperature dependence to work on purpose, as a thermistor.
+With the resistor family complete, the next component conducts in one direction only: **[Diodes and LEDs](diodes_and_leds.md)** covers the one-way valve, why every LED colour needs its own voltage, and how to size an LED's resistor properly.
 
 ---
 

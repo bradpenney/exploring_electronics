@@ -62,7 +62,7 @@ Magnets come in three broad kinds, defined by whether their magnetism lasts:
 
     ---
 
-    Keep their magnetism indefinitely. **Ferrite** (ceramic) magnets are cheap and common in fridge magnets and loudspeakers; **alnico** (aluminium, nickel, cobalt) was common in older equipment; **neodymium** magnets are the strongest ordinary magnets made.
+    Keep their magnetism indefinitely. **Ferrite** (ceramic) magnets are cheap and common in fridge magnets and loudspeakers; **alnico** (aluminium, nickel, cobalt) was common in older equipment; **neodymium** magnets are the strongest ordinary magnets made. Wikipedia's [Magnet](https://en.wikipedia.org/wiki/Magnet) article sorts magnetic materials into "soft" ones like annealed iron, "which can be magnetized but do not tend to stay magnetized," and "hard" ones, "which do": permanent magnets are made from the hard kind, which is why one is far more likely to be steel than brass, copper, or aluminium, none of which is magnetic at all.
 
 -   :material-nail: **Temporary magnets**
 
@@ -148,6 +148,56 @@ A transformer with ten times as many turns on its primary steps 120 V down to 12
   <figcaption>A transformer in a schematic: two coils, with two straight lines between them for the iron core.</figcaption>
 </figure>
 
+#### Current and Power
+
+A transformer can't create energy, so stepping the voltage down must step the current up. In an ideal transformer the power in equals the power out, and the currents go the opposite way to the voltages ([Transformer](https://en.wikipedia.org/wiki/Transformer) on Wikipedia):
+
+\[ \frac{V_{\text{primary}}}{V_{\text{secondary}}} = \frac{I_{\text{secondary}}}{I_{\text{primary}}} = \frac{N_{\text{primary}}}{N_{\text{secondary}}} \]
+
+<figure markdown>
+  ![Two panels for an ideal 10 to 1 transformer. The primary has 120 volts and 0.5 amps, 60 watts, and looks like 240 ohms. The secondary has 12 volts and 5 amps, also 60 watts, into a 2.4 ohm load. The voltage steps down ten times, the current up ten times, and the impedance a hundred times, the square of the turns ratio.](images/magnetism/transformer_power.svg){ width="760" }
+  <figcaption>Same 60 W on both sides; voltage and current trade places.</figcaption>
+</figure>
+
+The 10 : 1 transformer above delivers 12 V at 5 A to its load while drawing only 0.5 A at 120 V from the wall. That's why a transformer's size is set by the power it handles, and why its rating is given in volt-amperes (VA), the product of its voltage and current.
+
+The same trade changes how a load looks from the other side. The 2.4 Ω load on the secondary draws 0.5 A at 120 V from the primary, so the wall sees 240 Ω: a hundred times more, the turns ratio squared. Wikipedia states the rule: the load "referred to the primary circuit is equal to the turns ratio squared times the secondary circuit load impedance." Transformers use this to make a load look like the resistance a source wants to drive, which is how audio amplifiers drive loudspeakers and how radio antennas are matched to their cables.
+
+#### Where the Losses Go
+
+Real transformers lose a little energy on the way through, as heat, in four ways:
+
+<figure markdown>
+  ![Four panels of transformer losses. Copper loss: the windings' own resistance heats with the current squared. Eddy currents: loops of current induced in the iron core, large in a solid core and cut by a laminated stack of thin sheets. Hysteresis: energy spent re-magnetising the core every half-cycle. Leakage flux: field that misses the other winding. Distribution transformers still run 98 to 99 percent efficient.](images/magnetism/transformer_losses.svg){ width="760" }
+  <figcaption>Every loss ends as heat, which is why a working transformer is warm.</figcaption>
+</figure>
+
+- **Copper loss:** the windings are wire, and wire has [resistance](resistance.md), so current through them makes heat that grows with the current squared.
+- **Eddy currents:** the iron core is a conductor too, and the changing field induces loops of current inside it. Building the core from thin, insulated sheets, called **laminations**, breaks those loops up; Wikipedia notes that "thinner laminations reduce losses, but are more laborious and expensive to construct."
+- **Hysteresis:** the core's magnetism reverses every half-cycle, and "each time the magnetic field is reversed, a small amount of energy is lost."
+- **Leakage flux:** some of the field misses the second winding and does no useful work.
+
+None of these is large in a well-made transformer: Wikipedia puts typical distribution transformers at 98 to 99% efficient.
+
+#### Kinds of Transformer
+
+The same two-winding idea comes in a few arrangements worth recognizing:
+
+<figure markdown>
+  ![Three transformer schematics. An isolation transformer with two separate windings in a 1 to 1 ratio. A transformer whose secondary has a centre tap, a connection at its midpoint. And an autotransformer: a single winding, with the input across all of it and the output taken from a tap partway along, so input and output share a connection.](images/schematics/transformer_kinds.svg){ width="620" }
+  <figcaption>Two separate windings isolate; one shared winding doesn't.</figcaption>
+</figure>
+
+- **Isolation transformer:** a 1 : 1 transformer used for safety. The output has the same voltage as the input, but "no conductive path is present between source and load" ([Isolation transformer](https://en.wikipedia.org/wiki/Isolation_transformer)), so touching one side of the output while standing on the ground doesn't complete a path back through the mains.
+- **Centre-tapped secondary:** a connection halfway along the secondary gives two equal voltages either side of the tap, which some full-wave rectifiers use ([Diodes and LEDs](diodes_and_leds.md#rectification-ac-to-dc)).
+- **Multiple windings:** one primary can feed several secondaries at different voltages, each isolated from the others.
+- **Autotransformer:** "an electrical transformer with only one winding" ([Autotransformer](https://en.wikipedia.org/wiki/Autotransformer)), with the output taken from a tap. It's smaller and cheaper, but it gives no isolation at all.
+- **Variac:** a variable autotransformer whose sliding contact runs along the winding, giving a smoothly adjustable AC voltage. It's a repair-shop tool for testing equipment at different voltages, and, being an autotransformer, it doesn't isolate either.
+- **Toroidal:** wound on a ring-shaped core, which keeps nearly all its field inside the ring, so it leaks less field and less interference into the circuits around it ([Inductor](https://en.wikipedia.org/wiki/Inductor) on Wikipedia).
+
+!!! danger "An Autotransformer or Variac Is Not Isolated"
+    Because input and output share one winding, an autotransformer's output is connected to the mains. Wikipedia warns that a failure in one "can result in full input voltage applied to the output." Never treat a variac's output as safer than the wall outlet it plugs into.
+
 ### From Fields to Radio
 
 A current makes a magnetic field; a changing magnetic field makes a voltage. In 1865, James Clerk Maxwell worked out that changing electric and magnetic fields can keep generating each other and travel through space on their own, at the speed of light. In 1887, Heinrich Hertz, the man the unit of frequency is named after, made and detected those waves in his laboratory. They're radio waves: electromagnetism set loose from the wire.
@@ -212,6 +262,27 @@ Larger neodymium magnets carry their own risks.
     ??? tip "Solution"
         Steady DC makes a steady magnetic field in the core, and a steady field induces no voltage in the secondary. A transformer needs a changing current, which is why it works on AC.
 
+??? question "7. Secondary Current"
+
+    A transformer steps 120 V down to 12 V and draws 0.5 A from the wall. Ignoring losses, how much current can its secondary deliver?
+
+    ??? tip "Solution"
+        Power in equals power out: 120 V × 0.5 A = 60 W, so the secondary delivers 60 W ÷ 12 V = **5 A**. The voltage went down ten times, so the current went up ten times.
+
+??? question "8. Step Up, Current Down"
+
+    A transformer with a 1 : 5 turns ratio steps a voltage up and delivers 50 mA to its load. Ignoring losses, what current does its primary draw?
+
+    ??? tip "Solution"
+        The voltage goes up five times, so the current on the primary side is five times the secondary current: 5 × 50 mA = **250 mA**.
+
+??? question "9. Is It Isolated?"
+
+    A variac and a 1 : 1 isolation transformer both deliver 120 V AC. Which one isolates its output from the mains, and why?
+
+    ??? tip "Solution"
+        **The isolation transformer.** Its two windings share only the magnetic field, with no conductive path between them. A variac is an autotransformer: one winding, with input and output connected through it.
+
 ---
 
 ## Quick Recap
@@ -252,7 +323,7 @@ Larger neodymium magnets carry their own risks.
 
     ---
 
-    Voltage ratio = turns ratio. AC only.
+    Voltage ratio = turns ratio; current ratio is the inverse; power in = power out. AC only.
 
 </div>
 
@@ -274,7 +345,9 @@ With electricity and magnetism joined, **[Series and Parallel Circuits](series_a
 **Deep Dives**
 
 - [Electromagnetic Induction — Wikipedia](https://en.wikipedia.org/wiki/Electromagnetic_induction) — Faraday's law and how generators and transformers use it
-- [Transformer — Wikipedia](https://en.wikipedia.org/wiki/Transformer) — cores, windings, and the turns ratio
+- [Transformer — Wikipedia](https://en.wikipedia.org/wiki/Transformer) — cores, windings, the turns ratio, current and impedance ratios, and losses
+- [Autotransformer — Wikipedia](https://en.wikipedia.org/wiki/Autotransformer) — one winding, no isolation, and the variac
+- [Isolation Transformer — Wikipedia](https://en.wikipedia.org/wiki/Isolation_transformer) — why a 1 : 1 transformer makes equipment safer to work on
 
 **Related Articles**
 

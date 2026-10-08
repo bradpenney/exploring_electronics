@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" width="900" height="470" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Three 3D silicon blocks, P-type in red with holes and N-type in blue with free electrons, separated by a grey depletion zone. With no voltage the zone is thin. Forward biased, positive on the P side, the zone is squeezed almost away and current flows from P to N. Reverse biased, the zone widens and almost nothing flows.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="30" y="20" width="270" height="430" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="165.0" y="52.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">No voltage</text>
+<polygon points="60.0,180.0 137.0,180.0 165.0,162.0 88.0,162.0" fill="#b96b6b"/>
+<rect x="60.0" y="180.0" width="77.0" height="120.0" fill="#9b2c2c"/>
+<rect x="60.0" y="180.0" width="77.0" height="120.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="137.0,300.0 137.0,180.0 165.0,162.0 165.0,282.0" fill="#551818"/>
+<polygon points="137.0,180.0 183.0,180.0 211.0,162.0 165.0,162.0" fill="#808895"/>
+<rect x="137.0" y="180.0" width="46.0" height="120.0" fill="#4a5568"/>
+<rect x="137.0" y="180.0" width="46.0" height="120.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="183.0,300.0 183.0,180.0 211.0,162.0 211.0,282.0" fill="#282e39"/>
+<polygon points="183.0,180.0 260.0,180.0 288.0,162.0 211.0,162.0" fill="#6b85a7"/>
+<rect x="183.0" y="180.0" width="77.0" height="120.0" fill="#2c5282"/>
+<rect x="183.0" y="180.0" width="77.0" height="120.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="260.0,300.0 260.0,180.0 288.0,162.0 288.0,282.0" fill="#182d47"/>
+<text x="98.5" y="152.0" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">P</text>
+<text x="221.5" y="152.0" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">N</text>
+<circle cx="72.8" cy="276" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="195.8" cy="276" r="5" fill="url(#eball)"/>
+<circle cx="72.8" cy="242" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="195.8" cy="242" r="5" fill="url(#eball)"/>
+<circle cx="72.8" cy="208" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="195.8" cy="208" r="5" fill="url(#eball)"/>
+<circle cx="98.5" cy="276" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="221.5" cy="276" r="5" fill="url(#eball)"/>
+<circle cx="98.5" cy="242" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="221.5" cy="242" r="5" fill="url(#eball)"/>
+<circle cx="98.5" cy="208" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="221.5" cy="208" r="5" fill="url(#eball)"/>
+<circle cx="124.2" cy="276" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="247.2" cy="276" r="5" fill="url(#eball)"/>
+<circle cx="124.2" cy="242" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="247.2" cy="242" r="5" fill="url(#eball)"/>
+<circle cx="124.2" cy="208" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="247.2" cy="208" r="5" fill="url(#eball)"/>
+<text x="160.0" y="326.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">depletion</text>
+<text x="160.0" y="340.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">zone</text>
+<text x="160.0" y="384.0" font-size="11" fill="#e6e6e6" text-anchor="middle" font-weight="normal">anode = P · cathode = N</text>
+<text x="165.0" y="432.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">a thin depletion zone forms by itself</text>
+<rect x="320" y="20" width="270" height="430" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="455.0" y="52.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Forward biased</text>
+<polygon points="350.0,180.0 442.0,180.0 470.0,162.0 378.0,162.0" fill="#b96b6b"/>
+<rect x="350.0" y="180.0" width="92.0" height="120.0" fill="#9b2c2c"/>
+<rect x="350.0" y="180.0" width="92.0" height="120.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="442.0,300.0 442.0,180.0 470.0,162.0 470.0,282.0" fill="#551818"/>
+<polygon points="442.0,180.0 458.0,180.0 486.0,162.0 470.0,162.0" fill="#808895"/>
+<rect x="442.0" y="180.0" width="16.0" height="120.0" fill="#4a5568"/>
+<rect x="442.0" y="180.0" width="16.0" height="120.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="458.0,300.0 458.0,180.0 486.0,162.0 486.0,282.0" fill="#282e39"/>
+<polygon points="458.0,180.0 550.0,180.0 578.0,162.0 486.0,162.0" fill="#6b85a7"/>
+<rect x="458.0" y="180.0" width="92.0" height="120.0" fill="#2c5282"/>
+<rect x="458.0" y="180.0" width="92.0" height="120.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="550.0,300.0 550.0,180.0 578.0,162.0 578.0,282.0" fill="#182d47"/>
+<text x="396.0" y="152.0" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">P</text>
+<text x="504.0" y="152.0" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">N</text>
+<circle cx="365.3" cy="276" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="473.3" cy="276" r="5" fill="url(#eball)"/>
+<circle cx="365.3" cy="242" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="473.3" cy="242" r="5" fill="url(#eball)"/>
+<circle cx="365.3" cy="208" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="473.3" cy="208" r="5" fill="url(#eball)"/>
+<circle cx="396.0" cy="276" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="504.0" cy="276" r="5" fill="url(#eball)"/>
+<circle cx="396.0" cy="242" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="504.0" cy="242" r="5" fill="url(#eball)"/>
+<circle cx="396.0" cy="208" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="504.0" cy="208" r="5" fill="url(#eball)"/>
+<circle cx="426.7" cy="276" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="534.7" cy="276" r="5" fill="url(#eball)"/>
+<circle cx="426.7" cy="242" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="534.7" cy="242" r="5" fill="url(#eball)"/>
+<circle cx="426.7" cy="208" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="534.7" cy="208" r="5" fill="url(#eball)"/>
+<text x="450.0" y="326.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">depletion</text>
+<text x="450.0" y="340.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">zone</text>
+<text x="344.0" y="240.0" font-size="22" fill="#fc8181" text-anchor="end" font-weight="bold">+</text>
+<text x="584.0" y="240.0" font-size="22" fill="#90cdf4" text-anchor="start" font-weight="bold">−</text>
+<line x1="370" y1="362" x2="540" y2="362" stroke="#f59e0b" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="450.0" y="384.0" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="normal">conventional current, P to N</text>
+<text x="455.0" y="432.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">zone squeezed thin: current flows</text>
+<rect x="610" y="20" width="270" height="430" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="745.0" y="52.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Reverse biased</text>
+<polygon points="640.0,180.0 685.0,180.0 713.0,162.0 668.0,162.0" fill="#b96b6b"/>
+<rect x="640.0" y="180.0" width="45.0" height="120.0" fill="#9b2c2c"/>
+<rect x="640.0" y="180.0" width="45.0" height="120.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="685.0,300.0 685.0,180.0 713.0,162.0 713.0,282.0" fill="#551818"/>
+<polygon points="685.0,180.0 795.0,180.0 823.0,162.0 713.0,162.0" fill="#808895"/>
+<rect x="685.0" y="180.0" width="110.0" height="120.0" fill="#4a5568"/>
+<rect x="685.0" y="180.0" width="110.0" height="120.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="795.0,300.0 795.0,180.0 823.0,162.0 823.0,282.0" fill="#282e39"/>
+<polygon points="795.0,180.0 840.0,180.0 868.0,162.0 823.0,162.0" fill="#6b85a7"/>
+<rect x="795.0" y="180.0" width="45.0" height="120.0" fill="#2c5282"/>
+<rect x="795.0" y="180.0" width="45.0" height="120.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="840.0,300.0 840.0,180.0 868.0,162.0 868.0,282.0" fill="#182d47"/>
+<text x="662.5" y="152.0" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">P</text>
+<text x="817.5" y="152.0" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">N</text>
+<circle cx="662.5" cy="276" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="817.5" cy="276" r="5" fill="url(#eball)"/>
+<circle cx="662.5" cy="242" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="817.5" cy="242" r="5" fill="url(#eball)"/>
+<circle cx="662.5" cy="208" r="6" fill="none" stroke="#fbd38d" stroke-width="2"/>
+<circle cx="817.5" cy="208" r="5" fill="url(#eball)"/>
+<text x="740.0" y="326.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">depletion</text>
+<text x="740.0" y="340.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">zone</text>
+<text x="634.0" y="240.0" font-size="22" fill="#90cdf4" text-anchor="end" font-weight="bold">−</text>
+<text x="874.0" y="240.0" font-size="22" fill="#fc8181" text-anchor="start" font-weight="bold">+</text>
+<line x1="710" y1="362" x2="770" y2="362" stroke="#fc8181" stroke-width="4"/>
+<line x1="710" y1="352" x2="770" y2="372" stroke="#fc8181" stroke-width="3"/>
+<text x="740.0" y="384.0" font-size="11" fill="#fc8181" text-anchor="middle" font-weight="normal">blocked (a few µA leak)</text>
+<text x="745.0" y="432.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">zone widened: almost nothing flows</text>
+</svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Five kinds of inductor. An air-core coil, nanohenries to tens of microhenries, for radio tuning. A coil on a ferrite rod, used in AM radio antennas. A toroid, a ring-shaped core that keeps its field inside. An iron-core choke, millihenries to henries, for power filtering. And a moulded inductor with colour bands, beside a tiny chip inductor.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="ferr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d232e"/><stop offset="0.22" stop-color="#8b919a"/><stop offset="0.5" stop-color="#2d3748"/><stop offset="1" stop-color="#12161c"/></linearGradient><linearGradient id="mold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#246844"/><stop offset="0.22" stop-color="#91cbac"/><stop offset="0.5" stop-color="#38a169"/><stop offset="1" stop-color="#16402a"/></linearGradient></defs>
+<rect x="13" y="20" width="164" height="360" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<path d="M62.9,122.0 A7.8,28.0 0 0 0 62.9,178.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M75.7,122.0 A7.8,28.0 0 0 0 75.7,178.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M88.6,122.0 A7.8,28.0 0 0 0 88.6,178.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M101.4,122.0 A7.8,28.0 0 0 0 101.4,178.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M114.3,122.0 A7.8,28.0 0 0 0 114.3,178.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M127.1,122.0 A7.8,28.0 0 0 0 127.1,178.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M140.0,122.0 A7.8,28.0 0 0 0 140.0,178.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M50.0,178.0 A7.8,28.0 0 0 0 62.9,122.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M62.9,178.0 A7.8,28.0 0 0 0 75.7,122.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M75.7,178.0 A7.8,28.0 0 0 0 88.6,122.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M88.6,178.0 A7.8,28.0 0 0 0 101.4,122.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M101.4,178.0 A7.8,28.0 0 0 0 114.3,122.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M114.3,178.0 A7.8,28.0 0 0 0 127.1,122.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M127.1,178.0 A7.8,28.0 0 0 0 140.0,122.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="95.0" cy="192.0" rx="55.0" ry="6" fill="#000" fill-opacity="0.35"/>
+<text x="95.0" y="280.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Air core</text>
+<text x="95.0" y="304.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">nH to tens of µH</text>
+<text x="95.0" y="324.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">radio tuning, VHF</text>
+<rect x="190" y="20" width="164" height="360" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="206" y="138" width="132" height="24" rx="12" fill="url(#ferr)"/>
+<path d="M240.9,132.0 A5.0,18.0 0 0 0 240.9,168.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M249.8,132.0 A5.0,18.0 0 0 0 249.8,168.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M258.7,132.0 A5.0,18.0 0 0 0 258.7,168.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M267.6,132.0 A5.0,18.0 0 0 0 267.6,168.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M276.4,132.0 A5.0,18.0 0 0 0 276.4,168.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M285.3,132.0 A5.0,18.0 0 0 0 285.3,168.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M294.2,132.0 A5.0,18.0 0 0 0 294.2,168.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M303.1,132.0 A5.0,18.0 0 0 0 303.1,168.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M312.0,132.0 A5.0,18.0 0 0 0 312.0,168.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M232.0,168.0 A5.0,18.0 0 0 0 240.9,132.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M240.9,168.0 A5.0,18.0 0 0 0 249.8,132.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M249.8,168.0 A5.0,18.0 0 0 0 258.7,132.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M258.7,168.0 A5.0,18.0 0 0 0 267.6,132.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M267.6,168.0 A5.0,18.0 0 0 0 276.4,132.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M276.4,168.0 A5.0,18.0 0 0 0 285.3,132.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M285.3,168.0 A5.0,18.0 0 0 0 294.2,132.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M294.2,168.0 A5.0,18.0 0 0 0 303.1,132.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M303.1,168.0 A5.0,18.0 0 0 0 312.0,132.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="272.0" cy="182.0" rx="50.0" ry="6" fill="#000" fill-opacity="0.35"/>
+<text x="272.0" y="280.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Ferrite rod</text>
+<text x="272.0" y="304.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">µH to mH</text>
+<text x="272.0" y="324.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">AM radio antennas</text>
+<rect x="367" y="20" width="164" height="360" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<circle cx="449" cy="150" r="46" fill="none" stroke="#4a5568" stroke-width="24"/>
+<line x1="481.0" y1="150.0" x2="509.0" y2="150.0" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="479.1" y1="160.9" x2="505.4" y2="170.5" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="473.5" y1="170.6" x2="495.0" y2="188.6" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="465.0" y1="177.7" x2="479.0" y2="202.0" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="454.6" y1="181.5" x2="459.4" y2="209.1" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="443.4" y1="181.5" x2="438.6" y2="209.1" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="433.0" y1="177.7" x2="419.0" y2="202.0" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="424.5" y1="170.6" x2="403.0" y2="188.6" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="418.9" y1="160.9" x2="392.6" y2="170.5" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="417.0" y1="150.0" x2="389.0" y2="150.0" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="418.9" y1="139.1" x2="392.6" y2="129.5" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="424.5" y1="129.4" x2="403.0" y2="111.4" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="433.0" y1="122.3" x2="419.0" y2="98.0" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="443.4" y1="118.5" x2="438.6" y2="90.9" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="454.6" y1="118.5" x2="459.4" y2="90.9" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="465.0" y1="122.3" x2="479.0" y2="98.0" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="473.5" y1="129.4" x2="495.0" y2="111.4" stroke="#c8733c" stroke-width="3.5"/>
+<line x1="479.1" y1="139.1" x2="505.4" y2="129.5" stroke="#c8733c" stroke-width="3.5"/>
+<text x="449.0" y="280.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Toroid</text>
+<text x="449.0" y="304.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">µH to mH</text>
+<text x="449.0" y="324.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">field stays in the ring</text>
+<rect x="544" y="20" width="164" height="360" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<ellipse cx="636.5" cy="205.0" rx="66.5" ry="5.4" fill="#000" fill-opacity="0.4"/>
+<polygon points="576.0,100.0 676.0,100.0 697.0,86.5 597.0,86.5" fill="#808895"/>
+<rect x="576.0" y="100.0" width="100.0" height="100.0" fill="#4a5568"/>
+<rect x="576.0" y="100.0" width="100.0" height="100.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="676.0,200.0 676.0,100.0 697.0,86.5 697.0,186.5" fill="#282e39"/>
+<rect x="594" y="114" width="64" height="72" rx="8" fill="#c8733c"/>
+<rect x="594" y="114" width="64" height="72" rx="8" fill="url(#gloss)"/>
+<text x="626.0" y="280.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Iron-core choke</text>
+<text x="626.0" y="304.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">mH to henries</text>
+<text x="626.0" y="324.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">power-line filtering</text>
+<rect x="721" y="20" width="164" height="360" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="733" y="148" width="140" height="4" fill="#cbd5e0"/>
+<rect x="767" y="134" width="72" height="32" rx="14" fill="url(#mold)"/>
+<rect x="779" y="134" width="6" height="32" fill="#e53e3e"/>
+<rect x="792" y="134" width="6" height="32" fill="#e53e3e"/>
+<rect x="805" y="134" width="6" height="32" fill="#2d3748"/>
+<rect x="818" y="134" width="6" height="32" fill="#d69e2e"/>
+<ellipse cx="808.6" cy="215.0" rx="25.6" ry="5.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="789.0,198.0 817.0,198.0 828.2,190.8 800.2,190.8" fill="#808895"/>
+<rect x="789.0" y="198.0" width="28.0" height="12.0" fill="#4a5568"/>
+<rect x="789.0" y="198.0" width="28.0" height="12.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="817.0,210.0 817.0,198.0 828.2,190.8 828.2,202.8" fill="#282e39"/>
+<text x="803.0" y="280.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Moulded / chip</text>
+<text x="803.0" y="304.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">nH to mH</text>
+<text x="803.0" y="324.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">on circuit boards</text>
+</svg>

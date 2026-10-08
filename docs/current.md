@@ -144,7 +144,7 @@ Voltage is a difference between two points, so a voltmeter sits *across* a compo
 An ammeter is built the opposite way to a voltmeter. A voltmeter has a very high resistance so it barely disturbs the circuit; an ammeter has a very *low* resistance, close to a plain wire, so inserting it into the loop barely changes the current it's measuring. That low resistance is exactly what makes the classic mistake so destructive:
 
 - ✅ **Safe (non-destructive):** measuring current with the meter in series in a battery-powered circuit, after checking that the expected current is within the meter's range.
-- ⚠️ **Caution (can damage the meter):** leaving the leads in the current jack and then touching the probes across a battery or a power supply, the way a voltmeter is used. The meter becomes a near-short across the source, a large current rushes through it, and it blows its internal fuse (or worse, if it has none). After measuring current, move the red lead back to the voltage jack straight away.
+- ⚠️ **Caution (can damage the meter):** leaving the leads in the current jack and then touching the probes across a battery or a power supply, the way a voltmeter is used. The meter becomes a near-short across the source, a large current rushes through it, and it blows its internal fuse (or worse, if it has none: [Using a Multimeter](tools/multimeter.md#the-fuse-behind-the-current-jacks) explains what that fuse has to survive). After measuring current, move the red lead back to the voltage jack straight away.
 - 🚨 **DANGER:** measuring current in mains circuits. Leave it alone.
 
 ---

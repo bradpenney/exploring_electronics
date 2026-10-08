@@ -44,7 +44,7 @@ A wire's resistance comes from four things: what it's made of, how long it is, h
 - **Material.** Every material has a **resistivity**, written ρ (the Greek letter rho): the resistance of a standard one-metre cube of it. Copper's is 1.68 × 10⁻⁸ Ω·m. Nichrome, the alloy in toaster elements, is about 65 times higher, which is exactly why toasters use it: its resistance turns current into heat.
 - **Length.** A longer wire is more collisions in a row. Double the length and every coulomb has twice as far to fight through: double the resistance.
 - **Thickness.** A thicker wire is more lanes side by side. Double the cross-sectional area and twice as many electrons can move at once, each one meeting the same number of collisions as before: half the resistance.
-- **Temperature.** Hotter atoms vibrate harder and collide more often. Copper gains about 0.39% resistance for every degree Celsius, so at 70 °C it's about 19% above its 20 °C value.
+- **Temperature.** Hotter atoms vibrate harder and collide more often. Copper gains about 0.39% resistance for every degree Celsius, so at 70 °C it's about 19% above its 20 °C value. Cooling goes the other way, and some materials go all the way: below a critical temperature a **superconductor** has no resistance at all. Heike Kamerlingh Onnes discovered it in 1911, when mercury's resistance vanished at 4.2 K (about −269 °C), and the strong magnets in hospital MRI (magnetic resonance imaging) scanners are superconducting coils.
 
 The first three combine into one formula. Resistance is resistivity times length, divided by cross-sectional area:
 
@@ -265,6 +265,7 @@ Voltage, current, and resistance are now each defined on their own. **[Ohm's Law
 
 **Reference Data**
 
+- [Superconductivity — Wikipedia](https://en.wikipedia.org/wiki/Superconductivity) — zero resistance below a critical temperature, and where it's used
 - [Electrical Resistivity and Conductivity — Wikipedia](https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity) — the resistivity values used here, from copper to nichrome
 - [American Wire Gauge — Wikipedia](https://en.wikipedia.org/wiki/American_wire_gauge) — the gauge formula and a full table of diameters and areas
 - [E Series of Preferred Numbers — Wikipedia](https://en.wikipedia.org/wiki/E_series_of_preferred_numbers) — the E6 through E192 series defined in IEC 60063

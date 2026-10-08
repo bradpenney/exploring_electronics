@@ -26,6 +26,11 @@ That's the whole idea behind making hardware *do* something. This article covers
 
 A program only ever sees those two values, and that restriction is what makes digital reliable. When the Uno *reads* a pin, its chip treats anything above 3V as HIGH and anything below 1.5V as LOW (the `ATmega328P` datasheet's thresholds, 60% and 30% of the 5V supply). A signal that sags from 5V to 4.6V, or picks up a few hundred millivolts of noise, still reads exactly the same. The band between 1.5V and 3V is the one place a reading isn't guaranteed, and a well-designed circuit never leaves a pin sitting there.
 
+<figure markdown>
+  ![A 3D column from 0 to 5 volts in three bands: below 1.5 volts reads LOW, above 3 volts reads HIGH, and the band between is not guaranteed. A supply sagging to 4.6 volts still reads HIGH, 0.3 volts of noise on a LOW still reads LOW, and 2.2 volts could read either way.](images/digital_io/thresholds.svg){ width="760" }
+  <figcaption>Wide bands on each side are what let a digital input shrug off noise.</figcaption>
+</figure>
+
 !!! tip "Your board may use 3.3V"
     The Uno's HIGH is 5V, but many modern boards, including the `ESP32`, the Raspberry Pi Pico, and the BBC micro:bit, use **3.3V**. The idea is identical; only the voltage of HIGH changes. It matters the moment you connect two boards together, as the Safety section explains.
 
@@ -39,6 +44,11 @@ Before a pin can do anything, you have to tell the microcontroller which of two 
 - **INPUT** — the pin *senses* voltage. The microcontroller reads whether something outside is holding the pin HIGH or LOW, like a button being pressed.
 
 You set this once, when the program starts, with `pinMode()`. Get it backwards and nothing works: an output pin can't hear a button, and an input pin can't light an LED.
+
+<figure markdown>
+  ![Two panels. OUTPUT: pin 3, set HIGH at 5 volts, pushes current through a resistor and lights an LED. INPUT: pin 2 only listens, measuring the voltage a button holds it at while drawing almost no current.](images/digital_io/pin_jobs.svg){ width="760" }
+  <figcaption>An output supplies current; an input only measures voltage.</figcaption>
+</figure>
 
 The code in this article is **Arduino C/C++**, the language an Arduino runs. If `void`, the curly braces, or `setup()`/`loop()` are unfamiliar, [What Is an Arduino?](what_is_an_arduino.md) walks through what each piece means before you hit it below. Once you're ready to actually run this code, [arduino-cli](tools/arduino_cli.md) covers compiling and uploading it.
 
@@ -80,7 +90,7 @@ void loop() {
 
 Notice the circuit never connects the LED straight to the pin. There's always a resistor first, and leaving it out is the most common way beginners destroy their first component.
 
-An LED doesn't behave like a resistor. Below its forward voltage (about 2V for a red LED) it passes almost nothing; above it, the current climbs steeply with every extra fraction of a volt. Connected straight to 5V, it tries to draw far more current than it or the pin can survive. It may flare brightly and burn out, and it can damage the pin driving it. A resistor in series takes up the extra 3V and sets the current: [Ohm's Law and Power](ohms_law.md) works out the value, and 220 Ω (about 14 mA) is the usual choice on 5V.
+An LED doesn't behave like a resistor. Below its forward voltage (about 2V for a red LED) it passes almost nothing; above it, the current climbs steeply with every extra fraction of a volt. Connected straight to 5V, it tries to draw far more current than it or the pin can survive. It may flare brightly and burn out, and it can damage the pin driving it. A resistor in series takes up the extra 3V and sets the current: [Diodes and LEDs](diodes_and_leds.md#sizing-an-led-resistor) works out the value, and 220 Ω (about 14 mA) is the usual choice on 5V.
 
 !!! warning "Always put a resistor in series with an LED"
     Connecting an LED directly to a pin with no resistor lets too much current flow. The LED can burn out instantly, and you can damage the microcontroller pin driving it. One resistor per LED, every time.
@@ -126,6 +136,11 @@ Power the same circuit up and the program's idle state shows: the green LED is l
 
 That loop of reading inputs and driving outputs is the heartbeat of nearly every microcontroller program, from this button-and-LED circuit to a thermostat reading a sensor and switching a furnace.
 
+<figure markdown>
+  ![A ring of three steps that repeats forever inside loop(): read the inputs, for example digitalRead on the button's pin; decide what to do, for example if the button is pressed; drive the outputs, for example digitalWrite to an LED; then again.](images/digital_io/read_decide_drive.svg){ width="760" }
+  <figcaption>Read, decide, drive, repeat: the shape of almost every sketch.</figcaption>
+</figure>
+
 ---
 
 ## The Same Idea on Every Board
@@ -147,7 +162,7 @@ Learn it once here, and every new board is just a new set of numbers on a patter
 Nothing on a 5V Arduino can hurt you, but two mistakes destroy pins, and both are easy to make.
 
 !!! warning "A pin can supply only a little current, and only at its own voltage"
-    A microcontroller pin is meant to drive small loads: an LED, or the input of another chip. An Arduino Uno pin is rated for about **20 mA**, and 40 mA is the absolute maximum before damage. A motor, a relay, a buzzer drawing real power, or a strip of LEDs will try to pull far more and can destroy the pin. When a load needs more current than a pin can give, the pin switches a transistor and the transistor switches the load.
+    A microcontroller pin is meant to drive small loads: an LED, or the input of another chip. An Arduino Uno pin is rated for about **20 mA**, and 40 mA is the absolute maximum before damage. A motor, a relay, a buzzer drawing real power, or a strip of LEDs will try to pull far more and can destroy the pin. When a load needs more current than a pin can give, the pin switches a transistor and the transistor switches the load; [Transistors](transistors.md) shows how.
 
     Voltage matters too: 5V from an Uno pin fed into a 3.3V board's pin can damage that board. Before wiring two boards together, confirm they run at the same voltage, or put a level shifter between them.
 

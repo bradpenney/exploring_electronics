@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Four 3D bars of top speed on a log scale for an Arduino Uno. Serial at 115,200 baud on two wires between two devices. I2C fast mode at 400 kilobits per second on two wires shared by many devices. SPI at the MCP3008's 3.6 megahertz limit and the Uno's own 8 megahertz limit, on three shared wires plus one select wire per device.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="390" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="48.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">Three ways to talk, on an Uno</text>
+<ellipse cx="169.0" cy="335.0" rx="65.0" ry="7.2" fill="#000" fill-opacity="0.4"/>
+<polygon points="110.0,280.6 200.0,280.6 228.0,262.6 138.0,262.6" fill="#f8bb54"/>
+<rect x="110.0" y="280.6" width="90.0" height="49.4" fill="#f59e0b"/>
+<rect x="110.0" y="280.6" width="90.0" height="49.4" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="200.0,330.0 200.0,280.6 228.0,262.6 228.0,312.0" fill="#865606"/>
+<text x="170.0" y="254.6" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">115,200 baud</text>
+<text x="155.0" y="358.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Serial</text>
+<text x="155.0" y="376.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">2 wires, 2 devices</text>
+<ellipse cx="359.0" cy="335.0" rx="65.0" ry="7.2" fill="#000" fill-opacity="0.4"/>
+<polygon points="300.0,233.0 390.0,233.0 418.0,215.0 328.0,215.0" fill="#73c9c4"/>
+<rect x="300.0" y="233.0" width="90.0" height="97.0" fill="#38b2ac"/>
+<rect x="300.0" y="233.0" width="90.0" height="97.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="390.0,330.0 390.0,233.0 418.0,215.0 418.0,312.0" fill="#1e615e"/>
+<text x="360.0" y="207.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">400 kbit/s</text>
+<text x="345.0" y="358.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">I²C fast mode</text>
+<text x="345.0" y="376.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">2 wires, many devices</text>
+<ellipse cx="549.0" cy="335.0" rx="65.0" ry="7.2" fill="#000" fill-opacity="0.4"/>
+<polygon points="490.0,149.0 580.0,149.0 608.0,131.0 518.0,131.0" fill="#7ecfa0"/>
+<rect x="490.0" y="149.0" width="90.0" height="181.0" fill="#48bb78"/>
+<rect x="490.0" y="149.0" width="90.0" height="181.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="580.0,330.0 580.0,149.0 608.0,131.0 608.0,312.0" fill="#276642"/>
+<text x="550.0" y="123.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">3.6 MHz</text>
+<text x="535.0" y="358.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">SPI, MCP3008 limit</text>
+<text x="535.0" y="376.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">3 wires + 1 per device</text>
+<ellipse cx="739.0" cy="335.0" rx="65.0" ry="7.2" fill="#000" fill-opacity="0.4"/>
+<polygon points="680.0,118.5 770.0,118.5 798.0,100.5 708.0,100.5" fill="#7ecfa0"/>
+<rect x="680.0" y="118.5" width="90.0" height="211.5" fill="#48bb78"/>
+<rect x="680.0" y="118.5" width="90.0" height="211.5" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="770.0,330.0 770.0,118.5 798.0,100.5 798.0,312.0" fill="#276642"/>
+<text x="740.0" y="92.5" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">8 MHz</text>
+<text x="725.0" y="358.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">SPI, Uno's limit</text>
+<text x="450.0" y="82.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">top speed, log scale</text>
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 360" width="860" height="360" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Left: two 12 millihenry coils in series make 24 millihenries, adding like resistors in series. Right: two 20 millihenry coils in parallel make 10 millihenries, combining like resistors in parallel, provided their fields don't couple.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="405" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="440" y="15" width="405" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="217.0" y="48.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Series: inductances add</text>
+<path d="M95.0,134.0 A7.3,26.0 0 0 0 95.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M110.0,134.0 A7.3,26.0 0 0 0 110.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M125.0,134.0 A7.3,26.0 0 0 0 125.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M140.0,134.0 A7.3,26.0 0 0 0 140.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M155.0,134.0 A7.3,26.0 0 0 0 155.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M170.0,134.0 A7.3,26.0 0 0 0 170.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M185.0,134.0 A7.3,26.0 0 0 0 185.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M200.0,134.0 A7.3,26.0 0 0 0 200.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M80.0,186.0 A7.3,26.0 0 0 0 95.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M95.0,186.0 A7.3,26.0 0 0 0 110.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M110.0,186.0 A7.3,26.0 0 0 0 125.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M125.0,186.0 A7.3,26.0 0 0 0 140.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M140.0,186.0 A7.3,26.0 0 0 0 155.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M155.0,186.0 A7.3,26.0 0 0 0 170.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M170.0,186.0 A7.3,26.0 0 0 0 185.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M185.0,186.0 A7.3,26.0 0 0 0 200.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="140.0" cy="200.0" rx="70.0" ry="6" fill="#000" fill-opacity="0.35"/>
+<path d="M250.0,134.0 A7.3,26.0 0 0 0 250.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M265.0,134.0 A7.3,26.0 0 0 0 265.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M280.0,134.0 A7.3,26.0 0 0 0 280.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M295.0,134.0 A7.3,26.0 0 0 0 295.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M310.0,134.0 A7.3,26.0 0 0 0 310.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M325.0,134.0 A7.3,26.0 0 0 0 325.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M340.0,134.0 A7.3,26.0 0 0 0 340.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M355.0,134.0 A7.3,26.0 0 0 0 355.0,186.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M235.0,186.0 A7.3,26.0 0 0 0 250.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M250.0,186.0 A7.3,26.0 0 0 0 265.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M265.0,186.0 A7.3,26.0 0 0 0 280.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M280.0,186.0 A7.3,26.0 0 0 0 295.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M295.0,186.0 A7.3,26.0 0 0 0 310.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M310.0,186.0 A7.3,26.0 0 0 0 325.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M325.0,186.0 A7.3,26.0 0 0 0 340.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M340.0,186.0 A7.3,26.0 0 0 0 355.0,134.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="295.0" cy="200.0" rx="70.0" ry="6" fill="#000" fill-opacity="0.35"/>
+<line x1="40" y1="186" x2="80" y2="186" stroke="#cbd5e0" stroke-width="3"/>
+<line x1="355" y1="186" x2="395" y2="186" stroke="#cbd5e0" stroke-width="3"/>
+<text x="140.0" y="120.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">12 mH</text>
+<text x="295.0" y="120.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">12 mH</text>
+<text x="217.0" y="260.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">L = L₁ + L₂ = 24 mH</text>
+<text x="217.0" y="284.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">like resistors in series</text>
+<text x="642.0" y="48.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Parallel: like parallel resistors</text>
+<path d="M597.0,96.0 A6.7,24.0 0 0 0 597.0,144.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M612.0,96.0 A6.7,24.0 0 0 0 612.0,144.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M627.0,96.0 A6.7,24.0 0 0 0 627.0,144.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M642.0,96.0 A6.7,24.0 0 0 0 642.0,144.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M657.0,96.0 A6.7,24.0 0 0 0 657.0,144.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M672.0,96.0 A6.7,24.0 0 0 0 672.0,144.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M687.0,96.0 A6.7,24.0 0 0 0 687.0,144.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M702.0,96.0 A6.7,24.0 0 0 0 702.0,144.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M582.0,144.0 A6.7,24.0 0 0 0 597.0,96.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M597.0,144.0 A6.7,24.0 0 0 0 612.0,96.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M612.0,144.0 A6.7,24.0 0 0 0 627.0,96.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M627.0,144.0 A6.7,24.0 0 0 0 642.0,96.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M642.0,144.0 A6.7,24.0 0 0 0 657.0,96.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M657.0,144.0 A6.7,24.0 0 0 0 672.0,96.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M672.0,144.0 A6.7,24.0 0 0 0 687.0,96.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M687.0,144.0 A6.7,24.0 0 0 0 702.0,96.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="642.0" cy="158.0" rx="70.0" ry="6" fill="#000" fill-opacity="0.35"/>
+<path d="M597.0,181.0 A6.7,24.0 0 0 0 597.0,229.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M612.0,181.0 A6.7,24.0 0 0 0 612.0,229.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M627.0,181.0 A6.7,24.0 0 0 0 627.0,229.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M642.0,181.0 A6.7,24.0 0 0 0 642.0,229.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M657.0,181.0 A6.7,24.0 0 0 0 657.0,229.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M672.0,181.0 A6.7,24.0 0 0 0 672.0,229.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M687.0,181.0 A6.7,24.0 0 0 0 687.0,229.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M702.0,181.0 A6.7,24.0 0 0 0 702.0,229.0" fill="none" stroke="#59331a" stroke-width="2.5"/>
+<path d="M582.0,229.0 A6.7,24.0 0 0 0 597.0,181.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M597.0,229.0 A6.7,24.0 0 0 0 612.0,181.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M612.0,229.0 A6.7,24.0 0 0 0 627.0,181.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M627.0,229.0 A6.7,24.0 0 0 0 642.0,181.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M642.0,229.0 A6.7,24.0 0 0 0 657.0,181.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M657.0,229.0 A6.7,24.0 0 0 0 672.0,181.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M672.0,229.0 A6.7,24.0 0 0 0 687.0,181.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M687.0,229.0 A6.7,24.0 0 0 0 702.0,181.0" fill="none" stroke="#c8733c" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="642.0" cy="243.0" rx="70.0" ry="6" fill="#000" fill-opacity="0.35"/>
+<text x="642.0" y="92.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">20 mH</text>
+<text x="642.0" y="250.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">20 mH</text>
+<text x="642.0" y="290.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">1/L = 1/L₁ + 1/L₂ → 10 mH</text>
+<text x="642.0" y="314.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">(coils far apart, fields not coupled)</text>
+</svg>

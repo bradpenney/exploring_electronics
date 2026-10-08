@@ -45,6 +45,11 @@ Take the breadboard and wiring away, and what's left is the board on its own: a 
 
 That chip is a **microcontroller**, on the Uno a part called the `ATmega328P`. The word sounds intimidating; the idea isn't. A microcontroller is a tiny, self-contained computer on one chip: a processor, a little memory (32 KB for programs, 2 KB for working data), and the pins that connect it to the outside world. It has no screen, no operating system, and runs exactly one program.
 
+<figure markdown>
+  ![A 3D microcontroller chip opened to show three blocks inside: a processor that runs the sketch one instruction at a time; 32 kilobytes of flash memory that holds the program and keeps it with the power off; and 2 kilobytes of SRAM for working data, lost when the power goes off. Pins along the bottom edge are its only connection to the outside world.](images/what_is_an_arduino/inside_chip.svg){ width="760" }
+  <figcaption>The program lives in flash, so it survives a power cut; the working data in SRAM doesn't.</figcaption>
+</figure>
+
 Think of a wind-up music box. Wind it, and it plays one tune, the same way every time, with no menu and no other song to choose. A microcontroller works the same way: you load one program onto it, and from the moment it powers on that's all it does, until you load something different.
 
 That single-mindedness is the point. A traffic light, a microwave's keypad, and a wall thermostat don't need to run a dozen apps; they need to do one job reliably for years. An Arduino Uno is a microcontroller with just enough hardware around it (the USB port, the power jack, the pin headers) to make it easy to learn on.
@@ -90,6 +95,11 @@ The Arduino core runs these two functions automatically, in a fixed pattern:
 - **`loop()` runs as soon as `setup()` finishes, then again and again** for as long as the board has power. Anything the program keeps doing, like checking a button or blinking a light, goes here.
 
 You never call `setup()` or `loop()` yourself; the board calls them for you, which is why the names must be spelled exactly.
+
+<figure markdown>
+  ![Power on or reset leads to setup(), which runs once, and then to loop(), drawn as a ring that runs again and again until the power goes off.](images/what_is_an_arduino/setup_loop.svg){ width="760" }
+  <figcaption>One trip through setup(), then loop() forever.</figcaption>
+</figure>
 
 Add one real instruction and the pattern holds. This is the LED example from [Digital Pins](digital_io.md):
 

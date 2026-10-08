@@ -23,6 +23,11 @@ A pin set to INPUT does one thing: it measures the voltage on it and reports HIG
 
 A wire connected to nothing still behaves like a tiny antenna. It picks up stray electrical fields from the mains wiring in your walls, from nearby jumper wires, even from your hand moving near it. With nothing holding the pin at a real voltage, those faint signals are all it has to report. Read it and you'll get HIGH, then LOW, then HIGH again: a pin that "reads a button" but changes its mind when no one is touching anything. This drifting, undefined state is called **floating**.
 
+<figure markdown>
+  ![Two voltage traces on an input pin, with readings taken at intervals. Floating, with nothing connected, the voltage wanders up and down through the grey band between 1.5 and 3 volts, and the readings flip between HIGH, LOW and uncertain at random. With a 10 kilohm pull-down, the voltage sits steady near 0 volts and every reading is LOW.](images/pull_resistors/floating.svg){ width="760" }
+  <figcaption>A floating pin reports whatever it picks up. A pull-down gives it one answer.</figcaption>
+</figure>
+
 A button by itself doesn't fix this. A button only connects two points *while it's pressed*. The rest of the time, the pin on the other side of it is connected to nothing, and floats. To read a button reliably, you need something that holds the pin at a known voltage whenever the button isn't doing it. That something is a resistor.
 
 ---
@@ -58,6 +63,11 @@ There are two arrangements, and they are mirror images of each other.
     - **Button pressed:** the button connects the pin to ground, so it reads **LOW**.
 
     The logic is inverted: pressed means LOW. That feels backwards at first, but it's the more common arrangement, and the next section explains why.
+
+<figure markdown>
+  ![Four panels. Pull-down, button open: a 10 kilohm resistor ties the pin to ground and it rests LOW. Pull-down, pressed: the button connects the pin to 5 volts and it reads HIGH. Pull-up, button open: the resistor ties the pin to 5 volts and it rests HIGH. Pull-up, pressed: the button connects the pin to ground and it reads LOW.](images/pull_resistors/pull_states.svg){ width="760" }
+  <figcaption>Both arrangements side by side: the resistor sets the resting state, the button the other one.</figcaption>
+</figure>
 
 Either way, the pin now has a definite answer at all times. The resistor decides the *resting* state; the button decides the *other* state.
 
@@ -95,6 +105,11 @@ When the button is pressed, the resistor has the full supply voltage across it, 
 - **Too small** (say 100 Ω): \( 5\text{V} / 100\ \Omega = 50\text{ mA} \) wasted continuously while pressed. That's more than an LED draws, and at 0.25 W it's the full rating of a typical ¼ W resistor, all turned into heat for nothing.
 - **Too large** (say 10 MΩ): the pull is so weak that noise can overpower it, and the pin starts to float again, the very problem you were solving.
 - **Just right** (10 kΩ): \( 5\text{V} / 10\,000\ \Omega = 0.5\text{ mA} \), negligible waste, yet a firm enough grip to hold the pin steady.
+
+<figure markdown>
+  ![Four 3D bars of the current wasted through a pull resistor while the button is held, on a log scale. 100 ohms wastes 50 milliamps, too strong. 10 kilohms wastes 0.5 milliamps, the everyday default. The Uno's built-in 20 to 50 kilohm pull-up wastes 0.1 to 0.25 milliamps. 10 megohms wastes half a microamp but is so weak that noise wins.](images/pull_resistors/sizing.svg){ width="760" }
+  <figcaption>Smaller wastes more; larger lets noise back in. 10 kΩ sits comfortably between.</figcaption>
+</figure>
 
 That's why **10 kΩ is the everyday default** for a pull-up or pull-down on a button. It's strong enough to win against noise and weak enough that the current it wastes doesn't matter.
 

@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A temperature trace over 60 seconds that climbs from the 20 degree baseline toward 30 degrees while a hand holds the sensor, then falls back. Shaded bands mark the sketch's stages: below 24 degrees no LEDs, 24 to 26 one, 26 to 28 two, above 28 all three. A row of three LEDs under the trace every six seconds shows the stage lighting up and going out again.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="450" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="48.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">A hand warming the sensor, and the LEDs the sketch lights</text>
+<rect x="110" y="227.1" width="730" height="68.6" fill="#4a5568" fill-opacity="0.18"/>
+<text x="846.0" y="265.4" font-size="11" fill="#a0aec0" text-anchor="start" font-weight="normal">0 lit</text>
+<rect x="110" y="192.9" width="730" height="34.3" fill="#d69e2e" fill-opacity="0.18"/>
+<text x="846.0" y="214.0" font-size="11" fill="#a0aec0" text-anchor="start" font-weight="normal">1 lit</text>
+<rect x="110" y="158.6" width="730" height="34.3" fill="#dd6b20" fill-opacity="0.18"/>
+<text x="846.0" y="179.7" font-size="11" fill="#a0aec0" text-anchor="start" font-weight="normal">2 lit</text>
+<rect x="110" y="90.0" width="730" height="68.6" fill="#c53030" fill-opacity="0.18"/>
+<text x="846.0" y="128.3" font-size="11" fill="#a0aec0" text-anchor="start" font-weight="normal">3 lit</text>
+<line x1="110" y1="295.7" x2="840" y2="295.7" stroke="#4a5568" stroke-opacity="0.4"/>
+<text x="102.0" y="299.7" font-size="11" fill="#a0aec0" text-anchor="end" font-weight="normal">20 °C</text>
+<line x1="110" y1="227.1" x2="840" y2="227.1" stroke="#4a5568" stroke-opacity="0.4"/>
+<text x="102.0" y="231.1" font-size="11" fill="#a0aec0" text-anchor="end" font-weight="normal">24 °C</text>
+<line x1="110" y1="192.9" x2="840" y2="192.9" stroke="#4a5568" stroke-opacity="0.4"/>
+<text x="102.0" y="196.9" font-size="11" fill="#a0aec0" text-anchor="end" font-weight="normal">26 °C</text>
+<line x1="110" y1="158.6" x2="840" y2="158.6" stroke="#4a5568" stroke-opacity="0.4"/>
+<text x="102.0" y="162.6" font-size="11" fill="#a0aec0" text-anchor="end" font-weight="normal">28 °C</text>
+<line x1="110" y1="124.3" x2="840" y2="124.3" stroke="#4a5568" stroke-opacity="0.4"/>
+<text x="102.0" y="128.3" font-size="11" fill="#a0aec0" text-anchor="end" font-weight="normal">30 °C</text>
+<line x1="110" y1="330" x2="840" y2="330" stroke="#a0aec0" stroke-width="1.5"/>
+<line x1="110" y1="90" x2="110" y2="330" stroke="#a0aec0" stroke-width="1.5"/>
+<text x="475.0" y="352.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal"></text>
+<polyline points="110.0,295.7 113.0,290.4 116.1,285.3 119.1,280.4 122.2,275.6 125.2,270.9 128.2,266.4 131.3,262.0 134.3,257.8 137.4,253.7 140.4,249.7 143.5,245.8 146.5,242.1 149.5,238.5 152.6,235.0 155.6,231.6 158.7,228.3 161.7,225.1 164.8,222.0 167.8,219.0 170.8,216.0 173.9,213.2 176.9,210.5 180.0,207.8 183.0,205.3 186.0,202.8 189.1,200.4 192.1,198.0 195.2,195.7 198.2,193.5 201.2,191.4 204.3,189.4 207.3,187.4 210.4,185.4 213.4,183.5 216.5,181.7 219.5,179.9 222.5,178.2 225.6,176.6 228.6,175.0 231.7,173.4 234.7,171.9 237.8,170.4 240.8,169.0 243.8,167.6 246.9,166.3 249.9,165.0 253.0,163.8 256.0,162.5 259.0,161.4 262.1,160.2 265.1,159.1 268.2,158.0 271.2,157.0 274.2,156.0 277.3,155.0 280.3,154.1 283.4,153.2 286.4,152.3 289.5,151.4 292.5,150.6 295.5,149.8 298.6,149.0 301.6,148.2 304.7,147.5 307.7,146.8 310.8,146.1 313.8,145.4 316.8,144.8 319.9,144.1 322.9,143.5 326.0,142.9 329.0,142.4 332.0,141.8 335.1,141.3 338.1,140.7 341.2,140.2 344.2,139.7 347.2,139.3 350.3,138.8 353.3,138.4 356.4,137.9 359.4,137.5 362.5,137.1 365.5,136.7 368.5,136.3 371.6,136.0 374.6,135.6 377.7,135.2 380.7,134.9 383.8,134.6 386.8,134.3 389.8,134.0 392.9,133.7 395.9,133.4 399.0,133.1 402.0,132.8 405.0,132.6 408.1,132.3 411.1,132.1 414.2,131.8 417.2,131.6 420.2,131.4 423.3,131.1 426.3,130.9 429.4,130.7 432.4,130.5 435.5,130.3 438.5,130.2 441.5,130.0 444.6,129.8 447.6,129.6 450.7,129.5 453.7,129.3 456.8,129.1 459.8,129.0 462.8,128.9 465.9,128.7 468.9,128.6 472.0,128.4 475.0,128.3 478.0,132.5 481.1,136.5 484.1,140.4 487.2,144.2 490.2,148.0 493.2,151.6 496.3,155.2 499.3,158.7 502.4,162.0 505.4,165.3 508.5,168.6 511.5,171.7 514.5,174.8 517.6,177.8 520.6,180.7 523.7,183.5 526.7,186.3 529.8,189.0 532.8,191.6 535.8,194.2 538.9,196.7 541.9,199.1 545.0,201.5 548.0,203.8 551.0,206.1 554.1,208.3 557.1,210.5 560.2,212.6 563.2,214.6 566.2,216.6 569.3,218.6 572.3,220.5 575.4,222.4 578.4,224.2 581.5,225.9 584.5,227.7 587.5,229.3 590.6,231.0 593.6,232.6 596.7,234.1 599.7,235.7 602.8,237.1 605.8,238.6 608.8,240.0 611.9,241.4 614.9,242.7 618.0,244.0 621.0,245.3 624.0,246.5 627.1,247.8 630.1,248.9 633.2,250.1 636.2,251.2 639.2,252.3 642.3,253.4 645.3,254.4 648.4,255.5 651.4,256.4 654.5,257.4 657.5,258.4 660.5,259.3 663.6,260.2 666.6,261.1 669.7,261.9 672.7,262.8 675.8,263.6 678.8,264.4 681.8,265.1 684.9,265.9 687.9,266.6 691.0,267.3 694.0,268.0 697.0,268.7 700.1,269.4 703.1,270.0 706.2,270.7 709.2,271.3 712.2,271.9 715.3,272.5 718.3,273.1 721.4,273.6 724.4,274.2 727.5,274.7 730.5,275.2 733.5,275.7 736.6,276.2 739.6,276.7 742.7,277.2 745.7,277.6 748.8,278.1 751.8,278.5 754.8,278.9 757.9,279.3 760.9,279.7 764.0,280.1 767.0,280.5 770.0,280.9 773.1,281.3 776.1,281.6 779.2,282.0 782.2,282.3 785.2,282.6 788.3,283.0 791.3,283.3 794.4,283.6 797.4,283.9 800.5,284.2 803.5,284.5 806.5,284.7 809.6,285.0 812.6,285.3 815.7,285.5 818.7,285.8 821.8,286.0 824.8,286.3 827.8,286.5 830.9,286.7 833.9,287.0 837.0,287.2 840.0,287.4" fill="none" stroke="#f6ad55" stroke-width="3" stroke-linejoin="round" filter="url(#softglow)"/>
+<radialGradient id="led22515207" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#52461a"/><stop offset="1" stop-color="#241f0b"/></radialGradient>
+<line x1="93.9" y1="378" x2="93.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="98.1" y1="378" x2="98.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="89.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led22515207)"/>
+<path d="M90.0,375.6 L90.0,372.0 A6,6 0 0 1 102.0,372.0 L102.0,375.6 Z" fill="url(#led22515207)"/>
+<radialGradient id="led28839901" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#522f12"/><stop offset="1" stop-color="#241508"/></radialGradient>
+<line x1="107.9" y1="378" x2="107.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="112.1" y1="378" x2="112.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="103.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led28839901)"/>
+<path d="M104.0,375.6 L104.0,372.0 A6,6 0 0 1 116.0,372.0 L116.0,375.6 Z" fill="url(#led28839901)"/>
+<radialGradient id="led46046571" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#501515"/><stop offset="1" stop-color="#240909"/></radialGradient>
+<line x1="121.9" y1="378" x2="121.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="126.1" y1="378" x2="126.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="117.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led46046571)"/>
+<path d="M118.0,375.6 L118.0,372.0 A6,6 0 0 1 130.0,372.0 L130.0,375.6 Z" fill="url(#led46046571)"/>
+<radialGradient id="led66987987" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#ecc94b"/><stop offset="1" stop-color="#6a5a21"/></radialGradient>
+<circle cx="169.0" cy="372" r="11.5" fill="#ecc94b" fill-opacity="0.18"/>
+<circle cx="169.0" cy="372" r="7.2" fill="#ecc94b" fill-opacity="0.22"/>
+<line x1="166.9" y1="378" x2="166.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="171.1" y1="378" x2="171.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="162.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led66987987)"/>
+<path d="M163.0,375.6 L163.0,372.0 A6,6 0 0 1 175.0,372.0 L175.0,375.6 Z" fill="url(#led66987987)"/>
+<radialGradient id="led2140787" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#522f12"/><stop offset="1" stop-color="#241508"/></radialGradient>
+<line x1="180.9" y1="378" x2="180.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="185.1" y1="378" x2="185.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="176.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led2140787)"/>
+<path d="M177.0,375.6 L177.0,372.0 A6,6 0 0 1 189.0,372.0 L189.0,375.6 Z" fill="url(#led2140787)"/>
+<radialGradient id="led17033840" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#501515"/><stop offset="1" stop-color="#240909"/></radialGradient>
+<line x1="194.9" y1="378" x2="194.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="199.1" y1="378" x2="199.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="190.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led17033840)"/>
+<path d="M191.0,375.6 L191.0,372.0 A6,6 0 0 1 203.0,372.0 L203.0,375.6 Z" fill="url(#led17033840)"/>
+<radialGradient id="led77703058" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#ecc94b"/><stop offset="1" stop-color="#6a5a21"/></radialGradient>
+<circle cx="242.0" cy="372" r="11.5" fill="#ecc94b" fill-opacity="0.18"/>
+<circle cx="242.0" cy="372" r="7.2" fill="#ecc94b" fill-opacity="0.22"/>
+<line x1="239.9" y1="378" x2="239.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="244.1" y1="378" x2="244.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="235.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led77703058)"/>
+<path d="M236.0,375.6 L236.0,372.0 A6,6 0 0 1 248.0,372.0 L248.0,375.6 Z" fill="url(#led77703058)"/>
+<radialGradient id="led56377938" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#ed8936"/><stop offset="1" stop-color="#6a3d18"/></radialGradient>
+<circle cx="256.0" cy="372" r="11.5" fill="#ed8936" fill-opacity="0.18"/>
+<circle cx="256.0" cy="372" r="7.2" fill="#ed8936" fill-opacity="0.22"/>
+<line x1="253.9" y1="378" x2="253.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="258.1" y1="378" x2="258.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="249.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led56377938)"/>
+<path d="M250.0,375.6 L250.0,372.0 A6,6 0 0 1 262.0,372.0 L262.0,375.6 Z" fill="url(#led56377938)"/>
+<radialGradient id="led13946848" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#501515"/><stop offset="1" stop-color="#240909"/></radialGradient>
+<line x1="267.9" y1="378" x2="267.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="272.1" y1="378" x2="272.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="263.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led13946848)"/>
+<path d="M264.0,375.6 L264.0,372.0 A6,6 0 0 1 276.0,372.0 L276.0,375.6 Z" fill="url(#led13946848)"/>
+<radialGradient id="led90204190" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#ecc94b"/><stop offset="1" stop-color="#6a5a21"/></radialGradient>
+<circle cx="315.0" cy="372" r="11.5" fill="#ecc94b" fill-opacity="0.18"/>
+<circle cx="315.0" cy="372" r="7.2" fill="#ecc94b" fill-opacity="0.22"/>
+<line x1="312.9" y1="378" x2="312.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="317.1" y1="378" x2="317.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="308.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led90204190)"/>
+<path d="M309.0,375.6 L309.0,372.0 A6,6 0 0 1 321.0,372.0 L321.0,375.6 Z" fill="url(#led90204190)"/>
+<radialGradient id="led77807010" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#ed8936"/><stop offset="1" stop-color="#6a3d18"/></radialGradient>
+<circle cx="329.0" cy="372" r="11.5" fill="#ed8936" fill-opacity="0.18"/>
+<circle cx="329.0" cy="372" r="7.2" fill="#ed8936" fill-opacity="0.22"/>
+<line x1="326.9" y1="378" x2="326.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="331.1" y1="378" x2="331.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="322.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led77807010)"/>
+<path d="M323.0,375.6 L323.0,372.0 A6,6 0 0 1 335.0,372.0 L335.0,375.6 Z" fill="url(#led77807010)"/>
+<radialGradient id="led68041090" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#e53e3e"/><stop offset="1" stop-color="#671b1b"/></radialGradient>
+<circle cx="343.0" cy="372" r="11.5" fill="#e53e3e" fill-opacity="0.18"/>
+<circle cx="343.0" cy="372" r="7.2" fill="#e53e3e" fill-opacity="0.22"/>
+<line x1="340.9" y1="378" x2="340.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="345.1" y1="378" x2="345.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="336.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led68041090)"/>
+<path d="M337.0,375.6 L337.0,372.0 A6,6 0 0 1 349.0,372.0 L349.0,375.6 Z" fill="url(#led68041090)"/>
+<radialGradient id="led20510881" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#ecc94b"/><stop offset="1" stop-color="#6a5a21"/></radialGradient>
+<circle cx="388.0" cy="372" r="11.5" fill="#ecc94b" fill-opacity="0.18"/>
+<circle cx="388.0" cy="372" r="7.2" fill="#ecc94b" fill-opacity="0.22"/>
+<line x1="385.9" y1="378" x2="385.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="390.1" y1="378" x2="390.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="381.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led20510881)"/>
+<path d="M382.0,375.6 L382.0,372.0 A6,6 0 0 1 394.0,372.0 L394.0,375.6 Z" fill="url(#led20510881)"/>
+<radialGradient id="led46191835" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#ed8936"/><stop offset="1" stop-color="#6a3d18"/></radialGradient>
+<circle cx="402.0" cy="372" r="11.5" fill="#ed8936" fill-opacity="0.18"/>
+<circle cx="402.0" cy="372" r="7.2" fill="#ed8936" fill-opacity="0.22"/>
+<line x1="399.9" y1="378" x2="399.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="404.1" y1="378" x2="404.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="395.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led46191835)"/>
+<path d="M396.0,375.6 L396.0,372.0 A6,6 0 0 1 408.0,372.0 L408.0,375.6 Z" fill="url(#led46191835)"/>
+<radialGradient id="led45243754" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#e53e3e"/><stop offset="1" stop-color="#671b1b"/></radialGradient>
+<circle cx="416.0" cy="372" r="11.5" fill="#e53e3e" fill-opacity="0.18"/>
+<circle cx="416.0" cy="372" r="7.2" fill="#e53e3e" fill-opacity="0.22"/>
+<line x1="413.9" y1="378" x2="413.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="418.1" y1="378" x2="418.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="409.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led45243754)"/>
+<path d="M410.0,375.6 L410.0,372.0 A6,6 0 0 1 422.0,372.0 L422.0,375.6 Z" fill="url(#led45243754)"/>
+<radialGradient id="led45267599" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#ecc94b"/><stop offset="1" stop-color="#6a5a21"/></radialGradient>
+<circle cx="461.0" cy="372" r="11.5" fill="#ecc94b" fill-opacity="0.18"/>
+<circle cx="461.0" cy="372" r="7.2" fill="#ecc94b" fill-opacity="0.22"/>
+<line x1="458.9" y1="378" x2="458.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="463.1" y1="378" x2="463.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="454.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led45267599)"/>
+<path d="M455.0,375.6 L455.0,372.0 A6,6 0 0 1 467.0,372.0 L467.0,375.6 Z" fill="url(#led45267599)"/>
+<radialGradient id="led79385167" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#ed8936"/><stop offset="1" stop-color="#6a3d18"/></radialGradient>
+<circle cx="475.0" cy="372" r="11.5" fill="#ed8936" fill-opacity="0.18"/>
+<circle cx="475.0" cy="372" r="7.2" fill="#ed8936" fill-opacity="0.22"/>
+<line x1="472.9" y1="378" x2="472.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="477.1" y1="378" x2="477.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="468.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led79385167)"/>
+<path d="M469.0,375.6 L469.0,372.0 A6,6 0 0 1 481.0,372.0 L481.0,375.6 Z" fill="url(#led79385167)"/>
+<radialGradient id="led74499479" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#e53e3e"/><stop offset="1" stop-color="#671b1b"/></radialGradient>
+<circle cx="489.0" cy="372" r="11.5" fill="#e53e3e" fill-opacity="0.18"/>
+<circle cx="489.0" cy="372" r="7.2" fill="#e53e3e" fill-opacity="0.22"/>
+<line x1="486.9" y1="378" x2="486.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="491.1" y1="378" x2="491.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="482.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led74499479)"/>
+<path d="M483.0,375.6 L483.0,372.0 A6,6 0 0 1 495.0,372.0 L495.0,375.6 Z" fill="url(#led74499479)"/>
+<radialGradient id="led73836605" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#ecc94b"/><stop offset="1" stop-color="#6a5a21"/></radialGradient>
+<circle cx="534.0" cy="372" r="11.5" fill="#ecc94b" fill-opacity="0.18"/>
+<circle cx="534.0" cy="372" r="7.2" fill="#ecc94b" fill-opacity="0.22"/>
+<line x1="531.9" y1="378" x2="531.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="536.1" y1="378" x2="536.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="527.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led73836605)"/>
+<path d="M528.0,375.6 L528.0,372.0 A6,6 0 0 1 540.0,372.0 L540.0,375.6 Z" fill="url(#led73836605)"/>
+<radialGradient id="led9132314" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#522f12"/><stop offset="1" stop-color="#241508"/></radialGradient>
+<line x1="545.9" y1="378" x2="545.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="550.1" y1="378" x2="550.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="541.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led9132314)"/>
+<path d="M542.0,375.6 L542.0,372.0 A6,6 0 0 1 554.0,372.0 L554.0,375.6 Z" fill="url(#led9132314)"/>
+<radialGradient id="led38356926" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#501515"/><stop offset="1" stop-color="#240909"/></radialGradient>
+<line x1="559.9" y1="378" x2="559.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="564.1" y1="378" x2="564.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="555.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led38356926)"/>
+<path d="M556.0,375.6 L556.0,372.0 A6,6 0 0 1 568.0,372.0 L568.0,375.6 Z" fill="url(#led38356926)"/>
+<radialGradient id="led22858606" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#52461a"/><stop offset="1" stop-color="#241f0b"/></radialGradient>
+<line x1="604.9" y1="378" x2="604.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="609.1" y1="378" x2="609.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="600.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led22858606)"/>
+<path d="M601.0,375.6 L601.0,372.0 A6,6 0 0 1 613.0,372.0 L613.0,375.6 Z" fill="url(#led22858606)"/>
+<radialGradient id="led19847385" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#522f12"/><stop offset="1" stop-color="#241508"/></radialGradient>
+<line x1="618.9" y1="378" x2="618.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="623.1" y1="378" x2="623.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="614.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led19847385)"/>
+<path d="M615.0,375.6 L615.0,372.0 A6,6 0 0 1 627.0,372.0 L627.0,375.6 Z" fill="url(#led19847385)"/>
+<radialGradient id="led20795466" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#501515"/><stop offset="1" stop-color="#240909"/></radialGradient>
+<line x1="632.9" y1="378" x2="632.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="637.1" y1="378" x2="637.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="628.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led20795466)"/>
+<path d="M629.0,375.6 L629.0,372.0 A6,6 0 0 1 641.0,372.0 L641.0,375.6 Z" fill="url(#led20795466)"/>
+<radialGradient id="led8122082" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#52461a"/><stop offset="1" stop-color="#241f0b"/></radialGradient>
+<line x1="677.9" y1="378" x2="677.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="682.1" y1="378" x2="682.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="673.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led8122082)"/>
+<path d="M674.0,375.6 L674.0,372.0 A6,6 0 0 1 686.0,372.0 L686.0,375.6 Z" fill="url(#led8122082)"/>
+<radialGradient id="led86796962" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#522f12"/><stop offset="1" stop-color="#241508"/></radialGradient>
+<line x1="691.9" y1="378" x2="691.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="696.1" y1="378" x2="696.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="687.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led86796962)"/>
+<path d="M688.0,375.6 L688.0,372.0 A6,6 0 0 1 700.0,372.0 L700.0,375.6 Z" fill="url(#led86796962)"/>
+<radialGradient id="led31653446" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#501515"/><stop offset="1" stop-color="#240909"/></radialGradient>
+<line x1="705.9" y1="378" x2="705.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="710.1" y1="378" x2="710.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="701.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led31653446)"/>
+<path d="M702.0,375.6 L702.0,372.0 A6,6 0 0 1 714.0,372.0 L714.0,375.6 Z" fill="url(#led31653446)"/>
+<radialGradient id="led21830418" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#52461a"/><stop offset="1" stop-color="#241f0b"/></radialGradient>
+<line x1="750.9" y1="378" x2="750.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="755.1" y1="378" x2="755.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="746.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led21830418)"/>
+<path d="M747.0,375.6 L747.0,372.0 A6,6 0 0 1 759.0,372.0 L759.0,375.6 Z" fill="url(#led21830418)"/>
+<radialGradient id="led97420999" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#522f12"/><stop offset="1" stop-color="#241508"/></radialGradient>
+<line x1="764.9" y1="378" x2="764.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="769.1" y1="378" x2="769.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="760.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led97420999)"/>
+<path d="M761.0,375.6 L761.0,372.0 A6,6 0 0 1 773.0,372.0 L773.0,375.6 Z" fill="url(#led97420999)"/>
+<radialGradient id="led11109653" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#501515"/><stop offset="1" stop-color="#240909"/></radialGradient>
+<line x1="778.9" y1="378" x2="778.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="783.1" y1="378" x2="783.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="774.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led11109653)"/>
+<path d="M775.0,375.6 L775.0,372.0 A6,6 0 0 1 787.0,372.0 L787.0,375.6 Z" fill="url(#led11109653)"/>
+<radialGradient id="led44243258" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#52461a"/><stop offset="1" stop-color="#241f0b"/></radialGradient>
+<line x1="823.9" y1="378" x2="823.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="828.1" y1="378" x2="828.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="819.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led44243258)"/>
+<path d="M820.0,375.6 L820.0,372.0 A6,6 0 0 1 832.0,372.0 L832.0,375.6 Z" fill="url(#led44243258)"/>
+<radialGradient id="led69145538" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#522f12"/><stop offset="1" stop-color="#241508"/></radialGradient>
+<line x1="837.9" y1="378" x2="837.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="842.1" y1="378" x2="842.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="833.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led69145538)"/>
+<path d="M834.0,375.6 L834.0,372.0 A6,6 0 0 1 846.0,372.0 L846.0,375.6 Z" fill="url(#led69145538)"/>
+<radialGradient id="led17049762" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#501515"/><stop offset="1" stop-color="#240909"/></radialGradient>
+<line x1="851.9" y1="378" x2="851.9" y2="387.6" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="856.1" y1="378" x2="856.1" y2="385.8" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="847.1" y="375.3" width="13.8" height="3.0" rx="2" fill="url(#led17049762)"/>
+<path d="M848.0,375.6 L848.0,372.0 A6,6 0 0 1 860.0,372.0 L860.0,375.6 Z" fill="url(#led17049762)"/>
+<text x="110.0" y="405.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">0 s</text>
+<text x="292.5" y="405.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">15 s</text>
+<text x="475.0" y="405.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">30 s</text>
+<text x="657.5" y="405.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">45 s</text>
+<text x="840.0" y="405.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">60 s</text>
+<text x="450.0" y="440.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">baseline 20 °C as in the sketch; the warming curve is illustrative</text>
+</svg>

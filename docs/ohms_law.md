@@ -22,7 +22,7 @@ The bulb gets solved in the first half, and its numbers come back in the second.
 
 ## Idea One: Current in Proportion to Voltage
 
-In 1827, the German physicist Georg Ohm published the result of careful experiments on wires: double the voltage across a wire and the current through it doubles; triple it and the current triples. The current is proportional to the voltage, and the constant linking them is the wire's resistance.
+In 1827, the German physicist Georg Ohm published the result of careful experiments on wires: double the voltage across a wire and the current through it doubles; triple it and the current triples. The current is proportional to the voltage, and the constant linking them is the wire's resistance. (The English scientist Henry Cavendish had found the same relationship in 1781, but never published it; his notes only came out in 1879, edited by James Clerk Maxwell, by which time the law carried Ohm's name.)
 
 ???+ info "Definition: Ohm's Law"
 
@@ -63,7 +63,7 @@ Plenty of parts don't draw a straight line, and two of the most common ones bend
 </figure>
 
 - **A lamp's curve bends over.** More voltage drives more current, which heats the filament, which raises its resistance (the temperature lever from [Resistance and Conductance](resistance.md)). Each extra volt buys less extra current than the one before.
-- **An LED's curve is a wall.** Below about 1.8 V almost nothing flows. Just above it, a tiny increase in voltage lets the current shoot up, far past what the LED can survive. That's why an LED always needs a resistor in series: the resistor's straight line turns the LED's wall into a slope that can be controlled. [Digital Pins](digital_io.md) puts that resistor to work.
+- **An LED's curve is a wall.** Below about 1.8 V almost nothing flows. Just above it, a tiny increase in voltage lets the current shoot up, far past what the LED can survive. That's why an LED always needs a resistor in series: the resistor's straight line turns the LED's wall into a slope that can be controlled. [Diodes and LEDs](diodes_and_leds.md) explains where the wall comes from and how to size the resistor, and [Digital Pins](digital_io.md) puts it to work.
 
 V = I × R still applies to a non-ohmic part at any single moment: divide the voltage by the current and you get its resistance *right then*. What fails is the assumption that the number stays put when the voltage changes.
 

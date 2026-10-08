@@ -56,18 +56,6 @@ This site teaches electronics from the atom up, with numbers from real datasheet
 
 ---
 
-## The Foundations Path
-
-Eleven articles take you from why copper conducts to real circuits. Each one builds on the last, and each one stands on its own.
-
-<figure markdown>
-  [![A 3D staircase of eleven numbered steps: 1 Conductors, 2 What Is Electricity, 3 Metric Prefixes, 4 Voltage, 5 Current, 6 Resistance, 7 Ohm's Law and power, 8 Shorts and Fuses, 9 AC vs DC, 10 Magnetism, 11 Series and Parallel circuits. The first step is lit amber and marked start here.](images/index/foundations_path.svg){ width="760" }](conductors_and_insulators.md)
-</figure>
-
-[1. Conductors](conductors_and_insulators.md) · [2. What Is Electricity?](what_is_electricity.md) · [3. Metric Prefixes](metric_prefixes.md) · [4. Voltage](voltage.md) · [5. Current](current.md) · [6. Resistance](resistance.md) · [7. Ohm's Law](ohms_law.md) · [8. Shorts and Fuses](open_short_fuses.md) · [9. AC vs DC](ac_dc.md) · [10. Magnetism](magnetism.md) · [11. Series & Parallel](series_and_parallel.md)
-
----
-
 ## Explore by Topic
 
 <div class="grid cards two-col" markdown>
@@ -76,25 +64,25 @@ Eleven articles take you from why copper conducts to real circuits. Each one bui
 
     ---
 
-    What electricity actually is, with real numbers.
+    What electricity actually is, from the atom to capacitors and inductors, with real numbers. Fourteen articles, read in order.
 
-    [Conductors](conductors_and_insulators.md) · [What Is Electricity?](what_is_electricity.md) · [Metric Prefixes](metric_prefixes.md) · [Voltage](voltage.md) · [Current](current.md) · [Resistance](resistance.md) · [Ohm's Law](ohms_law.md) · [Shorts and Fuses](open_short_fuses.md) · [AC vs DC](ac_dc.md) · [Magnetism](magnetism.md) · [Series & Parallel](series_and_parallel.md)
-
--   :material-chip: **Microcontrollers**
-
-    ---
-
-    Make an Arduino sense the world and react to it.
-
-    [What Is an Arduino?](what_is_an_arduino.md) · [Digital Pins](digital_io.md) · [Blink an LED](blink_an_led.md) · [Pull Resistors](pull_resistors.md) · [Analog Sensors](analog_input.md) · [Threshold Ladder](threshold_output.md)
+    [:octicons-arrow-right-24: Explore Circuit Foundations](circuit_foundations.md)
 
 -   :material-resistor: **Components**
 
     ---
 
-    The parts on the bench: what they are and how to read them.
+    The parts on the bench: resistors, diodes and LEDs, transistors, vacuum tubes, sensors, and how to read them.
 
-    [Resistor Color Codes](resistor_color_codes.md) · [Resistor Types and Potentiometers](resistor_types.md) · [Temperature Sensors](temperature_sensors.md) · [Package Types](package_types.md)
+    [:octicons-arrow-right-24: Explore Components](components.md)
+
+-   :material-chip: **Microcontrollers**
+
+    ---
+
+    Make an Arduino sense the world and react to it, from a blinking LED to a temperature monitor.
+
+    [:octicons-arrow-right-24: Explore Microcontrollers](microcontrollers.md)
 
 -   :material-vector-polyline: **Reading Circuits**
 
@@ -102,29 +90,31 @@ Eleven articles take you from why copper conducts to real circuits. Each one bui
 
     The visual language every circuit is written in.
 
-    [How to Read a Schematic](reading_schematics.md)
+    [:octicons-arrow-right-24: How to Read a Schematic](reading_schematics.md)
+
+-   :material-swap-horizontal: **Communication**
+
+    ---
+
+    How boards, sensors, and computers talk: serial, I²C, and SPI, down to the voltages on the wires.
+
+    [:octicons-arrow-right-24: Explore Communication](communication.md)
 
 -   :material-battery-charging: **Power**
 
     ---
 
-    Where a circuit's energy comes from, and how to handle it safely.
+    Where a circuit's energy comes from: batteries, regulators, and power supplies.
 
-    [Cells and Batteries](batteries.md)
+    [:octicons-arrow-right-24: Explore Power](power.md)
 
 -   :material-tools: **Practical Tools**
 
     ---
 
-    The bench equipment, read as you need it.
+    The bench equipment, read as you need it: breadboards, arduino-cli, the multimeter, the bench power supply, and soldering.
 
-    [Breadboards](tools/breadboards.md) · [arduino-cli](tools/arduino_cli.md)
-
--   :material-wrench-clock: **Still to come**
-
-    ---
-
-    Capacitors and inductors, diodes and transistors, communication between chips, and power supplies and regulators.
+    [:octicons-arrow-right-24: Explore Practical Tools](practical_tools.md)
 
 </div>
 

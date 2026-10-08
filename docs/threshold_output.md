@@ -114,6 +114,11 @@ void loop() {
 
 Power the circuit and let it settle for a few seconds: all three LEDs should be off if the room is near the baseline you measured. Warm the sensor gradually by cupping a hand loosely around it, and watch the LEDs light in order (one, two, then three) as the reading climbs through each band. Take your hand away and they go out in reverse.
 
+<figure markdown>
+  ![A temperature trace over 60 seconds that climbs from the 20 degree baseline toward 30 degrees while a hand holds the sensor, then falls back. Shaded bands mark the sketch's stages: below 24 degrees no LEDs, 24 to 26 one, 26 to 28 two, above 28 all three. A row of three LEDs under the trace every six seconds shows the stage lighting up and going out again.](images/threshold_output/warm_trace.svg){ width="760" }
+  <figcaption>Warm the sensor and the LEDs climb through the stages; let go and they step back down.</figcaption>
+</figure>
+
 ??? warning "Troubleshooting"
 
     **All three LEDs light immediately, even at rest:** `baselineTemp` is probably set too low for your room. Rerun [Reading an Analog Sensor](analog_input.md)'s sketch, note the resting value, and update the constant.

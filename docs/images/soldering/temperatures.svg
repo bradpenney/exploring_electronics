@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" width="900" height="470" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A temperature scale from 150 to 500 degrees Celsius. Tin-lead Sn63/Pb37 solder melts at 183, Sn60/Pb40 is fully melted at 188, and lead-free SAC solder melts at 217. A Hakko FX-888D iron can be set from 200 to 480, with a default of 399. The UK Health and Safety Executive notes that flux fume levels can triple between 250 and 400 degrees.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="440" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="48.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">The temperatures that matter, from melting to the iron's maximum</text>
+<rect x="120" y="240" width="700" height="20" rx="10" fill="#2d3748"/>
+<rect x="220.0" y="240" width="560.0" height="20" rx="10" fill="#f59e0b" fill-opacity="0.35"/>
+<text x="500.0" y="290.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="bold">Hakko FX-888D setting range: 200 to 480 °C</text>
+<text x="120.0" y="314.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">150 °C</text>
+<text x="220.0" y="314.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">200 °C</text>
+<text x="320.0" y="314.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">250 °C</text>
+<text x="420.0" y="314.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">300 °C</text>
+<text x="520.0" y="314.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">350 °C</text>
+<text x="620.0" y="314.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">400 °C</text>
+<text x="720.0" y="314.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">450 °C</text>
+<text x="820.0" y="314.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">500 °C</text>
+<line x1="186.0" y1="240" x2="186.0" y2="218.0" stroke="#48bb78" stroke-width="1.5"/>
+<circle cx="186.0" cy="250" r="6" fill="#48bb78"/>
+<text x="192.0" y="210.0" font-size="12" fill="#48bb78" text-anchor="start" font-weight="bold">183 °C: Sn63/Pb37 melts</text>
+<line x1="196.0" y1="240" x2="196.0" y2="188.0" stroke="#48bb78" stroke-width="1.5"/>
+<circle cx="196.0" cy="250" r="6" fill="#48bb78"/>
+<text x="202.0" y="180.0" font-size="12" fill="#48bb78" text-anchor="start" font-weight="bold">188 °C: Sn60/Pb40 fully melted</text>
+<line x1="254.0" y1="240" x2="254.0" y2="158.0" stroke="#4299e1" stroke-width="1.5"/>
+<circle cx="254.0" cy="250" r="6" fill="#4299e1"/>
+<text x="260.0" y="150.0" font-size="12" fill="#4299e1" text-anchor="start" font-weight="bold">217 °C: lead-free SAC melts</text>
+<line x1="320.0" y1="260" x2="320.0" y2="336.0" stroke="#fc8181" stroke-width="1.5"/>
+<circle cx="320.0" cy="250" r="6" fill="#fc8181"/>
+<text x="326.0" y="350.0" font-size="12" fill="#fc8181" text-anchor="start" font-weight="bold">250 °C: fume level here…</text>
+<line x1="620.0" y1="260" x2="620.0" y2="362.0" stroke="#fc8181" stroke-width="1.5"/>
+<circle cx="620.0" cy="250" r="6" fill="#fc8181"/>
+<text x="626.0" y="376.0" font-size="12" fill="#fc8181" text-anchor="start" font-weight="bold">400 °C: …can triple by here</text>
+<line x1="618.0" y1="240" x2="618.0" y2="128.0" stroke="#fbbf24" stroke-width="1.5"/>
+<circle cx="618.0" cy="250" r="6" fill="#fbbf24"/>
+<text x="624.0" y="120.0" font-size="12" fill="#fbbf24" text-anchor="start" font-weight="bold">399 °C: Hakko default setting</text>
+<text x="450.0" y="440.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">fume figure: HSE INDG249, rosin-based flux fume between 250 and 400 °C</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 490" width="900" height="490" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Two panels of 3D bars on log scales for a meter's probes across a 12.6 volt battery. With the leads in the volts jack, the meter is 10 megohms and allows 1.26 microamps, which is harmless. With the leads in the amps jack, it is 0.037 ohms and would allow about 340 amps, a short circuit that only the meter's 11 amp fuse stops.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="425" height="435" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="460" y="15" width="425" height="435" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="227.0" y="50.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">Leads in VΩ: a voltmeter</text>
+<text x="227.0" y="72.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">probes across a 12.6 V battery</text>
+<ellipse cx="153.9" cy="365.0" rx="52.9" ry="6.1" fill="#000" fill-opacity="0.4"/>
+<polygon points="107.0,153.0 177.0,153.0 200.8,137.7 130.8,137.7" fill="#9ba6b5"/>
+<rect x="107.0" y="153.0" width="70.0" height="207.0" fill="#718096"/>
+<rect x="107.0" y="153.0" width="70.0" height="207.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="177.0,360.0 177.0,153.0 200.8,137.7 200.8,344.7" fill="#3e4652"/>
+<text x="142.0" y="125.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">10 MΩ</text>
+<text x="142.0" y="388.0" font-size="13" fill="#a0aec0" text-anchor="middle" font-weight="normal">resistance</text>
+<ellipse cx="313.9" cy="365.0" rx="52.9" ry="6.1" fill="#000" fill-opacity="0.4"/>
+<polygon points="267.0,334.7 337.0,334.7 360.8,319.4 290.8,319.4" fill="#7ecfa0"/>
+<rect x="267.0" y="334.7" width="70.0" height="25.3" fill="#48bb78"/>
+<rect x="267.0" y="334.7" width="70.0" height="25.3" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="337.0,360.0 337.0,334.7 360.8,319.4 360.8,344.7" fill="#276642"/>
+<text x="302.0" y="306.7" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">1.26 µA</text>
+<text x="302.0" y="388.0" font-size="13" fill="#a0aec0" text-anchor="middle" font-weight="normal">current it allows</text>
+<text x="672.0" y="50.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">Leads in A: an ammeter</text>
+<text x="672.0" y="72.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">probes across a 12.6 V battery</text>
+<ellipse cx="598.9" cy="365.0" rx="52.9" ry="6.1" fill="#000" fill-opacity="0.4"/>
+<polygon points="552.0,346.9 622.0,346.9 645.8,331.6 575.8,331.6" fill="#9ba6b5"/>
+<rect x="552.0" y="346.9" width="70.0" height="13.1" fill="#718096"/>
+<rect x="552.0" y="346.9" width="70.0" height="13.1" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="622.0,360.0 622.0,346.9 645.8,331.6 645.8,344.7" fill="#3e4652"/>
+<text x="587.0" y="318.9" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">0.037 Ω</text>
+<text x="587.0" y="388.0" font-size="13" fill="#a0aec0" text-anchor="middle" font-weight="normal">resistance</text>
+<ellipse cx="758.9" cy="365.0" rx="52.9" ry="6.1" fill="#000" fill-opacity="0.4"/>
+<polygon points="712.0,140.8 782.0,140.8 805.8,125.5 735.8,125.5" fill="#fca6a6"/>
+<rect x="712.0" y="140.8" width="70.0" height="219.2" fill="#fc8181"/>
+<rect x="712.0" y="140.8" width="70.0" height="219.2" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="782.0,360.0 782.0,140.8 805.8,125.5 805.8,344.7" fill="#8a4646"/>
+<text x="747.0" y="112.8" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">≈340 A</text>
+<text x="747.0" y="388.0" font-size="13" fill="#a0aec0" text-anchor="middle" font-weight="normal">current it allows</text>
+<text x="227.0" y="420.0" font-size="13" fill="#48bb78" text-anchor="middle" font-weight="bold">harmless: the battery doesn't notice</text>
+<text x="672.0" y="420.0" font-size="13" fill="#fc8181" text-anchor="middle" font-weight="bold">a short: only the 11 A fuse stops it</text>
+<text x="450.0" y="476.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">bar heights on log scales; the meter alone would allow this current, before battery and lead resistance</text>
+</svg>

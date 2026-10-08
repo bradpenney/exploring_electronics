@@ -170,8 +170,8 @@ In this circuit the meter reads about 7 V, not 9 V. A red LED takes about 2 V of
 Measuring voltage is one of the safe operations at hobby voltages:
 
 - ✅ **Safe (non-destructive):** measuring voltage across a component or a battery with the meter set to DC (direct current) volts. The meter's high resistance means nothing in the circuit changes.
-- ⚠️ **Caution (can damage the meter):** measuring with the dial on current or resistance by mistake. On those settings the meter is close to a short circuit; always check the dial before the probes touch anything.
-- 🚨 **DANGER:** measuring mains voltage. That needs a meter and leads rated for it (measurement category CAT II or higher) and training. Leave it alone.
+- ⚠️ **Caution (can damage the meter):** measuring with the red lead still in the current jack. Whatever the dial says, the meter is then close to a short circuit; always check where the leads are plugged in before the probes touch anything ([Using a Multimeter](tools/multimeter.md#idea-one-the-jacks-decide-what-the-meter-is) explains why).
+- 🚨 **DANGER:** measuring mains voltage. That needs a meter and leads rated for it ([measurement category](tools/multimeter.md#measurement-categories) CAT II or higher) and training. Leave it alone.
 
 ---
 

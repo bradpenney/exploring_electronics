@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Four 200 ohm, 2 watt resistors in parallel between two bus bars, each glowing. Together they make 50 ohms rated for 8 watts. With 5 watts in total, about 15.8 volts across them, each carries 1.25 watts, 62 percent of its rating.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="sp-resv2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#826a45"/><stop offset="0.22" stop-color="#e1ccad"/><stop offset="0.5" stop-color="#c9a46b"/><stop offset="1" stop-color="#50412a"/></linearGradient></defs>
+<rect x="15" y="15" width="870" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="50.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Four 200 Ω, 2 W resistors in parallel: one 50 Ω resistor rated 8 W</text>
+<path d="M180,110 L720,110 M180,300 L720,300" stroke="#e6e6e6" stroke-width="4" fill="none"/>
+<path d="M240,110 L240,145 M240,265 L240,300" stroke="#e6e6e6" stroke-width="4" fill="none"/>
+<ellipse cx="240" cy="205.0" rx="28" ry="90" fill="#f59e0b" fill-opacity="0.28" filter="url(#softglow)"/>
+<rect x="229" y="145" width="22" height="120" rx="10" fill="url(#sp-resv2)"/>
+<rect x="229" y="181.0" width="22" height="5" fill="#5a3a1a"/>
+<rect x="229" y="199.0" width="22" height="5" fill="#5a3a1a"/>
+<rect x="229" y="217.0" width="22" height="5" fill="#5a3a1a"/>
+<text x="262.0" y="190.0" font-size="13" fill="#e6e6e6" text-anchor="start" font-weight="bold">200 Ω</text>
+<text x="262.0" y="208.0" font-size="13" fill="#a0aec0" text-anchor="start" font-weight="normal">2 W</text>
+<text x="240.0" y="328.0" font-size="13" fill="#fbbf24" text-anchor="middle" font-weight="bold">1.25 W each</text>
+<path d="M380,110 L380,145 M380,265 L380,300" stroke="#e6e6e6" stroke-width="4" fill="none"/>
+<ellipse cx="380" cy="205.0" rx="28" ry="90" fill="#f59e0b" fill-opacity="0.28" filter="url(#softglow)"/>
+<rect x="369" y="145" width="22" height="120" rx="10" fill="url(#sp-resv2)"/>
+<rect x="369" y="181.0" width="22" height="5" fill="#5a3a1a"/>
+<rect x="369" y="199.0" width="22" height="5" fill="#5a3a1a"/>
+<rect x="369" y="217.0" width="22" height="5" fill="#5a3a1a"/>
+<text x="402.0" y="190.0" font-size="13" fill="#e6e6e6" text-anchor="start" font-weight="bold">200 Ω</text>
+<text x="402.0" y="208.0" font-size="13" fill="#a0aec0" text-anchor="start" font-weight="normal">2 W</text>
+<text x="380.0" y="328.0" font-size="13" fill="#fbbf24" text-anchor="middle" font-weight="bold">1.25 W each</text>
+<path d="M520,110 L520,145 M520,265 L520,300" stroke="#e6e6e6" stroke-width="4" fill="none"/>
+<ellipse cx="520" cy="205.0" rx="28" ry="90" fill="#f59e0b" fill-opacity="0.28" filter="url(#softglow)"/>
+<rect x="509" y="145" width="22" height="120" rx="10" fill="url(#sp-resv2)"/>
+<rect x="509" y="181.0" width="22" height="5" fill="#5a3a1a"/>
+<rect x="509" y="199.0" width="22" height="5" fill="#5a3a1a"/>
+<rect x="509" y="217.0" width="22" height="5" fill="#5a3a1a"/>
+<text x="542.0" y="190.0" font-size="13" fill="#e6e6e6" text-anchor="start" font-weight="bold">200 Ω</text>
+<text x="542.0" y="208.0" font-size="13" fill="#a0aec0" text-anchor="start" font-weight="normal">2 W</text>
+<text x="520.0" y="328.0" font-size="13" fill="#fbbf24" text-anchor="middle" font-weight="bold">1.25 W each</text>
+<path d="M660,110 L660,145 M660,265 L660,300" stroke="#e6e6e6" stroke-width="4" fill="none"/>
+<ellipse cx="660" cy="205.0" rx="28" ry="90" fill="#f59e0b" fill-opacity="0.28" filter="url(#softglow)"/>
+<rect x="649" y="145" width="22" height="120" rx="10" fill="url(#sp-resv2)"/>
+<rect x="649" y="181.0" width="22" height="5" fill="#5a3a1a"/>
+<rect x="649" y="199.0" width="22" height="5" fill="#5a3a1a"/>
+<rect x="649" y="217.0" width="22" height="5" fill="#5a3a1a"/>
+<text x="682.0" y="190.0" font-size="13" fill="#e6e6e6" text-anchor="start" font-weight="bold">200 Ω</text>
+<text x="682.0" y="208.0" font-size="13" fill="#a0aec0" text-anchor="start" font-weight="normal">2 W</text>
+<text x="660.0" y="328.0" font-size="13" fill="#fbbf24" text-anchor="middle" font-weight="bold">1.25 W each</text>
+<circle cx="170" cy="110" r="7" fill="#48bb78"/><circle cx="170" cy="300" r="7" fill="#a0aec0"/>
+<text x="150.0" y="199.0" font-size="15" fill="#e6e6e6" text-anchor="end" font-weight="bold">15.8 V</text>
+<text x="150.0" y="219.0" font-size="12" fill="#a0aec0" text-anchor="end" font-weight="normal" font-style="italic">5 W total</text>
+<text x="450.0" y="365.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">At 5 W total, each carries a quarter: 1.25 W, 62% of its 2 W rating</text>
+</svg>

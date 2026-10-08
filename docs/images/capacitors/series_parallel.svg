@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" width="860" height="400" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Left: two 10 microfarad capacitors side by side in parallel act like one capacitor with twice the plate area, 20 microfarads. Right: two 10 microfarad capacitors stacked in series act like one with a wider gap, 5 microfarads, with their voltage ratings adding.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="405" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="440" y="15" width="405" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="217.0" y="48.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Parallel: plate areas add</text>
+<polygon points="75.0,242.0 185.0,242.0 220.0,219.5 110.0,219.5" fill="#bcc6d2"/>
+<rect x="75.0" y="242.0" width="110.0" height="8.0" fill="#a0aec0"/>
+<rect x="75.0" y="242.0" width="110.0" height="8.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="185.0,250.0 185.0,242.0 220.0,219.5 220.0,227.5" fill="#585f69"/>
+<polygon points="75.0,162.0 185.0,162.0 220.0,139.5 110.0,139.5" fill="#bcc6d2"/>
+<rect x="75.0" y="162.0" width="110.0" height="8.0" fill="#a0aec0"/>
+<rect x="75.0" y="162.0" width="110.0" height="8.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="185.0,170.0 185.0,162.0 220.0,139.5 220.0,147.5" fill="#585f69"/>
+<text x="145.0" y="122.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">10 µF</text>
+<polygon points="225.0,242.0 335.0,242.0 370.0,219.5 260.0,219.5" fill="#bcc6d2"/>
+<rect x="225.0" y="242.0" width="110.0" height="8.0" fill="#a0aec0"/>
+<rect x="225.0" y="242.0" width="110.0" height="8.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="335.0,250.0 335.0,242.0 370.0,219.5 370.0,227.5" fill="#585f69"/>
+<polygon points="225.0,162.0 335.0,162.0 370.0,139.5 260.0,139.5" fill="#bcc6d2"/>
+<rect x="225.0" y="162.0" width="110.0" height="8.0" fill="#a0aec0"/>
+<rect x="225.0" y="162.0" width="110.0" height="8.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="335.0,170.0 335.0,162.0 370.0,139.5 370.0,147.5" fill="#585f69"/>
+<text x="295.0" y="122.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">10 µF</text>
+<text x="217.0" y="310.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">C = C₁ + C₂ = 20 µF</text>
+<text x="217.0" y="334.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">like more plate</text>
+<text x="642.0" y="48.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Series: the gaps add</text>
+<polygon points="585.0,122.0 695.0,122.0 730.0,99.5 620.0,99.5" fill="#bcc6d2"/>
+<rect x="585.0" y="122.0" width="110.0" height="8.0" fill="#a0aec0"/>
+<rect x="585.0" y="122.0" width="110.0" height="8.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="695.0,130.0 695.0,122.0 730.0,99.5 730.0,107.5" fill="#585f69"/>
+<polygon points="585.0,187.0 695.0,187.0 730.0,164.5 620.0,164.5" fill="#9ba6b5"/>
+<rect x="585.0" y="187.0" width="110.0" height="8.0" fill="#718096"/>
+<rect x="585.0" y="187.0" width="110.0" height="8.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="695.0,195.0 695.0,187.0 730.0,164.5 730.0,172.5" fill="#3e4652"/>
+<polygon points="585.0,252.0 695.0,252.0 730.0,229.5 620.0,229.5" fill="#bcc6d2"/>
+<rect x="585.0" y="252.0" width="110.0" height="8.0" fill="#a0aec0"/>
+<rect x="585.0" y="252.0" width="110.0" height="8.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="695.0,260.0 695.0,252.0 730.0,229.5 730.0,237.5" fill="#585f69"/>
+<text x="745.0" y="150.0" font-size="13" fill="#e6e6e6" text-anchor="start" font-weight="normal">10 µF</text>
+<text x="745.0" y="192.0" font-size="11" fill="#a0aec0" text-anchor="start" font-weight="normal">shared</text>
+<text x="745.0" y="215.0" font-size="13" fill="#e6e6e6" text-anchor="start" font-weight="normal">10 µF</text>
+<text x="642.0" y="310.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">1/C = 1/C₁ + 1/C₂ → 5 µF</text>
+<text x="642.0" y="334.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">like a wider gap; voltage ratings add</text>
+</svg>

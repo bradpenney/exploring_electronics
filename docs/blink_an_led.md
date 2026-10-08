@@ -58,6 +58,11 @@ arduino-cli compile --upload -p /dev/ttyACM0 --fqbn arduino:avr:uno .
 
 Within a few seconds the `L` LED on the board should start blinking: one second on, one second off. That's the whole toolchain proven. If it doesn't, see [Troubleshooting](#troubleshooting) and fix it here, where there's no wiring to blame.
 
+<figure markdown>
+  ![A square wave on pin 3 over four seconds: 5 volts for one second while digitalWrite HIGH and delay(1000) run, then 0 volts for one second for digitalWrite LOW and delay(1000), repeating. An LED above each second shows it lit, dark, lit, dark.](images/blink_an_led/blink_timing.svg){ width="760" }
+  <figcaption>Each delay(1000) holds the pin where the line before it left it, for one second.</figcaption>
+</figure>
+
 ---
 
 ## Stage 2: Blink Your Own LED
@@ -71,13 +76,18 @@ Now make it real with an LED you place yourself. The circuit is one output pin, 
 
 Wire it on the breadboard:
 
+<figure markdown>
+  ![A red LED with its two legs. The longer leg is the anode, the positive side, which goes toward the pin; the shorter leg is the cathode, which goes toward ground. A flat edge on the rim marks the cathode side even when the legs have been trimmed. Beside it, the LED schematic symbol: a triangle pointing to a bar, with the bar on the cathode side.](images/blink_an_led/led_legs.svg){ width="760" }
+  <figcaption>Long leg to the pin, short leg and flat edge to ground.</figcaption>
+</figure>
+
 1. Put the **LED** across the centre gap. The **longer leg is the anode** (positive side) and goes toward the pin; the shorter leg (cathode) goes toward ground. If the legs have been trimmed to the same length, look at the rim around the base of the LED: it has a **flat edge on the cathode side**.
 2. Connect the **220 Ω resistor** from the LED's anode row to a separate row. It could go on either side of the LED: in a single loop the same current flows everywhere, so the resistor limits it wherever it sits.
 3. Run a jumper from the Arduino's **pin 3** to the resistor.
 4. Run a jumper from the LED's cathode to a **GND** pin on the Arduino.
 
 !!! warning "An LED always needs its resistor"
-    Never wire the LED straight from the pin to ground with no resistor. Without it the LED draws far too much current: it can burn out in an instant and damage the pin driving it. One 220 Ω resistor in the loop keeps both safe; the practice problems in [Ohm's Law and Power](ohms_law.md#practice) work out where the value comes from.
+    Never wire the LED straight from the pin to ground with no resistor. Without it the LED draws far too much current: it can burn out in an instant and damage the pin driving it. One 220 Ω resistor in the loop keeps both safe; [Diodes and LEDs](diodes_and_leds.md#sizing-an-led-resistor) works out where the value comes from.
 
 The code is the same as before, except that it drives **pin 3** instead of the built-in LED:
 

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>An Arduino controller with three shared lines, SCK, COPI and CIPO, running to three peripherals: an ADC, an SD card and a display. Each peripheral also has its own chip-select wire from the Arduino. The ADC's CS is LOW, so it is selected and drives CIPO; the SD card's and display's CS lines are HIGH, so they let go of CIPO and ignore the clock.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="410" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="48.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">Shared clock and data lines, and one select wire per peripheral</text>
+<rect x="200" y="106" width="640" height="8" rx="4" fill="#90cdf4"/>
+<text x="848.0" y="115.0" font-size="12" fill="#90cdf4" text-anchor="start" font-weight="bold">SCK</text>
+<rect x="200" y="136" width="640" height="8" rx="4" fill="#f59e0b"/>
+<text x="848.0" y="145.0" font-size="12" fill="#f59e0b" text-anchor="start" font-weight="bold">COPI</text>
+<rect x="200" y="166" width="640" height="8" rx="4" fill="#48bb78"/>
+<text x="848.0" y="175.0" font-size="12" fill="#48bb78" text-anchor="start" font-weight="bold">CIPO</text>
+<ellipse cx="124.0" cy="365.0" rx="90.0" ry="7.2" fill="#000" fill-opacity="0.4"/>
+<polygon points="40.0,160.0 180.0,160.0 208.0,142.0 68.0,142.0" fill="#d28863"/>
+<rect x="40.0" y="160.0" width="140.0" height="200.0" fill="#c05621"/>
+<rect x="40.0" y="160.0" width="140.0" height="200.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="180.0,360.0 180.0,160.0 208.0,142.0 208.0,342.0" fill="#692f12"/>
+<text x="110.0" y="190.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">Arduino</text>
+<text x="110.0" y="210.0" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="normal">controller</text>
+<line x1="180" y1="110" x2="200" y2="110" stroke="#90cdf4" stroke-width="4"/>
+<line x1="180" y1="140" x2="200" y2="140" stroke="#f59e0b" stroke-width="4"/>
+<line x1="180" y1="170" x2="200" y2="170" stroke="#48bb78" stroke-width="4"/>
+<line x1="310" y1="110" x2="310" y2="270" stroke="#90cdf4" stroke-width="3" stroke-opacity="1"/>
+<line x1="330" y1="140" x2="330" y2="270" stroke="#f59e0b" stroke-width="3" stroke-opacity="1"/>
+<line x1="350" y1="170" x2="350" y2="270" stroke="#48bb78" stroke-width="3" stroke-opacity="1"/>
+<ellipse cx="342.6" cy="365.0" rx="78.6" ry="6.5" fill="#000" fill-opacity="0.4"/>
+<polygon points="270.0,270.0 390.0,270.0 415.2,253.8 295.2,253.8" fill="#6da98b"/>
+<rect x="270.0" y="270.0" width="120.0" height="90.0" fill="#2f855a"/>
+<rect x="270.0" y="270.0" width="120.0" height="90.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="390.0,360.0 390.0,270.0 415.2,253.8 415.2,343.8" fill="#194931"/>
+<text x="330.0" y="305.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">ADC</text>
+<text x="330.0" y="325.0" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="normal">selected</text>
+<path d="M180,230 L370,230 L370,270" stroke="#fc8181" stroke-width="2.5" fill="none" stroke-dasharray="0"/>
+<text x="376.0" y="226.0" font-size="10" fill="#fc8181" text-anchor="start" font-weight="bold">CS1 LOW</text>
+<line x1="510" y1="110" x2="510" y2="270" stroke="#90cdf4" stroke-width="3" stroke-opacity="1"/>
+<line x1="530" y1="140" x2="530" y2="270" stroke="#f59e0b" stroke-width="3" stroke-opacity="1"/>
+<line x1="550" y1="170" x2="550" y2="270" stroke="#48bb78" stroke-width="3" stroke-opacity="0.35"/>
+<ellipse cx="542.6" cy="365.0" rx="78.6" ry="6.5" fill="#000" fill-opacity="0.4"/>
+<polygon points="470.0,270.0 590.0,270.0 615.2,253.8 495.2,253.8" fill="#808895"/>
+<rect x="470.0" y="270.0" width="120.0" height="90.0" fill="#4a5568"/>
+<rect x="470.0" y="270.0" width="120.0" height="90.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="590.0,360.0 590.0,270.0 615.2,253.8 615.2,343.8" fill="#282e39"/>
+<text x="530.0" y="305.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">SD card</text>
+<text x="530.0" y="325.0" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="normal">CIPO let go</text>
+<path d="M180,242 L570,242 L570,270" stroke="#a0aec0" stroke-width="2.5" fill="none" stroke-dasharray="5 4"/>
+<text x="576.0" y="238.0" font-size="10" fill="#a0aec0" text-anchor="start" font-weight="bold">CS2 HIGH</text>
+<line x1="710" y1="110" x2="710" y2="270" stroke="#90cdf4" stroke-width="3" stroke-opacity="1"/>
+<line x1="730" y1="140" x2="730" y2="270" stroke="#f59e0b" stroke-width="3" stroke-opacity="1"/>
+<line x1="750" y1="170" x2="750" y2="270" stroke="#48bb78" stroke-width="3" stroke-opacity="0.35"/>
+<ellipse cx="742.6" cy="365.0" rx="78.6" ry="6.5" fill="#000" fill-opacity="0.4"/>
+<polygon points="670.0,270.0 790.0,270.0 815.2,253.8 695.2,253.8" fill="#808895"/>
+<rect x="670.0" y="270.0" width="120.0" height="90.0" fill="#4a5568"/>
+<rect x="670.0" y="270.0" width="120.0" height="90.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="790.0,360.0 790.0,270.0 815.2,253.8 815.2,343.8" fill="#282e39"/>
+<text x="730.0" y="305.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">display</text>
+<text x="730.0" y="325.0" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="normal">CIPO let go</text>
+<path d="M180,254 L770,254 L770,270" stroke="#a0aec0" stroke-width="2.5" fill="none" stroke-dasharray="5 4"/>
+<text x="776.0" y="250.0" font-size="10" fill="#a0aec0" text-anchor="start" font-weight="bold">CS3 HIGH</text>
+<text x="450.0" y="400.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">Only the peripheral whose CS is LOW listens and drives CIPO; the others ignore the clock.</text>
+</svg>

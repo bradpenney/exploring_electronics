@@ -240,7 +240,72 @@ def field_scale():
     return svg(w, h, "\n".join(parts), "A log scale of magnetic field strength from 10 microtesla to 10 tesla: Earth's field at 31 to 58 microtesla, a fridge magnet at 1 to 10 millitesla, a small neodymium magnet near 0.1 tesla, a loudspeaker's magnet gap at 1 to 2.4 tesla, and an MRI scanner at 1.5 to 7 tesla.")
 
 
+# Transformer power and losses (Wikipedia "Transformer": VP/VS = IS/IP = NP/NS,
+# power conserved in the ideal case, impedance ratio = turns ratio squared;
+# distribution transformers 98-99 % efficient; resistive, hysteresis and eddy
+# current losses; laminations reduce eddy currents. Wikipedia "Inductor":
+# toroidal cores keep leakage flux low).
+def transformer_power():
+    w, h = 900, 470
+    parts = [common_defs(), panel(15, 15, 425, h - 55), panel(460, 15, 425, h - 55)]
+    vp, ip, ratio = 120.0, 0.5, 10
+    vs, is_ = vp / ratio, ip * ratio
+    base = 330
+    for cx, title, v, i in [(227, "Primary", vp, ip), (672, "Secondary", vs, is_)]:
+        parts.append(text(cx, 50, title, 17, AMBER_LIGHT, weight="bold"))
+        hv = max(v / 120 * 190, 6)
+        hi = max(i / 5 * 190, 6)
+        parts += box3d(cx - 120, base, 70, 30, hv, "#4299e1")
+        parts.append(text(cx - 85, base - hv - 22, f"{v:g} V", 15, TEXT, weight="bold"))
+        parts += box3d(cx + 10, base, 70, 30, hi, AMBER)
+        parts.append(text(cx + 45, base - hi - 22, f"{i:g} A", 15, TEXT, weight="bold"))
+        parts.append(text(cx - 85, base + 24, "voltage", 12, MUTED))
+        parts.append(text(cx + 45, base + 24, "current", 12, MUTED))
+        parts.append(text(cx, base + 52, f"{v:g} V × {i:g} A = {v * i:g} W", 14, GREEN, weight="bold"))
+        parts.append(text(cx, base + 72, f"looks like {v / i:g} Ω", 12, MUTED, italic=True))
+    parts.append(text(w / 2, 452, "10 : 1 turns: voltage down ten times, current up ten times, power the same", 13, TEXT))
+    return svg(w, h, "\n".join(parts), "Two panels for an ideal 10 to 1 transformer. The primary has 120 volts and 0.5 amps, 60 watts, and looks like 240 ohms. The secondary has 12 volts and 5 amps, also 60 watts, into a 2.4 ohm load. The voltage steps down ten times, the current up ten times, and the impedance a hundred times, the square of the turns ratio.")
+
+
+def transformer_losses():
+    w, h = 900, 400
+    parts = [common_defs()]
+    cards = [("Copper loss", "the windings' own resistance:", "heat grows with current squared", AMBER),
+             ("Eddy currents", "loops of current induced", "in the iron core itself", RED),
+             ("Hysteresis", "energy spent re-magnetising", "the core every half-cycle", "#9f7aea"),
+             ("Leakage flux", "field that misses the", "other winding", "#4299e1")]
+    for k, (name, l1, l2, col) in enumerate(cards):
+        x0 = 15 + k * 220
+        cx = x0 + 102
+        parts.append(panel(x0, 15, 205, 300))
+        parts.append(text(cx, 46, name, 15, AMBER_LIGHT, weight="bold"))
+        if name == "Eddy currents":
+            parts += box3d(cx - 82, 210, 56, 30, 110, "#718096")
+            parts.append(f'<ellipse cx="{cx - 54}" cy="155" rx="18" ry="38" fill="none" stroke="{RED}" stroke-width="3"/>')
+            parts.append(text(cx - 54, 234, "solid", 11, MUTED))
+            for j in range(6):
+                parts += box3d(cx + 2 + j * 11, 210, 8, 30, 110, "#718096", shadow=(j == 0))
+            parts.append(text(cx + 36, 234, "laminated", 11, MUTED))
+        elif name == "Copper loss":
+            parts.append(f'<ellipse cx="{cx}" cy="155" rx="70" ry="70" fill="url(#glow)"/>')
+            for j in range(6):
+                parts.append(f'<ellipse cx="{cx}" cy="{110 + j * 18}" rx="40" ry="8" fill="none" stroke="#c8733c" stroke-width="5"/>')
+        elif name == "Hysteresis":
+            parts.append(f'<path d="M{cx - 60},200 C{cx - 30},200 {cx - 20},110 {cx + 60},110 C{cx + 30},110 {cx + 20},200 {cx - 60},200 Z" fill="{col}" fill-opacity="0.35" stroke="{col}" stroke-width="3"/>')
+            parts.append(text(cx, 222, "each loop costs a little energy", 10, MUTED, italic=True))
+        else:
+            parts += box3d(cx - 50, 210, 100, 30, 110, "#4a5568")
+            parts.append(f'<path d="M{cx - 40},120 C{cx - 100},80 {cx - 100},230 {cx - 40},190" stroke="{col}" stroke-width="2.5" fill="none" stroke-dasharray="5 4"/>')
+        parts.append(text(cx, 262, l1, 12, TEXT))
+        parts.append(text(cx, 280, l2, 12, TEXT))
+    parts.append(text(w / 2, 348, "Together they're small in a good transformer: distribution transformers run 98 to 99% efficient.", 13, TEXT))
+    parts.append(text(w / 2, 370, "Laminations, thin insulated sheets, cut eddy currents; a toroidal core keeps leakage low.", 12, MUTED, italic=True))
+    return svg(w, h, "\n".join(parts), "Four panels of transformer losses. Copper loss: the windings' own resistance heats with the current squared. Eddy currents: loops of current induced in the iron core, large in a solid core and cut by a laminated stack of thin sheets. Hysteresis: energy spent re-magnetising the core every half-cycle. Leakage flux: field that misses the other winding. Distribution transformers still run 98 to 99 percent efficient.")
+
+
 FIGURES = {
+    "transformer_power.svg": transformer_power,
+    "transformer_losses.svg": transformer_losses,
     "bar_field.svg": bar_field,
     "poles.svg": poles,
     "nail_electromagnet.svg": nail_electromagnet,

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Two panels of a vacuum diode. Left, with the plate positive, electrons boiled off the hot cathode cross the vacuum to the plate and current flows. Right, with the plate negative, the electrons are repelled and stay in a cloud near the cathode, and no current flows.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="vt-glass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#cbd5e0" stop-opacity="0.32"/><stop offset="0.25" stop-color="#ffffff" stop-opacity="0.10"/><stop offset="0.75" stop-color="#cbd5e0" stop-opacity="0.06"/><stop offset="1" stop-color="#cbd5e0" stop-opacity="0.30"/></linearGradient><linearGradient id="vt-metal" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5568"/><stop offset="0.3" stop-color="#cbd5e0"/><stop offset="0.6" stop-color="#718096"/><stop offset="1" stop-color="#2d3748"/></linearGradient><radialGradient id="vt-heat" r="50%"><stop offset="0" stop-color="#ff8a3d" stop-opacity="0.9"/><stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/></radialGradient></defs>
+<rect x="15" y="15" width="425" height="390" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="460" y="15" width="425" height="390" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="227.0" y="50.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Plate positive: current flows</text>
+<ellipse cx="227" cy="320" rx="120" ry="40" fill="url(#vt-heat)"/>
+<rect x="117" y="310" width="220" height="20" rx="8" fill="#c05621"/>
+<text x="227.0" y="360.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">hot cathode</text>
+<rect x="117" y="90" width="220" height="18" rx="4" fill="url(#vt-metal)"/>
+<text x="357.0" y="104.0" font-size="24" fill="#48bb78" text-anchor="start" font-weight="bold">+</text>
+<text x="227.0" y="136.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">plate</text>
+<line x1="137" y1="300" x2="137" y2="150" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="134.9" cy="164.4" r="4" fill="url(#eball)"/>
+<circle cx="138.8" cy="208.2" r="4" fill="url(#eball)"/>
+<circle cx="137.4" cy="257.9" r="4" fill="url(#eball)"/>
+<line x1="167" y1="300" x2="167" y2="150" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="161.7" cy="170.1" r="4" fill="url(#eball)"/>
+<circle cx="161.4" cy="213.9" r="4" fill="url(#eball)"/>
+<circle cx="161.8" cy="253.5" r="4" fill="url(#eball)"/>
+<line x1="197" y1="300" x2="197" y2="150" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="196.1" cy="175.2" r="4" fill="url(#eball)"/>
+<circle cx="192.5" cy="210.6" r="4" fill="url(#eball)"/>
+<circle cx="198.5" cy="267.2" r="4" fill="url(#eball)"/>
+<line x1="227" y1="300" x2="227" y2="150" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="227.9" cy="168.3" r="4" fill="url(#eball)"/>
+<circle cx="232.7" cy="207.7" r="4" fill="url(#eball)"/>
+<circle cx="231.3" cy="256.6" r="4" fill="url(#eball)"/>
+<line x1="257" y1="300" x2="257" y2="150" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="252.7" cy="163.9" r="4" fill="url(#eball)"/>
+<circle cx="254.7" cy="220.1" r="4" fill="url(#eball)"/>
+<circle cx="253.2" cy="261.3" r="4" fill="url(#eball)"/>
+<line x1="287" y1="300" x2="287" y2="150" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="288.7" cy="168.0" r="4" fill="url(#eball)"/>
+<circle cx="287.6" cy="208.0" r="4" fill="url(#eball)"/>
+<circle cx="281.7" cy="255.3" r="4" fill="url(#eball)"/>
+<line x1="317" y1="300" x2="317" y2="150" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="319.2" cy="168.8" r="4" fill="url(#eball)"/>
+<circle cx="314.8" cy="216.4" r="4" fill="url(#eball)"/>
+<circle cx="316.4" cy="256.8" r="4" fill="url(#eball)"/>
+<rect x="122.0" y="382.0" width="210" height="26" rx="13.0" fill="#48bb78"/>
+<rect x="122.0" y="382.0" width="210" height="26" rx="13.0" fill="url(#gloss)"/>
+<text x="227.0" y="399.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">electrons cross: current</text>
+<text x="672.0" y="50.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Plate negative: nothing flows</text>
+<ellipse cx="672" cy="320" rx="120" ry="40" fill="url(#vt-heat)"/>
+<rect x="562" y="310" width="220" height="20" rx="8" fill="#c05621"/>
+<text x="672.0" y="360.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">hot cathode</text>
+<rect x="562" y="90" width="220" height="18" rx="4" fill="url(#vt-metal)"/>
+<text x="802.0" y="104.0" font-size="24" fill="#fc8181" text-anchor="start" font-weight="bold">−</text>
+<text x="672.0" y="136.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">plate</text>
+<circle cx="636.8" cy="251.8" r="4" fill="url(#eball)"/>
+<circle cx="702.2" cy="248.3" r="4" fill="url(#eball)"/>
+<circle cx="679.2" cy="261.5" r="4" fill="url(#eball)"/>
+<circle cx="583.6" cy="267.8" r="4" fill="url(#eball)"/>
+<circle cx="579.5" cy="264.5" r="4" fill="url(#eball)"/>
+<circle cx="586.0" cy="249.1" r="4" fill="url(#eball)"/>
+<circle cx="656.9" cy="282.2" r="4" fill="url(#eball)"/>
+<circle cx="596.8" cy="255.0" r="4" fill="url(#eball)"/>
+<circle cx="697.5" cy="287.6" r="4" fill="url(#eball)"/>
+<circle cx="687.4" cy="262.9" r="4" fill="url(#eball)"/>
+<circle cx="767.3" cy="247.1" r="4" fill="url(#eball)"/>
+<circle cx="743.7" cy="258.0" r="4" fill="url(#eball)"/>
+<circle cx="600.9" cy="250.3" r="4" fill="url(#eball)"/>
+<circle cx="633.7" cy="281.7" r="4" fill="url(#eball)"/>
+<text x="672.0" y="220.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">repelled: the cloud stays near the cathode</text>
+<rect x="619.0" y="382.0" width="106" height="26" rx="13.0" fill="#fc8181"/>
+<rect x="619.0" y="382.0" width="106" height="26" rx="13.0" fill="url(#gloss)"/>
+<text x="672.0" y="399.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">no current</text>
+</svg>

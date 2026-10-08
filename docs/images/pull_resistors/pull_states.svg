@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Four panels. Pull-down, button open: a 10 kilohm resistor ties the pin to ground and it rests LOW. Pull-down, pressed: the button connects the pin to 5 volts and it reads HIGH. Pull-up, button open: the resistor ties the pin to 5 volts and it rests HIGH. Pull-up, pressed: the button connects the pin to ground and it reads LOW.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="425" height="200" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="227.0" y="45.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Pull-down, open</text>
+<line x1="55" y1="75" x2="400" y2="75" stroke="#fc8181" stroke-width="3"/>
+<text x="51.0" y="79.0" font-size="11" fill="#fc8181" text-anchor="end" font-weight="bold">5 V</text>
+<line x1="55" y1="190" x2="400" y2="190" stroke="#90cdf4" stroke-width="3"/>
+<text x="51.0" y="194.0" font-size="11" fill="#90cdf4" text-anchor="end" font-weight="bold">GND</text>
+<line x1="165" y1="132.5" x2="165" y2="190" stroke="#e6e6e6" stroke-width="2"/>
+<rect x="156" y="143.2" width="18" height="36" rx="7" fill="#d6b98c"/>
+<text x="149.0" y="165.2" font-size="11" fill="#a0aec0" text-anchor="end" font-weight="normal">10 kΩ</text>
+<line x1="275" y1="75" x2="275" y2="87" stroke="#e6e6e6" stroke-width="2"/>
+<line x1="275" y1="120.5" x2="275" y2="132.5" stroke="#e6e6e6" stroke-width="2"/>
+<line x1="275" y1="87" x2="297" y2="116.5" stroke="#e6e6e6" stroke-width="3"/>
+<text x="305.0" y="107.8" font-size="11" fill="#a0aec0" text-anchor="start" font-weight="normal">button</text>
+<line x1="165" y1="132.5" x2="275" y2="132.5" stroke="#e6e6e6" stroke-width="2"/>
+<circle cx="165" cy="132.5" r="4" fill="#e6e6e6"/>
+<line x1="275" y1="132.5" x2="345" y2="132.5" stroke="#e6e6e6" stroke-width="2"/>
+<rect x="341.0" y="119.5" width="58" height="26" rx="13.0" fill="#2b6cb0"/>
+<rect x="341.0" y="119.5" width="58" height="26" rx="13.0" fill="url(#gloss)"/>
+<text x="370.0" y="136.8" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">LOW</text>
+<text x="227.0" y="211.0" font-size="12" fill="#90cdf4" text-anchor="middle" font-weight="bold">rests LOW</text>
+<rect x="455" y="15" width="425" height="200" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="667.0" y="45.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Pull-down, pressed</text>
+<line x1="495" y1="75" x2="840" y2="75" stroke="#fc8181" stroke-width="3"/>
+<text x="491.0" y="79.0" font-size="11" fill="#fc8181" text-anchor="end" font-weight="bold">5 V</text>
+<line x1="495" y1="190" x2="840" y2="190" stroke="#90cdf4" stroke-width="3"/>
+<text x="491.0" y="194.0" font-size="11" fill="#90cdf4" text-anchor="end" font-weight="bold">GND</text>
+<line x1="605" y1="132.5" x2="605" y2="190" stroke="#e6e6e6" stroke-width="2"/>
+<rect x="596" y="143.2" width="18" height="36" rx="7" fill="#d6b98c"/>
+<text x="589.0" y="165.2" font-size="11" fill="#a0aec0" text-anchor="end" font-weight="normal">10 kΩ</text>
+<line x1="715" y1="75" x2="715" y2="87" stroke="#e6e6e6" stroke-width="2"/>
+<line x1="715" y1="120.5" x2="715" y2="132.5" stroke="#e6e6e6" stroke-width="2"/>
+<line x1="715" y1="87" x2="715" y2="120.5" stroke="#f59e0b" stroke-width="4"/>
+<text x="745.0" y="107.8" font-size="11" fill="#a0aec0" text-anchor="start" font-weight="normal">button</text>
+<line x1="605" y1="132.5" x2="715" y2="132.5" stroke="#e6e6e6" stroke-width="2"/>
+<circle cx="605" cy="132.5" r="4" fill="#e6e6e6"/>
+<line x1="715" y1="132.5" x2="785" y2="132.5" stroke="#e6e6e6" stroke-width="2"/>
+<rect x="781.0" y="119.5" width="58" height="26" rx="13.0" fill="#48bb78"/>
+<rect x="781.0" y="119.5" width="58" height="26" rx="13.0" fill="url(#gloss)"/>
+<text x="810.0" y="136.8" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">HIGH</text>
+<text x="667.0" y="211.0" font-size="12" fill="#48bb78" text-anchor="middle" font-weight="bold">reads HIGH</text>
+<rect x="15" y="230" width="425" height="200" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="227.0" y="260.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Pull-up, open</text>
+<line x1="55" y1="290" x2="400" y2="290" stroke="#fc8181" stroke-width="3"/>
+<text x="51.0" y="294.0" font-size="11" fill="#fc8181" text-anchor="end" font-weight="bold">5 V</text>
+<line x1="55" y1="405" x2="400" y2="405" stroke="#90cdf4" stroke-width="3"/>
+<text x="51.0" y="409.0" font-size="11" fill="#90cdf4" text-anchor="end" font-weight="bold">GND</text>
+<line x1="165" y1="290" x2="165" y2="347.5" stroke="#e6e6e6" stroke-width="2"/>
+<rect x="156" y="300.8" width="18" height="36" rx="7" fill="#d6b98c"/>
+<text x="149.0" y="322.8" font-size="11" fill="#a0aec0" text-anchor="end" font-weight="normal">10 kΩ</text>
+<line x1="275" y1="347.5" x2="275" y2="359.5" stroke="#e6e6e6" stroke-width="2"/>
+<line x1="275" y1="393" x2="275" y2="405" stroke="#e6e6e6" stroke-width="2"/>
+<line x1="275" y1="359.5" x2="297" y2="389" stroke="#e6e6e6" stroke-width="3"/>
+<text x="305.0" y="380.2" font-size="11" fill="#a0aec0" text-anchor="start" font-weight="normal">button</text>
+<line x1="165" y1="347.5" x2="275" y2="347.5" stroke="#e6e6e6" stroke-width="2"/>
+<circle cx="165" cy="347.5" r="4" fill="#e6e6e6"/>
+<line x1="275" y1="347.5" x2="345" y2="347.5" stroke="#e6e6e6" stroke-width="2"/>
+<rect x="341.0" y="334.5" width="58" height="26" rx="13.0" fill="#48bb78"/>
+<rect x="341.0" y="334.5" width="58" height="26" rx="13.0" fill="url(#gloss)"/>
+<text x="370.0" y="351.8" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">HIGH</text>
+<text x="227.0" y="426.0" font-size="12" fill="#48bb78" text-anchor="middle" font-weight="bold">rests HIGH</text>
+<rect x="455" y="230" width="425" height="200" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="667.0" y="260.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Pull-up, pressed</text>
+<line x1="495" y1="290" x2="840" y2="290" stroke="#fc8181" stroke-width="3"/>
+<text x="491.0" y="294.0" font-size="11" fill="#fc8181" text-anchor="end" font-weight="bold">5 V</text>
+<line x1="495" y1="405" x2="840" y2="405" stroke="#90cdf4" stroke-width="3"/>
+<text x="491.0" y="409.0" font-size="11" fill="#90cdf4" text-anchor="end" font-weight="bold">GND</text>
+<line x1="605" y1="290" x2="605" y2="347.5" stroke="#e6e6e6" stroke-width="2"/>
+<rect x="596" y="300.8" width="18" height="36" rx="7" fill="#d6b98c"/>
+<text x="589.0" y="322.8" font-size="11" fill="#a0aec0" text-anchor="end" font-weight="normal">10 kΩ</text>
+<line x1="715" y1="347.5" x2="715" y2="359.5" stroke="#e6e6e6" stroke-width="2"/>
+<line x1="715" y1="393" x2="715" y2="405" stroke="#e6e6e6" stroke-width="2"/>
+<line x1="715" y1="359.5" x2="715" y2="393" stroke="#f59e0b" stroke-width="4"/>
+<text x="745.0" y="380.2" font-size="11" fill="#a0aec0" text-anchor="start" font-weight="normal">button</text>
+<line x1="605" y1="347.5" x2="715" y2="347.5" stroke="#e6e6e6" stroke-width="2"/>
+<circle cx="605" cy="347.5" r="4" fill="#e6e6e6"/>
+<line x1="715" y1="347.5" x2="785" y2="347.5" stroke="#e6e6e6" stroke-width="2"/>
+<rect x="781.0" y="334.5" width="58" height="26" rx="13.0" fill="#2b6cb0"/>
+<rect x="781.0" y="334.5" width="58" height="26" rx="13.0" fill="url(#gloss)"/>
+<text x="810.0" y="351.8" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">LOW</text>
+<text x="667.0" y="426.0" font-size="12" fill="#90cdf4" text-anchor="middle" font-weight="bold">reads LOW</text>
+</svg>
