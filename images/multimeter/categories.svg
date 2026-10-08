@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" width="900" height="470" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Four 3D bars from left to right, following power from the utility into a building. CAT IV, the service drop and electricity meter: a 600 volt meter must survive 8,000 volt test spikes. CAT III, the distribution panel and fixed wiring: 6,000 volts. CAT II, outlets and plug-in appliances: 4,000 volts. CAT 0, protected electronics and battery circuits: 2,500 volts.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="440" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="48.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Measurement categories: the closer to the utility supply, the bigger the spikes</text>
+<ellipse cx="142.5" cy="335.0" rx="78.5" ry="9.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="70.0,130.0 180.0,130.0 215.0,107.5 105.0,107.5" fill="#d66e6e"/>
+<rect x="70.0" y="130.0" width="110.0" height="200.0" fill="#c53030"/>
+<rect x="70.0" y="130.0" width="110.0" height="200.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="180.0,330.0 180.0,130.0 215.0,107.5 215.0,307.5" fill="#6c1a1a"/>
+<text x="125.0" y="236.0" font-size="17" fill="#ffffff" text-anchor="middle" font-weight="bold">CAT IV</text>
+<text x="142.0" y="96.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">8,000 V</text>
+<text x="125.0" y="360.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">service drop, outdoor lines,</text>
+<text x="125.0" y="376.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">electricity meter</text>
+<path d="M210,310 l40,0" stroke="#a0aec0" stroke-width="2" marker-end="url(#arrow)"/>
+<ellipse cx="347.5" cy="335.0" rx="78.5" ry="9.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="275.0,180.0 385.0,180.0 420.0,157.5 310.0,157.5" fill="#e79762"/>
+<rect x="275.0" y="180.0" width="110.0" height="150.0" fill="#dd6b20"/>
+<rect x="275.0" y="180.0" width="110.0" height="150.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="385.0,330.0 385.0,180.0 420.0,157.5 420.0,307.5" fill="#793a11"/>
+<text x="330.0" y="261.0" font-size="17" fill="#ffffff" text-anchor="middle" font-weight="bold">CAT III</text>
+<text x="347.0" y="146.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">6,000 V</text>
+<text x="330.0" y="360.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">distribution panel, fixed</text>
+<text x="330.0" y="376.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">wiring, short branch circuits</text>
+<path d="M415,310 l40,0" stroke="#a0aec0" stroke-width="2" marker-end="url(#arrow)"/>
+<ellipse cx="552.5" cy="335.0" rx="78.5" ry="9.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="480.0,230.0 590.0,230.0 625.0,207.5 515.0,207.5" fill="#f8bb54"/>
+<rect x="480.0" y="230.0" width="110.0" height="100.0" fill="#f59e0b"/>
+<rect x="480.0" y="230.0" width="110.0" height="100.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="590.0,330.0 590.0,230.0 625.0,207.5 625.0,307.5" fill="#865606"/>
+<text x="535.0" y="286.0" font-size="17" fill="#1a1a1a" text-anchor="middle" font-weight="bold">CAT II</text>
+<text x="552.0" y="196.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">4,000 V</text>
+<text x="535.0" y="360.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">outlets and long branch</text>
+<text x="535.0" y="376.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">circuits, plug-in appliances</text>
+<path d="M620,310 l40,0" stroke="#a0aec0" stroke-width="2" marker-end="url(#arrow)"/>
+<ellipse cx="757.5" cy="335.0" rx="78.5" ry="9.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="685.0,267.5 795.0,267.5 830.0,245.0 720.0,245.0" fill="#7ecfa0"/>
+<rect x="685.0" y="267.5" width="110.0" height="62.5" fill="#48bb78"/>
+<rect x="685.0" y="267.5" width="110.0" height="62.5" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="795.0,330.0 795.0,267.5 830.0,245.0 830.0,307.5" fill="#276642"/>
+<text x="740.0" y="304.8" font-size="17" fill="#1a1a1a" text-anchor="middle" font-weight="bold">CAT 0</text>
+<text x="757.0" y="233.5" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">2,500 V</text>
+<text x="740.0" y="360.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">protected electronics,</text>
+<text x="740.0" y="376.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">battery circuits</text>
+<text x="450.0" y="420.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">bar height: the test spike a 600 V meter must survive in each category</text>
+</svg>

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 560" width="820" height="560" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A simplified 3D Arduino Uno seen from above with the USB port on the left: digital pins along the far edge, power and analog pins along the near edge, reset button by the USB port, the onboard L LED by pin 13, and the ATmega328P chip at the lower right</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="790" height="530" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<ellipse cx="445.8" cy="469" rx="300" ry="20" fill="#000" fill-opacity="0.45"/>
+<polygon points="614.0,455.0 716.6,202.1 716.6,197.8 614.0,450.7" fill="#074449"/>
+<polygon points="175.0,455.0 614.0,455.0 614.0,450.7 175.0,450.7" fill="#0b636b"/>
+<polygon points="175.0,450.7 614.0,450.7 716.6,197.8 277.5,197.8" fill="#0e7c86"/>
+<polygon points="175.0,450.7 614.0,450.7 716.6,197.8 277.5,197.8" fill="url(#gloss)" opacity="0.5"/>
+<ellipse cx="269.4" cy="438.9" rx="7" ry="5.5" fill="#063c42" stroke="#cbd5e0" stroke-opacity="0.5"/>
+<ellipse cx="612.0" cy="414.7" rx="7" ry="5.5" fill="#063c42" stroke="#cbd5e0" stroke-opacity="0.5"/>
+<ellipse cx="665.6" cy="282.6" rx="7" ry="5.5" fill="#063c42" stroke="#cbd5e0" stroke-opacity="0.5"/>
+<ellipse cx="369.8" cy="210.1" rx="7" ry="5.5" fill="#063c42" stroke="#cbd5e0" stroke-opacity="0.5"/>
+<line x1="341.4" y1="356.0" x2="507.8" y2="356.0" stroke="#4fd1c5" stroke-opacity="0.25" stroke-width="2"/>
+<line x1="347.2" y1="341.8" x2="513.6" y2="341.8" stroke="#4fd1c5" stroke-opacity="0.25" stroke-width="2"/>
+<line x1="352.9" y1="327.6" x2="519.3" y2="327.6" stroke="#4fd1c5" stroke-opacity="0.25" stroke-width="2"/>
+<line x1="358.7" y1="313.4" x2="525.1" y2="313.4" stroke="#4fd1c5" stroke-opacity="0.25" stroke-width="2"/>
+<text x="565.4" y="308.6" font-size="26" fill="#e6fffa" text-anchor="middle" font-weight="bold" opacity="0.35">UNO</text>
+<polygon points="544.6,216.3 549.4,204.4 549.4,181.6 544.6,193.4" fill="#121419"/>
+<polygon points="382.0,216.3 544.6,216.3 544.6,193.4 382.0,193.4" fill="#1b1e24"/>
+<polygon points="382.0,193.4 544.6,193.4 549.4,181.6 386.8,181.6" fill="#22262e"/>
+<polygon points="382.0,193.4 544.6,193.4 549.4,181.6 386.8,181.6" fill="url(#gloss)" opacity="0.5"/>
+<polygon points="684.8,216.3 689.6,204.4 689.6,181.6 684.8,193.4" fill="#121419"/>
+<polygon points="554.8,216.3 684.8,216.3 684.8,193.4 554.8,193.4" fill="#1b1e24"/>
+<polygon points="554.8,193.4 684.8,193.4 689.6,181.6 559.6,181.6" fill="#22262e"/>
+<polygon points="554.8,193.4 684.8,193.4 689.6,181.6 559.6,181.6" fill="url(#gloss)" opacity="0.5"/>
+<polygon points="333.1,242.3 344.6,213.9 344.6,205.3 333.1,233.7" fill="#282e39"/>
+<polygon points="294.7,242.3 333.1,242.3 333.1,233.7 294.7,233.7" fill="#3b4453"/>
+<polygon points="294.7,233.7 333.1,233.7 344.6,205.3 306.2,205.3" fill="#4a5568"/>
+<polygon points="294.7,233.7 333.1,233.7 344.6,205.3 306.2,205.3" fill="url(#gloss)" opacity="0.5"/>
+<ellipse cx="319.6" cy="219.5" rx="9" ry="7" fill="#e53e3e"/>
+<polygon points="445.7,242.3 447.3,238.5 447.3,236.9 445.7,240.7" fill="#8a744d"/>
+<polygon points="435.5,242.3 445.7,242.3 445.7,240.7 435.5,240.7" fill="#c8a870"/>
+<polygon points="435.5,240.7 445.7,240.7 447.3,236.9 437.0,236.9" fill="#fbd38d"/>
+<polygon points="435.5,240.7 445.7,240.7 447.3,236.9 437.0,236.9" fill="url(#gloss)" opacity="0.5"/>
+<circle cx="441.4" cy="238.8" r="14" fill="url(#glow)"/>
+<polygon points="296.6,303.9 319.6,247.1 319.6,217.8 296.6,274.6" fill="#6f757b"/>
+<polygon points="194.2,303.9 296.6,303.9 296.6,274.6 194.2,274.6" fill="#a2aab3"/>
+<polygon points="194.2,274.6 296.6,274.6 319.6,217.8 217.2,217.8" fill="#cbd5e0"/>
+<polygon points="194.2,274.6 296.6,274.6 319.6,217.8 217.2,217.8" fill="url(#gloss)" opacity="0.5"/>
+<polygon points="609.9,429.4 624.5,393.4 624.5,390.2 609.9,426.2" fill="#090b0d"/>
+<polygon points="382.0,429.4 609.9,429.4 609.9,426.2 382.0,426.2" fill="#0d1013"/>
+<polygon points="382.0,426.2 609.9,426.2 624.5,390.2 396.6,390.2" fill="#111418"/>
+<polygon points="382.0,426.2 609.9,426.2 624.5,390.2 396.6,390.2" fill="url(#gloss)" opacity="0.5"/>
+<rect x="390.3" y="423.2" width="3" height="4" fill="#cbd5e0"/>
+<rect x="403.8" y="390.0" width="3" height="4" fill="#cbd5e0"/>
+<rect x="406.6" y="423.2" width="3" height="4" fill="#cbd5e0"/>
+<rect x="420.0" y="390.0" width="3" height="4" fill="#cbd5e0"/>
+<rect x="422.8" y="423.2" width="3" height="4" fill="#cbd5e0"/>
+<rect x="436.3" y="390.0" width="3" height="4" fill="#cbd5e0"/>
+<rect x="439.1" y="423.2" width="3" height="4" fill="#cbd5e0"/>
+<rect x="452.5" y="390.0" width="3" height="4" fill="#cbd5e0"/>
+<rect x="455.4" y="423.2" width="3" height="4" fill="#cbd5e0"/>
+<rect x="468.8" y="390.0" width="3" height="4" fill="#cbd5e0"/>
+<rect x="471.6" y="423.2" width="3" height="4" fill="#cbd5e0"/>
+<rect x="485.1" y="390.0" width="3" height="4" fill="#cbd5e0"/>
+<rect x="487.9" y="423.2" width="3" height="4" fill="#cbd5e0"/>
+<rect x="501.3" y="390.0" width="3" height="4" fill="#cbd5e0"/>
+<rect x="504.1" y="423.2" width="3" height="4" fill="#cbd5e0"/>
+<rect x="517.6" y="390.0" width="3" height="4" fill="#cbd5e0"/>
+<rect x="520.4" y="423.2" width="3" height="4" fill="#cbd5e0"/>
+<rect x="533.8" y="390.0" width="3" height="4" fill="#cbd5e0"/>
+<rect x="536.6" y="423.2" width="3" height="4" fill="#cbd5e0"/>
+<rect x="550.1" y="390.0" width="3" height="4" fill="#cbd5e0"/>
+<rect x="552.9" y="423.2" width="3" height="4" fill="#cbd5e0"/>
+<rect x="566.3" y="390.0" width="3" height="4" fill="#cbd5e0"/>
+<rect x="569.1" y="423.2" width="3" height="4" fill="#cbd5e0"/>
+<rect x="582.6" y="390.0" width="3" height="4" fill="#cbd5e0"/>
+<rect x="585.4" y="423.2" width="3" height="4" fill="#cbd5e0"/>
+<rect x="598.8" y="390.0" width="3" height="4" fill="#cbd5e0"/>
+<rect x="601.7" y="423.2" width="3" height="4" fill="#cbd5e0"/>
+<rect x="615.1" y="390.0" width="3" height="4" fill="#cbd5e0"/>
+<polygon points="608.3,423.8 621.0,392.5 621.0,382.9 608.3,414.1" fill="#17191e"/>
+<polygon points="385.6,423.8 608.3,423.8 608.3,414.1 385.6,414.1" fill="#21252c"/>
+<polygon points="385.6,414.1 608.3,414.1 621.0,382.9 398.2,382.9" fill="#2a2f38"/>
+<polygon points="385.6,414.1 608.3,414.1 621.0,382.9 398.2,382.9" fill="url(#gloss)" opacity="0.5"/>
+<text x="503.3" y="402.5" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="bold">ATMEGA328P</text>
+<polygon points="257.5,435.1 274.8,392.4 274.8,362.9 257.5,405.5" fill="#0e0f13"/>
+<polygon points="169.8,435.1 257.5,435.1 257.5,405.5 169.8,405.5" fill="#14171c"/>
+<polygon points="169.8,405.5 257.5,405.5 274.8,362.9 187.1,362.9" fill="#1a1d23"/>
+<polygon points="169.8,405.5 257.5,405.5 274.8,362.9 187.1,362.9" fill="url(#gloss)" opacity="0.5"/>
+<polygon points="477.3,446.9 482.1,435.1 482.1,412.2 477.3,424.1" fill="#121419"/>
+<polygon points="347.4,446.9 477.3,446.9 477.3,424.1 347.4,424.1" fill="#1b1e24"/>
+<polygon points="347.4,424.1 477.3,424.1 482.1,412.2 352.2,412.2" fill="#22262e"/>
+<polygon points="347.4,424.1 477.3,424.1 482.1,412.2 352.2,412.2" fill="url(#gloss)" opacity="0.5"/>
+<polygon points="591.3,446.9 596.1,435.1 596.1,412.2 591.3,424.1" fill="#121419"/>
+<polygon points="494.0,446.9 591.3,446.9 591.3,424.1 494.0,424.1" fill="#1b1e24"/>
+<polygon points="494.0,424.1 591.3,424.1 596.1,412.2 498.8,412.2" fill="#22262e"/>
+<polygon points="494.0,424.1 591.3,424.1 596.1,412.2 498.8,412.2" fill="url(#gloss)" opacity="0.5"/>
+<line x1="618.5" y1="186.3" x2="600" y2="62" stroke="#f59e0b" stroke-opacity="0.7" stroke-width="1.5"/>
+<circle cx="618.5" cy="186.3" r="3.5" fill="#f59e0b"/>
+<line x1="319.6" y1="219.5" x2="150" y2="62" stroke="#f59e0b" stroke-opacity="0.7" stroke-width="1.5"/>
+<circle cx="319.6" cy="219.5" r="3.5" fill="#f59e0b"/>
+<line x1="441.4" y1="238.8" x2="370" y2="62" stroke="#f59e0b" stroke-opacity="0.7" stroke-width="1.5"/>
+<circle cx="441.4" cy="238.8" r="3.5" fill="#f59e0b"/>
+<line x1="233.2" y1="246.2" x2="140" y2="150" stroke="#f59e0b" stroke-opacity="0.7" stroke-width="1.5"/>
+<circle cx="233.2" cy="246.2" r="3.5" fill="#f59e0b"/>
+<line x1="573.3" y1="398.5" x2="660" y2="330" stroke="#f59e0b" stroke-opacity="0.7" stroke-width="1.5"/>
+<circle cx="573.3" cy="398.5" r="3.5" fill="#f59e0b"/>
+<line x1="201.2" y1="388.0" x2="150" y2="470" stroke="#f59e0b" stroke-opacity="0.7" stroke-width="1.5"/>
+<circle cx="201.2" cy="388.0" r="3.5" fill="#f59e0b"/>
+<line x1="433.3" y1="422.2" x2="560" y2="500" stroke="#f59e0b" stroke-opacity="0.7" stroke-width="1.5"/>
+<circle cx="433.3" cy="422.2" r="3.5" fill="#f59e0b"/>
+<rect x="521.0" y="48.0" width="158" height="28" rx="14.0" fill="#2d3748"/>
+<rect x="521.0" y="48.0" width="158" height="28" rx="14.0" fill="url(#gloss)"/>
+<text x="600.0" y="66.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">Digital pins 0–13</text>
+<rect x="89.5" y="48.0" width="121" height="28" rx="14.0" fill="#2d3748"/>
+<rect x="89.5" y="48.0" width="121" height="28" rx="14.0" fill="url(#gloss)"/>
+<text x="150.0" y="66.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">Reset button</text>
+<rect x="265.0" y="48.0" width="210" height="28" rx="14.0" fill="#2d3748"/>
+<rect x="265.0" y="48.0" width="210" height="28" rx="14.0" fill="url(#gloss)"/>
+<text x="370.0" y="66.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">Onboard LED “L” (pin 13)</text>
+<rect x="38.5" y="136.0" width="203" height="28" rx="14.0" fill="#2d3748"/>
+<rect x="38.5" y="136.0" width="203" height="28" rx="14.0" fill="url(#gloss)"/>
+<text x="140.0" y="154.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">USB port (power + code)</text>
+<rect x="525.0" y="316.0" width="270" height="28" rx="14.0" fill="#2d3748"/>
+<rect x="525.0" y="316.0" width="270" height="28" rx="14.0" fill="url(#gloss)"/>
+<text x="660.0" y="334.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">ATmega328P (the microcontroller)</text>
+<rect x="34.0" y="456.0" width="232" height="28" rx="14.0" fill="#2d3748"/>
+<rect x="34.0" y="456.0" width="232" height="28" rx="14.0" fill="url(#gloss)"/>
+<text x="150.0" y="474.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">Power jack (external power)</text>
+<rect x="444.0" y="486.0" width="232" height="28" rx="14.0" fill="#2d3748"/>
+<rect x="444.0" y="486.0" width="232" height="28" rx="14.0" fill="url(#gloss)"/>
+<text x="560.0" y="504.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">Power and analog pins A0–A5</text>
+<text x="410.0" y="530.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">simplified, but every part shown is really there, in the place it really is</text>
+</svg>

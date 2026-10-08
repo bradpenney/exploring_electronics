@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" width="900" height="430" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Three panels of a triode with the plate positive at the top, the hot cathode at the bottom, and a row of grid wires between. With the grid slightly negative, some electrons pass through the gaps to the plate. More negative, fewer pass. Far enough negative, none pass and the tube is cut off.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="vt-glass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#cbd5e0" stop-opacity="0.32"/><stop offset="0.25" stop-color="#ffffff" stop-opacity="0.10"/><stop offset="0.75" stop-color="#cbd5e0" stop-opacity="0.06"/><stop offset="1" stop-color="#cbd5e0" stop-opacity="0.30"/></linearGradient><linearGradient id="vt-metal" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5568"/><stop offset="0.3" stop-color="#cbd5e0"/><stop offset="0.6" stop-color="#718096"/><stop offset="1" stop-color="#2d3748"/></linearGradient><radialGradient id="vt-heat" r="50%"><stop offset="0" stop-color="#ff8a3d" stop-opacity="0.9"/><stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/></radialGradient></defs>
+<rect x="15" y="15" width="280" height="400" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="155.0" y="50.0" font-size="14" fill="#fbbf24" text-anchor="middle" font-weight="bold">Grid slightly negative</text>
+<rect x="55" y="80" width="200" height="16" rx="4" fill="url(#vt-metal)"/>
+<text x="155.0" y="120.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">plate (+)</text>
+<circle cx="59" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="83" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="107" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="131" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="155" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="179" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="203" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="227" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="251" cy="225" r="3" fill="#e2e8f0"/>
+<text x="267.0" y="230.0" font-size="12" fill="#e6e6e6" text-anchor="start" font-weight="bold">grid</text>
+<ellipse cx="155" cy="330" rx="110" ry="34" fill="url(#vt-heat)"/>
+<rect x="55" y="320" width="200" height="18" rx="8" fill="#c05621"/>
+<text x="155.0" y="362.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">cathode</text>
+<circle cx="146.0" cy="291.7" r="3.5" fill="url(#eball)"/>
+<circle cx="235.6" cy="289.0" r="3.5" fill="url(#eball)"/>
+<circle cx="156.5" cy="292.4" r="3.5" fill="url(#eball)"/>
+<circle cx="95.1" cy="290.3" r="3.5" fill="url(#eball)"/>
+<circle cx="179.7" cy="298.2" r="3.5" fill="url(#eball)"/>
+<circle cx="77.9" cy="284.5" r="3.5" fill="url(#eball)"/>
+<circle cx="77.2" cy="298.7" r="3.5" fill="url(#eball)"/>
+<circle cx="191.8" cy="277.2" r="3.5" fill="url(#eball)"/>
+<circle cx="246.6" cy="303.0" r="3.5" fill="url(#eball)"/>
+<circle cx="184.2" cy="293.2" r="3.5" fill="url(#eball)"/>
+<circle cx="89.9" cy="276.4" r="3.5" fill="url(#eball)"/>
+<circle cx="160.4" cy="277.7" r="3.5" fill="url(#eball)"/>
+<line x1="67.0" y1="270" x2="67.0" y2="140" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="67.0" cy="180.0" r="3.5" fill="url(#eball)"/>
+<line x1="89.0" y1="270" x2="89.0" y2="140" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="89.0" cy="195.0" r="3.5" fill="url(#eball)"/>
+<line x1="111.0" y1="270" x2="111.0" y2="140" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="111.0" cy="210.0" r="3.5" fill="url(#eball)"/>
+<line x1="133.0" y1="270" x2="133.0" y2="140" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="133.0" cy="180.0" r="3.5" fill="url(#eball)"/>
+<line x1="155.0" y1="270" x2="155.0" y2="140" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="155.0" cy="195.0" r="3.5" fill="url(#eball)"/>
+<line x1="177.0" y1="270" x2="177.0" y2="140" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="177.0" cy="210.0" r="3.5" fill="url(#eball)"/>
+<line x1="199.0" y1="270" x2="199.0" y2="140" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="199.0" cy="180.0" r="3.5" fill="url(#eball)"/>
+<line x1="221.0" y1="270" x2="221.0" y2="140" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="221.0" cy="195.0" r="3.5" fill="url(#eball)"/>
+<line x1="243.0" y1="270" x2="243.0" y2="140" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="243.0" cy="210.0" r="3.5" fill="url(#eball)"/>
+<rect x="68.5" y="382.0" width="173" height="26" rx="13.0" fill="#48bb78"/>
+<rect x="68.5" y="382.0" width="173" height="26" rx="13.0" fill="url(#gloss)"/>
+<text x="155.0" y="399.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">some electrons pass</text>
+<rect x="310" y="15" width="280" height="400" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="50.0" font-size="14" fill="#fbbf24" text-anchor="middle" font-weight="bold">Grid more negative</text>
+<rect x="350" y="80" width="200" height="16" rx="4" fill="url(#vt-metal)"/>
+<text x="450.0" y="120.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">plate (+)</text>
+<circle cx="354" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="378" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="402" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="426" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="450" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="474" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="498" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="522" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="546" cy="225" r="3" fill="#e2e8f0"/>
+<text x="562.0" y="230.0" font-size="12" fill="#e6e6e6" text-anchor="start" font-weight="bold">grid</text>
+<ellipse cx="450" cy="330" rx="110" ry="34" fill="url(#vt-heat)"/>
+<rect x="350" y="320" width="200" height="18" rx="8" fill="#c05621"/>
+<text x="450.0" y="362.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">cathode</text>
+<circle cx="445.2" cy="294.4" r="3.5" fill="url(#eball)"/>
+<circle cx="481.6" cy="280.0" r="3.5" fill="url(#eball)"/>
+<circle cx="357.1" cy="286.5" r="3.5" fill="url(#eball)"/>
+<circle cx="407.1" cy="298.7" r="3.5" fill="url(#eball)"/>
+<circle cx="486.2" cy="292.8" r="3.5" fill="url(#eball)"/>
+<circle cx="461.1" cy="294.5" r="3.5" fill="url(#eball)"/>
+<circle cx="382.6" cy="288.3" r="3.5" fill="url(#eball)"/>
+<circle cx="385.8" cy="301.4" r="3.5" fill="url(#eball)"/>
+<circle cx="366.2" cy="298.9" r="3.5" fill="url(#eball)"/>
+<circle cx="369.2" cy="295.2" r="3.5" fill="url(#eball)"/>
+<circle cx="419.0" cy="287.3" r="3.5" fill="url(#eball)"/>
+<circle cx="515.1" cy="276.5" r="3.5" fill="url(#eball)"/>
+<line x1="362.0" y1="270" x2="362.0" y2="140" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="362.0" cy="180.0" r="3.5" fill="url(#eball)"/>
+<line x1="420.7" y1="270" x2="420.7" y2="140" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="420.7" cy="195.0" r="3.5" fill="url(#eball)"/>
+<line x1="479.3" y1="270" x2="479.3" y2="140" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="479.3" cy="210.0" r="3.5" fill="url(#eball)"/>
+<line x1="538.0" y1="270" x2="538.0" y2="140" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 6" marker-end="url(#arrow)"/>
+<circle cx="538.0" cy="180.0" r="3.5" fill="url(#eball)"/>
+<rect x="397.0" y="382.0" width="106" height="26" rx="13.0" fill="#f59e0b"/>
+<rect x="397.0" y="382.0" width="106" height="26" rx="13.0" fill="url(#gloss)"/>
+<text x="450.0" y="399.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">fewer pass</text>
+<rect x="605" y="15" width="280" height="400" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="745.0" y="50.0" font-size="14" fill="#fbbf24" text-anchor="middle" font-weight="bold">Grid far negative: cut off</text>
+<rect x="645" y="80" width="200" height="16" rx="4" fill="url(#vt-metal)"/>
+<text x="745.0" y="120.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">plate (+)</text>
+<circle cx="649" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="673" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="697" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="721" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="745" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="769" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="793" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="817" cy="225" r="3" fill="#e2e8f0"/>
+<circle cx="841" cy="225" r="3" fill="#e2e8f0"/>
+<text x="857.0" y="230.0" font-size="12" fill="#e6e6e6" text-anchor="start" font-weight="bold">grid</text>
+<ellipse cx="745" cy="330" rx="110" ry="34" fill="url(#vt-heat)"/>
+<rect x="645" y="320" width="200" height="18" rx="8" fill="#c05621"/>
+<text x="745.0" y="362.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">cathode</text>
+<circle cx="699.2" cy="295.2" r="3.5" fill="url(#eball)"/>
+<circle cx="780.0" cy="299.8" r="3.5" fill="url(#eball)"/>
+<circle cx="685.3" cy="282.5" r="3.5" fill="url(#eball)"/>
+<circle cx="678.0" cy="282.3" r="3.5" fill="url(#eball)"/>
+<circle cx="789.5" cy="279.6" r="3.5" fill="url(#eball)"/>
+<circle cx="750.9" cy="282.0" r="3.5" fill="url(#eball)"/>
+<circle cx="706.0" cy="288.1" r="3.5" fill="url(#eball)"/>
+<circle cx="809.2" cy="293.0" r="3.5" fill="url(#eball)"/>
+<circle cx="652.7" cy="283.7" r="3.5" fill="url(#eball)"/>
+<circle cx="677.9" cy="300.4" r="3.5" fill="url(#eball)"/>
+<circle cx="803.9" cy="298.6" r="3.5" fill="url(#eball)"/>
+<circle cx="807.0" cy="296.9" r="3.5" fill="url(#eball)"/>
+<rect x="696.0" y="382.0" width="98" height="26" rx="13.0" fill="#fc8181"/>
+<rect x="696.0" y="382.0" width="98" height="26" rx="13.0" fill="url(#gloss)"/>
+<text x="745.0" y="399.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">none pass</text>
+</svg>

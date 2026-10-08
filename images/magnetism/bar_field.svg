@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A 3D bar magnet, north end red and south end blue, with field lines leaving the north pole, curving around both sides, and entering the south pole; the lines crowd together near the poles where the field is strongest.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="770" height="410" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="400.0" y="46.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Field lines leave the north pole and loop round to the south</text>
+<path d="M330,240 C270,200 530,200 470,240" fill="none" stroke="#90cdf4" stroke-opacity="0.85" stroke-width="2"/>
+<path d="M-6,-5 L4,0 L-6,5" fill="none" stroke="#90cdf4" stroke-width="2" transform="translate(400.0,210.0) rotate(0.0)"/>
+<path d="M330,240 C270,280 530,280 470,240" fill="none" stroke="#90cdf4" stroke-opacity="0.85" stroke-width="2"/>
+<path d="M-6,-5 L4,0 L-6,5" fill="none" stroke="#90cdf4" stroke-width="2" transform="translate(400.0,270.0) rotate(0.0)"/>
+<path d="M330,240 C270,160 530,160 470,240" fill="none" stroke="#90cdf4" stroke-opacity="0.70" stroke-width="2"/>
+<path d="M-6,-5 L4,0 L-6,5" fill="none" stroke="#90cdf4" stroke-width="2" transform="translate(400.0,180.0) rotate(0.0)"/>
+<path d="M330,240 C270,320 530,320 470,240" fill="none" stroke="#90cdf4" stroke-opacity="0.70" stroke-width="2"/>
+<path d="M-6,-5 L4,0 L-6,5" fill="none" stroke="#90cdf4" stroke-width="2" transform="translate(400.0,300.0) rotate(0.0)"/>
+<path d="M330,240 C270,115 530,115 470,240" fill="none" stroke="#90cdf4" stroke-opacity="0.55" stroke-width="2"/>
+<path d="M-6,-5 L4,0 L-6,5" fill="none" stroke="#90cdf4" stroke-width="2" transform="translate(400.0,146.2) rotate(0.0)"/>
+<path d="M330,240 C270,365 530,365 470,240" fill="none" stroke="#90cdf4" stroke-opacity="0.55" stroke-width="2"/>
+<path d="M-6,-5 L4,0 L-6,5" fill="none" stroke="#90cdf4" stroke-width="2" transform="translate(400.0,333.8) rotate(0.0)"/>
+<path d="M330,240 C270,65 530,65 470,240" fill="none" stroke="#90cdf4" stroke-opacity="0.40" stroke-width="2"/>
+<path d="M-6,-5 L4,0 L-6,5" fill="none" stroke="#90cdf4" stroke-width="2" transform="translate(400.0,108.8) rotate(0.0)"/>
+<path d="M330,240 C270,415 530,415 470,240" fill="none" stroke="#90cdf4" stroke-opacity="0.40" stroke-width="2"/>
+<path d="M-6,-5 L4,0 L-6,5" fill="none" stroke="#90cdf4" stroke-width="2" transform="translate(400.0,371.2) rotate(0.0)"/>
+<line x1="240" y1="240" x2="170" y2="240" stroke="#90cdf4" stroke-width="2"/>
+<path d="M-6,-5 L4,0 L-6,5" fill="none" stroke="#90cdf4" stroke-width="2" transform="translate(170.0,240.0) rotate(180.0)"/>
+<line x1="630" y1="240" x2="560" y2="240" stroke="#90cdf4" stroke-width="2"/>
+<path d="M-6,-5 L4,0 L-6,5" fill="none" stroke="#90cdf4" stroke-width="2" transform="translate(560.0,240.0) rotate(180.0)"/>
+<ellipse cx="355.5" cy="268.0" rx="61.5" ry="5.4" fill="#000" fill-opacity="0.4"/>
+<polygon points="300.0,217.0 390.0,217.0 411.0,203.5 321.0,203.5" fill="#ec7777"/>
+<rect x="300.0" y="217.0" width="90.0" height="46.0" fill="#e53e3e"/>
+<rect x="300.0" y="217.0" width="90.0" height="46.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="390.0,263.0 390.0,217.0 411.0,203.5 411.0,249.5" fill="#7d2222"/>
+<polygon points="390.0,217.0 480.0,217.0 501.0,203.5 411.0,203.5" fill="#6ea7dc"/>
+<rect x="390.0" y="217.0" width="90.0" height="46.0" fill="#3182ce"/>
+<rect x="390.0" y="217.0" width="90.0" height="46.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="480.0,263.0 480.0,217.0 501.0,203.5 501.0,249.5" fill="#1a4771"/>
+<text x="345.0" y="247.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">N</text>
+<text x="435.0" y="247.0" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">S</text>
+<text x="400.0" y="405.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">lines never cross · they form closed loops · closer lines mean a stronger field</text>
+<text x="120.0" y="120.0" font-size="12" fill="#fbbf24" text-anchor="start" font-weight="normal">strongest near the poles,</text>
+<text x="120.0" y="136.0" font-size="12" fill="#fbbf24" text-anchor="start" font-weight="normal">where the lines crowd together</text>
+</svg>

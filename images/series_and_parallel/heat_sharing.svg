@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" width="900" height="470" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Two panels of 3D bars against a quarter-watt rating line. A 100 ohm and a 1 kilohm quarter-watt resistor in series across 12 volts dissipate 12 milliwatts and 119 milliwatts: the bigger resistor runs hotter, both are safe. The same pair in parallel across 12 volts dissipate 1.44 watts and 144 milliwatts: the 100 ohm resistor is at 576 percent of its rating and burns.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="425" height="440" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="460" y="15" width="425" height="440" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="227.0" y="50.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">In series across 12 V</text>
+<text x="227.0" y="72.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">same current: the bigger resistor runs hotter</text>
+<line x1="57" y1="180" x2="397" y2="180" stroke="#fc8181" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="397.0" y="172.0" font-size="12" fill="#fc8181" text-anchor="end" font-weight="bold">¼ W rating</text>
+<ellipse cx="164.6" cy="385.0" rx="53.6" ry="6.5" fill="#000" fill-opacity="0.4"/>
+<polygon points="117.0,370.5 187.0,370.5 212.2,354.3 142.2,354.3" fill="#7ecfa0"/>
+<rect x="117.0" y="370.5" width="70.0" height="9.5" fill="#48bb78"/>
+<rect x="117.0" y="370.5" width="70.0" height="9.5" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="187.0,380.0 187.0,370.5 212.2,354.3 212.2,363.8" fill="#276642"/>
+<text x="164.0" y="326.5" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">12 mW</text>
+<text x="164.0" y="344.5" font-size="11" fill="#7ecfa0" text-anchor="middle" font-weight="normal">5% of rating</text>
+<text x="152.0" y="410.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">100 Ω</text>
+<ellipse cx="294.6" cy="385.0" rx="53.6" ry="6.5" fill="#000" fill-opacity="0.4"/>
+<polygon points="247.0,284.8 317.0,284.8 342.2,268.6 272.2,268.6" fill="#7ecfa0"/>
+<rect x="247.0" y="284.8" width="70.0" height="95.2" fill="#48bb78"/>
+<rect x="247.0" y="284.8" width="70.0" height="95.2" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="317.0,380.0 317.0,284.8 342.2,268.6 342.2,363.8" fill="#276642"/>
+<text x="294.0" y="240.8" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">119 mW</text>
+<text x="294.0" y="258.8" font-size="11" fill="#7ecfa0" text-anchor="middle" font-weight="normal">48% of rating</text>
+<text x="282.0" y="410.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">1 kΩ</text>
+<text x="672.0" y="50.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">In parallel across 12 V</text>
+<text x="672.0" y="72.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">same voltage: the smaller resistor runs hotter</text>
+<line x1="502" y1="180" x2="842" y2="180" stroke="#fc8181" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="842.0" y="172.0" font-size="12" fill="#fc8181" text-anchor="end" font-weight="bold">¼ W rating</text>
+<ellipse cx="609.6" cy="385.0" rx="53.6" ry="6.5" fill="#000" fill-opacity="0.4"/>
+<polygon points="562.0,164.0 632.0,164.0 657.2,147.8 587.2,147.8" fill="#fca6a6"/>
+<rect x="562.0" y="164.0" width="70.0" height="216.0" fill="#fc8181"/>
+<rect x="562.0" y="164.0" width="70.0" height="216.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="632.0,380.0 632.0,164.0 657.2,147.8 657.2,363.8" fill="#8a4646"/>
+<text x="609.0" y="120.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">1.44 W</text>
+<text x="609.0" y="138.0" font-size="11" fill="#fca6a6" text-anchor="middle" font-weight="normal">576% of rating, burns</text>
+<path d="M558,178.0 l84,-10 M558,188.0 l84,-10" stroke="#1a202c" stroke-width="5"/>
+<text x="597.0" y="410.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">100 Ω</text>
+<ellipse cx="739.6" cy="385.0" rx="53.6" ry="6.5" fill="#000" fill-opacity="0.4"/>
+<polygon points="692.0,264.8 762.0,264.8 787.2,248.6 717.2,248.6" fill="#f8bb54"/>
+<rect x="692.0" y="264.8" width="70.0" height="115.2" fill="#f59e0b"/>
+<rect x="692.0" y="264.8" width="70.0" height="115.2" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="762.0,380.0 762.0,264.8 787.2,248.6 787.2,363.8" fill="#865606"/>
+<text x="739.0" y="220.8" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">144 mW</text>
+<text x="739.0" y="238.8" font-size="11" fill="#f8bb54" text-anchor="middle" font-weight="normal">58% of rating</text>
+<text x="727.0" y="410.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">1 kΩ</text>
+</svg>

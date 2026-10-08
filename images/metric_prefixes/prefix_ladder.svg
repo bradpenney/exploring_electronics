@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 470" width="860" height="470" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A 3D staircase of prefixes from giga down to pico: G giga times 10 to the 9, M mega, k kilo, the base unit, m milli, µ micro, n nano, and p pico times 10 to the minus 12, each a factor of 1,000 from the next, with a real example on each step.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="830" height="440" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="430.0" y="46.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">The prefixes electronics uses: every step is 1,000×</text>
+<polygon points="40.0,116.0 128.0,116.0 149.0,102.5 61.0,102.5" fill="#808895"/>
+<rect x="40.0" y="116.0" width="88.0" height="294.0" fill="#4a5568"/>
+<rect x="40.0" y="116.0" width="88.0" height="294.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="128.0,410.0 128.0,116.0 149.0,102.5 149.0,396.5" fill="#282e39"/>
+<text x="84.0" y="146.0" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">G</text>
+<text x="84.0" y="166.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">giga</text>
+<text x="84.0" y="184.0" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="normal">×10⁹</text>
+<text x="84.0" y="104.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">2.4 GHz Wi-Fi</text>
+<polygon points="140.0,146.0 228.0,146.0 249.0,132.5 161.0,132.5" fill="#808895"/>
+<rect x="140.0" y="146.0" width="88.0" height="264.0" fill="#4a5568"/>
+<rect x="140.0" y="146.0" width="88.0" height="264.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="228.0,410.0 228.0,146.0 249.0,132.5 249.0,396.5" fill="#282e39"/>
+<text x="184.0" y="176.0" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">M</text>
+<text x="184.0" y="196.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">mega</text>
+<text x="184.0" y="214.0" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="normal">×10⁶</text>
+<text x="184.0" y="134.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">7.040 MHz radio</text>
+<polygon points="240.0,176.0 328.0,176.0 349.0,162.5 261.0,162.5" fill="#808895"/>
+<rect x="240.0" y="176.0" width="88.0" height="234.0" fill="#4a5568"/>
+<rect x="240.0" y="176.0" width="88.0" height="234.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="328.0,410.0 328.0,176.0 349.0,162.5 349.0,396.5" fill="#282e39"/>
+<text x="284.0" y="206.0" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">k</text>
+<text x="284.0" y="226.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">kilo</text>
+<text x="284.0" y="244.0" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="normal">×10³</text>
+<text x="284.0" y="164.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">4.7 kΩ resistor</text>
+<polygon points="340.0,206.0 428.0,206.0 449.0,192.5 361.0,192.5" fill="#f8bb54"/>
+<rect x="340.0" y="206.0" width="88.0" height="204.0" fill="#f59e0b"/>
+<rect x="340.0" y="206.0" width="88.0" height="204.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="428.0,410.0 428.0,206.0 449.0,192.5 449.0,396.5" fill="#865606"/>
+<text x="384.0" y="236.0" font-size="24" fill="#1a1a1a" text-anchor="middle" font-weight="bold">—</text>
+<text x="384.0" y="256.0" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="bold">the unit</text>
+<text x="384.0" y="274.0" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal">×1</text>
+<text x="384.0" y="194.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">1.5 V cell</text>
+<polygon points="440.0,236.0 528.0,236.0 549.0,222.5 461.0,222.5" fill="#6b85a7"/>
+<rect x="440.0" y="236.0" width="88.0" height="174.0" fill="#2c5282"/>
+<rect x="440.0" y="236.0" width="88.0" height="174.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="528.0,410.0 528.0,236.0 549.0,222.5 549.0,396.5" fill="#182d47"/>
+<text x="484.0" y="266.0" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">m</text>
+<text x="484.0" y="286.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">milli</text>
+<text x="484.0" y="304.0" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="normal">×10⁻³</text>
+<text x="484.0" y="224.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">20 mA LED</text>
+<polygon points="540.0,266.0 628.0,266.0 649.0,252.5 561.0,252.5" fill="#6b85a7"/>
+<rect x="540.0" y="266.0" width="88.0" height="144.0" fill="#2c5282"/>
+<rect x="540.0" y="266.0" width="88.0" height="144.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="628.0,410.0 628.0,266.0 649.0,252.5 649.0,396.5" fill="#182d47"/>
+<text x="584.0" y="296.0" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">µ</text>
+<text x="584.0" y="316.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">micro</text>
+<text x="584.0" y="334.0" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="normal">×10⁻⁶</text>
+<text x="584.0" y="254.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">10 µF capacitor</text>
+<polygon points="640.0,296.0 728.0,296.0 749.0,282.5 661.0,282.5" fill="#6b85a7"/>
+<rect x="640.0" y="296.0" width="88.0" height="114.0" fill="#2c5282"/>
+<rect x="640.0" y="296.0" width="88.0" height="114.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="728.0,410.0 728.0,296.0 749.0,282.5 749.0,396.5" fill="#182d47"/>
+<text x="684.0" y="326.0" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">n</text>
+<text x="684.0" y="346.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">nano</text>
+<text x="684.0" y="364.0" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="normal">×10⁻⁹</text>
+<text x="684.0" y="284.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">100 nF capacitor</text>
+<polygon points="740.0,326.0 828.0,326.0 849.0,312.5 761.0,312.5" fill="#6b85a7"/>
+<rect x="740.0" y="326.0" width="88.0" height="84.0" fill="#2c5282"/>
+<rect x="740.0" y="326.0" width="88.0" height="84.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="828.0,410.0 828.0,326.0 849.0,312.5 849.0,396.5" fill="#182d47"/>
+<text x="784.0" y="356.0" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">p</text>
+<text x="784.0" y="376.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">pico</text>
+<text x="784.0" y="394.0" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="normal">×10⁻¹²</text>
+<text x="784.0" y="314.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">47 pF capacitor</text>
+<text x="384.0" y="436.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">centi (c, ×10⁻²) is the odd one out: centimetres, almost never in circuits</text>
+</svg>

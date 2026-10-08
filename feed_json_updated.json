@@ -1,0 +1,236 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": "Exploring Electronics",
+    "home_page_url": "https://electronics.bradpenney.io/",
+    "feed_url": "https://electronics.bradpenney.io/feed_json_updated.json",
+    "description": "Electronics from first principles \u2014 voltage, current, resistance, and circuit design explained clearly. Real components, real numbers, no prior knowledge assumed.",
+    "icon": "https://electronics.bradpenney.io/images/exploring_electronics.png",
+    "authors": [
+        {
+            "name": "Brad Penney"
+        }
+    ],
+    "language": "en",
+    "items": [
+        {
+            "id": "https://electronics.bradpenney.io/",
+            "url": "https://electronics.bradpenney.io/",
+            "title": "Home",
+            "content_html": "Electronics from first principles \u2014 voltage, current, resistance, and circuit design explained clearly. Real components, real numbers, no prior knowledge assumed.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-01T14:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/ac_dc/",
+            "url": "https://electronics.bradpenney.io/ac_dc/",
+            "title": "AC vs DC",
+            "content_html": "Why outlet power reverses 60 times a second, how a generator makes a sine wave, and why a '120 V' outlet actually peaks near 170 V. Frequency, RMS, and waveforms explained.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-01T22:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/analog_input/",
+            "url": "https://electronics.bradpenney.io/analog_input/",
+            "title": "Reading an Analog Sensor",
+            "content_html": "Digital pins only know HIGH and LOW. Wire an MCP9700A temperature sensor to an Arduino and use analogRead() to measure a continuous voltage instead.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-07-19T10:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/batteries/",
+            "url": "https://electronics.bradpenney.io/batteries/",
+            "title": "Cells and Batteries",
+            "content_html": "How cells and batteries work: EMF, capacity, internal resistance, series and parallel, eight common chemistries compared, and how to charge, store, and dispose of them safely.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-01T20:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/blink_an_led/",
+            "url": "https://electronics.bradpenney.io/blink_an_led/",
+            "title": "Blink an LED",
+            "content_html": "Wire a single-LED circuit on a breadboard and flash the Blink sketch to an Arduino \u2014 your first complete loop from wiring to running code on real hardware.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-06-28T17:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/capacitors/",
+            "url": "https://electronics.bradpenney.io/capacitors/",
+            "title": "Capacitors",
+            "content_html": "How a capacitor stores charge between two plates, what a farad is, why it fills on an RC curve, and how a camera flash turns two AA cells into a 15 kW burst.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T12:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/circuit_foundations/",
+            "url": "https://electronics.bradpenney.io/circuit_foundations/",
+            "title": "Overview",
+            "content_html": "The fourteen Circuit Foundations articles in reading order: charge, voltage, current, resistance, Ohm's law, AC, magnetism, capacitors, and inductors, with real numbers.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T23:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/communication/",
+            "url": "https://electronics.bradpenney.io/communication/",
+            "title": "Overview",
+            "content_html": "The Communication articles in reading order: serial between two devices, the I\u00b2C bus for many sensors on two wires, and fast SPI with a wire per device.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-04T23:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/components/",
+            "url": "https://electronics.bradpenney.io/components/",
+            "title": "Overview",
+            "content_html": "The Components articles in reading order: resistors, diodes and LEDs, transistors, vacuum tubes, temperature sensors, and the physical packages parts come in.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T23:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/conductors_and_insulators/",
+            "url": "https://electronics.bradpenney.io/conductors_and_insulators/",
+            "title": "Conductors, Insulators, and Semiconductors",
+            "content_html": "Why copper, silver, and gold conduct electricity and glass doesn't, explained from the atom up: free electrons, collisions, heat, and real numbers.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-09-30T21:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/current/",
+            "url": "https://electronics.bradpenney.io/current/",
+            "title": "Current",
+            "content_html": "What an amp actually is: coulombs of charge per second, counted at one point and never used up. Direction, junctions, measuring in series, and why current is what hurts.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-01T00:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/digital_io/",
+            "url": "https://electronics.bradpenney.io/digital_io/",
+            "title": "Digital Pins",
+            "content_html": "A digital pin is either on or off \u2014 nothing in between. Learn how a microcontroller drives an LED and reads a button, and why each pin needs a resistor.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-06-28T15:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/diodes_and_leds/",
+            "url": "https://electronics.bradpenney.io/diodes_and_leds/",
+            "title": "Diodes and LEDs",
+            "content_html": "How a diode lets current through one way only, why every LED colour has its own forward voltage, how to size an LED resistor properly, and what diodes do in real circuits.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T16:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/i2c/",
+            "url": "https://electronics.bradpenney.io/i2c/",
+            "title": "I\u00b2C",
+            "content_html": "How the I\u00b2C bus lets an Arduino talk to many sensors on two wires: open-drain lines and pull-ups, a shared clock, 7-bit addresses, ACK, and reading an MCP9808.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-04T23:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/inductors/",
+            "url": "https://electronics.bradpenney.io/inductors/",
+            "title": "Inductors",
+            "content_html": "How an inductor stores energy in a magnetic field and resists any change in current: the henry, what sets a coil's inductance, the L/R time constant, and why switching one off bites.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T22:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/magnetism/",
+            "url": "https://electronics.bradpenney.io/magnetism/",
+            "title": "Magnetism and Electromagnetism",
+            "content_html": "How magnets work, why a current makes a magnetic field and a moving magnet makes a voltage, and how electromagnets, generators, and transformers use both.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T08:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/metric_prefixes/",
+            "url": "https://electronics.bradpenney.io/metric_prefixes/",
+            "title": "Metric Prefixes and Units",
+            "content_html": "How metric prefixes work in electronics: what milli, micro, nano, pico, kilo, mega, and giga mean, how to convert between them, and how they're printed on real parts.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-01T16:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/microcontrollers/",
+            "url": "https://electronics.bradpenney.io/microcontrollers/",
+            "title": "Overview",
+            "content_html": "The Microcontrollers articles in reading order: the Arduino board and its code, digital pins, blinking an LED, reading buttons and analog sensors, and staged output.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T23:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/ohms_law/",
+            "url": "https://electronics.bradpenney.io/ohms_law/",
+            "title": "Ohm's Law and Power",
+            "content_html": "Ohm's Law in depth: why current follows voltage in a straight line, which parts break the rule, and how power, heat, and power ratings follow from it.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-01T12:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/open_short_fuses/",
+            "url": "https://electronics.bradpenney.io/open_short_fuses/",
+            "title": "Open Circuits, Short Circuits, and Fuses",
+            "content_html": "Why current needs a complete loop, what a short circuit really is, and how a fuse protects a circuit: current, voltage, and speed ratings, with real numbers.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-01T18:00:00-03:00",
+            "authors": [],
+            "tags": []
+        }
+    ]
+}

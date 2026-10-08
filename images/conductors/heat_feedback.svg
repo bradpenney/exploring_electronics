@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A glowing feedback loop: too much current heats the wire, atoms vibrate harder, collisions increase, resistance rises, which heats the wire further</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f59e0b"/><stop offset="1" stop-color="#c53030"/></linearGradient><marker id="arrowred" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#fc8181"/></marker><radialGradient id="heatglow" r="50%"><stop offset="0" stop-color="#fc8181" stop-opacity="0.45"/><stop offset="1" stop-color="#fc8181" stop-opacity="0"/></radialGradient></defs>
+<rect x="15" y="15" width="730" height="390" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<ellipse cx="330" cy="225" rx="205" ry="120" fill="none" stroke="#000" stroke-opacity="0.35" stroke-width="16"/>
+<ellipse cx="330" cy="215" rx="205" ry="120" fill="none" stroke="url(#ring)" stroke-width="12" stroke-opacity="0.85"/>
+<ellipse cx="330" cy="212" rx="205" ry="120" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="3"/>
+<path d="M-9,-9 L5,0 L-9,9" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(475.0,299.9) rotate(149.7)"/>
+<path d="M-9,-9 L5,0 L-9,9" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(185.0,299.9) rotate(-149.7)"/>
+<path d="M-9,-9 L5,0 L-9,9" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(185.0,130.1) rotate(-30.3)"/>
+<path d="M-9,-9 L5,0 L-9,9" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(475.0,130.1) rotate(30.3)"/>
+<rect x="257.5" y="75.0" width="145" height="40" rx="20" fill="#2d3748" stroke="#cbd5e0" stroke-opacity="0.6"/>
+<rect x="257.5" y="75.0" width="145" height="40" rx="20" fill="url(#gloss)"/>
+<text x="330.0" y="100.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Wire heats up</text>
+<rect x="431.0" y="195.0" width="208" height="40" rx="20" fill="#2d3748" stroke="#cbd5e0" stroke-opacity="0.6"/>
+<rect x="431.0" y="195.0" width="208" height="40" rx="20" fill="url(#gloss)"/>
+<text x="535.0" y="220.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Atoms vibrate harder</text>
+<rect x="248.5" y="315.0" width="163" height="40" rx="20" fill="#2d3748" stroke="#cbd5e0" stroke-opacity="0.6"/>
+<rect x="248.5" y="315.0" width="163" height="40" rx="20" fill="url(#gloss)"/>
+<text x="330.0" y="340.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">More collisions</text>
+<rect x="39.0" y="195.0" width="172" height="40" rx="20" fill="#2d3748" stroke="#cbd5e0" stroke-opacity="0.6"/>
+<rect x="39.0" y="195.0" width="172" height="40" rx="20" fill="url(#gloss)"/>
+<text x="125.0" y="220.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Resistance rises</text>
+<rect x="240" y="193" width="180" height="44" rx="22" fill="#f59e0b" fill-opacity="0.85"/>
+<rect x="240" y="193" width="180" height="44" rx="22" fill="url(#gloss)"/>
+<text x="330.0" y="221.0" font-size="15" fill="#1a1a1a" text-anchor="middle" font-weight="bold">Too much current</text>
+<line x1="330" y1="191" x2="330" y2="121" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="340.0" y="165.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">starts it</text>
+<path d="M410,91 Q600,50 640,86" fill="none" stroke="#fc8181" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#arrowred)"/>
+<circle cx="640" cy="130" r="58" fill="url(#heatglow)"/>
+<rect x="562" y="92" width="156" height="72" rx="16" fill="#c53030" fill-opacity="0.85"/>
+<rect x="562" y="92" width="156" height="72" rx="16" fill="url(#gloss)"/>
+<text x="640.0" y="122.0" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">Insulation melts</text>
+<text x="640.0" y="142.0" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">or ignites</text>
+<text x="640.0" y="190.0" font-size="12" fill="#fc8181" text-anchor="middle" font-weight="normal" font-style="italic">if nothing stops it</text>
+<text x="330.0" y="388.0" font-size="14" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">Each lap turns more of the current into heat</text>
+</svg>

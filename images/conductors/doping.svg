@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 500" width="780" height="500" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Pure silicon, phosphorus-doped N-type with a spare electron, boron-doped P-type with a hole, and the two joined into a P-N junction</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><radialGradient id="pball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#c3dafe"/><stop offset="0.45" stop-color="#4c6ef5"/><stop offset="1" stop-color="#1e2a78"/></radialGradient><radialGradient id="bball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fed7d7"/><stop offset="0.45" stop-color="#e05656"/><stop offset="1" stop-color="#5c1a1a"/></radialGradient><linearGradient id="nface" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a78f0"/><stop offset="1" stop-color="#26357a"/></linearGradient><linearGradient id="pface" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e86a6a"/><stop offset="1" stop-color="#7a2626"/></linearGradient></defs>
+<rect x="10" y="15" width="240" height="250" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="130.0" y="45.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Pure silicon</text>
+<text x="130.0" y="65.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">4 valence electrons, all bonded</text>
+<circle cx="149.7" cy="107.3" r="12.4" fill="url(#core)"/>
+<line x1="105.8" y1="125.3" x2="149.7" y2="107.3" stroke="#718096" stroke-width="3"/>
+<circle cx="123.4" cy="118.1" r="3.6" fill="url(#vball)"/>
+<circle cx="132.2" cy="114.5" r="3.6" fill="url(#vball)"/>
+<line x1="174.9" y1="140.8" x2="149.7" y2="107.3" stroke="#718096" stroke-width="3"/>
+<circle cx="164.8" cy="127.4" r="3.6" fill="url(#vball)"/>
+<circle cx="159.8" cy="120.7" r="3.6" fill="url(#vball)"/>
+<circle cx="105.8" cy="125.3" r="12.6" fill="url(#core)"/>
+<line x1="60.4" y1="144.0" x2="105.8" y2="125.3" stroke="#718096" stroke-width="3"/>
+<circle cx="78.6" cy="136.5" r="3.6" fill="url(#vball)"/>
+<circle cx="87.7" cy="132.8" r="3.6" fill="url(#vball)"/>
+<circle cx="174.9" cy="140.8" r="12.8" fill="url(#core)"/>
+<line x1="130.0" y1="160.0" x2="105.8" y2="125.3" stroke="#718096" stroke-width="3"/>
+<circle cx="120.3" cy="146.1" r="3.6" fill="url(#vball)"/>
+<circle cx="115.5" cy="139.2" r="3.6" fill="url(#vball)"/>
+<circle cx="60.4" cy="144.0" r="12.8" fill="url(#core)"/>
+<line x1="130.0" y1="160.0" x2="174.9" y2="140.8" stroke="#718096" stroke-width="3"/>
+<circle cx="147.9" cy="152.3" r="3.6" fill="url(#vball)"/>
+<circle cx="156.9" cy="148.5" r="3.6" fill="url(#vball)"/>
+<line x1="201.6" y1="176.5" x2="174.9" y2="140.8" stroke="#718096" stroke-width="3"/>
+<circle cx="190.9" cy="162.2" r="3.6" fill="url(#vball)"/>
+<circle cx="185.6" cy="155.1" r="3.6" fill="url(#vball)"/>
+<circle cx="130.0" cy="160.0" r="13.0" fill="url(#core)"/>
+<line x1="83.6" y1="179.9" x2="60.4" y2="144.0" stroke="#718096" stroke-width="3"/>
+<circle cx="74.3" cy="165.5" r="3.6" fill="url(#vball)"/>
+<circle cx="69.7" cy="158.4" r="3.6" fill="url(#vball)"/>
+<line x1="83.6" y1="179.9" x2="130.0" y2="160.0" stroke="#718096" stroke-width="3"/>
+<circle cx="102.1" cy="171.9" r="3.6" fill="url(#vball)"/>
+<circle cx="111.4" cy="167.9" r="3.6" fill="url(#vball)"/>
+<circle cx="201.6" cy="176.5" r="13.2" fill="url(#core)"/>
+<line x1="155.7" y1="196.9" x2="130.0" y2="160.0" stroke="#718096" stroke-width="3"/>
+<circle cx="145.4" cy="182.1" r="3.6" fill="url(#vball)"/>
+<circle cx="140.3" cy="174.8" r="3.6" fill="url(#vball)"/>
+<circle cx="83.6" cy="179.9" r="13.2" fill="url(#core)"/>
+<line x1="155.7" y1="196.9" x2="201.6" y2="176.5" stroke="#718096" stroke-width="3"/>
+<circle cx="174.1" cy="188.7" r="3.6" fill="url(#vball)"/>
+<circle cx="183.2" cy="184.6" r="3.6" fill="url(#vball)"/>
+<circle cx="155.7" cy="196.9" r="13.4" fill="url(#core)"/>
+<line x1="108.2" y1="218.1" x2="83.6" y2="179.9" stroke="#718096" stroke-width="3"/>
+<circle cx="98.4" cy="202.8" r="3.6" fill="url(#vball)"/>
+<circle cx="93.4" cy="195.2" r="3.6" fill="url(#vball)"/>
+<line x1="108.2" y1="218.1" x2="155.7" y2="196.9" stroke="#718096" stroke-width="3"/>
+<circle cx="127.2" cy="209.6" r="3.6" fill="url(#vball)"/>
+<circle cx="136.7" cy="205.4" r="3.6" fill="url(#vball)"/>
+<circle cx="108.2" cy="218.1" r="13.7" fill="url(#core)"/>
+<rect x="270" y="15" width="240" height="250" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="390.0" y="45.0" font-size="15" fill="#7f9cf5" text-anchor="middle" font-weight="bold">N-type: add phosphorus</text>
+<text x="390.0" y="65.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">5 valence electrons: one spare</text>
+<circle cx="409.7" cy="107.3" r="12.4" fill="url(#core)"/>
+<line x1="365.8" y1="125.3" x2="409.7" y2="107.3" stroke="#718096" stroke-width="3"/>
+<circle cx="383.4" cy="118.1" r="3.6" fill="url(#vball)"/>
+<circle cx="392.2" cy="114.5" r="3.6" fill="url(#vball)"/>
+<line x1="434.9" y1="140.8" x2="409.7" y2="107.3" stroke="#718096" stroke-width="3"/>
+<circle cx="424.8" cy="127.4" r="3.6" fill="url(#vball)"/>
+<circle cx="419.8" cy="120.7" r="3.6" fill="url(#vball)"/>
+<circle cx="365.8" cy="125.3" r="12.6" fill="url(#core)"/>
+<line x1="320.4" y1="144.0" x2="365.8" y2="125.3" stroke="#718096" stroke-width="3"/>
+<circle cx="338.6" cy="136.5" r="3.6" fill="url(#vball)"/>
+<circle cx="347.7" cy="132.8" r="3.6" fill="url(#vball)"/>
+<circle cx="434.9" cy="140.8" r="12.8" fill="url(#core)"/>
+<line x1="390.0" y1="160.0" x2="365.8" y2="125.3" stroke="#718096" stroke-width="3"/>
+<circle cx="380.3" cy="146.1" r="3.6" fill="url(#vball)"/>
+<circle cx="375.5" cy="139.2" r="3.6" fill="url(#vball)"/>
+<circle cx="320.4" cy="144.0" r="12.8" fill="url(#core)"/>
+<line x1="390.0" y1="160.0" x2="434.9" y2="140.8" stroke="#718096" stroke-width="3"/>
+<circle cx="407.9" cy="152.3" r="3.6" fill="url(#vball)"/>
+<circle cx="416.9" cy="148.5" r="3.6" fill="url(#vball)"/>
+<line x1="461.6" y1="176.5" x2="434.9" y2="140.8" stroke="#718096" stroke-width="3"/>
+<circle cx="450.9" cy="162.2" r="3.6" fill="url(#vball)"/>
+<circle cx="445.6" cy="155.1" r="3.6" fill="url(#vball)"/>
+<circle cx="390.0" cy="160.0" r="13.0" fill="url(#pball)"/>
+<line x1="343.6" y1="179.9" x2="320.4" y2="144.0" stroke="#718096" stroke-width="3"/>
+<circle cx="334.3" cy="165.5" r="3.6" fill="url(#vball)"/>
+<circle cx="329.7" cy="158.4" r="3.6" fill="url(#vball)"/>
+<line x1="343.6" y1="179.9" x2="390.0" y2="160.0" stroke="#718096" stroke-width="3"/>
+<circle cx="362.1" cy="171.9" r="3.6" fill="url(#vball)"/>
+<circle cx="371.4" cy="167.9" r="3.6" fill="url(#vball)"/>
+<circle cx="461.6" cy="176.5" r="13.2" fill="url(#core)"/>
+<line x1="415.7" y1="196.9" x2="390.0" y2="160.0" stroke="#718096" stroke-width="3"/>
+<circle cx="405.4" cy="182.1" r="3.6" fill="url(#vball)"/>
+<circle cx="400.3" cy="174.8" r="3.6" fill="url(#vball)"/>
+<circle cx="343.6" cy="179.9" r="13.2" fill="url(#core)"/>
+<line x1="415.7" y1="196.9" x2="461.6" y2="176.5" stroke="#718096" stroke-width="3"/>
+<circle cx="434.1" cy="188.7" r="3.6" fill="url(#vball)"/>
+<circle cx="443.2" cy="184.6" r="3.6" fill="url(#vball)"/>
+<circle cx="415.7" cy="196.9" r="13.4" fill="url(#core)"/>
+<line x1="368.2" y1="218.1" x2="343.6" y2="179.9" stroke="#718096" stroke-width="3"/>
+<circle cx="358.4" cy="202.8" r="3.6" fill="url(#vball)"/>
+<circle cx="353.4" cy="195.2" r="3.6" fill="url(#vball)"/>
+<line x1="368.2" y1="218.1" x2="415.7" y2="196.9" stroke="#718096" stroke-width="3"/>
+<circle cx="387.2" cy="209.6" r="3.6" fill="url(#vball)"/>
+<circle cx="396.7" cy="205.4" r="3.6" fill="url(#vball)"/>
+<circle cx="368.2" cy="218.1" r="13.7" fill="url(#core)"/>
+<circle cx="416.0" cy="126.0" r="20" fill="url(#glow)"/><circle cx="416.0" cy="126.0" r="7" fill="url(#vball)"/>
+<rect x="530" y="15" width="240" height="250" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="650.0" y="45.0" font-size="15" fill="#fc8181" text-anchor="middle" font-weight="bold">P-type: add boron</text>
+<text x="650.0" y="65.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">3 valence electrons: one gap</text>
+<circle cx="669.7" cy="107.3" r="12.4" fill="url(#core)"/>
+<line x1="625.8" y1="125.3" x2="669.7" y2="107.3" stroke="#718096" stroke-width="3"/>
+<circle cx="643.4" cy="118.1" r="3.6" fill="url(#vball)"/>
+<circle cx="652.2" cy="114.5" r="3.6" fill="url(#vball)"/>
+<line x1="694.9" y1="140.8" x2="669.7" y2="107.3" stroke="#718096" stroke-width="3"/>
+<circle cx="684.8" cy="127.4" r="3.6" fill="url(#vball)"/>
+<circle cx="679.8" cy="120.7" r="3.6" fill="url(#vball)"/>
+<circle cx="625.8" cy="125.3" r="12.6" fill="url(#core)"/>
+<line x1="580.4" y1="144.0" x2="625.8" y2="125.3" stroke="#718096" stroke-width="3"/>
+<circle cx="598.6" cy="136.5" r="3.6" fill="url(#vball)"/>
+<circle cx="607.7" cy="132.8" r="3.6" fill="url(#vball)"/>
+<circle cx="694.9" cy="140.8" r="12.8" fill="url(#core)"/>
+<line x1="650.0" y1="160.0" x2="625.8" y2="125.3" stroke="#718096" stroke-width="3"/>
+<circle cx="640.3" cy="146.1" r="3.6" fill="url(#vball)"/>
+<circle cx="635.5" cy="139.2" r="3.6" fill="url(#vball)"/>
+<circle cx="580.4" cy="144.0" r="12.8" fill="url(#core)"/>
+<line x1="650.0" y1="160.0" x2="694.9" y2="140.8" stroke="#718096" stroke-width="3"/>
+<circle cx="667.9" cy="152.3" r="6" fill="none" stroke="#fc8181" stroke-width="2" stroke-dasharray="2 2"/>
+<circle cx="676.9" cy="148.5" r="3.6" fill="url(#vball)"/>
+<line x1="721.6" y1="176.5" x2="694.9" y2="140.8" stroke="#718096" stroke-width="3"/>
+<circle cx="710.9" cy="162.2" r="3.6" fill="url(#vball)"/>
+<circle cx="705.6" cy="155.1" r="3.6" fill="url(#vball)"/>
+<circle cx="650.0" cy="160.0" r="13.0" fill="url(#bball)"/>
+<line x1="603.6" y1="179.9" x2="580.4" y2="144.0" stroke="#718096" stroke-width="3"/>
+<circle cx="594.3" cy="165.5" r="3.6" fill="url(#vball)"/>
+<circle cx="589.7" cy="158.4" r="3.6" fill="url(#vball)"/>
+<line x1="603.6" y1="179.9" x2="650.0" y2="160.0" stroke="#718096" stroke-width="3"/>
+<circle cx="622.1" cy="171.9" r="3.6" fill="url(#vball)"/>
+<circle cx="631.4" cy="167.9" r="3.6" fill="url(#vball)"/>
+<circle cx="721.6" cy="176.5" r="13.2" fill="url(#core)"/>
+<line x1="675.7" y1="196.9" x2="650.0" y2="160.0" stroke="#718096" stroke-width="3"/>
+<circle cx="665.4" cy="182.1" r="3.6" fill="url(#vball)"/>
+<circle cx="660.3" cy="174.8" r="3.6" fill="url(#vball)"/>
+<circle cx="603.6" cy="179.9" r="13.2" fill="url(#core)"/>
+<line x1="675.7" y1="196.9" x2="721.6" y2="176.5" stroke="#718096" stroke-width="3"/>
+<circle cx="694.1" cy="188.7" r="3.6" fill="url(#vball)"/>
+<circle cx="703.2" cy="184.6" r="3.6" fill="url(#vball)"/>
+<circle cx="675.7" cy="196.9" r="13.4" fill="url(#core)"/>
+<line x1="628.2" y1="218.1" x2="603.6" y2="179.9" stroke="#718096" stroke-width="3"/>
+<circle cx="618.4" cy="202.8" r="3.6" fill="url(#vball)"/>
+<circle cx="613.4" cy="195.2" r="3.6" fill="url(#vball)"/>
+<line x1="628.2" y1="218.1" x2="675.7" y2="196.9" stroke="#718096" stroke-width="3"/>
+<circle cx="647.2" cy="209.6" r="3.6" fill="url(#vball)"/>
+<circle cx="656.7" cy="205.4" r="3.6" fill="url(#vball)"/>
+<circle cx="628.2" cy="218.1" r="13.7" fill="url(#core)"/>
+<text x="455.0" y="92.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal" font-style="italic">free electron</text>
+<text x="650.0" y="248.0" font-size="11" fill="#fc8181" text-anchor="middle" font-weight="normal" font-style="italic">dashed ring: the missing electron (a hole)</text>
+<path d="M390,272 Q390,320 474.5,345" fill="none" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M650,272 Q650,320 565.5,345" fill="none" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow)"/>
+<polygon points="400,360 520,360 554,339.6 434,339.6" fill="url(#nface)" opacity="0.75"/>
+<rect x="400" y="360" width="120" height="56" fill="url(#nface)"/>
+<rect x="400" y="360" width="120" height="56" fill="url(#gloss)"/>
+<text x="460.0" y="396.0" font-size="22" fill="#fff" text-anchor="middle" font-weight="bold">N</text>
+<polygon points="520,360 640,360 674,339.6 554,339.6" fill="url(#pface)" opacity="0.75"/>
+<rect x="520" y="360" width="120" height="56" fill="url(#pface)"/>
+<rect x="520" y="360" width="120" height="56" fill="url(#gloss)"/>
+<text x="580.0" y="396.0" font-size="22" fill="#fff" text-anchor="middle" font-weight="bold">P</text>
+<polygon points="640,360 674,339.6 674,395.6 640,416" fill="#3a1414"/>
+<line x1="520" y1="356" x2="520" y2="420" stroke="#fbbf24" stroke-width="3"/>
+<text x="520.0" y="442.0" font-size="13" fill="#fbbf24" text-anchor="middle" font-weight="bold">the junction</text>
+<text x="520.0" y="468.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Join the two kinds: diodes, transistors, every chip</text>
+</svg>

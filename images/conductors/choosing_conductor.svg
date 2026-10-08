@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" width="780" height="400" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Four metal ingots, copper, gold, aluminum and silver, each labelled with the need that makes it the right choice</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="12" y="15" width="176" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="100.0" y="48.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">When you need</text>
+<text x="100.0" y="70.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">conductivity per</text>
+<text x="100.0" y="89.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">dollar</text>
+<ellipse cx="104.0" cy="256.0" rx="74.0" ry="9" fill="#000" fill-opacity="0.4"/>
+<polygon points="38,180 142,180 170.0,162.0 66.0,162.0" fill="#e8a07a"/>
+<rect x="38" y="180" width="104" height="70" fill="#b8673a"/>
+<rect x="38" y="180" width="104" height="70" fill="url(#gloss)"/>
+<polygon points="142,250 142,180 170.0,162.0 170.0,232.0" fill="#6e3417"/>
+<text x="100.0" y="300.0" font-size="19" fill="#b8673a" text-anchor="middle" font-weight="bold">Copper</text>
+<text x="100.0" y="324.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">wire, cable, circuit boards</text>
+<rect x="205" y="15" width="176" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="293.0" y="48.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">When you need</text>
+<text x="293.0" y="70.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">a surface that</text>
+<text x="293.0" y="89.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">never corrodes</text>
+<ellipse cx="297.0" cy="256.0" rx="74.0" ry="9" fill="#000" fill-opacity="0.4"/>
+<polygon points="231,180 335,180 363.0,162.0 259.0,162.0" fill="#ffe58a"/>
+<rect x="231" y="180" width="104" height="70" fill="#d4a514"/>
+<rect x="231" y="180" width="104" height="70" fill="url(#gloss)"/>
+<polygon points="335,250 335,180 363.0,162.0 363.0,232.0" fill="#7a5c00"/>
+<text x="293.0" y="300.0" font-size="19" fill="#d4a514" text-anchor="middle" font-weight="bold">Gold</text>
+<text x="293.0" y="324.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">plating on contacts</text>
+<rect x="398" y="15" width="176" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="486.0" y="48.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">When you need</text>
+<text x="486.0" y="70.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">conductivity per</text>
+<text x="486.0" y="89.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">kilogram</text>
+<ellipse cx="490.0" cy="256.0" rx="74.0" ry="9" fill="#000" fill-opacity="0.4"/>
+<polygon points="424,180 528,180 556.0,162.0 452.0,162.0" fill="#eef3f9"/>
+<rect x="424" y="180" width="104" height="70" fill="#a9b6c6"/>
+<rect x="424" y="180" width="104" height="70" fill="url(#gloss)"/>
+<polygon points="528,250 528,180 556.0,162.0 556.0,232.0" fill="#5c6878"/>
+<text x="486.0" y="300.0" font-size="19" fill="#a9b6c6" text-anchor="middle" font-weight="bold">Aluminum</text>
+<text x="486.0" y="324.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">overhead power lines</text>
+<rect x="591" y="15" width="176" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="679.0" y="48.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">When you need</text>
+<text x="679.0" y="70.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">the last few</text>
+<text x="679.0" y="89.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">percent, any price</text>
+<ellipse cx="683.0" cy="256.0" rx="74.0" ry="9" fill="#000" fill-opacity="0.4"/>
+<polygon points="617,180 721,180 749.0,162.0 645.0,162.0" fill="#ffffff"/>
+<rect x="617" y="180" width="104" height="70" fill="#c9ced6"/>
+<rect x="617" y="180" width="104" height="70" fill="url(#gloss)"/>
+<polygon points="721,250 721,180 749.0,162.0 749.0,232.0" fill="#6b7280"/>
+<text x="679.0" y="300.0" font-size="19" fill="#c9ced6" text-anchor="middle" font-weight="bold">Silver</text>
+<text x="679.0" y="324.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">specialty plating</text>
+</svg>

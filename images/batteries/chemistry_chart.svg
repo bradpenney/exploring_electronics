@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" width="860" height="480" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A 3D bar chart of energy per kilogram by battery chemistry, with each cell's nominal voltage: zinc-carbon 36 watt-hours per kilogram at 1.5 volts, alkaline 85 to 190 at 1.5, mercury 99 to 123 at 1.35, lithium primary 297 at 1.5, NiCd 30 at 1.2, lead-acid 30 to 50 at 2.1, NiMH 100 at 1.2, and lithium-ion 195 at 3.7.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="830" height="450" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="430.0" y="46.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Energy per kilogram, and nominal volts per cell, by chemistry</text>
+<polygon points="50.0,344.1 120.0,344.1 138.2,332.4 68.2,332.4" fill="#808895"/>
+<rect x="50.0" y="344.1" width="70.0" height="25.9" fill="#4a5568"/>
+<rect x="50.0" y="344.1" width="70.0" height="25.9" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="120.0,370.0 120.0,344.1 138.2,332.4 138.2,358.3" fill="#282e39"/>
+<text x="85.0" y="318.1" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">36</text>
+<text x="85.0" y="392.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Zinc-carbon</text>
+<text x="85.0" y="410.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">1.5 V</text>
+<polygon points="150.0,233.2 220.0,233.2 238.2,221.5 168.2,221.5" fill="#808895"/>
+<rect x="150.0" y="233.2" width="70.0" height="136.8" fill="#4a5568"/>
+<rect x="150.0" y="233.2" width="70.0" height="136.8" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="220.0,370.0 220.0,233.2 238.2,221.5 238.2,358.3" fill="#282e39"/>
+<line x1="150" y1="308.8" x2="220" y2="308.8" stroke="#ffffff" stroke-dasharray="4 3" stroke-opacity="0.7"/>
+<text x="185.0" y="207.2" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">85–190</text>
+<text x="185.0" y="392.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Alkaline</text>
+<text x="185.0" y="410.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">1.5 V</text>
+<polygon points="250.0,281.4 320.0,281.4 338.2,269.7 268.2,269.7" fill="#808895"/>
+<rect x="250.0" y="281.4" width="70.0" height="88.6" fill="#4a5568"/>
+<rect x="250.0" y="281.4" width="70.0" height="88.6" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="320.0,370.0 320.0,281.4 338.2,269.7 338.2,358.3" fill="#282e39"/>
+<line x1="250" y1="298.7" x2="320" y2="298.7" stroke="#ffffff" stroke-dasharray="4 3" stroke-opacity="0.7"/>
+<text x="285.0" y="255.4" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">99–123</text>
+<text x="285.0" y="392.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Mercury</text>
+<text x="285.0" y="410.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">1.35 V</text>
+<polygon points="350.0,156.2 420.0,156.2 438.2,144.5 368.2,144.5" fill="#808895"/>
+<rect x="350.0" y="156.2" width="70.0" height="213.8" fill="#4a5568"/>
+<rect x="350.0" y="156.2" width="70.0" height="213.8" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="420.0,370.0 420.0,156.2 438.2,144.5 438.2,358.3" fill="#282e39"/>
+<text x="385.0" y="130.2" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">297</text>
+<text x="385.0" y="392.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Lithium primary</text>
+<text x="385.0" y="410.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">1.5 V</text>
+<polygon points="450.0,348.4 520.0,348.4 538.2,336.7 468.2,336.7" fill="#6da98b"/>
+<rect x="450.0" y="348.4" width="70.0" height="21.6" fill="#2f855a"/>
+<rect x="450.0" y="348.4" width="70.0" height="21.6" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="520.0,370.0 520.0,348.4 538.2,336.7 538.2,358.3" fill="#194931"/>
+<text x="485.0" y="322.4" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">30</text>
+<text x="485.0" y="392.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">NiCd</text>
+<text x="485.0" y="410.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">1.2 V</text>
+<polygon points="550.0,334.0 620.0,334.0 638.2,322.3 568.2,322.3" fill="#6da98b"/>
+<rect x="550.0" y="334.0" width="70.0" height="36.0" fill="#2f855a"/>
+<rect x="550.0" y="334.0" width="70.0" height="36.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="620.0,370.0 620.0,334.0 638.2,322.3 638.2,358.3" fill="#194931"/>
+<line x1="550" y1="348.4" x2="620" y2="348.4" stroke="#ffffff" stroke-dasharray="4 3" stroke-opacity="0.7"/>
+<text x="585.0" y="308.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">30–50</text>
+<text x="585.0" y="392.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Lead-acid</text>
+<text x="585.0" y="410.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">2.1 V</text>
+<polygon points="650.0,298.0 720.0,298.0 738.2,286.3 668.2,286.3" fill="#6da98b"/>
+<rect x="650.0" y="298.0" width="70.0" height="72.0" fill="#2f855a"/>
+<rect x="650.0" y="298.0" width="70.0" height="72.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="720.0,370.0 720.0,298.0 738.2,286.3 738.2,358.3" fill="#194931"/>
+<text x="685.0" y="272.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">100</text>
+<text x="685.0" y="392.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">NiMH</text>
+<text x="685.0" y="410.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">1.2 V</text>
+<polygon points="750.0,229.6 820.0,229.6 838.2,217.9 768.2,217.9" fill="#f8bb54"/>
+<rect x="750.0" y="229.6" width="70.0" height="140.4" fill="#f59e0b"/>
+<rect x="750.0" y="229.6" width="70.0" height="140.4" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="820.0,370.0 820.0,229.6 838.2,217.9 838.2,358.3" fill="#865606"/>
+<text x="785.0" y="203.6" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">195</text>
+<text x="785.0" y="392.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Lithium-ion</text>
+<text x="785.0" y="410.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">3.7 V</text>
+<text x="430.0" y="82.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">Wh/kg (dashed line: low end of the range)</text>
+<rect x="165.0" y="433.0" width="190" height="26" rx="13.0" fill="#4a5568"/>
+<rect x="165.0" y="433.0" width="190" height="26" rx="13.0" fill="url(#gloss)"/>
+<text x="260.0" y="450.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">single-use (primary)</text>
+<rect x="375.0" y="433.0" width="210" height="26" rx="13.0" fill="#2f855a"/>
+<rect x="375.0" y="433.0" width="210" height="26" rx="13.0" fill="url(#gloss)"/>
+<text x="480.0" y="450.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">rechargeable (secondary)</text>
+</svg>

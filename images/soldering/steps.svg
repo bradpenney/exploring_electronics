@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Five panels of a through-hole joint being made. 1: tin the tip with a thin coat of fresh solder. 2: heat the pad and the lead together with the tip. 3: feed solder into the joint on the side opposite the iron. 4: take the solder away, then the iron, and don't move the joint while it sets. 5: trim the lead to about the pad's radius.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="sd-solder" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7fafc"/><stop offset="0.5" stop-color="#a0aec0"/><stop offset="1" stop-color="#4a5568"/></linearGradient><linearGradient id="sd-dull" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a0aec0"/><stop offset="1" stop-color="#4a5568"/></linearGradient><linearGradient id="sd-lead" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5568"/><stop offset="0.4" stop-color="#e2e8f0"/><stop offset="1" stop-color="#4a5568"/></linearGradient></defs>
+<rect x="15" y="15" width="168" height="270" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="99.0" y="44.0" font-size="13" fill="#fbbf24" text-anchor="middle" font-weight="bold">1. Tin the tip</text>
+<path d="M39,100 L109,170 L101,180 L27,114 Z" fill="#a0aec0"/>
+<path d="M95,164 L109,170 L101,180 L89,174 Z" fill="url(#sd-solder)"/>
+<text x="99.0" y="262.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">a thin coat of fresh solder</text>
+<rect x="191" y="15" width="168" height="270" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="275.0" y="44.0" font-size="13" fill="#fbbf24" text-anchor="middle" font-weight="bold">2. Heat both</text>
+<rect x="215" y="200" width="120" height="18" fill="#2f855a"/>
+<rect x="243" y="195" width="64" height="6" fill="#c8733c"/>
+<rect x="270" y="110" width="10" height="130" rx="3" fill="url(#sd-lead)"/>
+<ellipse cx="261" cy="192" rx="34" ry="20" fill="url(#glow)"/>
+<path d="M195,120 L267,190 L261,198 L185,130 Z" fill="#a0aec0"/>
+<text x="275.0" y="262.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">tip on pad and lead together</text>
+<rect x="367" y="15" width="168" height="270" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="451.0" y="44.0" font-size="13" fill="#fbbf24" text-anchor="middle" font-weight="bold">3. Feed solder</text>
+<rect x="391" y="200" width="120" height="18" fill="#2f855a"/>
+<rect x="419" y="195" width="64" height="6" fill="#c8733c"/>
+<rect x="446" y="110" width="10" height="130" rx="3" fill="url(#sd-lead)"/>
+<ellipse cx="437" cy="192" rx="34" ry="20" fill="url(#glow)"/>
+<path d="M371,120 L443,190 L437,198 L361,130 Z" fill="#a0aec0"/>
+<path d="M521,130 L461,190" stroke="url(#sd-solder)" stroke-width="7" stroke-linecap="round"/>
+<text x="451.0" y="262.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">into the joint, opposite the iron</text>
+<rect x="543" y="15" width="168" height="270" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="627.0" y="44.0" font-size="13" fill="#fbbf24" text-anchor="middle" font-weight="bold">4. Solder off, then iron off</text>
+<rect x="567" y="200" width="120" height="18" fill="#2f855a"/>
+<rect x="595" y="195" width="64" height="6" fill="#c8733c"/>
+<rect x="622" y="110" width="10" height="130" rx="3" fill="url(#sd-lead)"/>
+<path d="M595,195 Q619,192 622,166 L632,166 Q635,192 659,195 Z" fill="url(#sd-solder)"/>
+<text x="627.0" y="262.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">and don't move it while it sets</text>
+<rect x="719" y="15" width="168" height="270" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="803.0" y="44.0" font-size="13" fill="#fbbf24" text-anchor="middle" font-weight="bold">5. Trim the lead</text>
+<rect x="743" y="200" width="120" height="18" fill="#2f855a"/>
+<rect x="771" y="195" width="64" height="6" fill="#c8733c"/>
+<rect x="798" y="160" width="10" height="80" rx="3" fill="url(#sd-lead)"/>
+<path d="M771,195 Q795,192 798,166 L808,166 Q811,192 835,195 Z" fill="url(#sd-solder)"/>
+<path d="M823,140 l20,-20 M823,120 l20,20" stroke="#a0aec0" stroke-width="3"/>
+<text x="803.0" y="262.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">to about the pad's radius</text>
+</svg>

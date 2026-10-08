@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Three copies of the Ohm's Law triangle, V on top and I and R below, each with one letter covered: covering V gives V equals I times R, covering I gives I equals V over R, covering R gives R equals V over I.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="770" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="400.0" y="46.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">One relationship, three ways to read it</text>
+<polygon points="36.0,272.2 264.0,272.2 278.0,263.8 164,73.8 150,82.2" fill="#1a202c"/>
+<polygon points="150,82.2 36.0,272.2 264.0,272.2" fill="#d97706"/>
+<polygon points="150,82.2 36.0,272.2 264.0,272.2" fill="url(#gloss)"/>
+<line x1="77.8" y1="198" x2="222.2" y2="198" stroke="#1a1a1a" stroke-width="3"/>
+<line x1="150" y1="198" x2="150" y2="272.2" stroke="#1a1a1a" stroke-width="3"/>
+<circle cx="150" cy="165.4" r="24.7" fill="#2d3748" stroke="#e2e8f0" stroke-opacity="0.6"/>
+<text x="150.0" y="171.4" font-size="28" fill="#f7fafc" text-anchor="middle" font-weight="bold">?</text>
+<text x="112.0" y="251.3" font-size="32" fill="#1a1a1a" text-anchor="middle" font-weight="bold">I</text>
+<text x="188.0" y="251.3" font-size="32" fill="#1a1a1a" text-anchor="middle" font-weight="bold">R</text>
+<rect x="75.0" y="315.0" width="150" height="40" rx="20.0" fill="#2d3748"/>
+<rect x="75.0" y="315.0" width="150" height="40" rx="20.0" fill="url(#gloss)"/>
+<text x="150.0" y="340.8" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">V = I × R</text>
+<polygon points="286.0,272.2 514.0,272.2 528.0,263.8 414,73.8 400,82.2" fill="#1a202c"/>
+<polygon points="400,82.2 286.0,272.2 514.0,272.2" fill="#d97706"/>
+<polygon points="400,82.2 286.0,272.2 514.0,272.2" fill="url(#gloss)"/>
+<line x1="327.8" y1="198" x2="472.2" y2="198" stroke="#1a1a1a" stroke-width="3"/>
+<line x1="400" y1="198" x2="400" y2="272.2" stroke="#1a1a1a" stroke-width="3"/>
+<text x="400.0" y="173.4" font-size="32" fill="#1a1a1a" text-anchor="middle" font-weight="bold">V</text>
+<circle cx="362.0" cy="243.3" r="24.7" fill="#2d3748" stroke="#e2e8f0" stroke-opacity="0.6"/>
+<text x="362.0" y="249.3" font-size="28" fill="#f7fafc" text-anchor="middle" font-weight="bold">?</text>
+<text x="438.0" y="251.3" font-size="32" fill="#1a1a1a" text-anchor="middle" font-weight="bold">R</text>
+<rect x="325.0" y="315.0" width="150" height="40" rx="20.0" fill="#2d3748"/>
+<rect x="325.0" y="315.0" width="150" height="40" rx="20.0" fill="url(#gloss)"/>
+<text x="400.0" y="340.8" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">I = V ÷ R</text>
+<polygon points="536.0,272.2 764.0,272.2 778.0,263.8 664,73.8 650,82.2" fill="#1a202c"/>
+<polygon points="650,82.2 536.0,272.2 764.0,272.2" fill="#d97706"/>
+<polygon points="650,82.2 536.0,272.2 764.0,272.2" fill="url(#gloss)"/>
+<line x1="577.8" y1="198" x2="722.2" y2="198" stroke="#1a1a1a" stroke-width="3"/>
+<line x1="650" y1="198" x2="650" y2="272.2" stroke="#1a1a1a" stroke-width="3"/>
+<text x="650.0" y="173.4" font-size="32" fill="#1a1a1a" text-anchor="middle" font-weight="bold">V</text>
+<text x="612.0" y="251.3" font-size="32" fill="#1a1a1a" text-anchor="middle" font-weight="bold">I</text>
+<circle cx="688.0" cy="243.3" r="24.7" fill="#2d3748" stroke="#e2e8f0" stroke-opacity="0.6"/>
+<text x="688.0" y="249.3" font-size="28" fill="#f7fafc" text-anchor="middle" font-weight="bold">?</text>
+<rect x="575.0" y="315.0" width="150" height="40" rx="20.0" fill="#2d3748"/>
+<rect x="575.0" y="315.0" width="150" height="40" rx="20.0" fill="url(#gloss)"/>
+<text x="650.0" y="340.8" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">R = V ÷ I</text>
+<text x="400.0" y="375.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">cover the one you want; what's left shows how to get it (side by side multiply, one over the other divide)</text>
+</svg>

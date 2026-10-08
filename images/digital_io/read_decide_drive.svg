@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A ring of three steps that repeats forever inside loop(): read the inputs, for example digitalRead on the button's pin; decide what to do, for example if the button is pressed; drive the outputs, for example digitalWrite to an LED; then again.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="410" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="48.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">The heartbeat of a microcontroller program, inside loop()</text>
+<circle cx="450" cy="245" r="125" fill="none" stroke="#4a5568" stroke-width="14"/>
+<circle cx="450.0" cy="120.0" r="46" fill="#2b6cb0"/>
+<circle cx="450.0" cy="120.0" r="46" fill="url(#gloss)" opacity="0.4"/>
+<text x="450.0" y="125.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">Read</text>
+<text x="450.0" y="141.0" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="normal">inputs</text>
+<text x="510.0" y="125.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">digitalRead(2)</text>
+<circle cx="558.3" cy="307.5" r="46" fill="#f59e0b"/>
+<circle cx="558.3" cy="307.5" r="46" fill="url(#gloss)" opacity="0.4"/>
+<text x="558.3" y="312.5" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold">Decide</text>
+<text x="558.3" y="373.5" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">if (pressed) ...</text>
+<circle cx="341.7" cy="307.5" r="46" fill="#48bb78"/>
+<circle cx="341.7" cy="307.5" r="46" fill="url(#gloss)" opacity="0.4"/>
+<text x="341.7" y="312.5" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">Drive</text>
+<text x="341.7" y="328.5" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="normal">outputs</text>
+<text x="341.7" y="373.5" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">digitalWrite(3, HIGH)</text>
+<path d="M553.3,173.8 l10.0,17.3" stroke="#fbbf24" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M460.0,370.0 l-20.0,0.0" stroke="#fbbf24" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M336.7,191.2 l10.0,-17.3" stroke="#fbbf24" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="450.0" y="250.0" font-size="13" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">then again</text>
+</svg>

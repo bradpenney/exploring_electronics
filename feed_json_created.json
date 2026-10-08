@@ -1,0 +1,236 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": "Exploring Electronics",
+    "home_page_url": "https://electronics.bradpenney.io/",
+    "feed_url": "https://electronics.bradpenney.io/feed_json_created.json",
+    "description": "Electronics from first principles \u2014 voltage, current, resistance, and circuit design explained clearly. Real components, real numbers, no prior knowledge assumed.",
+    "icon": "https://electronics.bradpenney.io/images/exploring_electronics.png",
+    "authors": [
+        {
+            "name": "Brad Penney"
+        }
+    ],
+    "language": "en",
+    "items": [
+        {
+            "id": "https://electronics.bradpenney.io/tools/soldering/",
+            "url": "https://electronics.bradpenney.io/tools/soldering/",
+            "title": "Soldering",
+            "content_html": "How soldering works: solder bonds only to clean, hot metal. Heating the parts, flux, choosing solder and temperature, judging a joint, desoldering, and fume and lead safety.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-05T05:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/tools/bench_power_supply/",
+            "url": "https://electronics.bradpenney.io/tools/bench_power_supply/",
+            "title": "Bench Power Supplies",
+            "content_html": "How a bench power supply works: an adjustable regulator with a current limit. CV and CC modes, the crossover, a safe first power-up, and reading the spec sheet.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-05T03:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/spi/",
+            "url": "https://electronics.bradpenney.io/spi/",
+            "title": "SPI",
+            "content_html": "How SPI works: two shift registers swapping bits on every clock, a chip-select wire instead of an address, clock modes, and reading an MCP3008 ADC from an Arduino.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-05T01:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/communication/",
+            "url": "https://electronics.bradpenney.io/communication/",
+            "title": "Overview",
+            "content_html": "The Communication articles in reading order: serial between two devices, the I\u00b2C bus for many sensors on two wires, and fast SPI with a wire per device.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-04T23:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/i2c/",
+            "url": "https://electronics.bradpenney.io/i2c/",
+            "title": "I\u00b2C",
+            "content_html": "How the I\u00b2C bus lets an Arduino talk to many sensors on two wires: open-drain lines and pull-ups, a shared clock, 7-bit addresses, ACK, and reading an MCP9808.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-04T23:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/serial_communication/",
+            "url": "https://electronics.bradpenney.io/serial_communication/",
+            "title": "Serial Communication",
+            "content_html": "How serial (UART) works: one bit at a time on one wire, no clock, just an agreed baud rate. Framing, wiring TX to RX, voltage levels, and two-way Arduino serial.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-04T21:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/power/",
+            "url": "https://electronics.bradpenney.io/power/",
+            "title": "Overview",
+            "content_html": "The Power articles in reading order: cells and batteries, then voltage regulators and the power supplies that turn a wall outlet into steady DC.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-04T18:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/voltage_regulators/",
+            "url": "https://electronics.bradpenney.io/voltage_regulators/",
+            "title": "Voltage Regulators",
+            "content_html": "How a voltage regulator holds a steady output: linear regulators and their heat, dropout, switching regulators, and the stages of a complete power supply.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-04T18:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/vacuum_tubes/",
+            "url": "https://electronics.bradpenney.io/vacuum_tubes/",
+            "title": "Vacuum Tubes",
+            "content_html": "How a vacuum tube works: a heated cathode, a positive plate, and a grid that controls the stream. Diodes and triodes, why tubes resemble FETs, and why they're still made.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-04T15:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/tools/multimeter/",
+            "url": "https://electronics.bradpenney.io/tools/multimeter/",
+            "title": "Using a Multimeter",
+            "content_html": "How a multimeter works: why the jacks matter more than the dial, what the fuse and CAT rating protect, auto-ranging and accuracy, and the habits that keep readings honest.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-04T12:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/voltage_divider/",
+            "url": "https://electronics.bradpenney.io/voltage_divider/",
+            "title": "Voltage Dividers",
+            "content_html": "How two resistors split a voltage, why the output collapses under load, and how to scale a 12 V battery down for an Arduino's analog pin safely.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T23:30:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/circuit_foundations/",
+            "url": "https://electronics.bradpenney.io/circuit_foundations/",
+            "title": "Overview",
+            "content_html": "The fourteen Circuit Foundations articles in reading order: charge, voltage, current, resistance, Ohm's law, AC, magnetism, capacitors, and inductors, with real numbers.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T23:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/components/",
+            "url": "https://electronics.bradpenney.io/components/",
+            "title": "Overview",
+            "content_html": "The Components articles in reading order: resistors, diodes and LEDs, transistors, vacuum tubes, temperature sensors, and the physical packages parts come in.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T23:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/microcontrollers/",
+            "url": "https://electronics.bradpenney.io/microcontrollers/",
+            "title": "Overview",
+            "content_html": "The Microcontrollers articles in reading order: the Arduino board and its code, digital pins, blinking an LED, reading buttons and analog sensors, and staged output.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T23:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/practical_tools/",
+            "url": "https://electronics.bradpenney.io/practical_tools/",
+            "title": "Overview",
+            "content_html": "The bench equipment this site uses: breadboards, arduino-cli for programming an Arduino, the multimeter, the bench power supply, and soldering.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T23:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/inductors/",
+            "url": "https://electronics.bradpenney.io/inductors/",
+            "title": "Inductors",
+            "content_html": "How an inductor stores energy in a magnetic field and resists any change in current: the henry, what sets a coil's inductance, the L/R time constant, and why switching one off bites.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T22:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/transistors/",
+            "url": "https://electronics.bradpenney.io/transistors/",
+            "title": "Transistors",
+            "content_html": "How a transistor lets a tiny current or voltage control a large one: bipolar and field-effect transistors, switching a 12 V load from an Arduino pin, and amplifying.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T19:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/diodes_and_leds/",
+            "url": "https://electronics.bradpenney.io/diodes_and_leds/",
+            "title": "Diodes and LEDs",
+            "content_html": "How a diode lets current through one way only, why every LED colour has its own forward voltage, how to size an LED resistor properly, and what diodes do in real circuits.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T16:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/capacitors/",
+            "url": "https://electronics.bradpenney.io/capacitors/",
+            "title": "Capacitors",
+            "content_html": "How a capacitor stores charge between two plates, what a farad is, why it fills on an RC curve, and how a camera flash turns two AA cells into a 15 kW burst.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T12:00:00-03:00",
+            "authors": [],
+            "tags": []
+        },
+        {
+            "id": "https://electronics.bradpenney.io/resistor_types/",
+            "url": "https://electronics.bradpenney.io/resistor_types/",
+            "title": "Resistor Types",
+            "content_html": "What's inside carbon, metal-film, and wire-wound resistors, what a temperature coefficient means, and how potentiometers, rheostats, trimmers, and tapped resistors work.",
+            "image": null,
+            "date_modified": "2026-10-08T23:25:27-03:00",
+            "date_published": "2026-10-02T10:00:00-03:00",
+            "authors": [],
+            "tags": []
+        }
+    ]
+}

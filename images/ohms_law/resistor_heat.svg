@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" width="800" height="430" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Three identical 330 ohm, quarter-watt resistors. In a 5 volt LED circuit one dissipates 27 milliwatts, 11 percent of its rating, and stays cool. In the 9 volt LED circuit one dissipates 148 milliwatts, 59 percent. Wired straight across 9 volts one dissipates 245 milliwatts, 98 percent, and glows hot.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="resbody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8d7454"/><stop offset="0.22" stop-color="#ead5ba"/><stop offset="0.5" stop-color="#d9b382"/><stop offset="1" stop-color="#564734"/></linearGradient></defs>
+<rect x="15" y="15" width="770" height="400" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="400.0" y="46.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Three 330 Ω, ¼ W resistors: how much of their rating each one uses</text>
+<circle cx="140" cy="170" r="48" fill="#48bb78" fill-opacity="0.11"/>
+<rect x="40" y="167" width="200" height="6" rx="3" fill="#cbd5e0"/>
+<rect x="85" y="152" width="110" height="36" rx="18" fill="url(#resbody)"/>
+<rect x="103" y="153" width="8" height="34" fill="#f6ad55"/>
+<rect x="121" y="153" width="8" height="34" fill="#f6ad55"/>
+<rect x="139" y="153" width="8" height="34" fill="#8b4513"/>
+<rect x="173" y="153" width="8" height="34" fill="#d4af37"/>
+<text x="140.0" y="278.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">5 V LED circuit</text>
+<text x="140.0" y="302.0" font-size="22" fill="#48bb78" text-anchor="middle" font-weight="bold">27 mW</text>
+<rect x="60" y="320" width="160" height="14" rx="7" fill="#2d3748"/>
+<rect x="60" y="320" width="17.5" height="14" rx="7" fill="#48bb78"/>
+<text x="140.0" y="356.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">11% of its ¼ W rating</text>
+<circle cx="400" cy="170" r="82" fill="#f59e0b" fill-opacity="0.23"/>
+<rect x="300" y="167" width="200" height="6" rx="3" fill="#cbd5e0"/>
+<rect x="345" y="152" width="110" height="36" rx="18" fill="url(#resbody)"/>
+<rect x="363" y="153" width="8" height="34" fill="#f6ad55"/>
+<rect x="381" y="153" width="8" height="34" fill="#f6ad55"/>
+<rect x="399" y="153" width="8" height="34" fill="#8b4513"/>
+<rect x="433" y="153" width="8" height="34" fill="#d4af37"/>
+<text x="400.0" y="278.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">9 V LED circuit</text>
+<text x="400.0" y="302.0" font-size="22" fill="#f59e0b" text-anchor="middle" font-weight="bold">148 mW</text>
+<rect x="320" y="320" width="160" height="14" rx="7" fill="#2d3748"/>
+<rect x="320" y="320" width="95.0" height="14" rx="7" fill="#f59e0b"/>
+<text x="400.0" y="356.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">59% of its ¼ W rating</text>
+<circle cx="660" cy="170" r="109" fill="#fc8181" fill-opacity="0.33"/>
+<rect x="560" y="167" width="200" height="6" rx="3" fill="#cbd5e0"/>
+<rect x="605" y="152" width="110" height="36" rx="18" fill="url(#resbody)"/>
+<rect x="623" y="153" width="8" height="34" fill="#f6ad55"/>
+<rect x="641" y="153" width="8" height="34" fill="#f6ad55"/>
+<rect x="659" y="153" width="8" height="34" fill="#8b4513"/>
+<rect x="693" y="153" width="8" height="34" fill="#d4af37"/>
+<text x="660.0" y="278.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">straight across 9 V</text>
+<text x="660.0" y="302.0" font-size="22" fill="#fc8181" text-anchor="middle" font-weight="bold">245 mW</text>
+<rect x="580" y="320" width="160" height="14" rx="7" fill="#2d3748"/>
+<rect x="580" y="320" width="157.1" height="14" rx="7" fill="#fc8181"/>
+<text x="660.0" y="356.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">98% of its ¼ W rating</text>
+<text x="400.0" y="396.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">rule of thumb: keep a resistor at or below half its rating; near 100% it runs hot enough to burn a finger</text>
+</svg>

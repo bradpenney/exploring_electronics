@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A 3D triode inside a glass envelope with the air pumped out. In the centre, a glowing orange cathode sleeve with a heater inside it boils off electrons. Around it, a fine wire helix forms the grid. Outside that, two metal plate walls collect the electrons crossing the vacuum. Pins at the base connect the heater, cathode, grid and plate.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="vt-glass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#cbd5e0" stop-opacity="0.32"/><stop offset="0.25" stop-color="#ffffff" stop-opacity="0.10"/><stop offset="0.75" stop-color="#cbd5e0" stop-opacity="0.06"/><stop offset="1" stop-color="#cbd5e0" stop-opacity="0.30"/></linearGradient><linearGradient id="vt-metal" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a5568"/><stop offset="0.3" stop-color="#cbd5e0"/><stop offset="0.6" stop-color="#718096"/><stop offset="1" stop-color="#2d3748"/></linearGradient><radialGradient id="vt-heat" r="50%"><stop offset="0" stop-color="#ff8a3d" stop-opacity="0.9"/><stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/></radialGradient></defs>
+<rect x="15" y="15" width="870" height="530" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<ellipse cx="458" cy="486" rx="134" ry="9" fill="#000" fill-opacity="0.45"/>
+<path d="M330,460 L330,180 A120,120 0 0 1 570,180 L570,460 Z" fill="url(#vt-glass)" stroke="#cbd5e0" stroke-opacity="0.55" stroke-width="2"/>
+<rect x="326" y="460" width="248" height="22" rx="5" fill="#1a1a1a"/>
+<rect x="420" y="482" width="4" height="16" fill="#a0aec0"/>
+<rect x="434" y="482" width="4" height="16" fill="#a0aec0"/>
+<rect x="448" y="482" width="4" height="16" fill="#a0aec0"/>
+<rect x="462" y="482" width="4" height="16" fill="#a0aec0"/>
+<rect x="476" y="482" width="4" height="16" fill="#a0aec0"/>
+<rect x="358" y="150" width="30" height="250" rx="4" fill="url(#vt-metal)"/>
+<rect x="512" y="150" width="30" height="250" rx="4" fill="url(#vt-metal)"/>
+<ellipse cx="450" cy="165" rx="34" ry="5" fill="none" stroke="#e2e8f0" stroke-width="1.6" stroke-opacity="0.85"/>
+<ellipse cx="450" cy="183" rx="34" ry="5" fill="none" stroke="#e2e8f0" stroke-width="1.6" stroke-opacity="0.85"/>
+<ellipse cx="450" cy="201" rx="34" ry="5" fill="none" stroke="#e2e8f0" stroke-width="1.6" stroke-opacity="0.85"/>
+<ellipse cx="450" cy="219" rx="34" ry="5" fill="none" stroke="#e2e8f0" stroke-width="1.6" stroke-opacity="0.85"/>
+<ellipse cx="450" cy="237" rx="34" ry="5" fill="none" stroke="#e2e8f0" stroke-width="1.6" stroke-opacity="0.85"/>
+<ellipse cx="450" cy="255" rx="34" ry="5" fill="none" stroke="#e2e8f0" stroke-width="1.6" stroke-opacity="0.85"/>
+<ellipse cx="450" cy="273" rx="34" ry="5" fill="none" stroke="#e2e8f0" stroke-width="1.6" stroke-opacity="0.85"/>
+<ellipse cx="450" cy="291" rx="34" ry="5" fill="none" stroke="#e2e8f0" stroke-width="1.6" stroke-opacity="0.85"/>
+<ellipse cx="450" cy="309" rx="34" ry="5" fill="none" stroke="#e2e8f0" stroke-width="1.6" stroke-opacity="0.85"/>
+<ellipse cx="450" cy="327" rx="34" ry="5" fill="none" stroke="#e2e8f0" stroke-width="1.6" stroke-opacity="0.85"/>
+<ellipse cx="450" cy="345" rx="34" ry="5" fill="none" stroke="#e2e8f0" stroke-width="1.6" stroke-opacity="0.85"/>
+<ellipse cx="450" cy="363" rx="34" ry="5" fill="none" stroke="#e2e8f0" stroke-width="1.6" stroke-opacity="0.85"/>
+<ellipse cx="450" cy="381" rx="34" ry="5" fill="none" stroke="#e2e8f0" stroke-width="1.6" stroke-opacity="0.85"/>
+<line x1="416" y1="160" x2="416" y2="400" stroke="#e2e8f0" stroke-width="2"/>
+<line x1="484" y1="160" x2="484" y2="400" stroke="#e2e8f0" stroke-width="2"/>
+<ellipse cx="450" cy="280" rx="40" ry="130" fill="url(#vt-heat)"/>
+<rect x="441" y="170" width="18" height="225" rx="6" fill="#c05621"/>
+<rect x="441" y="170" width="18" height="225" rx="6" fill="url(#gloss)" opacity="0.5"/>
+<circle cx="409.9" cy="207.4" r="3.2" fill="url(#eball)"/>
+<circle cx="491.5" cy="193.8" r="3.2" fill="url(#eball)"/>
+<circle cx="396.0" cy="278.5" r="3.2" fill="url(#eball)"/>
+<circle cx="427.6" cy="330.6" r="3.2" fill="url(#eball)"/>
+<circle cx="481.5" cy="360.8" r="3.2" fill="url(#eball)"/>
+<circle cx="408.1" cy="362.3" r="3.2" fill="url(#eball)"/>
+<circle cx="496.6" cy="321.0" r="3.2" fill="url(#eball)"/>
+<circle cx="429.0" cy="381.1" r="3.2" fill="url(#eball)"/>
+<circle cx="422.7" cy="186.5" r="3.2" fill="url(#eball)"/>
+<circle cx="484.8" cy="331.0" r="3.2" fill="url(#eball)"/>
+<circle cx="495.4" cy="373.4" r="3.2" fill="url(#eball)"/>
+<circle cx="496.0" cy="301.2" r="3.2" fill="url(#eball)"/>
+<circle cx="397.3" cy="200.5" r="3.2" fill="url(#eball)"/>
+<circle cx="414.2" cy="234.2" r="3.2" fill="url(#eball)"/>
+<circle cx="498.3" cy="359.6" r="3.2" fill="url(#eball)"/>
+<circle cx="486.3" cy="261.0" r="3.2" fill="url(#eball)"/>
+<circle cx="487.5" cy="265.6" r="3.2" fill="url(#eball)"/>
+<circle cx="396.2" cy="323.2" r="3.2" fill="url(#eball)"/>
+<circle cx="398.3" cy="388.1" r="3.2" fill="url(#eball)"/>
+<circle cx="405.3" cy="248.5" r="3.2" fill="url(#eball)"/>
+<circle cx="404.6" cy="224.3" r="3.2" fill="url(#eball)"/>
+<circle cx="476.5" cy="193.3" r="3.2" fill="url(#eball)"/>
+<circle cx="467.9" cy="348.1" r="3.2" fill="url(#eball)"/>
+<circle cx="503.5" cy="184.2" r="3.2" fill="url(#eball)"/>
+<circle cx="497.8" cy="363.3" r="3.2" fill="url(#eball)"/>
+<circle cx="409.4" cy="339.9" r="3.2" fill="url(#eball)"/>
+<line x1="373" y1="400" x2="422.3" y2="460" stroke="#a0aec0" stroke-width="2"/>
+<line x1="430" y1="400" x2="442.8" y2="460" stroke="#a0aec0" stroke-width="2"/>
+<line x1="450" y1="400" x2="450.0" y2="460" stroke="#a0aec0" stroke-width="2"/>
+<line x1="470" y1="400" x2="457.2" y2="460" stroke="#a0aec0" stroke-width="2"/>
+<line x1="527" y1="400" x2="477.7" y2="460" stroke="#a0aec0" stroke-width="2"/>
+<line x1="446" y1="300" x2="250" y2="330" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="446" cy="300" r="4" fill="#fbbf24"/>
+<text x="242.0" y="326.0" font-size="15" fill="#fbbf24" text-anchor="end" font-weight="bold">Cathode and heater</text>
+<text x="242.0" y="344.0" font-size="12" fill="#a0aec0" text-anchor="end" font-weight="normal" font-style="italic">heated until it boils off electrons</text>
+<line x1="416" y1="210" x2="250" y2="210" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="416" cy="210" r="4" fill="#fbbf24"/>
+<text x="242.0" y="206.0" font-size="15" fill="#fbbf24" text-anchor="end" font-weight="bold">Grid</text>
+<text x="242.0" y="224.0" font-size="12" fill="#a0aec0" text-anchor="end" font-weight="normal" font-style="italic">a fine wire mesh: the control</text>
+<line x1="372" y1="150" x2="250" y2="110" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="372" cy="150" r="4" fill="#fbbf24"/>
+<text x="242.0" y="106.0" font-size="15" fill="#fbbf24" text-anchor="end" font-weight="bold">Plate (anode)</text>
+<text x="242.0" y="124.0" font-size="12" fill="#a0aec0" text-anchor="end" font-weight="normal" font-style="italic">the most positive electrode</text>
+<line x1="560" y1="120" x2="680" y2="110" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="560" cy="120" r="4" fill="#fbbf24"/>
+<text x="688.0" y="106.0" font-size="15" fill="#fbbf24" text-anchor="start" font-weight="bold">Glass envelope</text>
+<text x="688.0" y="124.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">air pumped out: a vacuum</text>
+<line x1="490" y1="330" x2="680" y2="330" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="490" cy="330" r="4" fill="#fbbf24"/>
+<text x="688.0" y="326.0" font-size="15" fill="#fbbf24" text-anchor="start" font-weight="bold">Electrons</text>
+<text x="688.0" y="344.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">crossing the vacuum to the plate</text>
+<line x1="492" y1="490" x2="680" y2="470" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="492" cy="490" r="4" fill="#fbbf24"/>
+<text x="688.0" y="466.0" font-size="15" fill="#fbbf24" text-anchor="start" font-weight="bold">Pins</text>
+<text x="688.0" y="484.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">heater, cathode, grid, plate</text>
+</svg>

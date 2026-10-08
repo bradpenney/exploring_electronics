@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Two stacks of six cells. A 9 volt battery is six 1.5 volt cells adding up to 9 volts. A car battery is six roughly 2.1 volt cells adding up to about 12.6 volts.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="cell" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#68717c"/><stop offset="0.22" stop-color="#cad2dc"/><stop offset="0.5" stop-color="#a0aec0"/><stop offset="1" stop-color="#40454c"/></linearGradient><linearGradient id="lead" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#495361"/><stop offset="0.22" stop-color="#b0b9c5"/><stop offset="0.5" stop-color="#718096"/><stop offset="1" stop-color="#2d333c"/></linearGradient></defs>
+<rect x="15" y="15" width="770" height="430" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="400.0" y="46.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Stack cells in series and their voltages add</text>
+<rect x="214" y="334" width="52" height="42" rx="6" fill="url(#cell)"/>
+<ellipse cx="240" cy="334" rx="26" ry="6" fill="#e2e8f0" fill-opacity="0.6"/>
+<text x="284.0" y="361.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal">+1.5 V</text>
+<text x="196.0" y="361.0" font-size="12" fill="#fbbf24" text-anchor="end" font-weight="bold">1.5 V</text>
+<rect x="214" y="288" width="52" height="42" rx="6" fill="url(#cell)"/>
+<ellipse cx="240" cy="288" rx="26" ry="6" fill="#e2e8f0" fill-opacity="0.6"/>
+<text x="284.0" y="315.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal">+1.5 V</text>
+<text x="196.0" y="315.0" font-size="12" fill="#fbbf24" text-anchor="end" font-weight="bold">3.0 V</text>
+<rect x="214" y="242" width="52" height="42" rx="6" fill="url(#cell)"/>
+<ellipse cx="240" cy="242" rx="26" ry="6" fill="#e2e8f0" fill-opacity="0.6"/>
+<text x="284.0" y="269.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal">+1.5 V</text>
+<text x="196.0" y="269.0" font-size="12" fill="#fbbf24" text-anchor="end" font-weight="bold">4.5 V</text>
+<rect x="214" y="196" width="52" height="42" rx="6" fill="url(#cell)"/>
+<ellipse cx="240" cy="196" rx="26" ry="6" fill="#e2e8f0" fill-opacity="0.6"/>
+<text x="284.0" y="223.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal">+1.5 V</text>
+<text x="196.0" y="223.0" font-size="12" fill="#fbbf24" text-anchor="end" font-weight="bold">6.0 V</text>
+<rect x="214" y="150" width="52" height="42" rx="6" fill="url(#cell)"/>
+<ellipse cx="240" cy="150" rx="26" ry="6" fill="#e2e8f0" fill-opacity="0.6"/>
+<text x="284.0" y="177.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal">+1.5 V</text>
+<text x="196.0" y="177.0" font-size="12" fill="#fbbf24" text-anchor="end" font-weight="bold">7.5 V</text>
+<rect x="214" y="104" width="52" height="42" rx="6" fill="url(#cell)"/>
+<ellipse cx="240" cy="104" rx="26" ry="6" fill="#e2e8f0" fill-opacity="0.6"/>
+<text x="284.0" y="131.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal">+1.5 V</text>
+<text x="196.0" y="131.0" font-size="12" fill="#fbbf24" text-anchor="end" font-weight="bold">9.0 V</text>
+<ellipse cx="240" cy="384" rx="40" ry="8" fill="#000" fill-opacity="0.4"/>
+<text x="240.0" y="410.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">9 V battery</text>
+<text x="240.0" y="430.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">six 1.5 V alkaline cells (IEC 6LR61)</text>
+<rect x="534" y="334" width="52" height="42" rx="6" fill="url(#lead)"/>
+<ellipse cx="560" cy="334" rx="26" ry="6" fill="#e2e8f0" fill-opacity="0.6"/>
+<text x="604.0" y="361.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal">+2.1 V</text>
+<text x="516.0" y="361.0" font-size="12" fill="#fbbf24" text-anchor="end" font-weight="bold">2.1 V</text>
+<rect x="534" y="288" width="52" height="42" rx="6" fill="url(#lead)"/>
+<ellipse cx="560" cy="288" rx="26" ry="6" fill="#e2e8f0" fill-opacity="0.6"/>
+<text x="604.0" y="315.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal">+2.1 V</text>
+<text x="516.0" y="315.0" font-size="12" fill="#fbbf24" text-anchor="end" font-weight="bold">4.2 V</text>
+<rect x="534" y="242" width="52" height="42" rx="6" fill="url(#lead)"/>
+<ellipse cx="560" cy="242" rx="26" ry="6" fill="#e2e8f0" fill-opacity="0.6"/>
+<text x="604.0" y="269.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal">+2.1 V</text>
+<text x="516.0" y="269.0" font-size="12" fill="#fbbf24" text-anchor="end" font-weight="bold">6.3 V</text>
+<rect x="534" y="196" width="52" height="42" rx="6" fill="url(#lead)"/>
+<ellipse cx="560" cy="196" rx="26" ry="6" fill="#e2e8f0" fill-opacity="0.6"/>
+<text x="604.0" y="223.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal">+2.1 V</text>
+<text x="516.0" y="223.0" font-size="12" fill="#fbbf24" text-anchor="end" font-weight="bold">8.4 V</text>
+<rect x="534" y="150" width="52" height="42" rx="6" fill="url(#lead)"/>
+<ellipse cx="560" cy="150" rx="26" ry="6" fill="#e2e8f0" fill-opacity="0.6"/>
+<text x="604.0" y="177.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal">+2.1 V</text>
+<text x="516.0" y="177.0" font-size="12" fill="#fbbf24" text-anchor="end" font-weight="bold">10.5 V</text>
+<rect x="534" y="104" width="52" height="42" rx="6" fill="url(#lead)"/>
+<ellipse cx="560" cy="104" rx="26" ry="6" fill="#e2e8f0" fill-opacity="0.6"/>
+<text x="604.0" y="131.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal">+2.1 V</text>
+<text x="516.0" y="131.0" font-size="12" fill="#fbbf24" text-anchor="end" font-weight="bold">12.6 V</text>
+<ellipse cx="560" cy="384" rx="40" ry="8" fill="#000" fill-opacity="0.4"/>
+<text x="560.0" y="410.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">12 V car battery</text>
+<text x="560.0" y="430.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">six ~2.1 V lead-acid cells</text>
+</svg>

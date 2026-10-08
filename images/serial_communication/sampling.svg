@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Three copies of the letter A sent at 9600 baud, each with the sample points of a receiver. A receiver at 9600 samples the middle of every bit and reads A. A receiver at 19200 samples twice as fast, bunched into the first half of the character, reads the byte 0x06 and finds no stop bit, a framing error. A receiver at 4800 samples half as fast, runs past the end of the character, and reads 0xFC, the character ü.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="530" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="48.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">The same A, read by receivers set to three speeds</text>
+<polyline points="70.0,110.0 133.3,110.0 133.3,160.0 196.7,160.0 196.7,110.0 260.0,110.0 260.0,160.0 323.3,160.0 323.3,160.0 386.7,160.0 386.7,160.0 450.0,160.0 450.0,160.0 513.3,160.0 513.3,160.0 576.7,160.0 576.7,110.0 640.0,110.0 640.0,160.0 703.3,160.0 703.3,110.0 766.7,110.0 766.7,110.0 830.0,110.0" fill="none" stroke="#90cdf4" stroke-width="3" stroke-linejoin="round" filter="url(#softglow)"/>
+<line x1="228.3" y1="98" x2="228.3" y2="172" stroke="#48bb78" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="228.3" cy="98" r="5" fill="#48bb78"/>
+<line x1="291.7" y1="98" x2="291.7" y2="172" stroke="#48bb78" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="291.7" cy="98" r="5" fill="#48bb78"/>
+<line x1="355.0" y1="98" x2="355.0" y2="172" stroke="#48bb78" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="355.0" cy="98" r="5" fill="#48bb78"/>
+<line x1="418.3" y1="98" x2="418.3" y2="172" stroke="#48bb78" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="418.3" cy="98" r="5" fill="#48bb78"/>
+<line x1="481.7" y1="98" x2="481.7" y2="172" stroke="#48bb78" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="481.7" cy="98" r="5" fill="#48bb78"/>
+<line x1="545.0" y1="98" x2="545.0" y2="172" stroke="#48bb78" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="545.0" cy="98" r="5" fill="#48bb78"/>
+<line x1="608.3" y1="98" x2="608.3" y2="172" stroke="#48bb78" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="608.3" cy="98" r="5" fill="#48bb78"/>
+<line x1="671.7" y1="98" x2="671.7" y2="172" stroke="#48bb78" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="671.7" cy="98" r="5" fill="#48bb78"/>
+<text x="70.0" y="84.0" font-size="12" fill="#7ecfa0" text-anchor="start" font-weight="bold">receiver at 9600: samples land mid-bit</text>
+<rect x="630.0" y="179.0" width="160" height="26" rx="13.0" fill="#48bb78"/>
+<rect x="630.0" y="179.0" width="160" height="26" rx="13.0" fill="url(#gloss)"/>
+<text x="710.0" y="196.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">gets "A"</text>
+<polyline points="70.0,260.0 133.3,260.0 133.3,310.0 196.7,310.0 196.7,260.0 260.0,260.0 260.0,310.0 323.3,310.0 323.3,310.0 386.7,310.0 386.7,310.0 450.0,310.0 450.0,310.0 513.3,310.0 513.3,310.0 576.7,310.0 576.7,260.0 640.0,260.0 640.0,310.0 703.3,310.0 703.3,260.0 766.7,260.0 766.7,260.0 830.0,260.0" fill="none" stroke="#90cdf4" stroke-width="3" stroke-linejoin="round" filter="url(#softglow)"/>
+<line x1="180.8" y1="248" x2="180.8" y2="322" stroke="#fc8181" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="180.8" cy="248" r="5" fill="#fc8181"/>
+<line x1="212.5" y1="248" x2="212.5" y2="322" stroke="#fc8181" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="212.5" cy="248" r="5" fill="#fc8181"/>
+<line x1="244.2" y1="248" x2="244.2" y2="322" stroke="#fc8181" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="244.2" cy="248" r="5" fill="#fc8181"/>
+<line x1="275.8" y1="248" x2="275.8" y2="322" stroke="#fc8181" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="275.8" cy="248" r="5" fill="#fc8181"/>
+<line x1="307.5" y1="248" x2="307.5" y2="322" stroke="#fc8181" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="307.5" cy="248" r="5" fill="#fc8181"/>
+<line x1="339.2" y1="248" x2="339.2" y2="322" stroke="#fc8181" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="339.2" cy="248" r="5" fill="#fc8181"/>
+<line x1="370.8" y1="248" x2="370.8" y2="322" stroke="#fc8181" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="370.8" cy="248" r="5" fill="#fc8181"/>
+<line x1="402.5" y1="248" x2="402.5" y2="322" stroke="#fc8181" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="402.5" cy="248" r="5" fill="#fc8181"/>
+<text x="70.0" y="234.0" font-size="12" fill="#fca6a6" text-anchor="start" font-weight="bold">receiver at 19200: samples bunch up early</text>
+<rect x="560.0" y="329.0" width="300" height="26" rx="13.0" fill="#fc8181"/>
+<rect x="560.0" y="329.0" width="300" height="26" rx="13.0" fill="url(#gloss)"/>
+<text x="710.0" y="346.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">gets "0x06", no stop bit: framing error</text>
+<polyline points="70.0,410.0 133.3,410.0 133.3,460.0 196.7,460.0 196.7,410.0 260.0,410.0 260.0,460.0 323.3,460.0 323.3,460.0 386.7,460.0 386.7,460.0 450.0,460.0 450.0,460.0 513.3,460.0 513.3,460.0 576.7,460.0 576.7,410.0 640.0,410.0 640.0,460.0 703.3,460.0 703.3,410.0 766.7,410.0 766.7,410.0 830.0,410.0" fill="none" stroke="#90cdf4" stroke-width="3" stroke-linejoin="round" filter="url(#softglow)"/>
+<line x1="323.3" y1="398" x2="323.3" y2="472" stroke="#fc8181" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="323.3" cy="398" r="5" fill="#fc8181"/>
+<line x1="450.0" y1="398" x2="450.0" y2="472" stroke="#fc8181" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="450.0" cy="398" r="5" fill="#fc8181"/>
+<line x1="576.7" y1="398" x2="576.7" y2="472" stroke="#fc8181" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="576.7" cy="398" r="5" fill="#fc8181"/>
+<line x1="703.3" y1="398" x2="703.3" y2="472" stroke="#fc8181" stroke-width="1.5" stroke-dasharray="3 3"/>
+<circle cx="703.3" cy="398" r="5" fill="#fc8181"/>
+<text x="70.0" y="384.0" font-size="12" fill="#fca6a6" text-anchor="start" font-weight="bold">receiver at 4800: samples run past the end</text>
+<rect x="630.0" y="479.0" width="160" height="26" rx="13.0" fill="#fc8181"/>
+<rect x="630.0" y="479.0" width="160" height="26" rx="13.0" fill="url(#gloss)"/>
+<text x="710.0" y="496.3" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">gets "ü"</text>
+</svg>

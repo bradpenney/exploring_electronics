@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Five panels: a ceramic capacitor marked 47, meaning 47 picofarads; a ceramic capacitor marked 104, meaning 100 nanofarads; an electrolytic capacitor marked 10 microfarads; a resistor printed 4K7, meaning 4.7 kilohms; and a radio display reading 7.040 megahertz, which is 7040 kilohertz.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="elec" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1b4672"/><stop offset="0.22" stop-color="#8aaed3"/><stop offset="0.5" stop-color="#2b6cb0"/><stop offset="1" stop-color="#112b46"/></linearGradient><linearGradient id="resb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#264876"/><stop offset="0.22" stop-color="#93afd6"/><stop offset="0.5" stop-color="#3b6fb6"/><stop offset="1" stop-color="#172c48"/></linearGradient></defs>
+<text x="440.0" y="34.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Prefixes as they're actually printed on parts and dials</text>
+<rect x="22" y="52" width="156" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<line x1="92" y1="180" x2="92" y2="240" stroke="#cbd5e0" stroke-width="3"/>
+<line x1="108" y1="180" x2="108" y2="240" stroke="#cbd5e0" stroke-width="3"/>
+<ellipse cx="100" cy="160" rx="34" ry="30" fill="url(#goldball)"/>
+<text x="100.0" y="166.0" font-size="16" fill="#1a1a1a" text-anchor="middle" font-weight="bold">47</text>
+<text x="100.0" y="290.0" font-size="20" fill="#fbbf24" text-anchor="middle" font-weight="bold">47 pF</text>
+<text x="100.0" y="316.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">marked 47 or 47p</text>
+<text x="100.0" y="340.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">ceramic capacitor</text>
+<rect x="192" y="52" width="156" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<line x1="262" y1="180" x2="262" y2="240" stroke="#cbd5e0" stroke-width="3"/>
+<line x1="278" y1="180" x2="278" y2="240" stroke="#cbd5e0" stroke-width="3"/>
+<ellipse cx="270" cy="160" rx="34" ry="30" fill="url(#copperball)"/>
+<text x="270.0" y="166.0" font-size="16" fill="#1a1a1a" text-anchor="middle" font-weight="bold">104</text>
+<text x="270.0" y="290.0" font-size="20" fill="#fbbf24" text-anchor="middle" font-weight="bold">100 nF</text>
+<text x="270.0" y="316.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">marked 104</text>
+<text x="270.0" y="340.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">ceramic capacitor</text>
+<rect x="362" y="52" width="156" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="414" y="114" width="52" height="96" rx="8" fill="url(#elec)"/>
+<ellipse cx="440" cy="114" rx="26" ry="8" fill="#a0aec0"/>
+<text x="440.0" y="166.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">10µF</text>
+<rect x="452" y="120" width="10" height="86" fill="#e2e8f0" fill-opacity="0.6"/>
+<line x1="430" y1="210" x2="430" y2="244" stroke="#cbd5e0" stroke-width="3"/>
+<line x1="450" y1="210" x2="450" y2="236" stroke="#cbd5e0" stroke-width="3"/>
+<text x="440.0" y="290.0" font-size="20" fill="#fbbf24" text-anchor="middle" font-weight="bold">10 µF</text>
+<text x="440.0" y="316.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">marked 10µF</text>
+<text x="440.0" y="340.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">electrolytic capacitor</text>
+<rect x="532" y="52" width="156" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="540" y="158" width="140" height="5" rx="2" fill="#cbd5e0"/>
+<rect x="566" y="142" width="88" height="36" rx="18" fill="url(#resb)"/>
+<text x="610.0" y="165.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">4K7</text>
+<text x="610.0" y="290.0" font-size="20" fill="#fbbf24" text-anchor="middle" font-weight="bold">4.7 kΩ</text>
+<text x="610.0" y="316.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">printed 4K7</text>
+<text x="610.0" y="340.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">metal-film resistor</text>
+<rect x="702" y="52" width="156" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="720" y="126" width="120" height="58" rx="8" fill="#1a1d23" stroke="#9ae6b4" stroke-opacity="0.5"/>
+<text x="780.0" y="166.0" font-size="20" fill="#9ae6b4" text-anchor="middle" font-weight="bold">7.040.00</text>
+<text x="780.0" y="210.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">MHz</text>
+<text x="780.0" y="290.0" font-size="20" fill="#fbbf24" text-anchor="middle" font-weight="bold">7.040 MHz</text>
+<text x="780.0" y="316.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">= 7040 kHz</text>
+<text x="780.0" y="340.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">radio frequency</text>
+</svg>

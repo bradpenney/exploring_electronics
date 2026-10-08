@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Five kinds of capacitor. Ceramic, an orange disc marked 104, 1 picofarad to about 10 microfarads, no polarity. Film, a red box, 1 nanofarad to about 10 microfarads, no polarity. Aluminium electrolytic, a blue can with a stripe of minus signs and a shorter negative lead, 1 to 100,000 microfarads. Tantalum, a yellow bead marked plus, polarized the other way. Supercapacitor, a dark block marked 1 farad 5.5 volts.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="alcan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b4672"/><stop offset="0.22" stop-color="#8aaed3"/><stop offset="0.5" stop-color="#2b6cb0"/><stop offset="1" stop-color="#112b46"/></linearGradient><linearGradient id="supcap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d232e"/><stop offset="0.22" stop-color="#8b919a"/><stop offset="0.5" stop-color="#2d3748"/><stop offset="1" stop-color="#12161c"/></linearGradient><linearGradient id="tant" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8b661d"/><stop offset="0.22" stop-color="#e8c98c"/><stop offset="0.5" stop-color="#d69e2e"/><stop offset="1" stop-color="#553f12"/></linearGradient></defs>
+<rect x="13" y="20" width="164" height="360" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<ellipse cx="95" cy="160" rx="38" ry="34" fill="#dd8a3c"/>
+<ellipse cx="85" cy="148" rx="16" ry="10" fill="#ffffff" fill-opacity="0.35"/>
+<text x="95.0" y="166.0" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold">104</text>
+<rect x="81" y="210" width="4" height="50" fill="#cbd5e0"/>
+<rect x="105" y="210" width="4" height="50" fill="#cbd5e0"/>
+<text x="95.0" y="290.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Ceramic</text>
+<text x="95.0" y="314.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">1 pF to ~10 µF</text>
+<text x="95.0" y="336.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">no polarity</text>
+<rect x="190" y="20" width="164" height="360" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<ellipse cx="277.1" cy="195.0" rx="45.1" ry="5.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="238.0,126.0 298.0,126.0 316.2,114.3 256.2,114.3" fill="#d66e6e"/>
+<rect x="238.0" y="126.0" width="60.0" height="64.0" fill="#c53030"/>
+<rect x="238.0" y="126.0" width="60.0" height="64.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="298.0,190.0 298.0,126.0 316.2,114.3 316.2,178.3" fill="#6c1a1a"/>
+<text x="268.0" y="164.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">.1J</text>
+<rect x="254" y="210" width="4" height="50" fill="#cbd5e0"/>
+<rect x="286" y="210" width="4" height="50" fill="#cbd5e0"/>
+<text x="272.0" y="290.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Film</text>
+<text x="272.0" y="314.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">1 nF to ~10 µF</text>
+<text x="272.0" y="336.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">no polarity</text>
+<rect x="367" y="20" width="164" height="360" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="419" y="100" width="60" height="110" rx="8" fill="url(#alcan)"/>
+<rect x="461" y="100" width="14" height="110" fill="#e2e8f0" fill-opacity="0.85"/>
+<text x="468.0" y="124.0" font-size="13" fill="#2b6cb0" text-anchor="middle" font-weight="bold">−</text>
+<text x="468.0" y="148.0" font-size="13" fill="#2b6cb0" text-anchor="middle" font-weight="bold">−</text>
+<text x="468.0" y="172.0" font-size="13" fill="#2b6cb0" text-anchor="middle" font-weight="bold">−</text>
+<text x="468.0" y="196.0" font-size="13" fill="#2b6cb0" text-anchor="middle" font-weight="bold">−</text>
+<rect x="459" y="210" width="4" height="36" fill="#cbd5e0"/>
+<rect x="435" y="210" width="4" height="50" fill="#cbd5e0"/>
+<text x="449.0" y="290.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Electrolytic</text>
+<text x="449.0" y="314.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">1 µF to 100,000 µF</text>
+<text x="449.0" y="336.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">polarized: stripe = −</text>
+<rect x="544" y="20" width="164" height="360" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<ellipse cx="626" cy="160" rx="30" ry="38" fill="url(#tant)"/>
+<text x="626.0" y="166.0" font-size="18" fill="#1a1a1a" text-anchor="middle" font-weight="bold">+</text>
+<rect x="614" y="210" width="4" height="50" fill="#cbd5e0"/>
+<rect x="634" y="210" width="4" height="50" fill="#cbd5e0"/>
+<text x="626.0" y="290.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Tantalum</text>
+<text x="626.0" y="314.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">0.1 µF to ~1,000 µF</text>
+<text x="626.0" y="336.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">polarized: stripe = +</text>
+<rect x="721" y="20" width="164" height="360" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="761" y="120" width="84" height="86" rx="10" fill="url(#supcap)"/>
+<text x="803.0" y="160.0" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">1 F</text>
+<text x="803.0" y="180.0" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="normal">5.5 V</text>
+<rect x="783" y="210" width="4" height="50" fill="#cbd5e0"/>
+<rect x="819" y="210" width="4" height="50" fill="#cbd5e0"/>
+<text x="803.0" y="290.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Supercapacitor</text>
+<text x="803.0" y="314.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">0.1 F to thousands of F</text>
+<text x="803.0" y="336.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">polarized, low voltage</text>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 210" width="1000" height="210" style="max-width:100%;height:auto" role="group" aria-labelledby="co-title co-desc" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title id="co-title">Components reading order, as a transit map</title>
+<desc id="co-desc">One line through seven stops in three stages. Resistors: Color Codes, Resistor Types; Valves for current: Diodes and LEDs, Transistors, Vacuum Tubes; Sensors and packages: Temperature Sensors, Package Types. Every stop is a link to its article.</desc>
+<style>.tm-stop .tm-ring{stroke:#1a202c;stroke-width:3;transition:stroke .15s}.tm-stop:hover .tm-ring,.tm-stop:focus-visible .tm-ring{stroke:#ffffff;stroke-width:4}.tm-stop:hover .tm-lbl,.tm-stop:focus-visible .tm-lbl{fill:#ffffff;text-decoration:underline}.tm-stop:focus{outline:none}</style>
+<defs>
+<linearGradient id="co-panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient>
+<radialGradient id="co-ball-48bb78" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#b5e3c9"/><stop offset="0.45" stop-color="#48bb78"/><stop offset="1" stop-color="#205435"/></radialGradient>
+<radialGradient id="co-ball-9f7aea" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#d8c9f6"/><stop offset="0.45" stop-color="#9f7aea"/><stop offset="1" stop-color="#473669"/></radialGradient>
+<radialGradient id="co-ball-f59e0b" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fbd89d"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#6e4704"/></radialGradient>
+</defs>
+<rect x="15" y="15" width="970" height="180" rx="14" fill="url(#co-panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="500.0" y="46.0" font-size="13" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">Click any stop to open its article</text>
+<path d="M112.0,120 L241.3,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M112.0,120 L241.3,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#f59e0b" stroke-width="10"/>
+<path d="M112.0,120 L241.3,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#face85" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M241.3,120 L370.7,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M241.3,120 L370.7,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#f59e0b" stroke-width="10"/>
+<path d="M241.3,120 L370.7,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#face85" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M370.7,120 L500.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M370.7,120 L500.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#9f7aea" stroke-width="10"/>
+<path d="M370.7,120 L500.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#cfbcf4" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M500.0,120 L629.3,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M500.0,120 L629.3,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#9f7aea" stroke-width="10"/>
+<path d="M500.0,120 L629.3,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#cfbcf4" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M629.3,120 L758.7,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M629.3,120 L758.7,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#9f7aea" stroke-width="10"/>
+<path d="M629.3,120 L758.7,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#cfbcf4" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M758.7,120 L888.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M758.7,120 L888.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#48bb78" stroke-width="10"/>
+<path d="M758.7,120 L888.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#a3ddbb" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<text x="176.7" y="88.0" font-size="13" fill="#f7b648" text-anchor="middle" font-weight="bold">Resistors</text>
+<text x="500.0" y="88.0" font-size="13" fill="#b79bef" text-anchor="middle" font-weight="bold">Valves for current</text>
+<text x="823.3" y="88.0" font-size="13" fill="#75cc99" text-anchor="middle" font-weight="bold">Sensors and packages</text>
+<a class="tm-stop" href="../resistor_color_codes/" aria-label="1. Color Codes">
+<title>1. Color Codes</title>
+<circle cx="114.0" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="112.0" cy="120" r="15" fill="url(#co-ball-f59e0b)"/>
+<text x="112.0" y="125" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="bold">1</text>
+<text class="tm-lbl" x="112.0" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Color Codes</text>
+</a>
+<a class="tm-stop" href="../resistor_types/" aria-label="2. Resistor Types">
+<title>2. Resistor Types</title>
+<circle cx="243.3" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="241.3" cy="120" r="15" fill="url(#co-ball-f59e0b)"/>
+<text x="241.3" y="125" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="bold">2</text>
+<text class="tm-lbl" x="241.3" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Resistor Types</text>
+</a>
+<a class="tm-stop" href="../diodes_and_leds/" aria-label="3. Diodes and LEDs">
+<title>3. Diodes and LEDs</title>
+<circle cx="372.7" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="370.7" cy="120" r="15" fill="url(#co-ball-9f7aea)"/>
+<text x="370.7" y="125" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">3</text>
+<text class="tm-lbl" x="370.7" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Diodes</text>
+<text class="tm-lbl" x="370.7" y="176" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">and LEDs</text>
+</a>
+<a class="tm-stop" href="../transistors/" aria-label="4. Transistors">
+<title>4. Transistors</title>
+<circle cx="502.0" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="500.0" cy="120" r="15" fill="url(#co-ball-9f7aea)"/>
+<text x="500.0" y="125" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">4</text>
+<text class="tm-lbl" x="500.0" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Transistors</text>
+</a>
+<a class="tm-stop" href="../vacuum_tubes/" aria-label="5. Vacuum Tubes">
+<title>5. Vacuum Tubes</title>
+<circle cx="631.3" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="629.3" cy="120" r="15" fill="url(#co-ball-9f7aea)"/>
+<text x="629.3" y="125" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">5</text>
+<text class="tm-lbl" x="629.3" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Vacuum Tubes</text>
+</a>
+<a class="tm-stop" href="../temperature_sensors/" aria-label="6. Temperature Sensors">
+<title>6. Temperature Sensors</title>
+<circle cx="760.7" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="758.7" cy="120" r="15" fill="url(#co-ball-48bb78)"/>
+<text x="758.7" y="125" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">6</text>
+<text class="tm-lbl" x="758.7" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Temperature</text>
+<text class="tm-lbl" x="758.7" y="176" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Sensors</text>
+</a>
+<a class="tm-stop" href="../package_types/" aria-label="7. Package Types">
+<title>7. Package Types</title>
+<circle cx="890.0" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="888.0" cy="120" r="15" fill="url(#co-ball-48bb78)"/>
+<text x="888.0" y="125" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">7</text>
+<text class="tm-lbl" x="888.0" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Package Types</text>
+</a>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" width="800" height="330" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A log scale of voltages from a 0.6 volt solar cell through a 1.5 volt AA cell, 5 volt USB, a 12.6 volt car battery and a 120 volt outlet, up to a 735 kilovolt Hydro-Québec transmission line and 300 megavolt lightning</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="vbands" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#48bb78"/><stop offset="0.270" stop-color="#48bb78"/><stop offset="0.270" stop-color="#fc8181"/><stop offset="1" stop-color="#fc8181"/></linearGradient></defs>
+<rect x="15" y="15" width="770" height="300" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="50" y="140" width="700" height="28" rx="14" fill="url(#vbands)" fill-opacity="0.5"/>
+<rect x="50" y="140" width="700" height="28" rx="14" fill="url(#gloss)" stroke="#e2e8f0" stroke-opacity="0.35"/>
+<line x1="50.0" y1="168" x2="50.0" y2="174" stroke="#a0aec0"/>
+<text x="50.0" y="190" font-size="11" fill="#a0aec0" text-anchor="middle">10<tspan dy="-5" font-size="8">-1</tspan></text>
+<line x1="120.0" y1="168" x2="120.0" y2="174" stroke="#a0aec0"/>
+<text x="120.0" y="190" font-size="11" fill="#a0aec0" text-anchor="middle">10<tspan dy="-5" font-size="8">0</tspan></text>
+<line x1="190.0" y1="168" x2="190.0" y2="174" stroke="#a0aec0"/>
+<text x="190.0" y="190" font-size="11" fill="#a0aec0" text-anchor="middle">10<tspan dy="-5" font-size="8">1</tspan></text>
+<line x1="260.0" y1="168" x2="260.0" y2="174" stroke="#a0aec0"/>
+<text x="260.0" y="190" font-size="11" fill="#a0aec0" text-anchor="middle">10<tspan dy="-5" font-size="8">2</tspan></text>
+<line x1="330.0" y1="168" x2="330.0" y2="174" stroke="#a0aec0"/>
+<text x="330.0" y="190" font-size="11" fill="#a0aec0" text-anchor="middle">10<tspan dy="-5" font-size="8">3</tspan></text>
+<line x1="400.0" y1="168" x2="400.0" y2="174" stroke="#a0aec0"/>
+<text x="400.0" y="190" font-size="11" fill="#a0aec0" text-anchor="middle">10<tspan dy="-5" font-size="8">4</tspan></text>
+<line x1="470.0" y1="168" x2="470.0" y2="174" stroke="#a0aec0"/>
+<text x="470.0" y="190" font-size="11" fill="#a0aec0" text-anchor="middle">10<tspan dy="-5" font-size="8">5</tspan></text>
+<line x1="540.0" y1="168" x2="540.0" y2="174" stroke="#a0aec0"/>
+<text x="540.0" y="190" font-size="11" fill="#a0aec0" text-anchor="middle">10<tspan dy="-5" font-size="8">6</tspan></text>
+<line x1="610.0" y1="168" x2="610.0" y2="174" stroke="#a0aec0"/>
+<text x="610.0" y="190" font-size="11" fill="#a0aec0" text-anchor="middle">10<tspan dy="-5" font-size="8">7</tspan></text>
+<line x1="680.0" y1="168" x2="680.0" y2="174" stroke="#a0aec0"/>
+<text x="680.0" y="190" font-size="11" fill="#a0aec0" text-anchor="middle">10<tspan dy="-5" font-size="8">8</tspan></text>
+<line x1="750.0" y1="168" x2="750.0" y2="174" stroke="#a0aec0"/>
+<text x="750.0" y="190" font-size="11" fill="#a0aec0" text-anchor="middle">10<tspan dy="-5" font-size="8">9</tspan></text>
+<circle cx="104.5" cy="154.0" r="8" fill="url(#eball)"/>
+<line x1="104.5" y1="138" x2="104.5" y2="120" stroke="#a0aec0"/>
+<text x="104.5" y="98.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">solar cell</text>
+<text x="104.5" y="114.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">0.6 V</text>
+<circle cx="132.3" cy="154.0" r="8" fill="url(#eball)"/>
+<line x1="132.3" y1="196" x2="132.3" y2="216" stroke="#a0aec0"/>
+<text x="132.3" y="230.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">AA cell</text>
+<text x="132.3" y="246.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">1.5 V</text>
+<circle cx="168.9" cy="154.0" r="8" fill="url(#eball)"/>
+<line x1="168.9" y1="138" x2="168.9" y2="120" stroke="#a0aec0"/>
+<text x="168.9" y="98.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">USB</text>
+<text x="168.9" y="114.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">5 V</text>
+<circle cx="197.0" cy="154.0" r="8" fill="url(#eball)"/>
+<line x1="197.0" y1="196" x2="197.0" y2="216" stroke="#a0aec0"/>
+<text x="197.0" y="230.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">car battery</text>
+<text x="197.0" y="246.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">12.6 V</text>
+<circle cx="265.5" cy="154.0" r="8" fill="url(#eball)"/>
+<line x1="265.5" y1="138" x2="265.5" y2="120" stroke="#a0aec0"/>
+<text x="265.5" y="98.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">outlet</text>
+<text x="265.5" y="114.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">120 V</text>
+<circle cx="530.6" cy="154.0" r="8" fill="url(#eball)"/>
+<line x1="530.6" y1="138" x2="530.6" y2="120" stroke="#a0aec0"/>
+<text x="530.6" y="98.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Hydro-Québec line</text>
+<text x="530.6" y="114.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">735 kV</text>
+<circle cx="713.4" cy="154.0" r="8" fill="url(#eball)"/>
+<line x1="713.4" y1="196" x2="713.4" y2="216" stroke="#a0aec0"/>
+<text x="713.4" y="230.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">lightning</text>
+<text x="713.4" y="246.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">300 MV</text>
+<text x="400.0" y="46.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Voltages you'll meet, log scale: each tick is 10×</text>
+<text x="400.0" y="300.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">green: under about 50 V, where hobby circuits live · red: mains and above, can kill</text>
+</svg>

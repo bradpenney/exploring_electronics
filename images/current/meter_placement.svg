@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" width="800" height="470" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Two panels. Left: measuring voltage, a meter's probes touch either side of a resistor and it reads 7.0 volts while the circuit stays whole. Right: measuring current, the wire is cut and the meter's probes bridge the gap so all the current flows through the meter, which reads 21.2 milliamps.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="resbody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8d7454"/><stop offset="0.22" stop-color="#ead5ba"/><stop offset="0.5" stop-color="#d9b382"/><stop offset="1" stop-color="#564734"/></linearGradient></defs>
+<rect x="15" y="15" width="375" height="440" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="410" y="15" width="375" height="440" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="202.0" y="48.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Voltage: meter across</text>
+<text x="202.0" y="68.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">the circuit stays whole</text>
+<polyline points="40,130 147,130" fill="none" stroke="#3a1d0c" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="40,130 147,130" fill="none" stroke="#b8673a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="40,130 147,130" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<polyline points="257,130 365,130" fill="none" stroke="#3a1d0c" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="257,130 365,130" fill="none" stroke="#b8673a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="257,130 365,130" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<rect x="147" y="115" width="110" height="30" rx="15" fill="url(#resbody)"/>
+<rect x="169" y="116" width="8" height="28" fill="#f6ad55"/>
+<rect x="185" y="116" width="8" height="28" fill="#f6ad55"/>
+<rect x="201" y="116" width="8" height="28" fill="#8b4513"/>
+<rect x="231" y="116" width="8" height="28" fill="#d4af37"/>
+<ellipse cx="202.0" cy="386" rx="68.0" ry="8" fill="#000" fill-opacity="0.4"/>
+<rect x="142" y="230" width="120" height="150" rx="14" fill="#d69e2e"/>
+<rect x="150" y="238" width="104" height="134" rx="10" fill="#1a1d23"/>
+<rect x="142" y="230" width="120" height="150" rx="14" fill="url(#gloss)" opacity="0.5"/>
+<rect x="158" y="248" width="88" height="42" rx="4" fill="#9ae6b4"/>
+<rect x="158" y="248" width="88" height="14" rx="4" fill="#ffffff" fill-opacity="0.25"/>
+<text x="202.0" y="278.0" font-size="22" fill="#1a202c" text-anchor="middle" font-weight="bold">7.0</text>
+<circle cx="202.0" cy="330" r="22" fill="url(#core)"/>
+<line x1="202.0" y1="330" x2="190.0" y2="314" stroke="#f7fafc" stroke-width="3"/>
+<text x="236.0" y="322.0" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="bold">V⎓</text>
+<circle cx="176" cy="366" r="6" fill="#e53e3e"/>
+<circle cx="228" cy="366" r="7.5" fill="#cbd5e0" fill-opacity="0.55"/>
+<circle cx="228" cy="366" r="6" fill="#111"/>
+<path d="M176,366 Q161.5,426 147,152" fill="none" stroke="#cbd5e0" stroke-opacity="0.55" stroke-width="7.5"/>
+<path d="M176,366 Q161.5,426 147,152" fill="none" stroke="#e53e3e" stroke-width="4.5"/>
+<path d="M176,366 Q161.5,426 147,152" fill="none" stroke="#f3a8a8" stroke-opacity="0.8" stroke-width="1.4" transform="translate(-1,-1)"/>
+<rect x="140.5" y="130.5" width="13" height="29" rx="5" fill="#cbd5e0" fill-opacity="0.55"/>
+<rect x="142" y="132" width="10" height="26" rx="4" fill="#e53e3e"/>
+<rect x="144" y="134" width="2.5" height="22" rx="1" fill="#f3a8a8" fill-opacity="0.7"/>
+<line x1="147" y1="132" x2="147" y2="124" stroke="#e2e8f0" stroke-width="2.5"/>
+<path d="M228,366 Q242.5,426 257,152" fill="none" stroke="#cbd5e0" stroke-opacity="0.55" stroke-width="7.5"/>
+<path d="M228,366 Q242.5,426 257,152" fill="none" stroke="#111" stroke-width="4.5"/>
+<path d="M228,366 Q242.5,426 257,152" fill="none" stroke="#718096" stroke-opacity="0.8" stroke-width="1.4" transform="translate(-1,-1)"/>
+<rect x="250.5" y="130.5" width="13" height="29" rx="5" fill="#cbd5e0" fill-opacity="0.55"/>
+<rect x="252" y="132" width="10" height="26" rx="4" fill="#111"/>
+<rect x="254" y="134" width="2.5" height="22" rx="1" fill="#718096" fill-opacity="0.7"/>
+<line x1="257" y1="132" x2="257" y2="124" stroke="#e2e8f0" stroke-width="2.5"/>
+<text x="202.0" y="430.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">probes on either side of the part</text>
+<text x="597.0" y="48.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Current: meter in line</text>
+<text x="597.0" y="68.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">break the circuit; the meter closes the gap</text>
+<polyline points="430,130 520,130" fill="none" stroke="#3a1d0c" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="430,130 520,130" fill="none" stroke="#b8673a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="430,130 520,130" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<rect x="520" y="115" width="110" height="30" rx="15" fill="url(#resbody)"/>
+<rect x="542" y="116" width="8" height="28" fill="#f6ad55"/>
+<rect x="558" y="116" width="8" height="28" fill="#f6ad55"/>
+<rect x="574" y="116" width="8" height="28" fill="#8b4513"/>
+<rect x="604" y="116" width="8" height="28" fill="#d4af37"/>
+<polyline points="630,130 660,130" fill="none" stroke="#3a1d0c" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="630,130 660,130" fill="none" stroke="#b8673a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="630,130 660,130" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<path d="M660,130 l8,-10 m-8,10 l-6,-10" stroke="#fc8181" stroke-width="2"/>
+<polyline points="715,130 760,130" fill="none" stroke="#3a1d0c" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="715,130 760,130" fill="none" stroke="#b8673a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="715,130 760,130" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<text x="688.0" y="108.0" font-size="11" fill="#fc8181" text-anchor="middle" font-weight="normal" font-style="italic">gap</text>
+<ellipse cx="597.0" cy="386" rx="68.0" ry="8" fill="#000" fill-opacity="0.4"/>
+<rect x="537" y="230" width="120" height="150" rx="14" fill="#d69e2e"/>
+<rect x="545" y="238" width="104" height="134" rx="10" fill="#1a1d23"/>
+<rect x="537" y="230" width="120" height="150" rx="14" fill="url(#gloss)" opacity="0.5"/>
+<rect x="553" y="248" width="88" height="42" rx="4" fill="#9ae6b4"/>
+<rect x="553" y="248" width="88" height="14" rx="4" fill="#ffffff" fill-opacity="0.25"/>
+<text x="597.0" y="278.0" font-size="17" fill="#1a202c" text-anchor="middle" font-weight="bold">21.2 mA</text>
+<circle cx="597.0" cy="330" r="22" fill="url(#core)"/>
+<line x1="597.0" y1="330" x2="585.0" y2="314" stroke="#f7fafc" stroke-width="3"/>
+<text x="631.0" y="322.0" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="bold">A⎓</text>
+<circle cx="571" cy="366" r="6" fill="#e53e3e"/>
+<circle cx="623" cy="366" r="7.5" fill="#cbd5e0" fill-opacity="0.55"/>
+<circle cx="623" cy="366" r="6" fill="#111"/>
+<path d="M571,366 Q615.5,426 660,152" fill="none" stroke="#cbd5e0" stroke-opacity="0.55" stroke-width="7.5"/>
+<path d="M571,366 Q615.5,426 660,152" fill="none" stroke="#e53e3e" stroke-width="4.5"/>
+<path d="M571,366 Q615.5,426 660,152" fill="none" stroke="#f3a8a8" stroke-opacity="0.8" stroke-width="1.4" transform="translate(-1,-1)"/>
+<rect x="653.5" y="130.5" width="13" height="29" rx="5" fill="#cbd5e0" fill-opacity="0.55"/>
+<rect x="655" y="132" width="10" height="26" rx="4" fill="#e53e3e"/>
+<rect x="657" y="134" width="2.5" height="22" rx="1" fill="#f3a8a8" fill-opacity="0.7"/>
+<line x1="660" y1="132" x2="660" y2="124" stroke="#e2e8f0" stroke-width="2.5"/>
+<path d="M623,366 Q669.0,426 715,152" fill="none" stroke="#cbd5e0" stroke-opacity="0.55" stroke-width="7.5"/>
+<path d="M623,366 Q669.0,426 715,152" fill="none" stroke="#111" stroke-width="4.5"/>
+<path d="M623,366 Q669.0,426 715,152" fill="none" stroke="#718096" stroke-opacity="0.8" stroke-width="1.4" transform="translate(-1,-1)"/>
+<rect x="708.5" y="130.5" width="13" height="29" rx="5" fill="#cbd5e0" fill-opacity="0.55"/>
+<rect x="710" y="132" width="10" height="26" rx="4" fill="#111"/>
+<rect x="712" y="134" width="2.5" height="22" rx="1" fill="#718096" fill-opacity="0.7"/>
+<line x1="715" y1="132" x2="715" y2="124" stroke="#e2e8f0" stroke-width="2.5"/>
+<text x="597.0" y="420.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">all the current now flows through the meter</text>
+<text x="597.0" y="438.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">(red lead moved to the mA jack)</text>
+</svg>

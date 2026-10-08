@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="800" height="380" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A wire between a positive and a negative terminal. An amber arrow labelled conventional current points from plus to minus. Below, the electrons in the wire and a blue arrow labelled electron flow point the other way, from minus to plus.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="battx" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9f6607"/><stop offset="0.22" stop-color="#f9c978"/><stop offset="0.5" stop-color="#f59e0b"/><stop offset="1" stop-color="#623f04"/></linearGradient><radialGradient id="midball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fde8c0"/><stop offset="0.45" stop-color="#b7791f"/><stop offset="1" stop-color="#4a2c0a"/></radialGradient><radialGradient id="lowball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><marker id="arrowblue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#90cdf4"/></marker></defs>
+<rect x="15" y="15" width="770" height="350" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="400.0" y="46.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Two conventions, one current</text>
+<polyline points="100,200 700,200" fill="none" stroke="#3a1d0c" stroke-width="17" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="100,200 700,200" fill="none" stroke="#b8673a" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="100,200 700,200" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<rect x="48.0" y="178.0" width="44" height="44" rx="22.0" fill="#d97706"/>
+<rect x="48.0" y="178.0" width="44" height="44" rx="22.0" fill="url(#gloss)"/>
+<text x="70.0" y="206.5" font-size="18" fill="#1a1a1a" text-anchor="middle" font-weight="bold">+</text>
+<rect x="708.0" y="178.0" width="44" height="44" rx="22.0" fill="#2d3748"/>
+<rect x="708.0" y="178.0" width="44" height="44" rx="22.0" fill="url(#gloss)"/>
+<text x="730.0" y="206.5" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">−</text>
+<line x1="150" y1="140" x2="650" y2="140" stroke="#f59e0b" stroke-width="6" marker-end="url(#arrow)"/>
+<text x="400.0" y="120.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Conventional current: + to −</text>
+<text x="400.0" y="102.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">the direction every schematic and every formula uses</text>
+<circle cx="150.0" cy="200.0" r="6" fill="url(#eball)"/>
+<circle cx="195.0" cy="200.0" r="6" fill="url(#eball)"/>
+<circle cx="240.0" cy="200.0" r="6" fill="url(#eball)"/>
+<circle cx="285.0" cy="200.0" r="6" fill="url(#eball)"/>
+<circle cx="330.0" cy="200.0" r="6" fill="url(#eball)"/>
+<circle cx="375.0" cy="200.0" r="6" fill="url(#eball)"/>
+<circle cx="420.0" cy="200.0" r="6" fill="url(#eball)"/>
+<circle cx="465.0" cy="200.0" r="6" fill="url(#eball)"/>
+<circle cx="510.0" cy="200.0" r="6" fill="url(#eball)"/>
+<circle cx="555.0" cy="200.0" r="6" fill="url(#eball)"/>
+<circle cx="600.0" cy="200.0" r="6" fill="url(#eball)"/>
+<circle cx="645.0" cy="200.0" r="6" fill="url(#eball)"/>
+<line x1="650" y1="262" x2="150" y2="262" stroke="#90cdf4" stroke-width="6" marker-end="url(#arrowblue)"/>
+<text x="400.0" y="296.0" font-size="15" fill="#90cdf4" text-anchor="middle" font-weight="bold">Electron flow: − to +</text>
+<text x="400.0" y="316.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">what the electrons physically do (they carry negative charge)</text>
+<text x="400.0" y="350.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">The convention came first, in the 1700s; the electron wasn't discovered until 1897</text>
+</svg>

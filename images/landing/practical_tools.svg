@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="1000" height="360" style="max-width:100%;height:auto" role="group" aria-labelledby="pt-title pt-desc" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title id="pt-title">Practical Tools and multimeter settings, as a transit map</title>
+<desc id="pt-desc">Two separate lines: the tool articles, and the multimeter settings. On the shelf: Breadboards, arduino-cli, Multimeter, Bench Supply, Soldering; Multimeter settings, taught in Circuit Foundations: Voltage, Current, Resistance, Continuity. Every stop is a link to its article.</desc>
+<style>.tm-stop .tm-ring{stroke:#1a202c;stroke-width:3;transition:stroke .15s}.tm-stop:hover .tm-ring,.tm-stop:focus-visible .tm-ring{stroke:#ffffff;stroke-width:4}.tm-stop:hover .tm-lbl,.tm-stop:focus-visible .tm-lbl{fill:#ffffff;text-decoration:underline}.tm-stop:focus{outline:none}</style>
+<defs>
+<linearGradient id="pt-panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient>
+<radialGradient id="pt-ball-38b2ac" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#afe0dd"/><stop offset="0.45" stop-color="#38b2ac"/><stop offset="1" stop-color="#19504d"/></radialGradient>
+<radialGradient id="pt-ball-f59e0b" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fbd89d"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#6e4704"/></radialGradient>
+</defs>
+<rect x="15" y="15" width="970" height="330" rx="14" fill="url(#pt-panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="500.0" y="46.0" font-size="13" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">Click any stop to open it</text>
+<path d="M180.0,120 L340.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M180.0,120 L340.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#f59e0b" stroke-width="10"/>
+<path d="M180.0,120 L340.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#face85" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M340.0,120 L500.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M340.0,120 L500.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#f59e0b" stroke-width="10"/>
+<path d="M340.0,120 L500.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#face85" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M500.0,120 L660.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M500.0,120 L660.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#f59e0b" stroke-width="10"/>
+<path d="M500.0,120 L660.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#face85" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M660.0,120 L820.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M660.0,120 L820.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#f59e0b" stroke-width="10"/>
+<path d="M660.0,120 L820.0,120" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#face85" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M260.0,270 L420.0,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M260.0,270 L420.0,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#38b2ac" stroke-width="10"/>
+<path d="M260.0,270 L420.0,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#9bd8d5" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M420.0,270 L580.0,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M420.0,270 L580.0,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#38b2ac" stroke-width="10"/>
+<path d="M420.0,270 L580.0,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#9bd8d5" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<path d="M580.0,270 L740.0,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-opacity="0.45" stroke-width="12" transform="translate(2,4)"/>
+<path d="M580.0,270 L740.0,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#38b2ac" stroke-width="10"/>
+<path d="M580.0,270 L740.0,270" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#9bd8d5" stroke-opacity="0.55" stroke-width="3" transform="translate(-1,-2)"/>
+<text x="500.0" y="88.0" font-size="13" fill="#f7b648" text-anchor="middle" font-weight="bold">On the shelf</text>
+<text x="500.0" y="238.0" font-size="13" fill="#69c5c0" text-anchor="middle" font-weight="bold">Multimeter settings, taught in Circuit Foundations</text>
+<a class="tm-stop" href="../tools/breadboards/" aria-label="Breadboards">
+<title>Breadboards</title>
+<circle cx="182.0" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="180.0" cy="120" r="15" fill="url(#pt-ball-f59e0b)"/>
+<text class="tm-lbl" x="180.0" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Breadboards</text>
+</a>
+<a class="tm-stop" href="../tools/arduino_cli/" aria-label="arduino-cli">
+<title>arduino-cli</title>
+<circle cx="342.0" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="340.0" cy="120" r="15" fill="url(#pt-ball-f59e0b)"/>
+<text class="tm-lbl" x="340.0" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">arduino-cli</text>
+</a>
+<a class="tm-stop" href="../tools/multimeter/" aria-label="Multimeter">
+<title>Multimeter</title>
+<circle cx="502.0" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="500.0" cy="120" r="15" fill="url(#pt-ball-f59e0b)"/>
+<text class="tm-lbl" x="500.0" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Multimeter</text>
+</a>
+<a class="tm-stop" href="../tools/bench_power_supply/" aria-label="Bench Supply">
+<title>Bench Supply</title>
+<circle cx="662.0" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="660.0" cy="120" r="15" fill="url(#pt-ball-f59e0b)"/>
+<text class="tm-lbl" x="660.0" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Bench</text>
+<text class="tm-lbl" x="660.0" y="176" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Supply</text>
+</a>
+<a class="tm-stop" href="../tools/soldering/" aria-label="Soldering">
+<title>Soldering</title>
+<circle cx="822.0" cy="124" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="820.0" cy="120" r="15" fill="url(#pt-ball-f59e0b)"/>
+<text class="tm-lbl" x="820.0" y="158" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Soldering</text>
+</a>
+<a class="tm-stop" href="../voltage/#measuring-voltage" aria-label="Voltage">
+<title>Voltage</title>
+<circle cx="262.0" cy="274" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="260.0" cy="270" r="15" fill="url(#pt-ball-38b2ac)"/>
+<text class="tm-lbl" x="260.0" y="308" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Voltage</text>
+</a>
+<a class="tm-stop" href="../current/#measuring-current" aria-label="Current">
+<title>Current</title>
+<circle cx="422.0" cy="274" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="420.0" cy="270" r="15" fill="url(#pt-ball-38b2ac)"/>
+<text class="tm-lbl" x="420.0" y="308" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Current</text>
+</a>
+<a class="tm-stop" href="../resistance/#measuring-resistance" aria-label="Resistance">
+<title>Resistance</title>
+<circle cx="582.0" cy="274" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="580.0" cy="270" r="15" fill="url(#pt-ball-38b2ac)"/>
+<text class="tm-lbl" x="580.0" y="308" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Resistance</text>
+</a>
+<a class="tm-stop" href="../open_short_fuses/#continuity-testing-for-a-complete-path" aria-label="Continuity">
+<title>Continuity</title>
+<circle cx="742.0" cy="274" r="15" fill="#000000" fill-opacity="0.4"/>
+<circle class="tm-ring" cx="740.0" cy="270" r="15" fill="url(#pt-ball-38b2ac)"/>
+<text class="tm-lbl" x="740.0" y="308" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Continuity</text>
+</a>
+</svg>

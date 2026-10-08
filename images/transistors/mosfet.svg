@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Cross-section of an N-channel MOSFET: two blue N-type regions, source and drain, in a red P-type body, with a metal gate sitting on a thin insulating oxide between them. With the gate at 0 volts there is no path. With 5 volts on the gate, electrons gather under the oxide to form a channel and electrons flow from source to drain.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="20" y="20" width="410" height="380" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="225.0" y="52.0" font-size="15" fill="#a0aec0" text-anchor="middle" font-weight="bold">Gate at 0 V: no channel, off</text>
+<ellipse cx="236.0" cy="305.0" rx="177.0" ry="10.8" fill="#000" fill-opacity="0.4"/>
+<polygon points="65.0,180.0 365.0,180.0 407.0,153.0 107.0,153.0" fill="#b96b6b"/>
+<rect x="65.0" y="180.0" width="300.0" height="120.0" fill="#9b2c2c"/>
+<rect x="65.0" y="180.0" width="300.0" height="120.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="365.0,300.0 365.0,180.0 407.0,153.0 407.0,273.0" fill="#551818"/>
+<polygon points="75.0,180.0 155.0,180.0 183.0,162.0 103.0,162.0" fill="#6b85a7"/>
+<rect x="75.0" y="180.0" width="80.0" height="50.0" fill="#2c5282"/>
+<rect x="75.0" y="180.0" width="80.0" height="50.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="155.0,230.0 155.0,180.0 183.0,162.0 183.0,212.0" fill="#182d47"/>
+<polygon points="275.0,180.0 355.0,180.0 383.0,162.0 303.0,162.0" fill="#6b85a7"/>
+<rect x="275.0" y="180.0" width="80.0" height="50.0" fill="#2c5282"/>
+<rect x="275.0" y="180.0" width="80.0" height="50.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="355.0,230.0 355.0,180.0 383.0,162.0 383.0,212.0" fill="#182d47"/>
+<polygon points="165.0,180.0 265.0,180.0 293.0,162.0 193.0,162.0" fill="#eaeef4"/>
+<rect x="165.0" y="180.0" width="100.0" height="8.0" fill="#e2e8f0"/>
+<rect x="165.0" y="180.0" width="100.0" height="8.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="265.0,188.0 265.0,180.0 293.0,162.0 293.0,170.0" fill="#7c7f84"/>
+<polygon points="165.0,162.0 265.0,162.0 293.0,144.0 193.0,144.0" fill="#bcc6d2"/>
+<rect x="165.0" y="162.0" width="100.0" height="18.0" fill="#a0aec0"/>
+<rect x="165.0" y="162.0" width="100.0" height="18.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="265.0,180.0 265.0,162.0 293.0,144.0 293.0,162.0" fill="#585f69"/>
+<text x="215.0" y="330.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal">P-type body blocks the path</text>
+<text x="115.0" y="140.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">source</text>
+<text x="225.0" y="122.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">gate (on oxide)</text>
+<text x="325.0" y="140.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">drain</text>
+<text x="225.0" y="382.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">no current flows into the gate: the oxide is an insulator</text>
+<rect x="450" y="20" width="410" height="380" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="655.0" y="52.0" font-size="15" fill="#48bb78" text-anchor="middle" font-weight="bold">Gate at 5 V: a channel forms, on</text>
+<ellipse cx="666.0" cy="305.0" rx="177.0" ry="10.8" fill="#000" fill-opacity="0.4"/>
+<polygon points="495.0,180.0 795.0,180.0 837.0,153.0 537.0,153.0" fill="#b96b6b"/>
+<rect x="495.0" y="180.0" width="300.0" height="120.0" fill="#9b2c2c"/>
+<rect x="495.0" y="180.0" width="300.0" height="120.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="795.0,300.0 795.0,180.0 837.0,153.0 837.0,273.0" fill="#551818"/>
+<polygon points="505.0,180.0 585.0,180.0 613.0,162.0 533.0,162.0" fill="#6b85a7"/>
+<rect x="505.0" y="180.0" width="80.0" height="50.0" fill="#2c5282"/>
+<rect x="505.0" y="180.0" width="80.0" height="50.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="585.0,230.0 585.0,180.0 613.0,162.0 613.0,212.0" fill="#182d47"/>
+<polygon points="705.0,180.0 785.0,180.0 813.0,162.0 733.0,162.0" fill="#6b85a7"/>
+<rect x="705.0" y="180.0" width="80.0" height="50.0" fill="#2c5282"/>
+<rect x="705.0" y="180.0" width="80.0" height="50.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="785.0,230.0 785.0,180.0 813.0,162.0 813.0,212.0" fill="#182d47"/>
+<polygon points="595.0,180.0 695.0,180.0 723.0,162.0 623.0,162.0" fill="#eaeef4"/>
+<rect x="595.0" y="180.0" width="100.0" height="8.0" fill="#e2e8f0"/>
+<rect x="595.0" y="180.0" width="100.0" height="8.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="695.0,188.0 695.0,180.0 723.0,162.0 723.0,170.0" fill="#7c7f84"/>
+<polygon points="595.0,162.0 695.0,162.0 723.0,144.0 623.0,144.0" fill="#bcc6d2"/>
+<rect x="595.0" y="162.0" width="100.0" height="18.0" fill="#a0aec0"/>
+<rect x="595.0" y="162.0" width="100.0" height="18.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="695.0,180.0 695.0,162.0 723.0,144.0 723.0,162.0" fill="#585f69"/>
+<rect x="585" y="188" width="120" height="12" fill="#90cdf4" fill-opacity="0.85"/>
+<circle cx="593" cy="194" r="4" fill="url(#eball)"/>
+<circle cx="614" cy="194" r="4" fill="url(#eball)"/>
+<circle cx="635" cy="194" r="4" fill="url(#eball)"/>
+<circle cx="656" cy="194" r="4" fill="url(#eball)"/>
+<circle cx="677" cy="194" r="4" fill="url(#eball)"/>
+<circle cx="698" cy="194" r="4" fill="url(#eball)"/>
+<line x1="565" y1="326" x2="725" y2="326" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="645.0" y="348.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal">electrons: source to drain</text>
+<text x="545.0" y="140.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">source</text>
+<text x="655.0" y="122.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">gate (on oxide)</text>
+<text x="755.0" y="140.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">drain</text>
+<text x="655.0" y="382.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">no current flows into the gate: the oxide is an insulator</text>
+</svg>

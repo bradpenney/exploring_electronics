@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Four copper wires seen end-on, drawn to scale: 22 AWG at 0.33 square millimetres and 5.2 ohms per 100 metres, 18 AWG at 0.82 and 2.0, 14 AWG at 2.08 and 0.81, and 10 AWG at 5.26 and 0.32.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="cuv" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#824a27"/><stop offset="0.22" stop-color="#e0b293"/><stop offset="0.5" stop-color="#c8733c"/><stop offset="1" stop-color="#502e18"/></linearGradient></defs>
+<rect x="15" y="15" width="770" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="400.0" y="46.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Thicker wire, lower resistance: common copper gauges</text>
+<text x="400.0" y="66.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">cross-sections drawn to scale with each other (AWG: a smaller number means a thicker wire)</text>
+<ellipse cx="120" cy="228.94465607433816" rx="32.94465607433815" ry="7" fill="#000" fill-opacity="0.4"/>
+<circle cx="120" cy="190" r="24.94465607433815" fill="#2b6cb0" fill-opacity="0.55" stroke="#90cdf4" stroke-opacity="0.5"/>
+<circle cx="120" cy="190" r="10.94465607433815" fill="url(#copperball)"/>
+<text x="120.0" y="280.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">22 AWG</text>
+<text x="120.0" y="300.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">0.33 mm²</text>
+<text x="120.0" y="320.0" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">5.16 Ω per 100 m</text>
+<text x="120.0" y="342.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">hookup wire</text>
+<ellipse cx="305" cy="235.4026848281551" rx="39.40268482815509" ry="7" fill="#000" fill-opacity="0.4"/>
+<circle cx="305" cy="190" r="31.40268482815509" fill="#2b6cb0" fill-opacity="0.55" stroke="#90cdf4" stroke-opacity="0.5"/>
+<circle cx="305" cy="190" r="17.40268482815509" fill="url(#copperball)"/>
+<text x="305.0" y="280.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">18 AWG</text>
+<text x="305.0" y="300.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">0.82 mm²</text>
+<text x="305.0" y="320.0" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">2.04 Ω per 100 m</text>
+<text x="305.0" y="342.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">lamp cord</text>
+<ellipse cx="490" cy="245.67135277445558" rx="49.671352774455585" ry="7" fill="#000" fill-opacity="0.4"/>
+<circle cx="490" cy="190" r="41.671352774455585" fill="#2b6cb0" fill-opacity="0.55" stroke="#90cdf4" stroke-opacity="0.5"/>
+<circle cx="490" cy="190" r="27.671352774455585" fill="url(#copperball)"/>
+<text x="490.0" y="280.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">14 AWG</text>
+<text x="490.0" y="300.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">2.08 mm²</text>
+<text x="490.0" y="320.0" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">0.81 Ω per 100 m</text>
+<text x="490.0" y="342.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">15 A house circuit</text>
+<ellipse cx="675" cy="261.99917437621866" rx="65.99917437621869" ry="7" fill="#000" fill-opacity="0.4"/>
+<circle cx="675" cy="190" r="57.99917437621868" fill="#2b6cb0" fill-opacity="0.55" stroke="#90cdf4" stroke-opacity="0.5"/>
+<circle cx="675" cy="190" r="43.99917437621868" fill="url(#copperball)"/>
+<text x="675.0" y="280.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">10 AWG</text>
+<text x="675.0" y="300.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">5.26 mm²</text>
+<text x="675.0" y="320.0" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">0.32 Ω per 100 m</text>
+<text x="675.0" y="342.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">30 A dryer circuit</text>
+</svg>

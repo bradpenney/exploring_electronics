@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" width="820" height="440" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Inside a rotary potentiometer: a curved resistive track between terminals 1 and 3, and a wiper, terminal 2, that sweeps along it as the shaft turns, splitting the track into two parts whose total stays constant.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="790" height="410" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="410.0" y="46.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">A potentiometer: a resistive track and a sliding wiper</text>
+<circle cx="260" cy="230" r="140" fill="#2d3748"/>
+<circle cx="260" cy="230" r="140" fill="url(#gloss)" opacity="0.4"/>
+<path d="M182.2,307.8 A110,110 0 0 1 222.4,126.6" fill="none" stroke="#f59e0b" stroke-width="18" stroke-linecap="round"/>
+<path d="M222.4,126.6 A110,110 0 0 1 337.8,307.8" fill="none" stroke="#3182ce" stroke-width="18" stroke-linecap="round"/>
+<line x1="260" y1="230" x2="222.4" y2="126.6" stroke="#e2e8f0" stroke-width="7" stroke-linecap="round"/>
+<circle cx="260" cy="230" r="18" fill="url(#core)"/>
+<circle cx="222.4" cy="126.6" r="9" fill="url(#vball)"/>
+<circle cx="145.4" cy="344.6" r="12" fill="#cbd5e0"/>
+<text x="145.4" y="349.6" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="374.6" cy="344.6" r="12" fill="#cbd5e0"/>
+<text x="374.6" y="349.6" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="260" cy="392" r="12" fill="#cbd5e0"/>
+<text x="260.0" y="397.0" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="bold">2</text>
+<text x="260.0" y="422.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">wiper</text>
+<text x="560.0" y="150.0" font-size="13" fill="#e6e6e6" text-anchor="start" font-weight="normal">Terminals 1 and 3: the two ends of the track</text>
+<text x="560.0" y="170.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">(the full, fixed resistance)</text>
+<text x="560.0" y="220.0" font-size="13" fill="#e6e6e6" text-anchor="start" font-weight="normal">Terminal 2: the wiper, which slides along it</text>
+<rect x="560" y="255" width="16" height="10" fill="#f59e0b"/>
+<text x="584.0" y="265.0" font-size="12" fill="#fbbf24" text-anchor="start" font-weight="normal">track from 1 to the wiper</text>
+<rect x="560" y="280" width="16" height="10" fill="#3182ce"/>
+<text x="584.0" y="290.0" font-size="12" fill="#90cdf4" text-anchor="start" font-weight="normal">track from the wiper to 3</text>
+<text x="560.0" y="330.0" font-size="13" fill="#e6e6e6" text-anchor="start" font-weight="normal">Turn the shaft: one share grows,</text>
+<text x="560.0" y="350.0" font-size="13" fill="#e6e6e6" text-anchor="start" font-weight="normal">the other shrinks, the total stays put</text>
+</svg>

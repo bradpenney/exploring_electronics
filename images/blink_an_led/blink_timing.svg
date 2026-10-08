@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A square wave on pin 3 over four seconds: 5 volts for one second while digitalWrite HIGH and delay(1000) run, then 0 volts for one second for digitalWrite LOW and delay(1000), repeating. An LED above each second shows it lit, dark, lit, dark.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="48.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">Pin 3 over four seconds of the Blink sketch</text>
+<line x1="110" y1="130.0" x2="820" y2="130.0" stroke="#4a5568" stroke-opacity="0.4"/>
+<text x="102.0" y="134.0" font-size="11" fill="#a0aec0" text-anchor="end" font-weight="normal">5 V</text>
+<line x1="110" y1="270.0" x2="820" y2="270.0" stroke="#4a5568" stroke-opacity="0.4"/>
+<text x="102.0" y="274.0" font-size="11" fill="#a0aec0" text-anchor="end" font-weight="normal">0 V</text>
+<line x1="110" y1="280" x2="820" y2="280" stroke="#a0aec0" stroke-width="1.5"/>
+<line x1="110" y1="120" x2="110" y2="280" stroke="#a0aec0" stroke-width="1.5"/>
+<text x="465.0" y="302.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal"></text>
+<polyline points="110.0,130.0 287.5,130.0 287.5,270.0 465.0,270.0 465.0,130.0 642.5,130.0 642.5,270.0 820.0,270.0" fill="none" stroke="#90cdf4" stroke-width="3" stroke-linejoin="round" filter="url(#softglow)"/>
+<radialGradient id="led45764513" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#fc8181"/><stop offset="1" stop-color="#713a3a"/></radialGradient>
+<circle cx="198.75" cy="90" r="41.6" fill="#fc8181" fill-opacity="0.18"/>
+<circle cx="198.75" cy="90" r="26.0" fill="#fc8181" fill-opacity="0.22"/>
+<line x1="194.2" y1="103" x2="194.2" y2="123.8" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="203.3" y1="103" x2="203.3" y2="119.9" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="183.8" y="97.2" width="29.9" height="6.5" rx="2" fill="url(#led45764513)"/>
+<path d="M185.8,97.8 L185.8,90.0 A13,13 0 0 1 211.8,90.0 L211.8,97.8 Z" fill="url(#led45764513)"/>
+<text x="198.8" y="306.0" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="normal">digitalWrite(3, HIGH);</text>
+<text x="198.8" y="324.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">delay(1000);</text>
+<radialGradient id="led78302629" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#582d2d"/><stop offset="1" stop-color="#271414"/></radialGradient>
+<line x1="371.7" y1="103" x2="371.7" y2="123.8" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="380.8" y1="103" x2="380.8" y2="119.9" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="361.3" y="97.2" width="29.9" height="6.5" rx="2" fill="url(#led78302629)"/>
+<path d="M363.2,97.8 L363.2,90.0 A13,13 0 0 1 389.2,90.0 L389.2,97.8 Z" fill="url(#led78302629)"/>
+<text x="376.2" y="306.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">digitalWrite(3, LOW);</text>
+<text x="376.2" y="324.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">delay(1000);</text>
+<radialGradient id="led84481599" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#fc8181"/><stop offset="1" stop-color="#713a3a"/></radialGradient>
+<circle cx="553.75" cy="90" r="41.6" fill="#fc8181" fill-opacity="0.18"/>
+<circle cx="553.75" cy="90" r="26.0" fill="#fc8181" fill-opacity="0.22"/>
+<line x1="549.2" y1="103" x2="549.2" y2="123.8" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="558.3" y1="103" x2="558.3" y2="119.9" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="538.8" y="97.2" width="29.9" height="6.5" rx="2" fill="url(#led84481599)"/>
+<path d="M540.8,97.8 L540.8,90.0 A13,13 0 0 1 566.8,90.0 L566.8,97.8 Z" fill="url(#led84481599)"/>
+<text x="553.8" y="306.0" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="normal">digitalWrite(3, HIGH);</text>
+<text x="553.8" y="324.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">delay(1000);</text>
+<radialGradient id="led51571497" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="0.35" stop-color="#582d2d"/><stop offset="1" stop-color="#271414"/></radialGradient>
+<line x1="726.7" y1="103" x2="726.7" y2="123.8" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="735.8" y1="103" x2="735.8" y2="119.9" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="716.3" y="97.2" width="29.9" height="6.5" rx="2" fill="url(#led51571497)"/>
+<path d="M718.2,97.8 L718.2,90.0 A13,13 0 0 1 744.2,90.0 L744.2,97.8 Z" fill="url(#led51571497)"/>
+<text x="731.2" y="306.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">digitalWrite(3, LOW);</text>
+<text x="731.2" y="324.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">delay(1000);</text>
+<text x="110.0" y="350.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">0 s</text>
+<text x="287.5" y="350.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">1 s</text>
+<text x="465.0" y="350.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">2 s</text>
+<text x="642.5" y="350.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">3 s</text>
+<text x="820.0" y="350.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">4 s</text>
+</svg>

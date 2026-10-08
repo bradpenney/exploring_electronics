@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 970 400" width="970" height="400" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Six voltage sources: a battery uses chemistry, a solar cell uses light, a generator uses magnetism, a thermocouple uses heat, a piezoelectric crystal uses pressure, and static uses friction</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="bat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9f6607"/><stop offset="0.22" stop-color="#f9c978"/><stop offset="0.5" stop-color="#f59e0b"/><stop offset="1" stop-color="#623f04"/></linearGradient><linearGradient id="coil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#774225"/><stop offset="0.22" stop-color="#d7ab92"/><stop offset="0.5" stop-color="#b8673a"/><stop offset="1" stop-color="#492917"/></linearGradient></defs>
+<text x="485.0" y="34.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Every source separates charge; they differ in what does the pushing</text>
+<rect x="12" y="52" width="148" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="86.0" y="80.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Chemistry</text>
+<rect x="64" y="130" width="44" height="100" rx="6" fill="url(#bat)"/>
+<rect x="78" y="122" width="16" height="9" rx="2" fill="#cbd5e0"/>
+<text x="86.0" y="186.0" font-size="20" fill="#1a1a1a" text-anchor="middle" font-weight="bold">+</text>
+<text x="86.0" y="290.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">battery</text>
+<text x="86.0" y="314.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">1.5 V per alkaline cell</text>
+<rect x="171" y="52" width="148" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="245.0" y="80.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Light</text>
+<polygon points="193,210 275,210 297,150 215,150" fill="#2b4c9b"/>
+<line x1="213.5" y1="210" x2="235.5" y2="150" stroke="#90cdf4" stroke-opacity="0.6"/>
+<line x1="234.0" y1="210" x2="256.0" y2="150" stroke="#90cdf4" stroke-opacity="0.6"/>
+<line x1="254.5" y1="210" x2="276.5" y2="150" stroke="#90cdf4" stroke-opacity="0.6"/>
+<polygon points="193,210 275,210 297,150 215,150" fill="url(#gloss)" opacity="0.7"/>
+<circle cx="285" cy="118" r="16" fill="#fefcbf"/><circle cx="285" cy="118" r="30" fill="#fefcbf" fill-opacity="0.2"/>
+<text x="245.0" y="290.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">solar cell</text>
+<text x="245.0" y="314.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">about 0.6 V per silicon cell</text>
+<rect x="330" y="52" width="148" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="404.0" y="80.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Magnetism</text>
+<ellipse cx="374" cy="180" rx="7" ry="30" fill="none" stroke="url(#coil)" stroke-width="5"/>
+<ellipse cx="386" cy="180" rx="7" ry="30" fill="none" stroke="url(#coil)" stroke-width="5"/>
+<ellipse cx="398" cy="180" rx="7" ry="30" fill="none" stroke="url(#coil)" stroke-width="5"/>
+<ellipse cx="410" cy="180" rx="7" ry="30" fill="none" stroke="url(#coil)" stroke-width="5"/>
+<ellipse cx="422" cy="180" rx="7" ry="30" fill="none" stroke="url(#coil)" stroke-width="5"/>
+<ellipse cx="434" cy="180" rx="7" ry="30" fill="none" stroke="url(#coil)" stroke-width="5"/>
+<rect x="350" y="170" width="44" height="20" rx="3" fill="#e53e3e"/>
+<rect x="372" y="170" width="22" height="20" rx="3" fill="#3182ce"/>
+<text x="361.0" y="185.0" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">N</text>
+<text x="383.0" y="185.0" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">S</text>
+<text x="404.0" y="290.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">generator</text>
+<text x="404.0" y="314.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">rises with speed and turns</text>
+<rect x="489" y="52" width="148" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="563.0" y="80.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Heat</text>
+<circle cx="563" cy="200" r="34" fill="#fc8181" fill-opacity="0.25"/>
+<path d="M523,140 L563,200" stroke="#b8673a" stroke-width="6" stroke-linecap="round"/>
+<path d="M603,140 L563,200" stroke="#cbd5e0" stroke-width="6" stroke-linecap="round"/>
+<circle cx="563" cy="200" r="7" fill="url(#vball)"/>
+<text x="563.0" y="290.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">thermocouple</text>
+<text x="563.0" y="314.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">millivolts</text>
+<rect x="648" y="52" width="148" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="722.0" y="80.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Pressure</text>
+<polygon points="692.0,154.0 752.0,154.0 770.2,142.3 710.2,142.3" fill="#a5b9f8"/>
+<rect x="692.0" y="154.0" width="60.0" height="52.0" fill="#7f9cf5"/>
+<rect x="692.0" y="154.0" width="60.0" height="52.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="752.0,206.0 752.0,154.0 770.2,142.3 770.2,194.3" fill="#455586"/>
+<path d="M-9,-9 L5,0 L-9,9" fill="none" stroke="#fbbf24" stroke-width="4" stroke-linecap="round" transform="translate(730,122) rotate(90)"/>
+<path d="M-9,-9 L5,0 L-9,9" fill="none" stroke="#fbbf24" stroke-width="4" stroke-linecap="round" transform="translate(730,238) rotate(-90)"/>
+<text x="678.0" y="176.0" font-size="18" fill="#fc8181" text-anchor="middle" font-weight="bold">+</text>
+<text x="776.0" y="196.0" font-size="18" fill="#90cdf4" text-anchor="middle" font-weight="bold">−</text>
+<text x="722.0" y="290.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">piezo crystal</text>
+<text x="722.0" y="314.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">a squeeze makes a spark</text>
+<rect x="807" y="52" width="148" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="881.0" y="80.0" font-size="15" fill="#fbbf24" text-anchor="middle" font-weight="bold">Friction</text>
+<circle cx="881" cy="172" r="36" fill="url(#eball)"/>
+<path d="M914.0,149.4 l12,-6 l-4,10 l14,-6" fill="none" stroke="#fbbf24" stroke-width="2.5"/>
+<path d="M919.2,160.2 l12,-6 l-4,10 l14,-6" fill="none" stroke="#fbbf24" stroke-width="2.5"/>
+<path d="M921.0,172.0 l12,-6 l-4,10 l14,-6" fill="none" stroke="#fbbf24" stroke-width="2.5"/>
+<path d="M919.2,183.8 l12,-6 l-4,10 l14,-6" fill="none" stroke="#fbbf24" stroke-width="2.5"/>
+<path d="M914.0,194.6 l12,-6 l-4,10 l14,-6" fill="none" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="881.0" y="290.0" font-size="14" fill="#e6e6e6" text-anchor="middle" font-weight="bold">static</text>
+<text x="881.0" y="314.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">thousands of volts</text>
+<text x="881.0" y="330.0" font-size="11" fill="#a0aec0" text-anchor="middle" font-weight="normal">tiny charge</text>
+</svg>

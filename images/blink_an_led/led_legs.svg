@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A red LED with its two legs. The longer leg is the anode, the positive side, which goes toward the pin; the shorter leg is the cathode, which goes toward ground. A flat edge on the rim marks the cathode side even when the legs have been trimmed. Beside it, the LED schematic symbol: a triangle pointing to a bar, with the bar on the cathode side.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="370" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="48.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">Telling an LED's legs apart</text>
+<ellipse cx="300" cy="185" rx="48" ry="12" fill="#c53030"/>
+<path d="M260,185 L260,120 A40,40 0 0 1 340,120 L340,185 Z" fill="#fc8181" fill-opacity="0.9"/>
+<path d="M260,185 L260,120 A40,40 0 0 1 340,120 L340,185 Z" fill="url(#gloss)" opacity="0.5"/>
+<rect x="340" y="173" width="8" height="24" fill="#1e1e1e"/>
+<rect x="278" y="195" width="6" height="150" fill="#cbd5e0"/>
+<rect x="316" y="195" width="6" height="110" fill="#cbd5e0"/>
+<text x="260.0" y="340.0" font-size="14" fill="#48bb78" text-anchor="end" font-weight="bold">anode (+)</text>
+<text x="260.0" y="358.0" font-size="12" fill="#a0aec0" text-anchor="end" font-weight="normal" font-style="italic">longer leg: toward the pin</text>
+<text x="340.0" y="300.0" font-size="14" fill="#90cdf4" text-anchor="start" font-weight="bold">cathode (−)</text>
+<text x="340.0" y="318.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">shorter leg: toward GND</text>
+<line x1="352" y1="185" x2="410" y2="150" stroke="#a0aec0"/>
+<text x="416.0" y="148.0" font-size="13" fill="#fbbf24" text-anchor="start" font-weight="bold">flat edge on the rim:</text>
+<text x="416.0" y="166.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">the cathode side, even when</text>
+<text x="416.0" y="182.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">the legs have been trimmed</text>
+<line x1="610" y1="260" x2="670" y2="260" stroke="#e6e6e6" stroke-width="3"/>
+<path d="M670,238 L670,282 L708,260 Z" fill="#e6e6e6"/>
+<line x1="708" y1="238" x2="708" y2="282" stroke="#e6e6e6" stroke-width="4"/>
+<line x1="708" y1="260" x2="770" y2="260" stroke="#e6e6e6" stroke-width="3"/>
+<text x="610.0" y="246.0" font-size="12" fill="#48bb78" text-anchor="start" font-weight="normal">anode</text>
+<text x="770.0" y="246.0" font-size="12" fill="#90cdf4" text-anchor="end" font-weight="normal">cathode</text>
+<text x="690.0" y="316.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">the symbol's bar is the cathode</text>
+</svg>

@@ -1,0 +1,2966 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="How a capacitor stores charge between two plates, what a farad is, why it fills on an RC curve, and how a camera flash turns two AA cells into a 15 kW burst.">
+      
+      
+        <meta name="author" content="Brad Penney">
+      
+      
+        <link rel="canonical" href="https://electronics.bradpenney.io/capacitors/">
+      
+      
+        <link rel="prev" href="../voltage_divider/">
+      
+      
+        <link rel="next" href="../inductors/">
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../images/exploring_electronics.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Capacitors: Storing Charge, and Releasing It on Time - Exploring Electronics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M1%207.775V2.75C1%201.784%201.784%201%202.75%201h5.025c.464%200%20.91.184%201.238.513l6.25%206.25a1.75%201.75%200%200%201%200%202.474l-5.026%205.026a1.75%201.75%200%200%201-2.474%200l-6.25-6.25A1.75%201.75%200%200%201%201%207.775m1.5%200c0%20.066.026.13.073.177l6.25%206.25a.25.25%200%200%200%20.354%200l5.025-5.025a.25.25%200%200%200%200-.354l-6.25-6.25a.25.25%200%200%200-.177-.073H2.75a.25.25%200%200%200-.25.25ZM6%205a1%201%200%201%201%200%202%201%201%200%200%201%200-2%22/%3E%3C/svg%3E');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M2.5%201.75v11.5c0%20.138.112.25.25.25h3.17a.75.75%200%200%201%200%201.5H2.75A1.75%201.75%200%200%201%201%2013.25V1.75C1%20.784%201.784%200%202.75%200h8.5C12.216%200%2013%20.784%2013%201.75v7.736a.75.75%200%200%201-1.5%200V1.75a.25.25%200%200%200-.25-.25h-8.5a.25.25%200%200%200-.25.25m13.274%209.537zl-4.557%204.45a.75.75%200%200%201-1.055-.008l-1.943-1.95a.75.75%200%200%201%201.062-1.058l1.419%201.425%204.026-3.932a.75.75%200%201%201%201.048%201.074M4.75%204h4.5a.75.75%200%200%201%200%201.5h-4.5a.75.75%200%200%201%200-1.5M4%207.75A.75.75%200%200%201%204.75%207h2a.75.75%200%200%201%200%201.5h-2A.75.75%200%200%201%204%207.75%22/%3E%3C/svg%3E');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M0%208a8%208%200%201%201%2016%200A8%208%200%200%201%200%208m8-6.5a6.5%206.5%200%201%200%200%2013%206.5%206.5%200%200%200%200-13M6.5%207.75A.75.75%200%200%201%207.25%207h1a.75.75%200%200%201%20.75.75v2.75h.25a.75.75%200%200%201%200%201.5h-2a.75.75%200%200%201%200-1.5h.25v-2h-.25a.75.75%200%200%201-.75-.75M8%206a1%201%200%201%201%200-2%201%201%200%200%201%200%202%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M3.499.75a.75.75%200%200%201%201.5%200v.996C5.9%202.903%206.793%203.65%207.662%204.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873%2010.794-.045%2012.622.26%2014.408.558%2016%201.94%2016%204.25c0%201.278-.954%202.575-2.44%202.734l.146.508.065.22c.203.701.412%201.455.476%202.226.142%201.707-.4%203.03-1.487%203.898C11.714%2014.671%2010.27%2015%208.75%2015h-6a.75.75%200%200%201%200-1.5h1.376a4.5%204.5%200%200%201-.563-1.191%203.84%203.84%200%200%201-.05-2.063%204.65%204.65%200%200%201-2.025-.293.75.75%200%200%201%20.525-1.406c1.357.507%202.376-.006%202.698-.318l.009-.01a.747.747%200%200%201%201.06%200%20.75.75%200%200%201-.012%201.074c-.912.92-.992%201.835-.768%202.586.221.74.745%201.337%201.196%201.621H8.75c1.343%200%202.398-.296%203.074-.836.635-.507%201.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.4%202.4%200%200%201-.507-.441%203.1%203.1%200%200%201-.633-1.248.75.75%200%200%201%201.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738%200%201.25-.615%201.25-1.25%200-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706%201.345-.46.92-.27%201.774.019%203.062l.042.19.01.05c.348.443.666.949.94%201.553a.75.75%200%201%201-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7%205.527c-.814-.68-1.75-1.462-2.692-2.619a3.7%203.7%200%200%200-1.023.88c-.406.495-.663%201.036-.722%201.508.116.122.306.21.591.239.388.038.797-.06%201.032-.19a.75.75%200%200%201%20.728%201.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75%205.677V5.5c0-.984.48-1.94%201.077-2.664.46-.559%201.05-1.055%201.673-1.353z%22/%3E%3C/svg%3E');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M13.78%204.22a.75.75%200%200%201%200%201.06l-7.25%207.25a.75.75%200%200%201-1.06%200L2.22%209.28a.75.75%200%200%201%20.018-1.042.75.75%200%200%201%201.042-.018L6%2010.94l6.72-6.72a.75.75%200%200%201%201.06%200%22/%3E%3C/svg%3E');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M0%208a8%208%200%201%201%2016%200A8%208%200%200%201%200%208m8-6.5a6.5%206.5%200%201%200%200%2013%206.5%206.5%200%200%200%200-13M6.92%206.085h.001a.749.749%200%201%201-1.342-.67c.169-.339.436-.701.849-.977C6.845%204.16%207.369%204%208%204a2.76%202.76%200%200%201%201.637.525c.503.377.863.965.863%201.725%200%20.448-.115.83-.329%201.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6%206%200%200%200-.26.16%201%201%200%200%200-.276.245.75.75%200%200%201-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1%201%200%200%200%20.277-.245C8.96%206.514%209%206.427%209%206.25a.61.61%200%200%200-.262-.525A1.27%201.27%200%200%200%208%205.5c-.369%200-.595.09-.74.187a1%201%200%200%200-.34.398M9%2011a1%201%200%201%201-2%200%201%201%200%200%201%202%200%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M6.457%201.047c.659-1.234%202.427-1.234%203.086%200l6.082%2011.378A1.75%201.75%200%200%201%2014.082%2015H1.918a1.75%201.75%200%200%201-1.543-2.575Zm1.763.707a.25.25%200%200%200-.44%200L1.698%2013.132a.25.25%200%200%200%20.22.368h12.164a.25.25%200%200%200%20.22-.368Zm.53%203.996v2.5a.75.75%200%200%201-1.5%200v-2.5a.75.75%200%200%201%201.5%200M9%2011a1%201%200%201%201-2%200%201%201%200%200%201%202%200%22/%3E%3C/svg%3E');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M2.344%202.343za8%208%200%200%201%2011.314%2011.314A8.002%208.002%200%200%201%20.234%2010.089a8%208%200%200%201%202.11-7.746m1.06%2010.253a6.5%206.5%200%201%200%209.108-9.275%206.5%206.5%200%200%200-9.108%209.275M6.03%204.97%208%206.94l1.97-1.97a.749.749%200%200%201%201.275.326.75.75%200%200%201-.215.734L9.06%208l1.97%201.97a.749.749%200%200%201-.326%201.275.75.75%200%200%201-.734-.215L8%209.06l-1.97%201.97a.749.749%200%200%201-1.275-.326.75.75%200%200%201%20.215-.734L6.94%208%204.97%206.03a.75.75%200%200%201%20.018-1.042.75.75%200%200%201%201.042-.018%22/%3E%3C/svg%3E');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M9.504.43a1.516%201.516%200%200%201%202.437%201.713L10.415%205.5h2.123c1.57%200%202.346%201.909%201.22%203.004l-7.34%207.142a1.25%201.25%200%200%201-.871.354h-.302a1.25%201.25%200%200%201-1.157-1.723L5.633%2010.5H3.462c-1.57%200-2.346-1.909-1.22-3.004zm1.047%201.074L3.286%208.571A.25.25%200%200%200%203.462%209H6.75a.75.75%200%200%201%20.694%201.034l-1.713%204.188%206.982-6.793A.25.25%200%200%200%2012.538%207H9.25a.75.75%200%200%201-.683-1.06l2.008-4.418.003-.006-.004-.009-.006-.006-.008-.001q-.005%200-.009.004%22/%3E%3C/svg%3E');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M4.72.22a.75.75%200%200%201%201.06%200l1%20.999a3.5%203.5%200%200%201%202.441%200l.999-1a.748.748%200%200%201%201.265.332.75.75%200%200%201-.205.729l-.775.776c.616.63.995%201.493.995%202.444v.327q0%20.15-.025.292c.408.14.764.392%201.029.722l1.968-.787a.75.75%200%200%201%20.556%201.392L13%207.258V9h2.25a.75.75%200%200%201%200%201.5H13v.5q-.002.615-.141%201.186l2.17.868a.75.75%200%200%201-.557%201.392l-2.184-.873A5%205%200%200%201%208%2016a5%205%200%200%201-4.288-2.427l-2.183.873a.75.75%200%200%201-.558-1.392l2.17-.868A5%205%200%200%201%203%2011v-.5H.75a.75.75%200%200%201%200-1.5H3V7.258L.971%206.446a.75.75%200%200%201%20.558-1.392l1.967.787c.265-.33.62-.583%201.03-.722a1.7%201.7%200%200%201-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72%201.28a.75.75%200%200%201%200-1.06m.53%206.28a.75.75%200%200%200-.75.75V11a3.5%203.5%200%201%200%207%200V7.25a.75.75%200%200%200-.75-.75ZM6.173%205h3.654A.17.17%200%200%200%2010%204.827V4.5a2%202%200%201%200-4%200v.327c0%20.096.077.173.173.173%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M5%205.782V2.5h-.25a.75.75%200%200%201%200-1.5h6.5a.75.75%200%200%201%200%201.5H11v3.282l3.666%205.76C15.619%2013.04%2014.543%2015%2012.767%2015H3.233c-1.776%200-2.852-1.96-1.899-3.458Zm-2.4%206.565a.75.75%200%200%200%20.633%201.153h9.534a.75.75%200%200%200%20.633-1.153L12.225%2010.5h-8.45ZM9.5%202.5h-3V6c0%20.143-.04.283-.117.403L4.73%209h6.54L9.617%206.403A.75.75%200%200%201%209.5%206Z%22/%3E%3C/svg%3E');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M1.75%202.5h10.5a.75.75%200%200%201%200%201.5H1.75a.75.75%200%200%201%200-1.5m4%205h8.5a.75.75%200%200%201%200%201.5h-8.5a.75.75%200%200%201%200-1.5m0%205h8.5a.75.75%200%200%201%200%201.5h-8.5a.75.75%200%200%201%200-1.5M2.5%207.75v6a.75.75%200%200%201-1.5%200v-6a.75.75%200%200%201%201.5%200%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,700,700i%7CIBM+Plex+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"IBM Plex Sans";--md-code-font:"IBM Plex Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-V01MJ4R3SQ"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-V01MJ4R3SQ",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-V01MJ4R3SQ",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  <script>
+    (function () {
+      if (!/(^|\.)bradpenney\.io$/.test(window.location.hostname)) {
+        return;
+      }
+      
+        if (typeof __md_analytics !== "undefined") {
+          var consent = __md_get("__consent");
+          if (consent && consent.analytics) { __md_analytics(); }
+        }
+      
+    })();
+  </script>
+
+    
+    
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Capacitors: Storing Charge, and Releasing It on Time - Exploring Electronics" />
+<meta property="og:description" content="How a capacitor stores charge between two plates, what a farad is, why it fills on an RC curve, and how a camera flash turns two AA cells into a 15 kW burst." />
+<meta property="og:image" content="https://electronics.bradpenney.io/assets/images/social/capacitors.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://electronics.bradpenney.io/capacitors/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Capacitors: Storing Charge, and Releasing It on Time - Exploring Electronics" />
+<meta property="twitter:description" content="How a capacitor stores charge between two plates, what a farad is, why it fills on an RC curve, and how a camera flash turns two AA cells into a 15 kW burst." />
+<meta property="twitter:image" content="https://electronics.bradpenney.io/assets/images/social/capacitors.png" />
+</head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#capacitors" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Exploring Electronics" class="md-header__button md-logo" aria-label="Exploring Electronics" data-md-component="logo">
+      
+  <img src="../images/exploring_electronics.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Exploring Electronics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Capacitors: Storing Charge, and Releasing It on Time
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Exploring Electronics" class="md-nav__button md-logo" aria-label="Exploring Electronics" data-md-component="logo">
+      
+  <img src="../images/exploring_electronics.png" alt="logo">
+
+    </a>
+    Exploring Electronics
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Circuit Foundations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Circuit Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../circuit_foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conductors_and_insulators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conductors, Insulators, and Semiconductors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../what_is_electricity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What Is Electricity?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metric_prefixes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metric Prefixes and Units
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../voltage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Voltage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../current/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Current
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resistance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resistance and Conductance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ohms_law/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ohm's Law and Power
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open_short_fuses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open Circuits, Short Circuits, and Fuses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac_dc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AC vs DC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../magnetism/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Magnetism and Electromagnetism
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../series_and_parallel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Series and Parallel Circuits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../voltage_divider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Voltage Dividers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capacitors
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capacitors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inside-a-capacitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inside a Capacitor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#idea-one-charge-in-proportion-to-voltage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idea One: Charge in Proportion to Voltage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Idea One: Charge in Proportion to Voltage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-sets-the-capacitance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Sets the Capacitance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#energy-half-of-q-v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Energy: Half of Q × V
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capacitors-in-series-and-parallel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capacitors in Series and Parallel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#idea-two-filling-takes-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idea Two: Filling Takes Time
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Idea Two: Filling Takes Time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-flash-solved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Flash, Solved
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blocking-dc-passing-ac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blocking DC, Passing AC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kinds-of-capacitors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kinds of Capacitors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-youll-find-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where You'll Find Them
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measuring-capacitance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measuring Capacitance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#safety-charge-outlasts-the-power" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safety: Charge Outlasts the Power
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practice
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Recap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further Reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inductors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inductors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reading Circuits
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reading Circuits
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reading_schematics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to Read a Schematic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Components
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Components
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resistor_color_codes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resistor Color Codes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resistor_types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resistor Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diodes_and_leds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diodes and LEDs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transistors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transistors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vacuum_tubes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vacuum Tubes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../temperature_sensors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Temperature Sensors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../package_types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Package Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microcontrollers
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Microcontrollers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../microcontrollers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../what_is_an_arduino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What Is an Arduino?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../digital_io/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digital Pins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blink_an_led/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blink an LED
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pull_resistors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pull-up and Pull-down Resistors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analog_input/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reading an Analog Sensor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../threshold_output/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Building a Threshold Ladder
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Communication
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Communication
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../serial_communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Serial Communication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../i2c/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I²C
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SPI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Power
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Power
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../power/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../batteries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cells and Batteries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../voltage_regulators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Voltage Regulators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practical Tools
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Practical Tools
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practical_tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/breadboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Breadboards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/arduino_cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    arduino-cli
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/multimeter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using a Multimeter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/bench_power_supply/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bench Power Supplies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/soldering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Soldering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inside-a-capacitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inside a Capacitor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#idea-one-charge-in-proportion-to-voltage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idea One: Charge in Proportion to Voltage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Idea One: Charge in Proportion to Voltage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-sets-the-capacitance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Sets the Capacitance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#energy-half-of-q-v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Energy: Half of Q × V
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capacitors-in-series-and-parallel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capacitors in Series and Parallel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#idea-two-filling-takes-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idea Two: Filling Takes Time
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Idea Two: Filling Takes Time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-flash-solved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Flash, Solved
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blocking-dc-passing-ac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blocking DC, Passing AC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kinds-of-capacitors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kinds of Capacitors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-youll-find-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where You'll Find Them
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measuring-capacitance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measuring Capacitance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#safety-charge-outlasts-the-power" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safety: Charge Outlasts the Power
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practice
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Recap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further Reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../circuit_foundations/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Circuit Foundations
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="capacitors">Capacitors<a class="headerlink" href="#capacitors" title="Link to this section">🔗</a></h1>
+<div class="admonition abstract">
+<p class="admonition-title">Beginner</p>
+<p>This article is in the <strong>Circuit Foundations</strong> topic. It builds on <a href="../voltage/">Voltage</a>, <a href="../current/">Current</a>, <a href="../ohms_law/">Ohm's Law and Power</a>, and <a href="../series_and_parallel/">Series and Parallel Circuits</a>. No other prior knowledge required.</p>
+</div>
+<p>A camera flash runs on two AA cells. Those cells can comfortably supply a few watts, yet the flash tube fires at something like fifteen thousand watts for about a thousandth of a second. Nothing about the batteries changes between shots; there's a few seconds' whine, then the flash is ready again.</p>
+<p>The part that bridges the gap is a <strong>capacitor</strong>, and two ideas explain how it does it:</p>
+<ol>
+<li><strong>A capacitor stores charge in proportion to its voltage.</strong> Push charge onto its plates and the voltage across it rises in step. How much charge it holds per volt is its <strong>capacitance</strong>.</li>
+<li><strong>Filling and emptying take time, and resistance sets the pace.</strong> Through a large resistance a capacitor fills slowly; through a small one it empties almost at once. The time scale is resistance times capacitance.</li>
+</ol>
+<p>The flash fills its capacitor slowly and empties it fast, and the numbers come out in the second half.</p>
+<hr />
+<h2 id="inside-a-capacitor">Inside a Capacitor<a class="headerlink" href="#inside-a-capacitor" title="Link to this section">🔗</a></h2>
+<p>A capacitor is about the simplest component there is: two conducting plates facing each other, separated by an insulator called the <strong>dielectric</strong>.</p>
+<figure>
+<p><img alt="A 3D capacitor opened up: two metal plates with a blue insulating dielectric between them, connected to a 9 volt battery. The top plate carries positive charges and the bottom plate an equal number of negative charges; dashed field lines cross the dielectric, but no charge does." src="../images/capacitors/inside.svg" width="720" />
+  </p>
+<figcaption>No charge crosses the gap. The battery moves electrons off one plate and onto the other, and the field between them holds them there.</figcaption>
+</figure>
+<p>Connect it to a battery and the battery's push moves electrons off one plate and around the circuit onto the other. One plate ends up with a shortage of electrons (positive charge), the other with an equal surplus (negative charge). No charge ever crosses the dielectric; it's an insulator. What crosses is an <strong>electric field</strong>, and that field is where the capacitor's energy is stored. Disconnect the battery and the charge stays parked, held in place by the attraction across the gap.</p>
+<hr />
+<h2 id="idea-one-charge-in-proportion-to-voltage">Idea One: Charge in Proportion to Voltage<a class="headerlink" href="#idea-one-charge-in-proportion-to-voltage" title="Link to this section">🔗</a></h2>
+<p>The more charge the battery pushes onto the plates, the stronger the field between them, and the harder it pushes back. Charging stops when the capacitor's voltage equals the battery's. For any given capacitor, the charge stored is simply proportional to the voltage across it.</p>
+<details class="info" open="open">
+<summary>Definition: Farad</summary>
+<p><strong>Capacitance</strong> is the charge a capacitor stores per volt across it. One <strong>farad</strong> (F) stores one coulomb at one volt. A farad is enormous, so real capacitors are measured in microfarads (µF), nanofarads (nF), and picofarads (pF).</p>
+</details>
+<div class="arithmatex">\[ Q = C \times V \]</div>
+<p>A tank of water is the physical picture. The height of the water is the voltage, the width of the tank is the capacitance, and the water is the charge. Two tanks filled to the same height hold very different amounts if one is ten times wider.</p>
+<figure>
+<p><img alt="Two 3D tanks filled with water to the same height, marked 9 volts. The narrow tank is a 10 microfarad capacitor holding 90 microcoulombs; the tank ten times wider is a 100 microfarad capacitor holding 900 microcoulombs." src="../images/capacitors/tanks.svg" width="720" />
+  </p>
+<figcaption>Same voltage, ten times the capacitance, ten times the charge.</figcaption>
+</figure>
+<p>The picture also shows the big difference from a battery. A battery's voltage is fixed by its chemistry and stays roughly constant as it delivers charge (<a href="../batteries/">Cells and Batteries</a>). A capacitor's voltage <em>is</em> its charge, scaled: take half the charge out and the voltage halves. And the amounts are small. A large 1 F capacitor at 5 V holds 5 coulombs; the alkaline AA in <a href="../voltage/#voltage-is-not-energy-stored">Voltage</a> delivers about 9,000.</p>
+<h3 id="what-sets-the-capacitance">What Sets the Capacitance<a class="headerlink" href="#what-sets-the-capacitance" title="Link to this section">🔗</a></h3>
+<p>Three things decide a capacitor's capacitance, and they mirror the things that set a wire's resistance in <a href="../resistance/#idea-one-four-things-set-a-wires-resistance">Resistance and Conductance</a>:</p>
+<ul>
+<li><strong>Plate area.</strong> Bigger plates have room for more charge at the same voltage.</li>
+<li><strong>The gap.</strong> Closer plates pull harder on each other's charge, so more fits per volt.</li>
+<li><strong>The dielectric.</strong> Some insulators strengthen the effect. How much, compared with empty space, is the material's <strong>relative permittivity</strong>, written εr.</li>
+</ul>
+<div class="arithmatex">\[ C = \varepsilon_0 \, \varepsilon_r \, \frac{A}{d} \]</div>
+<p>Here A is the plate area in square metres, d the gap in metres, and ε₀ a constant of nature, 8.854 × 10⁻¹² farads per metre. Put real sizes in and the farad's scale becomes obvious:</p>
+<figure>
+<p><img alt="Four parallel-plate capacitors. Two 10 by 10 centimetre plates 1 millimetre apart in air give 89 picofarads. Doubling the area gives 177 picofarads, halving the gap gives 177 picofarads, and filling the gap with aluminium oxide, relative permittivity 9.6, gives 850 picofarads." src="../images/capacitors/what_sets_c.svg" width="760" />
+  </p>
+<figcaption>Two plates the size of a coaster make 89 trillionths of a farad.</figcaption>
+</figure>
+<p>So how does a can the size of a thumb hold 100 µF? By pushing all three factors to extremes. An aluminium electrolytic capacitor uses aluminium foil coated with aluminium oxide (εr 9.6), and the oxide <em>is</em> the gap: about 1.4 nanometres thick for every volt it's rated to withstand. For a 16 V part that's roughly 22 nm, a few hundred atoms. Even so, 100 µF needs about 260 cm² of plate, so the foil is etched into a sponge-like surface many times its flat area and rolled up tight inside the can.</p>
+<h3 id="energy-half-of-q-v">Energy: Half of Q × V<a class="headerlink" href="#energy-half-of-q-v" title="Link to this section">🔗</a></h3>
+<p>Charging a capacitor takes work, because every extra coulomb has to be pushed onto plates that already push back. The first coulomb goes in against almost no voltage; the last goes in against the full voltage. On average, each coulomb is pushed against half the final voltage, so the energy stored is half of charge times voltage:</p>
+<div class="arithmatex">\[ E = \tfrac{1}{2} Q V = \tfrac{1}{2} C V^2 \]</div>
+<figure>
+<p><img alt="A graph of voltage against charge for a capacitor: a straight line from zero to 300 volts as 99 millicoulombs are stored. The shaded triangle under it is the stored energy, half of charge times voltage: 14.85 joules for a 330 microfarad flash capacitor at 300 volts." src="../images/capacitors/energy_triangle.svg" width="720" />
+  </p>
+<figcaption>The energy is the area of the triangle: half the box that Q × V would fill.</figcaption>
+</figure>
+<p>The squared voltage matters. Double the voltage and the energy goes up four times, which is why the flash charger works so hard to raise two AA cells' 3 V to 300 V. Wikipedia's article on flashtubes gives 330 µF at 300 V as typical for a camera, and the formula turns that into the flash's energy:</p>
+<div class="arithmatex">\[ E = \tfrac{1}{2} \times 330\ \mu\text{F} \times (300\ \text{V})^2 \approx 14.9\ \text{J} \]</div>
+<h3 id="capacitors-in-series-and-parallel">Capacitors in Series and Parallel<a class="headerlink" href="#capacitors-in-series-and-parallel" title="Link to this section">🔗</a></h3>
+<p>Combining capacitors works the opposite way round from combining resistors, and the plate picture shows why.</p>
+<figure>
+<p><img alt="Left: two 10 microfarad capacitors side by side in parallel act like one capacitor with twice the plate area, 20 microfarads. Right: two 10 microfarad capacitors stacked in series act like one with a wider gap, 5 microfarads, with their voltage ratings adding." src="../images/capacitors/series_parallel.svg" width="720" />
+  </p>
+<figcaption>Parallel adds plate area; series adds gap.</figcaption>
+</figure>
+<ul>
+<li><strong>In parallel</strong>, every capacitor sees the same voltage and their plates act as one larger plate, so capacitances simply add: two 10 µF capacitors make 20 µF.</li>
+<li><strong>In series</strong>, the charge on each is the same and the gaps effectively stack, so capacitances combine like resistors in parallel: two 10 µF capacitors make 5 µF. The shortcuts from <a href="../series_and_parallel/#current-divides">Series and Parallel Circuits</a> carry straight over, product over sum for two and C ÷ n for n equal ones. The voltage across the string divides between them, which is why capacitors are sometimes put in series to handle a higher voltage than either could alone.</li>
+</ul>
+<hr />
+<h2 id="idea-two-filling-takes-time">Idea Two: Filling Takes Time<a class="headerlink" href="#idea-two-filling-takes-time" title="Link to this section">🔗</a></h2>
+<p>Connect an empty capacitor to a battery through a resistor, and at the first instant the capacitor's voltage is zero, so the resistor has the full battery voltage across it and the current is as large as Ohm's Law allows. As charge builds, the capacitor's voltage rises, the voltage left for the resistor shrinks, and the current falls. The capacitor fills quickly at first, then more and more slowly, approaching the battery voltage without ever quite getting there.</p>
+<figure>
+<p><img alt="Schematic: a 9 volt battery, a switch, and a 10 kilohm resistor charging a polarized 100 microfarad capacitor, with a voltmeter connected across the capacitor." src="../images/schematics/rc_charge.svg" width="460" />
+  </p>
+<figcaption>Close the switch and watch the meter: the voltage across the 100 µF capacitor climbs toward 9 V, fast at first and then slowly. The curved plate and the + mark show which way round the electrolytic goes.</figcaption>
+</figure>
+<p>The shape of that climb is the same for every resistor and capacitor; only the time scale changes, and the time scale is the product of the two.</p>
+<details class="info" open="open">
+<summary>Definition: Time Constant</summary>
+<p>The <strong>time constant</strong> of a resistor-capacitor (RC) circuit is <span class="arithmatex">\( \tau = R \times C \)</span>, in seconds when R is in ohms and C in farads. After one time constant a charging capacitor has reached 63.2% of the supply voltage; after five, over 99%, which is treated as full.</p>
+</details>
+<figure>
+<p><img alt="Two curves against time measured in time constants. Charging rises steeply then levels off: 63.2 percent after one time constant, 86.5 after two, 95.0 after three, 98.2 after four and 99.3 after five. Discharging is the mirror image, falling to 36.8 percent after one time constant." src="../images/capacitors/rc_curve.svg" width="760" />
+  </p>
+<figcaption>Every RC circuit follows these two curves. Only the length of τ changes.</figcaption>
+</figure>
+<p>With the circuit above, 10 kΩ × 100 µF = 1 second. The meter reads about 5.7 V after one second and 8.9 V after five. Swap the resistor for 1 kΩ and the whole thing happens ten times faster; swap the capacitor for 1,000 µF and it's ten times slower. Discharging through a resistor follows the mirror-image curve: down to 36.8% after one time constant.</p>
+<h3 id="the-flash-solved">The Flash, Solved<a class="headerlink" href="#the-flash-solved" title="Link to this section">🔗</a></h3>
+<p>Now the camera flash makes sense. The flash circuit has two very different paths in and out of the same capacitor:</p>
+<ul>
+<li><strong>In:</strong> a small step-up converter, a transistor switching a little transformer of the kind described in <a href="../magnetism/#transformers">Magnetism and Electromagnetism</a>, raises the cells' 3 V toward 300 V and trickles charge into the capacitor. The whine is that converter, and the few seconds' wait is the capacitor filling. Delivering 15 J over about 5 seconds is about 3 W, comfortably within what two AA cells can supply.</li>
+<li><strong>Out:</strong> the trigger turns the xenon gas in the flash tube into a conductor of about 1 Ω (the resistance Rubycon specifies for testing its photoflash capacitors). The time constant is now 1 Ω × 330 µF = 330 µs, so three time constants, about 1 ms, empty 95% of the charge.</li>
+</ul>
+<figure>
+<p><img alt="Two AA cells feed a step-up charger that fills a 330 microfarad, 300 volt capacitor over about 5 seconds, about 3 watts. The capacitor then dumps its 15 joules into a xenon flash tube of about 1 ohm in about a millisecond, about 15 kilowatts." src="../images/capacitors/flash.svg" width="760" />
+  </p>
+<figcaption>The batteries never deliver 15 kW. They deliver 3 W for five seconds, and the capacitor delivers it all again in a millisecond.</figcaption>
+</figure>
+<p>Fifteen joules in a millisecond is about 15,000 W. The capacitor doesn't make energy; it collects it slowly through a high-resistance path and releases it through a low-resistance one, and the ratio of the two time constants is the ratio of the powers.</p>
+<h3 id="blocking-dc-passing-ac">Blocking DC, Passing AC<a class="headerlink" href="#blocking-dc-passing-ac" title="Link to this section">🔗</a></h3>
+<p>The RC curve has a consequence that matters far beyond flashes. Once a capacitor is charged, current stops: a capacitor in series <strong>blocks steady DC</strong>. On <a href="../ac_dc/">AC</a>, the supply keeps reversing, so the capacitor charges one way, discharges, and charges the other way, every cycle. Current flows back and forth in the wires on both sides even though no charge ever crosses the dielectric.</p>
+<p>The faster the AC, the less each half-cycle has to fill the capacitor before the direction reverses, so the more easily the current passes. A capacitor's opposition to AC falls as the frequency rises, and that frequency-dependent opposition has its own name, <strong>capacitive reactance</strong>. It's what lets a capacitor pass audio between the stages of an amplifier while blocking their DC voltages, and it's one of the two halves of every radio's tuning circuit.</p>
+<hr />
+<h2 id="kinds-of-capacitors">Kinds of Capacitors<a class="headerlink" href="#kinds-of-capacitors" title="Link to this section">🔗</a></h2>
+<p>Every capacitor is two plates and a dielectric. What differs is the dielectric, and with it the range of values, the size, and whether polarity matters.</p>
+<figure>
+<p><img alt="Five kinds of capacitor. Ceramic, an orange disc marked 104, 1 picofarad to about 10 microfarads, no polarity. Film, a red box, 1 nanofarad to about 10 microfarads, no polarity. Aluminium electrolytic, a blue can with a stripe of minus signs and a shorter negative lead, 1 to 100,000 microfarads. Tantalum, a yellow bead marked plus, polarized the other way. Supercapacitor, a dark block marked 1 farad 5.5 volts." src="../images/capacitors/kinds.svg" width="780" />
+  </p>
+<figcaption>Polarity matters on the three to the right. Note that the electrolytic's stripe marks the negative lead and the tantalum's marks the positive.</figcaption>
+</figure>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4"/></svg></span> <strong>Ceramic</strong></p>
+<hr />
+<p><strong>Dielectric:</strong> a ceramic. Class 1 types (C0G, also called NP0) have a relative permittivity of 6 to 200 and are very stable; class 2 types (X7R and similar, based on barium titanate) reach 200 to 14,000, which packs more capacitance in, at a price: their capacitance changes with temperature and can drop by as much as 80% under a high DC voltage.</p>
+<p><strong>Use:</strong> the everyday small capacitor, from tuning to decoupling. Marked with a three-digit code: <code>104</code> is 10 followed by four zeros in picofarads, 100 nF (<a href="../metric_prefixes/#prefixes-on-real-parts">Metric Prefixes and Units</a> has more).</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6v13h16V6zm14 11H6V8h12z"/></svg></span> <strong>Film</strong></p>
+<hr />
+<p><strong>Dielectric:</strong> a thin plastic film such as polyester or polypropylene.</p>
+<p><strong>Use:</strong> stable, low-loss, and tolerant of high voltage, so they turn up in audio, timing, and mains filtering. No polarity.</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33A1.33 1.33 0 0 0 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34A1.33 1.33 0 0 0 18 20.67V5.33C18 4.6 17.4 4 16.67 4"/></svg></span> <strong>Aluminium electrolytic</strong></p>
+<hr />
+<p><strong>Dielectric:</strong> the nanometre-thin oxide described above, which is why it reaches large values in a small can.</p>
+<p><strong>Use:</strong> power supplies and energy storage. <strong>Polarized:</strong> the stripe of minus signs and the shorter lead mark the negative side. Tolerance is wide: Rubycon's photoflash series is rated −10% to +20%.</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 3.77-.75.84S9.97 6.06 8.68 7.94 6 12.07 6 14.23a6 6 0 0 0 6 6 6 6 0 0 0 6-6c0-2.16-1.39-4.41-2.68-6.29s-2.57-3.33-2.57-3.33zm0 3.13c.44.52.84.95 1.68 2.17 1.21 1.76 2.32 4 2.32 5.16 0 2.22-1.78 4-4 4s-4-1.78-4-4c0-1.16 1.11-3.4 2.32-5.16.84-1.22 1.24-1.65 1.68-2.17"/></svg></span> <strong>Tantalum</strong></p>
+<hr />
+<p><strong>Dielectric:</strong> tantalum pentoxide (εr about 27), giving more capacitance per cubic millimetre than aluminium.</p>
+<p><strong>Use:</strong> compact, stable bulk capacitance. <strong>Polarized</strong>, and the marking runs the opposite way: a tantalum's stripe or + marks the <em>positive</em> lead.</p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2h10l-3.5 7H17l-7 13v-8H7zm2 2v8h3v2.66L14 11h-3.76l3.52-7z"/></svg></span> <strong>Supercapacitor</strong></p>
+<hr />
+<p><strong>Dielectric:</strong> no conventional one; charge sits in a layer only molecules thick at the surface of porous carbon.</p>
+<p><strong>Use:</strong> farads at a few volts: keeping a clock or memory alive through a power cut, or absorbing bursts of energy. Polarized and low-voltage.</p>
+</li>
+</ul>
+</div>
+<hr />
+<h2 id="where-youll-find-them">Where You'll Find Them<a class="headerlink" href="#where-youll-find-them" title="Link to this section">🔗</a></h2>
+<p>Capacitors are among the most common parts on any board, and almost every one is doing one of a handful of jobs, each a direct use of the two ideas:</p>
+<ul>
+<li><strong>Decoupling.</strong> A 100 nF ceramic sits beside the power pin of nearly every chip. When a chip's transistors switch, it draws current in sudden gulps, faster than the supply's wiring can deliver. The capacitor, millimetres away, supplies each gulp from its own charge and refills between them. Datasheets for almost every digital chip ask for one.</li>
+<li><strong>Smoothing.</strong> Converting AC to DC starts with diodes that let the current through in one direction only (<a href="../diodes_and_leds/#rectification-ac-to-dc">Diodes and LEDs</a> covers them), which leaves a row of humps. A large electrolytic fills at each peak and feeds the load between them:</li>
+</ul>
+<figure>
+<p><img alt="Two traces from a full-wave rectified 17 volt peak supply. Without a capacitor the voltage is a row of humps falling to zero 120 times a second. With 2,200 microfarads across a 100 ohm load, the capacitor charges at each peak and sags only about 0.6 volts between them." src="../images/capacitors/smoothing.svg" width="760" />
+  </p>
+<figcaption>The bigger the capacitor, or the lighter the load, the less it sags between peaks.</figcaption>
+</figure>
+<ul>
+<li><strong>Timing.</strong> An RC time constant is a built-in clock. Blinking circuits, debounce delays, and the classic <code>NE555</code> timer chip (<a href="../package_types/#two-families">Package Types</a> shows one) all set their timing with a resistor and a capacitor.</li>
+<li><strong>Coupling.</strong> Blocking DC while passing AC lets an audio signal travel from one amplifier stage to the next without carrying the first stage's DC voltage with it.</li>
+<li><strong>Energy bursts and backup.</strong> Camera flashes, and supercapacitors that keep a real-time clock running when the power goes out.</li>
+<li><strong>Tuning.</strong> A capacitor and a coil together resonate at one frequency, which is how a radio picks one station out of all the others.</li>
+</ul>
+<hr />
+<h2 id="measuring-capacitance">Measuring Capacitance<a class="headerlink" href="#measuring-capacitance" title="Link to this section">🔗</a></h2>
+<p>Many multimeters have a capacitance range, marked with the capacitor symbol. The meter charges the capacitor with a known small current and times how quickly its voltage rises, the RC idea run in reverse. Three habits keep the reading honest and the meter safe:</p>
+<ul>
+<li><strong>Discharge first.</strong> A charged capacitor across the meter's input can damage it, and gives a meaningless reading anyway (see Safety below).</li>
+<li><strong>Take it out of the circuit,</strong> or at least lift one lead. Anything else connected across it, including other capacitors in parallel, adds to the reading.</li>
+<li><strong>Expect wide tolerances.</strong> An electrolytic that reads 15% high is normal. A reading far below the marked value, or a can whose top has domed, means a worn-out part.</li>
+</ul>
+<hr />
+<h2 id="safety-charge-outlasts-the-power">Safety: Charge Outlasts the Power<a class="headerlink" href="#safety-charge-outlasts-the-power" title="Link to this section">🔗</a></h2>
+<p>A capacitor's whole job is to keep its charge after the supply is gone, and that's exactly what makes the large ones dangerous.</p>
+<div class="admonition danger">
+<p class="admonition-title">Large Capacitors Stay Charged</p>
+<p>A camera flash capacitor holds about 15 J at 300 V, and capacitors inside mains-powered equipment (microwave ovens, power supplies, televisions, amplifiers) can hold far more, for minutes or days after the equipment is unplugged. Wikipedia's flashtube article notes that shocks of around 1 J have been reported as lethal. Never open mains-powered equipment. On a high-voltage capacitor, discharge it through a resistor rated for the job (for the flash capacitor, a 10 kΩ, 5 W resistor gives a time constant of 3.3 s, so wait at least 20 s), then confirm 0 V with a meter. Never short it with a screwdriver: the current welds and spatters metal.</p>
+</div>
+<p>On a hobby bench the hazard is to the part rather than to you.</p>
+<div class="admonition warning">
+<p class="admonition-title">Polarity and Voltage Ratings</p>
+<p>An electrolytic or tantalum capacitor connected backwards, or run above its rated voltage, breaks down its own dielectric, heats up, and can vent or burst; that's what the scored cross on top of an electrolytic can is for. Match the stripe to the schematic's polarity, and choose a voltage rating comfortably above the highest voltage the capacitor will see.</p>
+</div>
+<hr />
+<h2 id="practice">Practice<a class="headerlink" href="#practice" title="Link to this section">🔗</a></h2>
+<details class="question">
+<summary>1. Charge Stored</summary>
+<p>A 47 µF capacitor is charged to 12 V. How much charge does it hold?</p>
+<details class="tip">
+<summary>Solution</summary>
+<div class="arithmatex">\[ Q = C \times V = 47\ \mu\text{F} \times 12\ \text{V} = 564\ \mu\text{C} \]</div>
+<p>About half a millicoulomb: tiny next to a battery, which is why capacitors are for bursts and buffering rather than for running a project for hours.</p>
+</details>
+</details>
+<details class="question">
+<summary>2. Energy Stored</summary>
+<p>A 1,000 µF capacitor in a power supply sits at 25 V. How much energy does it hold, and how much would it hold at 50 V?</p>
+<details class="tip">
+<summary>Solution</summary>
+<div class="arithmatex">\[ E = \tfrac{1}{2} C V^2 = \tfrac{1}{2} \times 0.001 \times 25^2 \approx 0.31\ \text{J} \]</div>
+<p>At 50 V it would hold four times as much, 1.25 J, because energy goes with the square of the voltage.</p>
+</details>
+</details>
+<details class="question">
+<summary>3. Time Constant</summary>
+<p>A 10 µF capacitor charges through a 1 MΩ resistor. What's the time constant, and roughly how long until the capacitor is fully charged?</p>
+<details class="tip">
+<summary>Solution</summary>
+<p><span class="arithmatex">\( \tau = 1{,}000{,}000\ \Omega \times 0.000\,010\ \text{F} = 10\ \text{s} \)</span>. It reaches 63% after 10 s and is considered full (over 99%) after five time constants, about 50 s.</p>
+</details>
+</details>
+<details class="question">
+<summary>4. Combining Capacitors</summary>
+<p>What's the total capacitance of a 22 µF and a 47 µF capacitor in parallel? In series?</p>
+<details class="tip">
+<summary>Solution</summary>
+<p>Parallel: 22 + 47 = <strong>69 µF</strong>. Series, by product over sum:</p>
+<div class="arithmatex">\[ C = \frac{22 \times 47}{22 + 47} = \frac{1{,}034}{69} \approx 15\ \mu\text{F} \]</div>
+<p>In series the total is always smaller than the smallest capacitor.</p>
+</details>
+</details>
+<details class="question">
+<summary>5. Riding Through a Dropout</summary>
+<p>A 1,000 µF capacitor charged to 5 V supplies a circuit that draws a steady 20 mA. The circuit keeps working down to 3 V. If the supply drops out, roughly how long does the capacitor keep it running?</p>
+<details class="tip">
+<summary>Solution</summary>
+<p>Rearranging Q = C × V, the charge the capacitor can give up while falling 2 V is <span class="arithmatex">\( 0.001\ \text{F} \times 2\ \text{V} = 0.002\ \text{C} \)</span>. At 0.020 C per second, that lasts</p>
+<div class="arithmatex">\[ t = \frac{0.002\ \text{C}}{0.020\ \text{A}} = 0.1\ \text{s} \]</div>
+<p>A tenth of a second: enough to ride through a glitch, nowhere near enough to replace a battery.</p>
+</details>
+</details>
+<details class="question">
+<summary>6. Two Equal Capacitors</summary>
+<p>Two identical capacitors are connected first in parallel, then in series. Compared with one capacitor alone, what's the total each time?</p>
+<details class="tip">
+<summary>Solution</summary>
+<p>In parallel, <strong>double</strong>: the plate area doubles. In series, <strong>half</strong>: the gap effectively doubles. It's the reverse of resistors, where series doubles and parallel halves.</p>
+</details>
+</details>
+<hr />
+<h2 id="quick-recap">Quick Recap<a class="headerlink" href="#quick-recap" title="Link to this section">🔗</a></h2>
+<div class="grid cards two-col">
+<ul>
+<li>
+<p><strong>Two plates and a gap</strong></p>
+<hr />
+<p>Charge parks on the plates; only the field crosses the dielectric.</p>
+</li>
+<li>
+<p><strong>Q = C × V</strong></p>
+<hr />
+<p>Capacitance is charge per volt, in farads. Practical values are µF, nF, and pF.</p>
+</li>
+<li>
+<p><strong>What sets C</strong></p>
+<hr />
+<p>Bigger plates, a smaller gap, and a better dielectric all raise it.</p>
+</li>
+<li>
+<p><strong>Energy = ½ C V²</strong></p>
+<hr />
+<p>Doubling the voltage stores four times the energy.</p>
+</li>
+<li>
+<p><strong>Series and parallel</strong></p>
+<hr />
+<p>Parallel adds; series combines like parallel resistors. The reverse of resistors.</p>
+</li>
+<li>
+<p><strong>τ = R × C</strong></p>
+<hr />
+<p>63% after one time constant, full after five. Slow in, fast out is how a flash works.</p>
+</li>
+<li>
+<p><strong>Blocks DC, passes AC</strong></p>
+<hr />
+<p>Once charged, no steady current flows; AC passes more easily as the frequency rises.</p>
+</li>
+<li>
+<p><strong>Charge outlasts power</strong></p>
+<hr />
+<p>Discharge large capacitors through a resistor and check with a meter. Mind polarity and voltage ratings.</p>
+</li>
+</ul>
+</div>
+<hr />
+<h2 id="whats-next">What's Next<a class="headerlink" href="#whats-next" title="Link to this section">🔗</a></h2>
+<p>A capacitor resists changes in voltage. Its partner resists changes in current, stores its energy in a magnetic field instead of an electric one, and mirrors nearly every property in this article: <strong><a href="../inductors/">Inductors</a></strong>.</p>
+<hr />
+<h2 id="further-reading">Further Reading<a class="headerlink" href="#further-reading" title="Link to this section">🔗</a></h2>
+<p><strong>Datasheets</strong></p>
+<ul>
+<li><a href="https://www.rubycon.co.jp/wp-content/uploads/catalog-aluminum/FW.pdf">Rubycon FW Series Photoflash Capacitors (PDF)</a> — rated voltage, tolerance, and the flash-tube discharge test used in this article</li>
+</ul>
+<p><strong>Deep Dives</strong></p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Capacitor">Capacitor — Wikipedia</a> — the physics, the history, and every type</li>
+<li><a href="https://en.wikipedia.org/wiki/Electrolytic_capacitor">Electrolytic Capacitor — Wikipedia</a> — the oxide dielectric, its permittivity, and its thickness per volt</li>
+<li><a href="https://en.wikipedia.org/wiki/Ceramic_capacitor">Ceramic Capacitor — Wikipedia</a> — class 1 and class 2 dielectrics, and why class 2 loses capacitance under voltage</li>
+<li><a href="https://en.wikipedia.org/wiki/Flashtube">Flashtube — Wikipedia</a> — typical camera flash capacitor values and the energy they store</li>
+</ul>
+<p><strong>Related Articles</strong></p>
+<ul>
+<li><a href="../voltage/">Voltage</a> — charge, the coulomb, and energy per coulomb</li>
+<li><a href="../ohms_law/">Ohm's Law and Power</a> — the current through the resistor at every moment of the RC curve</li>
+<li><a href="../series_and_parallel/">Series and Parallel Circuits</a> — the combining rules that capacitors reverse</li>
+<li><a href="../batteries/">Cells and Batteries</a> — the other way to store electrical energy, and how it differs</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-coffee">
+      <a
+        href="https://buymeacoffee.com/brad.penney"
+        target="_blank"
+        rel="noopener"
+        class="md-footer-coffee__link"
+      >
+        <span>Enjoying this? Buy me a coffee</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 21h18v-2H2M20 8h-2V5h2m0-2H4v10a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4v-3h2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg>
+      </a>
+    </div>
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; Brad Penney — <a href="#__consent">Change cookie settings</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/bradpenney" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/in/bradpenney" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://bradpenney.io" target="_blank" rel="noopener" title="bradpenney.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://electronics.bradpenney.io/feed_rss_created.xml" target="_blank" rel="noopener" title="electronics.bradpenney.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M0 64c0-17.7 14.3-32 32-32 229.8 0 416 186.2 416 416 0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96 14.3 96 0 81.7 0 64m0 352a64 64 0 1 1 128 0 64 64 0 1 1-128 0m32-256c159.1 0 288 128.9 288 288 0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224-17.7 0-32-14.3-32-32s14.3-32 32-32"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to measure how effective our content is and whether you find what you're looking for. With your consent, you help make these learning sites better. You can change your choice at any time.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+    
+      
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="analytics" >
+      <span class="task-list-indicator"></span>
+      Google Analytics
+    </label>
+  </li>
+
+      
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+      <button type="reset" class="md-button md-button--primary">Reject</button>
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "content.code.highlight", "content.tooltips", "content.code.mermaid", "navigation.path"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

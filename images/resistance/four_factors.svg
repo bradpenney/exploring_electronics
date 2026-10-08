@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 470" width="820" height="470" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Four panels of 3D rods. Material: nichrome has 65 times the resistance of the same copper rod. Length: doubling the length doubles the resistance. Thickness: doubling the cross-section halves it. Temperature: copper at 70 degrees Celsius has 1.19 times its resistance at 20.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="cu" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#824a27"/><stop offset="0.22" stop-color="#e0b293"/><stop offset="0.5" stop-color="#c8733c"/><stop offset="1" stop-color="#502e18"/></linearGradient><linearGradient id="nicr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5c646f"/><stop offset="0.22" stop-color="#c0c7d0"/><stop offset="0.5" stop-color="#8e9aab"/><stop offset="1" stop-color="#383d44"/></linearGradient><linearGradient id="cuhot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#913a1b"/><stop offset="0.22" stop-color="#eda489"/><stop offset="0.5" stop-color="#e05a2a"/><stop offset="1" stop-color="#592410"/></linearGradient></defs>
+<text x="410.0" y="34.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Four things set a wire's resistance (each compared with 1 m of 1 mm² copper at 20 °C)</text>
+<rect x="15" y="52" width="190" height="400" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="110.0" y="82.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Material</text>
+<ellipse cx="110.0" cy="182" rx="66.0" ry="6" fill="#000" fill-opacity="0.35"/>
+<rect x="50.0" y="148" width="120" height="24" fill="url(#cu)"/>
+<ellipse cx="170.0" cy="160" rx="4.8" ry="12" fill="url(#cu)"/>
+<ellipse cx="50.0" cy="160" rx="4.8" ry="12" fill="#d5966c"/>
+<text x="110.0" y="132.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">copper</text>
+<text x="110.0" y="206.0" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">1.00× the resistance</text>
+<ellipse cx="110.0" cy="312" rx="66.0" ry="6" fill="#000" fill-opacity="0.35"/>
+<rect x="50.0" y="278" width="120" height="24" fill="url(#nicr)"/>
+<ellipse cx="170.0" cy="290" rx="4.8" ry="12" fill="url(#nicr)"/>
+<ellipse cx="50.0" cy="290" rx="4.8" ry="12" fill="#aab3c0"/>
+<text x="110.0" y="262.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">nichrome</text>
+<text x="110.0" y="336.0" font-size="13" fill="#fc8181" text-anchor="middle" font-weight="bold">65× the resistance</text>
+<rect x="215" y="52" width="190" height="400" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="310.0" y="82.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Length</text>
+<ellipse cx="310.0" cy="182" rx="41.0" ry="6" fill="#000" fill-opacity="0.35"/>
+<rect x="275.0" y="148" width="70" height="24" fill="url(#cu)"/>
+<ellipse cx="345.0" cy="160" rx="4.8" ry="12" fill="url(#cu)"/>
+<ellipse cx="275.0" cy="160" rx="4.8" ry="12" fill="#d5966c"/>
+<text x="310.0" y="132.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">1 m</text>
+<text x="310.0" y="206.0" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">1.00× the resistance</text>
+<ellipse cx="310.0" cy="312" rx="76.0" ry="6" fill="#000" fill-opacity="0.35"/>
+<rect x="240.0" y="278" width="140" height="24" fill="url(#cu)"/>
+<ellipse cx="380.0" cy="290" rx="4.8" ry="12" fill="url(#cu)"/>
+<ellipse cx="240.0" cy="290" rx="4.8" ry="12" fill="#d5966c"/>
+<text x="310.0" y="262.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">2 m</text>
+<text x="310.0" y="336.0" font-size="13" fill="#fc8181" text-anchor="middle" font-weight="bold">2.00× the resistance</text>
+<rect x="415" y="52" width="190" height="400" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="510.0" y="82.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Thickness</text>
+<ellipse cx="510.0" cy="179" rx="66.0" ry="6" fill="#000" fill-opacity="0.35"/>
+<rect x="450.0" y="151" width="120" height="18" fill="url(#cu)"/>
+<ellipse cx="570.0" cy="160" rx="3.6" ry="9" fill="url(#cu)"/>
+<ellipse cx="450.0" cy="160" rx="3.6" ry="9" fill="#d5966c"/>
+<text x="510.0" y="135.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">1 mm²</text>
+<text x="510.0" y="203.0" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">1.00× the resistance</text>
+<ellipse cx="510.0" cy="313" rx="66.0" ry="6" fill="#000" fill-opacity="0.35"/>
+<rect x="450.0" y="277" width="120" height="26" fill="url(#cu)"/>
+<ellipse cx="570.0" cy="290" rx="5.2" ry="13" fill="url(#cu)"/>
+<ellipse cx="450.0" cy="290" rx="5.2" ry="13" fill="#d5966c"/>
+<text x="510.0" y="261.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">2 mm²</text>
+<text x="510.0" y="337.0" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">0.50× the resistance</text>
+<rect x="615" y="52" width="190" height="400" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="710.0" y="82.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Temperature</text>
+<ellipse cx="710.0" cy="182" rx="66.0" ry="6" fill="#000" fill-opacity="0.35"/>
+<rect x="650.0" y="148" width="120" height="24" fill="url(#cu)"/>
+<ellipse cx="770.0" cy="160" rx="4.8" ry="12" fill="url(#cu)"/>
+<ellipse cx="650.0" cy="160" rx="4.8" ry="12" fill="#d5966c"/>
+<text x="710.0" y="132.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">20 °C</text>
+<text x="710.0" y="206.0" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">1.00× the resistance</text>
+<rect x="640.0" y="266" width="140" height="48" rx="24" fill="#fc8181" fill-opacity="0.22"/>
+<ellipse cx="710.0" cy="312" rx="66.0" ry="6" fill="#000" fill-opacity="0.35"/>
+<rect x="650.0" y="278" width="120" height="24" fill="url(#cuhot)"/>
+<ellipse cx="770.0" cy="290" rx="4.8" ry="12" fill="url(#cuhot)"/>
+<ellipse cx="650.0" cy="290" rx="4.8" ry="12" fill="#e7835f"/>
+<text x="710.0" y="262.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">70 °C</text>
+<text x="710.0" y="336.0" font-size="13" fill="#fc8181" text-anchor="middle" font-weight="bold">1.19× the resistance</text>
+<text x="410.0" y="462.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">reference: 1 m of 1 mm² copper at 20 °C is 16.8 mΩ</text>
+</svg>

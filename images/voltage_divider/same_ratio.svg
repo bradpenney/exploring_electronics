@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Three 3D bars for three dividers that all give 4.5 volts from 9 volts. Two 1 kilohm resistors pass 4.5 milliamps and waste 40.5 milliwatts; two 10 kilohm resistors pass 0.45 milliamps and waste 4.05 milliwatts; two 100 kilohm resistors pass 45 microamps and waste 0.4 milliwatts.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="390" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="450.0" y="50.0" font-size="17" fill="#fbbf24" text-anchor="middle" font-weight="bold">Same ratio, same 4.5 V out: the resistor values set the waste</text>
+<ellipse cx="197.5" cy="335.0" rx="68.5" ry="9.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="135.0,130.0 225.0,130.0 260.0,107.5 170.0,107.5" fill="#f8bb54"/>
+<rect x="135.0" y="130.0" width="90.0" height="200.0" fill="#f59e0b"/>
+<rect x="135.0" y="130.0" width="90.0" height="200.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="225.0,330.0 225.0,130.0 260.0,107.5 260.0,307.5" fill="#865606"/>
+<text x="197.0" y="100.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">40.5 mW</text>
+<text x="197.0" y="364.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">1 kΩ + 1 kΩ</text>
+<text x="197.0" y="384.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">4.5 mA through both, all the time</text>
+<ellipse cx="467.5" cy="335.0" rx="68.5" ry="9.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="405.0,205.0 495.0,205.0 530.0,182.5 440.0,182.5" fill="#fcd265"/>
+<rect x="405.0" y="205.0" width="90.0" height="125.0" fill="#fbbf24"/>
+<rect x="405.0" y="205.0" width="90.0" height="125.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="495.0,330.0 495.0,205.0 530.0,182.5 530.0,307.5" fill="#8a6913"/>
+<text x="467.0" y="175.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">4.05 mW</text>
+<text x="467.0" y="364.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">10 kΩ + 10 kΩ</text>
+<text x="467.0" y="384.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">0.45 mA through both, all the time</text>
+<ellipse cx="737.5" cy="335.0" rx="68.5" ry="9.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="675.0,280.0 765.0,280.0 800.0,257.5 710.0,257.5" fill="#7ecfa0"/>
+<rect x="675.0" y="280.0" width="90.0" height="50.0" fill="#48bb78"/>
+<rect x="675.0" y="280.0" width="90.0" height="50.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="765.0,330.0 765.0,280.0 800.0,257.5 800.0,307.5" fill="#276642"/>
+<text x="737.0" y="250.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">0.4 mW</text>
+<text x="737.0" y="364.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">100 kΩ + 100 kΩ</text>
+<text x="737.0" y="384.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">45 µA through both, all the time</text>
+<text x="450.0" y="74.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">power wasted as heat from a 9 V battery (bar height on a log scale)</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 360" width="820" height="360" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Four stages of a fuse blowing: normal, with a cool element; overload, with the element glowing; melting, where a gap opens and an arc jumps across it; and open, where the arc has died and the circuit is broken.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="glassf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2e8f0" stop-opacity="0.45"/><stop offset="0.35" stop-color="#e2e8f0" stop-opacity="0.08"/><stop offset="1" stop-color="#e2e8f0" stop-opacity="0.3"/></linearGradient><linearGradient id="cap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#838a91"/><stop offset="0.22" stop-color="#e2e7ed"/><stop offset="0.5" stop-color="#cbd5e0"/><stop offset="1" stop-color="#515559"/></linearGradient></defs>
+<rect x="25" y="15" width="185" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="117.0" y="48.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Normal</text>
+<line x1="81" y1="170" x2="154" y2="170" stroke="#cbd5e0" stroke-width="3"/>
+<rect x="75" y="144" width="85" height="52" fill="url(#glassf)"/>
+<rect x="55" y="142" width="26" height="56" rx="5" fill="url(#cap)"/>
+<rect x="154" y="142" width="26" height="56" rx="5" fill="url(#cap)"/>
+<text x="117.0" y="250.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">element cool, current flows</text>
+<rect x="225" y="15" width="185" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="317.0" y="48.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Overload</text>
+<rect x="275" y="148" width="85" height="44" rx="22" fill="#fc8181" fill-opacity="0.25"/>
+<line x1="281" y1="170" x2="354" y2="170" stroke="#fc8181" stroke-width="4"/>
+<rect x="275" y="144" width="85" height="52" fill="url(#glassf)"/>
+<rect x="255" y="142" width="26" height="56" rx="5" fill="url(#cap)"/>
+<rect x="354" y="142" width="26" height="56" rx="5" fill="url(#cap)"/>
+<text x="317.0" y="250.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">element heats and glows</text>
+<rect x="425" y="15" width="185" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="517.0" y="48.0" font-size="16" fill="#fbbf24" text-anchor="middle" font-weight="bold">Melting</text>
+<line x1="481" y1="170" x2="507" y2="170" stroke="#fc8181" stroke-width="3"/>
+<line x1="529" y1="170" x2="554" y2="170" stroke="#fc8181" stroke-width="3"/>
+<circle cx="518" cy="170" r="22" fill="url(#glow)"/>
+<path d="M507,170 l5,-8 l4,12 l5,-10 l5,9" fill="none" stroke="#fefcbf" stroke-width="3"/>
+<rect x="475" y="144" width="85" height="52" fill="url(#glassf)"/>
+<rect x="455" y="142" width="26" height="56" rx="5" fill="url(#cap)"/>
+<rect x="554" y="142" width="26" height="56" rx="5" fill="url(#cap)"/>
+<text x="517.0" y="250.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">a gap opens</text>
+<text x="517.0" y="268.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">an arc tries to bridge it</text>
+<rect x="625" y="15" width="185" height="330" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="717.0" y="48.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Open</text>
+<line x1="681" y1="170" x2="707" y2="170" stroke="#4a5568" stroke-width="3"/>
+<line x1="729" y1="170" x2="754" y2="170" stroke="#4a5568" stroke-width="3"/>
+<rect x="675" y="144" width="85" height="52" fill="url(#glassf)"/>
+<rect x="655" y="142" width="26" height="56" rx="5" fill="url(#cap)"/>
+<rect x="754" y="142" width="26" height="56" rx="5" fill="url(#cap)"/>
+<text x="717.0" y="250.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">the arc dies</text>
+<text x="717.0" y="268.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="normal">the circuit is broken</text>
+<text x="410.0" y="330.0" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="normal" font-style="italic">the voltage rating is about stage 3: below its rated voltage, the fuse is guaranteed to put the arc out</text>
+</svg>

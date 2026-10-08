@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A 3D handheld multimeter. The display at the top reads 12.60 DC volts. Below it, a rotary dial surrounded by symbols: off, AC volts, DC volts, millivolts, ohms, continuity, diode and amps, set to DC volts. At the bottom, three jacks: A, COM with the black lead, and V-ohms with the red lead. Callouts explain that the dial chooses what to measure and the jacks choose how the meter is wired inside.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs>
+<rect x="15" y="15" width="870" height="530" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<rect x="310" y="74" width="300" height="450" rx="28" fill="#000" fill-opacity="0.45"/>
+<rect x="300" y="60" width="300" height="450" rx="28" fill="#f59e0b"/>
+<rect x="314" y="74" width="272" height="422" rx="18" fill="#2d3748"/>
+<rect x="300" y="60" width="300" height="450" rx="28" fill="url(#gloss)" opacity="0.35"/>
+<rect x="340" y="100" width="220" height="80" rx="6" fill="#9fb59a"/>
+<rect x="344" y="104" width="212" height="72" rx="4" fill="#b8ccb2"/>
+<text x="546" y="157.6" font-size="48" fill="#1f2a1d" text-anchor="end" font-family="DejaVu Sans Mono, monospace" font-weight="bold">12.60</text>
+<text x="350" y="118" font-size="11" fill="#1f2a1d" font-weight="bold">DC V</text>
+<circle cx="450.0" cy="305" r="62" fill="#1a202c" stroke="#4a5568" stroke-width="3"/>
+<circle cx="450.0" cy="305" r="46" fill="url(#core)"/>
+<text x="408.0" y="381.7" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">OFF</text>
+<text x="369.7" y="333.8" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">V~</text>
+<text x="374.3" y="272.6" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="bold">V⎓</text>
+<text x="419.3" y="230.8" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">mV</text>
+<text x="480.7" y="230.8" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Ω</text>
+<text x="525.7" y="272.6" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">•)))</text>
+<text x="530.3" y="333.8" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">→|</text>
+<text x="492.0" y="381.7" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">A</text>
+<line x1="450.0" y1="305" x2="403.1" y2="282.4" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+<circle cx="370" cy="455" r="17" fill="#111"/>
+<circle cx="370" cy="455" r="17" fill="none" stroke="#808895" stroke-width="3"/>
+<circle cx="370" cy="455" r="6" fill="#555"/>
+<text x="370.0" y="489.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">A</text>
+<circle cx="450" cy="455" r="17" fill="#111"/>
+<circle cx="450" cy="455" r="17" fill="none" stroke="#808895" stroke-width="3"/>
+<circle cx="450" cy="455" r="6" fill="#555"/>
+<circle cx="450" cy="455" r="13" fill="#1a1a1a"/>
+<circle cx="446" cy="451" r="4" fill="#ffffff" fill-opacity="0.45"/>
+<text x="450.0" y="489.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">COM</text>
+<circle cx="530" cy="455" r="17" fill="#111"/>
+<circle cx="530" cy="455" r="17" fill="none" stroke="#808895" stroke-width="3"/>
+<circle cx="530" cy="455" r="6" fill="#555"/>
+<circle cx="530" cy="455" r="13" fill="#fc8181"/>
+<circle cx="526" cy="451" r="4" fill="#ffffff" fill-opacity="0.45"/>
+<text x="530.0" y="489.0" font-size="12" fill="#e6e6e6" text-anchor="middle" font-weight="bold">VΩ</text>
+<path d="M450,455 C450,545 340,515 180,495" stroke="#222" stroke-width="7" fill="none"/>
+<path d="M530,455 C530,545 640,515 760,495" stroke="#fc8181" stroke-width="7" fill="none"/>
+<line x1="340" y1="140" x2="250" y2="100" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="340" cy="140" r="4" fill="#fbbf24"/>
+<text x="242.0" y="96.0" font-size="15" fill="#fbbf24" text-anchor="end" font-weight="bold">Display</text>
+<text x="242.0" y="114.0" font-size="12" fill="#a0aec0" text-anchor="end" font-weight="normal" font-style="italic">the reading, its unit, and OL for overload</text>
+<line x1="388.0" y1="305" x2="250" y2="260" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="388.0" cy="305" r="4" fill="#fbbf24"/>
+<text x="242.0" y="256.0" font-size="15" fill="#fbbf24" text-anchor="end" font-weight="bold">Dial</text>
+<text x="242.0" y="274.0" font-size="12" fill="#a0aec0" text-anchor="end" font-weight="normal" font-style="italic">chooses what to measure</text>
+<line x1="370" y1="438" x2="250" y2="400" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="370" cy="438" r="4" fill="#fbbf24"/>
+<text x="242.0" y="396.0" font-size="15" fill="#fbbf24" text-anchor="end" font-weight="bold">Jacks</text>
+<text x="242.0" y="414.0" font-size="12" fill="#a0aec0" text-anchor="end" font-weight="normal" font-style="italic">choose how the meter is wired inside</text>
+<line x1="542.0" y1="265" x2="650" y2="220" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="542.0" cy="265" r="4" fill="#fbbf24"/>
+<text x="658.0" y="216.0" font-size="15" fill="#fbbf24" text-anchor="start" font-weight="bold">Symbols</text>
+<text x="658.0" y="234.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">V⎓ DC volts, V~ AC volts, Ω ohms,</text>
+<text x="658.0" y="250.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">•))) continuity, →| diode, A amps</text>
+<line x1="530" y1="472" x2="650" y2="420" stroke="#a0aec0" stroke-width="1.5"/>
+<circle cx="530" cy="472" r="4" fill="#fbbf24"/>
+<text x="658.0" y="416.0" font-size="15" fill="#fbbf24" text-anchor="start" font-weight="bold">Probe leads</text>
+<text x="658.0" y="434.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">black always in COM; red moves</text>
+</svg>

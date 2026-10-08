@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Two AA cells feed a step-up charger that fills a 330 microfarad, 300 volt capacitor over about 5 seconds, about 3 watts. The capacitor then dumps its 15 joules into a xenon flash tube of about 1 ohm in about a millisecond, about 15 kilowatts.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="cap" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1b4672"/><stop offset="0.22" stop-color="#8aaed3"/><stop offset="0.5" stop-color="#2b6cb0"/><stop offset="1" stop-color="#112b46"/></linearGradient></defs>
+<rect x="15" y="15" width="850" height="410" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="440.0" y="48.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">The same 15 joules, in slowly and out fast</text>
+<rect x="60" y="190" width="28" height="80" rx="5" fill="url(#copperball)"/>
+<rect x="94" y="190" width="28" height="80" rx="5" fill="url(#copperball)"/>
+<text x="94.0" y="292.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">2 × AA</text>
+<text x="94.0" y="310.0" font-size="13" fill="#a0aec0" text-anchor="middle" font-weight="normal">3 V</text>
+<line x1="135" y1="230" x2="215" y2="230" stroke="#cbd5e0" stroke-width="4" marker-end="url(#arrow)"/>
+<ellipse cx="287.5" cy="275.0" rx="78.5" ry="9.0" fill="#000" fill-opacity="0.4"/>
+<polygon points="215.0,190.0 325.0,190.0 360.0,167.5 250.0,167.5" fill="#6c737e"/>
+<rect x="215.0" y="190.0" width="110.0" height="80.0" fill="#2d3748"/>
+<rect x="215.0" y="190.0" width="110.0" height="80.0" fill="url(#gloss)" opacity="0.6"/>
+<polygon points="325.0,270.0 325.0,190.0 360.0,167.5 360.0,247.5" fill="#181e27"/>
+<text x="270.0" y="225.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">step-up</text>
+<text x="270.0" y="243.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">charger</text>
+<line x1="350" y1="230" x2="430" y2="230" stroke="#cbd5e0" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="440" y="160" width="70" height="140" rx="12" fill="url(#cap)"/>
+<rect x="440" y="160" width="14" height="140" fill="#cbd5e0" fill-opacity="0.35"/>
+<text x="475.0" y="220.0" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">330 µF</text>
+<text x="475.0" y="238.0" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">300 V</text>
+<line x1="520" y1="230" x2="610" y2="230" stroke="#f59e0b" stroke-width="7" marker-end="url(#arrow)"/>
+<ellipse cx="700" cy="230" rx="85" ry="38" fill="url(#glow)"/>
+<rect x="625" y="216" width="150" height="28" rx="14" fill="#fff7e0" filter="url(#softglow)"/>
+<text x="700.0" y="290.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="normal">xenon flash tube, ~1 Ω</text>
+<rect x="115.0" y="345.0" width="230" height="40" rx="20.0" fill="#2c5282"/>
+<rect x="115.0" y="345.0" width="230" height="40" rx="20.0" fill="url(#gloss)"/>
+<text x="230.0" y="370.4" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">in: ~5 s, ~3 W</text>
+<rect x="520.0" y="345.0" width="260" height="40" rx="20.0" fill="#b7791f"/>
+<rect x="520.0" y="345.0" width="260" height="40" rx="20.0" fill="url(#gloss)"/>
+<text x="650.0" y="370.4" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">out: ~1 ms, ~15 kW</text>
+<text x="440.0" y="410.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">τ = 1 Ω × 330 µF = 330 µs; three time constants empty 95% of the charge</text>
+</svg>

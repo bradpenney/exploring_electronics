@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>Two voltmeters on a live 120 volt wire. With both probes on the wire, the meter reads 0 volts. With one probe on the wire and one on ground, it reads 120 volts.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="wire" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#774225"/><stop offset="0.22" stop-color="#d7ab92"/><stop offset="0.5" stop-color="#b8673a"/><stop offset="1" stop-color="#492917"/></linearGradient><linearGradient id="gnd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#303743"/><stop offset="0.22" stop-color="#9ba1ab"/><stop offset="0.5" stop-color="#4a5568"/><stop offset="1" stop-color="#1d2229"/></linearGradient></defs>
+<rect x="15" y="15" width="770" height="430" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="400.0" y="46.0" font-size="16" fill="#e6e6e6" text-anchor="middle" font-weight="bold">Voltage only exists between two points</text>
+<rect x="40" y="96" width="720" height="18" rx="9" fill="url(#wire)"/>
+<text x="56.0" y="88.0" font-size="12" fill="#fbbf24" text-anchor="start" font-weight="normal" font-style="italic">live wire: 120 V above ground</text>
+<rect x="40" y="380" width="720" height="16" rx="8" fill="url(#gnd)"/>
+<text x="56.0" y="414.0" font-size="12" fill="#a0aec0" text-anchor="start" font-weight="normal" font-style="italic">ground: 0 V, the reference</text>
+<ellipse cx="210.0" cy="346" rx="68.0" ry="8" fill="#000" fill-opacity="0.4"/>
+<rect x="150" y="190" width="120" height="150" rx="14" fill="#d69e2e"/>
+<rect x="158" y="198" width="104" height="134" rx="10" fill="#1a1d23"/>
+<rect x="150" y="190" width="120" height="150" rx="14" fill="url(#gloss)" opacity="0.5"/>
+<rect x="166" y="208" width="88" height="42" rx="4" fill="#9ae6b4"/>
+<rect x="166" y="208" width="88" height="14" rx="4" fill="#ffffff" fill-opacity="0.25"/>
+<text x="210.0" y="238.0" font-size="22" fill="#1a202c" text-anchor="middle" font-weight="bold">0.0</text>
+<circle cx="210.0" cy="290" r="22" fill="url(#core)"/>
+<line x1="210.0" y1="290" x2="198.0" y2="274" stroke="#f7fafc" stroke-width="3"/>
+<text x="244.0" y="282.0" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="bold">V⎓</text>
+<circle cx="184" cy="326" r="6" fill="#e53e3e"/>
+<circle cx="236" cy="326" r="7.5" fill="#cbd5e0" fill-opacity="0.55"/>
+<circle cx="236" cy="326" r="6" fill="#111"/>
+<path d="M184,326 Q167.0,386 150,140" fill="none" stroke="#cbd5e0" stroke-opacity="0.55" stroke-width="7.5"/>
+<path d="M184,326 Q167.0,386 150,140" fill="none" stroke="#e53e3e" stroke-width="4.5"/>
+<path d="M184,326 Q167.0,386 150,140" fill="none" stroke="#f3a8a8" stroke-opacity="0.8" stroke-width="1.4" transform="translate(-1,-1)"/>
+<rect x="143.5" y="118.5" width="13" height="29" rx="5" fill="#cbd5e0" fill-opacity="0.55"/>
+<rect x="145" y="120" width="10" height="26" rx="4" fill="#e53e3e"/>
+<rect x="147" y="122" width="2.5" height="22" rx="1" fill="#f3a8a8" fill-opacity="0.7"/>
+<line x1="150" y1="120" x2="150" y2="112" stroke="#e2e8f0" stroke-width="2.5"/>
+<path d="M236,326 Q258.0,386 280,140" fill="none" stroke="#cbd5e0" stroke-opacity="0.55" stroke-width="7.5"/>
+<path d="M236,326 Q258.0,386 280,140" fill="none" stroke="#111" stroke-width="4.5"/>
+<path d="M236,326 Q258.0,386 280,140" fill="none" stroke="#718096" stroke-opacity="0.8" stroke-width="1.4" transform="translate(-1,-1)"/>
+<rect x="273.5" y="118.5" width="13" height="29" rx="5" fill="#cbd5e0" fill-opacity="0.55"/>
+<rect x="275" y="120" width="10" height="26" rx="4" fill="#111"/>
+<rect x="277" y="122" width="2.5" height="22" rx="1" fill="#718096" fill-opacity="0.7"/>
+<line x1="280" y1="120" x2="280" y2="112" stroke="#e2e8f0" stroke-width="2.5"/>
+<text x="210.0" y="170.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">both probes on the same wire</text>
+<text x="210.0" y="362.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">same height: no difference</text>
+<ellipse cx="580.0" cy="346" rx="68.0" ry="8" fill="#000" fill-opacity="0.4"/>
+<rect x="520" y="190" width="120" height="150" rx="14" fill="#d69e2e"/>
+<rect x="528" y="198" width="104" height="134" rx="10" fill="#1a1d23"/>
+<rect x="520" y="190" width="120" height="150" rx="14" fill="url(#gloss)" opacity="0.5"/>
+<rect x="536" y="208" width="88" height="42" rx="4" fill="#9ae6b4"/>
+<rect x="536" y="208" width="88" height="14" rx="4" fill="#ffffff" fill-opacity="0.25"/>
+<text x="580.0" y="238.0" font-size="22" fill="#1a202c" text-anchor="middle" font-weight="bold">120.0</text>
+<circle cx="580.0" cy="290" r="22" fill="url(#core)"/>
+<line x1="580.0" y1="290" x2="568.0" y2="274" stroke="#f7fafc" stroke-width="3"/>
+<text x="614.0" y="282.0" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="bold">V⎓</text>
+<circle cx="554" cy="326" r="6" fill="#e53e3e"/>
+<circle cx="606" cy="326" r="7.5" fill="#cbd5e0" fill-opacity="0.55"/>
+<circle cx="606" cy="326" r="6" fill="#111"/>
+<path d="M554,326 Q537.0,386 520,140" fill="none" stroke="#cbd5e0" stroke-opacity="0.55" stroke-width="7.5"/>
+<path d="M554,326 Q537.0,386 520,140" fill="none" stroke="#e53e3e" stroke-width="4.5"/>
+<path d="M554,326 Q537.0,386 520,140" fill="none" stroke="#f3a8a8" stroke-opacity="0.8" stroke-width="1.4" transform="translate(-1,-1)"/>
+<rect x="513.5" y="118.5" width="13" height="29" rx="5" fill="#cbd5e0" fill-opacity="0.55"/>
+<rect x="515" y="120" width="10" height="26" rx="4" fill="#e53e3e"/>
+<rect x="517" y="122" width="2.5" height="22" rx="1" fill="#f3a8a8" fill-opacity="0.7"/>
+<line x1="520" y1="120" x2="520" y2="112" stroke="#e2e8f0" stroke-width="2.5"/>
+<path d="M606,326 Q640,360 650,380" fill="none" stroke="#cbd5e0" stroke-opacity="0.55" stroke-width="7.5"/>
+<path d="M606,326 Q640,360 650,380" fill="none" stroke="#111" stroke-width="4.5"/>
+<path d="M606,326 Q640,360 650,380" fill="none" stroke="#718096" stroke-opacity="0.8" stroke-width="1.4" transform="translate(-1,-1)"/>
+<text x="580.0" y="170.0" font-size="13" fill="#e6e6e6" text-anchor="middle" font-weight="bold">one on the wire, one on ground</text>
+<text x="700.0" y="300.0" font-size="12" fill="#fbbf24" text-anchor="start" font-weight="normal" font-style="italic">a 120 V</text>
+<text x="700.0" y="316.0" font-size="12" fill="#fbbf24" text-anchor="start" font-weight="normal" font-style="italic">difference</text>
+</svg>

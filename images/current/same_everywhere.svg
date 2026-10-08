@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" width="800" height="470" role="img" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+<title>A loop with a 9 volt battery, a 330 ohm resistor and a red LED. Evenly spaced glowing balls of charge circle the loop and four meters all read 21 milliamps. The balls are bright before the resistor, dimmer after it, and dimmest after the LED.</title>
+<defs><radialGradient id="eball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#cbd5e0"/><stop offset="1" stop-color="#4a5568"/></radialGradient><radialGradient id="vball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#f59e0b"/><stop offset="1" stop-color="#92400e"/></radialGradient><radialGradient id="core" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient><radialGradient id="silverball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#c0c6cf"/><stop offset="1" stop-color="#5a6270"/></radialGradient><radialGradient id="copperball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#ffd2b0"/><stop offset="0.45" stop-color="#c8733c"/><stop offset="1" stop-color="#5e2b10"/></radialGradient><radialGradient id="goldball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fff3b0"/><stop offset="0.45" stop-color="#e6b422"/><stop offset="1" stop-color="#7a5a00"/></radialGradient><radialGradient id="alball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f0f6ff"/><stop offset="0.45" stop-color="#a8b8cc"/><stop offset="1" stop-color="#4a5868"/></radialGradient><radialGradient id="glow" r="50%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3748" stop-opacity="0.45"/><stop offset="1" stop-color="#1a202c" stop-opacity="0.15"/></linearGradient><linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.05"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.35"/></linearGradient><filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker><linearGradient id="battx" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9f6607"/><stop offset="0.22" stop-color="#f9c978"/><stop offset="0.5" stop-color="#f59e0b"/><stop offset="1" stop-color="#623f04"/></linearGradient><linearGradient id="resbody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8d7454"/><stop offset="0.22" stop-color="#ead5ba"/><stop offset="0.5" stop-color="#d9b382"/><stop offset="1" stop-color="#564734"/></linearGradient><radialGradient id="midball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fde8c0"/><stop offset="0.45" stop-color="#b7791f"/><stop offset="1" stop-color="#4a2c0a"/></radialGradient><radialGradient id="lowball" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#e2e8f0"/><stop offset="0.45" stop-color="#718096"/><stop offset="1" stop-color="#1a202c"/></radialGradient></defs>
+<rect x="15" y="15" width="770" height="440" rx="14" fill="url(#panel)" stroke="#4a5568" stroke-opacity="0.6"/>
+<text x="400.0" y="46.0" font-size="15" fill="#e6e6e6" text-anchor="middle" font-weight="bold">The same current flows everywhere in the loop; the energy is what gets spent</text>
+<polyline points="150,190 150,120 650,120 650,330 150,330 150,250" fill="none" stroke="#3a1d0c" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="150,190 150,120 650,120 650,330 150,330 150,250" fill="none" stroke="#b8673a" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="150,190 150,120 650,120 650,330 150,330 150,250" fill="none" stroke="#ffd2b0" stroke-opacity="0.7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(0,-2)"/>
+<circle cx="180.0" cy="120.0" r="14.4" fill="url(#glow)" opacity="1.00"/><circle cx="180.0" cy="120.0" r="6" fill="url(#vball)"/>
+<circle cx="224.0" cy="120.0" r="14.4" fill="url(#glow)" opacity="1.00"/><circle cx="224.0" cy="120.0" r="6" fill="url(#vball)"/>
+<circle cx="268.0" cy="120.0" r="14.4" fill="url(#glow)" opacity="1.00"/><circle cx="268.0" cy="120.0" r="6" fill="url(#vball)"/>
+<circle cx="312.0" cy="120.0" r="14.4" fill="url(#glow)" opacity="1.00"/><circle cx="312.0" cy="120.0" r="6" fill="url(#vball)"/>
+<circle cx="488.0" cy="120.0" r="14.4" fill="url(#glow)" opacity="0.55"/><circle cx="488.0" cy="120.0" r="6" fill="url(#midball)"/>
+<circle cx="532.0" cy="120.0" r="14.4" fill="url(#glow)" opacity="0.55"/><circle cx="532.0" cy="120.0" r="6" fill="url(#midball)"/>
+<circle cx="576.0" cy="120.0" r="14.4" fill="url(#glow)" opacity="0.55"/><circle cx="576.0" cy="120.0" r="6" fill="url(#midball)"/>
+<circle cx="620.0" cy="120.0" r="14.4" fill="url(#glow)" opacity="0.55"/><circle cx="620.0" cy="120.0" r="6" fill="url(#midball)"/>
+<circle cx="650.0" cy="134.0" r="14.4" fill="url(#glow)" opacity="0.55"/><circle cx="650.0" cy="134.0" r="6" fill="url(#midball)"/>
+<circle cx="650.0" cy="178.0" r="14.4" fill="url(#glow)" opacity="0.55"/><circle cx="650.0" cy="178.0" r="6" fill="url(#midball)"/>
+<circle cx="650.0" cy="266.0" r="14.4" fill="url(#glow)" opacity="0.20"/><circle cx="650.0" cy="266.0" r="6" fill="url(#lowball)"/>
+<circle cx="650.0" cy="310.0" r="14.4" fill="url(#glow)" opacity="0.20"/><circle cx="650.0" cy="310.0" r="6" fill="url(#lowball)"/>
+<circle cx="626.0" cy="330.0" r="14.4" fill="url(#glow)" opacity="0.20"/><circle cx="626.0" cy="330.0" r="6" fill="url(#lowball)"/>
+<circle cx="582.0" cy="330.0" r="14.4" fill="url(#glow)" opacity="0.20"/><circle cx="582.0" cy="330.0" r="6" fill="url(#lowball)"/>
+<circle cx="538.0" cy="330.0" r="14.4" fill="url(#glow)" opacity="0.20"/><circle cx="538.0" cy="330.0" r="6" fill="url(#lowball)"/>
+<circle cx="494.0" cy="330.0" r="14.4" fill="url(#glow)" opacity="0.20"/><circle cx="494.0" cy="330.0" r="6" fill="url(#lowball)"/>
+<circle cx="450.0" cy="330.0" r="14.4" fill="url(#glow)" opacity="0.20"/><circle cx="450.0" cy="330.0" r="6" fill="url(#lowball)"/>
+<circle cx="406.0" cy="330.0" r="14.4" fill="url(#glow)" opacity="0.20"/><circle cx="406.0" cy="330.0" r="6" fill="url(#lowball)"/>
+<circle cx="362.0" cy="330.0" r="14.4" fill="url(#glow)" opacity="0.20"/><circle cx="362.0" cy="330.0" r="6" fill="url(#lowball)"/>
+<circle cx="318.0" cy="330.0" r="14.4" fill="url(#glow)" opacity="0.20"/><circle cx="318.0" cy="330.0" r="6" fill="url(#lowball)"/>
+<circle cx="274.0" cy="330.0" r="14.4" fill="url(#glow)" opacity="0.20"/><circle cx="274.0" cy="330.0" r="6" fill="url(#lowball)"/>
+<circle cx="230.0" cy="330.0" r="14.4" fill="url(#glow)" opacity="0.20"/><circle cx="230.0" cy="330.0" r="6" fill="url(#lowball)"/>
+<circle cx="186.0" cy="330.0" r="14.4" fill="url(#glow)" opacity="0.20"/><circle cx="186.0" cy="330.0" r="6" fill="url(#lowball)"/>
+<rect x="330" y="103" width="140" height="34" rx="17" fill="url(#resbody)"/>
+<rect x="356" y="104" width="9" height="32" fill="#f6ad55"/>
+<rect x="376" y="104" width="9" height="32" fill="#f6ad55"/>
+<rect x="396" y="104" width="9" height="32" fill="#8b4513"/>
+<rect x="434" y="104" width="9" height="32" fill="#d4af37"/>
+<radialGradient id="led77980217" cx="38%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.35" stop-color="#fc8181"/><stop offset="1" stop-color="#713a3a"/></radialGradient>
+<circle cx="650" cy="220" r="38.4" fill="#fc8181" fill-opacity="0.18"/>
+<circle cx="650" cy="220" r="24.0" fill="#fc8181" fill-opacity="0.22"/>
+<line x1="644.8" y1="235" x2="644.8" y2="259.0" stroke="#a0aec0" stroke-width="2.4"/>
+<line x1="655.2" y1="235" x2="655.2" y2="254.5" stroke="#a0aec0" stroke-width="2.4"/>
+<rect x="632.8" y="228.2" width="34.5" height="7.5" rx="2" fill="url(#led77980217)"/>
+<path d="M635.0,229.0 L635.0,220.0 A15,15 0 0 1 665.0,220.0 L665.0,229.0 Z" fill="url(#led77980217)"/>
+<rect x="122" y="190" width="56" height="70" rx="6" fill="url(#battx)"/>
+<text x="150.0" y="232.0" font-size="15" fill="#1a1a1a" text-anchor="middle" font-weight="bold">9 V</text>
+<rect x="198.0" y="64.0" width="84" height="28" rx="14.0" fill="#1a1d23"/>
+<rect x="198.0" y="64.0" width="84" height="28" rx="14.0" fill="url(#gloss)"/>
+<text x="240.0" y="82.7" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">21 mA</text>
+<rect x="518.0" y="64.0" width="84" height="28" rx="14.0" fill="#1a1d23"/>
+<rect x="518.0" y="64.0" width="84" height="28" rx="14.0" fill="url(#gloss)"/>
+<text x="560.0" y="82.7" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">21 mA</text>
+<rect x="678.0" y="276.0" width="84" height="28" rx="14.0" fill="#1a1d23"/>
+<rect x="678.0" y="276.0" width="84" height="28" rx="14.0" fill="url(#gloss)"/>
+<text x="720.0" y="294.7" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">21 mA</text>
+<rect x="358.0" y="356.0" width="84" height="28" rx="14.0" fill="#1a1d23"/>
+<rect x="358.0" y="356.0" width="84" height="28" rx="14.0" fill="url(#gloss)"/>
+<text x="400.0" y="374.7" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">21 mA</text>
+<text x="400.0" y="410.0" font-size="13" fill="#9ae6b4" text-anchor="middle" font-weight="bold">every meter reads the same: no charge is used up</text>
+<text x="400.0" y="432.0" font-size="12" fill="#a0aec0" text-anchor="middle" font-weight="normal" font-style="italic">the balls dim as they pass the resistor and the LED: that's energy (voltage) being spent</text>
+</svg>
