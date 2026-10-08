@@ -200,7 +200,7 @@ The same two-winding idea comes in a few arrangements worth recognizing:
 
 ### From Fields to Radio
 
-A current makes a magnetic field; a changing magnetic field makes a voltage. In 1865, James Clerk Maxwell worked out that changing electric and magnetic fields can keep generating each other and travel through space on their own, at the speed of light. In 1887, Heinrich Hertz, the man the unit of frequency is named after, made and detected those waves in his laboratory. They're radio waves: electromagnetism set loose from the wire.
+A current makes a magnetic field; a changing magnetic field makes a voltage. In 1865, James Clerk Maxwell worked out that changing electric and magnetic fields can keep generating each other and travel through space on their own, at the speed of light. In 1887, Heinrich Hertz, the man the unit of frequency is named after, made and detected those waves in his laboratory. They're radio waves: electromagnetism set loose from the wire. [Exploring Radio](https://radio.bradpenney.io) picks up the story from there.
 
 ---
 

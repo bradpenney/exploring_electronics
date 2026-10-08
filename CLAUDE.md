@@ -648,7 +648,7 @@ Validate all datasheet URLs with WebFetch before publishing — TI, Microchip, a
 - Linux articles for Raspberry Pi GPIO via the command line
 - Kubernetes articles when deploying IoT data pipelines
 - Software Dev Tools articles for git workflows on embedded projects
-- **Exploring Radio** (radio.bradpenney.io, amateur radio) — this site owns DC circuit theory and components; radio owns everything RF (resonance, impedance matching, antennas, modulation). Radio links here instead of re-teaching, so a gap radio needs (e.g. capacitors, inductors) is a gap to fill HERE. Don't link to radio until it has published articles.
+- **Exploring Radio** (radio.bradpenney.io, amateur radio) — this site owns DC circuit theory and components; radio owns everything RF (resonance, impedance matching, antennas, modulation). Radio links here instead of re-teaching, so a gap radio needs (e.g. capacitors, inductors) is a gap to fill HERE. Radio went live 2026-10-08; cross-links added sparingly (index card + network list, ac_dc amateur bands → what_you_may_transmit, magnetism From Fields to Radio, circuit_foundations intro → radio start_here). Link only to LIVE radio pages, and only where the reader is plainly heading toward radio.
 
 ---
 

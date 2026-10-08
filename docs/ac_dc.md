@@ -128,7 +128,7 @@ Alternating current isn't only mains power. Any voltage that reverses is AC, and
   <figcaption>From the grid to Wi-Fi, a span of a hundred million times.</figcaption>
 </figure>
 
-A radio signal is simply alternating current at a very high frequency: millions of cycles per second in the amateur bands, billions in Wi-Fi.
+A radio signal is simply alternating current at a very high frequency: millions of cycles per second in the [amateur bands](https://radio.bradpenney.io/what_you_may_transmit/), billions in Wi-Fi.
 
 ---
 

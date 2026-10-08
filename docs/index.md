@@ -48,7 +48,7 @@ This site teaches electronics from the atom up, with numbers from real datasheet
 
     ---
 
-    The exam's electronics sections, taught for understanding, not memorization.
+    The exam's electronics sections, taught for understanding, not memorization. [Exploring Radio](https://radio.bradpenney.io/start_here/) maps the Canadian Basic exam's electricity questions to these articles.
 
     [:octicons-arrow-right-24: Start with Voltage](voltage.md)
 
@@ -154,6 +154,7 @@ This site teaches electronics from the atom up, with numbers from real datasheet
 
 ## Part of the BradPenney.io Network
 
+- [Exploring Radio](https://radio.bradpenney.io) — Canadian amateur radio from first principles, from the Basic exam onward
 - [Exploring CNC](https://cnc.bradpenney.io) — hobby CNC machining with an open-source workflow
 - [Exploring Linux](https://linux.bradpenney.io) — Linux for developers and platform engineers
 - [Exploring Python](https://python.bradpenney.io) — Python automation for platform engineers

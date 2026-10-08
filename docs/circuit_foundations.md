@@ -8,7 +8,7 @@ description: "The fourteen Circuit Foundations articles in reading order: charge
 
 Every circuit is a push, a flow, and something in the way. This topic builds those three ideas from the atom up, then uses them on everything that follows: power and heat, faults and fuses, alternating current, magnetism, and the two components that store energy.
 
-Each article stands on its own, but they're written to be read in this order, and each one ends by pointing to the next. No prior knowledge is assumed anywhere.
+Each article stands on its own, but they're written to be read in this order, and each one ends by pointing to the next. No prior knowledge is assumed anywhere. If you're studying for the Canadian amateur radio Basic exam, [Start Here on Exploring Radio](https://radio.bradpenney.io/start_here/) shows which of these articles each exam topic draws on.
 
 <figure class="transit-map">
 --8<-- "docs/images/landing/circuit_foundations.svg"
